@@ -1,0 +1,60 @@
+
+## Liber I / Book I — De Cognitione Dei / Of the Knowledge of God
+
+| Ch | La p. (pdf) | La pp | En p. (pdf) | En pp | Title (La) |
+|---|---|---|---|---|---|
+| 1 | 7 (23) | 3 | 9 (65) | 4 | Quid sit Doctrina Christiana, quotque ejus partes |
+| 2 | 10 (26) | 12 | 13 (69) | 17 | De Deo |
+| 3 | 22 (38) | 9 | 30 (86) | 14 | De Divino Decreto |
+| 4 | 31 (47) | 26 | 44 (100) | 37 | De Praedestinatione |
+| 5 | 57 (73) | 53 | 81 (137) | 72 | De Filio Dei |
+| 6 | 110 (126) | 14 | 153 (209) | 19 | De Spiritu Sancto |
+| 7 | 124 (140) | 16 | 172 (228) | 27 | De Creatione |
+| 8 | 140 (156) | 14 | 199 (255) | 18 | De Providentia Dei seu rerum Gubernatione Communi |
+| 9 | 154 (170) | 6 | 217 (273) | 9 | De Gubernatione Speciali Angelorum |
+| 10 | 160 (176) | 20 | 226 (282) | 34 | De Gubernatione Speciali Hominis ante lapsum; de Sabbatho et Conjugio |
+| 11 | 180 (196) | 7 | 260 (316) | 12 | De Lapsu primorum Parentum, et de Peccato |
+| 12 | 187 (203) | 5 | 272 (328) | 6 | De Poena Peccati |
+| 13 | 192 (208) | 11 | 278 (334) | 16 | De Morte quae dicitur Corporali |
+| 14 | 203 (219) | 11 | 294 (350) | 14 | De Hominis Restitutione et Christo Redemptore |
+| 15 | 214 (230) | 7 | 308 (364) | 8 | De Officio Mediatorio ejusque triplici munere |
+| 16 | 221 (237) | 13 | 316 (372) | 16 | De Redemptionis Administratione |
+| 17 | 234 (250) | 8 | 332 (388) | 10 | De Renovatione; ubi et de Vocatione |
+| 18 | 242 (258) | 5 | 342 (398) | 5 | De Regeneratione |
+| 19 | 247 (263) | 6 | 347 (403) | 6 | De Resipiscentia |
+| 20 | 253 (269) | 6 | 353 (409) | 7 | De Fide Salvifica |
+| 21 | 259 (275) | 8 | 360 (416) | 9 | De Insitione in Christum, ejusque Effectis |
+| 22 | 267 (283) | 9 | 369 (425) | 10 | De Justificatione |
+| 23 | 276 (292) | 4 | 379 (435) | 3 | De Adoptione |
+| 24 | 280 (296) | 3 | 382 (438) | 4 | De Unione et Communione cum Christo ejusque Membris; de Ecclesia Mystica |
+| 25 | 283 (299) | 11 | 386 (442) | 14 | De Glorificatione Inchoata; de Certitudine Salutis, et Perseverantia |
+| 26 | 294 (310) | 5 | 400 (456) | 7 | De Manifestatione Foederis Gratiae; ubi et de Lege Dei |
+| 27 | 299 (315) | 10 | 407 (463) | 22 | De Evangelio et Libertate Christiana |
+| 28 | 309 (325) | 23 | 429 (485) | 22 | De Sigillatione Foederis Gratiae Externa |
+| 29 | 332 (348) | 10 | 451 (507) | 14 | De Ecclesia Visibili |
+| 30 | 342 (358) | 12 | 465 (521) | 16 | De Scriptura Sacra |
+| 31 | 354 (370) | 12 | 481 (537) | 16 | De Ecclesiis Particularibus |
+| 32 | 366 (382) | 6 | 497 (553) | 8 | De Disciplina Ecclesiastica |
+| 33 | 372 (388) | 14 | 505 (561) | 21 | De Glorificatione Perfecta; de secundo Christi Adventu, Resurrectione, Conflagratione |
+
+## Liber II / Book II — De Dei Cultu / Of the Service of God
+
+| Ch | La p. (pdf) | La pp | En p. (pdf) | En pp | Title (La) |
+|---|---|---|---|---|---|
+| 1 | 387 (403) | 8 | 527 (583) | 10 | De Bonis Operibus |
+| 2 | 395 (411) | 9 | 537 (593) | 10 | De Bonorum Operum Causis Proximis |
+| 3 | 404 (420) | 9 | 547 (603) | 10 | De Virtutibus ad Dei Cultum pertinentibus |
+| 4 | 413 (429) | 16 | 557 (613) | 22 | De Cultu Externo |
+| 5 | 429 (445) | 11 | 579 (635) | 19 | De Jurejurando et Sorte |
+| 6 | 440 (456) | 6 | 598 (654) | 2 | De Zelo |
+| 7 | 446 (462) | 9 | 600 (656) | 13 | De Tempore Cultus divini; ubi de Sabbatho, Die Dominica, et Festis |
+| 8 | 455 (471) | 7 | 613 (669) | 8 | De Officiis erga Homines praestandis, et quae huc pertinent Virtutes Generales |
+| 9 | 462 (478) | 12 | 621 (677) | 15 | De Prima Specie Virtutum Specialium quae ad officium pertinent Hominis erga se |
+| 10 | 474 (490) | 3 | 636 (692) | 3 | De Secunda Specie Virtutum ad officia Hominis erga se pertinentium |
+| 11 | 477 (493) | 10 | 639 (695) | 11 | De Officiis Hominis erga Proximum, et quae Virtutes eo pertineant |
+| 12 | 487 (503) | 5 | 650 (706) | 5 | De Virtutibus sive Officiis Specialibus erga Proximum |
+| 13 | 492 (508) | 12 | 655 (711) | 17 | De Secunda Specie Officiorum Specialium erga Proximum |
+| 14 | 504 (520) | 7 | 672 (728) | 8 | Adhuc de Secunda Specie Officiorum Specialium erga Proximum |
+| 15 | 511 (527) | 9 | 680 (736) | 11 | De Officiis erga Proximum Mutuis, et speciatim Privatis |
+| 16 | 520 (536) | 4 | 691 (747) | 5 | De Altera Specie Officiorum Privatorum |
+| 17 | 524 (540) | 12 | 696 (752) | 15 | De Officiis Publicis erga Proximum |
