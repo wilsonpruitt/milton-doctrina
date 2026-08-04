@@ -1,0 +1,21 @@
+{
+  "name": "milton-doctrina-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/build-content.mjs && next dev --turbopack",
+    "build": "node scripts/build-content.mjs && next build",
+    "rebuild-content": "node scripts/build-content.mjs",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^16.2.2",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "typescript": "^6.0.2"
+  }
+}
