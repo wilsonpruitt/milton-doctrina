@@ -212,13 +212,32 @@ checked for superscripts too**, which the runbook §3 now says.
 
 ## NEXT: M3 — the volume run continues
 
-Work from `M3-RUNBOOK.md`. Book II first, then Book I, saving I.iv–I.vi for last. Opus per chunk.
-**Next is `ddc-2-06 De Zelo`** (La 440–445 / En 593–599, both flagged `verified`, plates already
-prepped). Its first English footnote must be **6**.
+Work from `M3-RUNBOOK.md` — **its queue table in §1 is the authoritative per-chapter record**,
+kept current chapter by chapter. Book II first, then Book I, saving I.iv–I.vi for last. Opus per
+chunk.
 
-Two debts to settle when convenient: II.i's English (pp. 527–536 — Wilson has approved a retry
-**in small chunks**, a few pages at a time, so a filter hit doesn't cost a whole large read),
-and the six open suspect flags.
+**Done through II.viii as of 2026-08-04.** II.v, II.vi, II.vii and II.viii all complete, both
+layers. II.viii (La 455–461 / En 613–620) came in at 27 ¶¶ → 25 with two Sumner merges, one
+footnote printed **9** exactly as predicted, no Latin apparatus, and **no filter block at all** —
+every paragraph written singly from the outset, which is now the settled procedure (runbook §10).
+
+**Next is `ddc-2-09`** (La 462–473 / En 621–635, plates already prepped). Twelve Latin pages —
+exactly *at* the split threshold, which splits only above 12, so it stays one chunk. **Its first
+English footnote must be 1** — the wrap.
+
+Three debts to settle when convenient:
+1. **II.i's English** (pp. 527–536) — Wilson has approved a retry **in small chunks**, a few pages
+   at a time, so a filter hit doesn't cost a whole large read.
+2. **The Book II Latin sweep** (runbook §9b) — a page-feet-only pass over La 387–454, its own
+   session. **It gates "Book II complete."** II.v–II.viii were read for Latin superscripts as they
+   were transcribed; II.i–II.iv were not.
+3. The six open suspect flags (runbook §7).
+
+**One small convention question is now owed** (recorded in `chunks/ddc-2-08.md` Notes): a printed
+page break falling **mid-word** — En 613/614 breaks *accept-* | *-able*. Written as
+`accept<!-- p.614 -->able`, dropping the soft hyphen as a typographic artifact. First instance in
+the corpus; CONVENTIONS §2 has no rule for it. Cheap to ratify, but it should be ratified rather
+than left as precedent-by-accident.
 
 ## Owed by Wilson
 
