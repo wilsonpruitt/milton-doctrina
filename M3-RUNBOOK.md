@@ -36,12 +36,12 @@ doctrine, and the chapter everyone will actually read.
 | — | `ddc-2-04-a` | **done** (2026-08-03, Opus) — La 413–416 / En 557–562; notes 1–5 |
 | — | `ddc-2-04-b` | **done** (2026-08-03, Opus) — La 417–420 / En 563–568, the whole `REVERENTER` lemma; notes 6,7,8,9,**1**,2,3,4 (contains the 9→1 wrap) |
 | — | `ddc-2-04-c` | **done** (2026-08-03, Opus) — La 420–428 / En 568–578; notes 5–8. **II.iv complete.** |
-| 1 | `ddc-2-05` | **Latin done, English owed** (2026-08-03, Opus) — `status: la-verified`. La 429–439 complete, 34 ¶¶, all 11 plates. En 579–592 not begun; **must open at note 9**. Read the numbered "Owed on return" list in the chunk's `## Notes` rather than reconstructing. **⚠ This chapter proved the Latin volume also carries footnotes — see §9 below.** |
-| 2 | `ddc-2-06` | prepped — extents corrected & plate-verified |
-| 3 | `ddc-2-07` | prepped |
-| 4 | `ddc-2-08` | prepped |
-| 5 | `ddc-2-09` | prepped |
-| 6+ | `ddc-2-10` … `ddc-2-17` | run `prep-chapter.sh 2 10 2 17` first |
+| — | `ddc-2-05` | **done** (2026-08-04, Opus) — La 429–439 / En 579–592, both layers plate-verified. **34 ¶¶ → 34 ¶¶, strict 1:1, no merges** (first whole chapter to do so). Notes **9, 1, 2, 3, 4, 5** — the predicted wrap confirmed. All four suspect La citations resolved, all four `Luc. ix. 66`-class; **eight La errors in one chapter, four in Isaiah**. The English carries **no** counterpart to `[^la5]`. |
+| 1 | `ddc-2-06` | prepped — extents corrected & plate-verified. **Must open at note 6.** |
+| 2 | `ddc-2-07` | prepped |
+| 3 | `ddc-2-08` | prepped |
+| 4 | `ddc-2-09` | prepped |
+| 5+ | `ddc-2-10` … `ddc-2-17` | run `prep-chapter.sh 2 10 2 17` first |
 | then | Book I, i–iii and vii–xxxiii | |
 | last | `ddc-1-04`, `ddc-1-05`, `ddc-1-06` | see §5 |
 
@@ -75,7 +75,8 @@ doctrine, and the chapter everyone will actually read.
   *N+1* must be one past the last of chapter *N*, **wrapping 9 → 1**. A chapter with zero notes
   passes the number through untouched.
   **Ledger:** II.i → **3–7** (3, 4, 5 identified; 6 and 7 must be in pp. 530–536) · II.ii →
-  **8, 9** · II.iii → **none** · II.iv → **1–9, then 1–8**. So **II.v must open at note 9.**
+  **8, 9** · II.iii → **none** · II.iv → **1–9, then 1–8** · II.v → **9, 1, 2, 3, 4, 5**
+  (predicted and confirmed). So **II.vi must open at note 6.**
   Blind spot: the cycle is only 9 long, so it can never detect a miss of exactly 9 notes. It is
   not a substitute for reading every plate for superscripts.
 - **Also check the LATIN plates for superscripts.** The Latin volume carries apparatus too — see

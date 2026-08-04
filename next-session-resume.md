@@ -151,12 +151,32 @@ would have read as an eight-note gap and sent a session hunting for notes that n
     Isa. lviii. **56**→5, 6 · `et xxxvi. 37`→v. 36, 37). The `lviii. 56` case is a *dropped comma*,
     not a misread numeral — the exact mirror of the En `xxvii` slip, one such accident per volume.
 
-- **II.v `De Jurejurando et Sorte` — LATIN DONE, ENGLISH OWED (2026-08-03, Opus).**
-  `chunks/ddc-2-05.md`, `status: la-verified`, `en_status: pending`. All 11 Latin plates
-  (printed 429–439) verified, 34 ¶¶; chapter ends mid-p. 439 with a blank tail and CAP. VI opens
-  La 440, re-confirming the 2.6 extent. English pp. 579–592 not begun. The chunk's `## Notes`
-  carries a numbered **"Owed on return"** list — read it rather than reconstructing; it already
-  records four suspect Latin citations for the English to adjudicate.
+- **II.v `De Jurejurando et Sorte` ✅ (2026-08-04, Opus)** — `chunks/ddc-2-05.md`,
+  `status: verified`, both layers, all 25 plates read (La 429–439, En 579–592), extent
+  plate-confirmed at both ends (blank tails; CAP. VI opens La 440, `CHAP. VI. Of Zeal.` opens
+  En 593). Ratio 1.27. **II.v is the chapter that made every prediction come true**, and the
+  four findings worth carrying forward are:
+  1. **34 La ¶¶ → 34 En ¶¶ — strict 1:1, no merges at all.** First *whole* chapter to align
+     perfectly (II.ii 28→25, II.iii 34→32, II.iv 57→56). Sumner's merging habit is real but not
+     universal; don't treat a 1:1 count as evidence of a missed paragraph.
+  2. **The footnote checksum passed on its first hard test, wrap included.** Predicted "must open
+     at 9"; it does (En p. 580), wraps to 1 on p. 581, and closes at 5 on p. 592. Ledger:
+     **9 · 1 · 2 · 3 · 4 · 5**. **II.vi must open at note 6.**
+  3. **All four suspect Latin citations resolved, all four `Luc. ix. 66`-class** — La wrong,
+     Sumner silently right (`Exod. vi. 7`→`vi. 8` · `Psal. ix. 5, 11`→`xcv. 11` ·
+     `2 Sam. xix. 24`→`xix. 23` · `Num. xxiii. 27`→`xxiii. 23`). With four more found on the
+     read, that is **eight outright Latin errors in one chapter, four of them in Isaiah**, the
+     highest rate yet and the first time the errors cluster in one book. No English-layer error
+     here — the two-way traffic seen in II.iii and II.iv-c didn't recur.
+  4. **The English carries NO counterpart to `[^la5]`.** Owed-item 3 answered, negatively:
+     Sumner disclosed his word-order change in the Latin volume only. En p. 582 renders the same
+     sentence with no note. **A reader of the English alone cannot learn that the Latin there is
+     not the manuscript's** — which bounds what `tools/sumner-interventions.tsv` can ever be
+     built from.
+  Also: **Greek turns up in the ENGLISH volume** (En p. 584 prints `νὴ τὴν ἡμετέραν καύχησιν`
+  where La p. 433 gives the bare particle) — read English plates for Greek too, not just Latin.
+  And a new §6 anomaly kept as printed: En p. 588 note `[^s2]` cites `Of truc Religion`,
+  confirmed at 900 dpi — a misprint in the title of Milton's own tract, inside the note citing it.
 
 ## The LATIN volume has footnotes too — RULED 2026-08-04, settled
 
@@ -193,8 +213,8 @@ checked for superscripts too**, which the runbook §3 now says.
 ## NEXT: M3 — the volume run continues
 
 Work from `M3-RUNBOOK.md`. Book II first, then Book I, saving I.iv–I.vi for last. Opus per chunk.
-**Next is II.v's English layer** (pp. 579–592) — start from the "Owed on return" list, and note
-that its first English footnote must be **9**. Then `ddc-2-06 De Zelo` (La 440–445 / En 593–599).
+**Next is `ddc-2-06 De Zelo`** (La 440–445 / En 593–599, both flagged `verified`, plates already
+prepped). Its first English footnote must be **6**.
 
 Two debts to settle when convenient: II.i's English (pp. 527–536 — Wilson has approved a retry
 **in small chunks**, a few pages at a time, so a filter hit doesn't cost a whole large read),
