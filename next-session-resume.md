@@ -216,31 +216,28 @@ Work from `M3-RUNBOOK.md` — **its queue table in §1 is the authoritative per-
 kept current chapter by chapter. Book II first, then Book I, saving I.iv–I.vi for last. Opus per
 chunk.
 
-**Done through II.viii as of 2026-08-04.** II.v, II.vi, II.vii and II.viii all complete, both
-layers. II.viii (La 455–461 / En 613–620) came in at 27 ¶¶ → 25 with two Sumner merges, one
-footnote printed **9** exactly as predicted, no Latin apparatus, and **no filter block at all** —
-every paragraph written singly from the outset, which is now the settled procedure (runbook §10).
+**▶ NEXT IS `ddc-2-10`** (La 474–476 / En 636–638 — three pages each, the shortest chapter in
+Book II; plates already prepped). **Its first English footnote must be 4** — II.ix closed at 3.
 
-**▶ RESUME AT `ddc-2-09`, which is HALF DONE.** Latin layer **complete** (41 ¶¶, La 462–473 — the
-largest chapter transcribed so far); English **through {¶8} only** (En 621–624). ⚠ **Read the
-chunk's own "Owed on return" list in `chunks/ddc-2-09.md` Notes before anything else** — it names
-the eleven unread plates, the one already-transcribed note whose anchor still needs placing
-(`[^s3]`), and three specific things the Latin flagged for the English to answer.
+**Book II is now done through II.ix.** II.ix came in at **41 ¶¶ → 41, strict 1:1** — the longest
+chapter transcribed and only the second to run 1:1 throughout. Three findings from it are worth
+carrying forward, because each changes how the next chapter should be read:
 
-Two findings from it worth knowing before you open the file:
-- **★★ Every Sumner note in the chapter so far defends Milton's CHARACTER** — that he drank
-  little, rose at four, and did not frequent the bordelloes — answered out of the *Apology for
-  Smectymnuus*, *Comus*, *Samson Agonistes*, *Paradise Lost* XI and the elegies. That is a fourth
-  editorial behaviour, and it **qualifies the II.viii note** about Sumner reaching for the poetry;
-  amend `ddc-2-08.md` when II.ix closes.
-- **★ The Latin carries two Greek passages**, both restored at 640 dpi: a full hexameter of Homer
-  (*Odyss.* ά. 333, Penelope) offered as evidence for a Christian virtue, and αὐταρκεία as a
-  technical virtue-name whose lemma is set in Greek capitals — **printed paroxytone, not the
-  standard αὐτάρκεια**, transcribed as printed and not to be "corrected."
-
-**Six suspect Latin citations are flagged and UNRESOLVED** in that chunk's Notes; the English layer
-is the instrument that settles them, as at II.v. One is already settled (La `1 Pet. ii. 12` →
-En `ii. 11`) and it was *not* on the list — so the list is a starting point, not a census.
+- **★★ All three of its Sumner notes defend Milton's CHARACTER** — that he drank little, rose at
+  four, and did not frequent the bordelloes — answered from the *Apology for Smectymnuus*, *Comus*,
+  *Samson Agonistes*, *Paradise Lost* XI and the elegies. A fourth editorial behaviour, and
+  `ddc-2-08.md`'s poetry note has been amended because of it. The generalisation that now holds:
+  **Sumner reaches for the poetry where the prose treatise leaves Milton personally exposed.**
+- **★★ The English ADDS a Cowper verse translation of Milton's Homer line, in the running text,
+  with no Latin counterpart.** With II.v's converse case (English carrying no counterpart to
+  `[^la5]`), this settles it: **neither layer is a complete witness to the other**, and the
+  parallel-layer design in CONVENTIONS §1 is doing real work, not being tidy.
+- **★ Citations: seven Latin errors corrected by Sumner, three in one paragraph — but one error
+  runs the OTHER way** (La `Dan. ii. 30` is right, En `ii. 31` is wrong; second plate-confirmed
+  English error in the corpus). **Two of the seven were not on the suspect list drafted from the
+  Latin.** Inspecting the Latin alone is a starting point, never a census; the English layer is
+  the instrument. Also logged: Sumner silently **reorders proof-texts** at {¶29}, and renders
+  *ornamenta vitæ* as "a high station", which the Latin does not say.
 
 Three debts to settle when convenient:
 1. **II.i's English** (pp. 527–536) — Wilson has approved a retry **in small chunks**, a few pages
