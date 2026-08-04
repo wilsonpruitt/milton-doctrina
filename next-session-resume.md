@@ -3,8 +3,10 @@
 **Read first:** **`M3-RUNBOOK.md`** — the per-chapter procedure, the queue, the checks, and the
 open suspect-flags. It is written so a session can start work immediately without re-deriving
 anything. Behind it: `PLAN.md` (plan of record) · `CONVENTIONS.md` (frozen rules) ·
-`STRUCTURE.md` (offsets). Format reference: `chunks/ddc-2-02.md`; partial-chunk reference:
-`chunks/ddc-2-01.md`. Site: `site/`.
+`STRUCTURE.md` (offsets). Format reference: `chunks/ddc-2-02.md`. Site: `site/`.
+⚠ **There is no longer a partial chunk in the corpus** — `ddc-2-01` was the last one and closed
+2026-08-04. The partial-chunk shape is still legal (CONVENTIONS §8d); its worked example now lives
+in `ddc-2-01`'s Notes as history rather than as a live model.
 
 ## State (2026-08-03)
 
@@ -49,19 +51,17 @@ anything. Behind it: `PLAN.md` (plan of record) · `CONVENTIONS.md` (frozen rule
 4. **The 1825's own emphasis typography is inconsistent** (some definitions small-caps, some
    not) — follow per instance, both layers mirror each other's inconsistency.
 
-## M3 IN PROGRESS
+## M3 — II.i, the last partial chunk, is CLOSED
 
-- **II.i `De Bonis Operibus` — LATIN DONE, ENGLISH OWED.** `chunks/ddc-2-01.md`,
-  `status: la-verified`, `en_status: pending`. All 8 Latin plates (printed 387–394) verified,
-  21 ¶¶. Greek `ἀτοπία` (p.388) confirmed at 800 dpi. **English pp. 527–536 deliberately not
-  transcribed** — Wilson hit content filtering on that range twice and called it off; that is
-  the only reason the chunk is partial, nothing about the Latin is provisional. The chunk's
-  `## Notes` carries a numbered "Owed on return" list — read it before resuming, especially
-  the footnote-numbering test (II.i must yield exactly notes 3–7, of which 3, 4, 5 are already
-  identified). NB the numbering cycles 1–9 — see the rewritten CONVENTIONS §8a.
-- Partial chunks are architecturally fine and `build-content.mjs` was confirmed against this
-  one (2 chunks from 2 files, no error) — the M2 language-array generalisation earns its keep
-  here, since a `la`-only chunk needs no special casing.
+- **II.i `De Bonis Operibus` ✅ COMPLETE 2026-08-04 (Opus)** — `chunks/ddc-2-01.md`,
+  `status: verified`, both layers. La 387–394 (21 ¶¶) / En 527–536 (17 ¶¶), ratio 1.25.
+  Its English was the range Wilson pulled a session off under content filtering on 2026-08-03;
+  reopened on his instruction and transcribed with the one-paragraph-per-edit technique.
+  {¶6} blocked twice as a whole paragraph and went through in six pieces. **Nothing paraphrased
+  or omitted.** The footnote prediction held exactly (notes 3–7), closing the checksum ledger.
+- Partial chunks remain architecturally fine and `build-content.mjs` was proved against this one
+  while it was partial — the M2 language-array generalisation earned its keep, since a `la`-only
+  chunk needed no special casing. **No partial chunk is currently open.**
 
 ## Staged for the next session (2026-08-03)
 

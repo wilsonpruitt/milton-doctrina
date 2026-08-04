@@ -1,8 +1,9 @@
 # M3 runbook — the volume run
 
 **Read `PLAN.md` §5 and `CONVENTIONS.md` once at session start, then work from this file.**
-`chunks/ddc-2-02.md` is the format reference. `chunks/ddc-2-01.md` is the reference for a
-*partial* chunk.
+`chunks/ddc-2-02.md` is the format reference. **No partial chunk remains in the corpus** —
+`ddc-2-01` was the last and closed 2026-08-04; the shape is still legal (CONVENTIONS §8d) and
+that chunk's Notes record how it was worked.
 
 This file exists so a transcription session spends its tokens on plates, not on rediscovering
 procedure. Everything mechanical has been pre-staged.
