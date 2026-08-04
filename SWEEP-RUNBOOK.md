@@ -102,14 +102,82 @@ Hypotheses still live, and the evidence that would separate them:
 | The numbers are keyed to the **English** volume's note at the same place | The English note numbers at the corresponding passages are 5 and 4 |
 | They are not a sequence at all — Sumner numbered ad hoc | No consistent pattern emerges from either of the above |
 
-**`tools/detect-footnotes.py 7 386` has already been run over the whole of Book I**; results in
-`tools/sweep-book1.tsv`. Start there: if Book I is empty of notes, the first hypothesis dies too
-and the question narrows to the English-keying one. If Book I carries notes, read the last few
-before La 431 and see whether the sequence walks into 5.
+### ✅ Book I HAS been scanned, and it changes the picture — read this before theorising
+
+`tools/detect-footnotes.py 7 386` was run over the whole of Book I (380 pages); results in
+`tools/sweep-book1.tsv`. **Book I carries Latin footnotes.** Five candidates:
+**La 50, 129, 143, 188, 228.** Two were read off the plate on 2026-08-04 and are unambiguous
+(the other three have weaker pitch signatures and may be false positives — check them):
+
+| page | note | kind | content |
+|---|---|---|---|
+| **129** | **2** | textual | *Locus perdifficilis…* — a desperate crux, plus **Sumner's own statement of editorial method** (see below) and a conjectural emendation |
+| **143** | **6** | textual | *Sic in MS. sed a manu secunda, contra constructionis legem…* — **the MS reads thus but IN A SECOND HAND**; someone corrupted the true reading; *Repone* **nomen** |
+
+**So the observed note numbers, in page order, are: 2 (La 129) · 6 (La 143) · 5 (La 431) ·
+4 (La 454).** That is not a sequence in either direction, and the "cycle across the whole volume"
+hypothesis is now **dead too**. What remains live:
+
+| hypothesis | how to test it |
+|---|---|
+| The Latin note number is keyed to the **English** volume's note at the same passage, so a reader can cross-refer | Find the English page for each of these four passages and compare. La 431's is the awkward case — `ddc-2-05.md` records that the English carries *no* counterpart there |
+| Numbering restarts per **signature/gathering** | La 129's foot carries signature `S`; La 465/467/473 carry `3 O`, `3 O 2`, `3 P`. Map the signatures and see |
+| It is ad hoc — Sumner numbered notes as he set them, with no system | The residue if both above fail |
+
+⚠ **Do not settle this from four data points.** Check La 50, 188 and 228 first; more notes may
+exist that the detector missed. A documented open question is an acceptable exit (§4).
 
 ⚠ **Until this is settled, `[^laN]` numbers remain LABELS, not a checksum** (M3-RUNBOOK §3). The
 English checksum is a separate, independent run and is unaffected — it is still passing, and II.i's
 closure on 2026-08-04 filled its last open cell.
+
+---
+
+---
+
+## 3a. ★★★ THE FIND — Sumner states his editorial method in his own words, at La 129
+
+This is the most consequential thing the mechanical pass turned up, and it is not about numbering.
+La 129's note reads, in part:
+
+> *In impressis, ut soleo, manuscriptum religiose secutus sum, ne puncto quidem mutato, et litteris
+> majusculis fideliter servatis.*
+>
+> — "In what is printed, **as is my custom**, I have followed the manuscript religiously, not even
+> a point changed, and the capital letters faithfully preserved."
+
+**Sumner is stating a general editorial policy — *ut soleo*, as is my custom — of diplomatic
+fidelity.** Set that beside La 431, where he writes *ordinem leviter mutavi* — "I slightly changed
+the order" — and the project has, in Sumner's own hand, **both the claim and a confessed exception
+to it.**
+
+Why this matters beyond the sweep:
+
+- **PLAN §4a** requires the About page to say the text is Sumner's, not the manuscript's. It can now
+  say so **using Sumner's own words on both sides**, which is far stronger than our assertion.
+- **PLAN §6.4** (manuscript-state notes, M4) gains a real evidence base rather than one instance.
+- The note also carries a **conjectural emendation** and marks a crux with a **dagger (†)** —
+  the Latin volume has a critical apparatus, not merely occasional remarks.
+- ⚠ **And the crux is on the eternity of matter** — *Ut extra Deum semper fuerit materia* — i.e. the
+  hardest textual problem in the volume sits precisely on Milton's most heterodox metaphysical
+  claim, creation *ex Deo* rather than *ex nihilo*. Whatever is said about that doctrine must
+  acknowledge that its key sentence is, by the editor's own account, corrupt and reconstructed.
+
+La 143 is the companion piece: *sic in MS. sed **a manu secunda*** — the manuscript reads thus **but
+in a second hand** — which is direct editorial testimony to the layered, multi-scribe character of
+SP 9/61 that the About page already means to describe.
+
+**Both are TEXTUAL notes** under CONVENTIONS §5a and both earn rows in
+`tools/sumner-interventions.tsv` **when Book I is transcribed**. They are recorded here now so the
+finding is not lost; **do not back-fill them into chunks that do not yet exist.**
+
+### ⚠ Scope consequence — Book I's Latin apparatus is real, and it is not this sweep's job
+
+This sweep is scoped to Book II and stays scoped to Book II. But the Book I scan has established
+that **Book I carries textual Latin apparatus of exactly the kind PLAN §6.4 was written for**, and
+that it is thin enough to be tractable (about five pages in 380). When Book I transcription begins,
+the standing obligation of M3-RUNBOOK §2 step 3 will pick these up chapter by chapter —
+`tools/sweep-book1.tsv` already says where to look.
 
 ---
 

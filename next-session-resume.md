@@ -239,11 +239,30 @@ carrying forward, because each changes how the next chapter should be read:
   the instrument. Also logged: Sumner silently **reorders proof-texts** at {¶29}, and renders
   *ornamenta vitæ* as "a high station", which the Latin does not say.
 
+## ▶ THE SWEEP IS SET UP — start here next session
+
+`SWEEP-RUNBOOK.md` is self-contained. The mechanical pass is already run and it did more than
+rank pages:
+
+- **La 387–473 yields exactly two candidates, La 431 and La 454 — the two already known.** No
+  Latin note was missed in II.i–II.iv; the visual confirmation is what remains.
+- **The numbering anomaly is not missed notes.** Numbers in page order are **2 · 6 · 5 · 4** —
+  no sequence either way. Two leading hypotheses are dead; the live ones are in §3.
+- **★★★ Book I carries textual Latin apparatus, and La 129 is Sumner stating his own editorial
+  method** — *"as is my custom I have followed the manuscript religiously, not even a point
+  changed"* — which sits directly against La 431's confessed *ordinem leviter mutavi*. We now have
+  both the claim and the confessed exception **in the editor's own words**. That is a much stronger
+  footing for the About page than our own assertion, and it bears on PLAN §4a and §6.4.
+  ⚠ Its crux is on **the eternity of matter** — the hardest textual problem in the volume sits on
+  Milton's most heterodox metaphysical claim. See `SWEEP-RUNBOOK.md` §3a.
+
+⚠ **Book I's apparatus is NOT this sweep's job** — it gets picked up chapter by chapter when Book I
+is transcribed, per M3-RUNBOOK §2 step 3. `tools/sweep-book1.tsv` already says where to look.
+
 **Two debts remain** (one was just discharged):
 1. ✅ ~~II.i's English~~ — **DONE 2026-08-04.** Both layers verified; see below.
-2. **The Book II Latin sweep** (runbook §9b) — a page-feet-only pass over La 387–454, its own
-   session. **It gates "Book II complete."** II.v–II.ix were read for Latin superscripts as they
-   were transcribed; II.i–II.iv were not.
+2. **The Book II Latin sweep — ▶ STAGED AND READY, `SWEEP-RUNBOOK.md`.** All mechanical work is
+   done; the session reads plates and makes one judgement. **It still gates "Book II complete."**
 3. The six open suspect flags (runbook §7).
 
 **✅ II.i is CLOSED — the last outstanding debt in Book II.** Transcribed past the content filter
