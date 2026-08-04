@@ -202,5 +202,10 @@ and the six open suspect flags.
 
 ## Owed by Wilson
 
-- **GitHub remote** for this repo (protected action) — no backup off this machine yet.
+- ~~GitHub remote~~ **done 2026-08-04** — `wilsonpruitt/milton-doctrina`, **PRIVATE**, `main`
+  tracking `origin/main`. `raw/` (PDFs, plate renders, OCR dumps) is gitignored and stays local;
+  verified 0 `raw/` paths on the remote. **Flip to public only at M5**, and not before
+  `site/src/app/rights/page.tsx` carries a real rights statement — CC BY-NC 4.0 on the English and
+  the encoding, PD on the 1825 source (see the Wroot Press licensing memory). Note the repo landed
+  under `wilsonpruitt`, not the `littleeachdayapp-droid` bridge account.
 - Domain wiring for milton.wrootpress.com when M5 nears (Cloudflare, DNS-only per house rule).
