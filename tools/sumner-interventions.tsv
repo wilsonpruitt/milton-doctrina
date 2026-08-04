@@ -1,0 +1,22 @@
+# Sumner's DISCLOSED editorial interventions in the 1825 text.
+#
+# WHAT THIS IS: every place where Sumner himself, in a footnote, tells the reader that what he
+# printed differs from the manuscript. These are his own admissions, harvested from the plates as
+# the volume run reads them. Primary evidence, free, and not anticipated by PLAN §6.4, which
+# listed only Campbell/Corns/Hale/Tweedie and the 1825 facsimile plates as sources.
+#
+# WHAT THIS IS NOT: a list of everywhere the 1825 departs from SP 9/61. Sumner normalised
+# silently and at scale (PLAN §4a). This file records only what he ADMITTED. Never present it as
+# a complete collation — the undisclosed changes are the larger and more dangerous set.
+#
+# Ruled 2026-08-04 (Wilson): harvest as we go; feeds PLAN §6.4 at M4.
+#
+# kind vocabulary (extend as needed, don't invent synonyms):
+#   word-order   Sumner rearranged Milton's words
+#   emendation   Sumner changed a reading
+#   supplement   Sumner supplied something absent from the MS
+#   ms-state     Sumner reports damage, a gap, or a hand-change without changing the text
+#   uncertain    Sumner flags the MS reading as doubtful
+#
+book	ch	la_page	anchor	kind	summary	sumner_stated_reason
+2	5	431	[^la5]	word-order	MS word order differs from the printed text; Sumner reordered the clause about Matt. v. 33 / Jacob. v. 12 so that "per Deum jurare non prohibemur" follows the Matthew citation rather than the James one.	"Quo melius ratio grammatica servaretur, ordinem leviter mutavi" — to preserve the grammar.

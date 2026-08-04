@@ -1,0 +1,76 @@
+# De Doctrina Christiana — chapter → printed-page crosswalk
+# Derived from tools/crosswalk-output.txt (M0, measured against both scans).
+# Offsets: la_pdf = la_printed + 16 · en_pdf = en_printed + 56
+#
+# la_pp / en_pp are the count of printed pages the chapter occupies, computed as the
+# distance to the NEXT chapter's opening page. A chapter usually ends partway down its
+# last page; the next chapter opens on a fresh page. prep-chapter.sh renders one page
+# PAST the computed end on both layers so the boundary can be confirmed off the plate.
+#
+# flag column:
+#   verified — chapter opening confirmed off the PLATE. Trust it.
+#   ok       — agrees with the pdftotext layer (see tools/audit-chapter-starts.py) and the
+#              La:En page ratio is sane. Not plate-confirmed; good enough to prep against.
+#   suspect  — audit-chapter-starts.py found a mismatch, or the extent is implausible.
+#              DO NOT trust. Confirm off the plate before transcribing, then correct this
+#              file and set the flag to 'verified'.
+#
+# Sanity heuristic: En is normally LONGER than La (Sumner expands), typically 1.1–1.8×.
+# A ratio below 1.0 or above ~2.0 means a boundary is probably misplaced.
+#
+# CORRECTIONS MADE SO FAR (both plate-confirmed 2026-08-03):
+#   2.5 / 2.6 — the En II.v/II.vi boundary was wrong by 5 pages. The crosswalk had
+#   II.vi opening at 598; printed 593 is the actual "CHAP. VI. OF ZEAL." page, and 598
+#   is mid-chapter. That made II.v 19pp (1.7x) and II.vi 2pp (0.33x); now 14pp and 7pp.
+#
+book	ch	la_printed	la_pp	en_printed	en_pp	flag	title_la
+1	1	7	3	9	4	ok	Quid sit Doctrina Christiana, quotque ejus partes
+1	2	10	12	13	17	ok	De Deo
+1	3	22	9	30	14	ok	De Divino Decreto
+1	4	31	26	44	37	ok	De Praedestinatione
+1	5	57	53	81	72	suspect	De Filio Dei
+1	6	110	14	153	19	ok	De Spiritu Sancto
+1	7	124	16	172	27	ok	De Creatione
+1	8	140	14	199	18	ok	De Providentia Dei seu rerum Gubernatione Communi
+1	9	154	6	217	9	ok	De Gubernatione Speciali Angelorum
+1	10	160	20	226	34	ok	De Gubernatione Speciali Hominis ante lapsum; de Sabbatho et Conjugio
+1	11	180	7	260	12	ok	De Lapsu primorum Parentum, et de Peccato
+1	12	187	5	272	6	suspect	De Poena Peccati
+1	13	192	11	278	16	ok	De Morte quae dicitur Corporali
+1	14	203	11	294	14	ok	De Hominis Restitutione et Christo Redemptore
+1	15	214	7	308	8	ok	De Officio Mediatorio ejusque triplici munere
+1	16	221	13	316	16	ok	De Redemptionis Administratione
+1	17	234	8	332	10	ok	De Renovatione; ubi et de Vocatione
+1	18	242	5	342	5	ok	De Regeneratione
+1	19	247	6	347	6	ok	De Resipiscentia
+1	20	253	6	353	7	ok	De Fide Salvifica
+1	21	259	8	360	9	ok	De Insitione in Christum, ejusque Effectis
+1	22	267	9	369	10	ok	De Justificatione
+1	23	276	4	379	3	suspect	De Adoptione
+1	24	280	3	382	4	suspect	De Unione et Communione cum Christo ejusque Membris; de Ecclesia Mystica
+1	25	283	11	386	14	ok	De Glorificatione Inchoata; de Certitudine Salutis, et Perseverantia
+1	26	294	5	400	7	ok	De Manifestatione Foederis Gratiae; ubi et de Lege Dei
+1	27	299	10	407	22	ok	De Evangelio et Libertate Christiana
+1	28	309	23	429	22	suspect	De Sigillatione Foederis Gratiae Externa
+1	29	332	10	451	14	ok	De Ecclesia Visibili
+1	30	342	12	465	16	ok	De Scriptura Sacra
+1	31	354	12	481	16	ok	De Ecclesiis Particularibus
+1	32	366	6	497	8	ok	De Disciplina Ecclesiastica
+1	33	372	14	505	21	ok	De Glorificatione Perfecta; de secundo Christi Adventu, Resurrectione, Conflagratione
+2	1	387	8	527	10	ok	De Bonis Operibus
+2	2	395	9	537	10	ok	De Bonorum Operum Causis Proximis
+2	3	404	9	547	10	ok	De Virtutibus ad Dei Cultum pertinentibus
+2	4	413	16	557	22	ok	De Cultu Externo
+2	5	429	11	579	14	verified	De Jurejurando et Sorte
+2	6	440	6	593	7	verified	De Zelo
+2	7	446	9	600	13	ok	De Tempore Cultus divini; ubi de Sabbatho, Die Dominica, et Festis
+2	8	455	7	613	8	ok	De Officiis erga Homines praestandis, et quae huc pertinent Virtutes Generales
+2	9	462	12	621	15	ok	De Prima Specie Virtutum Specialium quae ad officium pertinent Hominis erga se
+2	10	474	3	636	3	ok	De Secunda Specie Virtutum ad officia Hominis erga se pertinentium
+2	11	477	10	639	11	ok	De Officiis Hominis erga Proximum, et quae Virtutes eo pertineant
+2	12	487	5	650	5	ok	De Virtutibus sive Officiis Specialibus erga Proximum
+2	13	492	12	655	17	ok	De Secunda Specie Officiorum Specialium erga Proximum
+2	14	504	7	672	8	ok	Adhuc de Secunda Specie Officiorum Specialium erga Proximum
+2	15	511	9	680	11	ok	De Officiis erga Proximum Mutuis, et speciatim Privatis
+2	16	520	4	691	5	ok	De Altera Specie Officiorum Privatorum
+2	17	524	12	696	15	suspect	De Officiis Publicis erga Proximum

@@ -86,13 +86,48 @@ truncated quotes and sometimes drops an `&c.` — same rule, don't "fix" either 
   coordination of vices into `First/Secondly/Thirdly/Fourthly` enumeration — structural habit,
   expect it throughout; it does not break ¶ alignment.
 
-## 5. Sumner's footnotes — `[^sN]`
+## 5. Sumner's footnotes — BOTH VOLUMES carry them
 
-Sumner's English footnotes (cross-references to *Paradise Lost* and Milton's prose) are part of
-the 1825 and are kept, as `en-sumner` apparatus. Anchor `[^sN]` where the printed superscript
-sits; N is Sumner's own printed note number. Definitions live under `## apparatus-sumner` with
-the printed page noted. Verse quoted in the notes is roman with the work-title italic, as
-printed. The `s` prefix reserves bare `[^N]` for any future editorial apparatus.
+**Amended 2026-08-04 (Wilson's ruling).** The original rule assumed apparatus was English-only.
+**The Latin volume has footnotes too** — first found at La p. 431 (II.v). Both are kept, in
+separate sections, with separate anchor namespaces:
+
+| volume | section | anchor | note numbers |
+|---|---|---|---|
+| English | `## apparatus-sumner-en` | `[^sN]` | Sumner's printed English number; cycles 1–9 (§8a) |
+| Latin | `## apparatus-sumner-la` | `[^laN]` | Sumner's printed Latin number; **independent run** |
+
+The two numbering runs are independent and WILL collide (both contain a note "5"). Never merge
+them, never renumber either to avoid a clash — that is what the distinct anchor prefixes are for.
+The `s` prefix still reserves bare `[^N]` for future editorial apparatus of our own.
+
+Anchor where the printed superscript sits; N is Sumner's own printed number. Definitions carry the
+printed page. Verse quoted in the notes is roman with the work-title italic, as printed. English
+notes are mostly cross-references to *Paradise Lost* and Milton's prose; the Latin notes seen so
+far are **textual** — see §5a.
+
+**Read the Latin plates for superscripts too.** Until II.v nobody was looking, so any Latin note
+in II.i–II.iv would have been missed. Those four chapters need a superscript-only re-check of
+their Latin plates before Book II is called complete.
+
+## 5a. Sumner's Latin notes are TEXTUAL — log them to the interventions ledger
+
+Added 2026-08-04. The Latin-volume note at p. 431 is not a cross-reference. It is Sumner
+disclosing that **the manuscript reads differently from what he printed**, and that he changed it
+(*ordinem leviter mutavi*).
+
+Every such note goes in two places: transcribed in the chunk's `## apparatus-sumner-la`, **and**
+appended as a row to **`tools/sumner-interventions.tsv`**. That file feeds PLAN §6.4
+(manuscript-state notes) at M4, which had not anticipated Sumner himself as a source.
+
+**State the limit whenever this data is used.** The ledger records only what Sumner *admitted*.
+He normalised silently and at scale (PLAN §4a); the undisclosed changes are the larger set. The
+ledger is evidence of specific interventions, never a collation and never a clean bill of health.
+
+This does not disturb the transcription rule. `la` remains verbatim-1825 — we print what Sumner
+printed, and his note is part of what he printed. It also does not disturb PLAN §4a, which already
+says in terms that the text is Sumner's and not the manuscript's, and requires the About page to
+say so.
 
 ## 6. Printed anomalies — kept as printed, flagged, never mended
 
@@ -108,7 +143,8 @@ Each goes in the chunk's `## Notes`; the text itself is never normalized.
 (threshold: La > 12 printed pages; split at Milton's own lemma seams, never at page counts).
 Frontmatter carries `id`, `book`, `chapter`, `title_la`, `title_en`, `pages_la`, `pages_en`
 (printed pages; pdf offsets live in STRUCTURE.md). Sections in order:
-`## la` · `## en-sumner` · `## apparatus-sumner` (omit if none) · `## headnote` · `## Notes`.
+`## la` · `## en-sumner` · `## apparatus-sumner-en` · `## apparatus-sumner-la` (omit either if none) ·
+`## headnote` · `## Notes`.
 
 ## 8. Headnote — frozen shape
 
@@ -123,6 +159,66 @@ Frontmatter carries `id`, `book`, `chapter`, `title_la`, `title_en`, `pages_la`,
 Secondary-source claims enter headnotes only in M4, cited author+page, verified per
 `feedback_christian-library-apparatus-headnotes-unverified`. Until then headnotes state only
 what the primary text shows.
+
+## 8a. Sumner's footnote numbering is a CONTINUOUS 1–9 CYCLE — use it as a checksum
+
+Added 2026-08-03 from II.i. **Revised 2026-08-03 from II.iv — the original rule was wrong in a
+load-bearing way and the revision is plate-proved; read this section, not the old one.**
+
+Sumner does **not** restart his English footnote numbers at each chapter or each page. They run
+continuously — but they are **single-digit and cycle: after 9 the next note is 1 again.** The
+original rule said "continuously through the whole book," which implied an ever-increasing
+ledger. It does not increase past 9.
+
+Plate proof (all 400 dpi-legible at 200 dpi, En vol.):
+- p. 565 carries notes **⁷** and **⁸** (note 8's text runs over the page with catchword "I cannot").
+- p. 566 carries **⁹** and then **¹** — the wrap happens *mid-page*, mid-chapter, mid-sentence-run.
+- II.iv's own first note is **¹**, on p. 557, exactly as the cycle predicts after II.ii closed at 9
+  and II.iii carried none.
+
+Ledger so far: II.i → **3–7** · II.ii → **8, 9** · II.iii → **none** · II.iv → **1 … 9, then 1 …**.
+
+Procedure, per chapter:
+
+- Record the first and last note number the chapter carries, and every wrap inside it.
+- The first note of chapter *N+1* must be exactly one past the last note of chapter *N*,
+  **wrapping 9 → 1**. A chapter with no notes passes the number through untouched (II.iii).
+- A break in that succession means **a note was missed** — go back and find it before the chunk
+  is called verified. Do not rationalise it; Sumner does not skip numbers.
+- **Know the check's blind spot:** because the cycle is only 9 long, it can never detect a miss
+  of exactly 9 notes (or any multiple of 9). It is a strong check on ones and twos, not a proof
+  of completeness. Do not let it substitute for reading every plate for superscripts.
+
+Book I's numbering must be re-established independently when it is reached (do not assume it
+continues from Book II, and do not assume it restarts).
+
+## 8b. The 1825's inconsistency crosses chapters, not just paragraphs
+
+Added 2026-08-03 from II.i. §2 already says the volume's emphasis typography is inconsistent
+and must be followed per instance. II.i shows the same is true of *accidentals in quoted
+Scripture across chapters*: Philipp. iv. 8 is set `siqua virtus et siqua laus est` at La p. 387
+but `si qua virtus, si qua laus est` at La p. 395 — one volume, one editor, one verse, two
+settings, nine pages apart.
+
+Consequence: **never normalise a reading in chapter B because of how chapter A set it.** Per
+instance means per instance, even when the two instances are the same verse. Log the pair in
+both chunks' `## Notes` so the divergence is discoverable from either end.
+
+## 8c. Roman inside an italic quotation is Milton's own voice — recurring, not exceptional
+
+Now attested twice (Philipp. ii. 15, La p. 400, `*…et integri* sive *simplices…*`; Heb. xi. 6,
+La p. 390, `*…mercedem* sive *præmium reddere.*`). A roman word inside an italic Scripture
+quotation is Milton supplying an alternative rendering, and the italic/roman boundary carries
+that meaning. Transcribe the boundary exactly; never absorb the roman word into the italic run.
+`sive` is the usual trigger word — treat it as a flag to look closely.
+
+## 8d. Partial chunks are legal
+
+A chunk may carry a subset of the language layers (§1 already requires the site to treat them
+as an array, and `site/scripts/build-content.mjs` discovers whatever `## <langkey>` sections
+are present). When only one layer is done, set `status: <layer>-verified` and add
+`<other>_status: pending`, and put a numbered "Owed on return" list at the top of `## Notes`
+saying exactly what remains. `chunks/ddc-2-01.md` is the reference for this shape.
 
 ## 9. Session discipline (inherited, applies here)
 
