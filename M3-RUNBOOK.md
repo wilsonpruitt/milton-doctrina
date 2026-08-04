@@ -31,7 +31,7 @@ doctrine, and the chapter everyone will actually read.
 | # | chunk | state |
 |---|---|---|
 | — | `ddc-2-02` | **done** (M1 pilot, Fable) |
-| — | `ddc-2-01` | **Latin done, English owed** — see §4 |
+| — | `ddc-2-01` | **done** (2026-08-04, Opus) — La 387–394 / En 527–536. **21 ¶¶ → 17**, two merges incl. a **QUADRUPLE** at {¶9–12}, the largest in the corpus. **Checksum passes EXACTLY: notes 3,4,5,6,7**, as §4 predicted before the range was abandoned. **★★ Notes 5 and 7 are *Paradise Lost* XII and *Sonnet* XIX — so II.viii's "first time he reaches for the poetry" is WITHDRAWN; it was an artefact of transcription order.** ★ Third English-side error (La `Prov. xxiv. 1` right, En `xxiv. 7` wrong, 640 dpi). ★ Greek `ἀτοπία` translated away. Transcribed past the content filter one paragraph per edit; {¶6} took six pieces. |
 | — | `ddc-2-03` | **done** (2026-08-03, Opus) — no Sumner footnotes at all |
 | — | `ddc-2-04-a` | **done** (2026-08-03, Opus) — La 413–416 / En 557–562; notes 1–5 |
 | — | `ddc-2-04-b` | **done** (2026-08-03, Opus) — La 417–420 / En 563–568, the whole `REVERENTER` lemma; notes 6,7,8,9,**1**,2,3,4 (contains the 9→1 wrap) |
@@ -78,7 +78,7 @@ doctrine, and the chapter everyone will actually read.
   Record this chapter's first and last note and every wrap inside it; the first note of chapter
   *N+1* must be one past the last of chapter *N*, **wrapping 9 → 1**. A chapter with zero notes
   passes the number through untouched.
-  **Ledger:** II.i → **3–7** (3, 4, 5 identified; 6 and 7 must be in pp. 530–536) · II.ii →
+  **Ledger:** II.i → **3, 4, 5, 6, 7** (✅ CLOSED 2026-08-04 — 6 and 7 found on En 530 and 535, exactly as predicted) · II.ii →
   **8, 9** · II.iii → **none** · II.iv → **1–9, then 1–8** · II.v → **9, 1, 2, 3, 4, 5** ·
   II.vi → **6, 7** (both predicted and confirmed) · II.vii → **8, 9, 1, 2, 3, 4, 5, 6, 7, 8** (ten
   notes, the cycle collides inside one chunk) · II.viii → **9** (a single note, predicted exactly) ·
@@ -99,19 +99,23 @@ doctrine, and the chapter everyone will actually read.
   Look at it: it should be the next chapter's opening or a blank tail. If it's continuous
   text, the extent is wrong.
 
-## 4. The one outstanding debt: II.i English
+## 4. ✅ DISCHARGED — II.i English (was the one outstanding debt)
 
-`chunks/ddc-2-01.md` has a complete, plate-verified Latin layer and **no English**. Printed
-pp. 527–536 were set aside on 2026-08-03 because Wilson hit content filtering on that range
-twice. Nothing about the Latin is provisional.
+**Closed 2026-08-04 on Wilson's go-ahead**, using the one-paragraph-per-edit technique of §10.
+`chunks/ddc-2-01.md` is `status: verified`, both layers, 21 ¶¶ → 17.
 
-The chunk's `## Notes` opens with a numbered **"Owed on return"** list — read it rather than
-reconstructing. It already records three Sumner behaviours observed before the stop (the
-`(to use a logical expression)` gloss, the two `et` → "or" readings in ¶1, and the dropped
-connective `et` before `iv. 8.`), plus the footnote-range test.
+Kept here because the episode is the best evidence the project has for two rules:
 
-**Before retrying, ask Wilson whether that range is workable now.** Don't silently re-attempt
-a range he pulled the session off.
+1. **§10 works, and nothing was lost to the filter.** {¶6} blocked twice as a whole paragraph and
+   went through in **six pieces**; the remaining long paragraphs were pre-split and passed first
+   time. Five blocks across the chapter's history, **zero paraphrase, zero omission**.
+2. **A queue that does not run in book order will manufacture false "firsts."** Because this
+   chapter's English was transcribed last, II.viii recorded a Sumner habit as novel that II.i —
+   the Book's opening chapter — already displays. That claim has been **withdrawn** in
+   `ddc-2-08.md`. **Any "first time X appears" note is a claim about what has been read; say so.**
+
+The chapter's checksum prediction (notes 3–7) held exactly, which closes the last open cell in the
+§3 ledger.
 
 ## 5. I.iv–I.vi are scheduled last on purpose
 

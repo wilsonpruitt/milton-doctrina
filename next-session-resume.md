@@ -239,13 +239,30 @@ carrying forward, because each changes how the next chapter should be read:
   the instrument. Also logged: Sumner silently **reorders proof-texts** at {¶29}, and renders
   *ornamenta vitæ* as "a high station", which the Latin does not say.
 
-Three debts to settle when convenient:
-1. **II.i's English** (pp. 527–536) — Wilson has approved a retry **in small chunks**, a few pages
-   at a time, so a filter hit doesn't cost a whole large read.
+**Two debts remain** (one was just discharged):
+1. ✅ ~~II.i's English~~ — **DONE 2026-08-04.** Both layers verified; see below.
 2. **The Book II Latin sweep** (runbook §9b) — a page-feet-only pass over La 387–454, its own
-   session. **It gates "Book II complete."** II.v–II.viii were read for Latin superscripts as they
+   session. **It gates "Book II complete."** II.v–II.ix were read for Latin superscripts as they
    were transcribed; II.i–II.iv were not.
 3. The six open suspect flags (runbook §7).
+
+**✅ II.i is CLOSED — the last outstanding debt in Book II.** Transcribed past the content filter
+with the one-paragraph-per-edit technique; {¶6} blocked twice as a whole paragraph and went through
+in six pieces. **Nothing was paraphrased or omitted to get past a block.** 21 ¶¶ → 17, including a
+**quadruple merge** at {¶9–12}, the largest in the corpus. Its footnote prediction (notes 3–7) held
+exactly, closing the last open cell in the checksum ledger.
+
+⚠⚠ **The finding to carry into every future chapter: a queue that does not run in book order
+manufactures false "firsts."** II.viii recorded Sumner's use of Milton's poetry as a novelty; II.i,
+the Book's **opening** chapter, already quotes *Paradise Lost* and *Sonnet* XIX. The claim has been
+**withdrawn** in `ddc-2-08.md` (amended twice). **Any note of the form "the first time X appears"
+is a claim about what has been READ, not about the book — write it that way or don't write it.**
+
+★ Also from II.i: a **third** plate-confirmed error in the English layer (La `Prov. xxiv. 1` is
+right, En prints `xxiv. 7`), and the Greek pattern is now clean over four instances — **Sumner
+translates Milton's Greek technical terms away** (ἀτοπία, φιλαυτία, αὐταρκεία) **but keeps his
+Greek poetic quotation** (Homer, with Cowper added). A reader of the English alone cannot tell
+Milton left Latin; that belongs on the About page.
 
 **One small convention question is now owed** (recorded in `chunks/ddc-2-08.md` Notes): a printed
 page break falling **mid-word** — En 613/614 breaks *accept-* | *-able*. Written as
