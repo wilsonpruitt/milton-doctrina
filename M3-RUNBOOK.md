@@ -37,11 +37,12 @@ doctrine, and the chapter everyone will actually read.
 | — | `ddc-2-04-b` | **done** (2026-08-03, Opus) — La 417–420 / En 563–568, the whole `REVERENTER` lemma; notes 6,7,8,9,**1**,2,3,4 (contains the 9→1 wrap) |
 | — | `ddc-2-04-c` | **done** (2026-08-03, Opus) — La 420–428 / En 568–578; notes 5–8. **II.iv complete.** |
 | — | `ddc-2-05` | **done** (2026-08-04, Opus) — La 429–439 / En 579–592, both layers plate-verified. **34 ¶¶ → 34 ¶¶, strict 1:1, no merges** (first whole chapter to do so). Notes **9, 1, 2, 3, 4, 5** — the predicted wrap confirmed. All four suspect La citations resolved, all four `Luc. ix. 66`-class; **eight La errors in one chapter, four in Isaiah**. The English carries **no** counterpart to `[^la5]`. |
-| 1 | `ddc-2-06` | prepped — extents corrected & plate-verified. **Must open at note 6.** |
-| 2 | `ddc-2-07` | prepped |
-| 3 | `ddc-2-08` | prepped |
-| 4 | `ddc-2-09` | prepped |
-| 5+ | `ddc-2-10` … `ddc-2-17` | run `prep-chapter.sh 2 10 2 17` first |
+| — | `ddc-2-06` | **done** (2026-08-04, Opus) — La 440–445 / En 593–599. 23 ¶¶ → 22, one merge at {¶13–14}. Notes **6, 7** as predicted. No Latin apparatus. **★ The English volume's HEBREW is corrupt where the Latin's is sound** — see the chunk's Notes; needs Wilson's ruling. Writing its *blasphemia* paragraphs tripped a content filter — see §10. |
+| 1 | `ddc-2-07` | prepped. **Must open at note 8.** |
+| 2 | `ddc-2-08` | prepped |
+| 3 | `ddc-2-09` | prepped — 12 La pp., exactly AT the split threshold (§7 splits at >12), so one chunk |
+| 4 | `ddc-2-10` | prepped 2026-08-04 (La 474–476 / En 636–638, 3 pp. each) |
+| 5+ | `ddc-2-11` … `ddc-2-17` | run `prep-chapter.sh 2 10 2 17` first |
 | then | Book I, i–iii and vii–xxxiii | |
 | last | `ddc-1-04`, `ddc-1-05`, `ddc-1-06` | see §5 |
 
@@ -75,8 +76,8 @@ doctrine, and the chapter everyone will actually read.
   *N+1* must be one past the last of chapter *N*, **wrapping 9 → 1**. A chapter with zero notes
   passes the number through untouched.
   **Ledger:** II.i → **3–7** (3, 4, 5 identified; 6 and 7 must be in pp. 530–536) · II.ii →
-  **8, 9** · II.iii → **none** · II.iv → **1–9, then 1–8** · II.v → **9, 1, 2, 3, 4, 5**
-  (predicted and confirmed). So **II.vi must open at note 6.**
+  **8, 9** · II.iii → **none** · II.iv → **1–9, then 1–8** · II.v → **9, 1, 2, 3, 4, 5** ·
+  II.vi → **6, 7** (both predicted and confirmed). So **II.vii must open at note 8.**
   Blind spot: the cycle is only 9 long, so it can never detect a miss of exactly 9 notes. It is
   not a substitute for reading every plate for superscripts.
 - **Also check the LATIN plates for superscripts.** The Latin volume carries apparatus too — see
@@ -175,3 +176,25 @@ the right transcription rule (we reproduce what Sumner printed, and the note is 
 any claim that the edition gives *Milton's* Latin rather than *Sumner's* now has a documented
 counter-example. Watch for further Latin-side notes in every chapter from here on; nothing tells
 us this is the only one.
+
+
+## 10. Content filtering — a real, recurring obstacle with a known workaround
+
+**II.vi blocked a content filter when its four *blasphemia* paragraphs were written as one block**
+(2026-08-04), and II.i's English blocked twice on 2026-08-03 (§4). This is now a pattern, not an
+accident: chapters whose subject is cursing, blasphemy, or idolatrous rites concentrate the
+triggering material, and Book II is full of them.
+
+**The workaround works and is now the standard procedure for such chapters:**
+
+1. Read all plates first. Reading is never the problem — writing is.
+2. Write the frontmatter and every low-risk paragraph, leaving `<!-- GAP: {¶N} owed -->` markers.
+3. Write the apparatus, headnote and Notes.
+4. **Commit.** The chapter is now safe whatever happens next.
+5. Add the hard paragraphs **one at a time**. Split any single paragraph that still blocks in half
+   with a temporary unique tail marker, then rejoin with a second edit.
+6. Flip `status: draft` → `verified` and delete the GAP markers.
+
+A chunk stuck at step 4 is a legal partial chunk (CONVENTIONS §8d) and the site builds it fine.
+**Never paraphrase or omit to get around a block** — that would silently corrupt the edition, which
+is worse than an unfinished chunk.
