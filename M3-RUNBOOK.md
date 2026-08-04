@@ -59,7 +59,10 @@ doctrine, and the chapter everyone will actually read.
 4. **English layer.** Read every plate. Open each paragraph with the La ¶ it renders
    (`{¶4}`, or `{¶2–3}` for Sumner's merges). Coverage must be complete and monotonic.
 5. **Run the checks in §3.** All of them.
-6. **Write the chunk** in the §7 section order. Log divergences, accidentals, typography and
+6. **Write the chunk** in the CONVENTIONS §7 section order — note it now includes
+   `## apparatus-editorial` (CONVENTIONS §5c) for notes of our own, anchored bare `[^N]`.
+   If the chapter carries ten or more English notes the printed numbers collide: use the
+   `-2` suffix (CONVENTIONS §5b). Log divergences, accidentals, typography and
    alignment in `## Notes`.
 7. **Headnote** — 4 slots, ≤200 words, `*Loci: pending M4.*`. Write it only with both layers
    in hand; it is not draftable from the Latin alone.
@@ -81,7 +84,9 @@ doctrine, and the chapter everyone will actually read.
   Blind spot: the cycle is only 9 long, so it can never detect a miss of exactly 9 notes. It is
   not a substitute for reading every plate for superscripts.
 - **Also check the LATIN plates for superscripts.** The Latin volume carries apparatus too — see
-  §9. Its numbering is independent of the English run.
+  §9. Its numbering is independent of the English run, and per §9b its *numbers* are not yet a
+  usable checksum. **Classify each Latin note textual or scholarly** (CONVENTIONS §5a): only
+  textual ones get a row in `tools/sumner-interventions.tsv`.
 - **¶ coverage.** Every La ¶ appears exactly once on the En side. Count both sides and record
   the merge list.
 - **Page ratio.** En pages ÷ La pages should land ~1.1–1.8. Outside that, suspect a boundary.
@@ -177,6 +182,27 @@ any claim that the edition gives *Milton's* Latin rather than *Sumner's* now has
 counter-example. Watch for further Latin-side notes in every chapter from here on; nothing tells
 us this is the only one.
 
+
+## 9b. THE BOOK II LATIN SWEEP — scheduled, its own session, gates "Book II complete"
+
+**Ruled 2026-08-04 (Wilson).** Two standing obligations are combined into **one page-feet-only pass
+over La 387–454** — every Latin page of Book II transcribed so far (chapters i–vii). No
+transcription, no re-reading of text: look at the bottom of each page for superscripts.
+
+It resolves both of these at once:
+
+1. **The numbering anomaly.** II.v's Latin note is **5** (La p. 431); II.vii's is **4** (La p. 454).
+   A continuous 1–9 cycle would put seven notes (6,7,8,9,1,2,3) in La 432–453. None were seen while
+   transcribing. Either the Latin numbering restarts on some unit we have not identified, or notes
+   were missed. **Do not guess** — the sweep decides it.
+2. **The II.i–II.iv re-check.** Nobody looked at Latin page feet before II.v, so a Latin note in
+   those four chapters would have been missed entirely (§9).
+
+**Until the sweep is done, treat `[^laN]` numbers as labels, not as a checksum.** The English
+checksum is a separate, independent run and is unaffected — it is still passing (§3).
+
+**This is a gate: Book II cannot be called complete until the sweep has run.** It is cheap per page
+but ~68 plates, so give it its own session rather than wedging it into a chapter.
 
 ## 10. Content filtering — a real, recurring obstacle with a known workaround
 

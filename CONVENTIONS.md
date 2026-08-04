@@ -99,26 +99,27 @@ separate sections, with separate anchor namespaces:
 
 The two numbering runs are independent and WILL collide (both contain a note "5"). Never merge
 them, never renumber either to avoid a clash — that is what the distinct anchor prefixes are for.
-The `s` prefix still reserves bare `[^N]` for future editorial apparatus of our own.
+The `s` prefix still reserves bare `[^N]` for editorial apparatus of our own — see §5c.
 
-Anchor where the printed superscript sits; N is Sumner's own printed number. Definitions carry the
-printed page. Verse quoted in the notes is roman with the work-title italic, as printed. English
-notes are mostly cross-references to *Paradise Lost* and Milton's prose; the Latin notes seen so
-far are **textual** — see §5a.
-
-**Read the Latin plates for superscripts too.** Until II.v nobody was looking, so any Latin note
-in II.i–II.iv would have been missed. Those four chapters need a superscript-only re-check of
-their Latin plates before Book II is called complete.
-
-## 5a. Sumner's Latin notes are TEXTUAL — log them to the interventions ledger
+## 5a. Latin notes are TEXTUAL or SCHOLARLY — only textual ones are ledgered
 
 Added 2026-08-04. The Latin-volume note at p. 431 is not a cross-reference. It is Sumner
 disclosing that **the manuscript reads differently from what he printed**, and that he changed it
 (*ordinem leviter mutavi*).
 
-Every such note goes in two places: transcribed in the chunk's `## apparatus-sumner-la`, **and**
-appended as a row to **`tools/sumner-interventions.tsv`**. That file feeds PLAN §6.4
-(manuscript-state notes) at M4, which had not anticipated Sumner himself as a source.
+**Amended 2026-08-04 (Wilson's ruling), from II.vii.** Latin-volume notes come in **two kinds**,
+and the transcriber must classify each one:
+
+| kind | what it is | goes where |
+|---|---|---|
+| **textual** | Sumner discloses that the manuscript differs from what he printed, or that he changed something (La p. 431, *ordinem leviter mutavi*) | `## apparatus-sumner-la` **and** a row in `tools/sumner-interventions.tsv` |
+| **scholarly** | Sumner argues for or around Milton — assembling authorities, glossing an allusion, defending a position (La p. 454, the Reformed divines on the Sabbath) | `## apparatus-sumner-la` **only** |
+
+**When in doubt, do not ledger it.** `tools/sumner-interventions.tsv` exists to answer one
+question — *where did Sumner admit changing Milton's text?* — and it feeds PLAN §6.4
+(manuscript-state notes) at M4. A page of Reformed proof-texts filed as an "intervention" would
+corrupt exactly the evidence base that file exists to provide. Scholarly notes stay discoverable
+because they are transcribed in full in the chunk.
 
 **State the limit whenever this data is used.** The ledger records only what Sumner *admitted*.
 He normalised silently and at scale (PLAN §4a); the undisclosed changes are the larger set. The
@@ -128,6 +129,51 @@ This does not disturb the transcription rule. `la` remains verbatim-1825 — we 
 printed, and his note is part of what he printed. It also does not disturb PLAN §4a, which already
 says in terms that the text is Sumner's and not the manuscript's, and requires the About page to
 say so.
+
+## 5b. Anchor collisions WITHIN one chunk — `-2` suffix
+
+**Added 2026-08-04 (Wilson's ruling), from II.vii.** §5 assumed fewer than ten notes per chunk.
+That fails: Sumner's English numbers cycle 1–9 (§8a), so **any chunk carrying ten or more notes
+repeats a printed number.** II.vii carries ten — ledger `8 · 9 · 1 · 2 · 3 · 4 · 5 · 6 · 7 · 8` —
+and would otherwise need two anchors called `[^s8]`.
+
+**Rule.** The first occurrence keeps the plain anchor (`[^s8]`). Each later occurrence of the same
+printed number appends `-2`, `-3`, … in reading order (`[^s8-2]`). The definition must open by
+stating the printed number and which occurrence it is:
+
+> `[^s8-2]: (printed En pp. 611–612 as note **8** — the chapter's SECOND note so numbered; anchored after …)`
+
+Chosen because it keeps the printed number visible in the anchor, sorts predictably, and cannot be
+mistaken for a note printed "8-2". It applies to `[^laN]` equally if the Latin ever collides.
+Book I's longer chapters will hit this repeatedly; do not invent a second scheme.
+
+## 5c. OUR OWN apparatus — bare `[^N]`, section `## apparatus-editorial`
+
+**Added 2026-08-04 (Wilson's ruling), from II.vi.** §5 had reserved bare `[^N]` for editorial
+apparatus of our own without ever defining where it lives. It lives in **`## apparatus-editorial`**,
+anchored `[^1]`, `[^2]`, … numbered per chunk in reading order.
+
+This layer is **ours, not 1825**, and that distinction is the whole point of keeping it separate
+from `apparatus-sumner-*`. Use it only where the printed text would otherwise mislead a reader who
+cannot check it — the founding case is II.vi's corrupt Hebrew, where the English volume prints two
+non-words and no reader without Hebrew could tell.
+
+Two hard constraints:
+- **It never alters the text.** Verbatim-1825 (§2) and never-harmonize (§3) still govern. The note
+  says what is wrong; the text keeps saying what Sumner printed.
+- **Every claim in it is verified or explicitly marked unverified**, per
+  `feedback_christian-library-apparatus-headnotes-unverified`. A note resting on our own reading of
+  a plate, in a script we do not command, carries **⚠ UNVERIFIED** until a specialist confirms it,
+  and must not be published without that mark.
+
+Anchor where the printed superscript sits; N is Sumner's own printed number. Definitions carry the
+printed page. Verse quoted in the notes is roman with the work-title italic, as printed. English
+notes are mostly cross-references to *Paradise Lost* and Milton's prose; the Latin notes seen so
+far are **textual** — see §5a.
+
+**Read the Latin plates for superscripts too.** Until II.v nobody was looking, so any Latin note
+in II.i–II.iv would have been missed. Those four chapters need a superscript-only re-check of
+their Latin plates before Book II is called complete.
 
 ## 6. Printed anomalies — kept as printed, flagged, never mended
 
@@ -143,8 +189,10 @@ Each goes in the chunk's `## Notes`; the text itself is never normalized.
 (threshold: La > 12 printed pages; split at Milton's own lemma seams, never at page counts).
 Frontmatter carries `id`, `book`, `chapter`, `title_la`, `title_en`, `pages_la`, `pages_en`
 (printed pages; pdf offsets live in STRUCTURE.md). Sections in order:
-`## la` · `## en-sumner` · `## apparatus-sumner-en` · `## apparatus-sumner-la` (omit either if none) ·
-`## headnote` · `## Notes`.
+`## la` · `## en-sumner` · `## apparatus-sumner-en` · `## apparatus-sumner-la` ·
+`## apparatus-editorial` (§5c) · `## headnote` · `## Notes`. Omit any apparatus section with no
+content. `build-content.mjs` treats every `apparatus-*` header as reserved, so the editorial
+section parses without a parser change.
 
 ## 8. Headnote — frozen shape
 
