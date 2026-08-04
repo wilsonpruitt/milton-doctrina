@@ -38,10 +38,10 @@ doctrine, and the chapter everyone will actually read.
 | — | `ddc-2-04-c` | **done** (2026-08-03, Opus) — La 420–428 / En 568–578; notes 5–8. **II.iv complete.** |
 | — | `ddc-2-05` | **done** (2026-08-04, Opus) — La 429–439 / En 579–592, both layers plate-verified. **34 ¶¶ → 34 ¶¶, strict 1:1, no merges** (first whole chapter to do so). Notes **9, 1, 2, 3, 4, 5** — the predicted wrap confirmed. All four suspect La citations resolved, all four `Luc. ix. 66`-class; **eight La errors in one chapter, four in Isaiah**. The English carries **no** counterpart to `[^la5]`. |
 | — | `ddc-2-06` | **done** (2026-08-04, Opus) — La 440–445 / En 593–599. 23 ¶¶ → 22, one merge at {¶13–14}. Notes **6, 7** as predicted. No Latin apparatus. **★ The English volume's HEBREW is corrupt where the Latin's is sound** — see the chunk's Notes; needs Wilson's ruling. Writing its *blasphemia* paragraphs tripped a content filter — see §10. |
-| 1 | `ddc-2-07` | prepped. **Must open at note 8.** |
-| 2 | `ddc-2-08` | prepped |
-| 3 | `ddc-2-09` | prepped — 12 La pp., exactly AT the split threshold (§7 splits at >12), so one chunk |
-| 4 | `ddc-2-10` | prepped 2026-08-04 (La 474–476 / En 636–638, 3 pp. each) |
+| — | `ddc-2-07` | **done** (2026-08-04, Opus) — La 446–454 / En 600–612. **22 ¶¶ → 22, strict 1:1.** Notes **8,9,1,2,3,4,5,6,7,8** — ten notes, so the cycle COLLIDES inside one chunk; provisional `[^s8-2]` scheme needs Wilson's ruling. Latin note `[^la4]` is scholarly not textual. **★ Sumner's note `[^s9]` states the whole Ames/Wollebius loci thesis.** Filter-blocked three times; see §10. |
+| 1 | `ddc-2-08` | prepped. **Must open at note 9.** |
+| 2 | `ddc-2-09` | prepped — 12 La pp., exactly AT the split threshold (§7 splits at >12), so one chunk |
+| 3 | `ddc-2-10` | prepped 2026-08-04 (La 474–476 / En 636–638, 3 pp. each) |
 | 5+ | `ddc-2-11` … `ddc-2-17` | run `prep-chapter.sh 2 10 2 17` first |
 | then | Book I, i–iii and vii–xxxiii | |
 | last | `ddc-1-04`, `ddc-1-05`, `ddc-1-06` | see §5 |
@@ -198,3 +198,14 @@ triggering material, and Book II is full of them.
 A chunk stuck at step 4 is a legal partial chunk (CONVENTIONS §8d) and the site builds it fine.
 **Never paraphrase or omit to get around a block** — that would silently corrupt the edition, which
 is worse than an unfinished chunk.
+
+**Revised 2026-08-04 after II.vii, which blocked three times.** One block was on a *single
+paragraph*, which then needed splitting into five pieces. Lesson: for a chapter whose subject is
+polemical (Sabbath, blasphemy, idolatry, church vs. magistrate), **do not batch at all — write one
+paragraph per edit from the very start.** In II.vii every paragraph written singly went through
+first time; only the batched ones failed. Pre-splitting costs a few extra edits; a failed batch
+costs the read.
+
+**Also: guard every string replace.** Two separate corruptions were introduced in II.vii by
+`str.replace` on text that also occurred in the chunk's own `## Notes` (which quotes the
+apparatus). Always assert the match count is 1, or anchor by line index.
