@@ -221,9 +221,26 @@ layers. II.viii (La 455–461 / En 613–620) came in at 27 ¶¶ → 25 with two
 footnote printed **9** exactly as predicted, no Latin apparatus, and **no filter block at all** —
 every paragraph written singly from the outset, which is now the settled procedure (runbook §10).
 
-**Next is `ddc-2-09`** (La 462–473 / En 621–635, plates already prepped). Twelve Latin pages —
-exactly *at* the split threshold, which splits only above 12, so it stays one chunk. **Its first
-English footnote must be 1** — the wrap.
+**▶ RESUME AT `ddc-2-09`, which is HALF DONE.** Latin layer **complete** (41 ¶¶, La 462–473 — the
+largest chapter transcribed so far); English **through {¶8} only** (En 621–624). ⚠ **Read the
+chunk's own "Owed on return" list in `chunks/ddc-2-09.md` Notes before anything else** — it names
+the eleven unread plates, the one already-transcribed note whose anchor still needs placing
+(`[^s3]`), and three specific things the Latin flagged for the English to answer.
+
+Two findings from it worth knowing before you open the file:
+- **★★ Every Sumner note in the chapter so far defends Milton's CHARACTER** — that he drank
+  little, rose at four, and did not frequent the bordelloes — answered out of the *Apology for
+  Smectymnuus*, *Comus*, *Samson Agonistes*, *Paradise Lost* XI and the elegies. That is a fourth
+  editorial behaviour, and it **qualifies the II.viii note** about Sumner reaching for the poetry;
+  amend `ddc-2-08.md` when II.ix closes.
+- **★ The Latin carries two Greek passages**, both restored at 640 dpi: a full hexameter of Homer
+  (*Odyss.* ά. 333, Penelope) offered as evidence for a Christian virtue, and αὐταρκεία as a
+  technical virtue-name whose lemma is set in Greek capitals — **printed paroxytone, not the
+  standard αὐτάρκεια**, transcribed as printed and not to be "corrected."
+
+**Six suspect Latin citations are flagged and UNRESOLVED** in that chunk's Notes; the English layer
+is the instrument that settles them, as at II.v. One is already settled (La `1 Pet. ii. 12` →
+En `ii. 11`) and it was *not* on the list — so the list is a starting point, not a census.
 
 Three debts to settle when convenient:
 1. **II.i's English** (pp. 527–536) — Wilson has approved a retry **in small chunks**, a few pages

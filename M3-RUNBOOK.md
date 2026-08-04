@@ -40,7 +40,7 @@ doctrine, and the chapter everyone will actually read.
 | — | `ddc-2-06` | **done** (2026-08-04, Opus) — La 440–445 / En 593–599. 23 ¶¶ → 22, one merge at {¶13–14}. Notes **6, 7** as predicted. No Latin apparatus. **★ The English volume's HEBREW is corrupt where the Latin's is sound** — see the chunk's Notes; needs Wilson's ruling. Writing its *blasphemia* paragraphs tripped a content filter — see §10. |
 | — | `ddc-2-07` | **done** (2026-08-04, Opus) — La 446–454 / En 600–612. **22 ¶¶ → 22, strict 1:1.** Notes **8,9,1,2,3,4,5,6,7,8** — ten notes, so the cycle COLLIDES inside one chunk; provisional `[^s8-2]` scheme needs Wilson's ruling. Latin note `[^la4]` is scholarly not textual. **★ Sumner's note `[^s9]` states the whole Ames/Wollebius loci thesis.** Filter-blocked three times; see §10. |
 | — | `ddc-2-08` | **done** (2026-08-04, Opus) — La 455–461 / En 613–620. **27 ¶¶ → 25**, two Sumner merges ({¶5–6}, {¶11–12}), both a lemma absorbed into the paragraph it governs. **Exactly one note, printed 9** — the prediction was exact. No Latin apparatus (all 7 feet read). Five citation divergences, all versification, none of the `Luc. ix. 66` class. **★ `[^s9]` is fourteen lines of *Samson Agonistes* — the first time Sumner reaches for the POETRY, and he does it where Milton's prose on self-slaughter is briefest.** No filter blocks: every paragraph written singly. |
-| 1 | `ddc-2-09` | prepped — 12 La pp., exactly AT the split threshold (§7 splits at >12), so one chunk. **Must open at note 1** (the wrap). |
+| 1 | `ddc-2-09` | **IN PROGRESS** (2026-08-04, Opus) — **Latin COMPLETE, 41 ¶¶, La 462–473** (largest chapter yet; CAP. X confirmed at La 474; no Latin apparatus in 12 page feet). **English through {¶8} only, En 621–624; {¶9}–{¶41} owed, eleven plates unread.** Notes **1, 2, 3** so far — the wrap confirmed. **★★ Every note is a defence of Milton's CHARACTER** (drink, sleep, chastity), drawing on *Comus*, *Samson Agonistes*, *PL* XI, the elegies and the *Apology* — a fourth editorial behaviour, and it qualifies II.viii's poetry note. **★ Two Greek passages in the Latin, both restored at 640 dpi: a Homer hexameter (*Odyss.* ά. 333) and ΑΥΤΑΡΚΕΙΑ, printed paroxytone.** **Six suspect La citations flagged, one already resolved** (La `1 Pet. ii. 12` → En `ii. 11`). **▶ Read the chunk's "Owed on return" list first.** |
 | 2 | `ddc-2-10` | prepped 2026-08-04 (La 474–476 / En 636–638, 3 pp. each) |
 | 3+ | `ddc-2-11` … `ddc-2-17` | run `prep-chapter.sh 2 10 2 17` first |
 | then | Book I, i–iii and vii–xxxiii | |
@@ -81,8 +81,9 @@ doctrine, and the chapter everyone will actually read.
   **Ledger:** II.i → **3–7** (3, 4, 5 identified; 6 and 7 must be in pp. 530–536) · II.ii →
   **8, 9** · II.iii → **none** · II.iv → **1–9, then 1–8** · II.v → **9, 1, 2, 3, 4, 5** ·
   II.vi → **6, 7** (both predicted and confirmed) · II.vii → **8, 9, 1, 2, 3, 4, 5, 6, 7, 8** (ten
-  notes, the cycle collides inside one chunk) · II.viii → **9** (a single note, predicted exactly).
-  So **II.ix must open at note 1** — the first wrap of the new cycle.
+  notes, the cycle collides inside one chunk) · II.viii → **9** (a single note, predicted exactly) ·
+  II.ix → **1, 2, 3 …** (the wrap confirmed on En 621; **this chapter's ledger is still OPEN** —
+  eleven plates unread, so do not treat 3 as its last note).
   Blind spot: the cycle is only 9 long, so it can never detect a miss of exactly 9 notes. It is
   not a substitute for reading every plate for superscripts.
 - **Also check the LATIN plates for superscripts.** The Latin volume carries apparatus too — see
