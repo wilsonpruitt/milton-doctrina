@@ -216,8 +216,39 @@ Work from `M3-RUNBOOK.md` — **its queue table in §1 is the authoritative per-
 kept current chapter by chapter. Book II first, then Book I, saving I.iv–I.vi for last. Opus per
 chunk.
 
-**▶ NEXT IS `ddc-2-10`** (La 474–476 / En 636–638 — three pages each, the shortest chapter in
-Book II; plates already prepped). **Its first English footnote must be 4** — II.ix closed at 3.
+**▶ NEXT IS `ddc-2-10`** — **IN PROGRESS. The LATIN LAYER IS READ; the English is not.**
+La 474–476 / En 636–638. **Its first English footnote must be 4** — II.ix closed at 3.
+
+⚠⚠ **BEFORE READING ANY PLATE, RE-RUN `./tools/prep-chapter.sh 2 10`.** The script was fixed
+2026-08-04 (commit `2b5e420`) to name plates by **printed** page; it previously named them by **PDF**
+page, so `raw/plates/la-474.jpg` held printed **458** — a 16-page offset one step from being
+transcribed as the wrong chapter. Stale PDF-named plates from earlier preps are still on disk and
+must not be trusted. `raw/` is gitignored and regenerable; re-prep, don't guess.
+
+**What the Latin read established (2026-08-04, Opus) — no need to re-derive, but re-read the
+plates before transcribing, since the verbatim text was not written:**
+
+- **Extent confirmed at BOTH ends off the plate.** `CAP. X.` opens La 474 under the full title
+  *De Secunda Specie Virtutum ad Officia Hominis erga se Pertinentium*; La 476 ends the chapter
+  two-thirds down with a blank tail; **`CAP. XI.` opens La 477**. The `ok` flag in `chapters.tsv`
+  is now plate-verified — mark it `verified`.
+- **10 Latin paragraphs**, in this order: {¶1} *Dictæ sunt virtutes…* · {¶2} *Eæque sunt fortitudo
+  et patientia.* (a one-line division) · {¶3} **FORTITUDO** *elucet maxime…* (runs 474→475) ·
+  {¶4} *Fortitudinis exemplum maximum est servator noster Jesus Christus…* · {¶5} *Huic opponitur
+  timiditas.* · {¶6} *Et temeritas…* · {¶7} **PATIENTIA** *est in malis atque injuriis perferendis…*
+  (runs 475→476) · {¶8} *Huic opponitur impatientia et mollities.* · {¶9} *Et patientia hypocritica…*
+  (Baalites and *flagellatores papistici*) · {¶10} *Et Stoica ἀπάθεια…*
+- **NO Latin apparatus.** All three page feet read: 474 ends in text, 475 in signature `3 P 2`,
+  476 in a blank tail. Nothing to classify, nothing for `sumner-interventions.tsv`.
+- **★ Greek to watch in the English layer: `ἀπάθεια` at La 476 {¶10}.** The standing pattern is that
+  **Sumner translates Milton's Greek technical terms away** (ἀτοπία, φιλαυτία, αὐταρκεία) while
+  keeping his Greek poetic quotations. If ἀπάθεια survives into the English, that is a genuine
+  counter-example and should be logged as one; if it is Englished as "insensibility" or the like,
+  it is the fifth instance of the pattern. **Do not call either outcome a "first" —** the queue-order
+  rule applies (a claim about what has been READ, not about the book).
+- The page ratio is **1.00** (3 La / 3 En), below the usual 1.1–1.8 band. Both extents are now
+  plate-confirmed, so this is a real feature of the chapter, not a boundary error — Sumner did not
+  expand here. Worth a line in the chunk's Notes.
 
 **Book II is now done through II.ix.** II.ix came in at **41 ¶¶ → 41, strict 1:1** — the longest
 chapter transcribed and only the second to run 1:1 throughout. Three findings from it are worth
