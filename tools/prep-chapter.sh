@@ -52,12 +52,25 @@ prep_one() {
     echo "    !!  BEFORE transcribing, and correct chapters.tsv when you do."
   fi
 
-  pdftoppm -jpeg -r 200 -f "$la_f" -l "$la_l" "$RAW/la.pdf" "$RAW/plates/la"
-  pdftoppm -jpeg -r 200 -f "$en_f" -l "$en_l" "$RAW/en.pdf" "$RAW/plates/en"
+  # Render one page at a time and name the file by PRINTED page, matching
+  # sweep-feet.sh and every ledger, runbook and chunk in the project. Naming these
+  # by PDF page (as this script did until 2026-08-04) puts `la-474.jpg` on printed
+  # 458 and invites transcribing the wrong sixteen pages.
+  local p pdf out
+  for ((p = la_start; p <= la_start + la_pp; p++)); do
+    pdf=$((p + LA_OFFSET)); out="$RAW/plates/la-$p"
+    pdftoppm -jpeg -r 200 -f "$pdf" -l "$pdf" "$RAW/la.pdf" "$out"
+    mv "$out-$pdf.jpg" "$out.jpg"
+  done
+  for ((p = en_start; p <= en_start + en_pp; p++)); do
+    pdf=$((p + EN_OFFSET)); out="$RAW/plates/en-$p"
+    pdftoppm -jpeg -r 200 -f "$pdf" -l "$pdf" "$RAW/en.pdf" "$out"
+    mv "$out-$pdf.jpg" "$out.jpg"
+  done
   pdftotext -f "$la_f" -l "$la_l" -layout "$RAW/la.pdf" "$RAW/la-ch$tag.txt"
   pdftotext -f "$en_f" -l "$en_l" -layout "$RAW/en.pdf" "$RAW/en-ch$tag.txt"
 
-  echo "    plates: raw/plates/la-{$la_f..$la_l}.jpg  raw/plates/en-{$en_f..$en_l}.jpg"
+  echo "    plates: raw/plates/la-{$la_start..$((la_start + la_pp))}.jpg  raw/plates/en-{$en_start..$((en_start + en_pp))}.jpg  (PRINTED pages)"
   echo "    drafts: raw/la-ch$tag.txt  raw/en-ch$tag.txt"
   echo
 }
