@@ -216,39 +216,50 @@ Work from `M3-RUNBOOK.md` — **its queue table in §1 is the authoritative per-
 kept current chapter by chapter. Book II first, then Book I, saving I.iv–I.vi for last. Opus per
 chunk.
 
-**▶ NEXT IS `ddc-2-10`** — **IN PROGRESS. The LATIN LAYER IS READ; the English is not.**
-La 474–476 / En 636–638. **Its first English footnote must be 4** — II.ix closed at 3.
+**▶ NEXT IS `ddc-2-11`** (*De Officiis Hominis erga Proximum*, La 477–486 / En 639–649 — 10 La pp.,
+the longest chapter left in Book II). **Its first English footnote must be 5** — II.x carried one
+note, printed 4.
 
-⚠⚠ **BEFORE READING ANY PLATE, RE-RUN `./tools/prep-chapter.sh 2 10`.** The script was fixed
-2026-08-04 (commit `2b5e420`) to name plates by **printed** page; it previously named them by **PDF**
-page, so `raw/plates/la-474.jpg` held printed **458** — a 16-page offset one step from being
-transcribed as the wrong chapter. Stale PDF-named plates from earlier preps are still on disk and
-must not be trusted. `raw/` is gitignored and regenerable; re-prep, don't guess.
+⚠⚠ **RUN `./tools/prep-chapter.sh 2 11 2 17` FIRST, and do not read a plate you did not just
+render.** The script was fixed 2026-08-04 (commit `2b5e420`) to name plates by **printed** page;
+it previously named them by **PDF** page, so `raw/plates/la-474.jpg` held printed **458** — a
+16-page offset one step away from being transcribed as the wrong chapter, and it was caught only
+because the plate had its own number at the head. Stale PDF-named plates from earlier preps are
+still on disk and must not be trusted. `raw/` is gitignored and regenerable; re-prep, don't guess.
 
-**What the Latin read established (2026-08-04, Opus) — no need to re-derive, but re-read the
-plates before transcribing, since the verbatim text was not written:**
+## `ddc-2-10` ✅ COMPLETE (2026-08-05, Opus)
 
-- **Extent confirmed at BOTH ends off the plate.** `CAP. X.` opens La 474 under the full title
-  *De Secunda Specie Virtutum ad Officia Hominis erga se Pertinentium*; La 476 ends the chapter
-  two-thirds down with a blank tail; **`CAP. XI.` opens La 477**. The `ok` flag in `chapters.tsv`
-  is now plate-verified — mark it `verified`.
-- **10 Latin paragraphs**, in this order: {¶1} *Dictæ sunt virtutes…* · {¶2} *Eæque sunt fortitudo
-  et patientia.* (a one-line division) · {¶3} **FORTITUDO** *elucet maxime…* (runs 474→475) ·
-  {¶4} *Fortitudinis exemplum maximum est servator noster Jesus Christus…* · {¶5} *Huic opponitur
-  timiditas.* · {¶6} *Et temeritas…* · {¶7} **PATIENTIA** *est in malis atque injuriis perferendis…*
-  (runs 475→476) · {¶8} *Huic opponitur impatientia et mollities.* · {¶9} *Et patientia hypocritica…*
-  (Baalites and *flagellatores papistici*) · {¶10} *Et Stoica ἀπάθεια…*
-- **NO Latin apparatus.** All three page feet read: 474 ends in text, 475 in signature `3 P 2`,
-  476 in a blank tail. Nothing to classify, nothing for `sumner-interventions.tsv`.
-- **★ Greek to watch in the English layer: `ἀπάθεια` at La 476 {¶10}.** The standing pattern is that
-  **Sumner translates Milton's Greek technical terms away** (ἀτοπία, φιλαυτία, αὐταρκεία) while
-  keeping his Greek poetic quotations. If ἀπάθεια survives into the English, that is a genuine
-  counter-example and should be logged as one; if it is Englished as "insensibility" or the like,
-  it is the fifth instance of the pattern. **Do not call either outcome a "first" —** the queue-order
-  rule applies (a claim about what has been READ, not about the book).
-- The page ratio is **1.00** (3 La / 3 En), below the usual 1.1–1.8 band. Both extents are now
-  plate-confirmed, so this is a real feature of the chapter, not a boundary error — Sumner did not
-  expand here. Worth a line in the chunk's Notes.
+`chunks/ddc-2-10.md`, `status: verified`, both layers, all 8 plates read. La 474–476 / En 636–638,
+both extents plate-confirmed at **both** ends (`CAP. XI` opens La 477, `CHAP. XI` opens En 639), so
+`chapters.tsv` is flipped to `verified`. **10 La ¶¶ → 9 En ¶¶**, one merge at en{¶3–4}. Four
+findings worth carrying:
+
+- **★★ ἀπάθεια is translated away** — La {¶10} *Et Stoica ἀπάθεια* → En "Lastly, a stoical apathy."
+  That is **five instances read** of the same behaviour (ἀτοπία, φιλαυτία, αὐταρκεία, ἀπάθεια), against
+  the kept-and-Cowper-translated Homer line in II.ix. The rule as it now stands: **Sumner keeps
+  Milton's Greek when it is a quotation and removes it when it is a technical term.** Note the cost
+  here is doubled — 1825 "apathy" does not carry the Stoic sense, so the English reads as a remark
+  about listlessness rather than the rejection of a named doctrine.
+- **★★ The English DROPS a proof-text.** La {¶5} has *et cxii. 7.* between Ps. xxvii. 1 and Prov. x.
+  24; the English has nothing there. Both readings confirmed at **600 dpi** because it is an
+  omission claim. **Three kinds of unmarked editorial handling of the citation apparatus are now
+  attested: correction (II.iii ff.), reordering (II.ix {¶29}), and now omission.**
+  ⚠ **This bears directly on M4:** the scripture index cannot be built from either layer alone,
+  since a citation present in one volume may be simply absent from the other with nothing marking
+  the gap. Build from the Latin, reconcile against the English, carry divergences as data.
+- **★ Fourth plate-confirmed error in the ENGLISH layer: `Psal. iii. 9.`** (En 636, confirmed
+  600 dpi). Psalm 3 has eight verses. La reads `iii. 7`, correct on the Hebrew numbering; Sumner's
+  own conversion practice — verified three more times in this same chapter (xlvi, lvi, lxix, all
+  correct) — makes the expected reading `iii. 6`. **Likeliest mechanism: a turned `6`.**
+- **★ No `Luc. ix. 66`-class error anywhere in the chapter** — the first chapter since II.iii with
+  none. After II.v's eight and II.ix's seven, that is worth recording: **the Latin error rate is
+  not uniform across the volume**, so its absence is a finding, not a sign of a missed read.
+
+Also: no Latin apparatus (all three feet read; La 475's signature `3 P 2` independently confirms
+the gathering map built during the sweep). **Page ratio 1.00**, below the runbook's 1.1–1.8 band —
+a true negative, since all four boundaries are plate-confirmed; don't widen the band on it.
+Sumner's *first / Secondly / Lastly* enumeration of Milton's *Huic opponitur… Et… Et…* is at its
+clearest here, "Lastly" having no Latin counterpart at all.
 
 **Book II is now done through II.ix.** II.ix came in at **41 ¶¶ → 41, strict 1:1** — the longest
 chapter transcribed and only the second to run 1:1 throughout. Three findings from it are worth

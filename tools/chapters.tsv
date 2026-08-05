@@ -66,7 +66,7 @@ book	ch	la_printed	la_pp	en_printed	en_pp	flag	title_la
 2	7	446	9	600	13	ok	De Tempore Cultus divini; ubi de Sabbatho, Die Dominica, et Festis
 2	8	455	7	613	8	ok	De Officiis erga Homines praestandis, et quae huc pertinent Virtutes Generales
 2	9	462	12	621	15	ok	De Prima Specie Virtutum Specialium quae ad officium pertinent Hominis erga se
-2	10	474	3	636	3	ok	De Secunda Specie Virtutum ad officia Hominis erga se pertinentium
+2	10	474	3	636	3	verified	De Secunda Specie Virtutum ad officia Hominis erga se pertinentium
 2	11	477	10	639	11	ok	De Officiis Hominis erga Proximum, et quae Virtutes eo pertineant
 2	12	487	5	650	5	ok	De Virtutibus sive Officiis Specialibus erga Proximum
 2	13	492	12	655	17	ok	De Secunda Specie Officiorum Specialium erga Proximum
