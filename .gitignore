@@ -5,6 +5,7 @@ node_modules/
 raw/*.pdf
 raw/*_djvu.txt
 raw/plates/
+raw/crops/
 raw/*-ch*.txt
 
 # Python caches

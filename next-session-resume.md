@@ -216,50 +216,78 @@ Work from `M3-RUNBOOK.md` — **its queue table in §1 is the authoritative per-
 kept current chapter by chapter. Book II first, then Book I, saving I.iv–I.vi for last. Opus per
 chunk.
 
-**▶ NEXT IS `ddc-2-11`** — **IN PROGRESS. The LATIN LAYER IS READ; the English is not.**
-*De Officiis Hominis erga Proximum*, La 477–486 / En 639–649 — 10 La pp., the longest chapter left
-in Book II. **Its first English footnote must be 5** — II.x carried one note, printed 4.
+**▶ NEXT IS `ddc-2-12`** *De Virtutibus sive Officiis specialibus erga Proximum* — La 487–? /
+En 650–?, and **nothing is prepped for it**: `./tools/prep-chapter.sh 2 12` first, and do not read a
+plate you did not just render. **Its first English footnote must be 8** (II.xi closed at 7).
 
-**Plates are prepped** (`prep-chapter.sh 2 11`, run 2026-08-05 with the fixed printed-page naming),
-so `raw/plates/la-{477..487}.jpg` and `en-{639..650}.jpg` are correct as named.
+## ⚠⚠ TWO CONVENTION QUESTIONS ARE NOW WAITING ON WILSON — both from II.xi
 
-**What the Latin read established — re-read the plates before transcribing, since the verbatim
-text was not written:**
+Neither blocks transcription; both should be settled before Book I, whose longer chapters will hit
+them repeatedly.
 
-- **38 Latin paragraphs**, La 477–486. La 486 ends the chapter with a large blank tail; `CAP. XI`
-  opens La 477 (already plate-confirmed when II.x's boundary was checked). **The English end still
-  needs confirming off En 650.**
-- **NO Latin apparatus.** All ten page feet read; signatures `3 Q`@481 and `3 Q 2`@483, blank tail
-  at 486. Nothing for `tools/sumner-interventions.tsv`.
-- **Structure** (Milton's own divisions, useful for the ¶ grid): {¶1} transition · {¶2} **CHARITAS
-  ERGA PROXIMUM** defined · {¶3–5} who the neighbour is (any man · chiefly the faithful · then kin)
-  · {¶6} enemies not excluded · {¶7–12} the opposed vices (defect · hypocritical · inordinate ·
-  hatred · curiosity in others' affairs · then the concession that **some hatred is pious**) ·
-  {¶13–14} charity is absolute or mutual; the absolute modes are humanity, benevolence, mercy ·
-  {¶15–22} **HUMANITAS**, incl. mourning and honourable burial, against inhumanity, rash suretyship,
-  importunity, inordinate almsgiving · {¶23–25} **BENEVOLENTIA** against envy and feigned goodwill ·
-  {¶26–30} **MISERICORDIA** against pitilessness, ἐπιχαιρεκακία, feigned and unlawful pity ·
-  {¶31–34} **CHARITAS FRATERNA seu CHRISTIANA** against faction and feigned brotherhood ·
-  {¶35–38} **AMICITIA** against feigned friendship, friendship with the wicked, and enmity.
-- **★★ A second Greek technical term: `ἐπιχαιρεκακία` at La 482 {¶28}** (*qua quis alienis malis
-  lætatur*). After ἀπάθεια in II.x this is a direct, immediate re-test of the standing rule —
-  **Sumner keeps Milton's Greek when it is a quotation and removes it when it is a technical term.**
-  Whatever the English does here, log it against the five instances already read, and per the
-  queue-order rule write it as a claim about what has been read.
-- **⚠ Two citation suspects to check against the English:**
-  1. La 478 {¶9} cites `1 Sam. ii. 29.` then `et **xvi. 2.** quousque lugeres de Saule` — but
-     "How long wilt thou mourn for Saul" is **1 Sam. xvi. 1**, not 2. Possible `Luc. ix. 66`-class
-     Latin error.
-  2. La 482 cites **`Prov. xii. 9.` twice in adjacent paragraphs** for two different verses —
-     {¶26} *curat justus vitam jumenti sui* and {¶27} *miserationes improborum sunt miserationes
-     crudelis*, both of which are **Prov. xii. 10**. At least one is wrong; the English should
-     disambiguate.
-- **Accidental to log:** La 481 {¶22} sets `2 Thess. **3**, 10.` — an **arabic** chapter numeral
-  where the volume's convention throughout is roman. First one noticed in the corpus; keep as
-  printed and check whether the English mirrors it.
-- **The raised-ordinal question recurs:** La 482 {¶25} opens `2ᵈᵒ.` — same shape as La 417's
-  `1ᵐ · 2ᵈᵒ · 3ᵗⁱᵒ`. This is now the second chapter to need the rule CONVENTIONS §2 still lacks.
-  **Worth ratifying before Book I rather than after.**
+1. **How to notate a SPLIT.** Sumner divided a Latin paragraph for the first time in the corpus
+   (La {¶35} → two English paragraphs). CONVENTIONS §4 says "every La ¶ appears exactly once on the
+   En side," which is written for merges and is now false as stated. `ddc-2-11.md` uses
+   **`{¶35}` then `{¶35 cont.}`** — provisional, the natural counterpart to `{¶N–M}`, and needing
+   ratification.
+2. **Raised ordinals.** `2ᵈᵒ.` recurred at La 482, a second chapter needing the rule §2 still lacks.
+   Written inline as `2do.` following II.iv-b's precedent. (Note the English is no help here: it
+   renders the raised ordinal as plain "Secondly," so the feature exists in the Latin layer alone.)
+
+Also **still awaiting ratification from II.viii**: the mid-word page break, written
+`an<!-- p.486 -->gustia` at La 485/486 — second instance in the corpus, same treatment as
+En 613/614.
+
+## `ddc-2-11` ✅ COMPLETE (2026-08-05, Opus)
+
+`chunks/ddc-2-11.md`, `status: verified`, both layers, all 22 plates read (La 477–487, En 639–650),
+`chapters.tsv` flipped `ok` → `verified`. La 477–486 / En 639–649, **38 La ¶¶ → 37 En ¶¶**,
+page ratio 1.10. Six findings worth carrying:
+
+- **★★ THE FIRST SPLIT IN THE CORPUS.** Every alignment mismatch until now ran one way — Sumner
+  merges, so the English count was always ≤ the Latin. Here he **divides** La {¶35} (*AMICITIA…*,
+  one unbroken paragraph across La 484–485) into two English paragraphs at *Friendship, and even
+  common companionship with good men.* See the convention question above. Two merges as well
+  (en{¶2–3}, en{¶4–5}), so 38 − 2 + 1 = 37.
+- **★★ Six Latin citation errors silently corrected — and only two were predictable from the
+  Latin.** `1 Sam. xvi. 2`→`xvi. 1` · `Gen. xxvii. 43`→`41` · `Prov. xii. 9`→`xii. 10` **twice** ·
+  `Eccles. iv. 5`→`iv. 9` · `Judic. xi. 5`→`Judges xi. 3`. All twelve readings confirmed at 600 dpi;
+  none is versification. **The Esau, Ecclesiastes and Judges errors were invisible until the English
+  was laid beside the Latin** — II.ix's lesson, now settled: reading the Latin for suspects tells
+  you where to look, the English layer is the instrument. Both halves of the doubled `Prov. xii. 9`
+  were wrong and Sumner caught both.
+- **★★ ἐπιχαιρεκακία is translated away** ("a rejoicing in the misfortunes of others") — a direct
+  re-test of the rule formulated one chapter earlier, and it holds. **Six instances now** (ἀτοπία,
+  φιλαυτία, αὐταρκεία, ἀπάθεια, ἐπιχαιρεκακία) against the kept-and-Cowper-translated Homer line of
+  II.ix: **Sumner keeps Milton's Greek when it is a quotation and removes it when it is a technical
+  term.**
+- **★★ The English drops a proof-text again** — `Luc. vi. 27, &c. idem.` at La {¶6} has no English
+  counterpart (600 dpi both sides). Second attested omission after II.x's `et cxii. 7.`, and the
+  mechanism looks identical: a bare `idem` reference standing between two quoted texts. The M4
+  consequence stands and hardens — **the scripture index cannot be built from either layer alone.**
+- **★★ All three Sumner notes defend Milton** — the *Apology for Smectymnuus* on "a sanctified
+  bitterness against the enemies of truth" answering the chapter's *aliquod tamen odium etiam pium
+  est*, then *Paradise Lost* IV. 502, IX. 173 and XI. 455 on the envy of Satan and Cain
+  (`[^s6]` carries two passages under one printed number). Fourth chapter in a row: **Sumner reaches
+  for Milton's verse and prose where the treatise leaves Milton exposed.**
+- **★ Two printed errors in the ENGLISH volume, one in the chapter's opening line** — En 639 sets
+  **`justiee`** for *justice* (confirmed at **900 dpi**; a wrong sort, `e` for `c`), and En 641's
+  {¶13} ends *"absolute or reciprocal"* with **no full stop**. Kept as printed. With II.iv-c,
+  II.ix and II.x: the English is not the corrected side, it is the other side.
+- **★ The Latin's arabic `2 Thess. 3, 10.`** (La 481, first in the corpus, 600 dpi) **is not
+  mirrored** — the English sets `2 Thess. iii. 10.`, roman. CONVENTIONS §8b's "never normalise
+  chapter B from chapter A" gains a companion: **never normalise layer to layer either.**
+
+Also: no Latin apparatus (all ten feet read; sigs `3 Q`@481, `3 Q 2`@483 continue the sweep's
+gathering map unbroken); Latin printed anomaly `Quæ **tamem** nonnunquam` at La 485; Sumner shifts
+Milton's burial examples from the buriers (*Abrahami… Jacobi*) to the buried (*Sarah… Rachel*), and
+softens *misericordia illicita* to "a misplaced compassion" — the same politening habit as II.vii,
+II.ix and II.x, running in the same direction every time. Both volumes agree on small-caps emphasis
+throughout, the second chapter running.
+
+**Housekeeping:** the headnote word cap is being measured two ways (207 whole / 199 prose-only here;
+*every* chunk in the corpus exceeds 200 on the whole-text count, 186–308). A one-line clarification
+in CONVENTIONS §8 would stop it being re-litigated per chapter.
 
 ⚠⚠ **RUN `./tools/prep-chapter.sh 2 11 2 17` FIRST, and do not read a plate you did not just
 render.** The script was fixed 2026-08-04 (commit `2b5e420`) to name plates by **printed** page;

@@ -18,6 +18,10 @@ procedure. Everything mechanical has been pre-staged.
   column. Read the flag before you touch a chapter.
 - **`tools/prep-chapter.sh <book> <ch>`** renders both plate sets at 200 dpi and both
   pdftotext drafts. Costs no model tokens. Already run for **II.iii–II.ix**.
+- **`tools/crop-plate.sh <la|en> <printed> <dpi> <y0> <y1> <name>`** renders one page at any dpi and
+  saves a full-width band to `raw/crops/`. This is CONVENTIONS §2's "doubtful characters get a
+  400 dpi crop" made cheap: 600 dpi settles a citation digit, 900 dpi settles a single wrong sort.
+  **Every ★ finding in a chunk's Notes should rest on a crop, not on the 200 dpi plate.**
 - **`tools/audit-chapter-starts.py`** re-derives every chapter opening from the text layer and
   reconciles it against `chapters.tsv`. Already run; results are baked into the flags.
 - **The site handles partial chunks.** `site/scripts/build-content.mjs` discovers whatever
@@ -43,8 +47,9 @@ doctrine, and the chapter everyone will actually read.
 | — | `ddc-2-08` | **done** (2026-08-04, Opus) — La 455–461 / En 613–620. **27 ¶¶ → 25**, two Sumner merges ({¶5–6}, {¶11–12}), both a lemma absorbed into the paragraph it governs. **Exactly one note, printed 9** — the prediction was exact. No Latin apparatus (all 7 feet read). Five citation divergences, all versification, none of the `Luc. ix. 66` class. **★ `[^s9]` is fourteen lines of *Samson Agonistes* — the first time Sumner reaches for the POETRY, and he does it where Milton's prose on self-slaughter is briefest.** No filter blocks: every paragraph written singly. |
 | — | `ddc-2-09` | **done** (2026-08-04, Opus) — La 462–473 / En 621–635. **41 ¶¶ → 41, strict 1:1** — the longest chapter so far and only the second to run 1:1 throughout (after II.v). Notes **1, 2, 3**; the wrap confirmed. No Latin apparatus in 12 page feet. **★★ All three notes DEFEND MILTON'S CHARACTER** (drink, sleep, chastity) out of *Comus*, *Samson Agonistes*, *PL* XI, the elegies and the *Apology* — a fourth editorial behaviour; II.viii's note amended because of it. **★★ The English ADDS a Cowper translation of the Homer line with no Latin counterpart** — neither layer is a complete witness to the other. **★ Seven La citation errors corrected, three in {¶16} alone; and ONE error the other way** (La `Dan. ii. 30` right, En `ii. 31` wrong — 2nd English error in the corpus). Sumner also silently **reorders proof-texts at {¶29}** and renders *ornamenta vitæ* as "a high station". |
 | — | `ddc-2-10` | **done** (2026-08-05, Opus) — La 474–476 / En 636–638, both extents plate-confirmed at both ends (`CAP./CHAP. XI` opens La 477 / En 639); flag flipped to `verified`. **10 ¶¶ → 9**, one merge en{¶3–4}. **One note, printed 4 — the prediction was exact.** No Latin apparatus. **★★ ἀπάθεια translated away ("a stoical apathy") — the Greek-technical-term pattern now holds over five instances read.** **★★ The English DROPS a proof-text** (La `et cxii. 7.` has no En counterpart, both confirmed 600 dpi) — a third kind of unmarked editorial handling, beside correction and reordering; **bears on M4's scripture index.** **★ Fourth English-layer error: `Psal. iii. 9.`, impossible (Ps 3 has 8 verses); expected `iii. 6`, likely a turned `6`.** No `Luc. ix. 66`-class error at all — the first chapter with none since II.iii. |
-| 1 | `ddc-2-11` | La 477–486 / En 639–649 — **run `prep-chapter.sh 2 11 2 17` first** (and note the script was fixed 2026-08-04 to name plates by PRINTED page) |
-| 2+ | `ddc-2-12` … `ddc-2-17` | |
+| — | `ddc-2-11` | **done** (2026-08-05, Opus) — La 477–486 / En 639–649, both extents plate-confirmed at both ends (`CAP./CHAP. XII` opens La 487 / En 650); flag flipped to `verified`. **38 ¶¶ → 37**, and the shape is new: **two merges AND ★★ THE CORPUS'S FIRST SPLIT** — Sumner divides La {¶35} into two English paragraphs, so CONVENTIONS §4's "every La ¶ appears exactly once" is false as written; provisional notation `{¶35 cont.}` **needs Wilson's ratification**. Notes **5, 6, 7** — the prediction was exact; **all three defend Milton** (the *Apology* on sanctified bitterness; *PL* IV. 502, IX. 173, XI. 455 on envy), `[^s6]` carrying two passages under one number. No Latin apparatus (all 10 feet read; sigs `3 Q`@481, `3 Q 2`@483). **★★ Six Latin citation errors silently corrected, but only two were on the suspect list** drafted from the Latin — the Esau, Ecclesiastes and Judges errors were invisible until the English was beside them. **★★ ἐπιχαιρεκακία translated away — the Greek rule survives its immediate re-test, six instances.** **★★ Second attested English omission** (`Luc. vi. 27, &c.` dropped). **★ Two English printed errors, one in the chapter's first line** (`justiee`, 900 dpi; and {¶13} has no full stop). **★ The Latin's arabic `2 Thess. 3, 10.` is NOT mirrored** in the English — accidentals do not cross layers either. |
+| 1 | `ddc-2-12` | La 487–? / En 650–? — **plates NOT yet prepped past La 487 / En 650**; run `./tools/prep-chapter.sh 2 12` first. **Its first English note must be 8.** |
+| 2+ | `ddc-2-13` … `ddc-2-17` | |
 | then | Book I, i–iii and vii–xxxiii | |
 | last | `ddc-1-04`, `ddc-1-05`, `ddc-1-06` | see §5 |
 
@@ -85,8 +90,9 @@ doctrine, and the chapter everyone will actually read.
   II.vi → **6, 7** (both predicted and confirmed) · II.vii → **8, 9, 1, 2, 3, 4, 5, 6, 7, 8** (ten
   notes, the cycle collides inside one chunk) · II.viii → **9** (a single note, predicted exactly) ·
   II.ix → **1, 2, 3** (the wrap confirmed on En 621; all fifteen plates read, 625–635 carry none) ·
-  II.x → **4** (a single note, predicted exactly; no wrap inside the chapter).
-  So **II.xi must open at note 5.**
+  II.x → **4** (a single note, predicted exactly; no wrap inside the chapter) ·
+  II.xi → **5, 6, 7** (predicted exactly; no wrap; all eleven En feet read, 8 of them bare).
+  So **II.xii must open at note 8.**
   Blind spot: the cycle is only 9 long, so it can never detect a miss of exactly 9 notes. It is
   not a substitute for reading every plate for superscripts.
 - **Also check the LATIN plates for superscripts.** The Latin volume carries apparatus too — see
@@ -158,7 +164,11 @@ Resolve off the plate before transcribing these; correct `chapters.tsv` and set 
 | 2.17 | La start: crosswalk 524, text layer 525 |
 
 Also **not found in the text layer** (heading not detected; may be fine, confirm on the plate
-when the chapter comes up): La 2.3, En 2.11, and a handful in Book I.
+when the chapter comes up): La 2.3, ~~En 2.11~~, and a handful in Book I. **En 2.11 is now
+resolved and was a detection artefact, not a boundary problem** — `CHAP. XI.` sits on En 639 exactly
+where the crosswalk put it (plate-confirmed 2026-08-05). La 2.3 was likewise fine. Treat a
+non-detection as weak evidence: the audit's *discrepancies* have all been real, its *silences*
+have not.
 
 ## 9. The Latin volume has apparatus too — RULED 2026-08-04, no longer open
 
