@@ -1,5 +1,13 @@
 # The Book II Latin footnote sweep — runbook
 
+## ✅ THE SWEEP IS RUN AND CLOSED — 2026-08-04 (Opus)
+
+**All four exit criteria in §4 are met. Book II's Latin apparatus is complete for chapters i–ix.**
+The record of what was actually read, and the one judgement, are in **§6 at the foot of this file**.
+Everything above §6 is preserved as the procedure that was followed — read §6 first.
+
+---
+
 **Read this file and nothing else to run the sweep.** Background is in `M3-RUNBOOK.md` §9, §9b;
 the rules are `CONVENTIONS.md` §5, §5a. Everything mechanical is already done — the sweep session
 should spend its tokens on plates and on one judgement, not on setup.
@@ -205,3 +213,92 @@ Latin transcribed to date, and found nothing new in 455–473 either.
 Chapters II.x–II.xvii (La 474–524) are not yet transcribed and are **out of scope** — their page
 feet get read as those chapters are done, per M3-RUNBOOK §2 step 3. This sweep is about the debt,
 not about future work.
+
+---
+
+## 6. ✅ RESULTS — the visual pass, run 2026-08-04 (Opus)
+
+### 6.1 What was read, page by page
+
+| set | pages | result |
+|---|---|---|
+| §2 step 1 — the never-examined core | **La 387–428, all 42** | **no note on any page** |
+| §2 step 2 — the 18 riskiest negatives | La 387, 389, 390, 394, 396, 402, 403, 409, 421, 425, 427 (inside the core) + **433, 441, 442, 443, 457, 467, 473** | **no note on any page** |
+| §2 step 3 — the two known positives | La **431**, La **454** | re-confirmed off the plate: **431 = ⁵**, **454 = ⁴** |
+| §3 — the unverified Book I candidates | La **50**, **188**, **228** | **all three are false positives — no note** |
+
+Two pages came up blank in the foot crop and were re-rendered full-page before being written off:
+**La 394** (II.i's last page, chapter ends a third of the way down) and **La 403** (II.ii's last
+page, five lines then blank). Both genuinely clean. **La 412** and **La 428** are the same shape —
+II.iii's and II.iv's blank tails — and independently re-confirm those two chapter extents.
+
+**Reconciliation: the detector and the eye agree on every one of the 62 pages looked at.** No
+disagreement in either direction, so no page needed the 400 dpi fallback. The detector's two
+sub-threshold flags (La 389, 421) are both false positives with an innocent cause — a short final
+line of a paragraph, not small type.
+
+### 6.2 The finding: §9's worry was unfounded
+
+**No Latin note was missed in II.i–II.iv.** Those four chapters carry no Latin apparatus at all.
+The standing obligation of M3-RUNBOOK §2 step 3 — read every chapter's Latin feet for superscripts —
+stays in force for everything from here; it is the *back-check* on II.i–II.iv that is now discharged.
+
+### 6.3 New evidence gathered on the way
+
+- **La 454's note is confirmed SCHOLARLY, not textual**, off the plate: six lines of body text
+  (`…aliosque video fuisse.⁴`) and then roughly forty lines of Bucer · Calvin · Ursinus · Gomarus ·
+  Peter Martyr · Musculus on the sabbath. It earns **no** row in `tools/sumner-interventions.tsv`,
+  which is what `ddc-2-07.md` already records. La 431's remains the only **textual** Latin note in
+  Book II.
+- **The Latin volume's gathering structure, measured off the signatures**, since §3 asked for it:
+  8 pages per gathering, signed on leaves 1 and 3. Observed: `3 D 2`@387 · `3 E`@393 · `3 F`@401 ·
+  `3 F 2`@403 · `3 G`@409 · `3 G 2`@411 · `3 H`@417 · `3 H 2`@419 · `3 I`@425 · `3 I 2`@427 ·
+  `3 K`@433 · `3 L`@441 · `3 L 2`@443 · `3 N`@457 · `3 O 2`@467 · `3 P`@473. So gatherings open at
+  385, 393, 401, 409, 417, 425, 433, 441, 449, 457, 465, 473.
+- **La 441 carries pointed Hebrew** (גְּדוּפָה and קְלָלָה with their roots) in the running Latin text,
+  alongside Greek. Worth knowing before Book I: the Latin volume sets three non-Latin scripts.
+
+### 6.4 ⚖ THE NUMBERING QUESTION — RESOLVED as *ad hoc*, which is the §3 residue
+
+Exit criterion 4 is met by resolution, not by deferral. **All four candidate hypotheses are now
+positively refuted**, each by evidence rather than by argument:
+
+| hypothesis | verdict | what kills it |
+|---|---|---|
+| Seven notes lie unread in La 432–453 | **dead** | the mechanical pass, and the transcription reads of II.v–II.vii |
+| Numbers restart per **chapter** | **dead** | La 431's note would be ¹, and it is ⁵ |
+| Numbers cycle 1–9 across the **whole Latin volume** | **dead** | ⁵ at La 431 → ⁴ at La 454 needs seven notes in the 22 pages between them. There are none — two independent methods agree |
+| The Latin number is keyed to the **English** note at the same passage | **dead — settled this session** | La 454's ⁴ pairs with English note `[^s8-2]`, printed **8** (`ddc-2-07.md`); and La 431's ⁵ pairs with **no English note at all** (`ddc-2-05.md`) |
+
+Also tested and discarded: restart per **signature/gathering** (§3's second column). The map in
+§6.3 puts La 431 on leaf 7 of gathering `3 I` and La 454 on leaf 6 of `3 M`; a per-gathering restart
+makes both ¹. (Their being *position − 2* in both cases is a two-point coincidence — La 129 sits on
+leaf 1 of gathering `S` and its note is ², not −1.)
+
+**What remains is §3's own third column: Sumner numbered his Latin notes ad hoc, as he set them,
+with no system.** The four observed numbers in page order — **2 (La 129) · 6 (La 143) · 5 (La 431) ·
+4 (La 454)** — are a sequence in no direction, under no reset rule, and against no external key.
+That is a small and unsurprising result for an editor who set seven-odd notes across a 530-page
+volume: there was nothing for a system to be *for*.
+
+**The practical consequence is unchanged but now rests on evidence rather than on caution:
+`[^laN]` numbers are LABELS, permanently. There is no Latin checksum and there never was one.**
+Do not re-open this on finding a fifth Latin note in Book I — a new number cannot revive a
+hypothesis that a *missing* number already killed. The English checksum (CONVENTIONS §8a) is a
+separate, genuinely sequential run and is untouched by any of this.
+
+⚠ One honest limit, stated because §1 demands it: the refutation of the cycle rests on La 432–453
+being note-free, which comes from the detector plus the reads made while II.v–II.vii were
+transcribed — not from a dedicated by-eye foot pass of those 22 pages. Two independent methods
+agree, which is this project's corroboration standard, but it is not the same grade of evidence
+as the 62 pages in §6.1.
+
+### 6.5 Exit criteria — all four met
+
+1. ✅ Every page of La 387–428 looked at, page-foot, by eye — 42 of 42.
+2. ✅ All 18 riskiest negatives looked at.
+3. ✅ Every hit transcribed, classified, ledgered — no new hits; the two known notes re-confirmed
+   and La 454 re-classified as scholarly (no ledger row).
+4. ✅ The numbering anomaly **resolved**, with the Book I evidence attached (§6.4).
+
+**Book II is complete for chapters i–ix.** The gate is open.

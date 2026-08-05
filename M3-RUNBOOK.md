@@ -88,9 +88,10 @@ doctrine, and the chapter everyone will actually read.
   Blind spot: the cycle is only 9 long, so it can never detect a miss of exactly 9 notes. It is
   not a substitute for reading every plate for superscripts.
 - **Also check the LATIN plates for superscripts.** The Latin volume carries apparatus too — see
-  §9. Its numbering is independent of the English run, and per §9b its *numbers* are not yet a
-  usable checksum. **Classify each Latin note textual or scholarly** (CONVENTIONS §5a): only
-  textual ones get a row in `tools/sumner-interventions.tsv`.
+  §9. **Its numbers are LABELS and will never be a checksum** — settled by the sweep, §9b; nothing
+  detects a missed Latin note except reading the feet, so read them. **Classify each Latin note
+  textual or scholarly** (CONVENTIONS §5a): only textual ones get a row in
+  `tools/sumner-interventions.tsv`. Both kinds exist — La 431 is textual, La 454 scholarly.
 - **¶ coverage.** Every La ¶ appears exactly once on the En side. Count both sides and record
   the merge list.
 - **Page ratio.** En pages ÷ La pages should land ~1.1–1.8. Outside that, suspect a boundary.
@@ -191,32 +192,35 @@ counter-example. Watch for further Latin-side notes in every chapter from here o
 us this is the only one.
 
 
-## 9b. THE BOOK II LATIN SWEEP — staged 2026-08-04, see `SWEEP-RUNBOOK.md`
+## 9b. ✅ THE BOOK II LATIN SWEEP — RUN AND CLOSED 2026-08-04. Gate open.
 
-**Ruled 2026-08-04 (Wilson).** A page-feet-only pass over the Book II Latin, resolving two things
-at once: the II.i–II.iv re-check (§9), and the note-numbering anomaly. **It remains a gate: Book II
-cannot be called complete until it has run.**
+**Full record: `SWEEP-RUNBOOK.md` §6.** Do not re-run it; do not re-open the numbering question.
 
-**▶ The whole procedure now lives in `SWEEP-RUNBOOK.md`. Read that, not this.** Everything
-mechanical is pre-staged; the session should spend its tokens on plates and one judgement.
+What it settled:
 
-Summary of what the mechanical pass already settled (full detail in that file):
-
-- `tools/detect-footnotes.py` detects notes by line pitch (body 33, note 26 at 150 dpi — the volume
-  uses no separating rule). Validated on both known positives before use.
-- **La 387–473: exactly two candidates, La 431 and La 454 — the two already known.** So no Latin
-  note was missed in II.i–II.iv, pending the visual confirmation the runbook still requires.
-- **The numbering anomaly is NOT missed notes.** Observed numbers in page order are
-  **2 (La 129) · 6 (La 143) · 5 (La 431) · 4 (La 454)** — no sequence in either direction. Both
-  the "seven missed notes" and the "cycle across the whole volume" hypotheses are dead.
+- **62 Latin page-feet read by eye** — all 42 of La 387–428 (never examined by anyone before),
+  the 18 riskiest detector negatives, and the two known positives. **The detector and the eye
+  agree on every page**; no 400 dpi fallback was needed.
+- **No Latin note was missed in II.i–II.iv** — those chapters carry no Latin apparatus at all.
+  §9's worry was unfounded and the II.i–II.iv back-check is **discharged**.
+- La **431 = ⁵** and La **454 = ⁴**, re-confirmed off the plate. **La 454's note is SCHOLARLY**
+  (a page of Bucer · Calvin · Ursinus · Gomarus · Peter Martyr · Musculus on the sabbath) and takes
+  no row in `tools/sumner-interventions.tsv`. **La 431 remains the only textual Latin note in Book II.**
+- Book I's three unverified candidates — La **50, 188, 228** — are **all false positives**. Book I's
+  confirmed Latin notes stand at La **129** and **143**.
+- **⚖ The numbering anomaly is RESOLVED: it is ad hoc.** All four hypotheses are refuted, the last
+  of them this session — the Latin number is *not* keyed to the English note at the same passage
+  (La 454's ⁴ pairs with English note printed **8**; La 431's ⁵ pairs with **no English note**).
+  Per-gathering restart is out too, measured off the signatures. See `SWEEP-RUNBOOK.md` §6.4.
 - **★★★ Book I carries Latin apparatus too, and it is textual.** La 129 gives **Sumner's own
   statement of editorial method** (*ut soleo… ne puncto quidem mutato*) against La 431's confessed
   *ordinem leviter mutavi*; La 143 reports the MS reading **a manu secunda**. See
   `SWEEP-RUNBOOK.md` §3a — this bears directly on PLAN §4a and §6.4.
 
-**Until the sweep closes, treat `[^laN]` numbers as LABELS, not a checksum.** The English checksum
-is a separate, independent run and is unaffected — it is still passing, and II.i's closure filled
-its last open cell.
+**`[^laN]` numbers are LABELS, permanently. There is no Latin checksum and there never was one.**
+A fifth Latin note turning up in Book I does not revive the question — a *missing* number already
+killed it. The English checksum (§3, CONVENTIONS §8a) is a separate, genuinely sequential run and
+is untouched.
 
 ## 10. Content filtering — a real, recurring obstacle with a known workaround
 

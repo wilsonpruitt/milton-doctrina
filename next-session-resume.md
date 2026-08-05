@@ -239,15 +239,28 @@ carrying forward, because each changes how the next chapter should be read:
   the instrument. Also logged: Sumner silently **reorders proof-texts** at {¶29}, and renders
   *ornamenta vitæ* as "a high station", which the Latin does not say.
 
-## ▶ THE SWEEP IS SET UP — start here next session
+## ✅ THE SWEEP IS RUN AND CLOSED — 2026-08-04 (Opus). BOOK II i–ix IS COMPLETE.
 
-`SWEEP-RUNBOOK.md` is self-contained. The mechanical pass is already run and it did more than
-rank pages:
+Full record: **`SWEEP-RUNBOOK.md` §6**. All four exit criteria met; the gate is open. Headlines:
 
-- **La 387–473 yields exactly two candidates, La 431 and La 454 — the two already known.** No
-  Latin note was missed in II.i–II.iv; the visual confirmation is what remains.
-- **The numbering anomaly is not missed notes.** Numbers in page order are **2 · 6 · 5 · 4** —
-  no sequence either way. Two leading hypotheses are dead; the live ones are in §3.
+- **62 Latin page-feet read by eye** — all 42 of La 387–428, which nobody had ever examined, plus
+  the 18 riskiest detector negatives and the two known positives. **Detector and eye agree on every
+  page.** No new note anywhere.
+- **§9's worry was unfounded: II.i–II.iv carry no Latin apparatus at all.** That back-check is
+  discharged. The standing obligation to read every *future* chapter's Latin feet stays in force —
+  nothing but reading detects a missed Latin note.
+- **La 431 = ⁵ (textual, the only one in Book II) · La 454 = ⁴ (SCHOLARLY** — a page of Bucer,
+  Calvin, Ursinus, Gomarus, Peter Martyr, Musculus on the sabbath; **no ledger row).**
+- **Book I's unverified candidates La 50, 188, 228 are all false positives.** Book I's confirmed
+  Latin notes stand at La 129 and La 143 — the two that matter, and both textual.
+- **⚖ The numbering anomaly is RESOLVED: ad hoc, no system.** All four hypotheses refuted; the last
+  fell this session — the Latin number is **not** keyed to the English note at the same passage
+  (La 454's ⁴ pairs with English note printed **8**; La 431's ⁵ pairs with **no English note**).
+  Per-gathering restart is out too, measured off the signatures (8pp gatherings opening at 385, 393,
+  401 …). **`[^laN]` numbers are LABELS, permanently — there is no Latin checksum and never was.**
+  A fifth Latin note in Book I does not re-open it; a *missing* number already killed the cycle.
+- Incidental, but useful before Book I: **La 441 sets pointed Hebrew** (גְּדוּפָה, קְלָלָה with roots)
+  in the running Latin text alongside Greek — the Latin volume uses three non-Latin scripts.
 - **★★★ Book I carries textual Latin apparatus, and La 129 is Sumner stating his own editorial
   method** — *"as is my custom I have followed the manuscript religiously, not even a point
   changed"* — which sits directly against La 431's confessed *ordinem leviter mutavi*. We now have
@@ -259,11 +272,17 @@ rank pages:
 ⚠ **Book I's apparatus is NOT this sweep's job** — it gets picked up chapter by chapter when Book I
 is transcribed, per M3-RUNBOOK §2 step 3. `tools/sweep-book1.tsv` already says where to look.
 
-**Two debts remain** (one was just discharged):
+**Both of the big debts are now discharged; one item remains:**
 1. ✅ ~~II.i's English~~ — **DONE 2026-08-04.** Both layers verified; see below.
-2. **The Book II Latin sweep — ▶ STAGED AND READY, `SWEEP-RUNBOOK.md`.** All mechanical work is
-   done; the session reads plates and makes one judgement. **It still gates "Book II complete."**
-3. The six open suspect flags (runbook §7).
+2. ✅ ~~The Book II Latin sweep~~ — **DONE 2026-08-04.** Gate open, Book II i–ix complete.
+3. **The six open suspect flags (runbook §7)** — the only outstanding debt, biggest is
+   **1.28 (La 309 vs 315)**. These are Book I boundaries and are cheap to settle when Book I opens.
+
+Two small convention questions are still owed and are **cheap to ratify before Book I**, where both
+recur: the **raised ordinals** (La 417 prints 1ᵐ · 2ᵈᵒ · 3ᵗⁱᵒ …, set inline as `1m.` `2do.` for want
+of a superscript markup — CONVENTIONS §2 defines none) and the **mid-word page break**
+(En 613/614 breaks *accept-* | *-able*, written `accept<!-- p.614 -->able`, soft hyphen dropped).
+Both are precedent-by-accident until Wilson rules.
 
 **✅ II.i is CLOSED — the last outstanding debt in Book II.** Transcribed past the content filter
 with the one-paragraph-per-edit technique; {¶6} blocked twice as a whole paragraph and went through
