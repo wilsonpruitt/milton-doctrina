@@ -216,9 +216,50 @@ Work from `M3-RUNBOOK.md` — **its queue table in §1 is the authoritative per-
 kept current chapter by chapter. Book II first, then Book I, saving I.iv–I.vi for last. Opus per
 chunk.
 
-**▶ NEXT IS `ddc-2-11`** (*De Officiis Hominis erga Proximum*, La 477–486 / En 639–649 — 10 La pp.,
-the longest chapter left in Book II). **Its first English footnote must be 5** — II.x carried one
-note, printed 4.
+**▶ NEXT IS `ddc-2-11`** — **IN PROGRESS. The LATIN LAYER IS READ; the English is not.**
+*De Officiis Hominis erga Proximum*, La 477–486 / En 639–649 — 10 La pp., the longest chapter left
+in Book II. **Its first English footnote must be 5** — II.x carried one note, printed 4.
+
+**Plates are prepped** (`prep-chapter.sh 2 11`, run 2026-08-05 with the fixed printed-page naming),
+so `raw/plates/la-{477..487}.jpg` and `en-{639..650}.jpg` are correct as named.
+
+**What the Latin read established — re-read the plates before transcribing, since the verbatim
+text was not written:**
+
+- **38 Latin paragraphs**, La 477–486. La 486 ends the chapter with a large blank tail; `CAP. XI`
+  opens La 477 (already plate-confirmed when II.x's boundary was checked). **The English end still
+  needs confirming off En 650.**
+- **NO Latin apparatus.** All ten page feet read; signatures `3 Q`@481 and `3 Q 2`@483, blank tail
+  at 486. Nothing for `tools/sumner-interventions.tsv`.
+- **Structure** (Milton's own divisions, useful for the ¶ grid): {¶1} transition · {¶2} **CHARITAS
+  ERGA PROXIMUM** defined · {¶3–5} who the neighbour is (any man · chiefly the faithful · then kin)
+  · {¶6} enemies not excluded · {¶7–12} the opposed vices (defect · hypocritical · inordinate ·
+  hatred · curiosity in others' affairs · then the concession that **some hatred is pious**) ·
+  {¶13–14} charity is absolute or mutual; the absolute modes are humanity, benevolence, mercy ·
+  {¶15–22} **HUMANITAS**, incl. mourning and honourable burial, against inhumanity, rash suretyship,
+  importunity, inordinate almsgiving · {¶23–25} **BENEVOLENTIA** against envy and feigned goodwill ·
+  {¶26–30} **MISERICORDIA** against pitilessness, ἐπιχαιρεκακία, feigned and unlawful pity ·
+  {¶31–34} **CHARITAS FRATERNA seu CHRISTIANA** against faction and feigned brotherhood ·
+  {¶35–38} **AMICITIA** against feigned friendship, friendship with the wicked, and enmity.
+- **★★ A second Greek technical term: `ἐπιχαιρεκακία` at La 482 {¶28}** (*qua quis alienis malis
+  lætatur*). After ἀπάθεια in II.x this is a direct, immediate re-test of the standing rule —
+  **Sumner keeps Milton's Greek when it is a quotation and removes it when it is a technical term.**
+  Whatever the English does here, log it against the five instances already read, and per the
+  queue-order rule write it as a claim about what has been read.
+- **⚠ Two citation suspects to check against the English:**
+  1. La 478 {¶9} cites `1 Sam. ii. 29.` then `et **xvi. 2.** quousque lugeres de Saule` — but
+     "How long wilt thou mourn for Saul" is **1 Sam. xvi. 1**, not 2. Possible `Luc. ix. 66`-class
+     Latin error.
+  2. La 482 cites **`Prov. xii. 9.` twice in adjacent paragraphs** for two different verses —
+     {¶26} *curat justus vitam jumenti sui* and {¶27} *miserationes improborum sunt miserationes
+     crudelis*, both of which are **Prov. xii. 10**. At least one is wrong; the English should
+     disambiguate.
+- **Accidental to log:** La 481 {¶22} sets `2 Thess. **3**, 10.` — an **arabic** chapter numeral
+  where the volume's convention throughout is roman. First one noticed in the corpus; keep as
+  printed and check whether the English mirrors it.
+- **The raised-ordinal question recurs:** La 482 {¶25} opens `2ᵈᵒ.` — same shape as La 417's
+  `1ᵐ · 2ᵈᵒ · 3ᵗⁱᵒ`. This is now the second chapter to need the rule CONVENTIONS §2 still lacks.
+  **Worth ratifying before Book I rather than after.**
 
 ⚠⚠ **RUN `./tools/prep-chapter.sh 2 11 2 17` FIRST, and do not read a plate you did not just
 render.** The script was fixed 2026-08-04 (commit `2b5e420`) to name plates by **printed** page;
