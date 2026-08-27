@@ -52,8 +52,8 @@ doctrine, and the chapter everyone will actually read.
 | — | `ddc-2-13` | **done** (2026-08-27, Sonnet) — La 492–503 (12pp) / En 655–671 (17pp), both extents plate-confirmed at both ends (`CAP./CHAP. XIV` opens La 504 / En 672, headed "ADHUC..." / "...CONTINUED" — Milton's own rubric flags II.xiv as a direct continuation). **48 ¶¶ → 49**, the corpus's **second SPLIT** (La {¶29} `FIDELITAS` → En {¶29}+{¶29 cont.}), same open question as II.xi's first split. **Seven English notes** (8,9,1,2,3,4,5 — wraps once, densest run in the corpus; **II.xiv opens at 6**), one Latin note (La5, scholarly, Jael/Junius). **★★ New note-class**: [^s2]/[^s3] quote OTHER PEOPLE's testimony about Milton (Richardson, Symmons, Vossius, Heinsius) rather than Milton's own works — a fourth editorial behaviour. **★★ [^s5] is the richest note in the corpus**: English + Latin + Greek (εὐθυρρήμονα/εὐσχήμονα) across three of Milton's own prose works. **★** La[^la5] and En[^s9] quote the SAME Junius sentence on Jael under different note numbers, differing by one word (`intercessit`/`intercepit`). The chapter's doctrinal core — Milton's redefinition of lying to license deceiving non-neighbours, including war stratagems — carries **zero apparatus in either layer**. |
 | — | `ddc-2-14` | **done** (2026-08-27, Sonnet) — La 504–510 (7pp) / En 672–679 (8pp), both extents plate-confirmed (`CAP./CHAP. XV` opens La 511 / En 680, a genuinely new topic — reciprocal/domestic duties — unlike XIII→XIV's continuation). **24 ¶¶ → 24, strict 1:1** — no merge, no split; only the third chapter in the corpus to run 1:1 throughout (after II.v, II.ix). **One note (6)**, closing the wrap from II.xiii; defends Milton's usury argument by quoting *Doctrine and Discipline of Divorce* — first defensive note on an economic rather than theological/biographical question. **★ Hebrew (נֶשֶׁךְ, "bite") appears in BOTH layers at the same point** — first time in the corpus Hebrew crosses both volumes rather than sitting in one alone. **★** En {¶19} names Tremellius inline — `(gratiose largitur, Tremell.)` — an unnumbered scholarly aside, not apparatus, first of its kind. |
 | — | `ddc-2-15` | **done** (2026-08-27, Opus) — La 511–519 / En 680–690, both extents plate-confirmed at both ends (`CAP./CHAP. XVI` opens La 520 / En 691); flag flipped to `verified`. **38 ¶¶ → 37**, one merge at en{¶13–14}, no split. Notes **7, 8, 9** — the prediction was exact, and **the 9→1 wrap is OBSERVED, not inferred**: En 691 carries note ¹ on the boundary plate, so II.xvi is confirmed to open at 1. No Latin apparatus (all 9 feet read). **★★ The chapter's heterodoxy is the EDITOR'S, not Milton's** — PLAN §6.2 puts divorce/polygamy in II.xv, but Milton's text is conventional throughout and silent on divorce; the divorce material enters via **Sumner's note 8** (*Doctrine and Discipline of Divorce* on Grotius, Theodosius II and Justinian) hung on a bare Proverbs proof-text. Check text vs. apparatus before repeating a PLAN heterodoxy claim. **★★ Note 7 spans a page and the catchword tracks the FOOTNOTE, not the text** (En 681 catchword *Was*); it carries *PL* IV. 635, X. 145, X. 195 and *Tetrachordon* under one number. **★★ Note 9 defends Milton against the schoolmaster jeer** (Leigh, Salmasius) and closes in Sumner's own dry voice about Newton and Symmons — a new register. **★★ Three La citation errors silently corrected, and all three were caught from the LATIN ALONE** (`1 Sam. xiv. 45`→44 · `Isa. iii. 6`→iii. 5 · `Eccles. x. 2, 3`→x. 5, 6, all 600 dpi both sides) — compatible with II.xi, not a reversal: this class is one-layer-detectable, II.xi's was not. **★★ ἀλλοτριοεπίσκοπος translated away** (900 dpi) — 7th instance, and the hardest case, since the word is both quotation and technical term; Sumner treats it as a term. **★ `et v. N` = *et versu N* in BOTH layers, 9 instances — a real M4 parser hazard.** **★ Milton cites Prov. iii. 33 / xiv. 11 / xv. 6 TWICE each on La 517**, once per half-verse; an index that de-duplicates by reference would destroy the antithesis. ★ En splits *servus* into "servants" (duty) vs "slaves/bondmen" (property). |
-| 1 | `ddc-2-16` | La 520–523 / En 691–695 — **plates not yet prepped**; run `./tools/prep-chapter.sh 2 16` first. Its first English note must be **1** (already sighted on En 691). |
-| 2 | `ddc-2-17` | flagged `suspect` (La start: crosswalk 524, text layer 525) — resolve off the plate first. |
+| — | `ddc-2-16` | **done** (2026-08-27, Opus) — **La 520–524 / En 691–695**, all four boundaries plate-confirmed; flag flipped to `verified`. **★★ EXTENT CORRECTED: the Latin runs 5 pp., not the crosswalk's 4** — La 524 carries the closing *inhospitalitas* paragraph and a blank tail, and `CAP. XVII` opens **La 525**. **This resolved the 2.17 suspect flag: the audit was right, the crosswalk was wrong.** **15 ¶¶ → 13**, one **triple merge** at en{¶6–8}. **One note, printed 1** — predicted exactly; II.xvii opens at 2. No Latin apparatus. Page ratio **1.00**, a true negative (cf. II.x). **★★ Sumner ADDS a doctrine the Latin lacks**: *ne absurda æquatio inæqualium fiat* → "lest we fall into the absurdity of equalizing **those whom nature never intended for an equality**" (600 dpi both sides). The Latin supplies neither *nature* nor *intention* — the largest interpretive addition in the corpus, and on Milton's social politics; do not source a headnote claim there from the English. **★★ New divergence class — a verbal range resolved into digits**: La `Job. xxix. a v. 11. usque ad finem capitis` → En `Job xxix. 11—25`. **★ First ENGLISH word-substitution error** (all prior ones were digits or a wrong sort): En 692 `Deut. x. 18. he doth **create** the judgement` for *execute*, 900 dpi. **★ Three Latin punctuation anomalies in five pages, all in gathering 3X** (`Psal. lxviii, 6.` · `Prov. xiv. 21:` · `Heb. xiii. 2,`). **★ The II.xv dash-range rule re-tested and now precise: 3+ consecutive verses always contract, 2 never does** (7 and 10 instances respectively). ★ The same-verse-two-halves pattern recurs twice (`2 Cor. ix. 6`, `Deut. xxvii. 19`). |
+| 1 | `ddc-2-17` | **`De Officiis Publicis erga Proximum` — the last chapter of Book II.** La 525–536 / En 696–711, **all four boundaries now plate-confirmed** (La ends `TOTIUS OPERIS FINIS`, En ends `THE END`), flag `verified`, ratio 1.33. **Plates not prepped**: run `./tools/prep-chapter.sh 2 17` first. Its first English note must be **2**. At 12 La pages it is at the §7 split threshold — split at Milton's lemma seams if it needs it. |
 | then | Book I, i–iii and vii–xxxiii | |
 | last | `ddc-1-04`, `ddc-1-05`, `ddc-1-06` | see §5 |
 
@@ -99,9 +99,10 @@ doctrine, and the chapter everyone will actually read.
   II.xii → **none** (all eleven feet read, both layers — the number passes through untouched) ·
   II.xiii → **8, 9, 1, 2, 3, 4, 5** (wraps once at En 662; all seventeen En feet + twelve La feet read) ·
   II.xiv → **6** (a single note, predicted exactly; all eight En feet + seven La feet read) ·
-  II.xv → **7, 8, 9** (predicted exactly; no wrap inside the chapter; all eleven En feet + nine La feet read).
-  So **II.xvi must open at note 1** — and this one is not a prediction: **En 691 carries note ¹**, read on the
-  boundary plate while confirming II.xv's extent. The 9→1 wrap is directly observed.
+  II.xv → **7, 8, 9** (predicted exactly; no wrap inside the chapter; all eleven En feet + nine La feet read) ·
+  II.xvi → **1** (a single note, predicted exactly; the 9→1 wrap directly observed on En 691; all five En
+  feet + five La feet read).
+  So **II.xvii must open at note 2.**
   Blind spot: the cycle is only 9 long, so it can never detect a miss of exactly 9 notes. It is
   not a substitute for reading every plate for superscripts.
 - **Also check the LATIN plates for superscripts.** The Latin volume carries apparatus too — see
@@ -170,7 +171,30 @@ Resolve off the plate before transcribing these; correct `chapters.tsv` and set 
 | 1.23 | En (3pp) shorter than La (4pp) — ratio below 1.0 |
 | 1.24 | La start: crosswalk 280, text layer 279 |
 | 1.28 | La start: crosswalk 309, text layer **315** — a 6-page gap, the largest open discrepancy |
-| 2.17 | La start: crosswalk 524, text layer 525 |
+| ~~2.17~~ | ✅ **RESOLVED 2026-08-27** — the text layer (525) was right, the crosswalk (524) wrong. See below. |
+
+**All five remaining flags are in Book I. Book II carries none.**
+
+### ⚖ How 2.17 resolved, and what it implies for the five that are left
+
+It was settled not by inspecting 2.17 at all but by **transcribing II.xvi and running off the end of
+it**: La 524 turned out to carry II.xvi's closing paragraph plus a blank tail, so `CAP. XVII` could
+only open at 525. **The audit's text layer was right and the crosswalk was wrong** — which is now
+the record in *every* discrepancy the audit has raised (the En II.v/II.vi boundary in the staging
+session, and this one), against **zero** cases of the crosswalk being right. The audit's *silences*
+remain weak evidence (§7's non-detections have all been fine), but its *discrepancies* are 2 for 2.
+
+Two consequences for Book I:
+1. **Weight the text layer over the crosswalk** when the two disagree, and resolve the flag off the
+   plate at the first opportunity rather than deferring it.
+2. **The adjacent chapter is often the cheapest instrument.** 1.28's 6-page gap is the largest open
+   discrepancy; it will likely fall out of transcribing 1.27 and reading past its end, without a
+   separate investigation.
+
+⚠ And check the *extent*, not only the start: correcting 2.17's start exposed that **both** its page
+counts were also wrong (La 12 pp. not 11 as the start-shift alone implied, En 16 pp. not 15), because
+the crosswalk had the volume ending a page early in each layer. La 536 ends `TOTIUS OPERIS FINIS`
+and En 711 ends `THE END`, both now plate-confirmed.
 
 Also **not found in the text layer** (heading not detected; may be fine, confirm on the plate
 when the chapter comes up): La 2.3, ~~En 2.11~~, and a handful in Book I. **En 2.11 is now

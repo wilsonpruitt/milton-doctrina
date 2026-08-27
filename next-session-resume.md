@@ -216,30 +216,45 @@ Work from `M3-RUNBOOK.md` — **its queue table in §1 is the authoritative per-
 kept current chapter by chapter. Book II first, then Book I, saving I.iv–I.vi for last. Opus per
 chunk.
 
-**▶ NEXT IS `ddc-2-16`** *De Altera Specie Officiorum Privatorum* — La 520–523 (4 pp.) /
-En 691–695 (5 pp.), almsgiving and hospitality, and **nothing is prepped for it**:
-`./tools/prep-chapter.sh 2 16` first, and do not read a plate you did not just render.
-**Its first English footnote is 1** — not a prediction: note ¹ was sighted on En 691 while
-confirming II.xv's extent, and it is Milton on his mother's charity out of the *Defensio Secunda*.
-After it, only **`ddc-2-17`** remains in Book II, and that one is flagged `suspect` (La start:
-crosswalk 524 vs text layer 525) — resolve the boundary off the plate before transcribing.
+**▶ NEXT IS `ddc-2-17`** *De Officiis Publicis erga Proximum* — **the last chapter of Book II.**
+La 525–536 (12 pp.) / En 696–711 (16 pp.), ratio 1.33, **all four boundaries plate-confirmed**
+(La 536 ends `TOTIUS OPERIS FINIS`, En 711 ends `THE END`). **Nothing is prepped**: run
+`./tools/prep-chapter.sh 2 17` first, and do not read a plate you did not just render.
+**Its first English footnote must be 2** (II.xvi carried a single note, 1). At 12 Latin pages it sits
+right at CONVENTIONS §7's split threshold — split at Milton's own lemma seams if it needs it, not at
+a page count. Its subject is the magistrate, the people, and the church, so **treat it as a §10
+polemical chapter and write one paragraph per edit from the start.**
 
-**Book II is now complete through II.xv.** II.xv's own findings are in `M3-RUNBOOK.md` §1 and in
-`chunks/ddc-2-15.md`'s Notes; the three that change how the next chapter should be read are:
+**Finishing it closes Book II.** After that the run moves to Book I, i–iii and vii–xxxiii, saving
+I.iv–I.vi for last (M3-RUNBOOK §5).
 
-1. **★★ A PLAN heterodoxy claim did not survive contact with the text.** PLAN §6.2 lists divorce
-   and polygamy among Milton's structural breaks "in II.xv." The chapter says nothing about
-   divorce and is doctrinally conventional throughout; the divorce material is **Sumner's**,
-   entering through note 8 at a bare Proverbs proof-text. **Before repeating any PLAN §6.2
-   heterodoxy claim in a headnote, check whether it is in Milton's text or in the apparatus.**
-2. **★★ The English contracts enumerated verse-runs to dash ranges, systematically** — every run of
-   three or more consecutive verses (`Eph. v. 22, 23, 24` → `Eph. v. 22—24`), never a discontinuous
-   list. First chapter where the habit is regular enough to state as a rule; log counter-examples.
-3. **★★ `et v. N` means *et versu N* and BOTH layers use it** — nine instances in II.xv alone.
-   A naive M4 citation parser resolves every one to the wrong book and chapter. **The parser must
-   carry the running chapter**; this is now the fourth distinct way the corpus has shown the
-   scripture index cannot be built mechanically (after II.x's omission, II.ix's reordering, and
-   II.xv's deliberate double-citation of three verses for their opposite halves).
+## ✅ BOOK II HAS NO SUSPECT FLAGS LEFT — 2.17 resolved 2026-08-27
+
+The last one fell out of transcribing II.xvi and reading past its end: La 524 carries II.xvi's
+closing *inhospitalitas* paragraph and a blank tail, so `CAP. XVII` could only open at **525**.
+**The audit's text layer was right and the crosswalk was wrong** — the audit's discrepancies are now
+2 for 2, the crosswalk 0 for 2. Correcting the start also exposed that **both** of 2.17's page counts
+were wrong (La 12 not 11, En 16 not 15). Full reasoning and the two consequences for Book I's five
+remaining flags are in **`M3-RUNBOOK.md` §7** — read it before resolving 1.28, the largest open gap.
+
+## The findings from II.xv–II.xvi that change how the next chapter is read
+
+1. **★★ Sumner adds doctrine the Latin does not contain.** II.xvi {¶5}: *ne absurda æquatio
+   inæqualium fiat* becomes "lest we fall into the absurdity of equalizing **those whom nature never
+   intended for an equality**." The Latin supplies neither *nature* nor *intention*. With II.xv's
+   discovery that the divorce material in that chapter is Sumner's apparatus and not Milton's text,
+   the rule is now general: **before attributing a position to Milton, check which layer it is in.**
+2. **★★ The dash-range rule is confirmed and precise.** The English contracts every run of **three or
+   more** consecutive verses to a dash range and **never** contracts a run of two — 7 and 10
+   instances in II.xvi alone, no exceptions across two chapters.
+3. **★★ The same-verse-two-halves habit is real, not an accident.** II.xv had `Prov. iii. 33 / xiv. 11
+   / xv. 6` cited twice each on one page; II.xvi repeats it with `2 Cor. ix. 6` (bountifully /
+   sparingly) and `Deut. xxvii. 19` (fatherless-and-widow / stranger). **The M4 scripture index must
+   not de-duplicate by reference** — that would destroy the antithesis Milton is building.
+4. **★ The English layer produces word errors, not only digit errors.** En 692 prints `he doth
+   **create** the judgement` for *execute* (900 dpi). Every prior English error was a citation digit
+   or a wrong sort; a wrong *word* reads as grammatical theology and will not be caught by a
+   numeral check.
 
 ## ⚠⚠ TWO CONVENTION QUESTIONS ARE NOW WAITING ON WILSON — both from II.xi
 
