@@ -216,9 +216,30 @@ Work from `M3-RUNBOOK.md` — **its queue table in §1 is the authoritative per-
 kept current chapter by chapter. Book II first, then Book I, saving I.iv–I.vi for last. Opus per
 chunk.
 
-**▶ NEXT IS `ddc-2-12`** *De Virtutibus sive Officiis specialibus erga Proximum* — La 487–? /
-En 650–?, and **nothing is prepped for it**: `./tools/prep-chapter.sh 2 12` first, and do not read a
-plate you did not just render. **Its first English footnote must be 8** (II.xi closed at 7).
+**▶ NEXT IS `ddc-2-16`** *De Altera Specie Officiorum Privatorum* — La 520–523 (4 pp.) /
+En 691–695 (5 pp.), almsgiving and hospitality, and **nothing is prepped for it**:
+`./tools/prep-chapter.sh 2 16` first, and do not read a plate you did not just render.
+**Its first English footnote is 1** — not a prediction: note ¹ was sighted on En 691 while
+confirming II.xv's extent, and it is Milton on his mother's charity out of the *Defensio Secunda*.
+After it, only **`ddc-2-17`** remains in Book II, and that one is flagged `suspect` (La start:
+crosswalk 524 vs text layer 525) — resolve the boundary off the plate before transcribing.
+
+**Book II is now complete through II.xv.** II.xv's own findings are in `M3-RUNBOOK.md` §1 and in
+`chunks/ddc-2-15.md`'s Notes; the three that change how the next chapter should be read are:
+
+1. **★★ A PLAN heterodoxy claim did not survive contact with the text.** PLAN §6.2 lists divorce
+   and polygamy among Milton's structural breaks "in II.xv." The chapter says nothing about
+   divorce and is doctrinally conventional throughout; the divorce material is **Sumner's**,
+   entering through note 8 at a bare Proverbs proof-text. **Before repeating any PLAN §6.2
+   heterodoxy claim in a headnote, check whether it is in Milton's text or in the apparatus.**
+2. **★★ The English contracts enumerated verse-runs to dash ranges, systematically** — every run of
+   three or more consecutive verses (`Eph. v. 22, 23, 24` → `Eph. v. 22—24`), never a discontinuous
+   list. First chapter where the habit is regular enough to state as a rule; log counter-examples.
+3. **★★ `et v. N` means *et versu N* and BOTH layers use it** — nine instances in II.xv alone.
+   A naive M4 citation parser resolves every one to the wrong book and chapter. **The parser must
+   carry the running chapter**; this is now the fourth distinct way the corpus has shown the
+   scripture index cannot be built mechanically (after II.x's omission, II.ix's reordering, and
+   II.xv's deliberate double-citation of three verses for their opposite halves).
 
 ## ⚠⚠ TWO CONVENTION QUESTIONS ARE NOW WAITING ON WILSON — both from II.xi
 
