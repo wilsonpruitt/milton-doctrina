@@ -15,10 +15,29 @@ if it is not validated," and 19 chapters is enough to find that out cheaply.
 | | |
 |---|---|
 | `tools/census-citations.py` | measures the citation forms actually present. Re-run it as chapters land; `--shapes` and `--unclass` for detail. |
-| `tools/scripture-books.json` | **starter** abbreviation tables for both layers, seeded from the census, 61 books. |
+| `tools/scripture-books.json` | abbreviation tables for both layers, seeded from the census. **62 books** — `3 John` added 2026-08-28. |
 | this file | the design decisions and the hazards, below. |
 
-Nothing else exists. There is no ledger, no parser, no route.
+## 1a. Steps 1-3 are DONE — 2026-08-28
+
+- **`tools/versification.py`** does not exist; **`tools/build-versification.py`** does, and it
+  derives `tools/versification.json` (66 books, 1189 chapters) from `~/kjv-wesley/data/kjv`.
+  That dataset is known short — Matthew and Mark are each missing three verses and are
+  *silently renumbered* past the drop — so the table carries a per-book `trust`
+  (`exact` / `slack+1` / `unreliable`) and the range check reports Matthew and Mark as
+  warnings only. Regenerate, never hand-edit.
+- **`tools/build-citations.py`** — the parser. `./tools/build-citations.py ddc-2-02` for one
+  chunk, `--all` for the corpus, `--dump` to read every record. Writes `index/citations.tsv`
+  and `index/citation-qa.md`.
+- **Step 2's gate is met on `ddc-2-02`**: 327 records, **0 unclassified**, layer spread 0.6%,
+  and **all nine divergences hand-logged in the chunk's Notes are found** — check §6.4, the
+  strongest validation available, passes on the format-reference chapter.
+- **Step 3 is run across all 21 chunks**: 5,809 records, layer spread **0.1%** (2906 la /
+  2903 en), 30 unclassified, 13 out-of-range, 427 divergence rows. Not yet hand-checked
+  chapter by chapter — that is the next session's work, and `index/citation-qa.md` is the
+  worklist.
+
+⚠ Steps 4-6 (`build-index-json.py`, `/scripture`, the route) are **untouched**.
 
 ## 2. ★★★ The one decision that differs from Bonaventure — BOTH layers are keyed
 
@@ -76,9 +95,14 @@ Shapes, commonest first (both layers agree on the ordering):
 3. **The abbreviation tables are different**, and Sumner is inconsistent *within* a layer:
    `Levit.`/`Lev.`, `Numb.`/`Num.`, `Neh.`/`Nehem.`, `Micah`/`Mic.`, `Esther`/`Esth.`,
    `Lam.`/`Lament.`, `Hos.`/`Hosea`, `1 John`/`1 John.`
-4. ⚠ **The Latin uses `1 Reg.`/`2 Reg.` for 1–2 KINGS** while separately using `1 Sam.`/`2 Sam.`
-   That is not the Vulgate convention. Counts corroborate (La `1 Reg.` 37 / En `1 Kings` 34; La
-   `2 Reg.` 30 / En `2 Kings` 30) but **confirm it at a plate** before the index ships.
+4. ✅ **`1 Reg.`/`2 Reg.` = 1-2 KINGS — CONFIRMED AT PLATE, 2026-08-28.** Read off freshly
+   rendered I.ii plates, both layers: La 15 `1 Reg. viii. 27. cœli cœlorum non capiunt te`
+   against En 22 `1 Kings viii. 27. the heaven and heaven of heavens cannot contain thee`.
+   1 Samuel 8 has only 22 verses, so the Samuel reading is impossible on the digits alone,
+   and the content is Solomon's dedication. La 17 carries the pair in one paragraph —
+   `1 Reg. viii. 60.` and `2 Reg. xix. 15.` — against En 25's `1 Kings viii. 60.` and
+   `2 Kings xix. 15.` The Latin volume uses `1 Sam.`/`2 Sam.` separately throughout, so this
+   is not the Vulgate's 1-4 Regum.
 
 ## 4. Hazards, each already drawn blood in prep
 
@@ -89,11 +113,29 @@ Shapes, commonest first (both layers agree on the ordering):
    shape-identical to numerals. A bare roman is a citation only in citation context — after a book
    token, after `et`, or after another citation. **This hazard does not exist in the English.**
 3. **Capitalised Latin words that look like books** — `Judæis`, `Judæorum`, `Judæi`, and `Sic`
-   (the opening of Sumner's textual notes) and `Cap.` (Milton's own chapter self-reference). A book
-   token is a citation only when a chapter or verse follows.
-4. ★ **Single-chapter books drop the chapter entirely**: La `Judæ v. 20.` / En `Jude 20.` A parser
-   expecting `BOOK CH V` reads the verse as a chapter and emits a citation to a chapter that does
-   not exist. Attested for Jude; assume the same for Obadiah, Philemon, 2 and 3 John.
+   (the opening of Sumner's textual notes). A book token is a citation only when a chapter or
+   verse follows. ⚠ `Judæ` + `i` reads as *Jude 1* unless whitespace is REQUIRED between the
+   book token and its numeral; the parser does, and no citation in either volume sets them tight.
+
+3a. ⚠ **`cap.` WAS MISFILED HERE AND IS NOT A SELF-REFERENCE.** This entry used to say `Cap.`
+   was "Milton's own chapter self-reference." It is wrong, and dropping `cap.` as a non-book
+   would have silently lost an entire continuation class. `cap.`/`Cap.` means *chapter* and
+   **carries the current book forward**: `Exod. xvii. 16. … Cap. iii. 14.` is Exodus 3:14
+   (*Ehie, qui sum*), `Deut. iv. 35. … cap. vi. 4.` is Deuteronomy 6:4 (the Shema),
+   `Gen. xii. 13. … cap. xiv. 22, 23.` is Genesis 14. The genuine self-reference exists but is
+   rare and always **governed** — `Vide supra lib. 1. cap. xxvii.`, `ut superiore libro cap. x.`
+   — four instances in 21 chunks. The English does the same thing (`See Book I. chap. xxvii.`),
+   and Sumner cites other authors the same way (`Ames, Medull. Theol. lib. ii. c. 13.`). All
+   three, indexed as scripture, produce 1 John 27, Luke 27, Deuteronomy 100. The parser refuses
+   any continuation governed by `lib.` / `Book` / `supra` / `infra`.
+4. ★ **Single-chapter books drop the chapter entirely**, and **the two layers do it differently**:
+   La `Judæ v. 20.` prefixes `v.`, En `Jude 20.` sets a bare arabic verse. The Latin form is the
+   dangerous one — as a roman, `v` is 5, so a parser expecting `BOOK CH V` emits *Jude chapter 5*.
+   This parser did exactly that until the full-corpus run caught it; single-chapter books are now
+   matched **before** the general book-and-chapter branch. `3 John` is in the corpus three times
+   (`3 Joan. 5, 6, &c.`) and was missing from the book table, which is why the run reported
+   `John 5`. Obadiah, Haggai, Philemon and 2 John have no chapter-and-verse citation yet;
+   Philemon appears only as a whole epistle (`et Philemonis epistola`), which is not indexed.
 5. ★ **`Jud.` is JUDGES, not Jude** — the first seeding of the book table got this wrong, and what
    caught it was the parallel: La `Jud. xiii. 18.` against En `Judges xiii. 18.`, versus La
    `Judæ v. 20.` against En `Jude 20.` **The other layer is the best check on a mapping.** This is
@@ -103,9 +145,30 @@ Shapes, commonest first (both layers agree on the ordering):
    **unresolved**. Per the Bonaventure rule that ports verbatim: *never guess — a citation the
    parser cannot classify becomes a QA line, not a record with an invented target.*
 7. **`et v. N` is ambiguous and unresolvable by form alone** — it may be verse N of the current
-   chapter or chapter N of the current book. Attested at I.ii and II.xvii; I.ii's instance was
-   settled only because the English applied KJV versification to it, which makes sense only for a
-   chapter reference. Treat as its own resolution class; do not force it.
+   chapter or chapter N of the current book. **Resolved in practice by a two-stage test, and the
+   record says which stage settled it:** first the canon (does either reading target a verse that
+   exists?), then, where both survive, **the parallel layer** — the English sets `v. N` for a
+   verse and never for chapter 5, so an aligned English verse-continuation fixes the Latin. On
+   ddc-2-02 that settles all thirteen instances (4 by canon, 9 by the English) with none left
+   over; across the corpus ten remain genuinely unresolved and are in the QA report, not the
+   ledger. ⚠ The first run of the parser read every `et v. N` as chapter 5 and emitted Ps 5:98,
+   Ps 5:157 and six more targets that do not exist. That is PLAN §10 risk 5 in miniature.
+
+8. **A verse tail eats the next book's numeral.** `2 Reg. xxiii. 2 Chron. xxxiv. 4, &c.` — the
+   chapter-only citation's tail swallows the `2` of `2 Chron.`, bare `Chron.` matches no alias,
+   and the following `xxxiv.` carries 2 Kings forward to a chapter that does not exist. Four
+   false out-of-range records came from this one mechanism. The tail must refuse a number
+   standing in front of a book token, including a `1`-`4` standing in front of a numbered book's
+   second word.
+
+9. ★★ **A book may be named in PROSE rather than in an abbreviation, and then cited bare.**
+   Milton: `quam vana … luculenter ostendit Isaias cap. lix. 4`. Sumner: "the author of the
+   Epistle to the **Hebrews** …" then a bare `vi. 1—3.` Nothing in the citation syntax marks
+   either, so a state machine carries the wrong book forward. There is no reliable detector.
+   The guard is a rule about output, not about input: **a citation whose book was CARRIED and
+   whose target does not exist is refused**, because the carry is the likelier defect. A
+   citation whose book is NAMED and whose target does not exist stays in the ledger, flagged —
+   that one is a finding about the 1825 text.
 
 ## 5. What ports from Bonaventure, and what does not
 
@@ -148,12 +211,36 @@ normalized_target  confidence  resolution  carried_from  divergence_id
    that the Notes lack is a reading the transcription missed — file it either way.
 5. The QA report is read, not merely generated.
 
+## 6a. ★★ What the first full run found — 2026-08-28
+
+**Check §6.4 passes on ddc-2-02: all nine hand-logged divergences found, plus four the Notes
+lack** — three `&c.` dropped by the English (`Job. v. 12, &c.`, `Eccles. iii. 1, &c.`, and the
+already-logged `Exod. xix. 23, &c.`), a Latin verse-list truncated (`Job xii. 24, 25.` → `xii. 24.`),
+and ★ **a citation the English ADDS**: at 1 Cor. i. 19, 20 Milton runs two proof-texts together
+under one reference and Sumner supplies `v. 23.` for the second. With correction, reordering and
+omission already attested, **that is a fourth kind of unmarked editorial handling of the citation
+apparatus — supply.** All five want plate confirmation before they are written up as findings.
+
+**Thirteen citations in the corpus name a book and point at a verse that does not exist.** Five
+were already plate-confirmed by hand (`Luc. ix. 66.`, `2 Reg. vi. 35.`, `Deut. v. 38.`,
+`Psal. iii. 9.`, `1 Kings xxvii. 29.`) — the parser found every one of them without being told.
+The other eight are new and unread.
+
+★★ **Five of the thirteen are Ecclesiastes, in the Latin layer** — `ii. 27`, `vii. 30`, `ix. 20`,
+`ix. 22`, `xii. 15`, each running one to four verses past the KJV bound, in a book of twelve
+chapters. Five over-runs concentrated in one small book is not printer's error. **The hypothesis
+to test is that Junius-Tremellius versifies Ecclesiastes differently**, in which case these are
+not errors at all but the numbering divergence CONVENTIONS §3 exists to display — and note that
+Sumner corrects some of them (`ix. 20` → `ix. 18`) and leaves others (`xii. 15` in both layers).
+Settle this before any of the five is called an error.
+
 ## 7. Sequence
 
-1. Confirm the `1 Reg.` = Kings mapping at a plate (§3.4). Cheap, and everything downstream leans on it.
-2. Write `tools/build-citations.py` for ONE chapter — `ddc-2-02`, the format reference — both layers.
-   Hand-check every record it emits against the chapter. Do not scale until that is clean.
-3. Extend to the 19 chapters. Run check 4 against the logged divergences.
+1. ✅ **DONE 2026-08-28** — `1 Reg.` = Kings confirmed at plate (§3.4).
+2. ✅ **DONE 2026-08-28** — `tools/build-citations.py` written and clean on `ddc-2-02`.
+3. ✅ **RUN 2026-08-28**, not yet hand-checked chapter by chapter. Check 4 passes on ddc-2-02.
+   **Next session starts here**: read `index/citation-qa.md`, settle the Ecclesiastes question
+   at a plate, and confirm the eight unread out-of-range citations.
 4. `tools/build-index-json.py` → `site/src/data/scripture/*.json`.
 5. `/scripture` and `/scripture/[book]`, ported from Bonaventure, plus the divergence display.
 6. Backfill each new chapter as it lands; add the index step to M3-RUNBOOK §2.

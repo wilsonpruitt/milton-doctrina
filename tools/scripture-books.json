@@ -1,9 +1,9 @@
 {
  "_about": "STARTER TABLE, seeded 2026-08-28 from tools/census-citations.py over the 19 chapters then transcribed. Every alias below was OBSERVED in the corpus; the mappings are the transcriber's and are NOT verified against the plates. Check before the index ships — a wrong book in an index is worse than a missing one. Corrected 2026-08-28: `Jud.` was first mapped to Jude and is JUDGES — La `Jud. xiii. 18.` sits against En `Judges xiii. 18.`, while La `Judæ v. 20.` sits against En `Jude 20.` The parallel text is what settles these, and it is the reason both layers must be parsed rather than one keyed off the other.",
  "_layers_differ": "The two volumes do NOT share an abbreviation table and must be parsed with separate maps. Sumner also varies WITHIN a layer: Levit./Lev., Numb./Num., Neh./Nehem., Micah/Mic., Esther/Esth., Lam./Lament., Hos./Hosea, 1 John/1 John.",
- "_watch_Reg": "⚠ The Latin uses `1 Reg.`/`2 Reg.` for 1-2 KINGS while separately using `1 Sam.`/`2 Sam.` for Samuel. That is NOT the Vulgate convention (Vulg. 1-4 Regum = 1-2 Samuel + 1-2 Kings). Counts corroborate: La 1 Reg. 37 vs En 1 Kings 34; La 2 Reg. 30 vs En 2 Kings 30. Confirm at a plate before trusting it.",
+ "_watch_Reg": "✅ CONFIRMED AT PLATE 2026-08-28. The Latin uses `1 Reg.`/`2 Reg.` for 1-2 KINGS while separately using `1 Sam.`/`2 Sam.` for Samuel — NOT the Vulgate convention (Vulg. 1-4 Regum = 1-2 Samuel + 1-2 Kings). Read off La 15 and La 17 against En 22 and En 25 (I.ii, freshly rendered): La `1 Reg. viii. 27. cœli cœlorum non capiunt te` sits against En `1 Kings viii. 27. the heaven and heaven of heavens cannot contain thee` — 1 Kings 8:27, and 1 Samuel 8 has only 22 verses, so the Samuel reading is impossible on the digits alone. La 17 confirms the pair together in one paragraph: `1 Reg. viii. 60.` / `2 Reg. xix. 15.` against En 25's `1 Kings viii. 60.` / `2 Kings xix. 15.`, both quoting Solomon's dedication and Hezekiah's prayer. M4-RUNBOOK §7 step 1 is discharged.",
  "_not_a_book": {
-  "Cap.": "Milton's own chapter self-reference (`Cap. iii. 14.`), not a book. La only.",
+  "Cap.": "⚠ CORRECTED 2026-08-28 — this entry was WRONG. `cap.`/`Cap.` is not a book and is not normally Milton citing his own treatise: it is a CHAPTER CONTINUATION carrying the current book forward. `Exod. xvii. 16 ... Cap. iii. 14.` is Exodus 3:14, `Deut. iv. 35 ... cap. vi. 4.` is Deuteronomy 6:4, `Gen. xii. 13 ... cap. xiv. 22, 23.` is Genesis 14. Dropping it as a non-book would have silently lost a whole continuation class. The self-reference use is real but rare and is always governed — `Vide supra lib. 1. cap. xxvii.`, `ut superiore libro cap. x.` — four instances in 21 chunks, all in Book II; build-citations.py excludes exactly those.",
   "Sic": "`Sic in MS.` — the opening of Sumner's Latin textual notes (CONVENTIONS §5a).",
   "Christ.": "a word of the text, not a citation."
  },
@@ -933,6 +933,21 @@
    }
   },
   {
+   "key": "3John",
+   "nameEn": "3 John",
+   "nameLa": "Epistola Joannis III",
+   "testament": "NT",
+   "order": 64,
+   "aliases": {
+    "la": [
+     "3 Joan."
+    ],
+    "en-sumner": [
+     "3 John"
+    ]
+   }
+  },
+  {
    "key": "Jude",
    "nameEn": "Jude",
    "nameLa": "Iudas",
@@ -964,7 +979,7 @@
   }
  ],
  "_single_chapter_books": {
-  "note": "⚠ Books with ONE chapter are cited with a bare verse and NO chapter numeral: La `Judæ v. 20.` / En `Jude 20.` A parser expecting BOOK CH V will misread the verse as a chapter and silently produce a citation to a chapter that does not exist. Attested for Jude; the same must be assumed for Obadiah, Philemon, 2 John and 3 John.",
+  "note": "⚠ Books with ONE chapter are cited with a bare verse and NO chapter numeral: La `Judæ v. 20.` / En `Jude 20.` A parser expecting BOOK CH V will misread the verse as a chapter and silently produce a citation to a chapter that does not exist. Attested for Jude; the same must be assumed for Obadiah, Philemon, 2 John and 3 John. ADDED 2026-08-28: `3 Joan. 5, 6, &c.` / `3 John 5, 6, &c.` are in the corpus three times (II.xvi, II.xvii) and were absent from this table, so build-citations.py matched the bare `Joan.`/`John` and sent them to QA rather than emitting John 5 — the refusal worked, the table was the defect. 2 John, Obadiah, Haggai and Philemon still have no entry because no chapter-and-verse citation to them has yet been read; Philemon is referred to only as a whole epistle (`et Philemonis epistola`), which is not a verse citation and is not indexed.",
   "keys": [
    "Obad",
    "Phlm",
