@@ -11,8 +11,10 @@ export function generateStaticParams() {
   const books = loadAllContent();
   const params: { book: string; chapter: string }[] = [];
   for (const book of books) {
-    for (const chunk of book.chunks) {
-      params.push({ book: String(book.id), chapter: String(chunk.chapter) });
+    // Iterate CHAPTERS, not chunks — a chapter transcribed in three parts is one
+    // page, and iterating chunks emitted the same param three times (§8d).
+    for (const ch of book.chapters) {
+      params.push({ book: String(book.id), chapter: String(ch.chapter) });
     }
   }
   return params;
@@ -27,16 +29,19 @@ export default async function ChapterPage({
   const books = loadAllContent();
   const book = books.find((b) => b.id === parseInt(bookParam));
   if (!book) return <p>Book not found.</p>;
-  const chunk = book.chunks.find((c) => c.chapter === parseInt(chapterParam));
-  if (!chunk) return <p>Chapter not found.</p>;
+  const chapter = book.chapters.find((c) => c.chapter === parseInt(chapterParam));
+  if (!chapter) return <p>Chapter not found.</p>;
 
-  const idx = book.chunks.findIndex((c) => c.id === chunk.id);
-  const prev = idx > 0 ? book.chunks[idx - 1] : null;
-  const next = idx < book.chunks.length - 1 ? book.chunks[idx + 1] : null;
+  // ⚠ Neighbours are computed over CHAPTERS. Over chunks, II.iv's three parts all
+  // carry chapter 4, so "next" linked the page to itself.
+  const idx = book.chapters.findIndex((c) => c.chapter === chapter.chapter);
+  const prev = idx > 0 ? book.chapters[idx - 1] : null;
+  const next = idx < book.chapters.length - 1 ? book.chapters[idx + 1] : null;
 
   // Prefer the Latin title if present, else whatever title comes first.
-  const primaryTitle = chunk.titles["la"] ?? Object.values(chunk.titles)[0] ?? chunk.id;
-  const secondaryTitle = Object.entries(chunk.titles).find(([k]) => k !== "la")?.[1];
+  const primaryTitle =
+    chapter.titles["la"] ?? Object.values(chapter.titles)[0] ?? chapter.parts[0].id;
+  const secondaryTitle = Object.entries(chapter.titles).find(([k]) => k !== "la")?.[1];
 
   return (
     <div>
@@ -45,7 +50,7 @@ export default async function ChapterPage({
       </Link>
 
       <h2 className="h2" style={{ fontSize: "22px", marginBottom: "0.25rem" }}>
-        Cap. {chunk.chapter}. {primaryTitle}
+        Cap. {chapter.chapter}. {primaryTitle}
       </h2>
       {secondaryTitle && (
         <p
@@ -63,15 +68,25 @@ export default async function ChapterPage({
 
       <CrossDivider />
 
-      {chunk.headnote && (
-        <div className="headnote-block">
-          {chunk.headnote.split(/\n{2,}/).map((para, i) => (
-            <p key={i}>{renderHeadnoteInline(para)}</p>
-          ))}
-        </div>
-      )}
-
-      <TextReader texts={chunk.texts} apparatus={chunk.apparatus} />
+      {/* Every part of the chapter, in order. Each keeps its own reader, because each
+          restarts its {¶N} numbering at 1 and carries its own apparatus. */}
+      {chapter.parts.map((part, i) => (
+        <section key={part.id} id={part.id}>
+          {chapter.parts.length > 1 && (
+            <div className="section-title" style={{ fontSize: "12px", marginTop: i ? "2.5rem" : 0 }}>
+              Part {String.fromCharCode(97 + i)}
+            </div>
+          )}
+          {part.headnote && (
+            <div className="headnote-block">
+              {part.headnote.split(/\n{2,}/).map((para, j) => (
+                <p key={j}>{renderHeadnoteInline(para)}</p>
+              ))}
+            </div>
+          )}
+          <TextReader chunkId={part.id} texts={part.texts} apparatus={part.apparatus} />
+        </section>
+      ))}
 
       {(prev || next) && (
         <div

@@ -18,9 +18,11 @@ const PAGE_MODE_LABEL: Record<PageMode, string> = {
 // more than one language. This is the generalization the whole M2 milestone
 // exists to do — do not hardcode "2 languages" or a fixed key order here.
 export function TextReader({
+  chunkId,
   texts,
   apparatus,
 }: {
+  chunkId: string;
   texts: LangText[];
   apparatus: ApparatusEntry[];
 }) {
@@ -81,7 +83,7 @@ export function TextReader({
           style={{ ["--lang-count" as string]: texts.length }}
         >
           {texts.map((t) => (
-            <TextColumn key={t.key} lang={t} pageMode={pageMode} />
+            <TextColumn key={t.key} chunkId={chunkId} lang={t} pageMode={pageMode} />
           ))}
         </div>
       ) : (
@@ -89,7 +91,7 @@ export function TextReader({
           {texts
             .filter((t) => t.key === viewMode)
             .map((t) => (
-              <TextColumn key={t.key} lang={t} pageMode={pageMode} />
+              <TextColumn key={t.key} chunkId={chunkId} lang={t} pageMode={pageMode} />
             ))}
         </div>
       )}
@@ -99,20 +101,28 @@ export function TextReader({
   );
 }
 
-function TextColumn({ lang, pageMode }: { lang: LangText; pageMode: PageMode }) {
+function TextColumn({
+  chunkId,
+  lang,
+  pageMode,
+}: {
+  chunkId: string;
+  lang: LangText;
+  pageMode: PageMode;
+}) {
   return (
     <div>
       <div className="section-title" style={{ fontSize: "12px" }}>
         {lang.label}
       </div>
       <div className="text-column" data-lang={lang.key}>
-        {renderBody(lang.body, lang.key, pageMode)}
+        {renderBody(lang.body, lang.key, pageMode, chunkId)}
       </div>
       {lang.scholion && (
         <div className="scholion-block">
           <div className="scholion-label">Scholion</div>
           <div className="text-column" data-lang={lang.key}>
-            {renderBody(lang.scholion, lang.key, pageMode)}
+            {renderBody(lang.scholion, lang.key, pageMode, chunkId)}
           </div>
         </div>
       )}
@@ -159,7 +169,12 @@ function ApparatusBlock({
 
 // --- Rendering helpers ------------------------------------------------------
 
-function renderBody(body: string, langKey: string, pageMode: PageMode) {
+function renderBody(
+  body: string,
+  langKey: string,
+  pageMode: PageMode,
+  chunkId: string
+) {
   if (!body) return null;
   const paragraphs = body.split(/\n{2,}/);
   const nodes: React.ReactNode[] = [];
@@ -182,8 +197,18 @@ function renderBody(body: string, langKey: string, pageMode: PageMode) {
     const marker = parMatch ? parMatch[1] : null;
     const rest = parMatch ? parMatch[2] : trimmed;
 
+    // The scripture index deep-links to a paragraph in a given layer. Scope the id by
+    // CHUNK: a chapter transcribed in parts restarts {¶N} at 1 in each part, so
+    // `la-p1` alone would collide three times on one page (§8d). Matches the
+    // `paraAnchor()` in tools/build-index-json.py — change both together.
+    const anchorId = marker ? `${chunkId}-${langKey}-p${marker.replace(/[^0-9]+/g, "-")}` : undefined;
     nodes.push(
-      <p key={i} className={`chunk-text lang-${langKey}`} style={{ marginBottom: "1rem" }}>
+      <p
+        key={i}
+        id={anchorId}
+        className={`chunk-text lang-${langKey}`}
+        style={{ marginBottom: "1rem", scrollMarginTop: "5rem" }}
+      >
         {marker && <span className="para-marker">¶{marker}</span>}
         {renderInline(rest, pageMode)}
       </p>

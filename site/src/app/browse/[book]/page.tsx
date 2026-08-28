@@ -28,15 +28,23 @@ export default async function BookPage({ params }: { params: Promise<{ book: str
 
       <CrossDivider />
 
-      {book.chunks.map((chunk) => {
-        const title = chunk.titles["la"] ?? Object.values(chunk.titles)[0] ?? chunk.id;
+      {/* One card per CHAPTER. Listing chunks made II.iv appear three times. */}
+      {book.chapters.map((ch) => {
+        const title =
+          ch.titles["la"] ?? Object.values(ch.titles)[0] ?? ch.parts[0].id;
+        const status = ch.parts[0].status;
         return (
-          <Link key={chunk.id} href={`/browse/${book.id}/${chunk.chapter}`} className="card-link">
+          <Link key={ch.chapter} href={`/browse/${book.id}/${ch.chapter}`} className="card-link">
             <div className="card">
               <h3 className="card-title">
-                Cap. {chunk.chapter}. {title}
+                Cap. {ch.chapter}. {title}
               </h3>
-              {chunk.status && <p className="card-meta">{chunk.status}</p>}
+              {status && (
+                <p className="card-meta">
+                  {status}
+                  {ch.parts.length > 1 && ` · ${ch.parts.length} parts`}
+                </p>
+              )}
             </div>
           </Link>
         );

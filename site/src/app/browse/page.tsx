@@ -24,7 +24,7 @@ export default function BrowsePage() {
               <div>
                 <h3 className="card-title">{book.title}</h3>
                 <p className="card-meta">
-                  {book.chunks.length} chapter{book.chunks.length !== 1 ? "s" : ""} available
+                  {book.chapters.length} chapter{book.chapters.length !== 1 ? "s" : ""} available
                 </p>
               </div>
             </div>
