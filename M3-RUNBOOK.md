@@ -73,8 +73,9 @@ both found by the sweep; chapters II.x–II.xvii added none, all their page feet
 | # | chunk | state |
 |---|---|---|
 | — | `ddc-1-01` | **done** (2026-08-27, Opus) — La 7–9 / En 9–12, all four boundaries plate-confirmed (`CAP./CHAP. II` opens La 10 / En 13); flag → `verified`, crosswalk correct. **9 ¶¶ → 9, strict 1:1.** **★★ ZERO footnotes in either layer** — so **Book I's numbering is still unestablished**; the question passes intact to I.ii. No Latin apparatus (3 feet read; agrees with `sweep-book1.tsv`). **★★★ THE GREEK RULE IS CORRECTED** — Book II's "keeps quotations, removes technical terms" predicted all three Greek words here would go; **all are kept**. The real distinction is **use vs. mention**: Sumner removes Greek an English equivalent can carry, and keeps Greek that is *itself the subject under discussion* (`vox Græca τύπος`). Covers all 11 instances; supersedes the formulation in II.x/II.xi/II.xv/II.xvi. **★★ First application of the new mid-word rule, and it is to GREEK** (`ὑπο<!-- p.9 -->τύπωσις`) — keeping the hyphen would have made a non-word. **★★ En recasts `DIVINITUS` (adverb) as `DIVINE REVELATION` (noun phrase)** in the work's founding definition and in its lemma. **★ First La error of Book I**: `Act. xxiv. … v. 6` → `v. 16`. **★★ New English-error mechanism** — the narrowing habit misfires: `Joan. vi. 45, 46` → `John vi. 46`, but the quoted words are 6:**45**. **★ The layers disagree on a Greek accent** (La `τύπος` / En `τυπὸς`, 1000 dpi). **★ The work's title block is on this page and belongs to no chunk** — source it separately if the site ever shows front matter. |
-| 1 | `ddc-1-02` | `De Deo` — La 10–21 (12 pp.) / En 13–29 (17 pp.). **Nothing prepped.** At 12 La pp. it is *at*, not over, §7's threshold (cf. II.ix, II.xvii) — do not split by reflex. **Carries Book I's numbering question**: if it has notes, its first note establishes the run for the whole book. |
-| 2+ | `ddc-1-03`, `ddc-1-07` … `ddc-1-33` | in order, saving I.iv–I.vi for last (§5) |
+| ~ | `ddc-1-02` | **PARTIAL** (2026-08-28, Opus) — **Latin layer done, English owed.** La 10–21 / En 13–29, both extents plate-confirmed (`CAP./CHAP. III` opens La 22 / En 30); `status: la-verified`, `en_status: pending`, legal per §8d. **Read the chunk's `## Notes` before resuming — alignment, ledger and English-layer findings are settled there and must NOT be re-derived.** A batched English write tripped a content filter; §10 applies, one paragraph per edit. **32 ¶¶ → 37, THREE SPLITS and NO MERGES**, inverting Book II's merge-dominated pattern. ⚠ Two of the three are **three-way**, which the 2026-08-27 ruling does not cover; `{¶N cont. 2}` used, **needs ratification**. **Seventeen English notes** (`9 · 1–9 · 1–7`), densest in the corpus — **I.iii opens at 8**. **★★★ TWO Latin textual notes (La 12, La 20) and `sweep-book1.tsv` flags BOTH pages clean** — the detector's first false negatives. **★★★★ Sumner TRANSLATED HIS OWN CONJECTURE**: La 20's `SUMME BEATUS` is queried in `[^la2]` and rendered "MOST GRACIOUS" (= *benignus*) in English, the note having no English counterpart — neither layer alone tells the reader. **★★★★ En 20 note 7 is a TEXTUAL note in the ENGLISH volume**, breaking the Latin-only rule and owing the ledger's first English-volume row. **★★★ The use/mention Greek rule confirmed both ways in one chapter** (En 17 translates, En 19 keeps). **★★★ The Arian argument is made HERE, not only in I.v** — hypostasis collapsed into essence (La 15), *nullus spiritus, nulla persona* (La 17), the Father as the one God (La 18), and Milton's own `verum de his plura cap. 5.` |
+| 1 | `ddc-1-03` | `De Divino Decreto` — La 22–30 (9 pp.) / En 30–43 (14 pp.). **Nothing prepped.** First English note must be **8**. |
+| 2+ | `ddc-1-07` … `ddc-1-33` | in order, saving I.iv–I.vi for last (§5) |
 | last | `ddc-1-04`, `ddc-1-05`, `ddc-1-06` | see §5 |
 | last | `ddc-1-04`, `ddc-1-05`, `ddc-1-06` | see §5 |
 
@@ -133,13 +134,15 @@ nothing needed migrating. **Do not re-open any of them per chapter**; Book I sta
   + twelve La feet read).
   **✅ THE BOOK II LEDGER IS CLOSED AND UNBROKEN, II.i → II.xvii.** Every chapter's first note was
   predicted from its predecessor's last and confirmed on the plate; not one break was ever found.
-  ⚠ **Book I starts a fresh problem, and I.i did NOT settle it.** CONVENTIONS §8a is explicit:
-  re-establish Book I's numbering independently — do not assume it continues from 7, do not assume it
-  restarts at 1. **I.i carries zero notes** (all 4 En + 3 La feet read), so it passes the number
-  through untouched and proves nothing either way. The question is live until the first Book I
-  chapter that carries a note; **that chapter establishes the run for the whole book.** Until then,
-  read every foot and record noteless chapters explicitly — a later note numbered 1 is only evidence
-  of a restart if every chapter before it has been confirmed noteless.
+  **★★★ BOOK I's numbering is RESOLVED — the cycle starts in Sumner's PREFACE.** En pp. 1–8 are the
+  preface and carry notes **1–8** (p. 7 = note 7, *Of Reformation*; p. 8 = note 8, *Of true
+  Religion* — both plate-read). **I.i carries none.** **I.ii opens at 9.** So the 1–9 cycle runs
+  unbroken through the whole volume — preface → Book I → Book II, where II.i opening at **3** is
+  exactly what a continuous cycle predicts if Book I closes at 2. §8a told the transcriber to assume
+  neither continuation from Book II nor a restart; the answer is a third thing neither option
+  anticipated, and **the checksum is now live for all 33 Book I chapters.**
+  **Book I ledger:** preface → **1–8** · I.i → **none** · I.ii → **9 · 1–9 · 1–7** (seventeen, the
+  densest chapter in the corpus). So **I.iii must open at note 8.**
   Blind spot: the cycle is only 9 long, so it can never detect a miss of exactly 9 notes. It is
   not a substitute for reading every plate for superscripts.
 - **Also check the LATIN plates for superscripts.** The Latin volume carries apparatus too — see

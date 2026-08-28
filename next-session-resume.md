@@ -215,19 +215,51 @@ Work from `M3-RUNBOOK.md` — **its queue table in §1 is the authoritative per-
 kept current chapter by chapter. Book II first, then Book I, saving I.iv–I.vi for last. Opus per
 chunk.
 
-## ✅ BOOK II COMPLETE · BOOK I OPENED — `ddc-1-01` done 2026-08-27
+## ▶ START HERE — `ddc-1-02` is a PARTIAL chunk; the English layer is owed
 
-Book II is finished (17/17, both layers, all `verified`, ledger closed, no suspect flag). **Book I is
-now open**: `ddc-1-01` is transcribed and verified, La 7–9 / En 9–12, 9 ¶¶ → 9 strict 1:1, all four
-boundaries plate-confirmed.
+**Read `chunks/ddc-1-02.md`'s `## Notes` first.** Its "Owed on return" list is the task, and the
+two sections after it — the settled alignment/ledger, and the English-layer findings — are work
+already done that **must not be re-derived**.
 
-**▶ NEXT IS `ddc-1-02`** *De Deo* — La 10–21 (12 pp.) / En 13–29 (17 pp.), ratio 1.42.
-**Nothing is prepped**: run `./tools/prep-chapter.sh 1 2` first. At 12 Latin pages it sits *at*, not
-over, CONVENTIONS §7's split threshold — II.ix and II.xvii were both transcribed whole at that size,
-so **do not split by reflex**. It is the chapter on the existence and nature of God, and the first
-long one in Book I.
+State: Book II complete (17/17). Book I: **I.i verified**, **I.ii Latin-verified, English pending**.
 
-## ⚠ THE THREE THINGS I.i ESTABLISHED FOR THE REST OF BOOK I
+**The task, in order:**
+
+1. `./tools/prep-chapter.sh 1 2` — the plates are gitignored; re-render before reading any.
+2. Write `## en-sumner`, En 13–29, **37 paragraphs**, **one paragraph per edit**. A batched write
+   tripped a content filter on 2026-08-28; M3-RUNBOOK §10 is the procedure and it works.
+   The alignment is settled — 32 La ¶¶ → 37 En ¶¶, **three splits, no merges**, listed in the chunk.
+3. Write `## apparatus-sumner-en` — **17 notes**, numbers and anchors already assigned in the chunk.
+4. Write `## headnote` (aim 200 words, hard cap 300).
+5. Add **three** rows to `tools/sumner-interventions.tsv`: La 12, La 20, **and En 20's note 7** —
+   the first English-volume textual note the ledger has carried.
+6. Flip `status: la-verified` → `verified`, drop `en_status`, delete the "Owed on return" list.
+7. `cd site && node scripts/build-content.mjs`, then `./tools/build-status.py` and republish the
+   register (same artifact URL).
+
+**▶ THEN `ddc-1-03`** *De Divino Decreto* — La 22–30 / En 30–43. **Its first English note must be 8**
+(I.ii closes at 7).
+
+## ⚠⚠ ONE CONVENTION QUESTION IS WAITING ON WILSON
+
+**Three-way splits.** The convention ratified 2026-08-27 defines only `{¶N}` + `{¶N cont.}`, which
+covers a two-way split. I.ii has **two three-way splits** (La {¶10} and {¶22}) as well as a two-way
+one ({¶16}). The chunk uses `{¶N cont. 2}` for the third piece, following the house pattern of
+CONVENTIONS §5b (append `-2` to a repeated label). **Needs ratification**; nothing else is blocked.
+
+## ⚠ TWO THINGS I.ii CHANGED ABOUT HOW BOOK I MUST BE WORKED
+
+1. **★★★ `tools/sweep-book1.tsv` CANNOT BE TRUSTED.** The Latin-footnote detector flags La 12 and
+   La 20 as clean; **both carry textual Sumner notes**. Book II's sweep concluded detector and eye
+   agree on every page — that is no longer true, and it failed twice in the first long Book I
+   chapter read. **Read every Latin page foot, every chapter.** Both notes open `Sic in MS.`, which
+   at least gives the class a searchable signature.
+2. **★★★ Book I inverts Book II's paragraph behaviour.** Book II was merge-dominated — Sumner
+   welding Milton's short proof-text paragraphs together. I.ii is **split-dominated**: three splits,
+   zero merges, because Milton's Book I prose is long and argumentative and Sumner breaks it up.
+   Expect splits, not merges, through Book I's opening chapters.
+
+## ⚠ WHAT I.i ESTABLISHED FOR THE REST OF BOOK I
 
 1. **★★ Book I's footnote numbering is STILL unestablished, and I.i is why.** The chapter carries
    **zero footnotes in either layer** (all 4 English + 3 Latin feet read), so per §8a it passes the

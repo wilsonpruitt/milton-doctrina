@@ -17,8 +17,13 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # ---- the one hand-kept list -------------------------------------------------
 OPEN_ITEMS = [
-    ("blocked", "ddc-1-02 English layer",
-     "15 of 17 English plates unread. Latin layer done; findings in WIP-ddc-1-02.md."),
+    ("blocked", "ddc-1-02 — English layer owed",
+     "Latin done and plate-verified; all 17 English plates READ, alignment and ledger settled. "
+     "Only the writing remains, one paragraph per edit (a batched write tripped a content filter). "
+     "Read the chunk's Notes first — nothing there needs re-deriving."),
+    ("watch", "Three-way splits need ratification",
+     "The 2026-08-27 ruling defines {¶N} + {¶N cont.}, a two-way split. I.ii has two THREE-way "
+     "splits; {¶N cont. 2} used, following §5b's house pattern."),
     ("watch", "sweep-book1.tsv is unreliable",
      "The Latin-footnote detector missed BOTH notes in I.ii (La 12, La 20). "
      "It may suggest where to look in Book I; it cannot decide. Read every Latin foot."),
@@ -224,6 +229,9 @@ def esc(s):
 def status_of(ch, done):
     """(chip label, css class, stripe var) for one chapter row."""
     if done:
+        st = ch["k"]["status"]
+        if any(x and x != "verified" for x in st):      # la-verified, draft, ...
+            return ("one layer", "c-work", "var(--work)")
         return ("verified", "c-ok", "var(--ok)") if ch["flag"] == "verified" \
                else ("drafted", "c-work", "var(--work)")
     if ch["flag"] == "suspect":
@@ -236,7 +244,9 @@ def build():
     for c in chaps:
         c["k"] = chunks.get((c["book"], c["ch"]))
         c["done"] = c["k"] is not None
-    done_all = [c for c in chaps if c["done"]]
+    full = lambda c: c["done"] and all(x == "verified" for x in c["k"]["status"])
+    done_all = [c for c in chaps if full(c)]
+    partial = [c for c in chaps if c["done"] and not full(c)]
     nxt = next((c for c in chaps if not c["done"]), None)
 
     # ---- masthead + summary
@@ -261,7 +271,8 @@ def build():
 
     A('<div class="summary">')
     A(f'<div class="stat"><div class="n">{len(done_all)}<span style="color:var(--ink-3);font-size:16px">/{len(chaps)}</span></div>'
-      f'<div class="k">chapters verified</div><div class="note">{pct}% of the work</div></div>')
+      f'<div class="k">chapters verified</div><div class="note">{pct}% of the work'
+      + (f' · {len(partial)} part-done' if partial else '') + '</div></div>')
     A(f'<div class="stat"><div class="n">{la_pp}<span style="color:var(--ink-3);font-size:16px">/{la_tot}</span></div>'
       f'<div class="k">Latin pages read</div><div class="note">every page against its plate</div></div>')
     A(f'<div class="stat"><div class="n">{notes_ct}</div>'
@@ -275,16 +286,18 @@ def build():
     # ---- per-book progress
     for b in (2, 1):
         bc = [c for c in chaps if c["book"] == b]
-        d = [c for c in bc if c["done"]]
+        d = [c for c in bc if c in done_all]
         s = [c for c in bc if c["flag"] == "suspect" and not c["done"]]
-        w = len(bc) - len(d) - len(s)
         A('<div class="bookbar">')
         A(f'<h2>Liber {"Primus" if b==1 else "Secundus"} '
           f'<span class="t">{BOOK_TITLES[b]}</span> '
           f'<span style="margin-left:auto;color:var(--ink-3);font-weight:400">'
           f'{len(d)} of {len(bc)}</span></h2>')
         A('<div class="track">')
-        for n, col in ((len(d), "var(--ok)"), (len(s), "var(--flag)"), (w, "transparent")):
+        pa = [c for c in bc if c["done"] and c not in d]
+        w = len(bc) - len(d) - len(s) - len(pa)
+        for n, col in ((len(d), "var(--ok)"), (len(pa), "var(--work)"),
+                       (len(s), "var(--flag)"), (w, "transparent")):
             if n:
                 A(f'<i style="width:{100*n/len(bc)}%;background:{col}"></i>')
         A('</div></div>')
@@ -325,7 +338,9 @@ def register(o, chaps, nxt):
               f'<span style="opacity:.6"> · {c["la_pp"]}pp</span></td>')
             A(f'<td class="num">{c["en_start"]}–{c["en_start"]+c["en_pp"]-1}'
               f'<span style="opacity:.6"> · {c["en_pp"]}pp</span></td>')
-            if k:
+            if k and k["en_par"] == 0 and k["la_par"]:
+                A(f'<td class="r ratio">{k["la_par"]} → <span style="color:var(--work)">owed</span></td>')
+            elif k:
                 same = k["la_par"] == k["en_par"]
                 A(f'<td class="r ratio">{k["la_par"]} → {k["en_par"]}'
                   + ('<span style="color:var(--ok)"> ≡</span>' if same else '')
@@ -335,7 +350,11 @@ def register(o, chaps, nxt):
             r = c["en_pp"] / c["la_pp"]
             warn = "" if 1.05 <= r <= 1.85 else " warn"
             A(f'<td class="r ratio{warn}">{r:.2f}</td>')
-            if k:
+            if k and k["en_par"] == 0:
+                A('<td class="notes"><span style="color:var(--work)">17 owed</span>'
+                  + (f'<span class="la-note">La {", ".join(k["la_notes"])}</span>' if k["la_notes"] else "")
+                  + '</td>')
+            elif k:
                 if k["notes"]:
                     A('<td class="notes">' + " · ".join(k["notes"])
                       + (f'<span class="la-note" title="Latin-volume note">La {", ".join(k["la_notes"])}</span>'
