@@ -238,9 +238,9 @@ Settle this before any of the five is called an error.
 
 1. ✅ **DONE 2026-08-28** — `1 Reg.` = Kings confirmed at plate (§3.4).
 2. ✅ **DONE 2026-08-28** — `tools/build-citations.py` written and clean on `ddc-2-02`.
-3. ✅ **RUN 2026-08-28**, not yet hand-checked chapter by chapter. Check 4 passes on ddc-2-02.
-   **Next session starts here**: read `index/citation-qa.md`, settle the Ecclesiastes question
-   at a plate, and confirm the eight unread out-of-range citations.
+3. ✅ **RUN 2026-08-28.** Check 4 passes on ddc-2-02. The Ecclesiastes question is **settled —
+   §6b**: versification, not error; six of the thirteen out-of-range citations reclassified and
+   two still want a plate. Still owed: the report has not been read chapter by chapter (§6.5).
 4. `tools/build-index-json.py` → `site/src/data/scripture/*.json`.
 5. `/scripture` and `/scripture/[book]`, ported from Bonaventure, plus the divergence display.
 6. Backfill each new chapter as it lands; add the index step to M3-RUNBOOK §2.
@@ -252,3 +252,118 @@ a text that breaks the obvious rules, and a confidently-wrong parser is the fail
 names. Step 3 onward is volume work over a frozen grammar and does not need one. The headnotes'
 `*Loci: pending M4.*` line is §6.2's job, not this file's — Wolleb and Ames are on disk
 (`tools/fetch-loci.sh`) and unread.
+
+---
+
+## 6b. ★★★ The Ecclesiastes question is SETTLED — 2026-08-28. They are NOT errors.
+
+**Answer: all five Ecclesiastes out-of-range citations are Junius–Tremellius versification.**
+They are divergences to *display* under CONVENTIONS §3, not errors to flag. §6a's hypothesis was
+right, and the evidence is stronger than a plate reading could have been — it is the corpus
+itself, cross-checked layer against layer.
+
+### What settles it: per-chapter offsets that repeat
+
+The out-of-range five were never the whole evidence. Every Ecclesiastes citation in the corpus was
+paired across the two layers, and **the divergences are internally consistent chapter by chapter**,
+each confirmed by the quoted text (which identifies the KJV verse independently of any digit):
+
+| Eccl ch | La − KJV | instances | sample |
+|---|---|---|---|
+| 2 | **+1** | 2 | La `ii. 27` = En `ii. 26` *peccatori dat occupationem* |
+| 4 | **−4** | 4 | La `iv. 1, 2` = En `iv. 5, 6` *stolidus complicat manus suas* |
+| 7 | 0, runs past the KJV bound | 1 | La `vii. 30` = En `viii. 1` *sapientia hominis illustrat faciem* |
+| 8 | **−1** | 2 | La `viii. 1` = En `viii. 2` *keep the king's commandment* |
+| 9 | **+2**, runs past the KJV bound | 3 | La `ix. 20` = En `ix. 18` · La `ix. 22` = En `x. 2` |
+| 10 | **−3** | 2 | La `x. 2, 3` = En `x. 5, 6` |
+| 12 | **+2** (from v. 4 on) | 1 | La `xii. 15` = En `xii. 15` *summa rei est* (KJV 12:13) |
+| 1, 3, 5, 6, 11 | 0 | ~14 | layers agree exactly |
+
+**Four citations in Eccl 4 all off by exactly −4, and three in Eccl 9 all off by exactly +2, cannot
+be four and three independent misprints.** That is one numbering system, described twice.
+
+★ And the two chapter displacements are each confirmed **from both sides**, which is what makes
+this airtight rather than merely likely:
+- La ch 7 absorbs KJV 8:1 (we see `vii. 30` = KJV 8:1) — *and* La ch 8 therefore runs −1 (we see
+  `viii. 1` = KJV 8:2). Predicted and observed.
+- La ch 9 absorbs KJV 10:1–3 (we see `ix. 22` = KJV 10:2) — *and* La ch 10 therefore runs −3 (we
+  see `x. 1` = KJV 10:4). Predicted and observed.
+
+The remaining offsets fall out of the same model without contradiction: La ch 2 begins at KJV 1:18
+(so La ch 1 = KJV 1:1–17, and `i. 16`/`i. 17` agree with the KJV exactly, as required); La ch 4
+begins at KJV 4:5 (so La ch 3 absorbs KJV 4:1–4).
+
+### Why the range check saw Ecclesiastes and nothing else
+
+**Selection effect, not a property of Ecclesiastes.** Its chapters are short (12 chapters,
+median ~18 verses), so an offset of +1 or +2 overflows the chapter bound often. The same offsets
+in Psalms or Isaiah stay in range and are invisible to a range check. Do not conclude that
+Ecclesiastes is where the Latin is unreliable — it is only where the divergence is *visible*.
+
+### ★★ The same mechanism runs through the whole corpus — 149 same-chapter verse divergences
+
+Offset distribution over every divergence pair the parser found, `La − En`:
+
+`+1` **79** · `−1` 20 · `+2` 14 · `−3` 8 · `+4` 7 · `−5` 4 · `−4` 3 · `−2` 2 · `−6` 2 · `+6` 2 ·
+`+9` 2 · one each of `−14, −9, +5, +11, +15, +51`
+
+**`+1` alone is 53% of all divergences.** In the Psalms it is decisive: **53 of 57 Psalm
+divergences are +1 or +2**, and the split is exactly the one Hebrew versification predicts —
+`+1` where the psalm carries a one-line superscription (Ps 5, 12, 19, 30, 31, 40, 41, 58, 68,
+69, 75, 92, 102, 140 …), **`+2` in Ps 51, 52 and 60**, whose superscriptions run to two lines
+("when Nathan the prophet came unto him", "when Doeg the Edomite came and told Saul"). The
+Hebrew counts the title as verse 1, or as verses 1–2. Nothing else produces that pattern.
+
+Other chapters with a repeating, content-checkable offset: Prov 12 (−1, six times), Num 23 (+4,
+three times), 1 Sam 14 (+1, four times), Dan 6 (+1, four times), Neh 10 (+1, three times),
+Isa 44 (−5, four times), Isa 57 (+4, twice), Amos 2 (−3, twice), Gen 12 (−3, twice).
+
+### Two more of the thirteen fall to the same lens, with no plate needed
+
+- ✅ **`Lev. v. 21, &c.` (ddc-2-14 la ¶5) is NOT an error.** La *rependat—, deinde reatum suum
+  afferto* = En `Levit. vi. 5, &c.` *he shall even restore it in the principal … and he shall
+  bring his trespass offering* = KJV Lev 6:4–5. The Hebrew numbers KJV 6:1–7 as **5:20–26**;
+  this is that division exactly. Reclassify as versification.
+- ⚠ **`Psal. iii. 9.` (ddc-2-10 en ¶3–4) stays an English error, but the note's reason is wrong.**
+  `chunks/ddc-2-10.md` says "Psalm 3 has only eight verses, in the Hebrew and in the KJV alike."
+  **The Hebrew Psalm 3 has nine** — that is the whole point of the superscription rule the note
+  itself invokes two sentences later. The finding survives and gets sharper: La reads `iii. 7`
+  (Hebrew for KJV 3:6, the quoted text); En prints `iii. 9`, which is a *valid* Hebrew number but
+  points at KJV 3:8, not at the verse Sumner quotes. So this is not a digit that could not exist —
+  it is a conversion made in the wrong direction. Corrected in that chunk's Notes this session.
+
+### What this means for the index — a design consequence M4 §5 did not anticipate
+
+M4-RUNBOOK §5 says the versification mapping is "the index's problem to *display*, not to resolve
+away." That is right about display and **insufficient for grouping.** La `Eccles. iv. 1` and En
+`Eccles. iv. 5` are *one citation of one verse*. If `build-index-json.py` groups by the printed
+target, the scripture page scatters that single act of citation into two unrelated entries four
+verses apart — and does so 299 times across the corpus, concentrated in the Psalms, which is the
+most-cited book in the treatise.
+
+**So the index needs a third key: a `witness_target`, the verse both layers are pointing at,**
+alongside the two printed targets it must go on showing. Where the layers agree it is the printed
+target; where they diverge it is the English one (Sumner is converting *toward* the KJV, which is
+the reader's Bible), and the record keeps both. This is a step-4 decision — settle it before
+writing `build-index-json.py`, not after.
+
+### Ledger changes owed (not yet made)
+
+The parser still reports all six versification cases as `ERR … out of range`. It should carry a
+`versification` resolution class so they leave the error list and enter the ledger as records.
+The five Ecclesiastes plus `Lev. v. 21` are the known set; **do not build a general J–T mapping
+table from these offsets** — they are measured from citations, not from a Bible, and the sample
+per chapter is one to four. Flag the class, cite the evidence, leave the table to a real
+Junius–Tremellius text if one is ever wanted.
+
+### Where the thirteen out-of-range now stand
+
+| | |
+|---|---|
+| **Versification, not error — reclassify (6)** | `Eccles. ii. 27` · `vii. 30` · `ix. 20` · `ix. 22` · `xii. 15` · `Lev. v. 21` |
+| **Error, plate-confirmed in an earlier session (5)** | `Luc. ix. 66` · `2 Reg. vi. 35` · `Deut. v. 38` · `Psal. iii. 9` (En) · `1 Kings xxvii. 29` (En) |
+| **Still unread — need a plate (2)** | `Isa. lviii. 56` (ddc-2-04-c la ¶11) · `et xi. 32` (ddc-2-13 la ¶47, carried book) |
+
+**Job 2 of the resume file shrank from eight unread to two.** Neither survivor looks like
+versification: `lviii. 56` in a 14-verse chapter is an over-run of 42, far outside every measured
+offset, and `et xi. 32` has a *carried* book, which §4.9 says is the likelier defect.

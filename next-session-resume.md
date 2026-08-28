@@ -1,43 +1,56 @@
 # Next session — resume here
 
-## ⇢ START HERE (2026-08-28, Opus) — M4 is live and the queue is in `index/citation-qa.md`
+## ⇢ START HERE (2026-08-28, Opus) — the Ecclesiastes question is SETTLED; M4 step 4 is next
 
-**The scripture index has a working parser and a corpus-wide ledger.** Read
-**`M4-RUNBOOK.md` §1a, §6a and §7** first — it carries the design, the hazards, and what the
-first run found. Then read `index/citation-qa.md`, which is the actual worklist.
+**Job 1 of the previous list is done, and it came out the other way from "error."** All five
+Ecclesiastes out-of-range citations are **Junius–Tremellius versification**, to be displayed under
+CONVENTIONS §3, not flagged. `Lev. v. 21` joins them. **Read `M4-RUNBOOK.md` §6b** — it carries
+the evidence, the per-chapter offset table, and one design consequence that must be settled before
+any more code is written.
 
-State: `tools/build-citations.py` (`<chunk-id>` | `--all` | `--dump`) → `index/citations.tsv`
-and `index/citation-qa.md`. Both derived, re-runnable, zero writes under `chunks/`.
-`tools/build-versification.py` → `tools/versification.json` is the target-exists table.
-M4 sequence steps **1-3 done**, steps **4-6 untouched** (`build-index-json.py`, `/scripture`,
-the route — all port from Bonaventure).
+What settled it was not a plate but the corpus: pairing every Ecclesiastes citation across the two
+layers gives **per-chapter offsets that repeat** — Eccl 4 is `−4` four separate times, Eccl 9 is
+`+2` three times — and the two chapter displacements are each confirmed from *both* sides (La ch 7
+absorbs KJV 8:1, so La ch 8 runs −1; both observed). Four independent misprints do not agree.
+Generalised: **299 divergence pairs, `La = En + 1` is 53% of them, and 53 of 57 Psalm divergences
+are `+1`/`+2` — the Hebrew superscription**, `+2` exactly in Ps 51, 52, 60, whose titles run to
+two lines. Ecclesiastes was never special; it is just where short chapters make the offset
+overflow a bound and become visible to a range check.
+
+### The queue now
+
+1. ★★ **Settle the `witness_target` question before writing `build-index-json.py`** (M4-RUNBOOK
+   §6b, last two sections). La `Eccles. iv. 1` and En `Eccles. iv. 5` are **one citation of one
+   verse**. Grouping the index by printed target scatters it into two unrelated entries — 299
+   times, concentrated in the Psalms, the most-cited book in the treatise. §5's "display, don't
+   resolve away" is right about display and silent about grouping. This is the one decision that
+   blocks step 4.
+2. **Teach the parser a `versification` resolution class** so the six reclassified citations leave
+   the error list and enter the ledger. ⚠ **Do not build a general J–T mapping table from the
+   measured offsets** — they come from citations, not from a Bible, one to four per chapter.
+3. **Two out-of-range citations still want a plate** (down from eight): `Isa. lviii. 56`
+   (ddc-2-04-c la ¶11) and `et xi. 32` (ddc-2-13 la ¶47). Neither looks like versification —
+   `lviii. 56` over-runs a 14-verse chapter by 42, far outside every measured offset, and
+   `et xi. 32` has a *carried* book, which §4.9 makes the likelier defect.
+4. **Hand-check the QA report chapter by chapter.** Unchanged and still owed: only `ddc-2-02` has
+   been read record by record; the other 20 chunks have been *parsed*, not read (§6.5).
+5. Still owed and cheap, recorded in `chunks/ddc-2-02.md` Notes: **five citation findings the
+   parser turned up that the hand-log lacks** — three `&c.` dropped by the English, one Latin
+   verse-list truncated, and ★ **a citation Sumner SUPPLIES** at 1 Cor. i. 19, 20. If that holds
+   it is a fourth kind of unmarked editorial handling, alongside correction, reordering, omission.
 
 Numbers to compare against, so a regression is visible: **ddc-2-02 — 327 records, 0 unclassified,
 layer spread 0.6%, all 9 hand-logged divergences found. Corpus — 5,809 records, spread 0.1%
-(2906 la / 2903 en), 30 unclassified, 13 out-of-range, 427 divergence rows.**
+(2906 la / 2903 en), 30 unclassified, 13 out-of-range, 427 divergence rows.** State:
+`tools/build-citations.py` (`<chunk-id>` | `--all` | `--dump`) → `index/citations.tsv` and
+`index/citation-qa.md`, both derived and re-runnable, zero writes under `chunks/`.
+`tools/build-versification.py` → `tools/versification.json` is the target-exists table.
+M4 steps **1-3 done**, steps **4-6 untouched**.
 
-### The three jobs waiting, in order
-
-1. ★★ **Settle the Ecclesiastes question at a plate — do this before anything else, because it
-   decides how five records are classified.** Five of the thirteen out-of-range citations are
-   Ecclesiastes in the Latin (`ii. 27`, `vii. 30`, `ix. 20`, `ix. 22`, `xii. 15`), each running
-   one to four verses past the KJV bound, in a book of twelve chapters. That concentration is not
-   printer's error. **Hypothesis: Junius-Tremellius versifies Ecclesiastes differently**, which
-   would make them divergences to *display* (CONVENTIONS §3), not errors to flag. Sumner corrects
-   some (`ix. 20` → `ix. 18`) and leaves others (`xii. 15`, both layers) — which fits. Do not call
-   any of the five an error until this is settled.
-2. **Confirm the eight unread out-of-range citations at plates.** Five of the thirteen were
-   already plate-confirmed by hand in earlier sessions and the parser found every one unaided,
-   which is the reason to trust the other eight enough to go look.
-3. **Hand-check step 3 chapter by chapter.** Only `ddc-2-02` has been checked record by record.
-   The other 20 chunks have been *parsed*, not *read*. M4-RUNBOOK §6.5: the QA report is not done
-   until it is read, not merely generated.
-
-Also owed, cheap, and recorded in `chunks/ddc-2-02.md` Notes: **five citation findings the parser
-turned up that the hand-log lacks**, each needing a plate — three `&c.` dropped by the English, one
-Latin verse-list truncated, and ★ **a citation Sumner SUPPLIES** at 1 Cor. i. 19, 20, where Milton
-runs two proof-texts under one reference. If that holds, it is a fourth kind of unmarked editorial
-handling of the citation apparatus, alongside correction, reordering and omission.
+⚠ One correction made this session inside `chunks/ddc-2-10.md`: its `Psal. iii. 9.` note claimed
+Hebrew Psalm 3 has eight verses. **It has nine.** The finding survives and sharpens — En's `iii. 9`
+is a valid Hebrew number pointing at the wrong verse, so the defect is a conversion made in the
+wrong direction, not a mis-set digit.
 
 ### ⚠ Two housekeeping facts from this session
 

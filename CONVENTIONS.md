@@ -86,6 +86,16 @@ pilot chapter:
 | Job xxxi. 5, 6 | xxxi. 6 | En narrows the range |
 | 2 Cor. vi. 3, &c. | 2 Cor. vi. 4, &c. | starting-verse shifted |
 
+★ **Measured and settled 2026-08-28 — see M4-RUNBOOK §6b.** The versification divergence is not
+occasional, it is *the* systematic relation between the layers: **299 divergence pairs across 21
+chunks, of which `La = En + 1` accounts for 53%**, and in the Psalms **53 of 57** are `+1` or `+2`
+— the Hebrew superscription counted as one verse, or as two in Ps 51, 52 and 60. The offsets
+repeat per chapter (Eccl 4 is `−4` four times over; Eccl 9 is `+2` three times), which is how we
+know they are a numbering system and not printer's error. Consequence for this section: **an
+out-of-range citation is not evidence of an error** — it is usually versification made visible by
+a short chapter. Six of the thirteen out-of-range citations in the corpus were reclassified on
+that ground.
+
 Rules: (a) transcribe each layer's citations exactly as printed; (b) never repair either side
 from the other; (c) log every divergence found in the chunk's `## Notes` table; (d) versification
 mapping is the scripture index's problem (M4), not the text's. The En also sometimes fills La's
