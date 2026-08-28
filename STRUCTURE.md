@@ -16,6 +16,28 @@ Neither offset drifts anywhere in its volume — no parity model, no gathering-s
 needed, no "verify every leaf" regime. This is a materially easier source than either Bonaventure
 or Andrewes.
 
+### A THIRD volume, added 2026-08-28 — Junius–Tremellius, the Bible Milton cited
+
+`testamentiveteri00trem` — *Testamenti Veteris Biblia Sacra*, Junius & Tremellius, Hanau 1603,
+1252 leaves, public domain. Fetched by `tools/fetch-jt.sh`, paged by `tools/jt-page.py`. Why it is
+here: M4-RUNBOOK §11. What it settles: whether a citation divergence is Milton's error or his
+Bible's numbering — a question the corpus could only ever answer statistically.
+
+| Volume | Formula | Verified at printed pp. |
+|---|---|---|
+| Junius–Tremellius, **Old Testament** | `leaf = 2 × printed + 188` | 145 (Ps 97), 175 (Cant 8), 206 (Jer 2), 236 (Ezek 8), 266 (Dan 11) |
+
+⚠ **This one is not like the other two, in three ways.**
+1. **A leaf is an OPENING of two printed pages**, not one page — hence the `2 ×`. The printed
+   folio in the running head is the RECTO's, so a formula hit can be one off on the verso.
+2. **The volume carries the New Testament after the Old, with its own printed sequence.** Leaf 800
+   is Matthew 12 at printed 21. The formula above is the Old Testament's only; the NT wants its
+   own calibration when something needs it.
+3. **The OCR is worse than anything else in the project** — searches for `Amotsi`, `Coheleth` and
+   `Jehezkelis` all return nothing. Navigate by running head off the page image, not by text.
+   Book order runs Psalms → Proverbs → Ecclesiastes → Canticles → Isaiah → Jeremiah → Ezekiel →
+   Daniel, so a book can be found in two or three probes at ~60 leaves apart.
+
 ## Extent — MEASURED, not estimated
 
 - **Latin body text: printed pp. 7–536.** Opens `LIBER PRIMVS. CAP. I.` at printed p.7 (pdf 23).

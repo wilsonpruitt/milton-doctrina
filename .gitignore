@@ -1,12 +1,16 @@
 .DS_Store
 node_modules/
 
-# Raw source material (large binary / OCR dumps / plate renders — keep local, regenerable)
-raw/*.pdf
-raw/*_djvu.txt
-raw/plates/
-raw/crops/
-raw/*-ch*.txt
+# Raw source material (large binary / OCR dumps / plate renders — keep local, regenerable).
+# ⚠ WHOLESALE from 2026-08-28. The per-pattern list below it used to be missed `raw/loci/`
+# entirely, and four OCR dumps (~2.9 MB) reached the remote before anyone noticed. Everything
+# under raw/ is fetched by a script in tools/ and is regenerable, so the safe rule is "none of
+# it", not "these shapes of it".
+#   ⚠ THIS DOES NOT UNTRACK WHAT IS ALREADY COMMITTED. raw/loci/'s four files are still in the
+#   history and still on the remote; removing them is a history rewrite and Wilson's call. They
+#   are public-domain texts and harmless in themselves — but the repo flips PUBLIC at M5, so
+#   settle it before then.
+raw/
 
 # Python caches
 **/__pycache__/

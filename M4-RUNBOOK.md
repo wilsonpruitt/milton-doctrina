@@ -668,3 +668,112 @@ something closer to five.
 
 Until then the tables stand as written; this section is the flag, and it is the first item in the
 queue.
+
+## 11. ★★★ §10.8 RULED, and the answer came from the Bible itself — 2026-08-28
+
+Wilson's ruling: **check Junius–Tremellius before classifying anything, and bring it into the
+project as a permanent source.** Both halves are done. The verdict is not close.
+
+### 11.1 The witness
+
+**`testamentiveteri00trem` — *Testamenti Veteris Biblia Sacra*, Junius & Tremellius, Hanau 1603,
+typis Wechelianis. 1252 leaves, Latin, public domain, OCR and page images both.** It is the Bible
+Milton cited. `tools/fetch-jt.sh` pulls the text into `raw/jt/`; `tools/jt-page.py <leaf>
+[--band y0 y1] [--x x0 x1] [--scale]` fetches and crops a leaf image, because the numbers cannot
+be read any other way.
+
+⚠ **The OCR is unusable for this question and nearly unusable for any question.** Verse numbers
+are set small beside the text and the marginal scholia bleed into the column; a search for
+`Amotsi`, `Coheleth` and `Jehezkelis` returned nothing at all. Every reading below is off the
+**page image**. Treat the text dump as the fetch script says: a finding aid, and a poor one.
+
+**Calibration** (also recorded in STRUCTURE.md): each scan leaf is one two-page **opening**, so
+`printed ≈ (leaf − 188) / 2`, i.e. `leaf ≈ 2 × printed + 188`, for the Old Testament sequence.
+Verified against five heads carrying printed folios: Ps 97 (leaf 480 / p. 145), Cant 8 (540 /
+175), Jer 2 (600 / 206), Ezek 8 (660 / 236), Dan 11 (720 / 266). ⚠ The volume carries the New
+Testament after the Old, in parallel columns, with **its own printed sequence** — leaf 800 is
+Matthew 12 at printed 21. This calibration is the OT's only.
+
+### 11.2 ★★★ The mechanism, and it is not "a defective copy"
+
+`ddc-2-17`'s note reasoned that a repeating offset means *"the error is in the source, not in the
+setting"* — right that it is systematic, wrong about what the system is. **Junius–Tremellius
+divides chapters at different points from the KJV, and at least once carries the verse count
+straight across a chapter break.** The offsets Milton's citations show are consequences of those
+divisions. That is why an offset is constant within a chapter and different between chapters —
+the fact §6b measured from the corpus without being able to say why.
+
+**Ecclesiastes 4** (leaf 528, printed 169). J–T's chapter III runs on past the KJV's break:
+verses **23, 24, 25, 26** are KJV 4:1, 2, 3, 4. J–T's own `CAPUT IIII`, with its argumentum,
+then opens lower on the same page at **verse 1** = KJV **4:5** — *Stolidus complicat manus suas,
+& consumit carnem suam*, the fool folding his hands. Verse 2 = KJV 4:6, *Melior est plena vola
+quietis*.
+→ **offset +4, so J–T 4:9 = KJV 4:13.** Milton's `Eccles. iv. 9`, Sumner's `iv. 13`. Exact.
+
+**Ecclesiastes 10** (leaf 533, printed 172). Six consecutive confirmations on one page: J–T 8 =
+KJV 10:11 (*Si momorderit serpens*), 9 = 10:12, 10 = 10:13, 12 = 10:15, and decisively
+**13** = KJV **10:16** *Hei tibi regio, cujus rex puer est* and **14** = KJV **10:17** *O te
+beatam regionem*.
+→ **offset +3, so J–T 10:2, 3 = KJV 10:5, 6 and J–T 10:13, 14 = KJV 10:16, 17.** Both of
+II.xvii's Ecclesiastes-10 rows, and with them the cross-chunk claim that II.xv carries "the
+identical error."
+
+**Isaiah 3** (leaf 546, printed 177–178), confirmed on both halves of the chapter:
+
+| J–T | text | KJV |
+|---|---|---|
+| 5 | *Daturus autem sum pueros principes eorum, & facinorosi dominabuntur in eos* | 3:4 |
+| 8 | *Jurabit die illo dicendo, non essem obligaturus … ne ponatis me ductorem populi* | 3:7 |
+| 11 | *Dicite justo, bene esse; nam fructu actionum suarum fruituros esse* | 3:10 |
+| 13 | *Populum meum opprimentium quisque parvulus, & fœminæ dominium exercent* | 3:12 |
+| 15 | *Jehova ad judicium advenit contra Seniores populi sui* | 3:14 |
+| 19 | *Tempore illo amovebit Dominus ornamentum istud perischelidum* | 3:18 |
+
+→ **offset +1 throughout.** J–T's own scholion divides the chapter at *v. 17* between men and
+women, which in the KJV is 3:16, the daughters of Zion — the offset confirmed a third way, from
+the editors' prose.
+
+**Ezekiel 3** (leaves 655–656, printed 233–234), and this one is different in kind. J–T's chapter
+II ends at **10**, exactly as the KJV does. Then `CAPUT III` opens — **and its first verse is
+numbered 11, not 1**: *Edixit igitur mihi, fili hominis, quod præsens est tibi comede: comede
+volumen hoc* = KJV 3:1. The count runs on unbroken to **25** = KJV 3:15 (*veni ad multitudinem
+deportatam Thel-abib … desedi illic septem dies*).
+→ **J–T Ezek 3:18, 19 = KJV 3:8, 9.** Milton wrote `Ezech. ii. 6.` and then `et v. 18, 19.`, and
+in J–T that is not ambiguous at all — the numbers do not restart, so verse 18 is verse 18 whether
+you name the chapter ii or iii. **Which is precisely why Sumner had to relabel it `iii. 8, 9`.**
+
+⚠ Neither of the two explanations previously on record is right. The chunk's *"La's reading is
+impossible (Ezek. 2 has 10 vv.)"* is true and irrelevant — the verse is in chapter III. §10.5's
+*"chapter 2 absorbs KJV 3:1–9"* is simply wrong; chapter 2 ends where the KJV's does. Both
+reached the right verdict by the wrong route, which is the thing a plate is for.
+
+### 11.3 What is settled, and what is not
+
+**Five of §10.8's eight table rows are confirmed versification at the source** — Isaiah 3 (which
+is four rows of the chunk's own table), Ecclesiastes 4, Ecclesiastes 10 (two rows), Ezekiel 3.
+Counted as the chunk counts them that is **eight of its sixteen**, against **five** genuine
+errors and **three** still unread. Reclassified in `ddc-2-17`'s Notes.
+
+⏳ **Still unchecked, and left as printed pending the same treatment:**
+- `Eccles. viii. 1 / viii. 2` (+1). §6b predicts it from La ch. 7 absorbing KJV 8:1, and
+  Ecclesiastes' divisions are now known to move — but predicted is not read.
+- `Isa. lvii. 13, 14, 17 / lvii. 9, 10, 13` (+4 ×3) and `Isa. lvii. 2 / lvi. 10` (chapter). §6b
+  already lists `Isa 57 (+4, twice)` among the repeating offsets, and a chapter division at
+  KJV 56:9 would give both rows at once. **One leaf (~590) settles both.** First job next session.
+
+### 11.4 What this changes beyond II.xvii
+
+1. **Every error table in the corpus predates §6b and now predates this.** The audit runs
+   corpus-wide; II.xvii was the case that surfaced it, not the extent of it.
+2. **`divergence_class` must become a column**, not prose in a Notes paragraph, so the site can
+   render *versification* and *error* differently and the classification stops being re-derivable
+   only by reading English.
+3. **A J–T chapter/verse-count table is now buildable** and is the right long-term instrument —
+   `tools/versification.json` answers "could this verse exist?"; a J–T table would answer "what
+   did Milton's Bible call it?", which is the question the corpus keeps asking. Every offset
+   established above is a row in it.
+4. ⚠ **The `et v. N` problem is smaller than it looked.** Ezekiel shows J–T running verse numbers
+   across a chapter break; where it does, Milton's bare `et v. N` is not ambiguous in his Bible
+   even though it is ambiguous in ours. That does not dissolve §10.2 — the English `v.` question
+   is untouched — but it means some of the thirty QA lines are answerable from J–T rather than
+   from the quotation alone.

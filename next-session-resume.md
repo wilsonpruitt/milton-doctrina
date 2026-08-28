@@ -1,6 +1,40 @@
 # Next session — resume here
 
-## ⇢ START HERE (2026-08-28, Opus) — the 17 suspects are READ, and one ruling is owed before more code
+## ⇢ START HERE (2026-08-28, Opus) — §10.8 is RULED, and the answer came from Milton's own Bible
+
+**Read `M4-RUNBOOK.md` §11.** Wilson ruled: check Junius–Tremellius before classifying anything,
+and bring it in as a permanent source. Both halves are done.
+
+**`testamentiveteri00trem` — Junius & Tremellius, Hanau 1603, 1252 leaves, public domain — is now
+a project source.** `tools/fetch-jt.sh` pulls it; `tools/jt-page.py <leaf> [--band y0 y1]
+[--x x0 x1] [--scale]` fetches and crops a leaf image; the calibration (`leaf = 2 × printed + 188`,
+a leaf is an OPENING) is in STRUCTURE.md. ⚠ Its OCR is worse than anything else in the project —
+`Amotsi`, `Coheleth`, `Jehezkelis` all return **nothing**. Navigate by running head off the image.
+
+**The verdict, read off the page images:** ★ Ecclesiastes 4 **+4** · Ecclesiastes 10 **+3** ·
+Isaiah 3 **+1** · Ezekiel, where **J–T runs the verse count straight across the 2/3 chapter break**
+so that J–T 3:18, 19 *are* KJV 3:8, 9. **Eight of `ddc-2-17`'s "sixteen Latin citation errors" are
+versification, not error** — reclassified in that chunk's Notes, which now reads five errors,
+eight versification, three unread. II.v's eight holds the record again.
+
+★★ **The mechanism is the finding.** Junius–Tremellius **divides chapters at different points from
+the KJV**, and at least once carries the verse count across a break. That is why an offset is
+constant inside a chapter and different between chapters — the fact §6b measured without being
+able to say why. It is not a defective copy and not Milton miscounting: it is a different Bible.
+
+⚠ **Two claims on record were wrong and are corrected in place** — the chunk's *"La's reading is
+impossible (Ezek. 2 has 10 vv.)"* (true, and beside the point: the verse is in chapter III) and
+§10.5's *"chapter 2 absorbs KJV 3:1–9"* (chapter 2 ends exactly where the KJV's does). Both
+reached the right verdict by the wrong route, which is what a plate is for.
+
+**First job next session is one leaf.** Isaiah 56–57 at leaf ~590 settles the last two unread
+rows at once (`Isa. lvii. 2 / lvi. 10` and `Isa. lvii. 13, 14, 17 / lvii. 9, 10, 13`); Ecclesiastes
+8 is the third. Then the corpus-wide audit — **every error table in the corpus predates this** —
+and the `divergence_class` column, so the classification stops living in prose.
+
+---
+
+## ⇠ Earlier the same day — the 17 suspects are READ
 
 **Go to "The queue now", item 1, and to `M4-RUNBOOK.md` §10.** The suspect read closed the queue's
 ★ item and turned up something bigger than a parser bug: **the chunks' "silently corrected error"
@@ -103,19 +137,14 @@ is the plan of record for what follows and this is only the pointer.
 
 ### The queue now
 
-1. ★★★ **§10.8 — the chunks' "silently corrected error" tables predate §6b and are stale, and this
-   one needs Wilson before anything else.** `ddc-2-17` opens a table headed *"SIXTEEN Latin
-   citation errors silently corrected"* and then, two paragraphs later, observes in its own words
-   that Ecclesiastes 10 is three verses low **both** times it is cited and Isaiah 3 one verse high
-   **all four** times. §6b, written afterwards, established that a repeating per-chapter offset is
-   the signature of Junius–Tremellius versification — and already lists `Isa 57 (+4, twice)` among
-   them. By the runbook's own rule, **eight of that table's sixteen rows are versification, not
-   error**, which would take "sixteen errors, twice the record" down to about five. ⚠ This is not
-   a parser question: *"Milton miscited sixteen times and his editor quietly fixed it"* and
-   *"Milton cited a different Bible and his editor converted it"* are opposite claims about the man,
-   and one of them is going into print. The ruling, then the same audit across every chunk (every
-   error table in the corpus predates §6b), then a `divergence_class` column so the answer stops
-   living in prose.
+1. ✅ **§10.8 is RULED and §11 carries the answer** — see the top of this file. What is LEFT of it:
+   **(a)** one leaf, ~590, settles Isaiah 56–57's two unread rows, plus Ecclesiastes 8 at ~531;
+   **(b)** the **corpus-wide audit** — every error table in the corpus predates §6b and §11, and
+   II.xvii was where it surfaced, not its extent; **(c)** the **`divergence_class` column**, so the
+   classification is data the site can render rather than prose only a reader can re-derive;
+   **(d)** a **J–T chapter/verse table** built from the volume — `tools/versification.json` answers
+   *could this verse exist?*, and this would answer *what did Milton's Bible call it?*, which is
+   the question the corpus keeps asking. Every offset in §11 is a row in it.
 2. **§10.2 + §10.4 — one ruling, two symptoms.** May the English `v. N` reach QA the way the
    Latin's already can, and may `reconcile_et_v()` settle by *form* rather than by digit equality?
    Five real Latin citations are being dropped because a versification offset makes the digits
