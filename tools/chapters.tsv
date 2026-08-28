@@ -57,20 +57,20 @@ book	ch	la_printed	la_pp	en_printed	en_pp	flag	title_la
 1	31	354	12	481	16	ok	De Ecclesiis Particularibus
 1	32	366	6	497	8	ok	De Disciplina Ecclesiastica
 1	33	372	14	505	21	ok	De Glorificatione Perfecta; de secundo Christi Adventu, Resurrectione, Conflagratione
-2	1	387	8	527	10	ok	De Bonis Operibus
-2	2	395	9	537	10	ok	De Bonorum Operum Causis Proximis
-2	3	404	9	547	10	ok	De Virtutibus ad Dei Cultum pertinentibus
-2	4	413	16	557	22	ok	De Cultu Externo
+2	1	387	8	527	10	verified	De Bonis Operibus
+2	2	395	9	537	10	verified	De Bonorum Operum Causis Proximis
+2	3	404	9	547	10	verified	De Virtutibus ad Dei Cultum pertinentibus
+2	4	413	16	557	22	verified	De Cultu Externo
 2	5	429	11	579	14	verified	De Jurejurando et Sorte
 2	6	440	6	593	7	verified	De Zelo
-2	7	446	9	600	13	ok	De Tempore Cultus divini; ubi de Sabbatho, Die Dominica, et Festis
-2	8	455	7	613	8	ok	De Officiis erga Homines praestandis, et quae huc pertinent Virtutes Generales
-2	9	462	12	621	15	ok	De Prima Specie Virtutum Specialium quae ad officium pertinent Hominis erga se
+2	7	446	9	600	13	verified	De Tempore Cultus divini; ubi de Sabbatho, Die Dominica, et Festis
+2	8	455	7	613	8	verified	De Officiis erga Homines praestandis, et quae huc pertinent Virtutes Generales
+2	9	462	12	621	15	verified	De Prima Specie Virtutum Specialium quae ad officium pertinent Hominis erga se
 2	10	474	3	636	3	verified	De Secunda Specie Virtutum ad officia Hominis erga se pertinentium
 2	11	477	10	639	11	verified	De Officiis Hominis erga Proximum, et quae Virtutes eo pertineant
-2	12	487	5	650	5	ok	De Virtutibus sive Officiis Specialibus erga Proximum
-2	13	492	12	655	17	ok	De Secunda Specie Officiorum Specialium erga Proximum
-2	14	504	7	672	8	ok	Adhuc de Secunda Specie Officiorum Specialium erga Proximum
+2	12	487	5	650	5	verified	De Virtutibus sive Officiis Specialibus erga Proximum
+2	13	492	12	655	17	verified	De Secunda Specie Officiorum Specialium erga Proximum
+2	14	504	7	672	8	verified	Adhuc de Secunda Specie Officiorum Specialium erga Proximum
 2	15	511	9	680	11	verified	De Officiis erga Proximum Mutuis, et speciatim Privatis
 2	16	520	5	691	5	verified	De Altera Specie Officiorum Privatorum
 2	17	525	12	696	16	verified	De Officiis Publicis erga Proximum
