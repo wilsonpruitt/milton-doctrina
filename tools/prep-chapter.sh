@@ -56,16 +56,26 @@ prep_one() {
   # sweep-feet.sh and every ledger, runbook and chunk in the project. Naming these
   # by PDF page (as this script did until 2026-08-04) puts `la-474.jpg` on printed
   # 458 and invites transcribing the wrong sixteen pages.
-  local p pdf out
+  # ⚠ pdftoppm ZERO-PADS its output filename to the width of the PDF's page count,
+  # so page 23 of a 572-page scan is written `la-7-023.jpg`, not `la-7-23.jpg`.
+  # Book II never exposed this (its pdf pages are already 3 digits); every Book I
+  # chapter does. Do not reconstruct the produced name — glob for it.
+  render_one() {
+    local pdf="$1" out="$2" printed="$3" src="$4"
+    rm -f "$out"-*.jpg                       # clear stale renders before globbing
+    pdftoppm -jpeg -r 200 -f "$pdf" -l "$pdf" "$src" "$out"
+    local produced
+    produced=$(ls "$out"-*.jpg 2>/dev/null | head -1)
+    [ -n "$produced" ] || { echo "FATAL: pdftoppm produced nothing for printed $printed (pdf $pdf)"; exit 1; }
+    mv "$produced" "$out.jpg"
+  }
+
+  local p pdf
   for ((p = la_start; p <= la_start + la_pp; p++)); do
-    pdf=$((p + LA_OFFSET)); out="$RAW/plates/la-$p"
-    pdftoppm -jpeg -r 200 -f "$pdf" -l "$pdf" "$RAW/la.pdf" "$out"
-    mv "$out-$pdf.jpg" "$out.jpg"
+    pdf=$((p + LA_OFFSET)); render_one "$pdf" "$RAW/plates/la-$p" "$p" "$RAW/la.pdf"
   done
   for ((p = en_start; p <= en_start + en_pp; p++)); do
-    pdf=$((p + EN_OFFSET)); out="$RAW/plates/en-$p"
-    pdftoppm -jpeg -r 200 -f "$pdf" -l "$pdf" "$RAW/en.pdf" "$out"
-    mv "$out-$pdf.jpg" "$out.jpg"
+    pdf=$((p + EN_OFFSET)); render_one "$pdf" "$RAW/plates/en-$p" "$p" "$RAW/en.pdf"
   done
   pdftotext -f "$la_f" -l "$la_l" -layout "$RAW/la.pdf" "$RAW/la-ch$tag.txt"
   pdftotext -f "$en_f" -l "$en_l" -layout "$RAW/en.pdf" "$RAW/en-ch$tag.txt"
