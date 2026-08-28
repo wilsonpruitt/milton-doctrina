@@ -22,6 +22,15 @@
 #   II.vii, La p. 454, [^la4] — scholarly. Bucer/Calvin/Ursinus/Gomarus for Milton on the Sabbath,
 #   Peter Martyr against, Musculus last. Hinge: 'Omnes hactenus cum Miltono faciunt.'
 #
+# LAYER COLUMN ADDED 2026-08-28, from I.ii. The file was built assuming textual notes are a
+# Latin-volume phenomenon and its page column was called `la_page`. En 20's note 7 disproves that:
+# it is a textual note printed in the ENGLISH volume, where Sumner says the manuscript's next
+# clause was "incorrectly transcribed" and states what he rendered instead. The truer rule is that
+# Sumner puts a textual note wherever his reader needs it — in the Latin volume when the Latin is
+# doubtful, in the English when the doubt changed his translation. `layer` is `la` or `en-sumner`
+# and `page` is that volume's printed page. CONVENTIONS §5a's two-kind classification is unchanged;
+# only the assumption about which volume carries such notes was wrong.
+#
 # kind vocabulary (extend as needed, don't invent synonyms):
 #   word-order   Sumner rearranged Milton's words
 #   emendation   Sumner changed a reading
@@ -29,5 +38,8 @@
 #   ms-state     Sumner reports damage, a gap, or a hand-change without changing the text
 #   uncertain    Sumner flags the MS reading as doubtful
 #
-book	ch	la_page	anchor	kind	summary	sumner_stated_reason
-2	5	431	[^la5]	word-order	MS word order differs from the printed text; Sumner reordered the clause about Matt. v. 33 / Jacob. v. 12 so that "per Deum jurare non prohibemur" follows the Matthew citation rather than the James one.	"Quo melius ratio grammatica servaretur, ordinem leviter mutavi" — to preserve the grammar.
+book	ch	layer	page	anchor	kind	summary	sumner_stated_reason
+2	5	la	431	[^la5]	word-order	MS word order differs from the printed text; Sumner reordered the clause about Matt. v. 33 / Jacob. v. 12 so that "per Deum jurare non prohibemur" follows the Matthew citation rather than the James one.	"Quo melius ratio grammatica servaretur, ordinem leviter mutavi" — to preserve the grammar.
+1	2	la	12	[^la1]	uncertain	Sumner flags the MS reading `qualis ipse est` as doubtful and asks whether `se` should be read — i.e. whether Milton wrote that God wills to be conceived as he IS, or as he PRESENTS HIMSELF. The text is printed unchanged.	"Sic in MS. An legendum se?" — the MS reads thus; query the reading.
+1	2	la	20	[^la2]	uncertain	Sumner flags `SUMME BEATUS` (most blessed) as the MS reading and asks whether `benignus` (most gracious) should be read, on the ground of the context and the texts cited. The Latin is printed unchanged — but he then TRANSLATED the emendation: En 28 reads "He is MOST GRACIOUS", with no English note. Printed the MS in one layer, adopted the conjecture in the other.	"Sic in MS. Sed vide an legendum benignus, quod et contextus, et loci citati postulare videntur" — context and the cited passages seem to require it.
+1	2	en-sumner	20	[^s7]	emendation	The ledger's FIRST English-volume row. On Exod. iii. 14 Sumner quotes the manuscript verbatim, judges the clause after `Ehie qui sum vel ero` to have been incorrectly transcribed, and states the reconstruction he translated from (`et si persona prima in tertiam affinis verbi mutatur, Jave, qui est vel erit`), citing Simon's Hebrew Lexicon, Buxtorf and Cappellus. The Latin volume prints the MS clause with no note at all, so this admission exists in the English layer only.	"conceiving the next clause to have been incorrectly transcribed, I have rendered it as if it had been written—"

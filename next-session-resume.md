@@ -215,30 +215,55 @@ Work from `M3-RUNBOOK.md` — **its queue table in §1 is the authoritative per-
 kept current chapter by chapter. Book II first, then Book I, saving I.iv–I.vi for last. Opus per
 chunk.
 
-## ▶ START HERE — `ddc-1-02` is a PARTIAL chunk; the English layer is owed
+## ▶ START HERE — `ddc-1-03` *De Divino Decreto*
 
-**Read `chunks/ddc-1-02.md`'s `## Notes` first.** Its "Owed on return" list is the task, and the
-two sections after it — the settled alignment/ledger, and the English-layer findings — are work
-already done that **must not be re-derived**.
+State: Book II complete (17/17). Book I: **I.i and I.ii both verified, both layers.**
+19 of 50 chapters done. **Nothing is owed on any existing chunk.**
 
-State: Book II complete (17/17). Book I: **I.i verified**, **I.ii Latin-verified, English pending**.
+`ddc-1-03` — La 22–30 (9 pp.) / En 30–43 (14 pp.). Nothing prepped: start with
+`./tools/prep-chapter.sh 1 3`. Two things are already known about it:
 
-**The task, in order:**
+1. **Its first English note must be 8.** I.ii closed at 7 and Sumner does not skip numbers (§8a).
+   A first note that is not 8 means a note was missed in I.ii — come back and find it.
+2. **The English chapter opens at En 30, plate-confirmed** (`CHAP. III. OF THE DIVINE DECREES`),
+   which was read as I.ii's closing boundary. The Latin side (La 22) was confirmed the same way.
 
-1. `./tools/prep-chapter.sh 1 2` — the plates are gitignored; re-render before reading any.
-2. Write `## en-sumner`, En 13–29, **37 paragraphs**, **one paragraph per edit**. A batched write
-   tripped a content filter on 2026-08-28; M3-RUNBOOK §10 is the procedure and it works.
-   The alignment is settled — 32 La ¶¶ → 37 En ¶¶, **three splits, no merges**, listed in the chunk; two are three-piece, labelled `{¶N cont. 2}` per CONVENTIONS §4 (ratified 2026-08-28).
-3. Write `## apparatus-sumner-en` — **17 notes**, numbers and anchors already assigned in the chunk.
-4. Write `## headnote` (aim 200 words, hard cap 300).
-5. Add **three** rows to `tools/sumner-interventions.tsv`: La 12, La 20, **and En 20's note 7** —
-   the first English-volume textual note the ledger has carried.
-6. Flip `status: la-verified` → `verified`, drop `en_status`, delete the "Owed on return" list.
-7. `cd site && node scripts/build-content.mjs`, then `./tools/build-status.py` and republish the
-   register (same artifact URL).
+Per-chapter procedure is M3-RUNBOOK §2. Read every Latin page foot (§1 of the warnings below) and
+run §11's anchor check before committing either layer.
 
-**▶ THEN `ddc-1-03`** *De Divino Decreto* — La 22–30 / En 30–43. **Its first English note must be 8**
-(I.ii closes at 7).
+## ✅ `ddc-1-02` IS CLOSED — both layers, 2026-08-28
+
+La 10–21 / En 13–29, all four boundaries plate-confirmed, `status: verified`, `chapters.tsv` flag
+flipped to `verified`. **32 La ¶¶ → 37 En**, three splits and no merges. Seventeen English notes,
+the densest chapter in the corpus. The English was written **one paragraph per edit** from the
+start after a batched write tripped a filter; **nothing was paraphrased or omitted**.
+
+**★★ The finding to carry forward: an anchor can exist with no definition, and nothing catches it.**
+The Latin layer was committed, plate-verified, queued and shown on the register carrying `[^la1]`
+and `[^la2]` with **no `## apparatus-sumner-la` section at all** — and the omission was not on the
+chunk's own "Owed on return" list either. The parser does not require anchors to resolve and the
+footnote checksum cannot see a missing section, because the printed numbers stay consistent.
+**M3-RUNBOOK §11 is now the check**; it is three lines and it was run against all 21 chunks, which
+are otherwise clean. Both notes are now transcribed: La 12 `Sic in MS. An legendum se?` and La 20
+`Sic in MS. Sed vide an legendum benignus…`.
+
+**★ `tools/sumner-interventions.tsv` gained a `layer` column** and `la_page` became `page`. The file
+was built assuming textual notes are a Latin-volume phenomenon; En 20's note 7 disproves it. Three
+rows added — La 12, La 20, and **the ledger's first English-volume row**.
+
+**★ The English volume settles Greek accents the Latin will not.** En 19 prints `θεοτὴς` and
+`θειοτὴς` legibly at 1200 dpi where the Latin's do not resolve at 1400. Per §3 that does **not**
+license repairing the Latin from the English: the English layer's accents are no longer UNVERIFIED,
+the Latin's still are. Both are transcribed as printed.
+
+**★ Ellipsis dot-counts vary from three to fifteen inside this one chapter** and every one of them
+was confirmed at 900–1400 dpi, because 200 dpi is not good enough to tell five dots from six. There
+is no house ellipsis in the 1825; count them per instance, as §2 requires.
+
+**★ A footnote anchor fell inside an italic Scripture quotation** for the first time (En 24,
+*I am the Almighty*⁵ *God*). Written `*I am the Almighty*[^s5-2] *God,*`, which preserves the anchor
+position but splits the italic run, since markdown cannot nest. Recorded in the chunk, not yet a
+convention — if Book I repeats it, it needs one.
 
 ## ⚠ TWO THINGS I.ii CHANGED ABOUT HOW BOOK I MUST BE WORKED
 

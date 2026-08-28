@@ -17,10 +17,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # ---- the one hand-kept list -------------------------------------------------
 OPEN_ITEMS = [
-    ("blocked", "ddc-1-02 — English layer owed",
-     "Latin done and plate-verified; all 17 English plates READ, alignment and ledger settled. "
-     "Only the writing remains, one paragraph per edit (a batched write tripped a content filter). "
-     "Read the chunk's Notes first — nothing there needs re-deriving."),
+    ("next", "ddc-1-03 — De Divino Decreto",
+     "La 22–30 / En 30–43. Its first English note must be 8 (I.ii closed at 7), and the "
+     "English chapter opens at En 30, plate-confirmed. Book I is split-dominated: expect "
+     "Sumner to break Milton's paragraphs, not weld them."),
     ("watch", "sweep-book1.tsv is unreliable",
      "The Latin-footnote detector missed BOTH notes in I.ii (La 12, La 20). "
      "It may suggest where to look in Book I; it cannot decide. Read every Latin foot."),
@@ -30,9 +30,15 @@ OPEN_ITEMS = [
     ("watch", "Hebrew pointing is UNVERIFIED",
      "Read by us, not a specialist (§5c). אֱלֹהִים־בָּרִים at La 18 / En 26 matches neither "
      "Psalm cited, identically in both volumes — probable error in the source."),
-    ("watch", "Greek accents unresolvable on Θεότης / Θειότης",
-     "Letters certain, accents not readable at 1400 dpi. That is the scan's ceiling. "
-     "Standard accentuation used, flagged UNVERIFIED."),
+    ("watch", "Greek accents unresolvable on Θεότης / Θειότης — in the LATIN volume",
+     "Letters certain, accents not readable at 1400 dpi; that is the scan's ceiling. "
+     "The ENGLISH volume settles its own: En 19 prints θεοτὴς and θειοτὴς, legible at 1200 dpi. "
+     "That does not license repairing the Latin from the English (§3), so the Latin stays "
+     "UNVERIFIED and the English no longer is."),
+    ("watch", "Anchors can exist with no definition",
+     "ddc-1-02 shipped its Latin layer with [^la1] and [^la2] anchored and no "
+     "apparatus-sumner-la section at all, and it was not on the owed list. Check every "
+     "anchor resolves before calling a layer complete."),
 ]
 
 BOOK_TITLES = {1: "De Cognitione Dei", 2: "De Dei Cultu"}
@@ -348,7 +354,7 @@ def register(o, chaps, nxt):
             warn = "" if 1.05 <= r <= 1.85 else " warn"
             A(f'<td class="r ratio{warn}">{r:.2f}</td>')
             if k and k["en_par"] == 0:
-                A('<td class="notes"><span style="color:var(--work)">17 owed</span>'
+                A('<td class="notes"><span style="color:var(--work)">owed</span>'
                   + (f'<span class="la-note">La {", ".join(k["la_notes"])}</span>' if k["la_notes"] else "")
                   + '</td>')
             elif k:

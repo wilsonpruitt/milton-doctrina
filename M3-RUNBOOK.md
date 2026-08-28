@@ -73,7 +73,7 @@ both found by the sweep; chapters II.x–II.xvii added none, all their page feet
 | # | chunk | state |
 |---|---|---|
 | — | `ddc-1-01` | **done** (2026-08-27, Opus) — La 7–9 / En 9–12, all four boundaries plate-confirmed (`CAP./CHAP. II` opens La 10 / En 13); flag → `verified`, crosswalk correct. **9 ¶¶ → 9, strict 1:1.** **★★ ZERO footnotes in either layer** — so **Book I's numbering is still unestablished**; the question passes intact to I.ii. No Latin apparatus (3 feet read; agrees with `sweep-book1.tsv`). **★★★ THE GREEK RULE IS CORRECTED** — Book II's "keeps quotations, removes technical terms" predicted all three Greek words here would go; **all are kept**. The real distinction is **use vs. mention**: Sumner removes Greek an English equivalent can carry, and keeps Greek that is *itself the subject under discussion* (`vox Græca τύπος`). Covers all 11 instances; supersedes the formulation in II.x/II.xi/II.xv/II.xvi. **★★ First application of the new mid-word rule, and it is to GREEK** (`ὑπο<!-- p.9 -->τύπωσις`) — keeping the hyphen would have made a non-word. **★★ En recasts `DIVINITUS` (adverb) as `DIVINE REVELATION` (noun phrase)** in the work's founding definition and in its lemma. **★ First La error of Book I**: `Act. xxiv. … v. 6` → `v. 16`. **★★ New English-error mechanism** — the narrowing habit misfires: `Joan. vi. 45, 46` → `John vi. 46`, but the quoted words are 6:**45**. **★ The layers disagree on a Greek accent** (La `τύπος` / En `τυπὸς`, 1000 dpi). **★ The work's title block is on this page and belongs to no chunk** — source it separately if the site ever shows front matter. |
-| ~ | `ddc-1-02` | **PARTIAL** (2026-08-28, Opus) — **Latin layer done, English owed.** La 10–21 / En 13–29, both extents plate-confirmed (`CAP./CHAP. III` opens La 22 / En 30); `status: la-verified`, `en_status: pending`, legal per §8d. **Read the chunk's `## Notes` before resuming — alignment, ledger and English-layer findings are settled there and must NOT be re-derived.** A batched English write tripped a content filter; §10 applies, one paragraph per edit. **32 ¶¶ → 37, THREE SPLITS and NO MERGES**, inverting Book II's merge-dominated pattern. Two of the three are **three-way**; `{¶N cont. 2}` per CONVENTIONS §4, **ratified 2026-08-28**. **Seventeen English notes** (`9 · 1–9 · 1–7`), densest in the corpus — **I.iii opens at 8**. **★★★ TWO Latin textual notes (La 12, La 20) and `sweep-book1.tsv` flags BOTH pages clean** — the detector's first false negatives. **★★★★ Sumner TRANSLATED HIS OWN CONJECTURE**: La 20's `SUMME BEATUS` is queried in `[^la2]` and rendered "MOST GRACIOUS" (= *benignus*) in English, the note having no English counterpart — neither layer alone tells the reader. **★★★★ En 20 note 7 is a TEXTUAL note in the ENGLISH volume**, breaking the Latin-only rule and owing the ledger's first English-volume row. **★★★ The use/mention Greek rule confirmed both ways in one chapter** (En 17 translates, En 19 keeps). **★★★ The Arian argument is made HERE, not only in I.v** — hypostasis collapsed into essence (La 15), *nullus spiritus, nulla persona* (La 17), the Father as the one God (La 18), and Milton's own `verum de his plura cap. 5.` |
+| — | `ddc-1-02` | **done** (2026-08-28, Opus) — **both layers complete.** La 10–21 / En 13–29, all four boundaries plate-confirmed (`CAP./CHAP. III` opens La 22 / En 30); flag → `verified`. **32 ¶¶ → 37, THREE SPLITS and NO MERGES**, inverting Book II's merge-dominated pattern; two of the three are three-way, `{¶N cont. 2}` per CONVENTIONS §4. **Seventeen English notes** (`9 · 1–9 · 1–7`), densest in the corpus — **I.iii opens at 8.** The English was written one paragraph per edit throughout after a batched write tripped a filter on 2026-08-28; nothing was paraphrased or omitted. **★★★ TWO Latin textual notes (La 12, La 20) and `sweep-book1.tsv` flags BOTH pages clean** — the detector's first false negatives. **★★★★ Sumner TRANSLATED HIS OWN CONJECTURE**: La 20's `SUMME BEATUS` is queried in `[^la2]` and rendered "MOST GRACIOUS" (= *benignus*) in English, the note having no English counterpart — neither layer alone tells the reader. **★★★★ En 20 note 7 is a TEXTUAL note in the ENGLISH volume**; `sumner-interventions.tsv` gained a `layer` column for it and `la_page` became `page`. **★★★ The use/mention Greek rule confirmed both ways in one chapter** (En 17 translates, En 19 keeps). **★★★ The Arian argument is made HERE, not only in I.v** — hypostasis collapsed into essence (La 15), *nullus spiritus, nulla persona* (La 17), the Father as the one God (La 18), and Milton's own `verum de his plura cap. 5.` **★★ The chunk shipped its Latin layer with `[^la1]`/`[^la2]` anchored and NO `apparatus-sumner-la` section**, and the omission was on no owed list — see §11. **★ En 19's `θεοτὴς`/`θειοτὴς` resolve at 1200 dpi** where the Latin's do not; the English layer's Greek accents are no longer UNVERIFIED, the Latin's still are. |
 | 1 | `ddc-1-03` | `De Divino Decreto` — La 22–30 (9 pp.) / En 30–43 (14 pp.). **Nothing prepped.** First English note must be **8**. |
 | 2+ | `ddc-1-07` … `ddc-1-33` | in order, saving I.iv–I.vi for last (§5) |
 | last | `ddc-1-04`, `ddc-1-05`, `ddc-1-06` | see §5 |
@@ -337,3 +337,30 @@ costs the read.
 **Also: guard every string replace.** Two separate corruptions were introduced in II.vii by
 `str.replace` on text that also occurred in the chunk's own `## Notes` (which quotes the
 apparatus). Always assert the match count is 1, or anchor by line index.
+
+## 11. Every anchor must resolve before a layer is called complete
+
+**Added 2026-08-28 from I.ii.** The chunk's Latin layer was committed, plate-verified, recorded in
+this queue and shown on the register with `[^la1]` and `[^la2]` anchored in the text and **no
+`## apparatus-sumner-la` section anywhere in the file.** Nothing caught it: the parser does not
+require an anchor to resolve, the register counts Latin notes off the anchors rather than the
+definitions, and the chunk's own "Owed on return" list — written by the session that made the
+omission — did not mention it.
+
+**Check per layer, before commit:**
+
+```
+python3 - <<'PY'
+import io,re,sys
+s=io.open(sys.argv[1] if len(sys.argv)>1 else 'chunks/ddc-1-02.md',encoding='utf-8').read()
+body=re.sub(r'\n## (Notes|headnote)\n.*','',s,flags=re.S)       # Notes quote the apparatus
+used=set(re.findall(r'\[\^([^\]]+)\](?!:)',body))
+defined=set(re.findall(r'^\[\^([^\]]+)\]:',body,re.M))
+print('anchored, never defined:', sorted(used-defined))
+print('defined, never anchored:', sorted(defined-used))
+PY
+```
+
+Both lists must be empty. It costs one command and it is the only check that would have caught
+this class; the footnote-number checksum (§8a) will not, because a missing *section* leaves the
+printed numbers perfectly consistent.
