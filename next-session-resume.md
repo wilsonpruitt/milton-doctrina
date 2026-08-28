@@ -215,7 +215,15 @@ Work from `M3-RUNBOOK.md` — **its queue table in §1 is the authoritative per-
 kept current chapter by chapter. Book II first, then Book I, saving I.iv–I.vi for last. Opus per
 chunk.
 
-## ▶ START HERE — `ddc-1-03` *De Divino Decreto*
+## Two fronts are open — pick one
+
+**A. `ddc-1-03`** — the transcription queue continues, below.
+**B. M4, the scripture index** — `M4-RUNBOOK.md` is written and the prep is done (Wilson's ruling
+2026-08-28: start on the 19 chapters in hand, don't wait for the corpus). It needs a session of its
+own; §7 there gives the sequence and §8 the model note. Do not start it inside a transcription
+session — step 2 is hand-checking a parser against a whole chapter.
+
+## ▶ START HERE (transcription front) — `ddc-1-03` *De Divino Decreto*
 
 State: Book II complete (17/17). Book I: **I.i and I.ii both verified, both layers.**
 19 of 50 chapters done. **Nothing is owed on any existing chunk.**

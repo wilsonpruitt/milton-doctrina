@@ -17,6 +17,11 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # ---- the one hand-kept list -------------------------------------------------
 OPEN_ITEMS = [
+    ("next", "M4 — the scripture index is scoped and ready",
+     "M4-RUNBOOK.md: the citation grammar is measured (3011 Latin / 3090 English references), "
+     "the book tables are seeded, seven hazards are documented. The one design decision that "
+     "differs from Bonaventure: BOTH layers are keyed, because the two volumes disagree about "
+     "citations and that disagreement is the edition's point. Needs its own session."),
     ("next", "ddc-1-03 — De Divino Decreto",
      "La 22–30 / En 30–43. Its first English note must be 8 (I.ii closed at 7), and the "
      "English chapter opens at En 30, plate-confirmed. Book I is split-dominated: expect "

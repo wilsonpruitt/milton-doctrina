@@ -1,0 +1,979 @@
+{
+ "_about": "STARTER TABLE, seeded 2026-08-28 from tools/census-citations.py over the 19 chapters then transcribed. Every alias below was OBSERVED in the corpus; the mappings are the transcriber's and are NOT verified against the plates. Check before the index ships — a wrong book in an index is worse than a missing one. Corrected 2026-08-28: `Jud.` was first mapped to Jude and is JUDGES — La `Jud. xiii. 18.` sits against En `Judges xiii. 18.`, while La `Judæ v. 20.` sits against En `Jude 20.` The parallel text is what settles these, and it is the reason both layers must be parsed rather than one keyed off the other.",
+ "_layers_differ": "The two volumes do NOT share an abbreviation table and must be parsed with separate maps. Sumner also varies WITHIN a layer: Levit./Lev., Numb./Num., Neh./Nehem., Micah/Mic., Esther/Esth., Lam./Lament., Hos./Hosea, 1 John/1 John.",
+ "_watch_Reg": "⚠ The Latin uses `1 Reg.`/`2 Reg.` for 1-2 KINGS while separately using `1 Sam.`/`2 Sam.` for Samuel. That is NOT the Vulgate convention (Vulg. 1-4 Regum = 1-2 Samuel + 1-2 Kings). Counts corroborate: La 1 Reg. 37 vs En 1 Kings 34; La 2 Reg. 30 vs En 2 Kings 30. Confirm at a plate before trusting it.",
+ "_not_a_book": {
+  "Cap.": "Milton's own chapter self-reference (`Cap. iii. 14.`), not a book. La only.",
+  "Sic": "`Sic in MS.` — the opening of Sumner's Latin textual notes (CONVENTIONS §5a).",
+  "Christ.": "a word of the text, not a citation."
+ },
+ "_numeral_dropped": {
+  "note": "Tokens seen WITHOUT their leading numeral. Almost certainly continuations where the numeral is carried from the preceding citation, but UNRESOLVED — do not guess a number. Per the Bonaventure rule, an unresolvable citation becomes a QA line, never a record with an invented target.",
+  "tokens": {
+   "la": [
+    "Reg.",
+    "Sam.",
+    "Tim.",
+    "Chron.",
+    "2 Ep."
+   ],
+   "en-sumner": [
+    "Cor.",
+    "Kings",
+    "Thess.",
+    "Sam.",
+    "Tim.",
+    "Chron.",
+    "Pet."
+   ]
+  }
+ },
+ "books": [
+  {
+   "key": "Gen",
+   "nameEn": "Genesis",
+   "nameLa": "Genesis",
+   "testament": "OT",
+   "order": 1,
+   "aliases": {
+    "la": [
+     "Gen."
+    ],
+    "en-sumner": [
+     "Gen."
+    ]
+   }
+  },
+  {
+   "key": "Exod",
+   "nameEn": "Exodus",
+   "nameLa": "Exodus",
+   "testament": "OT",
+   "order": 2,
+   "aliases": {
+    "la": [
+     "Exod."
+    ],
+    "en-sumner": [
+     "Exod."
+    ]
+   }
+  },
+  {
+   "key": "Lev",
+   "nameEn": "Leviticus",
+   "nameLa": "Leviticus",
+   "testament": "OT",
+   "order": 3,
+   "aliases": {
+    "la": [
+     "Lev."
+    ],
+    "en-sumner": [
+     "Lev.",
+     "Levit."
+    ]
+   }
+  },
+  {
+   "key": "Num",
+   "nameEn": "Numbers",
+   "nameLa": "Numeri",
+   "testament": "OT",
+   "order": 4,
+   "aliases": {
+    "la": [
+     "Num."
+    ],
+    "en-sumner": [
+     "Num.",
+     "Numb."
+    ]
+   }
+  },
+  {
+   "key": "Deut",
+   "nameEn": "Deuteronomy",
+   "nameLa": "Deuteronomium",
+   "testament": "OT",
+   "order": 5,
+   "aliases": {
+    "la": [
+     "Deut."
+    ],
+    "en-sumner": [
+     "Deut."
+    ]
+   }
+  },
+  {
+   "key": "Josh",
+   "nameEn": "Joshua",
+   "nameLa": "Josue",
+   "testament": "OT",
+   "order": 6,
+   "aliases": {
+    "la": [
+     "Jos."
+    ],
+    "en-sumner": [
+     "Josh."
+    ]
+   }
+  },
+  {
+   "key": "Judg",
+   "nameEn": "Judges",
+   "nameLa": "Judicum",
+   "testament": "OT",
+   "order": 7,
+   "aliases": {
+    "la": [
+     "Jud.",
+     "Judic."
+    ],
+    "en-sumner": [
+     "Judges"
+    ]
+   }
+  },
+  {
+   "key": "Ruth",
+   "nameEn": "Ruth",
+   "nameLa": "Ruth",
+   "testament": "OT",
+   "order": 8,
+   "aliases": {
+    "la": [
+     "Ruth."
+    ],
+    "en-sumner": [
+     "Ruth"
+    ]
+   }
+  },
+  {
+   "key": "1Sam",
+   "nameEn": "1 Samuel",
+   "nameLa": "1 Samuelis",
+   "testament": "OT",
+   "order": 9,
+   "aliases": {
+    "la": [
+     "1 Sam."
+    ],
+    "en-sumner": [
+     "1 Sam."
+    ]
+   }
+  },
+  {
+   "key": "2Sam",
+   "nameEn": "2 Samuel",
+   "nameLa": "2 Samuelis",
+   "testament": "OT",
+   "order": 10,
+   "aliases": {
+    "la": [
+     "2 Sam."
+    ],
+    "en-sumner": [
+     "2 Sam."
+    ]
+   }
+  },
+  {
+   "key": "1Kgs",
+   "nameEn": "1 Kings",
+   "nameLa": "1 Regum",
+   "testament": "OT",
+   "order": 11,
+   "aliases": {
+    "la": [
+     "1 Reg."
+    ],
+    "en-sumner": [
+     "1 Kings"
+    ]
+   }
+  },
+  {
+   "key": "2Kgs",
+   "nameEn": "2 Kings",
+   "nameLa": "2 Regum",
+   "testament": "OT",
+   "order": 12,
+   "aliases": {
+    "la": [
+     "2 Reg."
+    ],
+    "en-sumner": [
+     "2 Kings"
+    ]
+   }
+  },
+  {
+   "key": "1Chr",
+   "nameEn": "1 Chronicles",
+   "nameLa": "1 Chronicorum",
+   "testament": "OT",
+   "order": 13,
+   "aliases": {
+    "la": [
+     "1 Chron."
+    ],
+    "en-sumner": [
+     "1 Chron."
+    ]
+   }
+  },
+  {
+   "key": "2Chr",
+   "nameEn": "2 Chronicles",
+   "nameLa": "2 Chronicorum",
+   "testament": "OT",
+   "order": 14,
+   "aliases": {
+    "la": [
+     "2 Chron."
+    ],
+    "en-sumner": [
+     "2 Chron."
+    ]
+   }
+  },
+  {
+   "key": "Ezra",
+   "nameEn": "Ezra",
+   "nameLa": "Ezrae",
+   "testament": "OT",
+   "order": 15,
+   "aliases": {
+    "la": [
+     "Ezræ"
+    ],
+    "en-sumner": [
+     "Ezra"
+    ]
+   }
+  },
+  {
+   "key": "Neh",
+   "nameEn": "Nehemiah",
+   "nameLa": "Nehemiae",
+   "testament": "OT",
+   "order": 16,
+   "aliases": {
+    "la": [
+     "Nehem."
+    ],
+    "en-sumner": [
+     "Neh.",
+     "Nehem."
+    ]
+   }
+  },
+  {
+   "key": "Esth",
+   "nameEn": "Esther",
+   "nameLa": "Esther",
+   "testament": "OT",
+   "order": 17,
+   "aliases": {
+    "la": [
+     "Esth."
+    ],
+    "en-sumner": [
+     "Esth.",
+     "Esther"
+    ]
+   }
+  },
+  {
+   "key": "Job",
+   "nameEn": "Job",
+   "nameLa": "Iob",
+   "testament": "OT",
+   "order": 18,
+   "aliases": {
+    "la": [
+     "Job."
+    ],
+    "en-sumner": [
+     "Job"
+    ]
+   }
+  },
+  {
+   "key": "Ps",
+   "nameEn": "Psalms",
+   "nameLa": "Psalmi",
+   "testament": "OT",
+   "order": 19,
+   "aliases": {
+    "la": [
+     "Psal."
+    ],
+    "en-sumner": [
+     "Psal."
+    ]
+   }
+  },
+  {
+   "key": "Prov",
+   "nameEn": "Proverbs",
+   "nameLa": "Proverbia",
+   "testament": "OT",
+   "order": 20,
+   "aliases": {
+    "la": [
+     "Prov."
+    ],
+    "en-sumner": [
+     "Prov."
+    ]
+   }
+  },
+  {
+   "key": "Eccl",
+   "nameEn": "Ecclesiastes",
+   "nameLa": "Ecclesiastes",
+   "testament": "OT",
+   "order": 21,
+   "aliases": {
+    "la": [
+     "Eccles."
+    ],
+    "en-sumner": [
+     "Eccles."
+    ]
+   }
+  },
+  {
+   "key": "Song",
+   "nameEn": "Song of Solomon",
+   "nameLa": "Canticum Canticorum",
+   "testament": "OT",
+   "order": 22,
+   "aliases": {
+    "la": [
+     "Cantic."
+    ],
+    "en-sumner": [
+     "Cantic."
+    ]
+   }
+  },
+  {
+   "key": "Isa",
+   "nameEn": "Isaiah",
+   "nameLa": "Isaias",
+   "testament": "OT",
+   "order": 23,
+   "aliases": {
+    "la": [
+     "Isa."
+    ],
+    "en-sumner": [
+     "Isai."
+    ]
+   }
+  },
+  {
+   "key": "Jer",
+   "nameEn": "Jeremiah",
+   "nameLa": "Ieremias",
+   "testament": "OT",
+   "order": 24,
+   "aliases": {
+    "la": [
+     "Jer."
+    ],
+    "en-sumner": [
+     "Jer."
+    ]
+   }
+  },
+  {
+   "key": "Lam",
+   "nameEn": "Lamentations",
+   "nameLa": "Lamentationes",
+   "testament": "OT",
+   "order": 25,
+   "aliases": {
+    "la": [
+     "Lam.",
+     "Lament."
+    ],
+    "en-sumner": [
+     "Lam.",
+     "Lament."
+    ]
+   }
+  },
+  {
+   "key": "Ezek",
+   "nameEn": "Ezekiel",
+   "nameLa": "Ezechiel",
+   "testament": "OT",
+   "order": 26,
+   "aliases": {
+    "la": [
+     "Ezech."
+    ],
+    "en-sumner": [
+     "Ezek."
+    ]
+   }
+  },
+  {
+   "key": "Dan",
+   "nameEn": "Daniel",
+   "nameLa": "Daniel",
+   "testament": "OT",
+   "order": 27,
+   "aliases": {
+    "la": [
+     "Dan.",
+     "Daniel"
+    ],
+    "en-sumner": [
+     "Dan.",
+     "Daniel"
+    ]
+   }
+  },
+  {
+   "key": "Hos",
+   "nameEn": "Hosea",
+   "nameLa": "Hosea",
+   "testament": "OT",
+   "order": 28,
+   "aliases": {
+    "la": [
+     "Hos."
+    ],
+    "en-sumner": [
+     "Hos.",
+     "Hosea"
+    ]
+   }
+  },
+  {
+   "key": "Joel",
+   "nameEn": "Joel",
+   "nameLa": "Ioel",
+   "testament": "OT",
+   "order": 29,
+   "aliases": {
+    "la": [
+     "Joel."
+    ],
+    "en-sumner": [
+     "Joel"
+    ]
+   }
+  },
+  {
+   "key": "Amos",
+   "nameEn": "Amos",
+   "nameLa": "Amos",
+   "testament": "OT",
+   "order": 30,
+   "aliases": {
+    "la": [
+     "Amos."
+    ],
+    "en-sumner": [
+     "Amos"
+    ]
+   }
+  },
+  {
+   "key": "Jonah",
+   "nameEn": "Jonah",
+   "nameLa": "Ionas",
+   "testament": "OT",
+   "order": 32,
+   "aliases": {
+    "la": [
+     "Jon.",
+     "Jonæ"
+    ],
+    "en-sumner": [
+     "Jonah"
+    ]
+   }
+  },
+  {
+   "key": "Mic",
+   "nameEn": "Micah",
+   "nameLa": "Michaeas",
+   "testament": "OT",
+   "order": 33,
+   "aliases": {
+    "la": [
+     "Mic.",
+     "Micæ"
+    ],
+    "en-sumner": [
+     "Mic.",
+     "Micah"
+    ]
+   }
+  },
+  {
+   "key": "Nah",
+   "nameEn": "Nahum",
+   "nameLa": "Nahum",
+   "testament": "OT",
+   "order": 34,
+   "aliases": {
+    "la": [
+     "Nahum."
+    ],
+    "en-sumner": [
+     "Nahum"
+    ]
+   }
+  },
+  {
+   "key": "Hab",
+   "nameEn": "Habakkuk",
+   "nameLa": "Habacuc",
+   "testament": "OT",
+   "order": 35,
+   "aliases": {
+    "la": [
+     "Abac."
+    ],
+    "en-sumner": [
+     "Habak."
+    ]
+   }
+  },
+  {
+   "key": "Zeph",
+   "nameEn": "Zephaniah",
+   "nameLa": "Sophonias",
+   "testament": "OT",
+   "order": 36,
+   "aliases": {
+    "la": [
+     "Zeph."
+    ],
+    "en-sumner": [
+     "Zeph."
+    ]
+   }
+  },
+  {
+   "key": "Zech",
+   "nameEn": "Zechariah",
+   "nameLa": "Zacharias",
+   "testament": "OT",
+   "order": 38,
+   "aliases": {
+    "la": [
+     "Zech."
+    ],
+    "en-sumner": [
+     "Zech."
+    ]
+   }
+  },
+  {
+   "key": "Mal",
+   "nameEn": "Malachi",
+   "nameLa": "Malachias",
+   "testament": "OT",
+   "order": 39,
+   "aliases": {
+    "la": [
+     "Mal."
+    ],
+    "en-sumner": [
+     "Mal."
+    ]
+   }
+  },
+  {
+   "key": "Matt",
+   "nameEn": "Matthew",
+   "nameLa": "Matthaeus",
+   "testament": "NT",
+   "order": 40,
+   "aliases": {
+    "la": [
+     "Mat.",
+     "Matt."
+    ],
+    "en-sumner": [
+     "Matt."
+    ]
+   }
+  },
+  {
+   "key": "Mark",
+   "nameEn": "Mark",
+   "nameLa": "Marcus",
+   "testament": "NT",
+   "order": 41,
+   "aliases": {
+    "la": [
+     "Marc."
+    ],
+    "en-sumner": [
+     "Mark"
+    ]
+   }
+  },
+  {
+   "key": "Luke",
+   "nameEn": "Luke",
+   "nameLa": "Lucas",
+   "testament": "NT",
+   "order": 42,
+   "aliases": {
+    "la": [
+     "Luc."
+    ],
+    "en-sumner": [
+     "Luke"
+    ]
+   }
+  },
+  {
+   "key": "John",
+   "nameEn": "John",
+   "nameLa": "Ioannes",
+   "testament": "NT",
+   "order": 43,
+   "aliases": {
+    "la": [
+     "Joan."
+    ],
+    "en-sumner": [
+     "John"
+    ]
+   }
+  },
+  {
+   "key": "Acts",
+   "nameEn": "Acts",
+   "nameLa": "Acta",
+   "testament": "NT",
+   "order": 44,
+   "aliases": {
+    "la": [
+     "Act."
+    ],
+    "en-sumner": [
+     "Acts"
+    ]
+   }
+  },
+  {
+   "key": "Rom",
+   "nameEn": "Romans",
+   "nameLa": "ad Romanos",
+   "testament": "NT",
+   "order": 45,
+   "aliases": {
+    "la": [
+     "Rom."
+    ],
+    "en-sumner": [
+     "Rom."
+    ]
+   }
+  },
+  {
+   "key": "1Cor",
+   "nameEn": "1 Corinthians",
+   "nameLa": "1 ad Corinthios",
+   "testament": "NT",
+   "order": 46,
+   "aliases": {
+    "la": [
+     "1 Cor."
+    ],
+    "en-sumner": [
+     "1 Cor."
+    ]
+   }
+  },
+  {
+   "key": "2Cor",
+   "nameEn": "2 Corinthians",
+   "nameLa": "2 ad Corinthios",
+   "testament": "NT",
+   "order": 47,
+   "aliases": {
+    "la": [
+     "2 Cor."
+    ],
+    "en-sumner": [
+     "2 Cor."
+    ]
+   }
+  },
+  {
+   "key": "Gal",
+   "nameEn": "Galatians",
+   "nameLa": "ad Galatas",
+   "testament": "NT",
+   "order": 48,
+   "aliases": {
+    "la": [
+     "Gal."
+    ],
+    "en-sumner": [
+     "Gal."
+    ]
+   }
+  },
+  {
+   "key": "Eph",
+   "nameEn": "Ephesians",
+   "nameLa": "ad Ephesios",
+   "testament": "NT",
+   "order": 49,
+   "aliases": {
+    "la": [
+     "Eph."
+    ],
+    "en-sumner": [
+     "Eph."
+    ]
+   }
+  },
+  {
+   "key": "Phil",
+   "nameEn": "Philippians",
+   "nameLa": "ad Philippenses",
+   "testament": "NT",
+   "order": 50,
+   "aliases": {
+    "la": [
+     "Phil.",
+     "Philipp."
+    ],
+    "en-sumner": [
+     "Philipp."
+    ]
+   }
+  },
+  {
+   "key": "Col",
+   "nameEn": "Colossians",
+   "nameLa": "ad Colossenses",
+   "testament": "NT",
+   "order": 51,
+   "aliases": {
+    "la": [
+     "Col."
+    ],
+    "en-sumner": [
+     "Col.",
+     "Coloss."
+    ]
+   }
+  },
+  {
+   "key": "1Thess",
+   "nameEn": "1 Thessalonians",
+   "nameLa": "1 ad Thessalonicenses",
+   "testament": "NT",
+   "order": 52,
+   "aliases": {
+    "la": [
+     "1 Thess."
+    ],
+    "en-sumner": [
+     "1 Thess."
+    ]
+   }
+  },
+  {
+   "key": "2Thess",
+   "nameEn": "2 Thessalonians",
+   "nameLa": "2 ad Thessalonicenses",
+   "testament": "NT",
+   "order": 53,
+   "aliases": {
+    "la": [
+     "2 Thess."
+    ],
+    "en-sumner": [
+     "2 Thess."
+    ]
+   }
+  },
+  {
+   "key": "1Tim",
+   "nameEn": "1 Timothy",
+   "nameLa": "1 ad Timotheum",
+   "testament": "NT",
+   "order": 54,
+   "aliases": {
+    "la": [
+     "1 Tim."
+    ],
+    "en-sumner": [
+     "1 Tim."
+    ]
+   }
+  },
+  {
+   "key": "2Tim",
+   "nameEn": "2 Timothy",
+   "nameLa": "2 ad Timotheum",
+   "testament": "NT",
+   "order": 55,
+   "aliases": {
+    "la": [
+     "2 Tim."
+    ],
+    "en-sumner": [
+     "2 Tim."
+    ]
+   }
+  },
+  {
+   "key": "Titus",
+   "nameEn": "Titus",
+   "nameLa": "ad Titum",
+   "testament": "NT",
+   "order": 56,
+   "aliases": {
+    "la": [
+     "Tit."
+    ],
+    "en-sumner": [
+     "Tit."
+    ]
+   }
+  },
+  {
+   "key": "Heb",
+   "nameEn": "Hebrews",
+   "nameLa": "ad Hebraeos",
+   "testament": "NT",
+   "order": 58,
+   "aliases": {
+    "la": [
+     "Heb."
+    ],
+    "en-sumner": [
+     "Heb.",
+     "Hebr."
+    ]
+   }
+  },
+  {
+   "key": "Jas",
+   "nameEn": "James",
+   "nameLa": "Iacobus",
+   "testament": "NT",
+   "order": 59,
+   "aliases": {
+    "la": [
+     "Jacob."
+    ],
+    "en-sumner": [
+     "James"
+    ]
+   }
+  },
+  {
+   "key": "1Pet",
+   "nameEn": "1 Peter",
+   "nameLa": "1 Petri",
+   "testament": "NT",
+   "order": 60,
+   "aliases": {
+    "la": [
+     "1 Pet."
+    ],
+    "en-sumner": [
+     "1 Pet."
+    ]
+   }
+  },
+  {
+   "key": "2Pet",
+   "nameEn": "2 Peter",
+   "nameLa": "2 Petri",
+   "testament": "NT",
+   "order": 61,
+   "aliases": {
+    "la": [
+     "2 Pet."
+    ],
+    "en-sumner": [
+     "2 Pet."
+    ]
+   }
+  },
+  {
+   "key": "1John",
+   "nameEn": "1 John",
+   "nameLa": "1 Ioannis",
+   "testament": "NT",
+   "order": 62,
+   "aliases": {
+    "la": [
+     "1 Joan."
+    ],
+    "en-sumner": [
+     "1 John",
+     "1 John."
+    ]
+   }
+  },
+  {
+   "key": "Jude",
+   "nameEn": "Jude",
+   "nameLa": "Iudas",
+   "testament": "NT",
+   "order": 65,
+   "aliases": {
+    "la": [
+     "Judæ"
+    ],
+    "en-sumner": [
+     "Jude"
+    ]
+   }
+  },
+  {
+   "key": "Rev",
+   "nameEn": "Revelation",
+   "nameLa": "Apocalypsis",
+   "testament": "NT",
+   "order": 66,
+   "aliases": {
+    "la": [
+     "Apoc."
+    ],
+    "en-sumner": [
+     "Rev."
+    ]
+   }
+  }
+ ],
+ "_single_chapter_books": {
+  "note": "⚠ Books with ONE chapter are cited with a bare verse and NO chapter numeral: La `Judæ v. 20.` / En `Jude 20.` A parser expecting BOOK CH V will misread the verse as a chapter and silently produce a citation to a chapter that does not exist. Attested for Jude; the same must be assumed for Obadiah, Philemon, 2 John and 3 John.",
+  "keys": [
+   "Obad",
+   "Phlm",
+   "2John",
+   "3John",
+   "Jude"
+  ]
+ },
+ "_latin_word_noise": {
+  "note": "The Latin layer has capitalised WORDS that match a book-abbreviation shape and are not citations — Judæis, Judæorum, Judæi (of the Jews), and Sic/Cap. above. A book token is only a citation when a chapter or verse follows it. Do not build the map from token shape alone."
+ }
+}

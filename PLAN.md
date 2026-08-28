@@ -275,3 +275,18 @@ Per `memory/reference_model-prudence-rubric.md`:
 - **M4 — split.** Scripture index is engineering (Sonnet). Headnotes and loci parallels are
   judgment and synthesis (Opus).
 - Any fleet-style batch run needs an explicit big-burn OK first.
+
+---
+
+## 12. M4 is scoped — see `M4-RUNBOOK.md` (added 2026-08-28)
+
+§6.1's index is measured and specified; the prep is in `tools/census-citations.py` and
+`tools/scripture-books.json`. **One decision recorded here because it changes §6.1's shape:**
+Bonaventure keys its index off the Latin alone and treats the English as display. That rule does
+not survive contact with this edition — the two volumes disagree about citations systematically
+(§3; ~210 divergences projected), so **both layers are parsed and keyed, and the divergence is a
+displayed field rather than a resolved one.** The index does not adjudicate between Milton's
+Junius–Tremellius numbering and Sumner's inconsistent KJV adjustments; it shows both.
+
+§6.2's Wolleb and Ames are now on disk — `tools/fetch-loci.sh`, four texts, OCR as finding-aid only.
+They are unread; the `*Loci: pending M4.*` line in every headnote still stands.
