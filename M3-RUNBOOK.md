@@ -184,8 +184,9 @@ anti-Trinitarian chapter, and the one carrying the heaviest apparatus. It is sch
 conventions are fully settled before it is touched, and so it cannot swallow the schedule
 early. **It will need splitting** (§7: >12 La pages), at Milton's own lemma seams.
 
-Note also that `1.5`'s English start is currently flagged `suspect` (the audit reads 80, the
-crosswalk says 81) — resolve that off the plate before splitting anything.
+`1.5`'s extent is **settled**: La 57–109, En **80**–152 (§7, 2026-08-28). And the first seam is
+already found — the chapter opens `CAP. V. / PRÆFATIO.`, not with its title, so the *Præfatio* is
+`ddc-1-05-a` and it is Milton's own seam rather than an arbitrary cut.
 
 ## 6. Model and burn
 
@@ -199,49 +200,57 @@ crosswalk says 81) — resolve that off the plate before splitting anything.
   the hard-stop rule in CLAUDE.md). Sequential chapters are the default; the 8 GB machine is
   also a reason not to fan out.
 
-## 7. Suspect flags still open
+## 7. ✅ SUSPECT FLAGS — ALL CLOSED 2026-08-28. Do not re-open.
 
-Resolve off the plate before transcribing these; correct `chapters.tsv` and set the flag to
-`verified` when you do.
+The five remaining flags were settled as a batch off the plates (Wilson's call, 2026-08-28).
+`chapters.tsv` is corrected, every flag is `verified`, and the register shows **none outstanding**.
 
-| ch | issue |
-|---|---|
-| 1.5 | En start: crosswalk 81, text layer 80 |
-| 1.12 | La start: crosswalk 187, text layer 188 |
-| 1.23 | En (3pp) shorter than La (4pp) — ratio below 1.0 |
-| 1.24 | La start: crosswalk 280, text layer 279 |
-| 1.28 | La start: crosswalk 309, text layer **315** — a 6-page gap, the largest open discrepancy |
-| ~~2.17~~ | ✅ **RESOLVED 2026-08-27** — the text layer (525) was right, the crosswalk (524) wrong. See below. |
+| ch | was | is | how |
+|---|---|---|---|
+| 1.5 | En start 81 | **En 80** | `CHAP. V.` on En 80 |
+| 1.12 | La start 187 | **La 188** | `CAP. XII. DE PŒNA PECCATI` on La 188 |
+| 1.23 | La 4pp vs En 3pp | **La 3pp** (276–278) | falls out of 1.24's correction; ratio 1.00 |
+| 1.24 | La start 280 | **La 279** | `CAP. XXIV.` on La 279; En side confirmed at En 382 |
+| 1.28 | La start 309 | **La 315** | `CAP. XXVIII.` on La 315; La 309 is mid-1.27 |
 
-**All five remaining flags are in Book I. Book II carries none.**
+**The text layer was right in all five, and the crosswalk wrong in all five.** With the earlier
+En II.v/II.vi boundary and 2.17, the audit's discrepancies now stand at **7 for 7** and the
+crosswalk at 0. `tools/crosswalk-output.txt` should be treated as superseded, not consulted.
 
-### ⚖ How 2.17 resolved, and what it implies for the five that are left
+**Four adjacent chapters were corrected as a consequence** — 1.4 (En 37pp → 36), 1.11 (La 7pp → 8),
+1.27 (La 10pp → **16**) and 1.28 (La 23pp → 17). A contiguity check over all 50 chapters passes with
+zero breaks in either layer.
 
-It was settled not by inspecting 2.17 at all but by **transcribing II.xvi and running off the end of
-it**: La 524 turned out to carry II.xvi's closing paragraph plus a blank tail, so `CAP. XVII` could
-only open at 525. **The audit's text layer was right and the crosswalk was wrong** — which is now
-the record in *every* discrepancy the audit has raised (the En II.v/II.vi boundary in the staging
-session, and this one), against **zero** cases of the crosswalk being right. The audit's *silences*
-remain weak evidence (§7's non-detections have all been fine), but its *discrepancies* are 2 for 2.
+⚖ **The ratios corroborate independently.** 1.27 read **2.20** and 1.28 **0.96** — the two worst
+outliers in the register, both flagged `warn`. Corrected they are **1.38** and **1.29**, and 1.4,
+1.5, 1.11 and 1.12 all land in band as well. A page-range error of this size shows up as a ratio
+that cannot be right; **treat a ratio outside 1.05–1.85 as a boundary suspicion, not a curiosity.**
+1.23 and 1.24 now sit at exactly 1.00, which is in company: II.10, II.12 and II.16 are all 1.00 and
+all verified. For a 3–4 page chapter it is normal, not a flag.
 
-Two consequences for Book I:
-1. **Weight the text layer over the crosswalk** when the two disagree, and resolve the flag off the
-   plate at the first opportunity rather than deferring it.
-2. **The adjacent chapter is often the cheapest instrument.** 1.28's 6-page gap is the largest open
-   discrepancy; it will likely fall out of transcribing 1.27 and reading past its end, without a
-   separate investigation.
+### ★★ What settling 1.5 turned up — I.v does not open with its title
 
-⚠ And check the *extent*, not only the start: correcting 2.17's start exposed that **both** its page
-counts were also wrong (La 12 pp. not 11 as the start-shift alone implied, En 16 pp. not 15), because
-the crosswalk had the volume ending a page early in each layer. La 536 ends `TOTIUS OPERIS FINIS`
-and En 711 ends `THE END`, both now plate-confirmed.
+Both volumes head the chapter **`CAP. V.` / `PRÆFATIO.`** and **`CHAP. V.` / `PREFATORY REMARKS.`**
+The title *De Filio Dei* / *Of the Son of God* is **not** at the chapter head; `chapters.tsv` carries
+it from the contents page. Milton opens in his own voice — *De Filio Dei Sanctoque Spiritu hoc loco
+dicturus, non, nisi denuo præfatus, aggrediendum esse opus tam arduum existimavi* / "I cannot enter
+upon subjects of so much difficulty as the SON OF GOD and the HOLY SPIRIT, without again premising a
+few introductory words" — and the English already carries a footnote on its first page.
 
-Also **not found in the text layer** (heading not detected; may be fine, confirm on the plate
-when the chapter comes up): La 2.3, ~~En 2.11~~, and a handful in Book I. **En 2.11 is now
-resolved and was a detection artefact, not a boundary problem** — `CHAP. XI.` sits on En 639 exactly
-where the crosswalk put it (plate-confirmed 2026-08-05). La 2.3 was likewise fine. Treat a
-non-detection as weak evidence: the audit's *discrepancies* have all been real, its *silences*
-have not.
+Three consequences for when I.v is worked (it is scheduled last, PLAN §10 risk 2):
+1. **The *Præfatio* is the natural first chunk** — `ddc-1-05-a` — and it is a lemma seam of Milton's
+   own, which is what CONVENTIONS §7 asks a split to be. The 53 pages do not have to be cut arbitrarily.
+2. **Expect a second heading inside the chapter** where the title finally appears; find it and use it
+   as the next seam.
+3. The two volumes set the rule differently — La puts it *between* `CAP. V.` and `PRÆFATIO.`, En puts
+   `PREFATORY REMARKS.` above it, in the slot where a title goes. Display typography, normalised per
+   §2, but worth knowing before the plates are read.
+
+### Also not found in the text layer, when those chapters come up
+
+Headings not detected by the audit (weak evidence — every audit *silence* so far has been fine,
+while every *discrepancy* has been real): a handful in Book I. La 2.3 and En 2.11 were both checked
+and were detection artefacts, not boundary problems.
 
 ## 9. The Latin volume has apparatus too — RULED 2026-08-04, no longer open
 

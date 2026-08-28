@@ -27,15 +27,15 @@ book	ch	la_printed	la_pp	en_printed	en_pp	flag	title_la
 1	1	7	3	9	4	verified	Quid sit Doctrina Christiana, quotque ejus partes
 1	2	10	12	13	17	verified	De Deo
 1	3	22	9	30	14	ok	De Divino Decreto
-1	4	31	26	44	37	ok	De Praedestinatione
-1	5	57	53	81	72	suspect	De Filio Dei
+1	4	31	26	44	36	ok	De Praedestinatione
+1	5	57	53	80	73	verified	De Filio Dei
 1	6	110	14	153	19	ok	De Spiritu Sancto
 1	7	124	16	172	27	ok	De Creatione
 1	8	140	14	199	18	ok	De Providentia Dei seu rerum Gubernatione Communi
 1	9	154	6	217	9	ok	De Gubernatione Speciali Angelorum
 1	10	160	20	226	34	ok	De Gubernatione Speciali Hominis ante lapsum; de Sabbatho et Conjugio
-1	11	180	7	260	12	ok	De Lapsu primorum Parentum, et de Peccato
-1	12	187	5	272	6	suspect	De Poena Peccati
+1	11	180	8	260	12	ok	De Lapsu primorum Parentum, et de Peccato
+1	12	188	4	272	6	verified	De Poena Peccati
 1	13	192	11	278	16	ok	De Morte quae dicitur Corporali
 1	14	203	11	294	14	ok	De Hominis Restitutione et Christo Redemptore
 1	15	214	7	308	8	ok	De Officio Mediatorio ejusque triplici munere
@@ -46,12 +46,12 @@ book	ch	la_printed	la_pp	en_printed	en_pp	flag	title_la
 1	20	253	6	353	7	ok	De Fide Salvifica
 1	21	259	8	360	9	ok	De Insitione in Christum, ejusque Effectis
 1	22	267	9	369	10	ok	De Justificatione
-1	23	276	4	379	3	suspect	De Adoptione
-1	24	280	3	382	4	suspect	De Unione et Communione cum Christo ejusque Membris; de Ecclesia Mystica
+1	23	276	3	379	3	verified	De Adoptione
+1	24	279	4	382	4	verified	De Unione et Communione cum Christo ejusque Membris; de Ecclesia Mystica
 1	25	283	11	386	14	ok	De Glorificatione Inchoata; de Certitudine Salutis, et Perseverantia
 1	26	294	5	400	7	ok	De Manifestatione Foederis Gratiae; ubi et de Lege Dei
-1	27	299	10	407	22	ok	De Evangelio et Libertate Christiana
-1	28	309	23	429	22	suspect	De Sigillatione Foederis Gratiae Externa
+1	27	299	16	407	22	ok	De Evangelio et Libertate Christiana
+1	28	315	17	429	22	verified	De Sigillatione Foederis Gratiae Externa
 1	29	332	10	451	14	ok	De Ecclesia Visibili
 1	30	342	12	465	16	ok	De Scriptura Sacra
 1	31	354	12	481	16	ok	De Ecclesiis Particularibus

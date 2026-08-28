@@ -21,6 +21,10 @@ OPEN_ITEMS = [
      "La 22–30 / En 30–43. Its first English note must be 8 (I.ii closed at 7), and the "
      "English chapter opens at En 30, plate-confirmed. Book I is split-dominated: expect "
      "Sumner to break Milton's paragraphs, not weld them."),
+    ("watch", "crosswalk-output.txt is superseded",
+     "The chapter-start audit's discrepancies now stand at 7 for 7 against the crosswalk's 0. "
+     "chapters.tsv is the only source for page ranges; treat a ratio outside 1.05-1.85 as a "
+     "boundary suspicion, since 1.27's 2.20 and 1.28's 0.96 were both real errors."),
     ("watch", "sweep-book1.tsv is unreliable",
      "The Latin-footnote detector missed BOTH notes in I.ii (La 12, La 20). "
      "It may suggest where to look in Book I; it cannot decide. Read every Latin foot."),
