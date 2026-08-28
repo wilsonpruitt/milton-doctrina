@@ -38,8 +38,15 @@ marker where that falls, so `CAPUT IX` appears twice on one page — and in pass
 **Eccl 9 at +2** (J–T 9:3 = KJV 9:1), which §6b had measured three times from the corpus and could
 not explain. Confirmed at the source without being sought.
 
-**Next: the corpus-wide audit** — every error table in the corpus predates this — then the
-`divergence_class` column, and the J–T division table §11.3a has started (seven rows).
+✅ **The corpus-wide audit's first pass is also done — §12. 22 more rows moved, in 7 chunks**, all
+of them printed as "La errors silently corrected". Eleven J–T chapter divisions are established
+(§12.2: Num 23, Prov 12, Eccl 2/4/8/9/10, Isa 3/44/57, Ezek 3). ⚠ **STRUCTURE.md's J–T
+calibration was wrong and is fixed** — the volume has **two numbering regimes**, the Pentateuch
+FOLIATED (`leaf = folio + 17`, one number per opening) and Psalms onward paginated
+(`leaf = 2 × printed + 188`), with a drifting constant between. Don't extrapolate a formula
+outside the range it was fitted in.
+
+**Next: the Psalms as a class** (§12.4), then the `divergence_class` column.
 
 ---
 
@@ -146,15 +153,25 @@ is the plan of record for what follows and this is only the pointer.
 
 ### The queue now
 
-1. ★★★ **The corpus-wide audit — every error table in the corpus predates §6b and §11.** II.xvii
-   was where this surfaced, not its extent: `ddc-2-05` heads a table of **eight** "silently
-   corrected La errors", `ddc-2-04-c` four, `ddc-1-02` its own, and none of them was written by
-   anyone who could open Junius–Tremellius. The method is now cheap and proven — read the chapter
-   division off the page image, and the offset follows. **Work book by book, not chunk by chunk**,
-   because one division settles every citation of that chapter across the corpus (Isaiah 57 took
-   two rows at once; Ecclesiastes' leaf 531 gave three chapters). Start from the §11.3a table and
-   the `+1`-heavy distribution in §6b — 79 of 149 same-chapter divergences are `+1`, and the
-   Psalms superscription already explains most of those.
+1. ★★★ **The corpus-wide audit — FIRST PASS DONE, §12. 22 rows moved in 7 chunks.** Each was
+   printed as a *La error silently corrected by Sumner*; each is versification. Corrected in
+   `ddc-1-02` · `ddc-2-04-c` · `ddc-2-05` · `ddc-2-08` · `ddc-2-09` · `ddc-2-11` · `ddc-2-15`,
+   by a **correction block appended to each chunk's Notes** — the tables above them are left as
+   printed, because re-keying seven tables by hand is how a transcription error enters, and the
+   block says it governs. **Eleven J–T chapter divisions are now established** (§12.2).
+   ★ **The method is what to carry forward: work BOOK-BY-BOOK, never chunk-by-chunk.** One
+   division settles every citation of that chapter anywhere in the treatise — Isaiah 57 took two
+   rows in two chunks with one read, Ecclesiastes' leaf 531 gave three chapters. And **check the
+   arithmetic against the divisions already in §12.2 before fetching anything**: eight of the 22
+   needed no new reading at all.
+   **What is left** (§12.4), in order of how many rows each moves: **the Psalms as a class** —
+   53 of 57 Psalm divergences are +1 or +2 and §6b already matched the split to one- and two-line
+   superscriptions, so this wants a handful of leaves and a statement of the mechanism, not 57
+   reads; then `ddc-2-05`'s four remaining Isaiah rows, `ddc-2-03`'s three, `ddc-2-06`'s
+   `2 Sam. xxi. 2, 3` ("neither side is right"), `ddc-2-11`'s six.
+   ⚠ Not every "La error" is suspect. The five surviving in II.xvii survive because their own
+   quotation refutes them — `Act. xiii. 3` quotes Acts 23:4 — and that test disposes of most
+   singletons. **A repeating offset is the signal; a singleton usually is not.**
 2. **The `divergence_class` column** (§11.4). Right now "versification" vs "error" lives in prose
    in a chunk's Notes, so the site cannot render the distinction and nothing can count it. It
    should be data, sourced from the J–T table below it.

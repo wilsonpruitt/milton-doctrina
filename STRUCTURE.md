@@ -23,13 +23,25 @@ or Andrewes.
 here: M4-RUNBOOK §11. What it settles: whether a citation divergence is Milton's error or his
 Bible's numbering — a question the corpus could only ever answer statistically.
 
-| Volume | Formula | Verified at printed pp. |
-|---|---|---|
-| Junius–Tremellius, **Old Testament** | `leaf = 2 × printed + 188` | 145 (Ps 97), 175 (Cant 8), 206 (Jer 2), 236 (Ezek 8), 266 (Dan 11) |
+⚠ **There is no single formula, and that is the first thing to know.** The two Sumner volumes have
+one rock-stable offset each; this volume has **at least two numbering regimes and a drifting
+constant between them.** Do not extrapolate a formula outside the range it was fitted in — that
+mistake was made and caught the same day.
 
-⚠ **This one is not like the other two, in three ways.**
-1. **A leaf is an OPENING of two printed pages**, not one page — hence the `2 ×`. The printed
-   folio in the running head is the RECTO's, so a formula hit can be one off on the verso.
+| Section | Numbering | Formula | Verified at |
+|---|---|---|---|
+| **Pentateuch** | **FOLIATED** — one number per opening | `leaf = folio + 17` | 103 (Lev 14), 135 (Num 20), 136 (Num 22), 143 (Num 30), 173 (Deut 30) |
+| Joshua → Ruth | paginated, own sequence | ≈ `leaf = 2 × printed + 202` | 3 (Josh 7), 28 (Ruth 1) |
+| **Psalms → Malachi** | paginated | `leaf = 2 × printed + 188` | 145 (Ps 97), 161 (Prov 13), 163 (Eccl 2), 169 (Eccl 4), 172 (Eccl 10), 175 (Cant 8), 177 (Isa 3), 195 (Isa 41), 201 (Isa 57), 206 (Jer 2), 234 (Ezek 3), 236 (Ezek 8), 266 (Dan 11) |
+
+**The Pentateuch is foliated, not paginated** — its number advances by ONE per opening, because it
+counts leaves rather than pages. Everything from Psalms on advances by two. The constant between
+regimes drifts (202 early, 188 from Psalms on) as unnumbered leaves accumulate. **In practice:
+probe a leaf, read the running head, and step ~60 leaves at a time** — three probes find any book.
+
+⚠ **This one is not like the other two in three further ways.**
+1. **A leaf image is an OPENING**, verso and recto together. The number in the running head is the
+   RECTO's, so a formula hit can be one off on the verso.
 2. **The volume carries the New Testament after the Old, with its own printed sequence.** Leaf 800
    is Matthew 12 at printed 21. The formula above is the Old Testament's only; the NT wants its
    own calibration when something needs it.

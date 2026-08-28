@@ -235,3 +235,19 @@ single merge in sixteen printed pages, far tighter than II.ii (28 → 25) or II.
 
 **Page ratio:** En 11 pp ÷ La 9 pp = 1.22, the lowest of the three parts — the apparatus thins out
 markedly here (four notes in nine Latin pages, against eight notes in four for part *b*).
+
+## ⚠ CORRECTION 2026-08-28 — rows reclassified as VERSIFICATION, not error
+
+Checked against **Junius–Tremellius (Hanau 1603), the Bible Milton cited**, off the page images.
+The rows below were printed above as **La errors silently corrected by Sumner**. They are not
+errors: J–T divides these chapters at different points from the KJV, so Milton's numbers are
+correct in his own Bible and Sumner was converting, not repairing. Method, evidence and the full
+division table: **M4-RUNBOOK §11 and §12**.
+
+⚠ The tables above are left as printed rather than rewritten — seven chunks' tables re-keyed by
+hand is how a transcription error enters. **This block governs; where the two disagree, this one
+is right.**
+
+| La (printed) | En (printed) | chapter | J–T |
+|---|---|---|---|
+| Num. xxiii. 12 | Numb. xxiii. 8 | Num 23 | J–T's `CAPUT XXIII` opens at KJV 22:38 — **+4** |

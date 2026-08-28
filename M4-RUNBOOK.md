@@ -814,3 +814,105 @@ Running tally of J–T divisions established, all from page images — the first
    even though it is ambiguous in ours. That does not dissolve §10.2 — the English `v.` question
    is untouched — but it means some of the thirty QA lines are answerable from J–T rather than
    from the quotation alone.
+
+## 12. ★★★ The corpus-wide audit, first pass — 22 rows move, in 7 chunks
+
+§11 settled II.xvii. This is the same question asked of every other chunk, and the answer is the
+same only more so: **the "silently corrected La error" tables across the corpus are substantially
+misclassified, and the corrections are not distributed at random — they cluster in a handful of
+chapters, because a chapter division is a property of the chapter, not of the citation.**
+
+### 12.1 The method, and why it is cheap
+
+**Work book-by-book, never chunk-by-chunk.** One chapter division settles every citation of that
+chapter anywhere in the treatise. Isaiah 57 took two rows in two different chunks with one read;
+Ecclesiastes' leaf 531 gave three chapters at once. Sort the corpus's divergences by book and
+chapter, take the chapters with a **repeating** offset first (§6b's list is the ready-made
+worklist), and read the chapter boundary off the page image.
+
+**Eight of the 22 rows below needed no new reading at all** — they fell out of divisions §11 had
+already established, by arithmetic. Always run that check before fetching anything.
+
+### 12.2 The J–T chapter divisions established so far
+
+Every row read off a page image. `→` is what the division does to a citation: J–T number **plus**
+the offset gives the KJV number.
+
+| book ch. | J–T's chapter begins at | offset | leaf |
+|---|---|---|---|
+| Num 23 | KJV **22:38** | **+4** | 154 (folio 137) |
+| Prov 12 | KJV **12:2** | **−1** | 512 (printed 161) |
+| Eccl 2 | KJV **1:18** | **+1** | 526 (printed 163) |
+| Eccl 4 | KJV **4:5** | **+4** | 528 (printed 169) |
+| Eccl 8 | KJV **8:2** | **+1** | 531 |
+| Eccl 9 | KJV **8:16** | **+2** | 531 |
+| Eccl 10 | KJV **10:4** | **+3** | 533 (printed 172) |
+| Isa 3 | KJV **2:22** (inferred from a constant +1) | **+1** | 546 (printed 177–178) |
+| Isa 44 | KJV **44:6** | **+5** | 581 |
+| Isa 57 | KJV **56:9** | **+4** past KJV 56:12 | 590 (printed 201) |
+| Ezek 3 | KJV 3:1, **but the verse count does not restart** | **+10** | 656 (printed 234) |
+
+Readings that fixed the four new ones:
+
+- **Numbers 23.** J–T's ch. XXII ends at *an verò non possum honore afficere te?* (KJV 22:37);
+  `CAPUT XXIII` then opens at KJV **22:38**, *Dixit verò Bilham Balako, ecce veni ad te … illud
+  ipsum verbum quod indiderit Jehova ori meo, eloquar*, and the next verse is Kirjath-huzoth
+  (KJV 22:39). KJV 22 ends at 41, so J–T 23:5 = KJV 23:1.
+- **Proverbs 12.** J–T 12:18 = KJV 12:19 (*Labium verax stabilitur in æternum*), and the chapter
+  closes at **27** = KJV 12:28 where the KJV closes at 28. Ten consecutive verses check.
+- **Ecclesiastes 2.** J–T's ch. I closes at **17** = KJV 1:17, so `CAPUT II` takes KJV 1:18.
+- **Isaiah 44.** J–T's ch. XLIII runs on to **20** = KJV 44:5 (*Hic dicet, Jehovæ sum … de nomine
+  Jisraëlis cognominabit*); `CAPUT XLIV` opens at KJV 44:6, which is the running head's own
+  *eum nullum est Deus*.
+
+### 12.3 The 22 rows, and where they are
+
+Each was printed as a **La error silently corrected by Sumner**. Each is versification. Marked in
+the chunks' Notes; the chunk tables themselves are left standing with a correction block, because
+rewriting seven tables by hand is how a transcription error gets introduced.
+
+| chunk | row | chapter | check |
+|---|---|---|---|
+| `ddc-1-02` | Isa. xliv. 1 / xliv. 6 | Isa 44 | 1+5 |
+| `ddc-1-02` | Num. xxiii. 23 / xxiii. 19 | Num 23 | 23−4 |
+| `ddc-2-04-c` | Num. xxiii. 12 / xxiii. 8 | Num 23 | 12−4 |
+| `ddc-2-05` | Isa. lvii. 9, &c. / lvii. 5 | Isa 57 | 9−4 |
+| `ddc-2-05` | et xliv. 5, &c. / xliv. 10 | Isa 44 | 5+5 |
+| `ddc-2-05` | Isa. xliv. 12, 13 / xliv. 18 | Isa 44 | 13+5; En narrows to the second verse |
+| `ddc-2-05` | et xliv. 20 / xliv. 25 | Isa 44 | 20+5 |
+| `ddc-2-05` | Num. xxiii. 27 / xxiii. 23 | Num 23 | 27−4 |
+| `ddc-2-08` ¶23 | Eccles. ii. 3 / ii. 2 | Eccl 2 | 3−1 |
+| `ddc-2-08` ¶26 | Prov. xii. 15 / xii. 16 | Prov 12 | 15+1 |
+| `ddc-2-08` ¶27 | et xii. 13 / xii. 14 | Prov 12 | 13+1 |
+| `ddc-2-09` ¶16 | Eccles. ii. 27 / ii. 26 | Eccl 2 | 27−1 |
+| `ddc-2-09` ¶16 | et iv. 4 / iv. 8 | Eccl 4 | 4+4 |
+| `ddc-2-09` ¶16 | Isa. lvii. 21 / lvii. 17 | Isa 57 | 21−4 |
+| `ddc-2-09` ¶21 | Eccles. iv. 1, 2 / iv. 5, 6 | Eccl 4 | 1+4, 2+4 |
+| `ddc-2-09` ¶27 | Prov. xii. 8 / xii. 9 | Prov 12 | 8+1 |
+| `ddc-2-09` ¶33 | Isa. iii. 10 / iii. 9 | Isa 3 | 10−1 |
+| `ddc-2-11` ¶26 | Prov. xii. 9 / xii. 10 | Prov 12 | 9+1 |
+| `ddc-2-11` ¶27 | Prov. xii. 9 / xii. 10 | Prov 12 | 9+1 |
+| `ddc-2-11` ¶35 | Eccles. iv. 5, &c. / iv. 9, &c. | Eccl 4 | 5+4 |
+| `ddc-2-15` | Isa. iii. 6 / Isai. iii. 5 | Isa 3 | 6−1 |
+| `ddc-2-15` | Eccles. x. 2, 3 / x. 5, 6 | Eccl 10 | 2+3, 3+3 |
+
+★ **`ddc-2-15` and `ddc-2-17` share the `Eccles. x. 2, 3` row**, and II.xvii built an argument on
+the coincidence — that "the error travels with the passage" and that Sumner corrected it twice
+independently. Both chunks are now corrected: it is one man citing one Bible twice.
+
+### 12.4 What is left of the audit
+
+**Not** every "La error" in the corpus is now suspect. The five that survive in II.xvii survive
+because their own quotation refutes them (`Act. xiii. 3` quotes Acts 23:4), and the same test
+disposes of most singletons. What wants the J–T treatment is **any chapter cited more than once
+with a constant offset** — §6b's `+1` bucket alone holds 79 divergences, most of them Psalms,
+where the Hebrew superscription already explains the pattern and a single leaf per psalm would
+confirm it.
+
+Still unread, in rough order of how many rows each would move:
+- **The Psalms**, as a class. 53 of 57 Psalm divergences are +1 or +2, and §6b has already matched
+  the split to one-line and two-line superscriptions. This does not need 57 leaves; it needs a
+  handful, plus a note that the superscription rule is the mechanism.
+- **Isa 44 is done, but `ddc-2-05` claims four more Isaiah errors** in chapters not yet read.
+- `ddc-2-03`'s three (`2 Reg. vi. 35`, `Deut. v. 38`), `ddc-2-06`'s `2 Sam. xxi. 2, 3`
+  ("neither side is right"), `ddc-2-11`'s six.
