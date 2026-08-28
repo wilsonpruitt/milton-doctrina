@@ -31,9 +31,12 @@ OPEN_ITEMS = [
     ("watch", "PLAN §6.2 records conclusions, not arguments",
      "Two claims now mislocated: II.xv's divorce material is Sumner's apparatus, and "
      "the Arian argument is made in I.ii, not only I.v. Check I.vii and I.xiii the same way."),
-    ("watch", "Hebrew pointing is UNVERIFIED",
-     "Read by us, not a specialist (§5c). אֱלֹהִים־בָּרִים at La 18 / En 26 matches neither "
-     "Psalm cited, identically in both volumes — probable error in the source."),
+    ("watch", "Hebrew is UNVERIFIED — the sheet is the plan",
+     "49 occurrences / 20 distinct, read by us and not by a specialist (§5c). "
+     "script-check.html gathers every one with a deep link to its page image; regenerate it with "
+     "./tools/build-script-check.py after each chapter. ONE specialist pass before M5, per "
+     "M3-RUNBOOK §12. אֱלֹהִים־בָּרִים at La 18 / En 26 matches neither Psalm cited, identically "
+     "in both volumes — probable error in the source, not ours to mend."),
     ("watch", "A 2nd scan exists; use it before writing \'unresolvable\'",
      "archive.org bwb_T5-ARK-705 is a cleaner Latin volume, leaf = printed + 17. It settled the "
      "Theotes/Theiotes accents our own scan could not -- and showed the standard-accentuation "

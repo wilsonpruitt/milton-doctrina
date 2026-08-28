@@ -373,3 +373,29 @@ PY
 Both lists must be empty. It costs one command and it is the only check that would have caught
 this class; the footnote-number checksum (§8a) will not, because a missing *section* leaves the
 printed numbers perfectly consistent.
+
+## 12. Non-Latin script — the standing procedure
+
+**Added 2026-08-28 (Wilson's ruling): build the check-sheet as we go, one specialist pass
+before M5.** CONVENTIONS §5c's ⚠ UNVERIFIED flag is honest but it is not a plan; this is the plan.
+
+1. **Transcribe as printed, flag as unverified.** Unchanged — §5c governs.
+2. **Never reconstruct from the grammar.** I.ii is the proof: `Θεοτὴς`/`Θειοτὴς` would not resolve
+   in our Latin scan, standard accentuation was set as a placeholder, and it was **wrong**.
+   Where a reading is illegible, **fetch another scan first** (STRUCTURE.md has the table and the
+   calibrated leaf offsets). Reconstruction is the last resort, not the first.
+3. **Regenerate `./tools/build-script-check.py` after every chapter.** It derives everything from
+   `chunks/` — every Hebrew and Greek token, its volume and printed page, and a deep link to that
+   page's image in every scan that carries it. Nothing on it is hand-kept, so it cannot drift.
+4. **One specialist pass before M5**, not a trickle of questions. The sheet is the ask.
+
+It covers three kinds of row and they are three different questions:
+
+| kind | question for the reader |
+|---|---|
+| transcription layers | does this match the page, character for character and point for point? |
+| Sumner's apparatus | same question — his notes quote Hebrew and Greek as heavily as the text |
+| `## apparatus-editorial` (**OUR CLAIM**) | is this *argument* right? These are our claims about what a corrupt printed reading ought to be, and per §5c they **must not be published unconfirmed** |
+
+Current: 49 Hebrew occurrences / 20 distinct, 91 Greek / 70 distinct. It will roughly double
+through Book I; I.v and I.vi are the heaviest chapters still to come.
