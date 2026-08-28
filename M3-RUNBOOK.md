@@ -416,7 +416,9 @@ before M5.** CONVENTIONS §5c's ⚠ UNVERIFIED flag is honest but it is not a pl
    in our Latin scan, standard accentuation was set as a placeholder, and it was **wrong**.
    Where a reading is illegible, **fetch another scan first** (STRUCTURE.md has the table and the
    calibrated leaf offsets). Reconstruction is the last resort, not the first.
-3. **Regenerate `./tools/build-script-check.py` after every chapter.** It derives everything from
+3. **Regenerate `./tools/build-script-check.py` after every chapter**, then republish it to the
+   **same artifact URL**: <https://claude.ai/code/artifact/c88eb1e4-df24-4f86-aea0-150ccae56faf>
+   (private; Wilson shares it when he has a reader). Do not publish a second one. It derives everything from
    `chunks/` — every Hebrew and Greek token, its volume and printed page, and a deep link to that
    page's image in every scan that carries it. Nothing on it is hand-kept, so it cannot drift.
 4. **One specialist pass before M5**, not a trickle of questions. The sheet is the ask.

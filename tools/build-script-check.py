@@ -12,6 +12,10 @@ our standard-accentuation fallback was WRONG, and only a second scan caught it.
 
 Regenerate after every chapter:  ./tools/build-script-check.py
 Everything is derived from chunks/ — there is nothing to keep in sync by hand.
+
+Published (private) at
+    https://claude.ai/code/artifact/c88eb1e4-df24-4f86-aea0-150ccae56faf
+Republish to THAT url after regenerating; never create a second artifact.
 """
 import re, glob, os, io, html, collections
 
