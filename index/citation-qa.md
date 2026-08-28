@@ -1,6 +1,6 @@
 # Citation QA — read this, do not merely generate it
 
-5809 records · 30 unclassified · 13 out-of-range · 427 divergence rows
+5809 records · 30 unclassified · 6 out-of-range · 7 versification · 427 divergence rows
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
@@ -43,19 +43,141 @@
 
 ## Targets that do not exist
 
-- `ddc-2-02` la {¶7} `Eccles. xii. 15.` — ERR: Eccl 12 has 14 verses — 15 out of range
-- `ddc-2-02` la {¶9} `Eccles. ix. 20.` — ERR: Eccl 9 has 18 verses — 20 out of range
 - `ddc-2-02` la {¶27} `Luc. ix. 66.` — ERR: Luke 9 has 62 verses — 66 out of range
-- `ddc-2-02` en-sumner {¶7} `Eccles. xii. 15.` — ERR: Eccl 12 has 14 verses — 15 out of range
 - `ddc-2-03` la {¶11} `2 Reg. vi. 35.` — ERR: 2Kgs 6 has 33 verses — 35 out of range
 - `ddc-2-03` la {¶34} `Deut. v. 38.` — ERR: Deut 5 has 33 verses — 38 out of range
 - `ddc-2-04-c` la {¶11} `Isa. lviii. 56.` — ERR: Isa 58 has 14 verses — 56 out of range
 - `ddc-2-04-c` en-sumner {¶16} `1 Kings xxvii. 29.` — 1Kgs has 22 chapters — chapter 27 does not exist
-- `ddc-2-09` la {¶16} `Eccles. ii. 27.` — ERR: Eccl 2 has 26 verses — 27 out of range
 - `ddc-2-10` en-sumner {¶3–4} `Psal. iii. 9.` — ERR: Ps 3 has 8 verses — 9 out of range
-- `ddc-2-13` la {¶33} `Eccles. vii. 30.` — ERR: Eccl 7 has 29 verses — 30 out of range
-- `ddc-2-13` la {¶34} `Eccles. ix. 22.` — ERR: Eccl 9 has 18 verses — 22 out of range
-- `ddc-2-14` la {¶5} `Lev. v. 21, &c.` — ERR: Lev 5 has 19 verses — 21 out of range
+
+## Versification, not error (M4-RUNBOOK §6b)
+
+Out-of-range citations reclassified as Junius-Tremellius numbering. These are records in the ledger, not findings against the 1825 text.
+
+- `ddc-2-02` la {¶7} `Eccles. xii. 15.` — versification — Eccl 12 runs +2 (attested at xii. 14 = KJV 12:12); at +2 this is KJV 12:13, the verse quoted
+- `ddc-2-02` la {¶9} `Eccles. ix. 20.` — versification — paired with `Eccles. ix. 18.` → Eccl 9:18 in the other layer, and offset +2 in Eccl 9 is attested 2× in the corpus
+- `ddc-2-02` en-sumner {¶7} `Eccles. xii. 15.` — versification — Eccl 12 runs +2 (attested at xii. 14 = KJV 12:12); at +2 this is KJV 12:13, the verse quoted
+- `ddc-2-09` la {¶16} `Eccles. ii. 27.` — versification — paired with `Eccles. ii. 26.` → Eccl 2:26 in the other layer, and offset +1 in Eccl 2 is attested 2× in the corpus
+- `ddc-2-13` la {¶33} `Eccles. vii. 30.` — versification — paired with `Eccles. viii. 1.` → Eccl 8:1 in the other layer, and Eccl 7 runs past the KJV bound into ch 8, and ch 8 is independently attested 2× at offset -1 — the complementary observable
+- `ddc-2-13` la {¶34} `Eccles. ix. 22.` — versification — paired with `Eccles. x. 2.` → Eccl 10:2 in the other layer, and Eccl 9 runs past the KJV bound into ch 10, and ch 10 is independently attested 2× at offset -3 — the complementary observable
+- `ddc-2-14` la {¶5} `Lev. v. 21, &c.` — versification — the Hebrew numbers KJV Lev 6:1-7 as 5:20-26; the English layer reads Levit. vi. 5 for the same quoted text
+
+## Offset corroboration — the evidence behind the line above
+
+A numbering offset is a system, so it repeats; a misprint is a singleton. **A book with no repeating offset cannot have an out-of-range citation excused as versification** — which is how `Luc. ix. 66.`, the only Luke divergence in the corpus, stays a printed error.
+
+| book | ch | offset (La − En) | seen | repeating |
+|---|---|---|---|---|
+| Prov | 12 | -1 | 6 | **yes** |
+| Prov | 12 | +4 | 1 | no |
+| Prov | 12 | -5 | 1 | no |
+| Dan | 6 | +1 | 5 | **yes** |
+| Ps | 102 | +1 | 5 | **yes** |
+| 1Sam | 14 | +1 | 4 | **yes** |
+| Eccl | 4 | -4 | 4 | **yes** |
+| Isa | 3 | +1 | 4 | **yes** |
+| Isa | 3 | -9 | 1 | no |
+| Isa | 44 | -5 | 4 | **yes** |
+| Isa | 44 | -6 | 1 | no |
+| Isa | 57 | +4 | 3 | **yes** |
+| Neh | 10 | +1 | 3 | **yes** |
+| Num | 23 | +4 | 3 | **yes** |
+| Ps | 5 | +1 | 3 | **yes** |
+| Ps | 19 | +1 | 3 | **yes** |
+| Ps | 52 | +2 | 3 | **yes** |
+| Ps | 75 | +1 | 3 | **yes** |
+| 1Sam | 7 | -1 | 2 | **yes** |
+| Amos | 2 | -3 | 2 | **yes** |
+| Eccl | 2 | +1 | 2 | **yes** |
+| Eccl | 8 | -1 | 2 | **yes** |
+| Eccl | 9 | +2 | 2 | **yes** |
+| Eccl | 10 | -3 | 2 | **yes** |
+| Eccl | 10 | -14 | 1 | no |
+| Exod | 16 | +1 | 2 | **yes** |
+| Gen | 12 | -3 | 2 | **yes** |
+| Hos | 12 | +1 | 2 | **yes** |
+| Jonah | 3 | +1 | 2 | **yes** |
+| Ps | 12 | +1 | 2 | **yes** |
+| Ps | 18 | +1 | 2 | **yes** |
+| Ps | 18 | +6 | 1 | no |
+| Ps | 30 | +1 | 2 | **yes** |
+| Ps | 31 | +1 | 2 | **yes** |
+| Ps | 40 | +1 | 2 | **yes** |
+| Ps | 41 | +1 | 2 | **yes** |
+| Ps | 51 | +2 | 2 | **yes** |
+| Ps | 58 | +1 | 2 | **yes** |
+| Ps | 60 | +2 | 2 | **yes** |
+| Ps | 68 | +1 | 2 | **yes** |
+| Ps | 69 | +1 | 2 | **yes** |
+| Ps | 92 | +1 | 2 | **yes** |
+| Ps | 140 | +1 | 2 | **yes** |
+| 1Cor | 2 | -1 | 1 | no |
+| 1Cor | 6 | -3 | 1 | no |
+| 1Cor | 7 | -2 | 1 | no |
+| 1Kgs | 18 | -1 | 1 | no |
+| 1Kgs | 22 | +1 | 1 | no |
+| 1Pet | 2 | +1 | 1 | no |
+| 1Pet | 3 | +1 | 1 | no |
+| 1Sam | 12 | +1 | 1 | no |
+| 1Sam | 16 | +1 | 1 | no |
+| 1Sam | 24 | +1 | 1 | no |
+| 2Chr | 25 | +1 | 1 | no |
+| 2Cor | 6 | -1 | 1 | no |
+| 2Kgs | 7 | -2 | 1 | no |
+| 2Kgs | 12 | +1 | 1 | no |
+| 2Sam | 19 | +1 | 1 | no |
+| 2Sam | 21 | +1 | 1 | no |
+| Dan | 2 | -1 | 1 | no |
+| Deut | 5 | +6 | 1 | no |
+| Deut | 6 | +1 | 1 | no |
+| Deut | 23 | +1 | 1 | no |
+| Eccl | 12 | +2 | 1 | no |
+| Exod | 6 | -1 | 1 | no |
+| Exod | 23 | -1 | 1 | no |
+| Ezek | 14 | -1 | 1 | no |
+| Ezek | 21 | +5 | 1 | no |
+| Gen | 27 | +2 | 1 | no |
+| Gen | 34 | -1 | 1 | no |
+| Isa | 6 | +1 | 1 | no |
+| Isa | 22 | -1 | 1 | no |
+| Isa | 30 | -1 | 1 | no |
+| Isa | 40 | -2 | 1 | no |
+| Isa | 58 | +51 | 1 | no |
+| Isa | 59 | +11 | 1 | no |
+| Jer | 7 | -1 | 1 | no |
+| Jer | 29 | +1 | 1 | no |
+| Jer | 45 | -2 | 1 | no |
+| Job | 12 | -2 | 1 | no |
+| Job | 19 | -1 | 1 | no |
+| Job | 31 | -1 | 1 | no |
+| John | 6 | -1 | 1 | no |
+| Judg | 11 | +2 | 1 | no |
+| Lam | 3 | -5 | 1 | no |
+| Luke | 9 | +4 | 1 | no |
+| Mal | 2 | +9 | 1 | no |
+| Mic | 6 | -1 | 1 | no |
+| Prov | 24 | -6 | 1 | no |
+| Prov | 25 | -1 | 1 | no |
+| Prov | 26 | -2 | 1 | no |
+| Prov | 31 | +9 | 1 | no |
+| Ps | 3 | -2 | 1 | no |
+| Ps | 34 | +1 | 1 | no |
+| Ps | 34 | -1 | 1 | no |
+| Ps | 36 | +1 | 1 | no |
+| Ps | 37 | +2 | 1 | no |
+| Ps | 42 | +1 | 1 | no |
+| Ps | 44 | +1 | 1 | no |
+| Ps | 46 | +1 | 1 | no |
+| Ps | 49 | +1 | 1 | no |
+| Ps | 54 | +2 | 1 | no |
+| Ps | 55 | +15 | 1 | no |
+| Ps | 55 | +1 | 1 | no |
+| Ps | 56 | +1 | 1 | no |
+| Ps | 81 | +1 | 1 | no |
+| Ps | 133 | +1 | 1 | no |
+| Rom | 11 | -1 | 1 | no |
+| Rom | 14 | -3 | 1 | no |
+| Zech | 10 | -1 | 1 | no |
 
 ## Divergences between the layers
 

@@ -17,21 +17,37 @@ are `+1`/`+2` — the Hebrew superscription**, `+2` exactly in Ps 51, 52, 60, wh
 two lines. Ecclesiastes was never special; it is just where short chapters make the offset
 overflow a bound and become visible to a range check.
 
+### Done since — the queue moved
+
+✅ **The `witness_target` question is settled and built** (M4-RUNBOOK §6b, "Ledger changes MADE").
+`divergence_id` is populated for the first time (717 records — the column was in the schema from
+day one and always written empty), and a new `witness_target` column carries the verse both layers
+point at, beside the printed target each layer goes on showing. Where they diverge the witness is
+the **English** target, because Sumner converts toward the KJV, which is the reader's Bible.
+298 records carry a witness that differs from what their layer prints. **`build-index-json.py`
+must group by `witness_target`, not by `target`.**
+
+✅ **`versification` is now a resolution class**, decided by corroboration rather than a book list:
+a record leaves the error list only if its pair's *own* offset is attested elsewhere, and a
+cross-chapter pair must also show the complementary observable. Moves 7, leaves 6 — the split
+derived by hand before it was coded. ⚠ The first cut tested only book-level repetition and
+excused two real errors; both are written up, and one of them **answered a plate question for
+free**: `Isa. lviii. 56` is a dropped comma (En reads `lviii. 5, 6`), not a mis-set number.
+
+✅ **A pre-existing ledger bug, fixed and guarded.** `citations.tsv` held **5,817 lines for 5,809
+records** — four citations wrap a line in the source and the writer collapsed tabs but not
+newlines, splitting one record across three rows. Invisible in every count printed to date and
+fatal to the line-at-a-time reader `build-index-json.py` was going to be. Now guarded by a second
+census assertion (rows == records, full field count on every row).
+
 ### The queue now
 
-1. ★★ **Settle the `witness_target` question before writing `build-index-json.py`** (M4-RUNBOOK
-   §6b, last two sections). La `Eccles. iv. 1` and En `Eccles. iv. 5` are **one citation of one
-   verse**. Grouping the index by printed target scatters it into two unrelated entries — 299
-   times, concentrated in the Psalms, the most-cited book in the treatise. §5's "display, don't
-   resolve away" is right about display and silent about grouping. This is the one decision that
-   blocks step 4.
-2. **Teach the parser a `versification` resolution class** so the six reclassified citations leave
-   the error list and enter the ledger. ⚠ **Do not build a general J–T mapping table from the
-   measured offsets** — they come from citations, not from a Bible, one to four per chapter.
-3. **Two out-of-range citations still want a plate** (down from eight): `Isa. lviii. 56`
-   (ddc-2-04-c la ¶11) and `et xi. 32` (ddc-2-13 la ¶47). Neither looks like versification —
-   `lviii. 56` over-runs a 14-verse chapter by 42, far outside every measured offset, and
-   `et xi. 32` has a *carried* book, which §4.9 makes the likelier defect.
+1. **Write `tools/build-index-json.py`** (M4 step 4) → `site/src/data/scripture/*.json`. It is
+   unblocked. Group by `witness_target`; render both printed targets on the page.
+2. **Then `/scripture` and `/scripture/[book]`** (step 5), ported from Bonaventure, plus the
+   divergence display. `/scripture` goes in the top-level nav from day 1 (PLAN §6.1).
+3. **One out-of-range citation still wants a plate** (down from eight): `et xi. 32`
+   (ddc-2-13 la ¶47). Its book is *carried*, which §4.9 makes the likelier defect.
 4. **Hand-check the QA report chapter by chapter.** Unchanged and still owed: only `ddc-2-02` has
    been read record by record; the other 20 chunks have been *parsed*, not read (§6.5).
 5. Still owed and cheap, recorded in `chunks/ddc-2-02.md` Notes: **five citation findings the
@@ -41,7 +57,8 @@ overflow a bound and become visible to a range check.
 
 Numbers to compare against, so a regression is visible: **ddc-2-02 — 327 records, 0 unclassified,
 layer spread 0.6%, all 9 hand-logged divergences found. Corpus — 5,809 records, spread 0.1%
-(2906 la / 2903 en), 30 unclassified, 13 out-of-range, 427 divergence rows.** State:
+(2906 la / 2903 en), 30 unclassified, **6 out-of-range, 7 versification**, 427 divergence rows,
+and 5809 ledger rows for 5809 records.** ddc-2-02 alone: 327 records, 0 unclassified. State:
 `tools/build-citations.py` (`<chunk-id>` | `--all` | `--dump`) → `index/citations.tsv` and
 `index/citation-qa.md`, both derived and re-runnable, zero writes under `chunks/`.
 `tools/build-versification.py` → `tools/versification.json` is the target-exists table.

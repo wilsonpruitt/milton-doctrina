@@ -347,14 +347,56 @@ target; where they diverge it is the English one (Sumner is converting *toward* 
 the reader's Bible), and the record keeps both. This is a step-4 decision — settle it before
 writing `build-index-json.py`, not after.
 
-### Ledger changes owed (not yet made)
+### ✅ Ledger changes MADE — 2026-08-28
 
-The parser still reports all six versification cases as `ERR … out of range`. It should carry a
-`versification` resolution class so they leave the error list and enter the ledger as records.
-The five Ecclesiastes plus `Lev. v. 21` are the known set; **do not build a general J–T mapping
-table from these offsets** — they are measured from citations, not from a Bible, and the sample
-per chapter is one to four. Flag the class, cite the evidence, leave the table to a real
-Junius–Tremellius text if one is ever wanted.
+All three landed in `tools/build-citations.py`; re-run `--all` and the numbers below should
+reproduce exactly.
+
+**1. `divergence_id` is populated at last.** The column was in the schema from the start and was
+written as `""` on every row. It now keys the two records that are one citation: 717 records
+carry one.
+
+**2. `witness_target` is a new column** — the verse both layers point at, beside the printed
+target each layer must go on showing. Where the layers agree it is the printed target; where they
+diverge it is the **English** one, because Sumner is converting toward the KJV, which is the
+reader's Bible and the numbering a reader can actually look up. 298 records now carry a witness
+that differs from what their layer prints. This is what `build-index-json.py` must group by.
+
+**3. `versification` is a resolution class, decided by CORROBORATION rather than a book list.**
+An offset is a system, so it repeats; a misprint is a singleton. A record leaves the error list
+only if it is paired with a resolving counterpart in the same book **and the offset that pair
+exhibits is itself attested elsewhere**. For a cross-chapter pair the test is stricter still and
+asks for the complementary observable: if La ch *n* runs past the KJV bound into ch *n+1*, then
+La ch *n+1* must independently show a negative offset. Eccl 7/8 and 9/10 both pass it.
+
+⚠ **The first cut of this rule tested only whether the BOOK repeats an offset, and it excused two
+real printed errors.** Worth keeping, because both are instructive:
+
+- `Isa. lviii. 56.` against En `Isai. lviii. 5, 6.` — **the Latin lost the comma** and ran the
+  verse list together. Isaiah does repeat offsets (44 at −5, 57 at +4), so a book-level test
+  passed a "+51 offset" seen exactly once. This also *answers* one of the two remaining plate
+  questions without a plate: `lviii. 56` is not a mis-set number, it is a dropped comma.
+- En `Psal. iii. 9.` against La `Psal. iii. 7.` — a −2 seen exactly once, in the book where +1 is
+  nearly universal. Already confirmed at 600 dpi as an English error (§6b above).
+
+The tightened rule moves **7** records and leaves **6** errors, which is exactly the split derived
+by hand before any of it was coded. `Luc. ix. 66.` stays an error on its own merits: it is the
+only Luke divergence in the corpus, so nothing corroborates it.
+
+**Do not build a general J–T mapping table from the measured offsets** — they come from citations,
+not from a Bible, one to four per chapter. The QA report's new **offset-corroboration table** is
+the evidence, not a converter.
+
+### ⚠ A pre-existing ledger bug, found by comparing rows to records
+
+`index/citations.tsv` had **5,817 lines for 5,809 records.** Four citations wrap a line in the
+source (`Num.` / newline / `xxxv. 31.`) and the writer collapsed tabs but not newlines, so each
+wrote **one record across three rows**. Invisible in every headline count printed to date, and
+fatal to `build-index-json.py`, which was about to read this file a line at a time.
+
+Fixed (all whitespace collapsed) and now guarded by a **second census assertion**: rows must equal
+records and every row must have the full field count. The first census assertion checks the chunk
+roster; this one checks the file's own shape. `--all` now reports 5809 rows for 5809 records.
 
 ### Where the thirteen out-of-range now stand
 
@@ -362,8 +404,9 @@ Junius–Tremellius text if one is ever wanted.
 |---|---|
 | **Versification, not error — reclassify (6)** | `Eccles. ii. 27` · `vii. 30` · `ix. 20` · `ix. 22` · `xii. 15` · `Lev. v. 21` |
 | **Error, plate-confirmed in an earlier session (5)** | `Luc. ix. 66` · `2 Reg. vi. 35` · `Deut. v. 38` · `Psal. iii. 9` (En) · `1 Kings xxvii. 29` (En) |
-| **Still unread — need a plate (2)** | `Isa. lviii. 56` (ddc-2-04-c la ¶11) · `et xi. 32` (ddc-2-13 la ¶47, carried book) |
+| **Still unread — need a plate (1)** | `et xi. 32` (ddc-2-13 la ¶47, carried book) |
 
-**Job 2 of the resume file shrank from eight unread to two.** Neither survivor looks like
-versification: `lviii. 56` in a 14-verse chapter is an over-run of 42, far outside every measured
-offset, and `et xi. 32` has a *carried* book, which §4.9 says is the likelier defect.
+**Job 2 of the resume file shrank from eight unread to one.** `Isa. lviii. 56` was settled while
+coding the rule below — the English reads `lviii. 5, 6`, so the Latin dropped a comma rather than
+mis-setting a number. The one survivor, `et xi. 32`, has a *carried* book, which §4.9 makes the
+likelier defect.

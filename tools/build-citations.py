@@ -368,6 +368,135 @@ def check_exists(rec, vers):
     return None
 
 
+# ── versification (M4-RUNBOOK §6b) ───────────────────────────────────────────────
+# Milton's Latin follows Junius-Tremellius (Hebrew) versification; Sumner's English
+# converts toward the KJV, inconsistently. Where the two numbering systems differ, an
+# out-of-range citation is NOT evidence of a printed error — it is the offset made
+# visible by a short chapter. Ecclesiastes supplied five such citations and every one
+# turned out to be versification.
+#
+# ★ The discriminator is CORROBORATION, not a hardcoded book list. An offset is a
+# system, so it repeats; a misprint is a singleton. Measured over 21 chunks: Eccl 4
+# runs -4 three times over, Eccl 9 runs +2 twice, Eccl 2 +1 twice, Eccl 10 -3 twice —
+# whereas `Luc. ix. 66.`, a known plate-confirmed printed error, is the ONLY Luke
+# divergence in the whole corpus. The rule below keeps that distinction and would have
+# drawn it unaided.
+#
+# ⚠ It is deliberately conservative, and it is NOT a J-T mapping table. The offsets are
+# measured from citations, not from a Bible, one to four per chapter. Do not use them to
+# convert a reference the corpus has not attested.
+
+def offset_groups(divs):
+    """Per (book, chapter) verse offsets between the layers, with their counts.
+
+    A group seen more than once is a repeating offset — the signature of a numbering
+    system rather than of a slip. Returned as {(book, chapter): {offset: count}}.
+    """
+    groups = collections.defaultdict(collections.Counter)
+    for d in divs:
+        l, e = d.get("la_rec"), d.get("en_rec")
+        if not (l and e) or l["book"] != e["book"]:
+            continue
+        if l["chapter"] != e["chapter"] or not l["verses"] or not e["verses"]:
+            continue
+        off = l["verses"][0] - e["verses"][0]
+        if off:
+            groups[(l["book"], l["chapter"])][off] += 1
+    return groups
+
+
+def corroborated(l, e, groups):
+    """Is the offset THIS pair exhibits attested elsewhere in the same book?
+
+    Book-level repetition is not enough, and assuming it was let two real printed errors
+    through on the first run:
+
+      * `Isa. lviii. 56.` against En `Isai. lviii. 5, 6.` — the Latin lost the comma and
+        ran the verse list together. Isaiah does repeat offsets (44 at -5, 57 at +4), so a
+        book-level test excused a +51 "offset" seen exactly once.
+      * En `Psal. iii. 9.` against La `Psal. iii. 7.` — a -2 seen exactly once, in the book
+        where +1 is nearly universal. It is a conversion made in the wrong direction, and
+        the Notes in ddc-2-10 confirm it at 600 dpi.
+
+    So the offset itself must repeat, not merely the book.
+    """
+    if l["chapter"] == e["chapter"]:
+        if not (l["verses"] and e["verses"]):
+            return None
+        off = l["verses"][0] - e["verses"][0]
+        n = groups.get((l["book"], l["chapter"]), {}).get(off, 0)
+        return (f"offset {off:+d} in {l['book']} {l['chapter']} is attested {n}× "
+                f"in the corpus") if n >= 2 else None
+    # Cross-chapter: the Latin chapter runs PAST the KJV bound and swallows the opening of
+    # the next chapter. That claim has a second, independent observable — the following
+    # Latin chapter must then run at a negative offset. Require it. This is the
+    # "predicted and observed from both sides" test that settled Eccl 7/8 and 9/10 (§6b).
+    if e["chapter"] == l["chapter"] + 1:
+        offs = groups.get((l["book"], e["chapter"]), {})
+        neg = [(o, n) for o, n in offs.items() if o < 0 and n >= 2]
+        if neg:
+            o, n = max(neg, key=lambda x: x[1])
+            return (f"{l['book']} {l['chapter']} runs past the KJV bound into ch "
+                    f"{e['chapter']}, and ch {e['chapter']} is independently attested "
+                    f"{n}× at offset {o:+d} — the complementary observable")
+    return None
+
+
+# Cases the corroboration test cannot reach on its own, ruled by hand with the evidence
+# cited. Keep this list SHORT and keep the reason with it — an entry here is a judgement,
+# not a measurement, and the next reader has to be able to check it.
+HAND_RULINGS = {
+    # Both layers print `Eccles. xii. 15.`, so there is no divergence pair to corroborate
+    # from. But the same chapter's `Eccles. xii. 14.` = En `xii. 12.` gives Eccl 12 an
+    # offset of +2, and at +2 the citation resolves to KJV 12:13 — *summa rei est*, "let
+    # us hear the conclusion of the whole matter", which is the text Milton quotes.
+    ("Eccl", 12, 15): "versification — Eccl 12 runs +2 (attested at xii. 14 = KJV 12:12); "
+                      "at +2 this is KJV 12:13, the verse quoted",
+    # `Lev. v. 21, &c.` = En `Levit. vi. 5, &c.` — *rependat, deinde reatum suum afferto* /
+    # *he shall even restore it in the principal ... and he shall bring his trespass
+    # offering* = KJV Lev 6:4-5. The Hebrew numbers KJV 6:1-7 as 5:20-26. Leviticus has no
+    # other divergence pair in the corpus, so corroboration is unavailable; the Hebrew
+    # division is the standard one and the quoted text confirms the target.
+    ("Lev", 5, 21): "versification — the Hebrew numbers KJV Lev 6:1-7 as 5:20-26; the "
+                    "English layer reads Levit. vi. 5 for the same quoted text",
+}
+
+
+def reclassify_versification(range_problems, divs, vers):
+    """Split the out-of-range list into versification (a record) and error (a finding).
+
+    Returns (still_errors, reclassified) where each reclassified entry is
+    (record, reason).
+    """
+    groups = offset_groups(divs)
+    partner = {}
+    for d in divs:
+        l, e = d.get("la_rec"), d.get("en_rec")
+        if l and e:
+            partner[l["id"]] = e
+            partner[e["id"]] = l
+    errors, moved = [], []
+    for r, msg in range_problems:
+        ruling = HAND_RULINGS.get((r["book"], r["chapter"],
+                                   r["verses"][0] if r["verses"] else None))
+        if ruling:
+            moved.append((r, ruling))
+            continue
+        p = partner.get(r["id"])
+        # (a) paired with a counterpart in the same book that DOES resolve, and
+        # (b) the offset that pair exhibits is itself attested elsewhere. Luke fails (b)
+        # with a single divergence in the whole corpus, which is the point.
+        if p and p["book"] == r["book"] and check_exists(p, vers) is None:
+            la, en = (r, p) if r["layer"] == "la" else (p, r)
+            why = corroborated(la, en, groups)
+            if why:
+                moved.append((r, f"versification — paired with `{p['raw_text']}` → "
+                                 f"{p['target']} in the other layer, and {why}"))
+                continue
+        errors.append((r, msg))
+    return errors, moved
+
+
 # ── divergence pairing (M4-RUNBOOK §2) ───────────────────────────────────────────
 def _sim(l, e):
     """How alike are two citation records? Drives the alignment below."""
@@ -466,6 +595,8 @@ def pair_divergences(la_recs, en_recs):
                 if l["cls"].split()[-1] != e["cls"].split()[-1]:
                     out.append({"para": label, "la": l["raw_text"], "la_target": l["target"],
                                 "en": e["raw_text"], "en_target": e["target"],
+                                "la_id": l["id"], "en_id": e["id"],
+                                "la_rec": l, "en_rec": e,
                                 "kind": f"same target, syntax differs ({l['cls']} / {e['cls']})"})
                 continue
             out.append({
@@ -474,6 +605,12 @@ def pair_divergences(la_recs, en_recs):
                 "la_target": l["target"] if l else "—",
                 "en": e["raw_text"] if e else "—",
                 "en_target": e["target"] if e else "—",
+                # the record ids are what make the pair addressable downstream: they are
+                # how `divergence_id` and `witness_target` get written back onto the two
+                # records, and hence how the index knows this is ONE citation (§6b).
+                "la_id": l["id"] if l else None,
+                "en_id": e["id"] if e else None,
+                "la_rec": l, "en_rec": e,
                 "kind": ("divergence" if l and e else
                          "present in Latin only" if l else "present in English only"),
             })
@@ -485,13 +622,20 @@ def pair_divergences(la_recs, en_recs):
         if r["para_lo"] not in covered:
             out.append({"para": r["para"], "la": r["raw_text"], "la_target": r["target"],
                         "en": "—", "en_target": "—",
+                        "la_id": r["id"], "en_id": None,
+                        "la_rec": r, "en_rec": None,
                         "kind": "Latin paragraph absent from the English layer"})
     return out
 
 
+# `divergence_id` groups the two records that are ONE citation seen twice; `witness_target`
+# is the verse both layers are pointing at, which is what the scripture index must group by.
+# Neither replaces the printed target — the edition goes on showing both sides (§6b).
+WS = re.compile(r"\s+")
+
 COLUMNS = ["chunk_id", "layer", "section", "para", "seq", "class", "raw_text",
            "book", "chapter", "verses", "target", "confidence", "resolution",
-           "carried_from", "divergence_id"]
+           "carried_from", "divergence_id", "witness_target"]
 
 
 def main():
@@ -569,24 +713,66 @@ def main():
         all_div = [d for d in all_div
                    if not (d["kind"] == "divergence" and False)]
 
+    # Versification is not error (§6b). Move the corroborated cases out of the findings
+    # list and into the ledger, carrying the reason on the record so it stays auditable.
+    range_problems, versified = reclassify_versification(range_problems, all_div, vers)
+    for r, reason in versified:
+        r["resolution"] = "versification"
+        r["confidence"] = "versification"
+        r["note"] = reason
+
     os.makedirs(INDEX_DIR, exist_ok=True)
+    # ── divergence_id + witness_target (§6b) ────────────────────────────────────
+    # Where the layers disagree the ENGLISH target is the witness: Sumner is converting
+    # toward the KJV, which is the reader's Bible, and it is the side whose numbering a
+    # reader can look up. Where they agree, or where a citation stands alone in one
+    # layer, the record witnesses itself.
+    for r in all_recs:
+        r["divergence_id"] = ""
+        r["witness_target"] = r["target"]
     div_key = {}
+    by_id = {r["id"]: r for r in all_recs}
     for i, d in enumerate(all_div, 1):
         div_key[(d["chunk_id"], d["para"])] = f"d{i}"
+        la, en = by_id.get(d.get("la_id")), by_id.get(d.get("en_id"))
+        if not (la and en):
+            continue
+        did = f"d{i}"
+        witness = en["target"]
+        for r in (la, en):
+            r["divergence_id"] = did
+            r["witness_target"] = witness
     with io.open(LEDGER, "w", encoding="utf-8") as fh:
         fh.write("\t".join(COLUMNS) + "\n")
         for r in all_recs:
             fh.write("\t".join(str(x) for x in [
                 r["chunk_id"], r["layer"], r["section"], r["para"], r["seq"], r["cls"],
-                r["raw_text"].replace("\t", " "), r["book"], r["chapter"],
+                # ⚠ A citation can wrap a line in the source (`Num.` / newline /
+                # `xxxv. 31.`). Writing that newline raw split ONE record across THREE
+                # TSV rows — four times over, silently, until the row count was compared
+                # against the record count. Collapse all whitespace, not just tabs.
+                WS.sub(" ", r["raw_text"]).strip(), r["book"], r["chapter"],
                 ",".join(str(v) for v in r["verses"]), r["target"], r["confidence"],
-                r["resolution"], r["carried_from"], "",
+                r["resolution"], r["carried_from"], r["divergence_id"],
+                r["witness_target"],
             ]) + "\n")
+
+    # Census assertion #2 (M4-RUNBOOK §5): one record, one row. A citation that wraps a
+    # line in the source used to write its newline straight into the TSV and split one
+    # record across three rows — invisible in the headline count, and fatal to anything
+    # that reads the ledger a line at a time.
+    with io.open(LEDGER, encoding="utf-8") as fh:
+        rows = [ln for ln in fh.read().split("\n")[1:] if ln]
+    bad = [ln for ln in rows if ln.count("\t") != len(COLUMNS) - 1]
+    assert not bad and len(rows) == len(all_recs), (
+        f"ledger is malformed: {len(rows)} rows for {len(all_recs)} records, "
+        f"{len(bad)} with the wrong field count")
 
     with io.open(QA_REPORT, "w", encoding="utf-8") as fh:
         fh.write("# Citation QA — read this, do not merely generate it\n\n")
         fh.write(f"{len(all_recs)} records · {len(all_qa)} unclassified · "
-                 f"{len(range_problems)} out-of-range · {len(all_div)} divergence rows\n\n")
+                 f"{len(range_problems)} out-of-range · {len(versified)} versification · "
+                 f"{len(all_div)} divergence rows\n\n")
         counts = collections.Counter(r["layer"] for r in all_recs)
         fh.write("## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)\n\n")
         for k, v in counts.items():
@@ -604,6 +790,26 @@ def main():
             fh.write(f"- `{r['chunk_id']}` {r['layer']} {r['para']} `{r['raw_text']}` — {msg}\n")
         if not range_problems:
             fh.write("_none_\n")
+        fh.write("\n## Versification, not error (M4-RUNBOOK §6b)\n\n")
+        fh.write("Out-of-range citations reclassified as Junius-Tremellius numbering. "
+                 "These are records in the ledger, not findings against the 1825 text.\n\n")
+        for r, reason in versified:
+            fh.write(f"- `{r['chunk_id']}` {r['layer']} {r['para']} `{r['raw_text']}` — {reason}\n")
+        if not versified:
+            fh.write("_none_\n")
+
+        fh.write("\n## Offset corroboration — the evidence behind the line above\n\n")
+        fh.write("A numbering offset is a system, so it repeats; a misprint is a singleton. "
+                 "**A book with no repeating offset cannot have an out-of-range citation "
+                 "excused as versification** — which is how `Luc. ix. 66.`, the only Luke "
+                 "divergence in the corpus, stays a printed error.\n\n")
+        groups = offset_groups(all_div)
+        fh.write("| book | ch | offset (La − En) | seen | repeating |\n|---|---|---|---|---|\n")
+        for (bk, ch), offs in sorted(groups.items(),
+                                     key=lambda kv: (-max(kv[1].values()), kv[0][0], kv[0][1])):
+            for off, n in sorted(offs.items(), key=lambda x: -x[1]):
+                fh.write(f"| {bk} | {ch} | {off:+d} | {n} | {'**yes**' if n >= 2 else 'no'} |\n")
+
         fh.write("\n## Divergences between the layers\n\n")
         fh.write("| chunk | ¶ | Latin | → | English | → | kind |\n|---|---|---|---|---|---|---|\n")
         for d in all_div:
@@ -611,7 +817,8 @@ def main():
                      f"`{d['en']}` | {d['en_target']} | {d['kind']} |\n")
 
     print(f"{len(all_recs)} records · {len(all_qa)} unclassified · "
-          f"{len(range_problems)} out-of-range · {len(all_div)} divergence rows")
+          f"{len(range_problems)} out-of-range · {len(versified)} versification · "
+          f"{len(all_div)} divergence rows")
     print(f"  {os.path.relpath(LEDGER, ROOT)}  {os.path.relpath(QA_REPORT, ROOT)}")
 
     if do_dump:
