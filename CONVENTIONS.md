@@ -318,6 +318,24 @@ Consequence: **never normalise a reading in chapter B because of how chapter A s
 instance means per instance, even when the two instances are the same verse. Log the pair in
 both chunks' `## Notes` so the divergence is discoverable from either end.
 
+### 8b(ii). The inconsistency reaches the VOWEL POINTS — attested I.ii, 2026-08-28
+
+§8b was written from accidentals in quoted Scripture. It goes deeper than that. `אֶהְיֶה` (Exod.
+3:14) is printed **five times across the two volumes of I.ii and pointed two different ways**:
+
+- **Latin volume, both instances: segol under the he** (`אֶהֶיֶה`).
+- **English volume: shva, then segol, then shva** — inconsistent with itself on one page.
+
+So the rule holds at the level of a single vowel point, and it holds *within* one volume as well as
+between them. **Never carry a pointing from one instance to another, even the same word on the same
+page, and never repair one volume from the other** (§3).
+
+⚠ **And do not set the grammatically correct form because it is grammatically correct.** All five
+had been transcribed with the correct Masoretic shva; three were wrong. The same failure produced
+`Θεότης` for the printed `Θεοτὴς` the same day. Where a script we do not command is hard to read,
+**fetch a better scan** (STRUCTURE.md's second-scan table) rather than reconstructing from the
+grammar — and see M3-RUNBOOK §12.
+
 ## 8c. Roman inside an italic quotation is Milton's own voice — recurring, not exceptional
 
 Now attested twice (Philipp. ii. 15, La p. 400, `*…et integri* sive *simplices…*`; Heb. xi. 6,

@@ -155,6 +155,15 @@ code{font-family:ui-monospace,Menlo,monospace;font-size:.92em;background:var(--a
 
 # tokens we already know are in question — shown with a flag and a reason
 QUERIED = {
+    "אֶהֶיֶה":
+        "Exod. 3:14 with SEGOL under the he. The same word appears elsewhere on this sheet with "
+        "SHVA — that is not our inconsistency, it is the book's. The Latin volume points it segol "
+        "in both its instances; the English volume points it shva, then segol, then shva. "
+        "Transcribed per instance and never harmonised (CONVENTIONS §3, §8b).",
+    "אֶהְיֶה":
+        "Exod. 3:14 with SHVA under the he — the correct Masoretic form, and what the English "
+        "volume prints in two of its three instances (including note 7). See the segol row: the "
+        "two pointings are both printed, in the same chapter, and are kept apart deliberately.",
     "אֱלֹהִים־בָּרִים":
         "Matches neither Psalm cited (vii. 10 / lxxxvi. 10), identically in BOTH volumes. "
         "Consonants confirmed at the plate. Probable error in the source — not mended in either layer.",
