@@ -27,10 +27,19 @@ impossible (Ezek. 2 has 10 vv.)"* (true, and beside the point: the verse is in c
 §10.5's *"chapter 2 absorbs KJV 3:1–9"* (chapter 2 ends exactly where the KJV's does). Both
 reached the right verdict by the wrong route, which is what a plate is for.
 
-**First job next session is one leaf.** Isaiah 56–57 at leaf ~590 settles the last two unread
-rows at once (`Isa. lvii. 2 / lvi. 10` and `Isa. lvii. 13, 14, 17 / lvii. 9, 10, 13`); Ecclesiastes
-8 is the third. Then the corpus-wide audit — **every error table in the corpus predates this** —
-and the `divergence_class` column, so the classification stops living in prose.
+✅ **All eight rows are now settled — the table is closed.** Isaiah 57 took two of them with one
+chapter division (J–T's `CAPUT LVII` opens at KJV 56:9, so its verse **2** is KJV 56:10,
+***Speculatores istius cæci***, the very words Milton quotes); Ecclesiastes 8 is **+1**.
+`ddc-2-17` now reads **five errors, eleven versification**.
+
+★ **A free confirmation of §6b fell out of it.** Ecclesiastes' leaf 531 shows how the volume prints
+divisions — J–T sets **its own** chapter break with an italic argumentum **and** the received
+marker where that falls, so `CAPUT IX` appears twice on one page — and in passing it gives
+**Eccl 9 at +2** (J–T 9:3 = KJV 9:1), which §6b had measured three times from the corpus and could
+not explain. Confirmed at the source without being sought.
+
+**Next: the corpus-wide audit** — every error table in the corpus predates this — then the
+`divergence_class` column, and the J–T division table §11.3a has started (seven rows).
 
 ---
 
@@ -137,36 +146,42 @@ is the plan of record for what follows and this is only the pointer.
 
 ### The queue now
 
-1. ✅ **§10.8 is RULED and §11 carries the answer** — see the top of this file. What is LEFT of it:
-   **(a)** one leaf, ~590, settles Isaiah 56–57's two unread rows, plus Ecclesiastes 8 at ~531;
-   **(b)** the **corpus-wide audit** — every error table in the corpus predates §6b and §11, and
-   II.xvii was where it surfaced, not its extent; **(c)** the **`divergence_class` column**, so the
-   classification is data the site can render rather than prose only a reader can re-derive;
-   **(d)** a **J–T chapter/verse table** built from the volume — `tools/versification.json` answers
-   *could this verse exist?*, and this would answer *what did Milton's Bible call it?*, which is
-   the question the corpus keeps asking. Every offset in §11 is a row in it.
-2. **§10.2 + §10.4 — one ruling, two symptoms.** May the English `v. N` reach QA the way the
+1. ★★★ **The corpus-wide audit — every error table in the corpus predates §6b and §11.** II.xvii
+   was where this surfaced, not its extent: `ddc-2-05` heads a table of **eight** "silently
+   corrected La errors", `ddc-2-04-c` four, `ddc-1-02` its own, and none of them was written by
+   anyone who could open Junius–Tremellius. The method is now cheap and proven — read the chapter
+   division off the page image, and the offset follows. **Work book by book, not chunk by chunk**,
+   because one division settles every citation of that chapter across the corpus (Isaiah 57 took
+   two rows at once; Ecclesiastes' leaf 531 gave three chapters). Start from the §11.3a table and
+   the `+1`-heavy distribution in §6b — 79 of 149 same-chapter divergences are `+1`, and the
+   Psalms superscription already explains most of those.
+2. **The `divergence_class` column** (§11.4). Right now "versification" vs "error" lives in prose
+   in a chunk's Notes, so the site cannot render the distinction and nothing can count it. It
+   should be data, sourced from the J–T table below it.
+3. **The J–T chapter/verse table** — `tools/versification.json` answers *could this verse exist?*;
+   this answers *what did Milton's Bible call it?*, which is the question the corpus keeps asking.
+   §11.3a has the first seven rows. `tools/jt-page.py` is the instrument.
+4. **§10.2 + §10.4 — one ruling, two symptoms.** May the English `v. N` reach QA the way the
    Latin's already can, and may `reconcile_et_v()` settle by *form* rather than by digit equality?
    Five real Latin citations are being dropped because a versification offset makes the digits
    disagree (table in §10.4). Coupled: the form-only relaxation is safe only once the English `v.`
    can also be doubted.
-3. **§10.3 — a narrow licence for the bare Latin continuation?** `ddc-1-02` ¶27 prints `ciii. 11.`
+5. **§10.3 — a narrow licence for the bare Latin continuation?** `ddc-1-02` ¶27 prints `ciii. 11.`
    with no `et`, Sumner-fashion, in the Latin volume; the parser drops it and the following `v. 17`
    then carries Psalm **25** forward and is filed as Ps 25:17 when the quotation is Ps 103:17.
    Two instances is not a rule and the word hazard (`ii`, `vi`, `li`, `ci`) is real, so this waits.
-4. **Hand-check the QA report chapter by chapter** — still owed, still the big one. Only
+6. **Hand-check the QA report chapter by chapter** — still owed, still the big one. Only
    `ddc-2-02` has been read record by record; the other 20 chunks have been *parsed*, not read
    (§6.5). Volume work over a frozen grammar; does not need a premium model.
-5. **One out-of-range citation wants a plate**: `et xi. 32` (ddc-2-13 la ¶47), book *carried*.
-   ⚠ Add a second: `ddc-2-17` ¶29 La `Isa. lvii. 2, &c.` against *speculatores istius* = Isa 56:10
-   — settled from the quotation, but item 1 may reclassify it, and a plate would close it either
-   way.
-6. **M4 step 6** — backfill the index as each chapter lands; add the step to M3-RUNBOOK §2.
-7. Still owed, recorded in `chunks/ddc-2-02.md` Notes: **five citation findings the parser turned
+7. **One out-of-range citation wants a plate**: `et xi. 32` (ddc-2-13 la ¶47), book *carried*.
+   ✅ The second one added earlier — `ddc-2-17` ¶29 La `Isa. lvii. 2, &c.` — is CLOSED: J–T's
+   `CAPUT LVII` opens at KJV 56:9 and its verse 2 is *Speculatores istius cæci*. Versification.
+8. **M4 step 6** — backfill the index as each chapter lands; add the step to M3-RUNBOOK §2.
+9. Still owed, recorded in `chunks/ddc-2-02.md` Notes: **five citation findings the parser turned
    up that the hand-log lacks**, incl. ★ **a citation Sumner SUPPLIES** at 1 Cor. i. 19, 20. ✅ The
    fourth kind — **omission** — is now attested too and is written into `ddc-2-04-c`'s Notes:
    ¶1's `et xxv. 22`, quotation and all, is simply not in the English.
-8. M5 copy: About and Rights are still M2 placeholders, and `/scripture` is styled only with the
+10. M5 copy: About and Rights are still M2 placeholders, and `/scripture` is styled only with the
    existing card classes.
 
 Numbers to compare against, so a regression is visible: **ddc-2-02 — 327 records, 0 unclassified,

@@ -666,8 +666,9 @@ something closer to five.
 3. **The `divergence_class` column, not prose, as the place the answer lives** — so the site can
    render "versification" and "error" differently and the chunk Notes stop being the sole record.
 
-Until then the tables stand as written; this section is the flag, and it is the first item in the
-queue.
+**✅ RULED and CLOSED 2026-08-28 — see §11.** Wilson's ruling was to check Junius–Tremellius first
+and to bring it in as a permanent source. All eight rows came back **versification**. This section
+is preserved as the reasoning that led to the check; §11 is the answer.
 
 ## 11. ★★★ §10.8 RULED, and the answer came from the Bible itself — 2026-08-28
 
@@ -747,19 +748,55 @@ impossible (Ezek. 2 has 10 vv.)"* is true and irrelevant — the verse is in cha
 *"chapter 2 absorbs KJV 3:1–9"* is simply wrong; chapter 2 ends where the KJV's does. Both
 reached the right verdict by the wrong route, which is the thing a plate is for.
 
-### 11.3 What is settled, and what is not
+### 11.3 ✅ ALL EIGHT settled — the table is closed
 
-**Five of §10.8's eight table rows are confirmed versification at the source** — Isaiah 3 (which
-is four rows of the chunk's own table), Ecclesiastes 4, Ecclesiastes 10 (two rows), Ezekiel 3.
-Counted as the chunk counts them that is **eight of its sixteen**, against **five** genuine
-errors and **three** still unread. Reclassified in `ddc-2-17`'s Notes.
+**Every disputed row is confirmed versification at the source.** Counted as `ddc-2-17` counts them,
+that is **eleven of its sixteen**, against **five** genuine errors. The claim "sixteen errors,
+twice the previous record" does not survive; II.v's eight holds the record, and II.xvii's real
+distinction is that it is the chapter where the treatise's versification shows most clearly.
 
-⏳ **Still unchecked, and left as printed pending the same treatment:**
-- `Eccles. viii. 1 / viii. 2` (+1). §6b predicts it from La ch. 7 absorbing KJV 8:1, and
-  Ecclesiastes' divisions are now known to move — but predicted is not read.
-- `Isa. lvii. 13, 14, 17 / lvii. 9, 10, 13` (+4 ×3) and `Isa. lvii. 2 / lvi. 10` (chapter). §6b
-  already lists `Isa 57 (+4, twice)` among the repeating offsets, and a chapter division at
-  KJV 56:9 would give both rows at once. **One leaf (~590) settles both.** First job next session.
+The last three, read after the first pass:
+
+**Isaiah 57** (leaf 590, printed 201) — **one chapter division settles two rows.** J–T's chapter
+LVI ends at verse **8** (= KJV 56:8, *congregantis depulsos Jisraelis*). `CAPUT LVII` then opens at
+KJV **56:9**: J–T 1 = *Omnes bestiæ agrestes, venite ad comedendum* (KJV 56:9), J–T **2** =
+***Speculatores istius cæci*** (KJV **56:10**) — the very words Milton quotes.
+→ `Isa. lvii. 2 / lvi. 10` is versification. And since KJV 56 ends at 12, J–T 57:5 = KJV 57:1 and
+the rest of the chapter runs **+4**, giving `lvii. 13, 14, 17 / lvii. 9, 10, 13` at a stroke.
+J–T's own scholion confirms the second half independently: *"deinde populi totius negligentis
+justos, vers. 5. & 6."* — the neglect of the righteous is KJV 57:1.
+
+**Ecclesiastes 8** (leaf 531) — J–T **8:14** = KJV **8:15**, *Quapropter laudaveram ego lætitiam,
+nullum esse bonum homini sub sole, nisi ut comedat ac bibat & lætetur*. **+1**, so Milton's
+`Eccles. viii. 1, &c.` is KJV 8:2, the king's commandment and the oath of God, which is what
+Sumner prints.
+
+### 11.3a ★★ How the volume prints its divisions — and a free confirmation of §6b
+
+Ecclesiastes' leaf 531 shows the compositional habit that makes all of this legible: **J–T sets
+its own chapter division with an italic argumentum, AND sets the received chapter marker where
+that falls.** `CAPUT IX` therefore appears **twice** on the page. The verse numbers follow J–T's
+division and never the received one — which is exactly why an offset is stable inside a chapter.
+
+The same page gives **Ecclesiastes 9 at +2** for nothing: J–T's verse **3** is KJV **9:1** (*Nam
+totum hoc condidi in animo meo … justos & sapientes, factaque eorum in manu Dei ipsius*), the
+chapter having absorbed KJV 8:16–17 as its verses 1–2. J–T's scholion argues the case in its own
+voice — *"duos hosce versus omnino ad sequentia pertinere res ipsa loquitur: nam hoc demum loco
+Schelomo transitionem facit."* **§6b measured Eccl 9 as +2 three times from the corpus. It is now
+confirmed at the source, and it was not even the thing being looked for.**
+
+Running tally of J–T divisions established, all from page images — the first rows of the table
+§11.4 asks for:
+
+| book | J–T chapter begins at | effect |
+|---|---|---|
+| Eccl 4 | KJV 4:5 | +4 |
+| Eccl 8 | KJV 8:2 | +1 |
+| Eccl 9 | KJV 8:16 | +2 |
+| Eccl 10 | KJV 10:4 | +3 |
+| Isa 3 | KJV 2:22 (inferred from a constant +1) | +1 |
+| Isa 57 | KJV 56:9 | +4 after KJV 56 ends |
+| Ezek 3 | KJV 3:1, but the verse count does NOT restart | +10 |
 
 ### 11.4 What this changes beyond II.xvii
 
