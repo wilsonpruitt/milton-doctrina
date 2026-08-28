@@ -72,9 +72,9 @@ both found by the sweep; chapters II.x–II.xvii added none, all their page feet
 
 | # | chunk | state |
 |---|---|---|
-| 1 | `ddc-1-01` | `Quid sit Doctrina Christiana…` — La 7–? / En 9–?. **Nothing prepped.** Book I's note numbering **must be
-re-established independently** (CONVENTIONS §8a): do *not* assume it continues from II.xvii's 7, and do *not* assume it restarts. |
-| … | `ddc-1-02` … `ddc-1-03`, `ddc-1-07` … `ddc-1-33` | in order, saving I.iv–I.vi for last (§5) |
+| — | `ddc-1-01` | **done** (2026-08-27, Opus) — La 7–9 / En 9–12, all four boundaries plate-confirmed (`CAP./CHAP. II` opens La 10 / En 13); flag → `verified`, crosswalk correct. **9 ¶¶ → 9, strict 1:1.** **★★ ZERO footnotes in either layer** — so **Book I's numbering is still unestablished**; the question passes intact to I.ii. No Latin apparatus (3 feet read; agrees with `sweep-book1.tsv`). **★★★ THE GREEK RULE IS CORRECTED** — Book II's "keeps quotations, removes technical terms" predicted all three Greek words here would go; **all are kept**. The real distinction is **use vs. mention**: Sumner removes Greek an English equivalent can carry, and keeps Greek that is *itself the subject under discussion* (`vox Græca τύπος`). Covers all 11 instances; supersedes the formulation in II.x/II.xi/II.xv/II.xvi. **★★ First application of the new mid-word rule, and it is to GREEK** (`ὑπο<!-- p.9 -->τύπωσις`) — keeping the hyphen would have made a non-word. **★★ En recasts `DIVINITUS` (adverb) as `DIVINE REVELATION` (noun phrase)** in the work's founding definition and in its lemma. **★ First La error of Book I**: `Act. xxiv. … v. 6` → `v. 16`. **★★ New English-error mechanism** — the narrowing habit misfires: `Joan. vi. 45, 46` → `John vi. 46`, but the quoted words are 6:**45**. **★ The layers disagree on a Greek accent** (La `τύπος` / En `τυπὸς`, 1000 dpi). **★ The work's title block is on this page and belongs to no chunk** — source it separately if the site ever shows front matter. |
+| 1 | `ddc-1-02` | `De Deo` — La 10–21 (12 pp.) / En 13–29 (17 pp.). **Nothing prepped.** At 12 La pp. it is *at*, not over, §7's threshold (cf. II.ix, II.xvii) — do not split by reflex. **Carries Book I's numbering question**: if it has notes, its first note establishes the run for the whole book. |
+| 2+ | `ddc-1-03`, `ddc-1-07` … `ddc-1-33` | in order, saving I.iv–I.vi for last (§5) |
 | last | `ddc-1-04`, `ddc-1-05`, `ddc-1-06` | see §5 |
 | last | `ddc-1-04`, `ddc-1-05`, `ddc-1-06` | see §5 |
 
@@ -133,8 +133,13 @@ nothing needed migrating. **Do not re-open any of them per chapter**; Book I sta
   + twelve La feet read).
   **✅ THE BOOK II LEDGER IS CLOSED AND UNBROKEN, II.i → II.xvii.** Every chapter's first note was
   predicted from its predecessor's last and confirmed on the plate; not one break was ever found.
-  ⚠ **Book I starts a fresh problem.** CONVENTIONS §8a is explicit: re-establish Book I's numbering
-  independently — do not assume it continues from 7, and do not assume it restarts at 1.
+  ⚠ **Book I starts a fresh problem, and I.i did NOT settle it.** CONVENTIONS §8a is explicit:
+  re-establish Book I's numbering independently — do not assume it continues from 7, do not assume it
+  restarts at 1. **I.i carries zero notes** (all 4 En + 3 La feet read), so it passes the number
+  through untouched and proves nothing either way. The question is live until the first Book I
+  chapter that carries a note; **that chapter establishes the run for the whole book.** Until then,
+  read every foot and record noteless chapters explicitly — a later note numbered 1 is only evidence
+  of a restart if every chapter before it has been confirmed noteless.
   Blind spot: the cycle is only 9 long, so it can never detect a miss of exactly 9 notes. It is
   not a substitute for reading every plate for superscripts.
 - **Also check the LATIN plates for superscripts.** The Latin volume carries apparatus too — see

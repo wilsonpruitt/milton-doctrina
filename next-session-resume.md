@@ -215,33 +215,49 @@ Work from `M3-RUNBOOK.md` — **its queue table in §1 is the authoritative per-
 kept current chapter by chapter. Book II first, then Book I, saving I.iv–I.vi for last. Opus per
 chunk.
 
-## ✅ BOOK II IS COMPLETE — 17/17 chapters, both layers, all verified (2026-08-27)
+## ✅ BOOK II COMPLETE · BOOK I OPENED — `ddc-1-01` done 2026-08-27
 
-`ddc-2-17` closed it. Every Book II chapter is transcribed in both layers, plate-verified, and
-flagged `verified` in `chapters.tsv`; **no Book II boundary and no Book II suspect flag remains**.
-The English footnote ledger runs unbroken II.i → II.xvii and is now closed. Latin apparatus in the
-whole of Book II stands at exactly **two** notes, La 431 (textual) and La 454 (scholarly).
+Book II is finished (17/17, both layers, all `verified`, ledger closed, no suspect flag). **Book I is
+now open**: `ddc-1-01` is transcribed and verified, La 7–9 / En 9–12, 9 ¶¶ → 9 strict 1:1, all four
+boundaries plate-confirmed.
 
-**▶ NEXT IS BOOK I**, beginning `ddc-1-01` *Quid sit Doctrina Christiana, quotque ejus partes* —
-La 7–? / En 9–?. **Nothing is prepped**: run `./tools/prep-chapter.sh 1 1` first. Work in order
-i–iii then vii–xxxiii, **saving I.iv–I.vi for last** (M3-RUNBOOK §5); I.v *De Filio Dei* is 53 Latin
-pages, the Arian chapter, and will need splitting at Milton's own lemma seams.
+**▶ NEXT IS `ddc-1-02`** *De Deo* — La 10–21 (12 pp.) / En 13–29 (17 pp.), ratio 1.42.
+**Nothing is prepped**: run `./tools/prep-chapter.sh 1 2` first. At 12 Latin pages it sits *at*, not
+over, CONVENTIONS §7's split threshold — II.ix and II.xvii were both transcribed whole at that size,
+so **do not split by reflex**. It is the chapter on the existence and nature of God, and the first
+long one in Book I.
 
-⚠ **Book I is a different problem from Book II in four ways — read these before starting:**
+## ⚠ THE THREE THINGS I.i ESTABLISHED FOR THE REST OF BOOK I
 
-1. **The footnote numbering must be re-established from scratch.** CONVENTIONS §8a is explicit:
-   do **not** assume Book I continues from II.xvii's 7, and do **not** assume it restarts at 1.
-   Establish it empirically from I.i's plates, then the 1–9 cycle becomes a checksum again.
-2. **Book I carries LATIN apparatus, and it is textual.** The sweep confirmed notes at La 129 and
-   La 143 — La 129 is Sumner stating his own editorial method (*ut soleo… ne puncto quidem mutato*)
-   against La 431's confessed *ordinem leviter mutavi*, and its crux is the eternity of matter.
-   `tools/sweep-book1.tsv` says where to look; read every Latin page foot regardless.
-3. **Five suspect flags remain, all in Book I** — 1.5, 1.12, 1.23, 1.24, 1.28. The audit's text
-   layer has been right and the crosswalk wrong in **both** discrepancies ever resolved (2 for 2
-   against 0 for 2), so weight the text layer, and expect the flag to fall out of the *adjacent*
-   chapter: 1.28's six-page gap, the largest open, should resolve from 1.27. See M3-RUNBOOK §7.
-4. **Check the extent, not just the start.** Correcting 2.17's start exposed that both its page
-   counts were also wrong.
+1. **★★ Book I's footnote numbering is STILL unestablished, and I.i is why.** The chapter carries
+   **zero footnotes in either layer** (all 4 English + 3 Latin feet read), so per §8a it passes the
+   number through untouched and proves nothing. **The question is live.** Whichever Book I chapter
+   carries the first note establishes the run for the whole book — so read every foot, and **record
+   noteless chapters explicitly**, because a later note numbered 1 is evidence of a restart *only if
+   every chapter before it has been confirmed noteless*.
+2. **★★★ The Greek rule was wrong and is now corrected.** Book II generalised, over seven instances,
+   that "Sumner keeps Milton's Greek when it is a quotation and removes it when it is a technical
+   term." That predicts all three Greek words in I.i would be translated away; **all three are kept**
+   (`τυπὸς`, `ὑποτύπωσις`, `μόρφωσις`). The distinction that holds is **use vs. mention** — Sumner
+   removes Greek an English equivalent can carry, and keeps Greek that is *itself the subject under
+   discussion*. The old formulation stands in the Notes of II.x, II.xi, II.xv and II.xvi; it is
+   **superseded, not contradicted** — those observations are right, the generalisation was too narrow.
+   ⚠ **A rule built on one book can fail on the next; re-test the Book II rules as Book I proceeds.**
+3. **★★ A new English-error mechanism — the narrowing habit misfires.** Sumner routinely narrows a
+   two-verse citation to its second verse. At `Joan. vi. 45, 46` → `John vi. 46` he keeps the verse
+   that does **not** contain the quoted words. This is worse than a wrong digit for M4: the citation
+   is internally plausible, and only checking the verse's *text* exposes it.
+
+Also from I.i: the newly-ratified mid-word rule got its first outing **on a Greek word**
+(`ὑπο<!-- p.9 -->τύπωσις`), which vindicates dropping the hyphen — keeping it would have produced a
+non-word. The English recasts `DIVINITUS` from adverb to noun phrase in the work's founding
+definition, so **no argument about what Milton means by "Christian doctrine" may rest on the English
+clause alone**. And **the work's title block, on La 7 / En 9, belongs to no chunk** — if the site
+ever shows front matter it must be sourced separately.
+
+⚠ **Tooling:** `prep-chapter.sh` was broken for all of Book I and is fixed (`pdftoppm` zero-pads
+output filenames to the PDF's page-count width, so La 7 was written `la-7-023.jpg`). It now globs
+for what was produced. Book II never exposed this.
 
 ## What Book II established that Book I should carry forward
 
