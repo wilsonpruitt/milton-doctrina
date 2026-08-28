@@ -199,8 +199,7 @@ English-only (*"Sumner's English footnotes …"*) and §1 gives Latin-side notes
 
 `ddc-2-05.md` improvises: a `## apparatus-sumner-la` section with an `[^laN]` prefix, leaving
 `[^sN]` to the English so the two independent numbering runs can't collide. The build accepts it.
-**Provisional — needs your explicit decision before it spreads**, since CONVENTIONS requires rule
-changes to be recorded with a date.
+**Ratified 2026-08-27** — `## apparatus-sumner-la` with `[^laN]` is now CONVENTIONS §5.
 
 **The content is the real issue.** Sumner writes that the manuscript's word order differs from what
 he printed, and *ordinem leviter mutavi* — he changed it for grammar. So the 1825 Latin is
@@ -267,23 +266,33 @@ pages, the Arian chapter, and will need splitting at Milton's own lemma seams.
 - **★★ The dash-range rule** — the English contracts runs of 3+ consecutive verses, never runs of 2 —
   held across three chapters without exception.
 
-## ⚠⚠ TWO CONVENTION QUESTIONS ARE NOW WAITING ON WILSON — both from II.xi
+## ✅ ALL OPEN CONVENTION QUESTIONS ARE RATIFIED — 2026-08-27 (Wilson)
 
-Neither blocks transcription; both should be settled before Book I, whose longer chapters will hit
-them repeatedly.
+The three questions that had been standing since II.iv/II.viii/II.xi, plus the headnote-cap
+housekeeping item, were put to Wilson and ruled on together. **All four are now in `CONVENTIONS.md`
+with the date; none is open.** Each ruling matched existing practice, so no chunk needed migrating.
 
-1. **How to notate a SPLIT.** Sumner divided a Latin paragraph for the first time in the corpus
-   (La {¶35} → two English paragraphs). CONVENTIONS §4 says "every La ¶ appears exactly once on the
-   En side," which is written for merges and is now false as stated. `ddc-2-11.md` uses
-   **`{¶35}` then `{¶35 cont.}`** — provisional, the natural counterpart to `{¶N–M}`, and needing
-   ratification.
-2. **Raised ordinals.** `2ᵈᵒ.` recurred at La 482, a second chapter needing the rule §2 still lacks.
-   Written inline as `2do.` following II.iv-b's precedent. (Note the English is no help here: it
-   renders the raised ordinal as plain "Secondly," so the feature exists in the Latin layer alone.)
+1. **Splits — `{¶35}` + `{¶35 cont.}` ratified** (CONVENTIONS §4). The natural counterpart to
+   `{¶N–M}` for merges. §4's coverage sentence, which said "every La ¶ appears exactly once on the
+   En side" and was written before a split had been seen, is **corrected** to "every La ¶ is fully
+   accounted for, once as a whole or once across its `cont.` pieces." 2 instances (II.xi, II.xiii).
+2. **Raised ordinals — inline `1m. 2do. 3tio.` ratified** (CONVENTIONS §2), and recorded there as a
+   named *normalisation*, on the same footing as the chapter-opening display capitals: the raising is
+   the abbreviation convention for *primo/secundo/tertio*, and the numeral already carries the
+   enumeration — **typography, not text**. 19 instances across 5 chunks. ⚠ The rule states its own
+   cost: the English destroys the feature outright ("first, Secondly"), so after normalisation the
+   raised form survives **only on the plate**. Where a chapter's argument turns on the series —
+   II.xvii's seven rules of war — say so in that chunk's Notes.
+3. **Mid-word page break — current practice ratified** (CONVENTIONS §2): `accept<!-- p.614 -->able`,
+   marker inline, **soft hyphen dropped**, because the end-of-line hyphen is a line-breaking artefact
+   and keeping it would break the word for search and for the M4 index. This was never really open —
+   15 instances across 11 chunks were already uniform; it was undocumented, not undecided.
+4. **Headnote cap — aim 200, hard cap 300** (CONVENTIONS §8, revised). The flat ≤200 was breached by
+   **14 of 19** chunks, to 343; the dense chapters cannot be served in 200. Two chunks were trimmed
+   to comply (`ddc-2-04-c` 308→294, `ddc-2-13` 343→300); all 19 now run 161–300. The old
+   "measured two ways" worry is dropped — the two counts differ by three words, which is noise.
 
-Also **still awaiting ratification from II.viii**: the mid-word page break, written
-`an<!-- p.486 -->gustia` at La 485/486 — second instance in the corpus, same treatment as
-En 613/614.
+**Book I therefore starts with no convention questions outstanding.**
 
 ## `ddc-2-11` ✅ COMPLETE (2026-08-05, Opus)
 
@@ -332,9 +341,8 @@ softens *misericordia illicita* to "a misplaced compassion" — the same politen
 II.ix and II.x, running in the same direction every time. Both volumes agree on small-caps emphasis
 throughout, the second chapter running.
 
-**Housekeeping:** the headnote word cap is being measured two ways (207 whole / 199 prose-only here;
-*every* chunk in the corpus exceeds 200 on the whole-text count, 186–308). A one-line clarification
-in CONVENTIONS §8 would stop it being re-litigated per chapter.
+**Housekeeping — SETTLED 2026-08-27:** the headnote cap is now *aim 200, hard cap 300* (CONVENTIONS
+§8), and the two-ways-of-counting worry is dropped as noise.
 
 ⚠⚠ **RUN `./tools/prep-chapter.sh 2 11 2 17` FIRST, and do not read a plate you did not just
 render.** The script was fixed 2026-08-04 (commit `2b5e420`) to name plates by **printed** page;
@@ -440,7 +448,6 @@ Two small convention questions are still owed and are **cheap to ratify before B
 recur: the **raised ordinals** (La 417 prints 1ᵐ · 2ᵈᵒ · 3ᵗⁱᵒ …, set inline as `1m.` `2do.` for want
 of a superscript markup — CONVENTIONS §2 defines none) and the **mid-word page break**
 (En 613/614 breaks *accept-* | *-able*, written `accept<!-- p.614 -->able`, soft hyphen dropped).
-Both are precedent-by-accident until Wilson rules.
 
 **✅ II.i is CLOSED — the last outstanding debt in Book II.** Transcribed past the content filter
 with the one-paragraph-per-edit technique; {¶6} blocked twice as a whole paragraph and went through
@@ -464,7 +471,6 @@ Milton left Latin; that belongs on the About page.
 page break falling **mid-word** — En 613/614 breaks *accept-* | *-able*. Written as
 `accept<!-- p.614 -->able`, dropping the soft hyphen as a typographic artifact. First instance in
 the corpus; CONVENTIONS §2 has no rule for it. Cheap to ratify, but it should be ratified rather
-than left as precedent-by-accident.
 
 ## Owed by Wilson
 

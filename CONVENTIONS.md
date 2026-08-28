@@ -50,6 +50,22 @@ The site build must treat the set as an ARRAY (any subset may be present per chu
   where the break falls mid-paragraph. Running heads, page numbers, signature marks (`3 E 2`),
   and catchwords are dropped. Greek, when it occurs, is restored in Greek script from the plate —
   never from OCR.
+- **A word broken across a page keeps its integrity; the soft hyphen is dropped** (ratified
+  2026-08-27, Wilson). Write `accept<!-- p.614 -->able`, `catho<!-- p.448 -->licæ`,
+  `an<!-- p.486 -->gustia` — marker at the break, no hyphen. The end-of-line hyphen is a
+  line-breaking artefact, not part of the word, and it belongs with the thin space above as
+  typography rather than text. Keeping it would break the word for search and for the M4 index, and
+  would assert a hyphen the word does not have. Fifteen instances across eleven chunks already
+  follow this; it is now the rule, not a precedent.
+- **Raised ordinals are set inline: `1m.` `2do.` `3tio.` `4to.` `5to.` `6to.` `7mo.`** (ratified
+  2026-08-27, Wilson). The Latin prints them raised (`1ᵐ 2ᵈᵒ 3ᵗⁱᵒ`) as the ordinary abbreviation of
+  *primo, secundo, tertio*; the raising is that abbreviation convention, and the numeral already
+  carries the enumeration. Normalised for the same reason as the chapter-opening display capitals —
+  **it is typography, not text**. ⚠ Note the cost, and state it where it matters: **the English
+  layer destroys the feature entirely**, rendering the series as "first, Secondly, Thirdly", so
+  after this normalisation the *raised* form survives only on the plate. Where a chapter's argument
+  turns on the series (II.xvii's seven rules of war), say so in that chunk's `## Notes`. Nineteen
+  instances across five chunks already follow this.
 
 ## 3. Citations — as printed per layer, NEVER harmonized
 
@@ -79,9 +95,12 @@ truncated quotes and sometimes drops an `&c.` — same rule, don't "fix" either 
 
 - The **Latin paragraphing is the reference grid**: number every La paragraph `{¶1}…{¶N}` in
   reading order.
-- Each `en-sumner` paragraph opens with the La paragraph(s) it renders: `{¶4}` or `{¶2–3}` for
-  Sumner's merges. Coverage must be complete and monotonic — every La ¶ appears exactly once on
-  the En side. Verify per chunk; record merges in `## Notes`.
+- Each `en-sumner` paragraph opens with the La paragraph(s) it renders: `{¶4}`, or `{¶2–3}` for
+  Sumner's **merges**, or `{¶35}` + `{¶35 cont.}` for his **splits** (ratified 2026-08-27, Wilson;
+  first needed at II.xi, again at II.xiii). Coverage must be complete and monotonic — **every La ¶
+  is fully accounted for on the En side, once as a whole or once across its `cont.` pieces.**
+  (The old wording, "appears exactly once", was written before a split had been seen and is false
+  as stated; corrected 2026-08-27.) Verify per chunk; record merges and splits in `## Notes`.
 - Pilot measurement: 28 La ¶¶ → 25 En ¶¶, three merges. Sumner also converts Milton's `Et …`
   coordination of vices into `First/Secondly/Thirdly/Fourthly` enumeration — structural habit,
   expect it throughout; it does not break ¶ alignment.
@@ -196,7 +215,14 @@ section parses without a parser change.
 
 ## 8. Headnote — frozen shape
 
-≤ 200 words, four fixed slots, always in this order:
+**Aim 200 words; hard cap 300** (revised 2026-08-27, Wilson — the original flat ≤200 was breached by
+14 of the first 19 chunks, ranging to 343, because the doctrinally dense chapters cannot be served in
+200). Aim at 200 and stay there when the chapter allows; go past it only when the chapter's substance
+requires it, and never past 300. **Count the prose of the four slots**, including the `*Loci*` line —
+the two ways of counting this was formerly measured differ by three words and the distinction is
+noise; do not re-litigate it per chunk.
+
+Four fixed slots, always in this order:
 1. **Place** — where the chapter sits in Milton's system (1–2 sentences).
 2. **Argument** — what the chapter actually does (2–3 sentences).
 3. **Pressure point** — where heterodoxy or controversy lives, if anywhere (1–3 sentences;
