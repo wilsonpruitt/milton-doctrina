@@ -213,6 +213,27 @@ far are **textual** — see §5a.
 in II.i–II.iv would have been missed. Those four chapters need a superscript-only re-check of
 their Latin plates before Book II is called complete.
 
+## 5d. An anchor falling INSIDE an italic quotation — deliberately NOT ruled yet
+
+**Seen once, at I.ii (2026-08-28). Wilson's decision: wait for a second instance.** This is a
+recorded deferral, not an oversight — do not treat it as an open question needing a ruling, and do
+not invent a rule for it in the meantime.
+
+En 24 prints *I am the Almighty*⁵ *God,* — Sumner's superscript sits between two words of one
+continuous italic Scripture quotation. Markdown cannot nest an anchor inside emphasis, so the
+current form breaks the run in two:
+
+> `Gen. xvii. 1. *I am the Almighty*[^s5-2] *God,* literally, *sufficient.*`
+
+The anchor keeps its printed position and no word is altered; what is lost is the fact that the
+italic is continuous across it. That loss is recorded in `ddc-1-02`'s Notes.
+
+**Why wait.** One instance does not show the shape of the problem. A second may differ in a way
+that changes the answer — an anchor inside a small-caps run rather than an italic one, or one
+falling inside a single word, or one where the split would separate a citation from its quotation.
+Ruling once on complete evidence beats ruling twice. **Follow I.ii's form until then**, and record
+each new instance in its chunk's Notes so the second case arrives with the first attached.
+
 ## 6. Printed anomalies — kept as printed, flagged, never mended
 
 Standing house rule, restated because the pilot already hit four: `1 Cor. viii 7.` (no period
