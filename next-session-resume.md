@@ -40,25 +40,50 @@ newlines, splitting one record across three rows. Invisible in every count print
 fatal to the line-at-a-time reader `build-index-json.py` was going to be. Now guarded by a second
 census assertion (rows == records, full field count on every row).
 
+### Done since — steps 4 and 5 shipped
+
+✅ **`tools/build-index-json.py` + `/scripture` + `/scripture/[book]` are live** (M4-RUNBOOK §9).
+5,467 loci, 62 books, 281 showing a layer divergence. Each entry is ONE citation carrying both
+printed forms, filed under the witness verse. `/scripture` is in the top-level nav (PLAN §6.1).
+
+✅ **`pair_confidence` — the index refuses to merge a pair it cannot vouch for.** `align()` slid
+and paired La `Psal. xxv. 22.` with En `iii. 8.`; merging filed Milton's Ps 25:22 under Ps 3:8,
+a false claim about where he cites. 342 of 359 pairs are plausible; **the 17 suspects have their
+own QA section and want a reader** — they are a real mixture of findings the pairing got right
+(the `Isa. lviii. 56` dropped comma, the plate-confirmed `Isa. xxxi. 2` → `iii. 1`) and plain
+alignment slips (`cap. xvi.` vs `xxxi. 14.`).
+
+✅ **Three site bugs, all found by testing that the index's deep links resolve.** The test —
+every anchor against the built HTML, now **5,809 references, 0 unresolved** — is the acceptance
+check; re-run it after touching either side.
+  1. **`/browse/2/4` served only part a.** M2 assumed one chunk per chapter; §8d split chunks
+     arrived in M3. Parts b and c of II.iv were transcribed, committed and served to nobody, and
+     prev/next linked the page to itself. Fixed in `content.ts` (`book.chapters`).
+  2. **81 paragraphs carried no ¶ marker or anchor** — a page break inside the block defeated the
+     `^{¶N}` match. Silently wrong since M2.
+  3. **Five paragraph pairs in `ddc-2-13` lacked their blank-line separator** and rendered
+     run-on. Separators only; the file is identical ignoring whitespace.
+
 ### The queue now
 
-1. **Write `tools/build-index-json.py`** (M4 step 4) → `site/src/data/scripture/*.json`. It is
-   unblocked. Group by `witness_target`; render both printed targets on the page.
-2. **Then `/scripture` and `/scripture/[book]`** (step 5), ported from Bonaventure, plus the
-   divergence display. `/scripture` goes in the top-level nav from day 1 (PLAN §6.1).
-3. **One out-of-range citation still wants a plate** (down from eight): `et xi. 32`
-   (ddc-2-13 la ¶47). Its book is *carried*, which §4.9 makes the likelier defect.
-4. **Hand-check the QA report chapter by chapter.** Unchanged and still owed: only `ddc-2-02` has
-   been read record by record; the other 20 chunks have been *parsed*, not read (§6.5).
-5. Still owed and cheap, recorded in `chunks/ddc-2-02.md` Notes: **five citation findings the
-   parser turned up that the hand-log lacks** — three `&c.` dropped by the English, one Latin
-   verse-list truncated, and ★ **a citation Sumner SUPPLIES** at 1 Cor. i. 19, 20. If that holds
-   it is a fourth kind of unmarked editorial handling, alongside correction, reordering, omission.
+1. ★ **Read the 17 suspect pairings** (`index/citation-qa.md`, "Suspect pairings"). Each needs the
+   paragraph in view; some are real findings about the 1825 text and belong in the chunk Notes.
+2. **Hand-check the QA report chapter by chapter** — still owed, still the big one. Only
+   `ddc-2-02` has been read record by record; the other 20 chunks have been *parsed*, not read
+   (§6.5). Volume work over a frozen grammar; does not need a premium model.
+3. **One out-of-range citation wants a plate**: `et xi. 32` (ddc-2-13 la ¶47), book *carried*.
+4. **M4 step 6** — backfill the index as each chapter lands; add the step to M3-RUNBOOK §2.
+5. Still owed, recorded in `chunks/ddc-2-02.md` Notes: **five citation findings the parser turned
+   up that the hand-log lacks**, incl. ★ **a citation Sumner SUPPLIES** at 1 Cor. i. 19, 20 — a
+   fourth kind of unmarked editorial handling, alongside correction, reordering and omission.
+6. M5 copy: About and Rights are still M2 placeholders, and `/scripture` is styled only with the
+   existing card classes.
 
 Numbers to compare against, so a regression is visible: **ddc-2-02 — 327 records, 0 unclassified,
 layer spread 0.6%, all 9 hand-logged divergences found. Corpus — 5,809 records, spread 0.1%
-(2906 la / 2903 en), 30 unclassified, **6 out-of-range, 7 versification**, 427 divergence rows,
-and 5809 ledger rows for 5809 records.** ddc-2-02 alone: 327 records, 0 unclassified. State:
+(2906 la / 2903 en), 30 unclassified, **6 out-of-range, 7 versification**, 427 divergence
+rows of which **17 suspect**, 5809 ledger rows for 5809 records, and from the index builder
+**5,467 loci / 62 books / 281 divergent** with **0 unresolved anchors**.** ddc-2-02 alone: 327 records, 0 unclassified. State:
 `tools/build-citations.py` (`<chunk-id>` | `--all` | `--dump`) → `index/citations.tsv` and
 `index/citation-qa.md`, both derived and re-runnable, zero writes under `chunks/`.
 `tools/build-versification.py` → `tools/versification.json` is the target-exists table.

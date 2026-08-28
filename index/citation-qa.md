@@ -1,6 +1,6 @@
 # Citation QA — read this, do not merely generate it
 
-5809 records · 30 unclassified · 6 out-of-range · 7 versification · 427 divergence rows
+5809 records · 30 unclassified · 6 out-of-range · 7 versification · 427 divergence rows, 17 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
@@ -49,6 +49,28 @@
 - `ddc-2-04-c` la {¶11} `Isa. lviii. 56.` — ERR: Isa 58 has 14 verses — 56 out of range
 - `ddc-2-04-c` en-sumner {¶16} `1 Kings xxvii. 29.` — 1Kgs has 22 chapters — chapter 27 does not exist
 - `ddc-2-10` en-sumner {¶3–4} `Psal. iii. 9.` — ERR: Ps 3 has 8 verses — 9 out of range
+
+## Suspect pairings — the aligner slid; READ THESE
+
+The two layers were paired but land too far apart to be one citation. Reported, never merged: each side keeps its own target, so the index cannot file one layer's verse under the other's. Some of these are real findings about the 1825 text and some are alignment slips, and telling them apart needs the paragraph in view.
+
+- `ddc-1-02` ¶13 — la `1 Thess. v. 9.` → 1Thess 5:9 vs en `1 Thess. i. 9.` → 1Thess 1:9
+- `ddc-1-02` ¶27 — la `v. 17` → Ps 25:17 vs en `v. 17` → Ps 103:17
+- `ddc-2-03` ¶13 — la `cap. xxxi. 2.` → Isa 31:2 vs en `iii. 1.` → Isa 3:1
+- `ddc-2-04-b` ¶9 — la `Psal. lv. 18.` → Ps 55:18 vs en `v. 3` → Ps 55:3
+- `ddc-2-04-c` ¶1 — la `et xxv. 22.` → Ps 25:22 vs en `iii. 8.` → Ps 3:8
+- `ddc-2-04-c` ¶3 — la `Isa. lix. 12.` → Isa 59:12 vs en `Isai. lix. 1, 2.` → Isa 59:1,2
+- `ddc-2-04-c` ¶11 — la `Isa. lviii. 56.` → Isa 58:56 vs en `Isai. lviii. 5, 6.` → Isa 58:5,6
+- `ddc-2-04-c` ¶16 — la `1 Reg. xxi. 27, 28, 29.` → 1Kgs 21:27,28,29 vs en `1 Kings xxvii. 29.` → 1Kgs 27:29
+- `ddc-2-05` ¶3 — la `Psal. ix. 5, 11.` → Ps 9:5,11 vs en `Psal. xcv. 11.` → Ps 95:11
+- `ddc-2-07` ¶4 — la `cap. xvi.` → Exod 16 vs en `xxxi. 14.` → Exod 31:14
+- `ddc-2-12` ¶12 — la `et cxiv. 2.` → Ps 114:2 vs en `xciv. 2.` → Ps 94:2
+- `ddc-2-17` ¶3 — la `v. 10` → Prov 31:10 vs en `xxxi. 1—10.` → Prov 31:1,2,3,4,5,6,7,8,9,10
+- `ddc-2-17` ¶7 — la `et x. 2, 3.` → Eccl 10:2,3 vs en `v. 16, 17.` → Eccl 10:16,17
+- `ddc-2-17` ¶7 — la `et iii. 5.` → Isa 3:5 vs en `v. 14` → Isa 3:14
+- `ddc-2-17` ¶13 — la `Act. xiii. 3, &c.` → Acts 13:3 &c. vs en `Acts xxiii. 4, &c.` → Acts 23:4 &c.
+- `ddc-2-17` ¶28 — la `et xxxiii.` → Ezek 33 vs en `iii. 8, 9.` → Ezek 3:8,9
+- `ddc-2-17` ¶29 — la `v. 10` → Mal 2:10 vs en `Mal. ii. 1—10.` → Mal 2:1,2,3,4,5,6,7,8,9,10
 
 ## Versification, not error (M4-RUNBOOK §6b)
 

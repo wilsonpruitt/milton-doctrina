@@ -572,6 +572,32 @@ def reconcile_et_v(la_recs, en_recs):
     return qa
 
 
+def pair_is_plausible(l, e):
+    """Could these two records really be the same citation seen in both layers?
+
+    align() pairs by position within a paragraph, and in a paragraph carrying twenty
+    proof-texts a single insertion on one side can shift everything after it. Most such
+    slips are harmless — the pair is reported and a reader sees two similar references —
+    but a pair that sets a `witness_target` makes a CLAIM: that these two printed numbers
+    are one verse. La `Psal. xxv. 22.` against En `iii. 8.` is not that; it is the
+    aligner sliding, and filing Milton's Ps 25:22 under Ps 3:8 would be a plain falsehood
+    in the index.
+
+    So: same book, and either the same chapter within a few verses, or an adjacent
+    chapter (the real chapter-boundary displacements of §6b are always adjacent). Beyond
+    that the pairing is `suspect`: still reported as a divergence row for a reader to
+    judge, but never allowed to set a witness.
+    """
+    if l["book"] != e["book"]:
+        return False
+    dc = l["chapter"] - e["chapter"]
+    if abs(dc) > 1:
+        return False
+    if dc == 0 and l["verses"] and e["verses"]:
+        return abs(l["verses"][0] - e["verses"][0]) <= 6
+    return True
+
+
 def pair_divergences(la_recs, en_recs):
     """Align the two layers paragraph by paragraph and report every pair that differs.
 
@@ -635,7 +661,7 @@ WS = re.compile(r"\s+")
 
 COLUMNS = ["chunk_id", "layer", "section", "para", "seq", "class", "raw_text",
            "book", "chapter", "verses", "target", "confidence", "resolution",
-           "carried_from", "divergence_id", "witness_target"]
+           "carried_from", "divergence_id", "pair_confidence", "witness_target"]
 
 
 def main():
@@ -729,8 +755,10 @@ def main():
     # layer, the record witnesses itself.
     for r in all_recs:
         r["divergence_id"] = ""
+        r["pair_confidence"] = ""
         r["witness_target"] = r["target"]
     div_key = {}
+    suspect_pairs = []
     by_id = {r["id"]: r for r in all_recs}
     for i, d in enumerate(all_div, 1):
         div_key[(d["chunk_id"], d["para"])] = f"d{i}"
@@ -738,10 +766,16 @@ def main():
         if not (la and en):
             continue
         did = f"d{i}"
-        witness = en["target"]
+        ok = pair_is_plausible(la, en)
         for r in (la, en):
             r["divergence_id"] = did
-            r["witness_target"] = witness
+            r["pair_confidence"] = "plausible" if ok else "suspect"
+        if ok:
+            for r in (la, en):
+                r["witness_target"] = en["target"]
+        else:
+            # Each record keeps witnessing itself. The index must not merge these.
+            suspect_pairs.append((d["chunk_id"], d["para"], la, en))
     with io.open(LEDGER, "w", encoding="utf-8") as fh:
         fh.write("\t".join(COLUMNS) + "\n")
         for r in all_recs:
@@ -754,7 +788,7 @@ def main():
                 WS.sub(" ", r["raw_text"]).strip(), r["book"], r["chapter"],
                 ",".join(str(v) for v in r["verses"]), r["target"], r["confidence"],
                 r["resolution"], r["carried_from"], r["divergence_id"],
-                r["witness_target"],
+                r["pair_confidence"], r["witness_target"],
             ]) + "\n")
 
     # Census assertion #2 (M4-RUNBOOK §5): one record, one row. A citation that wraps a
@@ -772,7 +806,7 @@ def main():
         fh.write("# Citation QA — read this, do not merely generate it\n\n")
         fh.write(f"{len(all_recs)} records · {len(all_qa)} unclassified · "
                  f"{len(range_problems)} out-of-range · {len(versified)} versification · "
-                 f"{len(all_div)} divergence rows\n\n")
+                 f"{len(all_div)} divergence rows, {len(suspect_pairs)} suspect\n\n")
         counts = collections.Counter(r["layer"] for r in all_recs)
         fh.write("## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)\n\n")
         for k, v in counts.items():
@@ -790,6 +824,18 @@ def main():
             fh.write(f"- `{r['chunk_id']}` {r['layer']} {r['para']} `{r['raw_text']}` — {msg}\n")
         if not range_problems:
             fh.write("_none_\n")
+        fh.write("\n## Suspect pairings — the aligner slid; READ THESE\n\n")
+        fh.write("The two layers were paired but land too far apart to be one citation. "
+                 "Reported, never merged: each side keeps its own target, so the index "
+                 "cannot file one layer's verse under the other's. Some of these are real "
+                 "findings about the 1825 text and some are alignment slips, and telling "
+                 "them apart needs the paragraph in view.\n\n")
+        for cid, para, la, en in suspect_pairs:
+            fh.write(f"- `{cid}` {para} — la `{la['raw_text']}` → {la['target']} "
+                     f"vs en `{en['raw_text']}` → {en['target']}\n")
+        if not suspect_pairs:
+            fh.write("_none_\n")
+
         fh.write("\n## Versification, not error (M4-RUNBOOK §6b)\n\n")
         fh.write("Out-of-range citations reclassified as Junius-Tremellius numbering. "
                  "These are records in the ledger, not findings against the 1825 text.\n\n")
@@ -818,7 +864,7 @@ def main():
 
     print(f"{len(all_recs)} records · {len(all_qa)} unclassified · "
           f"{len(range_problems)} out-of-range · {len(versified)} versification · "
-          f"{len(all_div)} divergence rows")
+          f"{len(all_div)} divergence rows, {len(suspect_pairs)} suspect")
     print(f"  {os.path.relpath(LEDGER, ROOT)}  {os.path.relpath(QA_REPORT, ROOT)}")
 
     if do_dump:

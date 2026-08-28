@@ -410,3 +410,70 @@ roster; this one checks the file's own shape. `--all` now reports 5809 rows for 
 coding the rule below — the English reads `lviii. 5, 6`, so the Latin dropped a comma rather than
 mis-setting a number. The one survivor, `et xi. 32`, has a *carried* book, which §4.9 makes the
 likelier defect.
+
+---
+
+## 9. Steps 4 and 5 are DONE — 2026-08-28
+
+`tools/build-index-json.py` → `site/src/data/scripture/*.json` (63 files, ~4 MB), and
+`/scripture` + `/scripture/[book]` are live in the nav. **5,467 loci across 62 books, 281
+showing a layer divergence.** The builder computes nothing about citations; it regroups the
+ledger and renders (§5).
+
+**A locus is a citation, not a record.** Where the ledger paired the two layers, one entry
+carries both printed forms and is filed under the `witness_target`. Both numbers are shown,
+neither corrected.
+
+### ★★ Suspect pairings — a claim the index must not make on its own
+
+`align()` pairs by position inside a paragraph, and in a paragraph of twenty proof-texts one
+insertion slides everything after it. Harmless in a divergence *report*, which a reader judges.
+Not harmless in the index, where a merged pair **asserts that two printed numbers are one
+verse**. La `Psal. xxv. 22.` had been paired with En `iii. 8.` — different verses — and merging
+filed Milton's Ps 25:22 under Ps 3:8. That is not a divergence to display; it is a false
+statement about where Milton cites.
+
+So a pair now carries `pair_confidence`. **Plausible** = same book, and either the same chapter
+within six verses or an adjacent chapter (the real boundary displacements of §6b are always
+adjacent). **Suspect** = anything else: still reported as a divergence row, never merged, never
+allowed to set a witness. 342 of 359 pairs are plausible; the 17 suspects have their own QA
+section and want a reader, because they are a genuine mixture —
+
+- **real findings** the pairing got right: `Isa. lviii. 56` vs `lviii. 5, 6` (the dropped comma),
+  `Isa. xxxi. 2` vs `iii. 1` (already plate-confirmed at 400 dpi in II.iii), `1 Thess. v. 9` vs
+  `i. 9`, and `Psal. cxiv. 2` vs `xciv. 2`, which looks like a printed transposition;
+- **alignment slips**: `Psal. lv. 18` vs a bare `v. 3`, `cap. xvi.` vs `xxxi. 14.`
+
+Telling them apart needs the paragraph in view. Do not resolve them from the table alone.
+
+### Deep links, and the two bugs found by testing them
+
+Each witness links to `/browse/<book>/<chapter>#<chunk>-<layer>-p<N>`. The anchor is scoped by
+**chunk**, because a chapter transcribed in parts restarts `{¶N}` at 1 in each part (§8d);
+`para_anchor()` here must stay in step with `anchorId` in `text-reader.tsx`.
+
+**The acceptance test is that every anchor resolves**, checked against the built HTML: **5,809
+references, 0 unresolved.** Run it after any change to either side. It found two defects that
+nothing else would have:
+
+1. **81 paragraphs carried no `¶` marker and no anchor.** The reader matched `^{¶N}` at the very
+   start of a block, so any paragraph whose page break falls inside the block
+   (`<!-- p.14 -->` newline `{¶11} Natura autem …`) lost its marker — silently, since M2. Fixed
+   in `text-reader.tsx`; the page comment is handed back to `renderInline`.
+2. **Five paragraph pairs in `ddc-2-13` were missing the blank line between them**, so each pair
+   rendered as one run-on paragraph and the second lost its marker. Separators inserted, no words
+   touched (verified: the file is identical ignoring whitespace). Corpus-wide there are now zero
+   blocks carrying more than one paragraph marker — worth re-checking as chapters land.
+
+### Known limitation, stated rather than special-cased
+
+Where the **English** is the erroneous side, the witness inherits the error: En `Psal. iii. 9.` is
+a printed mistake (§6b) and the pair is filed under Ps 3:9 rather than the Latin's correct Ps 3:7.
+Both forms are displayed, so nothing is hidden, and the rule stays simple. Revisit only if the
+error list grows.
+
+### Owed next
+
+Step 6 — backfill each new chapter as it lands, and add the index step to M3-RUNBOOK §2.
+The `/scripture` pages are unstyled beyond the existing card/meta classes and the About and
+Rights copy is still M2 placeholder (M5).

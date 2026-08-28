@@ -193,9 +193,16 @@ function renderBody(
     }
 
     // Leading {¶N} / {¶N–M} paragraph marker, kept as small muted text.
-    const parMatch = trimmed.match(/^\{¶([^}]+)\}\s*([\s\S]*)$/);
-    const marker = parMatch ? parMatch[1] : null;
-    const rest = parMatch ? parMatch[2] : trimmed;
+    // ⚠ A page break can fall INSIDE the block, immediately before the marker
+    // (`<!-- p.14 -->` newline `{¶11} Natura autem …`). Anchoring the match to the
+    // very start of the block dropped the ¶ marker on every such paragraph — 81 of
+    // them across the corpus, silently, since M2. Allow the comment through and hand
+    // it back to renderInline, which knows how to display it.
+    const parMatch = trimmed.match(
+      /^((?:<!--\s*p\.\d+\s*-->\s*)*)\{¶([^}]+)\}\s*([\s\S]*)$/
+    );
+    const marker = parMatch ? parMatch[2] : null;
+    const rest = parMatch ? parMatch[1] + parMatch[3] : trimmed;
 
     // The scripture index deep-links to a paragraph in a given layer. Scope the id by
     // CHUNK: a chapter transcribed in parts restarts {¶N} at 1 in each part, so
