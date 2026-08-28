@@ -216,45 +216,56 @@ Work from `M3-RUNBOOK.md` — **its queue table in §1 is the authoritative per-
 kept current chapter by chapter. Book II first, then Book I, saving I.iv–I.vi for last. Opus per
 chunk.
 
-**▶ NEXT IS `ddc-2-17`** *De Officiis Publicis erga Proximum* — **the last chapter of Book II.**
-La 525–536 (12 pp.) / En 696–711 (16 pp.), ratio 1.33, **all four boundaries plate-confirmed**
-(La 536 ends `TOTIUS OPERIS FINIS`, En 711 ends `THE END`). **Nothing is prepped**: run
-`./tools/prep-chapter.sh 2 17` first, and do not read a plate you did not just render.
-**Its first English footnote must be 2** (II.xvi carried a single note, 1). At 12 Latin pages it sits
-right at CONVENTIONS §7's split threshold — split at Milton's own lemma seams if it needs it, not at
-a page count. Its subject is the magistrate, the people, and the church, so **treat it as a §10
-polemical chapter and write one paragraph per edit from the start.**
+## ✅ BOOK II IS COMPLETE — 17/17 chapters, both layers, all verified (2026-08-27)
 
-**Finishing it closes Book II.** After that the run moves to Book I, i–iii and vii–xxxiii, saving
-I.iv–I.vi for last (M3-RUNBOOK §5).
+`ddc-2-17` closed it. Every Book II chapter is transcribed in both layers, plate-verified, and
+flagged `verified` in `chapters.tsv`; **no Book II boundary and no Book II suspect flag remains**.
+The English footnote ledger runs unbroken II.i → II.xvii and is now closed. Latin apparatus in the
+whole of Book II stands at exactly **two** notes, La 431 (textual) and La 454 (scholarly).
 
-## ✅ BOOK II HAS NO SUSPECT FLAGS LEFT — 2.17 resolved 2026-08-27
+**▶ NEXT IS BOOK I**, beginning `ddc-1-01` *Quid sit Doctrina Christiana, quotque ejus partes* —
+La 7–? / En 9–?. **Nothing is prepped**: run `./tools/prep-chapter.sh 1 1` first. Work in order
+i–iii then vii–xxxiii, **saving I.iv–I.vi for last** (M3-RUNBOOK §5); I.v *De Filio Dei* is 53 Latin
+pages, the Arian chapter, and will need splitting at Milton's own lemma seams.
 
-The last one fell out of transcribing II.xvi and reading past its end: La 524 carries II.xvi's
-closing *inhospitalitas* paragraph and a blank tail, so `CAP. XVII` could only open at **525**.
-**The audit's text layer was right and the crosswalk was wrong** — the audit's discrepancies are now
-2 for 2, the crosswalk 0 for 2. Correcting the start also exposed that **both** of 2.17's page counts
-were wrong (La 12 not 11, En 16 not 15). Full reasoning and the two consequences for Book I's five
-remaining flags are in **`M3-RUNBOOK.md` §7** — read it before resolving 1.28, the largest open gap.
+⚠ **Book I is a different problem from Book II in four ways — read these before starting:**
 
-## The findings from II.xv–II.xvi that change how the next chapter is read
+1. **The footnote numbering must be re-established from scratch.** CONVENTIONS §8a is explicit:
+   do **not** assume Book I continues from II.xvii's 7, and do **not** assume it restarts at 1.
+   Establish it empirically from I.i's plates, then the 1–9 cycle becomes a checksum again.
+2. **Book I carries LATIN apparatus, and it is textual.** The sweep confirmed notes at La 129 and
+   La 143 — La 129 is Sumner stating his own editorial method (*ut soleo… ne puncto quidem mutato*)
+   against La 431's confessed *ordinem leviter mutavi*, and its crux is the eternity of matter.
+   `tools/sweep-book1.tsv` says where to look; read every Latin page foot regardless.
+3. **Five suspect flags remain, all in Book I** — 1.5, 1.12, 1.23, 1.24, 1.28. The audit's text
+   layer has been right and the crosswalk wrong in **both** discrepancies ever resolved (2 for 2
+   against 0 for 2), so weight the text layer, and expect the flag to fall out of the *adjacent*
+   chapter: 1.28's six-page gap, the largest open, should resolve from 1.27. See M3-RUNBOOK §7.
+4. **Check the extent, not just the start.** Correcting 2.17's start exposed that both its page
+   counts were also wrong.
 
-1. **★★ Sumner adds doctrine the Latin does not contain.** II.xvi {¶5}: *ne absurda æquatio
-   inæqualium fiat* becomes "lest we fall into the absurdity of equalizing **those whom nature never
-   intended for an equality**." The Latin supplies neither *nature* nor *intention*. With II.xv's
-   discovery that the divorce material in that chapter is Sumner's apparatus and not Milton's text,
-   the rule is now general: **before attributing a position to Milton, check which layer it is in.**
-2. **★★ The dash-range rule is confirmed and precise.** The English contracts every run of **three or
-   more** consecutive verses to a dash range and **never** contracts a run of two — 7 and 10
-   instances in II.xvi alone, no exceptions across two chapters.
-3. **★★ The same-verse-two-halves habit is real, not an accident.** II.xv had `Prov. iii. 33 / xiv. 11
-   / xv. 6` cited twice each on one page; II.xvi repeats it with `2 Cor. ix. 6` (bountifully /
-   sparingly) and `Deut. xxvii. 19` (fatherless-and-widow / stranger). **The M4 scripture index must
-   not de-duplicate by reference** — that would destroy the antithesis Milton is building.
-4. **★ The English layer produces word errors, not only digit errors.** En 692 prints `he doth
-   **create** the judgement` for *execute* (900 dpi). Every prior English error was a citation digit
-   or a wrong sort; a wrong *word* reads as grammatical theology and will not be caught by a
-   numeral check.
+## What Book II established that Book I should carry forward
+
+- **★★★ Sumner's apparatus is TOPICALLY MATCHED to the chapter.** II.xvii settles this: five of its
+  six notes are Milton's political tracts, in the political chapter, where the ethics chapters drew
+  the poetry (II.viii, II.xi) and the biography (II.ix, II.xv). The separate "habits" recorded chapter
+  by chapter are one habit. **Never call a note-source new without checking the chapter's topic first.**
+- **★★★ The 1825 edition is not a neutral vehicle.** II.xvii [^s6] is Sumner, in his own voice and
+  quoting nobody, explaining away Milton's part "not only against the monarchy, but against the
+  monarch himself"; [^s3] documents the political censorship of a passage it quotes. Both belong on
+  the About page and bear on PLAN §4a.
+- **★★★ Some Latin citation errors are SYSTEMATIC.** II.xvii has Ecclesiastes 10 three verses low
+  twice and Isaiah 3 one verse high four times — and `Eccles. x. 2, 3` is the identical error II.xv
+  carried, corrected identically and independently in both chapters. **When a citation is wrong,
+  check whether the same book recurs in the chapter before calling it a compositor's slip.**
+- **★★★ `et v. N` is ambiguous and NEITHER layer resolves it.** Usually *et versu N*, but sometimes
+  chapter v — and the English prints the ambiguous form unchanged even while correcting its
+  neighbours. **Only the quoted words identify the target.** This, with II.x's omission, II.ix's
+  reordering, II.xv's deliberate double-citation, and Sumner's selective resolution of verbal ranges
+  into digits, is the case for M4: **build the scripture index from the Latin, reconcile against the
+  English, carry every divergence as data, and never de-duplicate by reference.**
+- **★★ The dash-range rule** — the English contracts runs of 3+ consecutive verses, never runs of 2 —
+  held across three chapters without exception.
 
 ## ⚠⚠ TWO CONVENTION QUESTIONS ARE NOW WAITING ON WILSON — both from II.xi
 
