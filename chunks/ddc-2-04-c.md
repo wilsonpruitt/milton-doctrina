@@ -201,6 +201,18 @@ The `lviii. 56` case is worth keeping distinct from the others: it is a composit
 rather than a misread numeral, and it is the mirror image of the En `xxvii` error above — the same
 class of accident, once in each volume.
 
+**★ Sumner REORDERS and OMITS in the same breath — ¶1.** The Latin's opening string of Psalms
+runs `Psal. iii. 9. *super populum tuum sit benedictio tua maxime.* et xxviii. 9. idem. et
+**xxv. 22.** *redime Deus Israelem ab omnibus oppressoribus ejus.* et li. 20.`—. The English puts
+**xxviii. 9 first**, with its text, then adds *See also iii. 8.* with the note on Tremellius, and
+then **goes straight to li. 18: `xxv. 22` is not in the English at all.** Milton's own quotation of
+it is dropped with it. So the paragraph carries three editorial acts at once — the versification
+adjustments already tabled below, a reordering, and an outright omission — and from `xxv. 22`
+onward the two layers run one citation apart to the end of the paragraph (La 21 records, En 20).
+**Omission is the fourth kind of unmarked handling**, alongside correction, reordering, and the
+supply at 1 Cor. i. 19, 20 recorded in `ddc-2-02`. Kept as printed on both sides; the index files
+each layer's own target and merges nothing (M4-RUNBOOK §10.6).
+
 **Other citation divergences (each layer as printed):** La Psal. iii. 9 / En iii. 8 · Psal. v. 11 /
 v. 10 · cxl. 11 / cxl. 10 · cii. 14 / cii. 13 · Deut. xxvii. **a v. 13. ad finem capitis** /
 `xxvii. 13—26` (En resolves Milton's "from v. 13 to the end of the chapter" into an explicit

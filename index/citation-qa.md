@@ -1,11 +1,11 @@
 # Citation QA — read this, do not merely generate it
 
-5809 records · 30 unclassified · 6 out-of-range · 7 versification · 427 divergence rows, 17 suspect
+5811 records · 30 unclassified · 6 out-of-range · 7 versification · 428 divergence rows, 17 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 2906
-- `en-sumner` — 2903
+- `la` — 2907
+- `en-sumner` — 2904
 - spread: 3 records, 0.1%
 
 ## Unclassified — never a record with an invented target
@@ -196,6 +196,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Ps | 55 | +1 | 1 | no |
 | Ps | 56 | +1 | 1 | no |
 | Ps | 81 | +1 | 1 | no |
+| Ps | 88 | +1 | 1 | no |
 | Ps | 133 | +1 | 1 | no |
 | Rom | 11 | -1 | 1 | no |
 | Rom | 14 | -3 | 1 | no |
@@ -323,6 +324,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-2-04-b | ¶7 | `Dan. vi. 11.` | Dan 6:11 | `Dan. vi. 10.` | Dan 6:10 | divergence |
 | ddc-2-04-b | ¶9 | `—` | — | `Psal. lv. 17.` | Ps 55:17 | present in English only |
 | ddc-2-04-b | ¶9 | `Psal. lv. 18.` | Ps 55:18 | `v. 3` | Ps 55:3 | divergence |
+| ddc-2-04-b | ¶9 | `et lxxxviii. 14.` | Ps 88:14 | `lxxxviii. 13.` | Ps 88:13 | divergence |
 | ddc-2-04-b | ¶9 | `et xcii. 2, 3.` | Ps 92:2,3 | `xcii. 1, 2.` | Ps 92:1,2 | divergence |
 | ddc-2-04-b | ¶9 | `Dan. vi. 11.` | Dan 6:11 | `Dan. vi. 10.` | Dan 6:10 | divergence |
 | ddc-2-04-c | ¶1 | `1 Tim. ii. 1, 2, 3.` | 1Tim 2:1,2,3 | `1 Tim. ii. 1—3.` | 1Tim 2:1,2,3 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |

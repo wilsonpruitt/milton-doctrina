@@ -1,6 +1,17 @@
 # Next session — resume here
 
-## ⇢ START HERE (2026-08-28, Opus) — the Ecclesiastes question is SETTLED; M4 step 4 is next
+## ⇢ START HERE (2026-08-28, Opus) — the 17 suspects are READ, and one ruling is owed before more code
+
+**Go to "The queue now", item 1, and to `M4-RUNBOOK.md` §10.** The suspect read closed the queue's
+★ item and turned up something bigger than a parser bug: **the chunks' "silently corrected error"
+tables were written before §6b and, by §6b's own rule, are misclassifying versification as
+Milton's error.** That is a claim about the man that goes into print, so it is Wilson's to rule
+on, and the audit that follows touches every chunk. Everything below this line is the earlier
+history of the session, kept in order.
+
+---
+
+## ⇠ Earlier the same day — the Ecclesiastes question is SETTLED
 
 **Job 1 of the previous list is done, and it came out the other way from "error."** All five
 Ecclesiastes out-of-range citations are **Junius–Tremellius versification**, to be displayed under
@@ -64,35 +75,83 @@ check; re-run it after touching either side.
   3. **Five paragraph pairs in `ddc-2-13` lacked their blank-line separator** and rendered
      run-on. Separators only; the file is identical ignoring whitespace.
 
+### ✅ Done 2026-08-28 (later) — the seventeen suspect pairings are READ
+
+All seventeen read with both layers' paragraphs in view. **M4-RUNBOOK §10 is the write-up**; it
+is the plan of record for what follows and this is only the pointer.
+
+- **Ten of the seventeen are not slips at all** — they are the aligner correctly refusing to merge
+  a pair the two volumes really do print differently, and **every one was already caught by hand
+  and is already in its chunk's Notes.** That is the strongest evidence yet that the transcription
+  front is doing its job; the parser found nothing the readers had missed.
+- **The other seven exposed four parser defects, three of which put wrong targets in the live
+  index.** §10.1 is **fixed**: `ROMAN_RE` was `[ivxlc]{1,7}`, so `lxxxviii` — **Psalm 88** — was
+  invisible in both layers; the numeral is now spelled out well-formed for 1–199. Ledger diff:
+  exactly the two intended rows, 5809 → 5811, nothing else moved.
+- **§10.2 / §10.4 are one ruling and they are Wilson's.** The frozen rule that the English `v.` is
+  always *versus* is **false** — `ddc-1-02` ¶27 En `v. 4.` is Ps 5:4 and is filed as Ps 103:4;
+  `ddc-2-04-b` ¶9 En `v. 3.` quotes Ps 5:3 verbatim and is filed as Ps 55:3. Both chunks' Notes had
+  already said so before the index existed. ⚠ The asymmetry is the real problem: **the Latin's
+  `et v. N` is honestly withheld and sent to QA, the English's is resolved silently and always**,
+  so the English's errors of this class are invisible by construction.
+- **New reading aid: `tools/show-para.py <chunk-id> <¶> [<¶>…]`** prints one paragraph from every
+  text layer in sequence. The QA report names a chunk and a paragraph; settling anything about one
+  means seeing both layers of it.
+- ⚠ **Footgun (§10.7):** `build-citations.py <chunk-id>` **rewrites the corpus ledger with that
+  chunk alone.** It happened once this session and `--all` restored it exactly. Always finish with
+  `--all`.
+
 ### The queue now
 
-1. ★ **Read the 17 suspect pairings** (`index/citation-qa.md`, "Suspect pairings"). Each needs the
-   paragraph in view; some are real findings about the 1825 text and belong in the chunk Notes.
-2. **Hand-check the QA report chapter by chapter** — still owed, still the big one. Only
+1. ★★★ **§10.8 — the chunks' "silently corrected error" tables predate §6b and are stale, and this
+   one needs Wilson before anything else.** `ddc-2-17` opens a table headed *"SIXTEEN Latin
+   citation errors silently corrected"* and then, two paragraphs later, observes in its own words
+   that Ecclesiastes 10 is three verses low **both** times it is cited and Isaiah 3 one verse high
+   **all four** times. §6b, written afterwards, established that a repeating per-chapter offset is
+   the signature of Junius–Tremellius versification — and already lists `Isa 57 (+4, twice)` among
+   them. By the runbook's own rule, **eight of that table's sixteen rows are versification, not
+   error**, which would take "sixteen errors, twice the record" down to about five. ⚠ This is not
+   a parser question: *"Milton miscited sixteen times and his editor quietly fixed it"* and
+   *"Milton cited a different Bible and his editor converted it"* are opposite claims about the man,
+   and one of them is going into print. The ruling, then the same audit across every chunk (every
+   error table in the corpus predates §6b), then a `divergence_class` column so the answer stops
+   living in prose.
+2. **§10.2 + §10.4 — one ruling, two symptoms.** May the English `v. N` reach QA the way the
+   Latin's already can, and may `reconcile_et_v()` settle by *form* rather than by digit equality?
+   Five real Latin citations are being dropped because a versification offset makes the digits
+   disagree (table in §10.4). Coupled: the form-only relaxation is safe only once the English `v.`
+   can also be doubted.
+3. **§10.3 — a narrow licence for the bare Latin continuation?** `ddc-1-02` ¶27 prints `ciii. 11.`
+   with no `et`, Sumner-fashion, in the Latin volume; the parser drops it and the following `v. 17`
+   then carries Psalm **25** forward and is filed as Ps 25:17 when the quotation is Ps 103:17.
+   Two instances is not a rule and the word hazard (`ii`, `vi`, `li`, `ci`) is real, so this waits.
+4. **Hand-check the QA report chapter by chapter** — still owed, still the big one. Only
    `ddc-2-02` has been read record by record; the other 20 chunks have been *parsed*, not read
    (§6.5). Volume work over a frozen grammar; does not need a premium model.
-3. **One out-of-range citation wants a plate**: `et xi. 32` (ddc-2-13 la ¶47), book *carried*.
-4. **M4 step 6** — backfill the index as each chapter lands; add the step to M3-RUNBOOK §2.
-5. Still owed, recorded in `chunks/ddc-2-02.md` Notes: **five citation findings the parser turned
-   up that the hand-log lacks**, incl. ★ **a citation Sumner SUPPLIES** at 1 Cor. i. 19, 20 — a
-   fourth kind of unmarked editorial handling, alongside correction, reordering and omission.
-6. M5 copy: About and Rights are still M2 placeholders, and `/scripture` is styled only with the
+5. **One out-of-range citation wants a plate**: `et xi. 32` (ddc-2-13 la ¶47), book *carried*.
+   ⚠ Add a second: `ddc-2-17` ¶29 La `Isa. lvii. 2, &c.` against *speculatores istius* = Isa 56:10
+   — settled from the quotation, but item 1 may reclassify it, and a plate would close it either
+   way.
+6. **M4 step 6** — backfill the index as each chapter lands; add the step to M3-RUNBOOK §2.
+7. Still owed, recorded in `chunks/ddc-2-02.md` Notes: **five citation findings the parser turned
+   up that the hand-log lacks**, incl. ★ **a citation Sumner SUPPLIES** at 1 Cor. i. 19, 20. ✅ The
+   fourth kind — **omission** — is now attested too and is written into `ddc-2-04-c`'s Notes:
+   ¶1's `et xxv. 22`, quotation and all, is simply not in the English.
+8. M5 copy: About and Rights are still M2 placeholders, and `/scripture` is styled only with the
    existing card classes.
 
 Numbers to compare against, so a regression is visible: **ddc-2-02 — 327 records, 0 unclassified,
-layer spread 0.6%, all 9 hand-logged divergences found. Corpus — 5,809 records, spread 0.1%
-(2906 la / 2903 en), 30 unclassified, **6 out-of-range, 7 versification**, 427 divergence
-rows of which **17 suspect**, 5809 ledger rows for 5809 records, and from the index builder
-**5,467 loci / 62 books / 281 divergent** with **0 unresolved anchors**.** ddc-2-02 alone: 327 records, 0 unclassified. State:
+layer spread 0.6%, all 9 hand-logged divergences found. Corpus — 5,811 records, 30 unclassified,
+6 out-of-range, 7 versification, 428 divergence rows of which 17 suspect.** State:
 `tools/build-citations.py` (`<chunk-id>` | `--all` | `--dump`) → `index/citations.tsv` and
 `index/citation-qa.md`, both derived and re-runnable, zero writes under `chunks/`.
 `tools/build-versification.py` → `tools/versification.json` is the target-exists table.
-M4 steps **1-3 done**, steps **4-6 untouched**.
+M4 steps **1-5 done**, step **6 untouched**.
 
-⚠ One correction made this session inside `chunks/ddc-2-10.md`: its `Psal. iii. 9.` note claimed
-Hebrew Psalm 3 has eight verses. **It has nine.** The finding survives and sharpens — En's `iii. 9`
-is a valid Hebrew number pointing at the wrong verse, so the defect is a conversion made in the
-wrong direction, not a mis-set digit.
+⚠ One correction made earlier this session inside `chunks/ddc-2-10.md`: its `Psal. iii. 9.` note
+claimed Hebrew Psalm 3 has eight verses. **It has nine.** The finding survives and sharpens — En's
+`iii. 9` is a valid Hebrew number pointing at the wrong verse, so the defect is a conversion made
+in the wrong direction, not a mis-set digit.
 
 ### ⚠ Two housekeeping facts from this session
 

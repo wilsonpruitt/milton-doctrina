@@ -35,7 +35,13 @@ LAYERS = ("la", "en-sumner")
 # volumes; the apparatus uses uppercase for Milton's poetry (Paradise Lost, XII. 558)
 # and that is not scripture. Restricting the class to lowercase kills most of hazard 2
 # before it starts.
-ROMAN_RE = r"(?:[ivxlc]{1,7})"
+# ⚠ WELL-FORMED, not merely "letters from the roman set of at most seven". The loose
+# class capped the numeral at 7 characters and so could not see `lxxxviii` — Psalm 88 —
+# at all: `ddc-2-04-b` ¶9 cites it in BOTH layers and neither was in the index (M4-RUNBOOK
+# §10.1). Lengthening the class alone would let ordinary Latin words through (`civili`
+# is six letters of the roman set), so the numeral is spelled out instead. Range 1–199,
+# which covers every chapter and psalm in the canon.
+ROMAN_RE = r"(?=[ivxlc])(?:c{0,1}(?:xc|xl|l?x{0,3})(?:ix|iv|v?i{0,3}))"
 ROMAN_VAL = {"i": 1, "v": 5, "x": 10, "l": 50, "c": 100, "d": 500, "m": 1000}
 
 
