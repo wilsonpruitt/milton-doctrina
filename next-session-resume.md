@@ -1,5 +1,62 @@
 # Next session — resume here
 
+## ⇢ START HERE (2026-08-28, Opus) — M4 is live and the queue is in `index/citation-qa.md`
+
+**The scripture index has a working parser and a corpus-wide ledger.** Read
+**`M4-RUNBOOK.md` §1a, §6a and §7** first — it carries the design, the hazards, and what the
+first run found. Then read `index/citation-qa.md`, which is the actual worklist.
+
+State: `tools/build-citations.py` (`<chunk-id>` | `--all` | `--dump`) → `index/citations.tsv`
+and `index/citation-qa.md`. Both derived, re-runnable, zero writes under `chunks/`.
+`tools/build-versification.py` → `tools/versification.json` is the target-exists table.
+M4 sequence steps **1-3 done**, steps **4-6 untouched** (`build-index-json.py`, `/scripture`,
+the route — all port from Bonaventure).
+
+Numbers to compare against, so a regression is visible: **ddc-2-02 — 327 records, 0 unclassified,
+layer spread 0.6%, all 9 hand-logged divergences found. Corpus — 5,809 records, spread 0.1%
+(2906 la / 2903 en), 30 unclassified, 13 out-of-range, 427 divergence rows.**
+
+### The three jobs waiting, in order
+
+1. ★★ **Settle the Ecclesiastes question at a plate — do this before anything else, because it
+   decides how five records are classified.** Five of the thirteen out-of-range citations are
+   Ecclesiastes in the Latin (`ii. 27`, `vii. 30`, `ix. 20`, `ix. 22`, `xii. 15`), each running
+   one to four verses past the KJV bound, in a book of twelve chapters. That concentration is not
+   printer's error. **Hypothesis: Junius-Tremellius versifies Ecclesiastes differently**, which
+   would make them divergences to *display* (CONVENTIONS §3), not errors to flag. Sumner corrects
+   some (`ix. 20` → `ix. 18`) and leaves others (`xii. 15`, both layers) — which fits. Do not call
+   any of the five an error until this is settled.
+2. **Confirm the eight unread out-of-range citations at plates.** Five of the thirteen were
+   already plate-confirmed by hand in earlier sessions and the parser found every one unaided,
+   which is the reason to trust the other eight enough to go look.
+3. **Hand-check step 3 chapter by chapter.** Only `ddc-2-02` has been checked record by record.
+   The other 20 chunks have been *parsed*, not *read*. M4-RUNBOOK §6.5: the QA report is not done
+   until it is read, not merely generated.
+
+Also owed, cheap, and recorded in `chunks/ddc-2-02.md` Notes: **five citation findings the parser
+turned up that the hand-log lacks**, each needing a plate — three `&c.` dropped by the English, one
+Latin verse-list truncated, and ★ **a citation Sumner SUPPLIES** at 1 Cor. i. 19, 20, where Milton
+runs two proof-texts under one reference. If that holds, it is a fourth kind of unmarked editorial
+handling of the citation apparatus, alongside correction, reordering and omission.
+
+### ⚠ Two housekeeping facts from this session
+
+- **Pushing to this remote fails over HTTP/2** with `RPC failed; HTTP 400`, and it fails
+  *silently at the end of a session* — nine commits had piled up unpushed before it was caught.
+  Fixed in this repo's local config only (`http.version HTTP/1.1`, `http.postBuffer 524288000`);
+  it should not recur. **Check `git status -sb` for "ahead N" before ending a session.**
+- ⚠ **`raw/loci/` IS ON THE REMOTE** — four files, ~2.9 MB (Wolleb and Ames, from
+  `tools/fetch-loci.sh`). `.gitignore` covers `raw/*.pdf`, `raw/*_djvu.txt`, `raw/plates/`,
+  `raw/crops/` and `raw/*-ch*.txt` but **not** `raw/loci/`, so they slipped in during an earlier
+  session. The claim further down this file that raw/ is fully gitignored and that 0 raw/ paths
+  are on the remote **is no longer true.** They are public-domain texts and harmless in
+  themselves, but **the repo flips PUBLIC at M5**, so settle it before then. Two open decisions,
+  both Wilson's: (a) add `raw/` wholesale to `.gitignore` going forward — cheap, no history
+  touched; (b) remove them from history — a rewrite, and a protected action.
+
+---
+
+
 **Read first:** **`M3-RUNBOOK.md`** — the per-chapter procedure, the queue, the checks, and the
 open suspect-flags. It is written so a session can start work immediately without re-deriving
 anything. Behind it: `PLAN.md` (plan of record) · `CONVENTIONS.md` (frozen rules) ·
