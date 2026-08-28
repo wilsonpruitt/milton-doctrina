@@ -25,9 +25,10 @@ OPEN_ITEMS = [
      "The chapter-start audit's discrepancies now stand at 7 for 7 against the crosswalk's 0. "
      "chapters.tsv is the only source for page ranges; treat a ratio outside 1.05-1.85 as a "
      "boundary suspicion, since 1.27's 2.20 and 1.28's 0.96 were both real errors."),
-    ("watch", "sweep-book1.tsv is unreliable",
-     "The Latin-footnote detector missed BOTH notes in I.ii (La 12, La 20). "
-     "It may suggest where to look in Book I; it cannot decide. Read every Latin foot."),
+    ("watch", "sweep-book1.tsv is a cross-check, not a guide",
+     "Inverted 2026-08-28: it is structurally blind to short notes (it missed both of I.ii's), "
+     "so it never decides where to look. Run ./tools/check-la-notes.py AFTER transcribing to ask "
+     "the opposite question — tighter type where we recorded nothing? See M3-RUNBOOK §11a."),
     ("watch", "PLAN §6.2 records conclusions, not arguments",
      "Two claims now mislocated: II.xv's divorce material is Sumner's apparatus, and "
      "the Arian argument is made in I.ii, not only I.v. Check I.vii and I.xiii the same way."),

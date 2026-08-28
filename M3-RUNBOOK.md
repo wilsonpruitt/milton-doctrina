@@ -374,6 +374,38 @@ Both lists must be empty. It costs one command and it is the only check that wou
 this class; the footnote-number checksum (§8a) will not, because a missing *section* leaves the
 printed numbers perfectly consistent.
 
+## 11a. Latin-note cross-check — run it AFTER transcribing, never before
+
+**Ruled 2026-08-28 (Wilson).** `tools/sweep-book1.tsv` was built to say where to look for Latin
+footnotes and in that direction it failed: it called La 12 and La 20 clean and both carry notes.
+It is now **inverted** — `./tools/check-la-notes.py [chunk]` asks the opposite question:
+
+> we transcribed this chapter and recorded no Latin note on page N — did the detector see
+> tighter type there?
+
+A false negative cannot hurt in that direction, and its false *positives* become the useful
+output. Signal: `min(pitch after the gap) / body_pitch <= 0.93`. Deliberately looser than the
+file's own `CANDIDATE` flag, because here a false positive costs one glance and a false negative
+costs a missed note. 43 of Book I's 380 pages clear it; the bare presence of a gap does not, since
+312 pages have one.
+
+**Why it missed I.ii's notes, measured, so nobody restores it to a deciding role:** a `CANDIDATE`
+needs a *run* of tighter pitches (La 129 gives 26,26,26,25,26,26,26,26 against a body of 34). A one-
+or two-line note cannot produce a run — La 20 yielded the single value 30 against 33, and La 12
+yielded no measurable gap at all. **The detector is structurally blind to short notes, which are the
+commonest kind.**
+
+⚠ **Chapter-opening pages are false positives by construction** — display headings leave a white
+band and the ratio collapses (La 57, 203, 211, 331, 337 all read 0.27–0.30). The tool marks them.
+
+First run, 2026-08-28: I.i clean; I.ii flagged La 10 (a chapter opening, discounted) and **La 14**,
+which was checked at the plate and carries no note — the page simply ends short. **I.ii's Latin
+apparatus is confirmed complete at two notes.** The tool's first output confirmed a chapter rather
+than correcting one, which is the outcome to expect most of the time.
+
+This does **not** replace §2 step 3 — read every Latin page foot, every chapter. It is a second pair
+of eyes after that reading.
+
 ## 12. Non-Latin script — the standing procedure
 
 **Added 2026-08-28 (Wilson's ruling): build the check-sheet as we go, one specialist pass
