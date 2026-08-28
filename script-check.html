@@ -1,0 +1,418 @@
+<title>Script check — De Doctrina Christiana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..600;1,400..600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--paper:#FBFAF8;--card:#FFF;--rule:#E2DED7;--ink:#1A1D24;--ink-2:#4A5060;--ink-3:#767D8E;
+ --accent:#3A4A7B;--accent-soft:#E7EAF3;--flag:#A33B2E;--flag-soft:#F7E7E4;--ok:#3F7A5E}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--paper:#14161C;--card:#1C1F28;
+ --rule:#2C313D;--ink:#E9EAEE;--ink-2:#A8AEBE;--ink-3:#767D8E;--accent:#93A6DC;--accent-soft:#242A3C;
+ --flag:#E08476;--flag-soft:#2E1D1B;--ok:#79BE9B}}
+:root[data-theme=dark]{--paper:#14161C;--card:#1C1F28;--rule:#2C313D;--ink:#E9EAEE;--ink-2:#A8AEBE;
+ --ink-3:#767D8E;--accent:#93A6DC;--accent-soft:#242A3C;--flag:#E08476;--flag-soft:#2E1D1B;--ok:#79BE9B}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-size:15px;line-height:1.5;
+ font-family:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:40px 24px 72px}
+h1{font-family:"EB Garamond",Georgia,serif;font-style:italic;font-weight:600;font-size:32px;margin:0}
+.eyebrow{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+header{border-bottom:2px solid var(--ink);padding-bottom:18px}
+.lede{color:var(--ink-2);font-size:14px;margin-top:10px;max-width:70ch}
+.warn{background:var(--flag-soft);border-left:3px solid var(--flag);border-radius:6px;
+ padding:13px 15px;margin:20px 0;font-size:13.5px;color:var(--ink-2);max-width:78ch}
+.warn b{color:var(--ink)}
+h2{font-size:15px;letter-spacing:.02em;border-bottom:1px solid var(--rule);
+ padding-bottom:7px;margin:34px 0 0}
+.meta{font-size:12px;color:var(--ink-3);font-weight:400}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);
+ font-weight:600;padding:12px 10px 8px;border-bottom:1px solid var(--rule);white-space:nowrap}
+td{padding:11px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+tr:hover{background:var(--accent-soft)}
+.tok{font-size:30px;line-height:1.35;white-space:nowrap;
+ font-family:"SBL Hebrew","Ezra SIL","Times New Roman",serif}
+.grk .tok{font-size:26px;font-family:"New Athena Unicode","Gentium Plus","Times New Roman",serif}
+.where{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;color:var(--ink-2)}
+.where b{color:var(--ink);font-weight:600}
+a{color:var(--accent)}
+.n{font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--ink-3);text-align:right}
+.q{background:var(--flag-soft);border-radius:4px;padding:1px 6px;font-size:11px;
+ color:var(--flag);font-weight:600;white-space:nowrap}
+footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--rule);font-size:12px;color:var(--ink-3)}
+code{font-family:ui-monospace,Menlo,monospace;font-size:.92em;background:var(--accent-soft);
+ padding:1px 5px;border-radius:4px}
+</style>
+<div class="wrap"><header>
+<div class="eyebrow">Wroot Press · verification sheet</div>
+<h1>Hebrew and Greek in the 1825 text</h1>
+<p class="lede">Every non-Latin-script word we have transcribed from Sumner's 1825 <i>De Doctrina Christiana</i>, with the volume and printed page it comes from and a direct link to that page's scan. <b>We read these off the plates; we are not specialists in either script.</b> Nothing here has been corrected toward what the grammar expects — the 1825 is reproduced as printed, errors included.</p>
+</header>
+<div class="warn"><b>What is being asked.</b> For each row: does our transcription match the plate, character for character and point for point? Rows marked <span class="q">QUERIED</span> are ones we already believe the <i>printed source</i> is wrong — there the question is what the page actually says, not what it ought to say.<br><br><b>Why we are asking rather than guessing.</b> The Greek below contains the cautionary case. Two words would not resolve in our scan, so we set them with standard accentuation and flagged them unverified. A cleaner scan later showed the book prints a <i>grave on the ultima</i> in both — our reconstruction from the grammar was simply wrong. The flag prevented a false claim; it did not prevent a false reading.</div>
+<h2>Hebrew <span class="meta">— 20 distinct, 49 occurrences</span></h2>
+<table class=""><thead><tr><th>As we read it</th><th>Where it is printed</th><th class="n">×</th></tr></thead><tbody>
+<tr><td class="tok" dir="rtl">
+אֶהְיֶה
+</td><td><div class="where"><b>Latin volume p.14</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n29.jpg" target="_blank" rel="noopener" title="working copy">n29</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n31.jpg" target="_blank" rel="noopener" title="cleaner second copy">n31</a><br><b>Latin volume p.14</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n29.jpg" target="_blank" rel="noopener" title="working copy">n29</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n31.jpg" target="_blank" rel="noopener" title="cleaner second copy">n31</a><br><b>English volume p.20</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n75.jpg" target="_blank" rel="noopener" title="working copy">n75</a><br><b>English volume p.20</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n75.jpg" target="_blank" rel="noopener" title="working copy">n75</a><br><b>English volume p.20</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n75.jpg" target="_blank" rel="noopener" title="working copy">n75</a></div>
+</td><td class="n">5</td></tr>
+<tr><td class="tok" dir="rtl">
+אֱלֹהִים
+</td><td><div class="where"><b>Latin volume p.18</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n33.jpg" target="_blank" rel="noopener" title="working copy">n33</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n35.jpg" target="_blank" rel="noopener" title="cleaner second copy">n35</a><br><b>Latin volume p.18</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n33.jpg" target="_blank" rel="noopener" title="working copy">n33</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n35.jpg" target="_blank" rel="noopener" title="cleaner second copy">n35</a><br><b>English volume p.26</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n81.jpg" target="_blank" rel="noopener" title="working copy">n81</a><br><b>English volume p.26</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n81.jpg" target="_blank" rel="noopener" title="working copy">n81</a></div>
+</td><td class="n">4</td></tr>
+<tr><td class="tok" dir="rtl">
+אֲדֹנָי
+</td><td><div class="where"><b>Latin volume p.14</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n29.jpg" target="_blank" rel="noopener" title="working copy">n29</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n31.jpg" target="_blank" rel="noopener" title="cleaner second copy">n31</a><br><b>Latin volume p.17</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n32.jpg" target="_blank" rel="noopener" title="working copy">n32</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n34.jpg" target="_blank" rel="noopener" title="cleaner second copy">n34</a><br><b>English volume p.21</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n76.jpg" target="_blank" rel="noopener" title="working copy">n76</a><br><b>English volume p.24</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n79.jpg" target="_blank" rel="noopener" title="working copy">n79</a></div>
+</td><td class="n">4</td></tr>
+<tr><td class="tok" dir="rtl">
+יְהֹוָה
+</td><td><div class="where"><b>Latin volume p.14</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n29.jpg" target="_blank" rel="noopener" title="working copy">n29</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n31.jpg" target="_blank" rel="noopener" title="cleaner second copy">n31</a><br><b>English volume p.20</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n75.jpg" target="_blank" rel="noopener" title="working copy">n75</a><br><b>English volume p.20</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n75.jpg" target="_blank" rel="noopener" title="working copy">n75</a><br><b>English volume p.20</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n75.jpg" target="_blank" rel="noopener" title="working copy">n75</a></div>
+</td><td class="n">4</td></tr>
+<tr><td class="tok" dir="rtl">
+יָה
+</td><td><div class="where"><b>Latin volume p.14</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n29.jpg" target="_blank" rel="noopener" title="working copy">n29</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n31.jpg" target="_blank" rel="noopener" title="cleaner second copy">n31</a><br><b>Latin volume p.14</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n29.jpg" target="_blank" rel="noopener" title="working copy">n29</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n31.jpg" target="_blank" rel="noopener" title="cleaner second copy">n31</a><br><b>English volume p.20</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n75.jpg" target="_blank" rel="noopener" title="working copy">n75</a><br><b>English volume p.21</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n76.jpg" target="_blank" rel="noopener" title="working copy">n76</a></div>
+</td><td class="n">4</td></tr>
+<tr><td class="tok" dir="rtl">
+קְלָלָה
+</td><td><div class="where"><b>Latin volume p.441</b> <span style="color:var(--ink-3)">ddc-2-06</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n456.jpg" target="_blank" rel="noopener" title="working copy">n456</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n458.jpg" target="_blank" rel="noopener" title="cleaner second copy">n458</a><br><b>English volume p.594</b> <span style="color:var(--ink-3)">ddc-2-06</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n649.jpg" target="_blank" rel="noopener" title="working copy">n649</a><br><b>our note on p.441</b> <span class="q">OUR CLAIM</span> <span style="color:var(--ink-3)">ddc-2-06</span> — <span style="color:var(--ink-3)">see the rows above</span></div>
+</td><td class="n">3</td></tr>
+<tr><td class="tok" dir="rtl">
+קִלֵּל
+</td><td><div class="where"><b>Latin volume p.441</b> <span style="color:var(--ink-3)">ddc-2-06</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n456.jpg" target="_blank" rel="noopener" title="working copy">n456</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n458.jpg" target="_blank" rel="noopener" title="cleaner second copy">n458</a><br><b>English volume p.594</b> <span style="color:var(--ink-3)">ddc-2-06</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n649.jpg" target="_blank" rel="noopener" title="working copy">n649</a><br><b>our note on p.441</b> <span class="q">OUR CLAIM</span> <span style="color:var(--ink-3)">ddc-2-06</span> — <span style="color:var(--ink-3)">see the rows above</span></div>
+</td><td class="n">3</td></tr>
+<tr><td class="tok" dir="rtl">
+אֱלֹהִים־בָּרִים
+</td><td><span class="q">QUERIED</span> <span style="font-size:12.5px;color:var(--ink-2)">Matches neither Psalm cited (vii. 10 / lxxxvi. 10), identically in BOTH volumes. Consonants confirmed at the plate. Probable error in the source — not mended in either layer.</span><div class="where" style="margin-top:7px"><b>Latin volume p.18</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n33.jpg" target="_blank" rel="noopener" title="working copy">n33</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n35.jpg" target="_blank" rel="noopener" title="cleaner second copy">n35</a><br><b>English volume p.26</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n81.jpg" target="_blank" rel="noopener" title="working copy">n81</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok" dir="rtl">
+אֱלֹהַּ
+</td><td><div class="where"><b>Latin volume p.18</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n33.jpg" target="_blank" rel="noopener" title="working copy">n33</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n35.jpg" target="_blank" rel="noopener" title="cleaner second copy">n35</a><br><b>English volume p.26</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n81.jpg" target="_blank" rel="noopener" title="working copy">n81</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok" dir="rtl">
+בְּרוּבָה
+</td><td><span class="q">QUERIED</span> <span style="font-size:12.5px;color:var(--ink-2)">Printed in the ENGLISH volume only (En 594) and is not a word; the Latin volume is sound here. Carried with an editorial note, per §5c.</span><div class="where" style="margin-top:7px"><b>English volume p.594</b> <span style="color:var(--ink-3)">ddc-2-06</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n649.jpg" target="_blank" rel="noopener" title="working copy">n649</a><br><b>our note on p.594</b> <span class="q">OUR CLAIM</span> <span style="color:var(--ink-3)">ddc-2-06</span> — <span style="color:var(--ink-3)">see the rows above</span></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok" dir="rtl">
+בִּדֵּו
+</td><td><span class="q">QUERIED</span> <span style="font-size:12.5px;color:var(--ink-2)">Printed in the ENGLISH volume only (En 594) and is not a word; the Latin volume is sound here. Carried with an editorial note, per §5c.</span><div class="where" style="margin-top:7px"><b>English volume p.594</b> <span style="color:var(--ink-3)">ddc-2-06</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n649.jpg" target="_blank" rel="noopener" title="working copy">n649</a><br><b>our note on p.594</b> <span class="q">OUR CLAIM</span> <span style="color:var(--ink-3)">ddc-2-06</span> — <span style="color:var(--ink-3)">see the rows above</span></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok" dir="rtl">
+בָּרָא
+</td><td><div class="where"><b>Latin volume p.18</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n33.jpg" target="_blank" rel="noopener" title="working copy">n33</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n35.jpg" target="_blank" rel="noopener" title="cleaner second copy">n35</a><br><b>English volume p.26</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n81.jpg" target="_blank" rel="noopener" title="working copy">n81</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok" dir="rtl">
+גְּדוּפָה
+</td><td><div class="where"><b>Latin volume p.441</b> <span style="color:var(--ink-3)">ddc-2-06</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n456.jpg" target="_blank" rel="noopener" title="working copy">n456</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n458.jpg" target="_blank" rel="noopener" title="cleaner second copy">n458</a><br><b>our note on p.441</b> <span class="q">OUR CLAIM</span> <span style="color:var(--ink-3)">ddc-2-06</span> — <span style="color:var(--ink-3)">see the rows above</span></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok" dir="rtl">
+גִּדֵּף
+</td><td><div class="where"><b>Latin volume p.441</b> <span style="color:var(--ink-3)">ddc-2-06</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n456.jpg" target="_blank" rel="noopener" title="working copy">n456</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n458.jpg" target="_blank" rel="noopener" title="cleaner second copy">n458</a><br><b>our note on p.441</b> <span class="q">OUR CLAIM</span> <span style="color:var(--ink-3)">ddc-2-06</span> — <span style="color:var(--ink-3)">see the rows above</span></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok" dir="rtl">
+הָוָה
+</td><td><div class="where"><b>English volume p.20</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n75.jpg" target="_blank" rel="noopener" title="working copy">n75</a><br><b>English volume p.20</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n75.jpg" target="_blank" rel="noopener" title="working copy">n75</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok" dir="rtl">
+נֶשֶׁךְ
+</td><td><div class="where"><b>Latin volume p.508</b> <span style="color:var(--ink-3)">ddc-2-14</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n523.jpg" target="_blank" rel="noopener" title="working copy">n523</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n525.jpg" target="_blank" rel="noopener" title="cleaner second copy">n525</a><br><b>English volume p.676</b> <span style="color:var(--ink-3)">ddc-2-14</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n731.jpg" target="_blank" rel="noopener" title="working copy">n731</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok" dir="rtl">
+גדף
+</td><td><div class="where"><b>our note on p.441</b> <span class="q">OUR CLAIM</span> <span style="color:var(--ink-3)">ddc-2-06</span> — <span style="color:var(--ink-3)">see the rows above</span></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok" dir="rtl">
+יְהֹוֶה
+</td><td><div class="where"><b>English volume p.20</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n75.jpg" target="_blank" rel="noopener" title="working copy">n75</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok" dir="rtl">
+יַהְוֶה
+</td><td><div class="where"><b>English volume p.20</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n75.jpg" target="_blank" rel="noopener" title="working copy">n75</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok" dir="rtl">
+קלל
+</td><td><div class="where"><b>our note on p.441</b> <span class="q">OUR CLAIM</span> <span style="color:var(--ink-3)">ddc-2-06</span> — <span style="color:var(--ink-3)">see the rows above</span></div>
+</td><td class="n">1</td></tr>
+</tbody></table>
+<h2>Greek <span class="meta">— 70 distinct, 91 occurrences</span></h2>
+<table class="grk"><thead><tr><th>As we read it</th><th>Where it is printed</th><th class="n">×</th></tr></thead><tbody>
+<tr><td class="tok">
+Κύριος
+</td><td><div class="where"><b>Latin volume p.14</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n29.jpg" target="_blank" rel="noopener" title="working copy">n29</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n31.jpg" target="_blank" rel="noopener" title="cleaner second copy">n31</a><br><b>Latin volume p.17</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n32.jpg" target="_blank" rel="noopener" title="working copy">n32</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n34.jpg" target="_blank" rel="noopener" title="cleaner second copy">n34</a><br><b>English volume p.20</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n75.jpg" target="_blank" rel="noopener" title="working copy">n75</a></div>
+</td><td class="n">3</td></tr>
+<tr><td class="tok">
+νὴ
+</td><td><div class="where"><b>Latin volume p.433</b> <span style="color:var(--ink-3)">ddc-2-05</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n448.jpg" target="_blank" rel="noopener" title="working copy">n448</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n450.jpg" target="_blank" rel="noopener" title="cleaner second copy">n450</a><br><b>English volume p.584</b> <span style="color:var(--ink-3)">ddc-2-05</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n639.jpg" target="_blank" rel="noopener" title="working copy">n639</a><br><b>English volume p.584</b> <span style="color:var(--ink-3)">ddc-2-05</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n639.jpg" target="_blank" rel="noopener" title="working copy">n639</a></div>
+</td><td class="n">3</td></tr>
+<tr><td class="tok">
+τὸ
+</td><td><div class="where"><b>Latin volume p.14</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n29.jpg" target="_blank" rel="noopener" title="working copy">n29</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n31.jpg" target="_blank" rel="noopener" title="cleaner second copy">n31</a><br><b>English volume p.19</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n74.jpg" target="_blank" rel="noopener" title="working copy">n74</a><br><b>English volume p.563</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-2-04-b</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n618.jpg" target="_blank" rel="noopener" title="working copy">n618</a></div>
+</td><td class="n">3</td></tr>
+<tr><td class="tok">
+ά
+</td><td><div class="where"><b>Latin volume p.465</b> <span style="color:var(--ink-3)">ddc-2-09</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n480.jpg" target="_blank" rel="noopener" title="working copy">n480</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n482.jpg" target="_blank" rel="noopener" title="cleaner second copy">n482</a><br><b>English volume p.625</b> <span style="color:var(--ink-3)">ddc-2-09</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n680.jpg" target="_blank" rel="noopener" title="working copy">n680</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok">
+βλασφημία
+</td><td><div class="where"><b>Latin volume p.441</b> <span style="color:var(--ink-3)">ddc-2-06</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n456.jpg" target="_blank" rel="noopener" title="working copy">n456</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n458.jpg" target="_blank" rel="noopener" title="cleaner second copy">n458</a><br><b>English volume p.594</b> <span style="color:var(--ink-3)">ddc-2-06</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n649.jpg" target="_blank" rel="noopener" title="working copy">n649</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok">
+δουλεία
+</td><td><div class="where"><b>English volume p.557</b> <span style="color:var(--ink-3)">ddc-2-04-a</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n612.jpg" target="_blank" rel="noopener" title="working copy">n612</a><br><b>English volume p.557</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-2-04-a</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n612.jpg" target="_blank" rel="noopener" title="working copy">n612</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok">
+δουλεύειν
+</td><td><div class="where"><b>Latin volume p.413</b> <span style="color:var(--ink-3)">ddc-2-04-a</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n428.jpg" target="_blank" rel="noopener" title="working copy">n428</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n430.jpg" target="_blank" rel="noopener" title="cleaner second copy">n430</a><br><b>English volume p.557</b> <span style="color:var(--ink-3)">ddc-2-04-a</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n612.jpg" target="_blank" rel="noopener" title="working copy">n612</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok">
+θεῖον
+</td><td><div class="where"><b>Latin volume p.14</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n29.jpg" target="_blank" rel="noopener" title="working copy">n29</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n31.jpg" target="_blank" rel="noopener" title="cleaner second copy">n31</a><br><b>English volume p.19</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n74.jpg" target="_blank" rel="noopener" title="working copy">n74</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok">
+λατρεύειν
+</td><td><div class="where"><b>Latin volume p.413</b> <span style="color:var(--ink-3)">ddc-2-04-a</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n428.jpg" target="_blank" rel="noopener" title="working copy">n428</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n430.jpg" target="_blank" rel="noopener" title="cleaner second copy">n430</a><br><b>English volume p.557</b> <span style="color:var(--ink-3)">ddc-2-04-a</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n612.jpg" target="_blank" rel="noopener" title="working copy">n612</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok">
+μόρφωσις
+</td><td><div class="where"><b>Latin volume p.9</b> <span style="color:var(--ink-3)">ddc-1-01</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n24.jpg" target="_blank" rel="noopener" title="working copy">n24</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n26.jpg" target="_blank" rel="noopener" title="cleaner second copy">n26</a><br><b>English volume p.11</b> <span style="color:var(--ink-3)">ddc-1-01</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n66.jpg" target="_blank" rel="noopener" title="working copy">n66</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok">
+παρὰ
+</td><td><div class="where"><b>Latin volume p.465</b> <span style="color:var(--ink-3)">ddc-2-09</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n480.jpg" target="_blank" rel="noopener" title="working copy">n480</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n482.jpg" target="_blank" rel="noopener" title="cleaner second copy">n482</a><br><b>English volume p.625</b> <span style="color:var(--ink-3)">ddc-2-09</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n680.jpg" target="_blank" rel="noopener" title="working copy">n680</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok">
+ποιητοῖο
+</td><td><div class="where"><b>Latin volume p.465</b> <span style="color:var(--ink-3)">ddc-2-09</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n480.jpg" target="_blank" rel="noopener" title="working copy">n480</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n482.jpg" target="_blank" rel="noopener" title="cleaner second copy">n482</a><br><b>English volume p.625</b> <span style="color:var(--ink-3)">ddc-2-09</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n680.jpg" target="_blank" rel="noopener" title="working copy">n680</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok">
+πύκα
+</td><td><div class="where"><b>Latin volume p.465</b> <span style="color:var(--ink-3)">ddc-2-09</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n480.jpg" target="_blank" rel="noopener" title="working copy">n480</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n482.jpg" target="_blank" rel="noopener" title="cleaner second copy">n482</a><br><b>English volume p.625</b> <span style="color:var(--ink-3)">ddc-2-09</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n680.jpg" target="_blank" rel="noopener" title="working copy">n680</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok">
+σταθμὸν
+</td><td><div class="where"><b>Latin volume p.465</b> <span style="color:var(--ink-3)">ddc-2-09</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n480.jpg" target="_blank" rel="noopener" title="working copy">n480</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n482.jpg" target="_blank" rel="noopener" title="cleaner second copy">n482</a><br><b>English volume p.625</b> <span style="color:var(--ink-3)">ddc-2-09</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n680.jpg" target="_blank" rel="noopener" title="working copy">n680</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok">
+στῆ
+</td><td><div class="where"><b>Latin volume p.465</b> <span style="color:var(--ink-3)">ddc-2-09</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n480.jpg" target="_blank" rel="noopener" title="working copy">n480</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n482.jpg" target="_blank" rel="noopener" title="cleaner second copy">n482</a><br><b>English volume p.625</b> <span style="color:var(--ink-3)">ddc-2-09</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n680.jpg" target="_blank" rel="noopener" title="working copy">n680</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok">
+τέγεος
+</td><td><div class="where"><b>Latin volume p.465</b> <span style="color:var(--ink-3)">ddc-2-09</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n480.jpg" target="_blank" rel="noopener" title="working copy">n480</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n482.jpg" target="_blank" rel="noopener" title="cleaner second copy">n482</a><br><b>English volume p.625</b> <span style="color:var(--ink-3)">ddc-2-09</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n680.jpg" target="_blank" rel="noopener" title="working copy">n680</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok">
+ὑποστασέως
+</td><td><div class="where"><b>English volume p.21</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n76.jpg" target="_blank" rel="noopener" title="working copy">n76</a><br><b>English volume p.21</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n76.jpg" target="_blank" rel="noopener" title="working copy">n76</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok">
+ῥα
+</td><td><div class="where"><b>Latin volume p.465</b> <span style="color:var(--ink-3)">ddc-2-09</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n480.jpg" target="_blank" rel="noopener" title="working copy">n480</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n482.jpg" target="_blank" rel="noopener" title="cleaner second copy">n482</a><br><b>English volume p.625</b> <span style="color:var(--ink-3)">ddc-2-09</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n680.jpg" target="_blank" rel="noopener" title="working copy">n680</a></div>
+</td><td class="n">2</td></tr>
+<tr><td class="tok">
+ΑΥΤΑΡΚΕΙΑ
+</td><td><div class="where"><b>Latin volume p.466</b> <span style="color:var(--ink-3)">ddc-2-09</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n481.jpg" target="_blank" rel="noopener" title="working copy">n481</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n483.jpg" target="_blank" rel="noopener" title="cleaner second copy">n483</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+Θειοτὴς
+</td><td><div class="where"><b>Latin volume p.14</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n29.jpg" target="_blank" rel="noopener" title="working copy">n29</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n31.jpg" target="_blank" rel="noopener" title="cleaner second copy">n31</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+Θεοτὴς
+</td><td><div class="where"><b>Latin volume p.14</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n29.jpg" target="_blank" rel="noopener" title="working copy">n29</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n31.jpg" target="_blank" rel="noopener" title="cleaner second copy">n31</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+αἰών
+</td><td><div class="where"><b>English volume p.22</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n77.jpg" target="_blank" rel="noopener" title="working copy">n77</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+αὐταρκεία
+</td><td><div class="where"><b>Latin volume p.466</b> <span style="color:var(--ink-3)">ddc-2-09</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n481.jpg" target="_blank" rel="noopener" title="working copy">n481</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n483.jpg" target="_blank" rel="noopener" title="cleaner second copy">n483</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+αὐτοῦ
+</td><td><div class="where"><b>English volume p.21</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n76.jpg" target="_blank" rel="noopener" title="working copy">n76</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+βλάσφημον
+</td><td><div class="where"><b>English volume p.595</b> <span style="color:var(--ink-3)">ddc-2-06</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n650.jpg" target="_blank" rel="noopener" title="working copy">n650</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+βλασφημοῦντες
+</td><td><div class="where"><b>English volume p.595</b> <span style="color:var(--ink-3)">ddc-2-06</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n650.jpg" target="_blank" rel="noopener" title="working copy">n650</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+δουλεύω
+</td><td><div class="where"><b>English volume p.557</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-2-04-a</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n612.jpg" target="_blank" rel="noopener" title="working copy">n612</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+δούλειαν
+</td><td><div class="where"><b>Latin volume p.413</b> <span style="color:var(--ink-3)">ddc-2-04-a</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n428.jpg" target="_blank" rel="noopener" title="working copy">n428</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n430.jpg" target="_blank" rel="noopener" title="cleaner second copy">n430</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+δυνάστης
+</td><td><div class="where"><b>Latin volume p.17</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n32.jpg" target="_blank" rel="noopener" title="working copy">n32</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n34.jpg" target="_blank" rel="noopener" title="cleaner second copy">n34</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+εὐθυρρήμονα
+</td><td><div class="where"><b>English volume p.669</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-2-13</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n724.jpg" target="_blank" rel="noopener" title="working copy">n724</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+εὐσχήμονα
+</td><td><div class="where"><b>English volume p.669</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-2-13</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n724.jpg" target="_blank" rel="noopener" title="working copy">n724</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+εὐτραπελία
+</td><td><div class="where"><b>English volume p.668</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-2-13</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n723.jpg" target="_blank" rel="noopener" title="working copy">n723</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+θειοτὴς
+</td><td><div class="where"><b>English volume p.19</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n74.jpg" target="_blank" rel="noopener" title="working copy">n74</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+θεοτὴς
+</td><td><div class="where"><b>English volume p.19</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n74.jpg" target="_blank" rel="noopener" title="working copy">n74</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+καρδιογνώστης
+</td><td><div class="where"><b>Latin volume p.19</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n34.jpg" target="_blank" rel="noopener" title="working copy">n34</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n36.jpg" target="_blank" rel="noopener" title="cleaner second copy">n36</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+κατὰ
+</td><td><div class="where"><b>English volume p.610</b> <span style="color:var(--ink-3)">ddc-2-07</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n665.jpg" target="_blank" rel="noopener" title="working copy">n665</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+καύχησιν
+</td><td><div class="where"><b>English volume p.584</b> <span style="color:var(--ink-3)">ddc-2-05</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n639.jpg" target="_blank" rel="noopener" title="working copy">n639</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+κρίσιν
+</td><td><div class="where"><b>English volume p.595</b> <span style="color:var(--ink-3)">ddc-2-06</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n650.jpg" target="_blank" rel="noopener" title="working copy">n650</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+λάτρειαν
+</td><td><div class="where"><b>Latin volume p.413</b> <span style="color:var(--ink-3)">ddc-2-04-a</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n428.jpg" target="_blank" rel="noopener" title="working copy">n428</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n430.jpg" target="_blank" rel="noopener" title="cleaner second copy">n430</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+λατρεία
+</td><td><div class="where"><b>English volume p.557</b> <span style="color:var(--ink-3)">ddc-2-04-a</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n612.jpg" target="_blank" rel="noopener" title="working copy">n612</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+μίαν
+</td><td><div class="where"><b>English volume p.610</b> <span style="color:var(--ink-3)">ddc-2-07</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n665.jpg" target="_blank" rel="noopener" title="working copy">n665</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+μόνος
+</td><td><div class="where"><b>Latin volume p.17</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n32.jpg" target="_blank" rel="noopener" title="working copy">n32</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n34.jpg" target="_blank" rel="noopener" title="cleaner second copy">n34</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+πάντων
+</td><td><div class="where"><b>Latin volume p.19</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n34.jpg" target="_blank" rel="noopener" title="working copy">n34</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n36.jpg" target="_blank" rel="noopener" title="cleaner second copy">n36</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+παντοκράτωρ
+</td><td><div class="where"><b>Latin volume p.17</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n32.jpg" target="_blank" rel="noopener" title="working copy">n32</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n34.jpg" target="_blank" rel="noopener" title="cleaner second copy">n34</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+σαββάτων
+</td><td><div class="where"><b>English volume p.610</b> <span style="color:var(--ink-3)">ddc-2-07</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n665.jpg" target="_blank" rel="noopener" title="working copy">n665</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+τυπὸς
+</td><td><div class="where"><b>English volume p.11</b> <span style="color:var(--ink-3)">ddc-1-01</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n66.jpg" target="_blank" rel="noopener" title="working copy">n66</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+τύπος
+</td><td><div class="where"><b>Latin volume p.8</b> <span style="color:var(--ink-3)">ddc-1-01</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n23.jpg" target="_blank" rel="noopener" title="working copy">n23</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n25.jpg" target="_blank" rel="noopener" title="cleaner second copy">n25</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+τύπωσις
+</td><td><div class="where"><b>Latin volume p.9</b> <span style="color:var(--ink-3)">ddc-1-01</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n24.jpg" target="_blank" rel="noopener" title="working copy">n24</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n26.jpg" target="_blank" rel="noopener" title="cleaner second copy">n26</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+τὴν
+</td><td><div class="where"><b>English volume p.584</b> <span style="color:var(--ink-3)">ddc-2-05</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n639.jpg" target="_blank" rel="noopener" title="working copy">n639</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+τῆς
+</td><td><div class="where"><b>English volume p.21</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n76.jpg" target="_blank" rel="noopener" title="working copy">n76</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+φιλαυτία
+</td><td><div class="where"><b>Latin volume p.458</b> <span style="color:var(--ink-3)">ddc-2-08</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n473.jpg" target="_blank" rel="noopener" title="working copy">n473</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n475.jpg" target="_blank" rel="noopener" title="cleaner second copy">n475</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+χαρακτὴρ
+</td><td><div class="where"><b>English volume p.21</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n76.jpg" target="_blank" rel="noopener" title="working copy">n76</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+ἀεὶ
+</td><td><div class="where"><b>English volume p.22</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n77.jpg" target="_blank" rel="noopener" title="working copy">n77</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+ἀλλοτριοεπίσκοπος
+</td><td><div class="where"><b>Latin volume p.516</b> <span style="color:var(--ink-3)">ddc-2-15</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n531.jpg" target="_blank" rel="noopener" title="working copy">n531</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n533.jpg" target="_blank" rel="noopener" title="cleaner second copy">n533</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+ἀνθρωποπαθείᾳ
+</td><td><div class="where"><b>Latin volume p.12</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n27.jpg" target="_blank" rel="noopener" title="working copy">n27</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n29.jpg" target="_blank" rel="noopener" title="cleaner second copy">n29</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+ἀνθρωποπαθῶς
+</td><td><div class="where"><b>Latin volume p.12</b> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n27.jpg" target="_blank" rel="noopener" title="working copy">n27</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n29.jpg" target="_blank" rel="noopener" title="cleaner second copy">n29</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+ἀπάθεια
+</td><td><div class="where"><b>Latin volume p.476</b> <span style="color:var(--ink-3)">ddc-2-10</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n491.jpg" target="_blank" rel="noopener" title="working copy">n491</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n493.jpg" target="_blank" rel="noopener" title="cleaner second copy">n493</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+ἀτοπία
+</td><td><div class="where"><b>Latin volume p.388</b> <span style="color:var(--ink-3)">ddc-2-01</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n403.jpg" target="_blank" rel="noopener" title="working copy">n403</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n405.jpg" target="_blank" rel="noopener" title="cleaner second copy">n405</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+ἀφθάρτῳ
+</td><td><div class="where"><b>English volume p.23</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n78.jpg" target="_blank" rel="noopener" title="working copy">n78</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+ἐθελοθρήσκεια
+</td><td><div class="where"><b>Latin volume p.413</b> <span style="color:var(--ink-3)">ddc-2-04-a</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n428.jpg" target="_blank" rel="noopener" title="working copy">n428</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n430.jpg" target="_blank" rel="noopener" title="cleaner second copy">n430</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+ἐθελοθρησκεία
+</td><td><div class="where"><b>English volume p.557</b> <span style="color:var(--ink-3)">ddc-2-04-a</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n612.jpg" target="_blank" rel="noopener" title="working copy">n612</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+ἐπιχαιρεκακία
+</td><td><div class="where"><b>Latin volume p.482</b> <span style="color:var(--ink-3)">ddc-2-11</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n497.jpg" target="_blank" rel="noopener" title="working copy">n497</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n499.jpg" target="_blank" rel="noopener" title="cleaner second copy">n499</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+ἔχε
+</td><td><div class="where"><b>Latin volume p.8</b> <span style="color:var(--ink-3)">ddc-1-01</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n23.jpg" target="_blank" rel="noopener" title="working copy">n23</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n25.jpg" target="_blank" rel="noopener" title="cleaner second copy">n25</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+ἡμετέραν
+</td><td><div class="where"><b>English volume p.584</b> <span style="color:var(--ink-3)">ddc-2-05</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n639.jpg" target="_blank" rel="noopener" title="working copy">n639</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+ὑπο
+</td><td><div class="where"><b>Latin volume p.8</b> <span style="color:var(--ink-3)">ddc-1-01</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n23.jpg" target="_blank" rel="noopener" title="working copy">n23</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n25.jpg" target="_blank" rel="noopener" title="cleaner second copy">n25</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+ὑποτύπωσιν
+</td><td><div class="where"><b>Latin volume p.8</b> <span style="color:var(--ink-3)">ddc-1-01</span> — <a href="https://archive.org/download/joannismiltonian00miltuoft/page/n23.jpg" target="_blank" rel="noopener" title="working copy">n23</a> · <a href="https://archive.org/download/bwb_T5-ARK-705/page/n25.jpg" target="_blank" rel="noopener" title="cleaner second copy">n25</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+ὑποτύπωσις
+</td><td><div class="where"><b>English volume p.11</b> <span style="color:var(--ink-3)">ddc-1-01</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n66.jpg" target="_blank" rel="noopener" title="working copy">n66</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+ὑπόστασις
+</td><td><div class="where"><b>English volume p.21</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n76.jpg" target="_blank" rel="noopener" title="working copy">n76</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+ὤν
+</td><td><div class="where"><b>English volume p.22</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-1-02</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n77.jpg" target="_blank" rel="noopener" title="working copy">n77</a></div>
+</td><td class="n">1</td></tr>
+<tr><td class="tok">
+ῥητὸν
+</td><td><div class="where"><b>English volume p.563</b> <span style="color:var(--ink-3)">(in a footnote)</span> <span style="color:var(--ink-3)">ddc-2-04-b</span> — <a href="https://archive.org/download/treatiseonchrist00milt/page/n618.jpg" target="_blank" rel="noopener" title="working copy">n618</a></div>
+</td><td class="n">1</td></tr>
+</tbody></table>
+<footer>Source text public domain (Sumner, Cambridge 1825). Generated from <code>chunks/</code> by <code>./tools/build-script-check.py</code> — regenerate after each chapter; nothing on this page is hand-kept.</footer>
+</div>

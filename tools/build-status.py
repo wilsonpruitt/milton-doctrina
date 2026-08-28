@@ -34,11 +34,10 @@ OPEN_ITEMS = [
     ("watch", "Hebrew pointing is UNVERIFIED",
      "Read by us, not a specialist (§5c). אֱלֹהִים־בָּרִים at La 18 / En 26 matches neither "
      "Psalm cited, identically in both volumes — probable error in the source."),
-    ("watch", "Greek accents unresolvable on Θεότης / Θειότης — in the LATIN volume",
-     "Letters certain, accents not readable at 1400 dpi; that is the scan's ceiling. "
-     "The ENGLISH volume settles its own: En 19 prints θεοτὴς and θειοτὴς, legible at 1200 dpi. "
-     "That does not license repairing the Latin from the English (§3), so the Latin stays "
-     "UNVERIFIED and the English no longer is."),
+    ("watch", "A 2nd scan exists; use it before writing \'unresolvable\'",
+     "archive.org bwb_T5-ARK-705 is a cleaner Latin volume, leaf = printed + 17. It settled the "
+     "Theotes/Theiotes accents our own scan could not -- and showed the standard-accentuation "
+     "fallback we had used was WRONG. See STRUCTURE.md."),
     ("watch", "Anchors can exist with no definition",
      "ddc-1-02 shipped its Latin layer with [^la1] and [^la2] anchored and no "
      "apparatus-sumner-la section at all, and it was not on the owed list. Check every "

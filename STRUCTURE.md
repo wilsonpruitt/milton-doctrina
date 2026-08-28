@@ -86,3 +86,31 @@ inline here to avoid a second copy going stale — regenerate, don't hand-copy.
   system of divinity which he collected from the most eminent writers upon that subject, as
   Amesius, Wollebius, &c." — external period confirmation of exactly the loci pairing the plan
   proposes, found incidentally during this session.
+
+## Second scans and page-image links (added 2026-08-28)
+
+Our working copies are not the only digitisations, and the alternates are two fetches away
+(one of them calibration). Endpoint, following redirects:
+`https://archive.org/download/<id>/page/n<LEAF>.jpg`
+
+⚠ **The LEAF offset is not the PDF offset.** The offsets above (`pdf = printed + 16` La,
+`+ 56` En) are for `pdftoppm`/`pdftotext`. archive.org's leaf numbering is 0-based and every
+leaf offset is **one less**. Each value below was calibrated by fetching a leaf and reading its
+printed folio — none was inferred, and the first attempt at inferring them was wrong.
+
+| volume | identifier | leaf offset | calibration | note |
+|---|---|---|---|---|
+| Latin | `joannismiltonian00miltuoft` | **+15** | n30 = printed 15 | working copy, 572 leaves |
+| Latin | `bwb_T5-ARK-705` | **+17** | n30 = printed 13 | **cleaner second copy**, 568 leaves |
+| English | `treatiseonchrist00milt` | **+55** | n76 = printed 21 | working copy, 782 leaves |
+
+Uncalibrated alternates, if ever needed: English `treatiseonchrist00miltrich` (780 leaves),
+`atreatiseonchri00miltgoog` (724).
+
+`bwb_T5-ARK-705` is **markedly cleaner** than our Latin working copy — less foxing, higher
+contrast. It settled the `Θεοτὴς` / `Θειοτὴς` accents that would not resolve at 1400 dpi in ours,
+**and showed that the standard-accentuation fallback we had used in their place was wrong.**
+Reach for it before recording any Latin-side reading as unresolvable.
+
+`tools/build-script-check.py` uses this table to deep-link every Hebrew and Greek token on
+`script-check.html` to its own page image, in every scan that carries it.
