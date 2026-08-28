@@ -21,9 +21,6 @@ OPEN_ITEMS = [
      "Latin done and plate-verified; all 17 English plates READ, alignment and ledger settled. "
      "Only the writing remains, one paragraph per edit (a batched write tripped a content filter). "
      "Read the chunk's Notes first — nothing there needs re-deriving."),
-    ("watch", "Three-way splits need ratification",
-     "The 2026-08-27 ruling defines {¶N} + {¶N cont.}, a two-way split. I.ii has two THREE-way "
-     "splits; {¶N cont. 2} used, following §5b's house pattern."),
     ("watch", "sweep-book1.tsv is unreliable",
      "The Latin-footnote detector missed BOTH notes in I.ii (La 12, La 20). "
      "It may suggest where to look in Book I; it cannot decide. Read every Latin foot."),

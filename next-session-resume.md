@@ -228,7 +228,7 @@ State: Book II complete (17/17). Book I: **I.i verified**, **I.ii Latin-verified
 1. `./tools/prep-chapter.sh 1 2` — the plates are gitignored; re-render before reading any.
 2. Write `## en-sumner`, En 13–29, **37 paragraphs**, **one paragraph per edit**. A batched write
    tripped a content filter on 2026-08-28; M3-RUNBOOK §10 is the procedure and it works.
-   The alignment is settled — 32 La ¶¶ → 37 En ¶¶, **three splits, no merges**, listed in the chunk.
+   The alignment is settled — 32 La ¶¶ → 37 En ¶¶, **three splits, no merges**, listed in the chunk; two are three-piece, labelled `{¶N cont. 2}` per CONVENTIONS §4 (ratified 2026-08-28).
 3. Write `## apparatus-sumner-en` — **17 notes**, numbers and anchors already assigned in the chunk.
 4. Write `## headnote` (aim 200 words, hard cap 300).
 5. Add **three** rows to `tools/sumner-interventions.tsv`: La 12, La 20, **and En 20's note 7** —
@@ -239,13 +239,6 @@ State: Book II complete (17/17). Book I: **I.i verified**, **I.ii Latin-verified
 
 **▶ THEN `ddc-1-03`** *De Divino Decreto* — La 22–30 / En 30–43. **Its first English note must be 8**
 (I.ii closes at 7).
-
-## ⚠⚠ ONE CONVENTION QUESTION IS WAITING ON WILSON
-
-**Three-way splits.** The convention ratified 2026-08-27 defines only `{¶N}` + `{¶N cont.}`, which
-covers a two-way split. I.ii has **two three-way splits** (La {¶10} and {¶22}) as well as a two-way
-one ({¶16}). The chunk uses `{¶N cont. 2}` for the third piece, following the house pattern of
-CONVENTIONS §5b (append `-2` to a repeated label). **Needs ratification**; nothing else is blocked.
 
 ## ⚠ TWO THINGS I.ii CHANGED ABOUT HOW BOOK I MUST BE WORKED
 

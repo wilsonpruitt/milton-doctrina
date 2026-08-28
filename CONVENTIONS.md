@@ -96,11 +96,30 @@ truncated quotes and sometimes drops an `&c.` — same rule, don't "fix" either 
 - The **Latin paragraphing is the reference grid**: number every La paragraph `{¶1}…{¶N}` in
   reading order.
 - Each `en-sumner` paragraph opens with the La paragraph(s) it renders: `{¶4}`, or `{¶2–3}` for
-  Sumner's **merges**, or `{¶35}` + `{¶35 cont.}` for his **splits** (ratified 2026-08-27, Wilson;
-  first needed at II.xi, again at II.xiii). Coverage must be complete and monotonic — **every La ¶
-  is fully accounted for on the En side, once as a whole or once across its `cont.` pieces.**
-  (The old wording, "appears exactly once", was written before a split had been seen and is false
-  as stated; corrected 2026-08-27.) Verify per chunk; record merges and splits in `## Notes`.
+  Sumner's **merges**, or the `cont.` series below for his **splits**. Coverage must be complete and
+  monotonic — **every La ¶ is fully accounted for on the En side, once as a whole or once across its
+  `cont.` pieces.** (The old wording, "appears exactly once", was written before a split had been
+  seen and is false as stated; corrected 2026-08-27.) Verify per chunk; record merges and splits in
+  `## Notes`.
+- **Splits, of any width** (ratified 2026-08-27 for two pieces, extended 2026-08-28 for three or
+  more; Wilson). Where Sumner divides one Latin paragraph across several English ones, the first
+  English piece takes the plain label and each later piece continues it:
+
+  | pieces | labels |
+  |---|---|
+  | two | `{¶35}` · `{¶35 cont.}` |
+  | three | `{¶10}` · `{¶10 cont.}` · `{¶10 cont. 2}` |
+  | four | `{¶10}` · `{¶10 cont.}` · `{¶10 cont. 2}` · `{¶10 cont. 3}` |
+
+  The numbered continuations follow the house pattern of §5b, which appends `-2`, `-3`, … to a
+  repeated anchor label; the same logic, so the two rules read as one. First needed at II.xi (two
+  pieces), then I.ii, which has **two three-piece splits** ({¶10}, {¶22}) as well as a two-piece one
+  ({¶16}).
+- **Expect merges in Book II and splits in Book I.** Book II is merge-dominated — Sumner welds
+  Milton's short proof-text paragraphs together. Book I's opening chapters are split-dominated —
+  Milton's prose there is long and argumentative and Sumner breaks it up (I.ii: 32 La ¶¶ → 37 En,
+  three splits, no merges). The direction of the mismatch reverses between the books; do not carry
+  an expectation from one into the other.
 - Pilot measurement: 28 La ¶¶ → 25 En ¶¶, three merges. Sumner also converts Milton's `Et …`
   coordination of vices into `First/Secondly/Thirdly/Fourthly` enumeration — structural habit,
   expect it throughout; it does not break ¶ alignment.
