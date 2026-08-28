@@ -89,3 +89,28 @@ is *concluded*, not where it is *argued*.**
 - **Citation suspects to test against the English**: `Num. xxiii. 23` (words are 23:19) ·
   `Isa. xliv. 1` (words are 44:6) · `Isa. v. 3` (words are 44:8).
 - Extent: La 10–21 confirmed, `CAP. III` opens La 22. Signatures La `c 2`@11, `D`@17, `D 2`@19.
+
+---
+
+## ★★★ RESOLVED 2026-08-28 — THE BOOK I FOOTNOTE NUMBERING QUESTION
+
+**The English 1–9 cycle runs continuously through the ENTIRE volume, front matter included.**
+
+- **En pp. 1–8 are Sumner's PREFACE, and they carry notes 1–8.** Confirmed on the plate: En p. 7
+  carries note **⁷** (*Of Reformation in England*, Prose Works I. 15) with note 6 closing just above
+  it (*Reason of Church-Government*, I. 104); En p. 8 carries the tail of note **8**
+  (*Of true Religion*, IV. 260, 268).
+- **I.i (En 9–12) carries no notes at all**, so it passes the number through.
+- **I.ii's first note is ⁹**, En 13 — *Samson Agonistes* 295.
+- The cycle then runs through Book I and into Book II, where **II.i opens at 3**, which is exactly
+  what a continuous cycle predicts if Book I closes at 2.
+
+CONVENTIONS §8a told the transcriber to assume neither that Book I continues from Book II nor that
+it restarts. **The answer is a third thing neither option anticipated**: Book I *precedes* Book II in
+the run, and the run begins in the **editor's own preface**, before Milton's text starts.
+
+⚠ **Consequence: the checksum is live for all 33 Book I chapters from here.** Every chapter's first
+note is predictable from its predecessor's last, wrapping 9 → 1, with noteless chapters passing the
+number through. Record noteless chapters explicitly, as I.i now is.
+
+**Book I ledger opens:** preface → **1–8** · I.i → **none** · I.ii → **9, …**
