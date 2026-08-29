@@ -46,7 +46,32 @@ FOLIATED (`leaf = folio + 17`, one number per opening) and Psalms onward paginat
 (`leaf = 2 × printed + 188`), with a drifting constant between. Don't extrapolate a formula
 outside the range it was fitted in.
 
-**Next: the Psalms as a class** (§12.4), then the `divergence_class` column.
+✅ **The Psalms are settled as a class too — §13, and it took ONE leaf.** J–T leaf 458 shows
+`PSALMUS LIIII` numbering its two-line superscription as **verses 1 and 2** (so J–T 54:7 = KJV 54:5)
+and, directly below on the same page, `PSALMUS LV` numbering its one-line superscription as **verse
+1 only** (so J–T 55:18 = KJV 55:17). Two adjacent psalms, two offsets, one visible cause. §6b's
+inference is confirmed at the source, and the ~57 Psalm divergences can now be classified by
+**counting the lines of the superscription** rather than by reading 57 leaves.
+★ J–T 55:18 = KJV 55:17 **is `ddc-2-04-b` ¶9's `Psal. lv. 18. / lv. 17.` — one of the original
+seventeen suspect pairings.** The thread closes where it started.
+
+⚠⚠ **`ddc-2-11` claimed "None is versification: Junius–Tremellius and the KJV number all six of
+these places alike." All six are versification** — a perfect inversion, asserted without access to
+J–T. Corrected in place (§13.2); that chapter now has **no `Luc. ix. 66`-class error at all** where
+it claimed six. 1 Sam 16 is the clearest layout evidence in the volume: J–T prints verse **1**
+(= KJV 15:35) **above** the `CAPUT XVI` rubric and numbers KJV 16:1 as **2** — the rubric marks the
+*received* division, the numbers follow J–T's own.
+
+⚠ **And a correction to my own method in §12.4**, now §13.3: I wrote that the quotation test
+"disposes of most singletons". **It does not.** A quotation identifies a verse in *KJV* terms, so it
+cannot tell a wrong digit from a small offset — under an offset Milton's number points at the same
+words in his own Bible. `ddc-2-11` had exactly that shape: a "what the text quotes" column, correct
+in every row, carrying six wrong classifications. The test is sound only where the gap is too large
+to be a chapter division (`Act. xiii. 3` vs Acts 23:4 is ten chapters). **A gap of one to five
+verses is settled by the page, never by the quotation.**
+
+**Next: the `divergence_class` column**, then the remaining singletons in `ddc-2-03`, `ddc-2-06`,
+`ddc-2-05`'s four Isaiah rows.
 
 ---
 

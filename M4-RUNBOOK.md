@@ -916,3 +916,90 @@ Still unread, in rough order of how many rows each would move:
 - **Isa 44 is done, but `ddc-2-05` claims four more Isaiah errors** in chapters not yet read.
 - `ddc-2-03`'s three (`2 Reg. vi. 35`, `Deut. v. 38`), `ddc-2-06`'s `2 Sam. xxi. 2, 3`
   ("neither side is right"), `ddc-2-11`'s six.
+
+## 13. ★★★ The Psalms are settled as a class, and II.xi's table inverts completely
+
+### 13.1 ★★★ One opening proves the whole Psalms mechanism — leaf 458
+
+§6b inferred from the corpus that Psalm divergences are Hebrew superscription-counting: `+1` where
+the psalm's title runs one line, `+2` where it runs two. **Leaf 458 shows it happening**, and shows
+both cases side by side, which is why no further Psalm reading is needed.
+
+**`PSALMUS LIIII`** numbers its superscription as **two verses**:
+- **1** *Magistro symphoniæ à fidium, ode didascalica Davidis:*
+- **2** *Quum venientes Ziphæi dixissent Schauli, an non David latitat apud nos?*
+- **3** *Deus propter nomen tuum serva me* = KJV **54:1**
+- **7** *Redde istud malum observatoribus meis, per veritatem tuam succide eos* = KJV **54:5**
+
+→ **+2**, and `ddc-2-12`'s `et liv. 7. / liv. 5.` is versification.
+
+Directly below it on the same page, **`PSALMUS LV`** numbers its shorter superscription as **verse
+1 only** — *Magistro symphoniæ à fidium, ode didascalica Davidis.* → **+1**, confirmed on the
+facing page nine times over, including **J–T 55:18 = KJV 55:17**, *Vespere & mane atq; meridie
+meditabor & perstrepam, donec audiverit vocem meam*.
+
+★ **That last one is `ddc-2-04-b` ¶9's `Psal. lv. 18. / lv. 17.` — one of the original seventeen
+suspect pairings in §10.** The thread that began with an aligner slide ends at the page of the
+Bible that explains it.
+
+**Two adjacent psalms, two different offsets, one visible cause.** The rule is now source-confirmed
+and can be applied to the corpus's ~57 Psalm divergences without reading 57 leaves: **count the
+lines of the superscription.** Where a psalm has none (Ps 1, 2, 33, 91, …) there is no offset, which
+is why 4 of the 57 do not fit.
+
+### 13.2 ★★★ `ddc-2-11`'s six "Latin citation errors" are SIX versification cases
+
+That chunk states: *"Six corrections, of five distinct kinds of slip. **None is versification:
+Junius–Tremellius and the KJV number all six of these places alike**, so each is simply a wrong
+digit in the Latin volume that Sumner mended without a word."*
+
+**The claim is a perfect inversion.** It was made without access to J–T — reasonably, since the
+volume was not in the project until today — and every one of the six is J–T's numbering:
+
+| ¶ | La | En | J–T | offset |
+|---|---|---|---|---|
+| 9 | 1 Sam. **xvi. 2** | xvi. 1 | J–T 16:2 = KJV 16:1 | **+1** |
+| 24 | Gen. **xxvii. 43** | xxvii. 41 | J–T Gen 27 runs +2 throughout | **+2** |
+| 26 | Prov. **xii. 9** | xii. 10 | §12.2 | **−1** |
+| 27 | Prov. **xii. 9** | xii. 10 | §12.2 | **−1** |
+| 35 | Eccles. **iv. 5** | iv. 9 | §12.2 | **+4** |
+| 37 | Judic. **xi. 5** | Judges xi. 3 | J–T Judg 11 runs +2 | **+2** |
+
+- **1 Sam 16 is the clearest layout evidence in the volume.** J–T prints verse **1** — *Posteà non
+  perrexit Schemuel invisere Schaulem … quia Jehovam pœnitebat regem constituisse Schaulem super
+  Jisraelem* (KJV 15:35) — **above** the `CAPUT XVI` rubric, and numbers KJV 16:1 as **2**. The
+  rubric marks the *received* division; the numbers follow J–T's own. Its scholion says so:
+  *hunc versum ad sequentia pertinere res ipsa docet.*
+- **Genesis 27**: J–T 7 = KJV 27:5, 8 = 27:6, 9 = 27:7, 13 = 27:11, 21 = 27:19. So 27:43 = KJV
+  27:41, Esau's envy.
+- **Judges 11**: J–T 35 = KJV 11:33, 36 = 11:34, 37 = 11:35, 41 = 11:39. So 11:5 = KJV 11:3.
+
+⚠ The chunk drew a methodological lesson from this table — *"reading the Latin for suspect
+citations is a way of knowing where to look, never a census. The English layer is the
+instrument."* **That lesson is still right, and now needs one clause added: the English layer
+tells you WHERE the two volumes differ; only the Bible tells you WHY.** Its other conclusion —
+that "both halves of the doubled `Prov. xii. 9` were wrong" — dissolves: both halves were right.
+
+### 13.3 ⚠ A correction to §12.4's own method
+
+§12.4 said the quotation test "disposes of most singletons" — that where a citation's quoted words
+identify a verse, a divergence is settled as error. **That is unsound as stated, and I should not
+have written it.** A quotation identifies the verse in *KJV* terms; it cannot distinguish a wrong
+digit from a small numbering offset, because under an offset Milton's number is *also* pointing at
+those same words in his own Bible. `ddc-2-11`'s table had exactly that shape — a "what the text
+quotes" column, correct in every row, and six wrong classifications resting on it.
+
+The test is sound only where **the gap is too large to be a chapter division**: `Act. xiii. 3`
+against Acts 23:4 is ten chapters, and no versification does that. **A gap of one to five verses
+is never settled by the quotation. It is settled by the page.**
+
+### 13.4 Divisions added this pass
+
+| book ch. | J–T's chapter begins at | offset |
+|---|---|---|
+| Gen 27 | KJV 26:33 (inferred from a constant +2) | **+2** |
+| Judg 11 | KJV 10:17 (inferred from a constant +2) | **+2** |
+| 1 Sam 16 | KJV **15:35**, printed above the rubric | **+1** |
+| Ps 54 | superscription numbered as **2 verses** | **+2** |
+| Ps 55 | superscription numbered as **1 verse** | **+1** |
+| *Psalms generally* | **the superscription is numbered** | **+1 / +2 by title length** |
