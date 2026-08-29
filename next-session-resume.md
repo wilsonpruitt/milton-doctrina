@@ -87,10 +87,33 @@ under the −1 division, and **`v. 17` is a real slip: J–T numbers *Efflat ver
 print the digit 17** — Sumner's right in KJV terms, Milton's wrong in J–T terms. A divergence table
 cannot see an error the two layers agree on.
 
-**Next: the 128 `unchecked` pairs**, which are now enumerable rather than anecdotal — group by book
-and chapter, take the repeating offsets, read the division, and the class flips wholesale. Then the
-singletons in `ddc-2-03`, `ddc-2-06`, and `ddc-2-05`'s four Isaiah rows. ⚠ **Re-read the `anomaly`
-list after every division added** — adding one can move a pair either way.
+✅ **The first sweep off that list is DONE — §15. Seven chapters, 20 pairs, one leaf each.**
+Gen 12 (−3) · Exod 16 (+1) · 1 Sam 14 (+1) · Neh 10 (+1) · Dan 6 (+1) · Hos 12 (+1) · Amos 2 (−3).
+**23 divisions** now in `jt-divisions.json`. `versification` 40 → **60 pairs**, `unchecked` 128 →
+**108**, and **no new anomalies** — the seven explain all twenty cleanly, which is itself a check.
+
+★★ **II.xvii is down to THREE errors from the sixteen it claimed.** `Amos. ii. 11` and
+`1 Sam. xiv. 29` both fell. And `ddc-2-15`'s `1 Sam. xiv. 45` — labelled "**La is a printed
+error**" — is versification: **that note is §13.3's failure mode exactly**, a quotation read in KJV
+terms and taken to settle a one-verse gap. Both chunks corrected in place.
+
+★ **J–T's own cross-references corroborate the table, for free.** Amos 1's scholion cites
+`Gen. 27. 43.` for Edom's anger — in J–T numbering — and our table maps that to KJV 27:41,
+*Esau hated Jacob*, which is exactly what the note argues from. Every `sup.`/`infr.` in the
+scholia is a testable assertion about the division table.
+
+★★ **The double rubric is the volume's house style**, now attested in seven chapters: J–T prints
+**its own** division with an italic argumentum **and** the received rubric, and the numbers follow
+its own. Genesis says why in the editors' voice — *"Quamobrem tres hosce v. cum antecedentibus
+visum est conjungere."* This is why `status: read` beats `status: inferred`: a read boundary is a
+fact about the book, an inferred one only about a run of verses.
+
+**Next:** 108 `unchecked` remain, but **34 chapters now carry a single divergence each** — no
+repeating offset, so each needs its own leaf, cheap but individually unrewarding. Decide whether
+that is worth a sweep or whether the edition ships with them marked `unchecked`, which is an honest
+state. The 52 `versification-predicted` are Psalms wanting only per-psalm title lengths.
+⚠ **Re-read the 5 `anomaly` rows after every division added** — adding one can move a pair either
+way.
 
 ---
 

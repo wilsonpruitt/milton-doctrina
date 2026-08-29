@@ -26,37 +26,212 @@
     "leaf has not been read — which is what the 'versification-predicted' class records."
   ],
   "divisions": [
-    {"book": "Gen",  "chapter": 27, "begins_at": "Gen 26:34",  "first_verse": 1,  "status": "inferred", "leaf": 47,
-     "evidence": "J–T 7 = KJV 27:5 'Ribka verò audiebat', 8 = 27:6, 9 = 27:7, 13 = 27:11, 21 = 27:19"},
-    {"book": "Num",  "chapter": 23, "begins_at": "Num 22:38", "first_verse": 1,  "status": "read", "leaf": 154,
-     "evidence": "CAPUT XXIII opens 'Dixit verò Bilham Balako, ecce veni ad te' = KJV 22:38"},
-    {"book": "Judg", "chapter": 11, "begins_at": "Judg 10:17", "first_verse": 1, "status": "inferred", "leaf": 231,
-     "evidence": "J–T 35 = KJV 11:33 'Percussit enim eorum à Harohere', 36 = 11:34, 41 = 11:39"},
-    {"book": "1Sam", "chapter": 16, "begins_at": "1Sam 15:35", "first_verse": 1, "status": "read", "leaf": 254,
-     "evidence": "verse 1 'Posteà non perrexit Schemuel' (= KJV 15:35) is printed ABOVE the CAPUT XVI rubric; KJV 16:1 is numbered 2"},
-    {"book": "Ps",   "chapter": 54, "begins_at": "Ps 54:1",   "first_verse": 3,  "status": "read", "leaf": 458,
-     "evidence": "superscription numbered as TWO verses: 1 'Magistro symphoniæ à fidium', 2 'Quum venientes Ziphæi dixissent Schauli'"},
-    {"book": "Ps",   "chapter": 55, "begins_at": "Ps 55:1",   "first_verse": 2,  "status": "read", "leaf": 458,
-     "evidence": "one-line superscription numbered as verse 1; J–T 18 = KJV 55:17 'Vespere & mane atq; meridie meditabor'"},
-    {"book": "Prov", "chapter": 12, "begins_at": "Prov 12:2", "first_verse": 1,  "status": "read", "leaf": 512,
-     "evidence": "J–T 18 = KJV 12:19 'Labium verax stabilitur in æternum'; the chapter closes at 27 where the KJV closes at 28"},
-    {"book": "Eccl", "chapter": 2,  "begins_at": "Eccl 1:18", "first_verse": 1,  "status": "read", "leaf": 526,
-     "evidence": "J–T's chapter I closes at 17 = KJV 1:17, so CAPUT II takes KJV 1:18"},
-    {"book": "Eccl", "chapter": 4,  "begins_at": "Eccl 4:5",  "first_verse": 1,  "status": "read", "leaf": 528,
-     "evidence": "CAPUT IIII opens at 'Stolidus complicat manus suas' = KJV 4:5; J–T ch. III ran on as verses 23–26"},
-    {"book": "Eccl", "chapter": 8,  "begins_at": "Eccl 8:2",  "first_verse": 1,  "status": "read", "leaf": 531,
-     "evidence": "J–T 8:14 = KJV 8:15 'Quapropter laudaveram ego lætitiam'"},
-    {"book": "Eccl", "chapter": 9,  "begins_at": "Eccl 8:16", "first_verse": 1,  "status": "read", "leaf": 531,
-     "evidence": "J–T 9:3 = KJV 9:1 'Nam totum hoc condidi in animo meo'; the scholion argues it: 'duos hosce versus omnino ad sequentia pertinere res ipsa loquitur'"},
-    {"book": "Eccl", "chapter": 10, "begins_at": "Eccl 10:4", "first_verse": 1,  "status": "read", "leaf": 533,
-     "evidence": "J–T 13, 14 = KJV 10:16, 17 'Hei tibi regio, cujus rex puer est'; six consecutive verses check"},
-    {"book": "Isa",  "chapter": 3,  "begins_at": "Isa 2:22",  "first_verse": 1,  "status": "inferred", "leaf": 546,
-     "evidence": "constant +1 across the chapter: J–T 5 = KJV 3:4, 8 = 3:7, 11 = 3:10, 13 = 3:12, 15 = 3:14, 19 = 3:18; J–T's own scholion divides men from women at v. 17 where the KJV has 3:16"},
-    {"book": "Isa",  "chapter": 44, "begins_at": "Isa 44:6",  "first_verse": 1,  "status": "read", "leaf": 581,
-     "evidence": "J–T ch. XLIII runs on to 20 = KJV 44:5 'de nomine Jisraëlis cognominabit'; CAPUT XLIV opens at KJV 44:6"},
-    {"book": "Isa",  "chapter": 57, "begins_at": "Isa 56:9",  "first_verse": 1,  "status": "read", "leaf": 590,
-     "evidence": "CAPUT LVII opens 'Omnes bestiæ agrestes, venite ad comedendum' = KJV 56:9; its 2 is 'Speculatores istius cæci' = KJV 56:10"},
-    {"book": "Ezek", "chapter": 3,  "begins_at": "Ezek 3:1",  "first_verse": 11, "status": "read", "leaf": 656,
-     "evidence": "ch. II ends at 10 as the KJV's does; CAPUT III then opens AT VERSE 11 'Edixit igitur mihi, fili hominis' = KJV 3:1, running unbroken to 25 = KJV 3:15"}
+    {
+      "book": "1Sam",
+      "chapter": 14,
+      "begins_at": "1Sam 13:23",
+      "first_verse": 1,
+      "status": "inferred",
+      "leaf": 252,
+      "evidence": "constant +1: J–T 3 = KJV 14:2 'Schaul verò considebat ... sub malo punica quæ est in Migrone', 4 = 14:3, 5 = 14:4, 6 = 14:5, 7 = 14:6, 10 = 14:9"
+    },
+    {
+      "book": "1Sam",
+      "chapter": 16,
+      "begins_at": "1Sam 15:35",
+      "first_verse": 1,
+      "status": "read",
+      "leaf": 254,
+      "evidence": "verse 1 'Posteà non perrexit Schemuel' (= KJV 15:35) is printed ABOVE the CAPUT XVI rubric; KJV 16:1 is numbered 2"
+    },
+    {
+      "book": "Amos",
+      "chapter": 2,
+      "begins_at": "Amos 2:4",
+      "first_verse": 1,
+      "status": "read",
+      "leaf": 737,
+      "evidence": "J–T's chapter I runs to 15 = KJV 1:15; the RECEIVED CAPUT II follows with the count running on (16, 17, 18 = KJV 2:1-3), then J–T's own CAPUT II restarts at 1 = KJV 2:4"
+    },
+    {
+      "book": "Dan",
+      "chapter": 6,
+      "begins_at": "Dan 5:31",
+      "first_verse": 1,
+      "status": "inferred",
+      "leaf": 713,
+      "evidence": "J–T's chapter ends at 29 'Itaque Danijel iste prospere egit in regno Darii, & in regno Cyri Persæ' = KJV 6:28, where the KJV chapter ends at 28"
+    },
+    {
+      "book": "Eccl",
+      "chapter": 2,
+      "begins_at": "Eccl 1:18",
+      "first_verse": 1,
+      "status": "read",
+      "leaf": 526,
+      "evidence": "J–T's chapter I closes at 17 = KJV 1:17, so CAPUT II takes KJV 1:18"
+    },
+    {
+      "book": "Eccl",
+      "chapter": 4,
+      "begins_at": "Eccl 4:5",
+      "first_verse": 1,
+      "status": "read",
+      "leaf": 528,
+      "evidence": "CAPUT IIII opens at 'Stolidus complicat manus suas' = KJV 4:5; J–T ch. III ran on as verses 23–26"
+    },
+    {
+      "book": "Eccl",
+      "chapter": 8,
+      "begins_at": "Eccl 8:2",
+      "first_verse": 1,
+      "status": "read",
+      "leaf": 531,
+      "evidence": "J–T 8:14 = KJV 8:15 'Quapropter laudaveram ego lætitiam'"
+    },
+    {
+      "book": "Eccl",
+      "chapter": 9,
+      "begins_at": "Eccl 8:16",
+      "first_verse": 1,
+      "status": "read",
+      "leaf": 531,
+      "evidence": "J–T 9:3 = KJV 9:1 'Nam totum hoc condidi in animo meo'; the scholion argues it: 'duos hosce versus omnino ad sequentia pertinere res ipsa loquitur'"
+    },
+    {
+      "book": "Eccl",
+      "chapter": 10,
+      "begins_at": "Eccl 10:4",
+      "first_verse": 1,
+      "status": "read",
+      "leaf": 533,
+      "evidence": "J–T 13, 14 = KJV 10:16, 17 'Hei tibi regio, cujus rex puer est'; six consecutive verses check"
+    },
+    {
+      "book": "Exod",
+      "chapter": 16,
+      "begins_at": "Exod 15:27",
+      "first_verse": 1,
+      "status": "read",
+      "leaf": 87,
+      "evidence": "J–T's own CAPUT XVI opens at verse 1 'Deinceps venerunt Elima, ubi erant duodecim fontes aquarum' = KJV 15:27; the received rubric follows"
+    },
+    {
+      "book": "Ezek",
+      "chapter": 3,
+      "begins_at": "Ezek 3:1",
+      "first_verse": 11,
+      "status": "read",
+      "leaf": 656,
+      "evidence": "ch. II ends at 10 as the KJV's does; CAPUT III then opens AT VERSE 11 'Edixit igitur mihi, fili hominis' = KJV 3:1, running unbroken to 25 = KJV 3:15"
+    },
+    {
+      "book": "Gen",
+      "chapter": 12,
+      "begins_at": "Gen 12:4",
+      "first_verse": 1,
+      "status": "read",
+      "leaf": 33,
+      "evidence": "the RECEIVED CAPUT XII carries the count on (33 = KJV 12:1 'Dixerat enim Jehova Abramo'); J–T's own chapter restarts at KJV 12:4. Its scholion states the reason: 'Quamobrem tres hosce v. cum antecedentibus visum est conjungere'"
+    },
+    {
+      "book": "Gen",
+      "chapter": 27,
+      "begins_at": "Gen 26:34",
+      "first_verse": 1,
+      "status": "inferred",
+      "leaf": 47,
+      "evidence": "J–T 7 = KJV 27:5 'Ribka verò audiebat', 8 = 27:6, 9 = 27:7, 13 = 27:11, 21 = 27:19"
+    },
+    {
+      "book": "Hos",
+      "chapter": 12,
+      "begins_at": "Hos 11:12",
+      "first_verse": 1,
+      "status": "inferred",
+      "leaf": 731,
+      "evidence": "constant +1: J–T 3 = KJV 12:2, 4 = 12:3, 5 = 12:4 'flevit & supplex oravit eum', 6 = 12:5, 9 = 12:8, 10 = 12:9"
+    },
+    {
+      "book": "Isa",
+      "chapter": 3,
+      "begins_at": "Isa 2:22",
+      "first_verse": 1,
+      "status": "inferred",
+      "leaf": 546,
+      "evidence": "constant +1 across the chapter: J–T 5 = KJV 3:4, 8 = 3:7, 11 = 3:10, 13 = 3:12, 15 = 3:14, 19 = 3:18; J–T's own scholion divides men from women at v. 17 where the KJV has 3:16"
+    },
+    {
+      "book": "Isa",
+      "chapter": 44,
+      "begins_at": "Isa 44:6",
+      "first_verse": 1,
+      "status": "read",
+      "leaf": 581,
+      "evidence": "J–T ch. XLIII runs on to 20 = KJV 44:5 'de nomine Jisraëlis cognominabit'; CAPUT XLIV opens at KJV 44:6"
+    },
+    {
+      "book": "Isa",
+      "chapter": 57,
+      "begins_at": "Isa 56:9",
+      "first_verse": 1,
+      "status": "read",
+      "leaf": 590,
+      "evidence": "CAPUT LVII opens 'Omnes bestiæ agrestes, venite ad comedendum' = KJV 56:9; its 2 is 'Speculatores istius cæci' = KJV 56:10"
+    },
+    {
+      "book": "Judg",
+      "chapter": 11,
+      "begins_at": "Judg 10:17",
+      "first_verse": 1,
+      "status": "inferred",
+      "leaf": 231,
+      "evidence": "J–T 35 = KJV 11:33 'Percussit enim eorum à Harohere', 36 = 11:34, 41 = 11:39"
+    },
+    {
+      "book": "Neh",
+      "chapter": 10,
+      "begins_at": "Neh 9:38",
+      "first_verse": 1,
+      "status": "read",
+      "leaf": 389,
+      "evidence": "J–T's own CAPUT X opens at verse 1 'Pro hoc autem toto, pepigimus constitutionem federis' = KJV 9:38; the received CAPUT X follows and the count runs on"
+    },
+    {
+      "book": "Num",
+      "chapter": 23,
+      "begins_at": "Num 22:38",
+      "first_verse": 1,
+      "status": "read",
+      "leaf": 154,
+      "evidence": "CAPUT XXIII opens 'Dixit verò Bilham Balako, ecce veni ad te' = KJV 22:38"
+    },
+    {
+      "book": "Prov",
+      "chapter": 12,
+      "begins_at": "Prov 12:2",
+      "first_verse": 1,
+      "status": "read",
+      "leaf": 512,
+      "evidence": "J–T 18 = KJV 12:19 'Labium verax stabilitur in æternum'; the chapter closes at 27 where the KJV closes at 28"
+    },
+    {
+      "book": "Ps",
+      "chapter": 54,
+      "begins_at": "Ps 54:1",
+      "first_verse": 3,
+      "status": "read",
+      "leaf": 458,
+      "evidence": "superscription numbered as TWO verses: 1 'Magistro symphoniæ à fidium', 2 'Quum venientes Ziphæi dixissent Schauli'"
+    },
+    {
+      "book": "Ps",
+      "chapter": 55,
+      "begins_at": "Ps 55:1",
+      "first_verse": 2,
+      "status": "read",
+      "leaf": 458,
+      "evidence": "one-line superscription numbered as verse 1; J–T 18 = KJV 55:17 'Vespere & mane atq; meridie meditabor'"
+    }
   ]
 }

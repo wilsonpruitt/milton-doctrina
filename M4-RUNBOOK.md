@@ -1073,3 +1073,68 @@ The 128 `unchecked` pairs are the remaining audit, and they are now enumerable r
 anecdotal — group them by book and chapter, take the ones with repeating offsets, read the
 division, and the class flips wholesale. The `anomaly` list is the standing worklist; it should be
 re-read after every division added, because adding a division can move a pair either way.
+
+## 15. The seven repeating-offset chapters, read — 20 more pairs, and II.xvii falls to three
+
+§14 made the audit enumerable. This is the first sweep run against that list: group the
+`unchecked` pairs by book and chapter, take the chapters cited **more than once with a consistent
+offset** (§6b's signal, now computable), and read the division. Seven chapters, twenty pairs, one
+leaf each.
+
+| book ch. | J–T's chapter begins at | offset | pairs | evidence |
+|---|---|---|---|---|
+| Gen 12 | KJV **12:4** | −3 | 2 | the received `CAPUT XII` carries the count on (33 = KJV 12:1); J–T's own restarts at 12:4 |
+| Exod 16 | KJV **15:27** | +1 | 2 | J–T's own `CAPUT XVI` opens at *Deinceps venerunt Elima* |
+| 1 Sam 14 | KJV **13:23** | +1 | 4 | J–T 3 = KJV 14:2 *sub malo punica quæ est in Migrone*, checked to 10 |
+| Neh 10 | KJV **9:38** | +1 | 3 | J–T's own `CAPUT X` opens at *pepigimus constitutionem federis*; the received rubric follows |
+| Dan 6 | KJV **5:31** | +1 | 5 | the chapter ends at **29** = KJV 6:28, where the KJV ends at 28 |
+| Hos 12 | KJV **11:12** | +1 | 2 | J–T 5 = KJV 12:4 *flevit & supplex oravit eum*, the running head's *Jaħakob flevit* |
+| Amos 2 | KJV **2:4** | −3 | 2 | ch. I runs to 15; the received `CAPUT II` carries on as 16–18; J–T's own restarts at 1 |
+
+`versification` 40 → **60 pairs**; `unchecked` 128 → **108**; **no new anomalies** — the seven
+divisions explain all twenty cleanly, which is itself a check on them.
+
+### 15.1 ★★ Two more of II.xvii's "genuine errors" fall, and the chapter is down to three
+
+`Amos. ii. 11 / Amos ii. 14` and `1 Sam. xiv. 29 / xiv. 28` were both in the surviving errors table
+after §11 and §13. Both are versification. **II.xvii now claims three errors where it claimed
+sixteen** — and one of the three, `Prov. xxv. 4`, has an unread division and a single instance, so
+it is not yet settled either.
+
+`ddc-2-15`'s `1 Sam. xiv. 45 / xiv. 44` goes with them. Its note reads *"**La is a printed error**
+— omnino moriturus es, Jonathan is Saul's speech at 14:44"*. The quotation is identified correctly
+and the conclusion does not follow: **that is §13.3's failure mode exactly**, a quotation read in
+KJV terms and taken to settle a one-verse gap. Corrected in place.
+
+### 15.2 ★ The volume's own cross-references corroborate the table
+
+Amos 1's scholion 34, on Edom's perpetual anger, cites **`Gen. 27. 43.`** — in J–T's own numbering.
+The table built from page images maps J–T Gen 27:43 to KJV 27:41, *Esau hated Jacob … I will slay
+my brother*, which is precisely the text the note is arguing from. **J–T's internal apparatus is
+itself a check on the divisions**, and a free one: every `sup.`/`infr.` reference in the scholia is
+a testable assertion about this table. Worth a pass of its own if the table ever needs auditing.
+
+### 15.3 ★★ The double rubric is now confirmed as the volume's standard habit
+
+Seen once it looked like an oddity of Ecclesiastes. It is the house style, now attested in
+**Gen 12, Exod 16, Neh 10, Amos 2, Eccl 4, Eccl 9 and 1 Sam 16**: J–T prints **its own** chapter
+division with an italic argumentum **and** the received rubric where that falls, and **the verse
+numbers follow J–T's division, never the received one.** In Genesis the editors say why, in their
+own voice — *"Quamobrem tres hosce v. cum antecedentibus visum est conjungere"*, "wherefore it
+seemed right to join these three verses with what precedes."
+
+That habit is what makes this volume readable at all for our purpose: **the boundary is visible on
+the page rather than inferred from an offset.** It is also why `status: read` is worth
+distinguishing from `status: inferred` in `jt-divisions.json` — a read boundary is a fact about the
+book, an inferred one is a fact about a run of verses.
+
+### 15.4 What remains
+
+**108 `unchecked` pairs**, now with **34 chapters carrying a single divergence each** — no
+repeating offset to go on, so each needs its own leaf, and each is cheap but individually
+unrewarding. The remaining `versification-predicted` 52 are Psalms, where §13.1's superscription
+rule is the mechanism and only the per-psalm title length is unread.
+
+The five `anomaly` rows are unchanged and remain the standing worklist: two are the `et v. N`
+records the parser drops (§10.4), one is the English `v. 3` misparse (§10.2), and two are
+`ddc-2-13` ¶6 (§14.4).

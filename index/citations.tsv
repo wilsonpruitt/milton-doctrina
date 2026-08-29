@@ -1097,7 +1097,7 @@ ddc-2-03	la	la	{¶10}	16	— CH V	et xxx. 5.	Prov	30	5	Prov 30:5	carried	book-ca
 ddc-2-03	la	la	{¶10}	17	BOOK CH V+&c	Isa. lix. 1, &c.	Isa	59	1	Isa 59:1 &c.	high	book-named		d69	plausible	Isa 59:1		
 ddc-2-03	la	la	{¶10}	18	BOOK CH V	Jer. xvii. 7.	Jer	17	7	Jer 17:7	high	book-named				Jer 17:7		
 ddc-2-03	la	la	{¶10}	19	BOOK CH V-LIST	Mal. iii. 16, 17, 18.	Mal	3	16,17,18	Mal 3:16,17,18	high	book-named		d70	plausible	Mal 3:16,17,18		
-ddc-2-03	la	la	{¶11}	0	BOOK CH V	Gen. xii. 10.	Gen	12	10	Gen 12:10	high	book-named		d71	plausible	Gen 12:13	unchecked	no J–T division read for this chapter
+ddc-2-03	la	la	{¶11}	0	BOOK CH V	Gen. xii. 10.	Gen	12	10	Gen 12:10	high	book-named		d71	plausible	Gen 12:13	versification	J–T Gen 12 begins at Gen 12:4 (read, leaf 33)
 ddc-2-03	la	la	{¶11}	1	— CH V	et xxxii. 7.	Gen	32	7	Gen 32:7	carried	book-carried	ddc-2-03:la:{¶11}:0			Gen 32:7		
 ddc-2-03	la	la	{¶11}	2	BOOK CH V+&c	Num. xiv. 1, &c.	Num	14	1	Num 14:1 &c.	high	book-named				Num 14:1 &c.		
 ddc-2-03	la	la	{¶11}	3	BOOK CH V-LIST	Num. xx. 10, 11.	Num	20	10,11	Num 20:10,11	high	book-named				Num 20:10,11		
@@ -1220,7 +1220,7 @@ ddc-2-03	la	la	{¶30}	4	BOOK CH V+&c	Eccles. vii. 7, &c.	Eccl	7	7	Eccl 7:7 &c.	h
 ddc-2-03	la	la	{¶30}	5	BOOK CH V+&c	Jer. xx. 15, &c.	Jer	20	15	Jer 20:15 &c.	high	book-named		d94	plausible	Jer 20:15		
 ddc-2-03	la	la	{¶30}	6	— CH V+&c	et xlv. 3, &c.	Jer	45	3	Jer 45:3 &c.	carried	book-carried	ddc-2-03:la:{¶30}:5	d95	plausible	Jer 45:5	unchecked	no J–T division read for this chapter
 ddc-2-03	la	la	{¶30}	7	BOOK CH V	Jonæ iv. 3.	Jonah	4	3	Jonah 4:3	high	book-named				Jonah 4:3		
-ddc-2-03	la	la	{¶31}	0	BOOK CH V	Gen. xii. 1.	Gen	12	1	Gen 12:1	high	book-named		d96	plausible	Gen 12:4	unchecked	no J–T division read for this chapter
+ddc-2-03	la	la	{¶31}	0	BOOK CH V	Gen. xii. 1.	Gen	12	1	Gen 12:1	high	book-named		d96	plausible	Gen 12:4	versification	J–T Gen 12 begins at Gen 12:4 (read, leaf 33)
 ddc-2-03	la	la	{¶31}	1	— CH V	et xxii. 3.	Gen	22	3	Gen 22:3	carried	book-carried	ddc-2-03:la:{¶31}:0			Gen 22:3		
 ddc-2-03	la	la	{¶31}	2	BOOK CH V	1 Sam. xv. 22.	1Sam	15	22	1Sam 15:22	high	book-named				1Sam 15:22		
 ddc-2-03	la	la	{¶31}	3	BOOK CH V-LIST	Psal. lxxxi. 14, 15.	Ps	81	14,15	Ps 81:14,15	high	book-named		d97	plausible	Ps 81:13,14	versification-predicted	Psalm superscription numbered as 1 verse (§13.1 rule; this psalm's own leaf not read)
@@ -1294,7 +1294,7 @@ ddc-2-03	en-sumner	en-sumner	{¶10}	17	— CH V	xxx. 5.	Prov	30	5	Prov 30:5	carr
 ddc-2-03	en-sumner	en-sumner	{¶10}	18	BOOK CH V	Isai. lix. 1.	Isa	59	1	Isa 59:1	high	book-named		d69	plausible	Isa 59:1		
 ddc-2-03	en-sumner	en-sumner	{¶10}	19	BOOK CH V	Jer. xvii. 7.	Jer	17	7	Jer 17:7	high	book-named				Jer 17:7		
 ddc-2-03	en-sumner	en-sumner	{¶10}	20	BOOK CH V-RANGE	Mal. iii. 16—18.	Mal	3	16,17,18	Mal 3:16,17,18	high	book-named		d70	plausible	Mal 3:16,17,18		
-ddc-2-03	en-sumner	en-sumner	{¶11}	0	BOOK CH V	Gen. xii. 13.	Gen	12	13	Gen 12:13	high	book-named		d71	plausible	Gen 12:13	unchecked	no J–T division read for this chapter
+ddc-2-03	en-sumner	en-sumner	{¶11}	0	BOOK CH V	Gen. xii. 13.	Gen	12	13	Gen 12:13	high	book-named		d71	plausible	Gen 12:13	versification	J–T Gen 12 begins at Gen 12:4 (read, leaf 33)
 ddc-2-03	en-sumner	en-sumner	{¶11}	1	— CH V	xxxii. 7.	Gen	32	7	Gen 32:7	carried	book-carried	ddc-2-03:en-sumner:{¶11}:0			Gen 32:7		
 ddc-2-03	en-sumner	en-sumner	{¶11}	2	BOOK CH V+&c	Numb. xiv. 1, &c.	Num	14	1	Num 14:1 &c.	high	book-named				Num 14:1 &c.		
 ddc-2-03	en-sumner	en-sumner	{¶11}	3	— CH V-LIST	xx. 10, 11.	Num	20	10,11	Num 20:10,11	carried	book-carried	ddc-2-03:en-sumner:{¶11}:2			Num 20:10,11		
@@ -1418,7 +1418,7 @@ ddc-2-03	en-sumner	en-sumner	{¶30}	4	BOOK CH V	Eccles. vii. 7.	Eccl	7	7	Eccl 7:
 ddc-2-03	en-sumner	en-sumner	{¶30}	5	BOOK CH V	Jer. xx. 15.	Jer	20	15	Jer 20:15	high	book-named		d94	plausible	Jer 20:15		
 ddc-2-03	en-sumner	en-sumner	{¶30}	6	— CH V	xlv. 5.	Jer	45	5	Jer 45:5	carried	book-carried	ddc-2-03:en-sumner:{¶30}:5	d95	plausible	Jer 45:5	unchecked	no J–T division read for this chapter
 ddc-2-03	en-sumner	en-sumner	{¶30}	7	BOOK CH V	Jonah iv. 3.	Jonah	4	3	Jonah 4:3	high	book-named				Jonah 4:3		
-ddc-2-03	en-sumner	en-sumner	{¶31}	0	BOOK CH V	Gen. xii. 4.	Gen	12	4	Gen 12:4	high	book-named		d96	plausible	Gen 12:4	unchecked	no J–T division read for this chapter
+ddc-2-03	en-sumner	en-sumner	{¶31}	0	BOOK CH V	Gen. xii. 4.	Gen	12	4	Gen 12:4	high	book-named		d96	plausible	Gen 12:4	versification	J–T Gen 12 begins at Gen 12:4 (read, leaf 33)
 ddc-2-03	en-sumner	en-sumner	{¶31}	1	— CH V	xxii. 3.	Gen	22	3	Gen 22:3	carried	book-carried	ddc-2-03:en-sumner:{¶31}:0			Gen 22:3		
 ddc-2-03	en-sumner	en-sumner	{¶31}	2	BOOK CH V	1 Sam. xv. 22.	1Sam	15	22	1Sam 15:22	high	book-named				1Sam 15:22		
 ddc-2-03	en-sumner	en-sumner	{¶31}	3	BOOK CH V-LIST	Psal. lxxxi. 13, 14.	Ps	81	13,14	Ps 81:13,14	high	book-named		d97	plausible	Ps 81:13,14	versification-predicted	Psalm superscription numbered as 1 verse (§13.1 rule; this psalm's own leaf not read)
@@ -1628,7 +1628,7 @@ ddc-2-04-b	la	la	{¶7}	5	— — V	et v. 54.	1Kgs	8	54	1Kgs 8:54	carried	et-v-re
 ddc-2-04-b	la	la	{¶7}	6	BOOK CH V-LIST	2 Chron. vi. 12, 13.	2Chr	6	12,13	2Chr 6:12,13	high	book-named				2Chr 6:12,13		
 ddc-2-04-b	la	la	{¶7}	7	— CH V	et xx. 5.	2Chr	20	5	2Chr 20:5	carried	book-carried	ddc-2-04-b:la:{¶7}:6			2Chr 20:5		
 ddc-2-04-b	la	la	{¶7}	8	— — V	et v. 13.	2Chr	20	13	2Chr 20:13	cross-layer	et-v-settled-by-english-layer	ddc-2-04-b:la:{¶7}:7			2Chr 20:13		
-ddc-2-04-b	la	la	{¶7}	9	BOOK CH V	Dan. vi. 11.	Dan	6	11	Dan 6:11	high	book-named		d116	plausible	Dan 6:10	unchecked	no J–T division read for this chapter
+ddc-2-04-b	la	la	{¶7}	9	BOOK CH V	Dan. vi. 11.	Dan	6	11	Dan 6:11	high	book-named		d116	plausible	Dan 6:10	versification	J–T Dan 6 begins at Dan 5:31 (inferred, leaf 713)
 ddc-2-04-b	la	la	{¶7}	10	BOOK CH V	Luc. xviii. 13.	Luke	18	13	Luke 18:13	high	book-named				Luke 18:13		
 ddc-2-04-b	la	la	{¶8}	0	BOOK CH V	1 Cor. xi. 4.	1Cor	11	4	1Cor 11:4	high	book-named				1Cor 11:4		
 ddc-2-04-b	la	la	{¶9}	0	BOOK CH V	1 Tim. ii. 8.	1Tim	2	8	1Tim 2:8	high	book-named				1Tim 2:8		
@@ -1647,7 +1647,7 @@ ddc-2-04-b	la	la	{¶9}	13	— CH V	et lxxxviii. 14.	Ps	88	14	Ps 88:14	carried	bo
 ddc-2-04-b	la	la	{¶9}	14	— CH V-LIST	et xcii. 2, 3.	Ps	92	2,3	Ps 92:2,3	carried	book-carried	ddc-2-04-b:la:{¶9}:13	d120	plausible	Ps 92:1,2	versification-predicted	Psalm superscription numbered as 1 verse (§13.1 rule; this psalm's own leaf not read)
 ddc-2-04-b	la	la	{¶9}	15	— CH V	et cxix. 147.	Ps	119	147	Ps 119:147	carried	book-carried	ddc-2-04-b:la:{¶9}:14			Ps 119:147		
 ddc-2-04-b	la	la	{¶9}	16	— — V	et v. 148.	Ps	119	148	Ps 119:148	carried	et-v-read-as-verse	ddc-2-04-b:la:{¶9}:15			Ps 119:148		
-ddc-2-04-b	la	la	{¶9}	17	BOOK CH V	Dan. vi. 11.	Dan	6	11	Dan 6:11	high	book-named		d121	plausible	Dan 6:10	unchecked	no J–T division read for this chapter
+ddc-2-04-b	la	la	{¶9}	17	BOOK CH V	Dan. vi. 11.	Dan	6	11	Dan 6:11	high	book-named		d121	plausible	Dan 6:10	versification	J–T Dan 6 begins at Dan 5:31 (inferred, leaf 713)
 ddc-2-04-b	la	la	{¶9}	18	BOOK CH V	Marc. i. 35.	Mark	1	35	Mark 1:35	high	book-named				Mark 1:35		
 ddc-2-04-b	la	la	{¶9}	19	BOOK CH V	Act. x. 9.	Acts	10	9	Acts 10:9	high	book-named				Acts 10:9		
 ddc-2-04-b	en-sumner	en-sumner	{¶2}	0	BOOK CH V	James iv. 3.	Jas	4	3	Jas 4:3	high	book-named				Jas 4:3		
@@ -1694,7 +1694,7 @@ ddc-2-04-b	en-sumner	en-sumner	{¶7}	5	— — V	v. 54	1Kgs	8	54	1Kgs 8:54	carri
 ddc-2-04-b	en-sumner	en-sumner	{¶7}	6	BOOK CH V-LIST	2 Chron. vi. 12, 13.	2Chr	6	12,13	2Chr 6:12,13	high	book-named				2Chr 6:12,13		
 ddc-2-04-b	en-sumner	en-sumner	{¶7}	7	— CH V	xx. 5.	2Chr	20	5	2Chr 20:5	carried	book-carried	ddc-2-04-b:en-sumner:{¶7}:6			2Chr 20:5		
 ddc-2-04-b	en-sumner	en-sumner	{¶7}	8	— — V	v. 13	2Chr	20	13	2Chr 20:13	carried	book-and-chapter-carried	ddc-2-04-b:en-sumner:{¶7}:7			2Chr 20:13		
-ddc-2-04-b	en-sumner	en-sumner	{¶7}	9	BOOK CH V	Dan. vi. 10.	Dan	6	10	Dan 6:10	high	book-named		d116	plausible	Dan 6:10	unchecked	no J–T division read for this chapter
+ddc-2-04-b	en-sumner	en-sumner	{¶7}	9	BOOK CH V	Dan. vi. 10.	Dan	6	10	Dan 6:10	high	book-named		d116	plausible	Dan 6:10	versification	J–T Dan 6 begins at Dan 5:31 (inferred, leaf 713)
 ddc-2-04-b	en-sumner	en-sumner	{¶7}	10	BOOK CH V	Luke xviii. 13.	Luke	18	13	Luke 18:13	high	book-named				Luke 18:13		
 ddc-2-04-b	en-sumner	en-sumner	{¶8}	0	BOOK CH V	1 Cor. xi. 4.	1Cor	11	4	1Cor 11:4	high	book-named				1Cor 11:4		
 ddc-2-04-b	en-sumner	en-sumner	{¶9}	0	BOOK CH V	1 Tim. ii. 8.	1Tim	2	8	1Tim 2:8	high	book-named				1Tim 2:8		
@@ -1714,7 +1714,7 @@ ddc-2-04-b	en-sumner	en-sumner	{¶9}	13	— CH V	lxxxviii. 13.	Ps	88	13	Ps 88:13
 ddc-2-04-b	en-sumner	en-sumner	{¶9}	14	— CH V-LIST	xcii. 1, 2.	Ps	92	1,2	Ps 92:1,2	carried	book-carried	ddc-2-04-b:en-sumner:{¶9}:13	d120	plausible	Ps 92:1,2	versification-predicted	Psalm superscription numbered as 1 verse (§13.1 rule; this psalm's own leaf not read)
 ddc-2-04-b	en-sumner	en-sumner	{¶9}	15	— CH V	cxix. 147.	Ps	119	147	Ps 119:147	carried	book-carried	ddc-2-04-b:en-sumner:{¶9}:14			Ps 119:147		
 ddc-2-04-b	en-sumner	en-sumner	{¶9}	16	— — V	v. 148	Ps	119	148	Ps 119:148	carried	book-and-chapter-carried	ddc-2-04-b:en-sumner:{¶9}:15			Ps 119:148		
-ddc-2-04-b	en-sumner	en-sumner	{¶9}	17	BOOK CH V	Dan. vi. 10.	Dan	6	10	Dan 6:10	high	book-named		d121	plausible	Dan 6:10	unchecked	no J–T division read for this chapter
+ddc-2-04-b	en-sumner	en-sumner	{¶9}	17	BOOK CH V	Dan. vi. 10.	Dan	6	10	Dan 6:10	high	book-named		d121	plausible	Dan 6:10	versification	J–T Dan 6 begins at Dan 5:31 (inferred, leaf 713)
 ddc-2-04-b	en-sumner	en-sumner	{¶9}	18	BOOK CH V	Mark i. 35.	Mark	1	35	Mark 1:35	high	book-named				Mark 1:35		
 ddc-2-04-b	en-sumner	en-sumner	{¶9}	19	BOOK CH V	Acts x. 9.	Acts	10	9	Acts 10:9	high	book-named				Acts 10:9		
 ddc-2-04-c	la	la	{¶1}	0	BOOK CH V-LIST	1 Tim. ii. 1, 2, 3.	1Tim	2	1,2,3	1Tim 2:1,2,3	high	book-named		d122	plausible	1Tim 2:1,2,3		
@@ -1816,7 +1816,7 @@ ddc-2-04-c	la	la	{¶17}	0	BOOK CH V	Matt. xvii. 21.	Matt	17	21	Matt 17:21	high	b
 ddc-2-04-c	la	la	{¶18}	0	BOOK CH V+&c	Gen. xxviii. 20, &c.	Gen	28	20	Gen 28:20 &c.	high	book-named		d145	plausible	Gen 28:20		
 ddc-2-04-c	la	la	{¶18}	1	BOOK CH V	1 Sam. i. 11.	1Sam	1	11	1Sam 1:11	high	book-named				1Sam 1:11		
 ddc-2-04-c	la	la	{¶18}	2	BOOK CH V	Psal. cxix. 106.	Ps	119	106	Ps 119:106	high	book-named				Ps 119:106		
-ddc-2-04-c	la	la	{¶18}	3	BOOK CH V	Nehem. x. 30.	Neh	10	30	Neh 10:30	high	book-named		d146	plausible	Neh 10:29	unchecked	no J–T division read for this chapter
+ddc-2-04-c	la	la	{¶18}	3	BOOK CH V	Nehem. x. 30.	Neh	10	30	Neh 10:30	high	book-named		d146	plausible	Neh 10:29	versification	J–T Neh 10 begins at Neh 9:38 (read, leaf 389)
 ddc-2-04-c	la	la	{¶21}	0	BOOK CH V-LIST	Jos. xxiv. 22, 23.	Josh	24	22,23	Josh 24:22,23	high	book-named				Josh 24:22,23		
 ddc-2-04-c	la	la	{¶21}	1	BOOK CH V-LIST	2 Chron. xv. 12, 13, 14.	2Chr	15	12,13,14	2Chr 15:12,13,14	high	book-named		d147	plausible	2Chr 15:12,13,14		
 ddc-2-04-c	la	la	{¶21}	2	BOOK CH V	Ezræ x. 5.	Ezra	10	5	Ezra 10:5	high	book-named				Ezra 10:5		
@@ -1956,7 +1956,7 @@ ddc-2-04-c	en-sumner	en-sumner	{¶17}	0	BOOK CH V	Matt. xvii. 21.	Matt	17	21	Mat
 ddc-2-04-c	en-sumner	en-sumner	{¶18}	0	BOOK CH V	Gen. xxviii. 20.	Gen	28	20	Gen 28:20	high	book-named		d145	plausible	Gen 28:20		
 ddc-2-04-c	en-sumner	en-sumner	{¶18}	1	BOOK CH V	1 Sam. i. 11.	1Sam	1	11	1Sam 1:11	high	book-named				1Sam 1:11		
 ddc-2-04-c	en-sumner	en-sumner	{¶18}	2	BOOK CH V	Psal. cxix. 106.	Ps	119	106	Ps 119:106	high	book-named				Ps 119:106		
-ddc-2-04-c	en-sumner	en-sumner	{¶18}	3	BOOK CH V	Neh. x. 29.	Neh	10	29	Neh 10:29	high	book-named		d146	plausible	Neh 10:29	unchecked	no J–T division read for this chapter
+ddc-2-04-c	en-sumner	en-sumner	{¶18}	3	BOOK CH V	Neh. x. 29.	Neh	10	29	Neh 10:29	high	book-named		d146	plausible	Neh 10:29	versification	J–T Neh 10 begins at Neh 9:38 (read, leaf 389)
 ddc-2-04-c	en-sumner	en-sumner	{¶21}	0	BOOK CH V-LIST	Josh. xxiv. 22, 23.	Josh	24	22,23	Josh 24:22,23	high	book-named				Josh 24:22,23		
 ddc-2-04-c	en-sumner	en-sumner	{¶21}	1	BOOK CH V-RANGE	2 Chron. xv. 12—14.	2Chr	15	12,13,14	2Chr 15:12,13,14	high	book-named		d147	plausible	2Chr 15:12,13,14		
 ddc-2-04-c	en-sumner	en-sumner	{¶21}	2	BOOK CH V	Ezra x. 5.	Ezra	10	5	Ezra 10:5	high	book-named				Ezra 10:5		
@@ -2034,8 +2034,8 @@ ddc-2-05	la	la	{¶10}	1	BOOK CH V	2 Reg. xviii. 7.	2Kgs	18	7	2Kgs 18:7	high	book
 ddc-2-05	la	la	{¶10}	2	BOOK CH V	2 Chron. xxxvi. 13.	2Chr	36	13	2Chr 36:13	high	book-named				2Chr 36:13		
 ddc-2-05	la	la	{¶10}	3	BOOK CH V+&c	Jer. xxvii. 6, &c.	Jer	27	6	Jer 27:6 &c.	high	book-named		d156	plausible	Jer 27:6		
 ddc-2-05	la	la	{¶11}	0	BOOK CH V-LIST	Lev. v. 4, 5, 6.	Lev	5	4,5,6	Lev 5:4,5,6	high	book-named		d157	plausible	Lev 5:4,5	unchecked	no J–T division read for this chapter
-ddc-2-05	la	la	{¶11}	1	BOOK CH V	1 Sam. xiv. 40.	1Sam	14	40	1Sam 14:40	high	book-named		d158	plausible	1Sam 14:39	unchecked	no J–T division read for this chapter
-ddc-2-05	la	la	{¶11}	2	— — V	et v. 45.	1Sam	14	45	1Sam 14:45	carried	et-v-read-as-verse	ddc-2-05:la:{¶11}:1	d159	plausible	1Sam 14:44	unchecked	no J–T division read for this chapter
+ddc-2-05	la	la	{¶11}	1	BOOK CH V	1 Sam. xiv. 40.	1Sam	14	40	1Sam 14:40	high	book-named		d158	plausible	1Sam 14:39	versification	J–T 1Sam 14 begins at 1Sam 13:23 (inferred, leaf 252)
+ddc-2-05	la	la	{¶11}	2	— — V	et v. 45.	1Sam	14	45	1Sam 14:45	carried	et-v-read-as-verse	ddc-2-05:la:{¶11}:1	d159	plausible	1Sam 14:44	versification	J–T 1Sam 14 begins at 1Sam 13:23 (inferred, leaf 252)
 ddc-2-05	la	la	{¶12}	0	BOOK CH V	1 Sam. xxv. 22.	1Sam	25	22	1Sam 25:22	high	book-named				1Sam 25:22		
 ddc-2-05	la	la	{¶12}	1	— — V-LIST	v. 33, 34.	1Sam	25	33,34	1Sam 25:33,34	carried	book-and-chapter-carried	ddc-2-05:la:{¶12}:0			1Sam 25:33,34		
 ddc-2-05	la	la	{¶12}	2	BOOK CH V	2 Sam. xix. 24.	2Sam	19	24	2Sam 19:24	high	book-named		d160	plausible	2Sam 19:23	unchecked	no J–T division read for this chapter
@@ -2061,7 +2061,7 @@ ddc-2-05	la	la	{¶18}	2	BOOK CH V+&c	1 Sam. x. 20, &c.	1Sam	10	20	1Sam 10:20 &c.
 ddc-2-05	la	la	{¶18}	3	BOOK CH V	Prov. xvi. 33.	Prov	16	33	Prov 16:33	high	book-named				Prov 16:33		
 ddc-2-05	la	la	{¶18}	4	— CH V	et xviii. 18.	Prov	18	18	Prov 18:18	carried	book-carried	ddc-2-05:la:{¶18}:3			Prov 18:18		
 ddc-2-05	la	la	{¶18}	5	BOOK CH V-LIST	1 Chron. xxvi. 13, 14.	1Chr	26	13,14	1Chr 26:13,14	high	book-named				1Chr 26:13,14		
-ddc-2-05	la	la	{¶18}	6	BOOK CH V	Nehem. x. 35.	Neh	10	35	Neh 10:35	high	book-named		d164	plausible	Neh 10:34	unchecked	no J–T division read for this chapter
+ddc-2-05	la	la	{¶18}	6	BOOK CH V	Nehem. x. 35.	Neh	10	35	Neh 10:35	high	book-named		d164	plausible	Neh 10:34	versification	J–T Neh 10 begins at Neh 9:38 (read, leaf 389)
 ddc-2-05	la	la	{¶18}	7	BOOK CH V	Luc. i. 9.	Luke	1	9	Luke 1:9	high	book-named				Luke 1:9		
 ddc-2-05	la	la	{¶18}	8	BOOK CH V-LIST	Act. i. 24, 26.	Acts	1	24,26	Acts 1:24,26	high	book-named				Acts 1:24,26		
 ddc-2-05	la	la	{¶19}	0	BOOK CH V-LIST	Num. xxii. 12, 20.	Num	22	12,20	Num 22:12,20	high	book-named				Num 22:12,20		
@@ -2194,8 +2194,8 @@ ddc-2-05	en-sumner	en-sumner	{¶10}	2	BOOK CH V	2 Chron. xxxvi. 13.	2Chr	36	13	2
 ddc-2-05	en-sumner	en-sumner	{¶10}	3	BOOK CH V	2 Chron. xxxvi. 13	2Chr	36	13	2Chr 36:13	high	book-named				2Chr 36:13		
 ddc-2-05	en-sumner	en-sumner	{¶10}	4	BOOK CH V	Jer. xxvii. 6.	Jer	27	6	Jer 27:6	high	book-named		d156	plausible	Jer 27:6		
 ddc-2-05	en-sumner	en-sumner	{¶11}	0	BOOK CH V-LIST	Lev. v. 4, 5.	Lev	5	4,5	Lev 5:4,5	high	book-named		d157	plausible	Lev 5:4,5	unchecked	no J–T division read for this chapter
-ddc-2-05	en-sumner	en-sumner	{¶11}	1	BOOK CH V	1 Sam. xiv. 39.	1Sam	14	39	1Sam 14:39	high	book-named		d158	plausible	1Sam 14:39	unchecked	no J–T division read for this chapter
-ddc-2-05	en-sumner	en-sumner	{¶11}	2	— — V	v. 44	1Sam	14	44	1Sam 14:44	carried	book-and-chapter-carried	ddc-2-05:en-sumner:{¶11}:1	d159	plausible	1Sam 14:44	unchecked	no J–T division read for this chapter
+ddc-2-05	en-sumner	en-sumner	{¶11}	1	BOOK CH V	1 Sam. xiv. 39.	1Sam	14	39	1Sam 14:39	high	book-named		d158	plausible	1Sam 14:39	versification	J–T 1Sam 14 begins at 1Sam 13:23 (inferred, leaf 252)
+ddc-2-05	en-sumner	en-sumner	{¶11}	2	— — V	v. 44	1Sam	14	44	1Sam 14:44	carried	book-and-chapter-carried	ddc-2-05:en-sumner:{¶11}:1	d159	plausible	1Sam 14:44	versification	J–T 1Sam 14 begins at 1Sam 13:23 (inferred, leaf 252)
 ddc-2-05	en-sumner	en-sumner	{¶12}	0	BOOK CH V	1 Sam. xxv. 22.	1Sam	25	22	1Sam 25:22	high	book-named				1Sam 25:22		
 ddc-2-05	en-sumner	en-sumner	{¶12}	1	— — V-LIST	v. 33, 34.	1Sam	25	33,34	1Sam 25:33,34	carried	book-and-chapter-carried	ddc-2-05:en-sumner:{¶12}:0			1Sam 25:33,34		
 ddc-2-05	en-sumner	en-sumner	{¶12}	2	BOOK CH V	2 Sam. xix. 23.	2Sam	19	23	2Sam 19:23	high	book-named		d160	plausible	2Sam 19:23	unchecked	no J–T division read for this chapter
@@ -2221,7 +2221,7 @@ ddc-2-05	en-sumner	en-sumner	{¶18}	2	BOOK CH V	1 Sam. x. 20.	1Sam	10	20	1Sam 10
 ddc-2-05	en-sumner	en-sumner	{¶18}	3	BOOK CH V	Prov. xvi. 33.	Prov	16	33	Prov 16:33	high	book-named				Prov 16:33		
 ddc-2-05	en-sumner	en-sumner	{¶18}	4	— CH V	xviii. 18.	Prov	18	18	Prov 18:18	carried	book-carried	ddc-2-05:en-sumner:{¶18}:3			Prov 18:18		
 ddc-2-05	en-sumner	en-sumner	{¶18}	5	BOOK CH V-LIST	1 Chron. xxvi. 13, 14.	1Chr	26	13,14	1Chr 26:13,14	high	book-named				1Chr 26:13,14		
-ddc-2-05	en-sumner	en-sumner	{¶18}	6	BOOK CH V	Neh. x. 34.	Neh	10	34	Neh 10:34	high	book-named		d164	plausible	Neh 10:34	unchecked	no J–T division read for this chapter
+ddc-2-05	en-sumner	en-sumner	{¶18}	6	BOOK CH V	Neh. x. 34.	Neh	10	34	Neh 10:34	high	book-named		d164	plausible	Neh 10:34	versification	J–T Neh 10 begins at Neh 9:38 (read, leaf 389)
 ddc-2-05	en-sumner	en-sumner	{¶18}	7	BOOK CH V	Luke i. 9.	Luke	1	9	Luke 1:9	high	book-named				Luke 1:9		
 ddc-2-05	en-sumner	en-sumner	{¶18}	8	BOOK CH V-LIST	Acts i. 24, 26.	Acts	1	24,26	Acts 1:24,26	high	book-named				Acts 1:24,26		
 ddc-2-05	en-sumner	en-sumner	{¶19}	0	BOOK CH V-LIST	Num. xxii. 12, 20.	Num	22	12,20	Num 22:12,20	high	book-named				Num 22:12,20		
@@ -2496,8 +2496,8 @@ ddc-2-06	en-sumner	en-sumner	{¶23}	4	BOOK CH V	Ezek. xxxvi. 20.	Ezek	36	20	Ezek
 ddc-2-07	la	la	{¶3}	0	BOOK CH V-LIST	Joan. iv. 21, 23.	John	4	21,23	John 4:21,23	high	book-named				John 4:21,23		
 ddc-2-07	la	la	{¶3}	1	BOOK CH V	Mal. i. 11.	Mal	1	11	Mal 1:11	high	book-named				Mal 1:11		
 ddc-2-07	la	la	{¶4}	0	BOOK CH V-LIST	Gen. ii. 2, 3.	Gen	2	2,3	Gen 2:2,3	high	book-named				Gen 2:2,3		
-ddc-2-07	la	la	{¶4}	2	BOOK CH V-LIST	Exod. xvi. 2, 24, 26, 30.	Exod	16	2,24,26,30	Exod 16:2,24,26,30	high	book-named		d183	plausible	Exod 16:1,23,25,29	unchecked	no J–T division read for this chapter
-ddc-2-07	la	la	{¶4}	3	— — V	v. 24	Exod	16	24	Exod 16:24	carried	book-and-chapter-carried	ddc-2-07:la:{¶4}:2	d184	plausible	Exod 16:23	unchecked	no J–T division read for this chapter
+ddc-2-07	la	la	{¶4}	2	BOOK CH V-LIST	Exod. xvi. 2, 24, 26, 30.	Exod	16	2,24,26,30	Exod 16:2,24,26,30	high	book-named		d183	plausible	Exod 16:1,23,25,29	versification	J–T Exod 16 begins at Exod 15:27 (read, leaf 87)
+ddc-2-07	la	la	{¶4}	3	— — V	v. 24	Exod	16	24	Exod 16:24	carried	book-and-chapter-carried	ddc-2-07:la:{¶4}:2	d184	plausible	Exod 16:23	versification	J–T Exod 16 begins at Exod 15:27 (read, leaf 87)
 ddc-2-07	la	la	{¶4}	4	— CH V+&c	cap. xx. 8, &c.	Exod	20	8	Exod 20:8 &c.	carried	book-carried	ddc-2-07:la:{¶4}:3			Exod 20:8 &c.		
 ddc-2-07	la	la	{¶4}	5	— CH —	cap. xvi.	Exod	16		Exod 16	carried	book-carried	ddc-2-07:la:{¶4}:4	d185	suspect	Exod 16	unchecked	different books, or a chapter-only citation
 ddc-2-07	la	la	{¶4}	7	— CH V	et xxxiv. 21.	Exod	34	21	Exod 34:21	carried	book-carried	ddc-2-07:la:{¶4}:5			Exod 34:21		
@@ -2506,7 +2506,7 @@ ddc-2-07	la	la	{¶4}	9	BOOK CH V	Lev. xxiii. 3.	Lev	23	3	Lev 23:3	high	book-name
 ddc-2-07	la	la	{¶4}	10	BOOK CH V+&c	Num. xv. 32, &c.	Num	15	32	Num 15:32 &c.	high	book-named				Num 15:32 &c.		
 ddc-2-07	la	la	{¶4}	11	BOOK CH V-LIST	2 Chron. xxxvi. 20, 21.	2Chr	36	20,21	2Chr 36:20,21	high	book-named				2Chr 36:20,21		
 ddc-2-07	la	la	{¶4}	12	BOOK CH V-LIST	Jer. xvii. 21, 22.	Jer	17	21,22	Jer 17:21,22	high	book-named				Jer 17:21,22		
-ddc-2-07	la	la	{¶4}	13	BOOK CH V	Nehem. x. 32.	Neh	10	32	Neh 10:32	high	book-named		d186	plausible	Neh 10:31	unchecked	no J–T division read for this chapter
+ddc-2-07	la	la	{¶4}	13	BOOK CH V	Nehem. x. 32.	Neh	10	32	Neh 10:32	high	book-named		d186	plausible	Neh 10:31	versification	J–T Neh 10 begins at Neh 9:38 (read, leaf 389)
 ddc-2-07	la	la	{¶4}	14	— CH V+&c	et xiii. 15, &c.	Neh	13	15	Neh 13:15 &c.	carried	book-carried	ddc-2-07:la:{¶4}:13			Neh 13:15 &c.		
 ddc-2-07	la	la	{¶5}	0	BOOK CH V	Exod. xx. 11.	Exod	20	11	Exod 20:11	high	book-named				Exod 20:11		
 ddc-2-07	la	la	{¶5}	1	— CH V-LIST	et xxxi. 15, 17.	Exod	31	15,17	Exod 31:15,17	carried	book-carried	ddc-2-07:la:{¶5}:0	d187	plausible	Exod 31:15,16,17	unchecked	no J–T division read for this chapter
@@ -2554,8 +2554,8 @@ ddc-2-07	la	la	{¶22}	0	BOOK CH V	Col. ii. 16.	Col	2	16	Col 2:16	high	book-named
 ddc-2-07	en-sumner	en-sumner	{¶3}	0	BOOK CH V-LIST	John iv. 21, 23.	John	4	21,23	John 4:21,23	high	book-named				John 4:21,23		
 ddc-2-07	en-sumner	en-sumner	{¶3}	1	— CH V	i. 11.	John	1	11	John 1:11	carried	book-carried	ddc-2-07:en-sumner:{¶3}:0			John 1:11		
 ddc-2-07	en-sumner	en-sumner	{¶4}	0	BOOK CH V-LIST	Gen. ii. 2, 3.	Gen	2	2,3	Gen 2:2,3	high	book-named				Gen 2:2,3		
-ddc-2-07	en-sumner	en-sumner	{¶4}	2	BOOK CH V-LIST	Exod. xvi. 1, 23, 25, 29.	Exod	16	1,23,25,29	Exod 16:1,23,25,29	high	book-named		d183	plausible	Exod 16:1,23,25,29	unchecked	no J–T division read for this chapter
-ddc-2-07	en-sumner	en-sumner	{¶4}	3	— — V	v. 23	Exod	16	23	Exod 16:23	carried	book-and-chapter-carried	ddc-2-07:en-sumner:{¶4}:2	d184	plausible	Exod 16:23	unchecked	no J–T division read for this chapter
+ddc-2-07	en-sumner	en-sumner	{¶4}	2	BOOK CH V-LIST	Exod. xvi. 1, 23, 25, 29.	Exod	16	1,23,25,29	Exod 16:1,23,25,29	high	book-named		d183	plausible	Exod 16:1,23,25,29	versification	J–T Exod 16 begins at Exod 15:27 (read, leaf 87)
+ddc-2-07	en-sumner	en-sumner	{¶4}	3	— — V	v. 23	Exod	16	23	Exod 16:23	carried	book-and-chapter-carried	ddc-2-07:en-sumner:{¶4}:2	d184	plausible	Exod 16:23	versification	J–T Exod 16 begins at Exod 15:27 (read, leaf 87)
 ddc-2-07	en-sumner	en-sumner	{¶4}	4	— CH V+&c	xx. 8, &c.	Exod	20	8	Exod 20:8 &c.	carried	book-carried	ddc-2-07:en-sumner:{¶4}:3			Exod 20:8 &c.		
 ddc-2-07	en-sumner	en-sumner	{¶4}	5	— CH V	xxxi. 14.	Exod	31	14	Exod 31:14	carried	book-carried	ddc-2-07:en-sumner:{¶4}:4	d185	suspect	Exod 31:14	unchecked	different books, or a chapter-only citation
 ddc-2-07	en-sumner	en-sumner	{¶4}	6	— CH V	xxxiv. 21.	Exod	34	21	Exod 34:21	carried	book-carried	ddc-2-07:en-sumner:{¶4}:5			Exod 34:21		
@@ -2564,7 +2564,7 @@ ddc-2-07	en-sumner	en-sumner	{¶4}	8	BOOK CH V	Lev. xxiii. 3.	Lev	23	3	Lev 23:3	
 ddc-2-07	en-sumner	en-sumner	{¶4}	9	BOOK CH V+&c	Num. xv. 32, &c.	Num	15	32	Num 15:32 &c.	high	book-named				Num 15:32 &c.		
 ddc-2-07	en-sumner	en-sumner	{¶4}	10	BOOK CH V-LIST	2 Chron. xxxvi. 20, 21.	2Chr	36	20,21	2Chr 36:20,21	high	book-named				2Chr 36:20,21		
 ddc-2-07	en-sumner	en-sumner	{¶4}	11	BOOK CH V-LIST	Jer. xvii. 21, 22.	Jer	17	21,22	Jer 17:21,22	high	book-named				Jer 17:21,22		
-ddc-2-07	en-sumner	en-sumner	{¶4}	12	BOOK CH V	Nehem. x. 31.	Neh	10	31	Neh 10:31	high	book-named		d186	plausible	Neh 10:31	unchecked	no J–T division read for this chapter
+ddc-2-07	en-sumner	en-sumner	{¶4}	12	BOOK CH V	Nehem. x. 31.	Neh	10	31	Neh 10:31	high	book-named		d186	plausible	Neh 10:31	versification	J–T Neh 10 begins at Neh 9:38 (read, leaf 389)
 ddc-2-07	en-sumner	en-sumner	{¶4}	13	— CH V+&c	xiii. 15, &c.	Neh	13	15	Neh 13:15 &c.	carried	book-carried	ddc-2-07:en-sumner:{¶4}:12			Neh 13:15 &c.		
 ddc-2-07	en-sumner	en-sumner	{¶5}	0	BOOK CH V	Exod. xx. 11.	Exod	20	11	Exod 20:11	high	book-named				Exod 20:11		
 ddc-2-07	en-sumner	en-sumner	{¶5}	1	— CH V-RANGE	xxxi. 15—17.	Exod	31	15,16,17	Exod 31:15,16,17	carried	book-carried	ddc-2-07:en-sumner:{¶5}:0	d187	plausible	Exod 31:15,16,17	unchecked	no J–T division read for this chapter
@@ -3085,7 +3085,7 @@ ddc-2-09	la	la	{¶37}	6	BOOK CH —	Gen. xli.	Gen	41		Gen 41	high	book-named				
 ddc-2-09	la	la	{¶37}	7	BOOK CH V-LIST	Daniel ii. 48, 49.	Dan	2	48,49	Dan 2:48,49	high	book-named				Dan 2:48,49		
 ddc-2-09	la	la	{¶37}	8	— — V	cap. v. 17.	Dan	2	17	Dan 2:17	cross-layer	et-v-settled-by-english-layer	ddc-2-09:la:{¶37}:7			Dan 2:17		
 ddc-2-09	la	la	{¶37}	9	— — V	v. 29	Dan	2	29	Dan 2:29	carried	book-and-chapter-carried	ddc-2-09:la:{¶37}:8			Dan 2:29		
-ddc-2-09	la	la	{¶37}	10	— CH V+&c	cap. vi. 3, &c.	Dan	6	3	Dan 6:3 &c.	carried	book-carried	ddc-2-09:la:{¶37}:9	d231	plausible	Dan 6:2	unchecked	no J–T division read for this chapter
+ddc-2-09	la	la	{¶37}	10	— CH V+&c	cap. vi. 3, &c.	Dan	6	3	Dan 6:3 &c.	carried	book-carried	ddc-2-09:la:{¶37}:9	d231	plausible	Dan 6:2	versification	J–T Dan 6 begins at Dan 5:31 (inferred, leaf 713)
 ddc-2-09	la	la	{¶37}	11	— CH V	cap. ii. 5.	Dan	2	5	Dan 2:5	carried	book-carried	ddc-2-09:la:{¶37}:10			Dan 2:5		
 ddc-2-09	la	la	{¶37}	12	BOOK CH V	1 Sam. x. 1.	1Sam	10	1	1Sam 10:1	high	book-named				1Sam 10:1		
 ddc-2-09	la	la	{¶37}	13	BOOK CH V-LIST	2 Reg. v. 15, 16.	2Kgs	5	15,16	2Kgs 5:15,16	high	book-named				2Kgs 5:15,16		
@@ -3346,7 +3346,7 @@ ddc-2-09	en-sumner	en-sumner	{¶37}	6	BOOK CH —	Gen. xli.	Gen	41		Gen 41	high	
 ddc-2-09	en-sumner	en-sumner	{¶37}	7	BOOK CH V-LIST	Daniel ii. 48, 49.	Dan	2	48,49	Dan 2:48,49	high	book-named				Dan 2:48,49		
 ddc-2-09	en-sumner	en-sumner	{¶37}	8	— — V	v. 17	Dan	2	17	Dan 2:17	carried	book-and-chapter-carried	ddc-2-09:en-sumner:{¶37}:7			Dan 2:17		
 ddc-2-09	en-sumner	en-sumner	{¶37}	9	— — V	v. 29	Dan	2	29	Dan 2:29	carried	book-and-chapter-carried	ddc-2-09:en-sumner:{¶37}:8			Dan 2:29		
-ddc-2-09	en-sumner	en-sumner	{¶37}	10	— CH V	vi. 2.	Dan	6	2	Dan 6:2	carried	book-carried	ddc-2-09:en-sumner:{¶37}:9	d231	plausible	Dan 6:2	unchecked	no J–T division read for this chapter
+ddc-2-09	en-sumner	en-sumner	{¶37}	10	— CH V	vi. 2.	Dan	6	2	Dan 6:2	carried	book-carried	ddc-2-09:en-sumner:{¶37}:9	d231	plausible	Dan 6:2	versification	J–T Dan 6 begins at Dan 5:31 (inferred, leaf 713)
 ddc-2-09	en-sumner	en-sumner	{¶37}	11	— CH V	ii. 5.	Dan	2	5	Dan 2:5	carried	book-carried	ddc-2-09:en-sumner:{¶37}:10			Dan 2:5		
 ddc-2-09	en-sumner	en-sumner	{¶37}	12	BOOK CH V	1 Sam. x. 1.	1Sam	10	1	1Sam 10:1	high	book-named				1Sam 10:1		
 ddc-2-09	en-sumner	en-sumner	{¶37}	13	BOOK CH V-LIST	2 Kings v. 15, 16.	2Kgs	5	15,16	2Kgs 5:15,16	high	book-named				2Kgs 5:15,16		
@@ -3943,7 +3943,7 @@ ddc-2-12	la	la	{¶14}	9	BOOK CH V-LIST	Jer. v. 7, 8.	Jer	5	7,8	Jer 5:7,8	high	bo
 ddc-2-12	la	la	{¶14}	10	BOOK CH V	Ezech. xviii. 6.	Ezek	18	6	Ezek 18:6	high	book-named				Ezek 18:6		
 ddc-2-12	la	la	{¶14}	11	— CH V	et xxii. 11.	Ezek	22	11	Ezek 22:11	carried	book-carried	ddc-2-12:la:{¶14}:10			Ezek 22:11		
 ddc-2-12	la	la	{¶14}	12	BOOK CH V	Hos. vii. 4.	Hos	7	4	Hos 7:4	high	book-named				Hos 7:4		
-ddc-2-12	la	la	{¶14}	13	BOOK CH V	Amos. ii. 4.	Amos	2	4	Amos 2:4	high	book-named		d271	plausible	Amos 2:7	unchecked	no J–T division read for this chapter
+ddc-2-12	la	la	{¶14}	13	BOOK CH V	Amos. ii. 4.	Amos	2	4	Amos 2:4	high	book-named		d271	plausible	Amos 2:7	versification	J–T Amos 2 begins at Amos 2:4 (read, leaf 737)
 ddc-2-12	la	la	{¶14}	14	BOOK CH V	Heb. xiii. 4.	Heb	13	4	Heb 13:4	high	book-named				Heb 13:4		
 ddc-2-12	la	la	{¶15}	0	BOOK CH V-LIST+&c	Exod. xxii. 16, 17, &c.	Exod	22	16,17	Exod 22:16,17 &c.	high	book-named				Exod 22:16,17 &c.		
 ddc-2-12	la	la	{¶15}	1	BOOK CH V	Lev. xviii. 6.	Lev	18	6	Lev 18:6	high	book-named				Lev 18:6		
@@ -4046,7 +4046,7 @@ ddc-2-12	en-sumner	en-sumner	{¶14–15}	9	BOOK CH V-LIST	Jer. v. 7, 8.	Jer	5	7,
 ddc-2-12	en-sumner	en-sumner	{¶14–15}	10	BOOK CH V	Ezek. xviii. 6.	Ezek	18	6	Ezek 18:6	high	book-named				Ezek 18:6		
 ddc-2-12	en-sumner	en-sumner	{¶14–15}	11	— CH V	xxii. 11.	Ezek	22	11	Ezek 22:11	carried	book-carried	ddc-2-12:en-sumner:{¶14–15}:10			Ezek 22:11		
 ddc-2-12	en-sumner	en-sumner	{¶14–15}	12	BOOK CH V	Hosea vii. 4.	Hos	7	4	Hos 7:4	high	book-named				Hos 7:4		
-ddc-2-12	en-sumner	en-sumner	{¶14–15}	13	BOOK CH V	Amos ii. 7.	Amos	2	7	Amos 2:7	high	book-named		d271	plausible	Amos 2:7	unchecked	no J–T division read for this chapter
+ddc-2-12	en-sumner	en-sumner	{¶14–15}	13	BOOK CH V	Amos ii. 7.	Amos	2	7	Amos 2:7	high	book-named		d271	plausible	Amos 2:7	versification	J–T Amos 2 begins at Amos 2:4 (read, leaf 737)
 ddc-2-12	en-sumner	en-sumner	{¶14–15}	14	BOOK CH V	Heb. xiii. 4.	Heb	13	4	Heb 13:4	high	book-named				Heb 13:4		
 ddc-2-12	en-sumner	en-sumner	{¶14–15}	15	BOOK CH V-LIST+&c	Exod. xxii. 16, 17, &c.	Exod	22	16,17	Exod 22:16,17 &c.	high	book-named				Exod 22:16,17 &c.		
 ddc-2-12	en-sumner	en-sumner	{¶14–15}	16	BOOK CH V	Levit. xviii. 6.	Lev	18	6	Lev 18:6	high	book-named				Lev 18:6		
@@ -4549,7 +4549,7 @@ ddc-2-14	la	la	{¶11}	4	BOOK CH V-LIST	Deut. xxv. 13, 14, 15.	Deut	25	13,14,15	D
 ddc-2-14	la	la	{¶11}	5	BOOK CH V	Prov. xi. 1.	Prov	11	1	Prov 11:1	high	book-named				Prov 11:1		
 ddc-2-14	la	la	{¶11}	6	— CH V	et xx. 10.	Prov	20	10	Prov 20:10	carried	book-carried	ddc-2-14:la:{¶11}:5			Prov 20:10		
 ddc-2-14	la	la	{¶11}	7	— — V	et v. 23.	Prov	20	23	Prov 20:23	cross-layer	et-v-settled-by-english-layer	ddc-2-14:la:{¶11}:6			Prov 20:23		
-ddc-2-14	la	la	{¶11}	8	BOOK CH V	Hos. xii. 8.	Hos	12	8	Hos 12:8	high	book-named		d317	plausible	Hos 12:7	unchecked	no J–T division read for this chapter
+ddc-2-14	la	la	{¶11}	8	BOOK CH V	Hos. xii. 8.	Hos	12	8	Hos 12:8	high	book-named		d317	plausible	Hos 12:7	versification	J–T Hos 12 begins at Hos 11:12 (inferred, leaf 731)
 ddc-2-14	la	la	{¶11}	9	BOOK CH V	Amos. viii. 5.	Amos	8	5	Amos 8:5	high	book-named				Amos 8:5		
 ddc-2-14	la	la	{¶11}	10	BOOK CH V	Micæ vi. 11.	Mic	6	11	Mic 6:11	high	book-named				Mic 6:11		
 ddc-2-14	la	la	{¶11}	11	BOOK CH V	Prov. xx. 14.	Prov	20	14	Prov 20:14	high	book-named				Prov 20:14		
@@ -4658,7 +4658,7 @@ ddc-2-14	en-sumner	en-sumner	{¶11}	4	BOOK CH V-RANGE	Deut. xxv. 13—15.	Deut	2
 ddc-2-14	en-sumner	en-sumner	{¶11}	5	BOOK CH V	Prov. xi. 1.	Prov	11	1	Prov 11:1	high	book-named				Prov 11:1		
 ddc-2-14	en-sumner	en-sumner	{¶11}	6	— CH V	xx. 10.	Prov	20	10	Prov 20:10	carried	book-carried	ddc-2-14:en-sumner:{¶11}:5			Prov 20:10		
 ddc-2-14	en-sumner	en-sumner	{¶11}	7	— — V	v. 23	Prov	20	23	Prov 20:23	carried	book-and-chapter-carried	ddc-2-14:en-sumner:{¶11}:6			Prov 20:23		
-ddc-2-14	en-sumner	en-sumner	{¶11}	8	BOOK CH V	Hos. xii. 7.	Hos	12	7	Hos 12:7	high	book-named		d317	plausible	Hos 12:7	unchecked	no J–T division read for this chapter
+ddc-2-14	en-sumner	en-sumner	{¶11}	8	BOOK CH V	Hos. xii. 7.	Hos	12	7	Hos 12:7	high	book-named		d317	plausible	Hos 12:7	versification	J–T Hos 12 begins at Hos 11:12 (inferred, leaf 731)
 ddc-2-14	en-sumner	en-sumner	{¶11}	9	BOOK CH V	Amos viii. 5.	Amos	8	5	Amos 8:5	high	book-named				Amos 8:5		
 ddc-2-14	en-sumner	en-sumner	{¶11}	10	BOOK CH V	Micah vi. 11.	Mic	6	11	Mic 6:11	high	book-named				Mic 6:11		
 ddc-2-14	en-sumner	en-sumner	{¶11}	11	BOOK CH V	Prov. xx. 14.	Prov	20	14	Prov 20:14	high	book-named				Prov 20:14		
@@ -4764,7 +4764,7 @@ ddc-2-15	la	la	{¶9}	11	BOOK CH V	Col. iii. 21.	Col	3	21	Col 3:21	high	book-name
 ddc-2-15	la	la	{¶10}	0	BOOK CH —	1 Sam. ii.	1Sam	2		1Sam 2	high	book-named				1Sam 2		
 ddc-2-15	la	la	{¶10}	1	BOOK CH V	1 Reg. i. 6.	1Kgs	1	6	1Kgs 1:6	high	book-named				1Kgs 1:6		
 ddc-2-15	la	la	{¶10}	2	BOOK CH V	Gen. xxv. 28.	Gen	25	28	Gen 25:28	high	book-named				Gen 25:28		
-ddc-2-15	la	la	{¶11}	0	BOOK CH V	1 Sam. xiv. 45.	1Sam	14	45	1Sam 14:45	high	book-named		d326	plausible	1Sam 14:44	unchecked	no J–T division read for this chapter
+ddc-2-15	la	la	{¶11}	0	BOOK CH V	1 Sam. xiv. 45.	1Sam	14	45	1Sam 14:45	high	book-named		d326	plausible	1Sam 14:44	versification	J–T 1Sam 14 begins at 1Sam 13:23 (inferred, leaf 252)
 ddc-2-15	la	la	{¶12}	0	BOOK CH V+&c	Gen. ix. 23, &c.	Gen	9	23	Gen 9:23 &c.	high	book-named		d327	plausible	Gen 9:23		
 ddc-2-15	la	la	{¶12}	1	— CH V+&c	et xxiv. 15, &c.	Gen	24	15	Gen 24:15 &c.	carried	book-carried	ddc-2-15:la:{¶12}:0			Gen 24:15 &c.		
 ddc-2-15	la	la	{¶12}	2	— CH V	et xxix. 9.	Gen	29	9	Gen 29:9	carried	book-carried	ddc-2-15:la:{¶12}:1			Gen 29:9		
@@ -4951,7 +4951,7 @@ ddc-2-15	en-sumner	en-sumner	{¶9}	11	BOOK CH V	Coloss. iii. 21.	Col	3	21	Col 3:
 ddc-2-15	en-sumner	en-sumner	{¶10}	0	BOOK CH —	1 Sam. ii.	1Sam	2		1Sam 2	high	book-named				1Sam 2		
 ddc-2-15	en-sumner	en-sumner	{¶10}	1	BOOK CH V	1 Kings i. 6.	1Kgs	1	6	1Kgs 1:6	high	book-named				1Kgs 1:6		
 ddc-2-15	en-sumner	en-sumner	{¶10}	2	BOOK CH V	Gen. xxv. 28.	Gen	25	28	Gen 25:28	high	book-named				Gen 25:28		
-ddc-2-15	en-sumner	en-sumner	{¶11}	0	BOOK CH V	1 Sam. xiv. 44.	1Sam	14	44	1Sam 14:44	high	book-named		d326	plausible	1Sam 14:44	unchecked	no J–T division read for this chapter
+ddc-2-15	en-sumner	en-sumner	{¶11}	0	BOOK CH V	1 Sam. xiv. 44.	1Sam	14	44	1Sam 14:44	high	book-named		d326	plausible	1Sam 14:44	versification	J–T 1Sam 14 begins at 1Sam 13:23 (inferred, leaf 252)
 ddc-2-15	en-sumner	en-sumner	{¶12}	0	BOOK CH V	Gen. ix. 23.	Gen	9	23	Gen 9:23	high	book-named		d327	plausible	Gen 9:23		
 ddc-2-15	en-sumner	en-sumner	{¶12}	1	— CH V+&c	xxiv. 15, &c.	Gen	24	15	Gen 24:15 &c.	carried	book-carried	ddc-2-15:en-sumner:{¶12}:0			Gen 24:15 &c.		
 ddc-2-15	en-sumner	en-sumner	{¶12}	2	— CH V	xxix. 9.	Gen	29	9	Gen 29:9	carried	book-carried	ddc-2-15:en-sumner:{¶12}:1			Gen 29:9		
@@ -5307,7 +5307,7 @@ ddc-2-17	la	la	{¶8}	3	BOOK CH V-LIST	Isa. xxii. 15, 16.	Isa	22	15,16	Isa 22:15,
 ddc-2-17	la	la	{¶8}	4	BOOK CH V	1 Reg. xxi. 7.	1Kgs	21	7	1Kgs 21:7	high	book-named				1Kgs 21:7		
 ddc-2-17	la	la	{¶8}	5	BOOK CH V	Esth. iii. 6.	Esth	3	6	Esth 3:6	high	book-named				Esth 3:6		
 ddc-2-17	la	la	{¶8}	6	— — V	et v. 9.	Esth	3	9	Esth 3:9	cross-layer	et-v-settled-by-english-layer	ddc-2-17:la:{¶8}:5			Esth 3:9		
-ddc-2-17	la	la	{¶8}	7	BOOK CH V	Dan. vi. 8.	Dan	6	8	Dan 6:8	high	book-named		d377	plausible	Dan 6:7	unchecked	no J–T division read for this chapter
+ddc-2-17	la	la	{¶8}	7	BOOK CH V	Dan. vi. 8.	Dan	6	8	Dan 6:8	high	book-named		d377	plausible	Dan 6:7	versification	J–T Dan 6 begins at Dan 5:31 (inferred, leaf 713)
 ddc-2-17	la	la	{¶9}	0	BOOK CH V	Isa. xlix. 23.	Isa	49	23	Isa 49:23	high	book-named				Isa 49:23		
 ddc-2-17	la	la	{¶9}	1	BOOK CH V	Act. ix. 31.	Acts	9	31	Acts 9:31	high	book-named				Acts 9:31		
 ddc-2-17	la	la	{¶10}	0	BOOK CH V	Jos. xxiv. 15.	Josh	24	15	Josh 24:15	high	book-named				Josh 24:15		
@@ -5346,7 +5346,7 @@ ddc-2-17	la	la	{¶13}	9	— CH V	et xxvi. 18.	2Chr	26	18	2Chr 26:18	carried	book
 ddc-2-17	la	la	{¶13}	10	BOOK CH V-LIST	Esth. iii. 2, 3, 4.	Esth	3	2,3,4	Esth 3:2,3,4	high	book-named		d383	plausible	Esth 3:2,4	unchecked	no J–T division read for this chapter
 ddc-2-17	la	la	{¶13}	11	BOOK CH V	Dan. iii. 16.	Dan	3	16	Dan 3:16	high	book-named				Dan 3:16		
 ddc-2-17	la	la	{¶13}	12	— — V	et v. 18.	Dan	3	18	Dan 3:18	cross-layer	et-v-settled-by-english-layer	ddc-2-17:la:{¶13}:11			Dan 3:18		
-ddc-2-17	la	la	{¶13}	13	— CH V	cap. vi. 11.	Dan	6	11	Dan 6:11	carried	book-carried	ddc-2-17:la:{¶13}:12	d384	plausible	Dan 6:10	unchecked	no J–T division read for this chapter
+ddc-2-17	la	la	{¶13}	13	— CH V	cap. vi. 11.	Dan	6	11	Dan 6:11	carried	book-carried	ddc-2-17:la:{¶13}:12	d384	plausible	Dan 6:10	versification	J–T Dan 6 begins at Dan 5:31 (inferred, leaf 713)
 ddc-2-17	la	la	{¶13}	14	BOOK CH V	Act. iv. 19.	Acts	4	19	Acts 4:19	high	book-named				Acts 4:19		
 ddc-2-17	la	la	{¶13}	15	BOOK CH V	Heb. xi. 23.	Heb	11	23	Heb 11:23	high	book-named				Heb 11:23		
 ddc-2-17	la	la	{¶14}	0	BOOK CH V+&c	Num. xvi. 1, &c.	Num	16	1	Num 16:1 &c.	high	book-named		d385	plausible	Num 16:1		
@@ -5380,7 +5380,7 @@ ddc-2-17	la	la	{¶22}	1	BOOK CH V	Deut. xxiii. 15.	Deut	23	15	Deut 23:15	high	bo
 ddc-2-17	la	la	{¶23}	0	BOOK CH V	Prov. xx. 18.	Prov	20	18	Prov 20:18	high	book-named				Prov 20:18		
 ddc-2-17	la	la	{¶23}	1	— CH V	et xxiv. 6.	Prov	24	6	Prov 24:6	carried	book-carried	ddc-2-17:la:{¶23}:0			Prov 24:6		
 ddc-2-17	la	la	{¶23}	2	BOOK CH V	Luc. xiv. 31.	Luke	14	31	Luke 14:31	high	book-named				Luke 14:31		
-ddc-2-17	la	la	{¶23}	3	BOOK CH V	1 Sam. xiv. 29.	1Sam	14	29	1Sam 14:29	high	book-named		d396	plausible	1Sam 14:28	unchecked	no J–T division read for this chapter
+ddc-2-17	la	la	{¶23}	3	BOOK CH V	1 Sam. xiv. 29.	1Sam	14	29	1Sam 14:29	high	book-named		d396	plausible	1Sam 14:28	versification	J–T 1Sam 14 begins at 1Sam 13:23 (inferred, leaf 252)
 ddc-2-17	la	la	{¶23}	4	— CH V	et xxiii. 22.	1Sam	23	22	1Sam 23:22	carried	book-carried	ddc-2-17:la:{¶23}:3			1Sam 23:22		
 ddc-2-17	la	la	{¶23}	5	BOOK CH V	Prov. xxi. 22.	Prov	21	22	Prov 21:22	high	book-named				Prov 21:22		
 ddc-2-17	la	la	{¶23}	6	BOOK CH V	Deut. xx. 19.	Deut	20	19	Deut 20:19	high	book-named				Deut 20:19		
@@ -5413,7 +5413,7 @@ ddc-2-17	la	la	{¶23}	32	BOOK CH V	Jer. xxi. 4.	Jer	21	4	Jer 21:4	high	book-name
 ddc-2-17	la	la	{¶23}	33	— CH V	et xxxvii. 10.	Jer	37	10	Jer 37:10	carried	book-carried	ddc-2-17:la:{¶23}:32			Jer 37:10		
 ddc-2-17	la	la	{¶23}	34	BOOK CH V	Ezech. xiii. 5.	Ezek	13	5	Ezek 13:5	high	book-named				Ezek 13:5		
 ddc-2-17	la	la	{¶23}	35	BOOK CH V-LIST	Zech. x. 4, 5, 6.	Zech	10	4,5,6	Zech 10:4,5,6	high	book-named		d407	plausible	Zech 10:5,6	unchecked	no J–T division read for this chapter
-ddc-2-17	la	la	{¶23}	36	BOOK CH V	Amos. ii. 11.	Amos	2	11	Amos 2:11	high	book-named		d408	plausible	Amos 2:14	unchecked	no J–T division read for this chapter
+ddc-2-17	la	la	{¶23}	36	BOOK CH V	Amos. ii. 11.	Amos	2	11	Amos 2:11	high	book-named		d408	plausible	Amos 2:14	versification	J–T Amos 2 begins at Amos 2:4 (read, leaf 737)
 ddc-2-17	la	la	{¶23}	37	BOOK CH V+&c	Num. xxxi. 27, &c.	Num	31	27	Num 31:27 &c.	high	book-named		d409	plausible	Num 31:27		
 ddc-2-17	la	la	{¶23}	38	BOOK CH V	Deut. xx. 14.	Deut	20	14	Deut 20:14	high	book-named				Deut 20:14		
 ddc-2-17	la	la	{¶23}	39	BOOK CH V+&c	Jos. xxii. 8, &c.	Josh	22	8	Josh 22:8 &c.	high	book-named		d410	plausible	Josh 22:8		
@@ -5446,7 +5446,7 @@ ddc-2-17	la	la	{¶26}	0	BOOK CH V	Isa. iii. 8.	Isa	3	8	Isa 3:8	high	book-named		
 ddc-2-17	la	la	{¶26}	1	— CH V-LIST	et lvii. 13, 14, 17.	Isa	57	13,14,17	Isa 57:13,14,17	carried	book-carried	ddc-2-17:la:{¶26}:0	d414	plausible	Isa 57:9,10,13	versification	J–T Isa 57 begins at Isa 56:9 (read, leaf 590)
 ddc-2-17	la	la	{¶26}	2	BOOK CH V	Hos. v. 13.	Hos	5	13	Hos 5:13	high	book-named				Hos 5:13		
 ddc-2-17	la	la	{¶26}	3	— CH V-LIST	et vii. 11, 12.	Hos	7	11,12	Hos 7:11,12	carried	book-carried	ddc-2-17:la:{¶26}:2			Hos 7:11,12		
-ddc-2-17	la	la	{¶26}	4	— CH V	et xii. 2.	Hos	12	2	Hos 12:2	carried	book-carried	ddc-2-17:la:{¶26}:3	d415	plausible	Hos 12:1	unchecked	no J–T division read for this chapter
+ddc-2-17	la	la	{¶26}	4	— CH V	et xii. 2.	Hos	12	2	Hos 12:2	carried	book-carried	ddc-2-17:la:{¶26}:3	d415	plausible	Hos 12:1	versification	J–T Hos 12 begins at Hos 11:12 (inferred, leaf 731)
 ddc-2-17	la	la	{¶26}	5	BOOK CH V	Abac. ii. 12.	Hab	2	12	Hab 2:12	high	book-named				Hab 2:12		
 ddc-2-17	la	la	{¶28}	0	BOOK CH V-LIST	Jer. i. 7, 8.	Jer	1	7,8	Jer 1:7,8	high	book-named				Jer 1:7,8		
 ddc-2-17	la	la	{¶28}	1	— — V-LIST	et v. 17, 18, 19.	Jer	1	17,18,19	Jer 1:17,18,19	cross-layer	et-v-settled-by-english-layer	ddc-2-17:la:{¶28}:0	d416	plausible	Jer 1:17,18,19		
@@ -5598,7 +5598,7 @@ ddc-2-17	en-sumner	en-sumner	{¶8}	3	BOOK CH V-LIST	Isai. xxii. 15, 16.	Isa	22	1
 ddc-2-17	en-sumner	en-sumner	{¶8}	4	BOOK CH V	1 Kings xxi. 7.	1Kgs	21	7	1Kgs 21:7	high	book-named				1Kgs 21:7		
 ddc-2-17	en-sumner	en-sumner	{¶8}	5	BOOK CH V	Esth. iii. 6.	Esth	3	6	Esth 3:6	high	book-named				Esth 3:6		
 ddc-2-17	en-sumner	en-sumner	{¶8}	6	— — V	v. 9	Esth	3	9	Esth 3:9	carried	book-and-chapter-carried	ddc-2-17:en-sumner:{¶8}:5			Esth 3:9		
-ddc-2-17	en-sumner	en-sumner	{¶8}	7	BOOK CH V	Dan. vi. 7.	Dan	6	7	Dan 6:7	high	book-named		d377	plausible	Dan 6:7	unchecked	no J–T division read for this chapter
+ddc-2-17	en-sumner	en-sumner	{¶8}	7	BOOK CH V	Dan. vi. 7.	Dan	6	7	Dan 6:7	high	book-named		d377	plausible	Dan 6:7	versification	J–T Dan 6 begins at Dan 5:31 (inferred, leaf 713)
 ddc-2-17	en-sumner	en-sumner	{¶9}	0	BOOK CH V	Isai. xlix. 23.	Isa	49	23	Isa 49:23	high	book-named				Isa 49:23		
 ddc-2-17	en-sumner	en-sumner	{¶9}	1	BOOK CH V	Acts ix. 31.	Acts	9	31	Acts 9:31	high	book-named				Acts 9:31		
 ddc-2-17	en-sumner	en-sumner	{¶10}	0	BOOK CH V	Josh. xxiv. 15.	Josh	24	15	Josh 24:15	high	book-named				Josh 24:15		
@@ -5637,7 +5637,7 @@ ddc-2-17	en-sumner	en-sumner	{¶13}	9	— CH V	xxvi. 18.	2Chr	26	18	2Chr 26:18	c
 ddc-2-17	en-sumner	en-sumner	{¶13}	10	BOOK CH V-LIST	Esth. iii. 2, 4.	Esth	3	2,4	Esth 3:2,4	high	book-named		d383	plausible	Esth 3:2,4	unchecked	no J–T division read for this chapter
 ddc-2-17	en-sumner	en-sumner	{¶13}	11	BOOK CH V	Dan. iii. 16.	Dan	3	16	Dan 3:16	high	book-named				Dan 3:16		
 ddc-2-17	en-sumner	en-sumner	{¶13}	12	— — V	v. 18	Dan	3	18	Dan 3:18	carried	book-and-chapter-carried	ddc-2-17:en-sumner:{¶13}:11			Dan 3:18		
-ddc-2-17	en-sumner	en-sumner	{¶13}	13	— CH V	vi. 10.	Dan	6	10	Dan 6:10	carried	book-carried	ddc-2-17:en-sumner:{¶13}:12	d384	plausible	Dan 6:10	unchecked	no J–T division read for this chapter
+ddc-2-17	en-sumner	en-sumner	{¶13}	13	— CH V	vi. 10.	Dan	6	10	Dan 6:10	carried	book-carried	ddc-2-17:en-sumner:{¶13}:12	d384	plausible	Dan 6:10	versification	J–T Dan 6 begins at Dan 5:31 (inferred, leaf 713)
 ddc-2-17	en-sumner	en-sumner	{¶13}	14	BOOK CH V	Acts iv. 19.	Acts	4	19	Acts 4:19	high	book-named				Acts 4:19		
 ddc-2-17	en-sumner	en-sumner	{¶13}	15	BOOK CH V	Hebr. xi. 23.	Heb	11	23	Heb 11:23	high	book-named				Heb 11:23		
 ddc-2-17	en-sumner	en-sumner	{¶14}	0	BOOK CH V	Numb. xvi. 1.	Num	16	1	Num 16:1	high	book-named		d385	plausible	Num 16:1		
@@ -5671,7 +5671,7 @@ ddc-2-17	en-sumner	en-sumner	{¶22}	1	BOOK CH V	Deut. xxiii. 15.	Deut	23	15	Deut
 ddc-2-17	en-sumner	en-sumner	{¶23}	0	BOOK CH V	Prov. xx. 18.	Prov	20	18	Prov 20:18	high	book-named				Prov 20:18		
 ddc-2-17	en-sumner	en-sumner	{¶23}	1	— CH V	xxiv. 6.	Prov	24	6	Prov 24:6	carried	book-carried	ddc-2-17:en-sumner:{¶23}:0			Prov 24:6		
 ddc-2-17	en-sumner	en-sumner	{¶23}	2	BOOK CH V	Luke xiv. 31.	Luke	14	31	Luke 14:31	high	book-named				Luke 14:31		
-ddc-2-17	en-sumner	en-sumner	{¶23}	3	BOOK CH V	1 Sam. xiv. 28.	1Sam	14	28	1Sam 14:28	high	book-named		d396	plausible	1Sam 14:28	unchecked	no J–T division read for this chapter
+ddc-2-17	en-sumner	en-sumner	{¶23}	3	BOOK CH V	1 Sam. xiv. 28.	1Sam	14	28	1Sam 14:28	high	book-named		d396	plausible	1Sam 14:28	versification	J–T 1Sam 14 begins at 1Sam 13:23 (inferred, leaf 252)
 ddc-2-17	en-sumner	en-sumner	{¶23}	4	— CH V	xxiii. 22.	1Sam	23	22	1Sam 23:22	carried	book-carried	ddc-2-17:en-sumner:{¶23}:3			1Sam 23:22		
 ddc-2-17	en-sumner	en-sumner	{¶23}	5	BOOK CH V	Prov. xxi. 22.	Prov	21	22	Prov 21:22	high	book-named				Prov 21:22		
 ddc-2-17	en-sumner	en-sumner	{¶23}	6	BOOK CH V	Deut. xx. 19.	Deut	20	19	Deut 20:19	high	book-named				Deut 20:19		
@@ -5703,7 +5703,7 @@ ddc-2-17	en-sumner	en-sumner	{¶23}	31	BOOK CH V	Jer. xxi. 4.	Jer	21	4	Jer 21:4	
 ddc-2-17	en-sumner	en-sumner	{¶23}	32	— CH V	xxxvii. 10.	Jer	37	10	Jer 37:10	carried	book-carried	ddc-2-17:en-sumner:{¶23}:31			Jer 37:10		
 ddc-2-17	en-sumner	en-sumner	{¶23}	33	BOOK CH V	Ezek. xiii. 5.	Ezek	13	5	Ezek 13:5	high	book-named				Ezek 13:5		
 ddc-2-17	en-sumner	en-sumner	{¶23}	34	BOOK CH V-LIST	Zech. x. 5, 6.	Zech	10	5,6	Zech 10:5,6	high	book-named		d407	plausible	Zech 10:5,6	unchecked	no J–T division read for this chapter
-ddc-2-17	en-sumner	en-sumner	{¶23}	35	BOOK CH V	Amos ii. 14.	Amos	2	14	Amos 2:14	high	book-named		d408	plausible	Amos 2:14	unchecked	no J–T division read for this chapter
+ddc-2-17	en-sumner	en-sumner	{¶23}	35	BOOK CH V	Amos ii. 14.	Amos	2	14	Amos 2:14	high	book-named		d408	plausible	Amos 2:14	versification	J–T Amos 2 begins at Amos 2:4 (read, leaf 737)
 ddc-2-17	en-sumner	en-sumner	{¶23}	36	BOOK CH V	Numb. xxxi. 27.	Num	31	27	Num 31:27	high	book-named		d409	plausible	Num 31:27		
 ddc-2-17	en-sumner	en-sumner	{¶23}	37	BOOK CH V	Deut. xx. 14.	Deut	20	14	Deut 20:14	high	book-named				Deut 20:14		
 ddc-2-17	en-sumner	en-sumner	{¶23}	38	BOOK CH V	Josh. xxii. 8.	Josh	22	8	Josh 22:8	high	book-named		d410	plausible	Josh 22:8		
@@ -5736,7 +5736,7 @@ ddc-2-17	en-sumner	en-sumner	{¶26}	0	BOOK CH V	Isai. iii. 7.	Isa	3	7	Isa 3:7	hi
 ddc-2-17	en-sumner	en-sumner	{¶26}	1	— CH V-LIST	lvii. 9, 10, 13.	Isa	57	9,10,13	Isa 57:9,10,13	carried	book-carried	ddc-2-17:en-sumner:{¶26}:0	d414	plausible	Isa 57:9,10,13	versification	J–T Isa 57 begins at Isa 56:9 (read, leaf 590)
 ddc-2-17	en-sumner	en-sumner	{¶26}	2	BOOK CH V	Hos. v. 13.	Hos	5	13	Hos 5:13	high	book-named				Hos 5:13		
 ddc-2-17	en-sumner	en-sumner	{¶26}	3	— CH V-LIST	vii. 11, 12.	Hos	7	11,12	Hos 7:11,12	carried	book-carried	ddc-2-17:en-sumner:{¶26}:2			Hos 7:11,12		
-ddc-2-17	en-sumner	en-sumner	{¶26}	4	— CH V	xii. 1.	Hos	12	1	Hos 12:1	carried	book-carried	ddc-2-17:en-sumner:{¶26}:3	d415	plausible	Hos 12:1	unchecked	no J–T division read for this chapter
+ddc-2-17	en-sumner	en-sumner	{¶26}	4	— CH V	xii. 1.	Hos	12	1	Hos 12:1	carried	book-carried	ddc-2-17:en-sumner:{¶26}:3	d415	plausible	Hos 12:1	versification	J–T Hos 12 begins at Hos 11:12 (inferred, leaf 731)
 ddc-2-17	en-sumner	en-sumner	{¶26}	5	BOOK CH V	Habak. ii. 12.	Hab	2	12	Hab 2:12	high	book-named				Hab 2:12		
 ddc-2-17	en-sumner	en-sumner	{¶28}	0	BOOK CH V-LIST	Jer. i. 7, 8.	Jer	1	7,8	Jer 1:7,8	high	book-named				Jer 1:7,8		
 ddc-2-17	en-sumner	en-sumner	{¶28}	1	— — V-RANGE	v. 17—19.	Jer	1	17,18,19	Jer 1:17,18,19	carried	book-and-chapter-carried	ddc-2-17:en-sumner:{¶28}:0	d416	plausible	Jer 1:17,18,19		
