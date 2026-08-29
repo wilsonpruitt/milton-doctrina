@@ -1003,3 +1003,73 @@ is never settled by the quotation. It is settled by the page.**
 | Ps 54 | superscription numbered as **2 verses** | **+2** |
 | Ps 55 | superscription numbered as **1 verse** | **+1** |
 | *Psalms generally* | **the superscription is numbered** | **+1 / +2 by title length** |
+
+## 14. ✅ `divergence_class` — the classification is data now, not prose
+
+§10.8's third requirement, and the one that keeps the other two from decaying. Until now, whether a
+citation divergence was Milton's error or his Bible's numbering lived in a paragraph of a chunk's
+Notes: unrenderable, uncountable, and re-derivable only by reading English.
+
+### 14.1 What was built
+
+- **`tools/jt-divisions.json`** — the sixteen Junius–Tremellius chapter divisions read off the page
+  images, each with its evidence quoted and its leaf. `status` is `read` (a boundary put in view)
+  or `inferred` (a constant, content-checked offset across the chapter). **Nothing here is a
+  guess; a guess does not go in the file.**
+- **`tools/jt_map.py`** — `to_kjv(book, ch, verse)` and `classify(...)`. One entry says *J–T's
+  chapter X begins at KJV Y and its first verse carries number N*; everything else follows by
+  walking the KJV verse counts already in `versification.json`, crossing chapter boundaries.
+  **That one shape covers all four mechanisms observed** — a chapter starting early or late, a
+  count that does not restart (Ezek 3), a numbered superscription (Ps 54/55), and a verse printed
+  above the received rubric (1 Sam 16). Run it directly for a self-test: **17/17 of the hand-made
+  findings reproduce mechanically**, including both hard cases.
+- **`divergence_class` + `divergence_why`** in `index/citations.tsv`, and two new sections in
+  `index/citation-qa.md`.
+
+### 14.2 The classes, and what each is allowed to assert
+
+| class | pairs | asserts |
+|---|---|---|
+| `versification` | 40 | a **read** division maps the Latin onto the English exactly |
+| `versification-predicted` | 52 | no division read, but the mechanism is known and the shape fits — Psalms `+1`/`+2`, §13.1 |
+| `unchecked` | 128 | no division read, no known mechanism. **NOT a claim of error** |
+| `anomaly` | 5 | a division **is** read and does not explain it — these earn a reader |
+
+⚠ **`unchecked` is deliberately not `error`.** Calling a divergence Milton's mistake is a claim
+about a real person that goes into print, and the only thing entitled to make it is a page image.
+The column will say `unchecked` forever rather than guess.
+
+### 14.3 Two bugs the first run exposed, both in the classifier
+
+- **Identical numbers are not a numeric divergence.** `Psal. lv. 5, 6, 7.` against `lv. 5—7.` is a
+  syntax row (list vs dash-range); running the map over it manufactured an anomaly where nothing
+  disagrees. Now skipped. This is what dropped `unchecked` from 262 pairs to 128.
+- **The English narrows constantly.** `Isa. xliv. 12, 13.` against `xliv. 18.` is one citation with
+  Sumner keeping only its last verse. A narrowed English is still versification, so a `want` that
+  is a strict subset of the mapped Latin now passes.
+
+### 14.4 ★★ The anomaly class immediately found a new Latin error
+
+`ddc-2-13` ¶6, and it is the **first citation error the tooling has found rather than
+reclassified.** The paragraph carries two things at once:
+
+1. **Sumner reordered.** The pairs go by quotation, not position: La `Prov. xii. 21.`
+   (*abominationi sunt Jehovæ labia fallacia*) answers En `v. 22.`, and La `v. 17.` (*efflat
+   veritatem*) answers En `Prov. xii. 17.`
+2. **`Prov. xii. 21` is correct** under the −1 division. **`v. 17` is a real slip**: J–T numbers
+   *Efflat veritatem* as **16** (leaf 511, in a run checking at every verse from 8 to 18). Milton's
+   own Bible calls it 16 and he wrote 17.
+
+★ **Why no earlier pass caught it: both layers print the digit `17`.** Sumner's is right in KJV
+terms, Milton's is wrong in J–T terms, and they coincide. **A divergence table cannot see an error
+the two layers happen to agree on** — only the third witness can.
+
+Leaf 511 also confirmed `ddc-2-11` ¶26/¶27 verbatim: J–T Prov 12:**9** is *Curat justus vitam
+jumenti sui*, the very words that chunk's "what the text quotes" column gives for KJV 12:10.
+
+### 14.5 What this leaves
+
+The 128 `unchecked` pairs are the remaining audit, and they are now enumerable rather than
+anecdotal — group them by book and chapter, take the ones with repeating offsets, read the
+division, and the class flips wholesale. The `anomaly` list is the standing worklist; it should be
+re-read after every division added, because adding a division can move a pair either way.

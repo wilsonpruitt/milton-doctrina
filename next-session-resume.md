@@ -70,8 +70,27 @@ in every row, carrying six wrong classifications. The test is sound only where t
 to be a chapter division (`Act. xiii. 3` vs Acts 23:4 is ten chapters). **A gap of one to five
 verses is settled by the page, never by the quotation.**
 
-**Next: the `divergence_class` column**, then the remaining singletons in `ddc-2-03`, `ddc-2-06`,
-`ddc-2-05`'s four Isaiah rows.
+✅ **`divergence_class` is BUILT — §14.** The classification is data now, not prose.
+`tools/jt-divisions.json` holds the sixteen J–T divisions with their evidence and leaf;
+`tools/jt_map.py` maps any J–T reference onto the KJV by walking `versification.json`, and
+**self-tests 17/17 against the hand-made findings** (`python3 tools/jt_map.py`). Two new columns in
+`index/citations.tsv`, two new sections in `index/citation-qa.md`.
+
+**Classes:** `versification` 40 pairs · `versification-predicted` 52 · `unchecked` 128 ·
+`anomaly` **5**. ⚠ **`unchecked` is deliberately not `error`** — calling a divergence Milton's
+mistake is a claim about a real person, and only a page image is entitled to make it.
+
+★★ **The anomaly class found a new Latin error on its first run** — `ddc-2-13` ¶6, the first the
+tooling has FOUND rather than reclassified. Sumner reordered the pair, `Prov. xii. 21` is correct
+under the −1 division, and **`v. 17` is a real slip: J–T numbers *Efflat veritatem* as 16**
+(leaf 511, checked at every verse from 8 to 18). **No earlier pass could see it because both layers
+print the digit 17** — Sumner's right in KJV terms, Milton's wrong in J–T terms. A divergence table
+cannot see an error the two layers agree on.
+
+**Next: the 128 `unchecked` pairs**, which are now enumerable rather than anecdotal — group by book
+and chapter, take the repeating offsets, read the division, and the class flips wholesale. Then the
+singletons in `ddc-2-03`, `ddc-2-06`, and `ddc-2-05`'s four Isaiah rows. ⚠ **Re-read the `anomaly`
+list after every division added** — adding one can move a pair either way.
 
 ---
 

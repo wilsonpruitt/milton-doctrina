@@ -663,11 +663,21 @@ def pair_divergences(la_recs, en_recs):
 # `divergence_id` groups the two records that are ONE citation seen twice; `witness_target`
 # is the verse both layers are pointing at, which is what the scripture index must group by.
 # Neither replaces the printed target — the edition goes on showing both sides (§6b).
+from jt_map import JTMap
+
+JTMAP = JTMap()
+
 WS = re.compile(r"\s+")
 
 COLUMNS = ["chunk_id", "layer", "section", "para", "seq", "class", "raw_text",
            "book", "chapter", "verses", "target", "confidence", "resolution",
-           "carried_from", "divergence_id", "pair_confidence", "witness_target"]
+           "carried_from", "divergence_id", "pair_confidence", "witness_target",
+           # ★ WHY the two layers print different numbers, as data rather than as prose in a
+           # chunk's Notes (M4-RUNBOOK §13). Sourced from tools/jt-divisions.json — the
+           # Junius–Tremellius chapter divisions read off the page images — via jt_map.py.
+           # `unchecked` is not `error`: calling a divergence Milton's mistake is a claim
+           # about a real person, and only a page image is entitled to make it.
+           "divergence_class", "divergence_why"]
 
 
 def main():
@@ -763,6 +773,8 @@ def main():
         r["divergence_id"] = ""
         r["pair_confidence"] = ""
         r["witness_target"] = r["target"]
+        r["divergence_class"] = ""
+        r["divergence_why"] = ""
     div_key = {}
     suspect_pairs = []
     by_id = {r["id"]: r for r in all_recs}
@@ -773,9 +785,13 @@ def main():
             continue
         did = f"d{i}"
         ok = pair_is_plausible(la, en)
+        cls, why = JTMAP.classify(la["book"], la["chapter"], la["verses"],
+                                  en["book"], en["chapter"], en["verses"])
         for r in (la, en):
             r["divergence_id"] = did
             r["pair_confidence"] = "plausible" if ok else "suspect"
+            r["divergence_class"] = cls
+            r["divergence_why"] = why
         if ok:
             for r in (la, en):
                 r["witness_target"] = en["target"]
@@ -795,6 +811,7 @@ def main():
                 ",".join(str(v) for v in r["verses"]), r["target"], r["confidence"],
                 r["resolution"], r["carried_from"], r["divergence_id"],
                 r["pair_confidence"], r["witness_target"],
+                r["divergence_class"], r["divergence_why"],
             ]) + "\n")
 
     # Census assertion #2 (M4-RUNBOOK §5): one record, one row. A citation that wraps a
@@ -841,6 +858,46 @@ def main():
                      f"vs en `{en['raw_text']}` → {en['target']}\n")
         if not suspect_pairs:
             fh.write("_none_\n")
+
+        # ★ The J–T classification, as a report rather than only as a column. `anomaly` is
+        # the row that earns a reader: a chapter whose Junius–Tremellius division HAS been
+        # read off the page image, where the Latin still does not map onto the English.
+        # Everything else the map explains; these are what is left.
+        fh.write("\n## ★ Divergences the J–T map does NOT explain — READ THESE\n\n")
+        fh.write("A Junius-Tremellius chapter division has been read for these chapters "
+                 "(tools/jt-divisions.json), and the Latin still does not map onto the "
+                 "English through it. Each is a genuine Latin error, an aligner slide, or a "
+                 "division that needs re-reading -- and telling those apart needs the "
+                 "paragraph in view. M4-RUNBOOK 14.\n\n")
+        anomalies = []
+        seen_anom = set()
+        for r in all_recs:
+            if r["divergence_class"] == "anomaly" and r["divergence_id"] not in seen_anom:
+                seen_anom.add(r["divergence_id"])
+                pair = [x for x in all_recs if x["divergence_id"] == r["divergence_id"]]
+                la = next((x for x in pair if x["layer"] == "la"), None)
+                en = next((x for x in pair if x["layer"] != "la"), None)
+                if la and en:
+                    anomalies.append((la, en))
+        for la, en in anomalies:
+            fh.write(f"- `{la['chunk_id']}` {la['para']} — la `{la['raw_text']}` -> "
+                     f"{la['target']} vs en `{en['raw_text']}` -> {en['target']}\n")
+        if not anomalies:
+            fh.write("_none_\n")
+
+        counts = collections.Counter(r["divergence_class"] for r in all_recs
+                                     if r["divergence_class"])
+        fh.write("\n## Divergence classes — every pair, by why the numbers differ\n\n")
+        fh.write("| class | pairs | what it asserts |\n|---|---|---|\n")
+        MEAN = {
+            "versification": "a READ J-T division maps the Latin onto the English exactly",
+            "versification-predicted": "no division read, but the mechanism is known and the "
+                                       "shape fits (Psalms +1/+2, numbered superscription)",
+            "unchecked": "no division read and no known mechanism. NOT a claim of error",
+            "anomaly": "a division IS read and does not explain it -- listed above",
+        }
+        for k, v in counts.most_common():
+            fh.write(f"| `{k}` | {v // 2} | {MEAN.get(k, '')} |\n")
 
         fh.write("\n## Versification, not error (M4-RUNBOOK §6b)\n\n")
         fh.write("Out-of-range citations reclassified as Junius-Tremellius numbering. "

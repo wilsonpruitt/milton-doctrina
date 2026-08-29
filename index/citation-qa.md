@@ -72,6 +72,25 @@ The two layers were paired but land too far apart to be one citation. Reported, 
 - `ddc-2-17` ¶28 — la `et xxxiii.` → Ezek 33 vs en `iii. 8, 9.` → Ezek 3:8,9
 - `ddc-2-17` ¶29 — la `v. 10` → Mal 2:10 vs en `Mal. ii. 1—10.` → Mal 2:1,2,3,4,5,6,7,8,9,10
 
+## ★ Divergences the J–T map does NOT explain — READ THESE
+
+A Junius-Tremellius chapter division has been read for these chapters (tools/jt-divisions.json), and the Latin still does not map onto the English through it. Each is a genuine Latin error, an aligner slide, or a division that needs re-reading -- and telling those apart needs the paragraph in view. M4-RUNBOOK 14.
+
+- `ddc-2-04-b` {¶9} — la `Psal. lv. 18.` -> Ps 55:18 vs en `v. 3` -> Ps 55:3
+- `ddc-2-13` {¶6} — la `Prov. xii. 21.` -> Prov 12:21 vs en `Prov. xii. 17.` -> Prov 12:17
+- `ddc-2-13` {¶6} — la `v. 17` -> Prov 12:17 vs en `v. 22` -> Prov 12:22
+- `ddc-2-17` {¶7} — la `et x. 2, 3.` -> Eccl 10:2,3 vs en `v. 16, 17.` -> Eccl 10:16,17
+- `ddc-2-17` {¶7} — la `et iii. 5.` -> Isa 3:5 vs en `v. 14` -> Isa 3:14
+
+## Divergence classes — every pair, by why the numbers differ
+
+| class | pairs | what it asserts |
+|---|---|---|
+| `unchecked` | 128 | no division read and no known mechanism. NOT a claim of error |
+| `versification-predicted` | 52 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
+| `versification` | 40 | a READ J-T division maps the Latin onto the English exactly |
+| `anomaly` | 5 | a division IS read and does not explain it -- listed above |
+
 ## Versification, not error (M4-RUNBOOK §6b)
 
 Out-of-range citations reclassified as Junius-Tremellius numbering. These are records in the ledger, not findings against the 1825 text.
