@@ -41,9 +41,9 @@ const cinzelDecorative = Cinzel_Decorative({
 });
 
 export const metadata: Metadata = {
-  title: "Milton — De Doctrina Christiana (site skeleton, M2)",
+  title: "Milton — De Doctrina Christiana",
   description:
-    "A parallel Latin–English edition of John Milton's De Doctrina Christiana, from Sumner's 1825 editio princeps. Development skeleton — not deployed.",
+    "A free parallel Latin–English edition of John Milton's De Doctrina Christiana, from Sumner's 1825 editio princeps, with every scriptural citation indexed.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -67,15 +67,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/scripture">Scripture</Link>
             <Link href="/search">Search</Link>
             <Link href="/about">About</Link>
+            <Link href="/rights">Rights</Link>
           </nav>
         </header>
 
         <main className="main-content">{children}</main>
 
         <footer className="site-footer">
-          <p style={{ marginBottom: "0.25rem" }}>Milton De Doctrina Christiana — site skeleton (M2)</p>
+          <p style={{ marginBottom: "0.25rem" }}>
+            Milton, <em>De Doctrina Christiana</em> &middot; a Wroot Press edition
+          </p>
           <p style={{ fontSize: "11px", opacity: 0.7 }}>
-            Sumner Edition (1825) &middot; Development Skeleton, Not Deployed &middot; MMXXVI
+            Sumner&rsquo;s edition of 1825, public domain &middot; edition and index{" "}
+            <Link href="/rights">CC BY-NC 4.0</Link> &middot; MMXXVI
           </p>
         </footer>
       </body>

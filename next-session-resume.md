@@ -1,10 +1,35 @@
 # Next session — resume here
 
-## ⇢ START HERE (2026-08-29) — M4 is DONE and shipped. **Next job is M5 copy.**
+## ⇢ START HERE (2026-08-29, later) — **M5 copy is WRITTEN. The site has never been deployed.**
 
-**The citation apparatus is finished and closed by ruling.** About and Rights are still M2
-placeholders and `/scripture` is styled only with the existing card classes — that is the next job,
-and it does not need any of the machinery below.
+**Two things are open, and only one of them is work.**
+
+1. ⛔ **Deploying is Wilson's call and has not been made.** The site builds clean and reads as a
+   finished public edition; it has never been put on a host and `milton.wrootpress.com` has never
+   been wired. That is an outward-facing action — surface it, don't do it.
+2. **M3, the volume run: 19 of 50 chapters exist.** Book II is complete (17 ch.); Book I has i–ii
+   of 33. That is the grind and it is volume work — a cheaper model on `M3-RUNBOOK.md`, not this
+   tier. I.iv–I.vi are scheduled LAST on purpose.
+
+*Optional polish, not blocking:* `/scripture` is still styled with the generic card classes.
+
+**What M5 delivered** (commit below): real `/about` (discovery, provenance, the authorship
+controversy, the J–T correction told as a correction), real `/rights`, a repo-root `LICENSE`, real
+home-page copy, and a footer that links Rights. Every factual claim on the About page about the
+manuscript is checked against Campbell/Corns/Hale/Tweedie — no quotation, no close paraphrase.
+
+⚠ **One correction to PLAN §4(a), made in passing.** The plan said Sumner "normalised silently."
+The source does not support that: the 1825 compositor set the Latin **directly from SP 9/61**,
+which is a point in Sumner's favour; what scholars actually doubt is the *accuracy* of the
+transcription. The About page says the accurate thing. If the plan is ever re-read as authority,
+this paragraph governs.
+
+⚠ **The rights page had to diverge from Bonaventure's, and the reason is load-bearing.** There is
+**no fresh translation in this project** — both layers are PD Sumner 1825. Carrying across "the
+English translation is licensed" would have been copyfraud. What is claimed is the encoding, the
+citation index, the J–T division data, and the editorial prose, and the page says out loud that
+selling Milton or Sumner needs nothing from us. A future `en-wp` English would change this and the
+page would have to be rewritten.
 
 **One-paragraph state.** Milton cites the Junius–Tremellius Bible (Hanau 1603), which divides
 chapters at different points from the KJV; Sumner converts toward the KJV inconsistently. That is

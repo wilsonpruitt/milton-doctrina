@@ -1,14 +1,14 @@
 import Link from "next/link";
-import { loadAllContent, totalChunkCount } from "@/lib/content";
+import { loadAllContent } from "@/lib/content";
+import listing from "@/data/scripture/index.json";
 import { Illumination, CrossDivider, FleuronDivider } from "@/components/decorations";
 
-// M2 SITE SKELETON. This is a placeholder — full editorial home-page copy
-// (project pitch, source table, apparatus layers) is M5's job per PLAN.md.
-// Goal here is only: don't say "Bonaventure" anywhere, and get the pilot
-// chapter reachable.
+// M5 EDITORIAL COPY. The counts are read from the built corpus, never typed in
+// — a hardcoded "17 chapters" goes stale the first time a chunk lands.
 export default function HomePage() {
   const books = loadAllContent();
-  const totalChunks = totalChunkCount();
+  const totalChapters = books.reduce((n, b) => n + b.chapters.length, 0);
+  const citations = (listing.total as number).toLocaleString();
 
   return (
     <div>
@@ -34,14 +34,14 @@ export default function HomePage() {
             textTransform: "uppercase",
           }}
         >
-          John Milton &middot; Site Skeleton (M2)
+          John Milton &middot; Sumner&rsquo;s Edition of 1825
         </p>
         <CrossDivider />
         <p className="body-text" style={{ maxWidth: "700px", margin: "0 auto", textAlign: "center" }}>
-          A parallel Latin&ndash;English edition of Milton&rsquo;s systematic theology, from
-          Sumner&rsquo;s 1825 <em>editio princeps</em>. This is a development skeleton — only the pilot
-          chapter is transcribed. Full editorial copy, the scripture index, and the reading-guide
-          apparatus land in later milestones.
+          Milton&rsquo;s systematic theology, unpublished in his lifetime and found in a
+          Whitehall cupboard in 1823, set here in parallel &mdash; his Latin beside
+          Sumner&rsquo;s English, paragraph for paragraph, with every scriptural citation
+          indexed. Both texts are in the public domain and this edition is free.
         </p>
       </div>
 
@@ -56,7 +56,7 @@ export default function HomePage() {
               <div>
                 <h3 className="card-title">{book.title}</h3>
                 <p className="card-meta">
-                  {book.chapters.length} chapter{book.chapters.length !== 1 ? "s" : ""} transcribed
+                  {book.chapters.length} chapter{book.chapters.length !== 1 ? "s" : ""} published
                 </p>
               </div>
             </div>
@@ -66,11 +66,26 @@ export default function HomePage() {
 
       <FleuronDivider />
 
+      <Link href="/scripture" className="card-link">
+        <div className="card">
+          <div className="section-title" style={{ marginTop: 0 }}>Index of Scripture</div>
+          <p className="body-text" style={{ marginBottom: 0 }}>
+            The treatise argues almost entirely by proof-text, so &ldquo;where does Milton use
+            this verse?&rdquo; is the question the book is built to answer. {citations}{" "}
+            citations, each shown as printed in both layers &mdash; and where the two disagree
+            about the number, both stand and the index says why.
+          </p>
+        </div>
+      </Link>
+
       <div className="card" style={{ cursor: "default", background: "rgba(61,19,8,0.04)" }}>
-        <div className="section-title">Status</div>
-        <p className="body-text">
-          {totalChunks} chapter{totalChunks !== 1 ? "s" : ""} built. Not deployed; local development
-          only. See <Link href="/about">About</Link> for the plan.
+        <div className="section-title" style={{ marginTop: 0 }}>A Working Draft</div>
+        <p className="body-text" style={{ marginBottom: 0 }}>
+          {totalChapters} of the fifty chapters are published. Book II is complete; Book I is in
+          progress, and its heaviest chapters are scheduled last. What this edition prints,
+          what it declines to correct, and why some citations are marked{" "}
+          <em>not yet checked</em> are all set out in the{" "}
+          <Link href="/about">About</Link> page.
         </p>
       </div>
     </div>

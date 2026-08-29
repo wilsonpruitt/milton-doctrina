@@ -61,10 +61,16 @@ This edition cannot be honest and also pretend it is printing Milton's manuscrip
 must be stated on the About page in plain language, not buried:
 
 **(a) The text is Sumner's, not the manuscript's.** SP 9/61 (The National Archives) is a layered
-composite in at least two scribal hands, with heavy revision. Sumner normalised silently. Campbell,
+composite in at least two scribal hands, with heavy revision. Campbell,
 Corns, Hale and Tweedie's *Milton and the Manuscript of De Doctrina Christiana* — which is in
 `~/Downloads/` — is the study that established this in detail. Our site publishes the 1825
 *editio princeps* and says so.
+
+⚠ **Corrected 2026-08-29 (M5).** This paragraph used to say "Sumner normalised silently." It is not
+supported: Campbell et al. record that the 1825 compositor set the Latin **directly from the
+manuscript**, not from an edited text. What is actually doubted is the *accuracy* of Sumner's
+transcription, and the critical text is now Hale & Cullington's Oxford edition (in copyright). The
+About page carries the corrected version; it governs over any older phrasing here.
 
 **(b) The authorship was seriously challenged and the challenge was answered.** William Hunter
 disputed Milton's authorship through the 1990s; the Campbell/Corns/Hale/Tweedie work is the

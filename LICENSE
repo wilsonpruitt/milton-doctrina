@@ -1,0 +1,106 @@
+MILTON, DE DOCTRINA CHRISTIANA — A PARALLEL EDITION — RIGHTS AND REUSE
+Copyright © 2026 Wilson Pruitt. A Wroot Press work; Wroot Press is an
+imprint of Wroot Labs LLC (Texas).
+
+
+1. WHAT IS PUBLIC DOMAIN
+
+BOTH source texts are in the public domain, and this project differs from
+the other Wroot Press editions on exactly that point: there is no fresh
+translation here.
+
+  (a) The Latin of John Milton's De Doctrina Christiana as established in
+      the editio princeps edited by Charles Richard Sumner (Cambridge,
+      1825).
+
+  (b) Sumner's own English translation of it (Cambridge, 1825), together
+      with his prefatory matter and notes.
+
+No claim is made over either. A faithful transcription of a public-domain
+text creates no new copyright, and none is asserted here. Anyone is free to
+take either text, or both, and do anything at all with them — including
+selling them.
+
+
+2. WHAT IS LICENSED
+
+The following are original work and are licensed to the public under the
+Creative Commons Attribution-NonCommercial 4.0 International License
+(CC BY-NC 4.0):
+
+  (a) The structured corpus — the original selection, arrangement, and
+      encoding of the two texts, including: the book/chapter addressing
+      scheme and its slugs; the chunking and paragraph segmentation; the
+      Latin–English alignment; the page-offset anchoring to the 1825
+      scans; and the transcription corrections recorded in the project's
+      review logs.
+
+  (b) The citation index — the extraction, parsing, normalization, and
+      resolution of every scriptural reference in both layers to a book and
+      verse; the stable deep-link scheme over them; the paired records
+      identifying where the two layers print different numbers; and the
+      classification of those divergences.
+
+  (c) The Junius–Tremellius division data — the recorded chapter divisions
+      of the Junius–Tremellius Bible (Hanau, 1603), with the leaf read and
+      the evidence for each, together with the software that maps them onto
+      the citation index.
+
+  (d) The editorial text: headnotes, chapter notes, and all introductory and
+      explanatory prose on the site, including the About and Rights pages.
+
+  (e) The site design, typography, stylesheets, and build scripts.
+
+Item (a) is claimed as a compilation and database — the arrangement and the
+encoding, not the underlying text. Extracting the 1825 text is free (§1);
+extracting this project's structure, alignment, index, and division data is
+not.
+
+
+3. WHAT CC BY-NC 4.0 PERMITS
+
+You may copy, redistribute, excerpt, translate, remix, and build upon the
+licensed material, in any medium or format, for NON-COMMERCIAL purposes,
+provided you give appropriate credit, link to this license, and indicate if
+changes were made.
+
+Non-commercial means not primarily intended for or directed toward
+commercial advantage or monetary compensation. Teaching, preaching, private
+study, scholarship, parish use, and free public reference works are all
+clearly within it.
+
+Full license text: https://creativecommons.org/licenses/by-nc/4.0/
+
+
+4. COMMERCIAL USE — ASK
+
+Commercial use of the LICENSED MATERIAL requires written permission. This
+includes print or ebook editions made from these files, subscription or
+paywalled databases, and inclusion in commercial software or reference
+products.
+
+This restriction does not reach the 1825 text itself. Set Milton's Latin or
+Sumner's English from the public-domain source and sell it; nothing here
+restrains you.
+
+Permission is not hard to get, and is given readily for scholarly and
+ecclesial projects. Write to wilson@wrootlabs.com.
+
+The copyright holder retains all rights and is not bound by this license;
+Wroot Press publishes print editions drawn from this material.
+
+
+5. STATUS
+
+This edition is a working draft. Book II is complete; Book I is in progress.
+Citations whose divergence has not been checked against the
+Junius–Tremellius Bible are marked as unchecked on the site, and that mark
+means what it says. Cite this as a draft, and check back for revisions.
+
+
+6. SUGGESTED ATTRIBUTION
+
+  Parallel edition, citation index, and notes to Milton's De Doctrina
+  Christiana by Wilson Pruitt (Wroot Press), licensed CC BY-NC 4.0. Source
+  text: C. R. Sumner's edition and translation, Cambridge, 1825, public
+  domain.
