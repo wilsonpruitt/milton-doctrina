@@ -12,3 +12,4 @@ src/data/content.json
 src/data/index-scripture-toc.json
 src/data/index-crossref.json
 src/data/scripture/
+.env*

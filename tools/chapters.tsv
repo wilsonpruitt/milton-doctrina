@@ -26,7 +26,7 @@
 book	ch	la_printed	la_pp	en_printed	en_pp	flag	title_la
 1	1	7	3	9	4	verified	Quid sit Doctrina Christiana, quotque ejus partes
 1	2	10	12	13	17	verified	De Deo
-1	3	22	9	30	14	ok	De Divino Decreto
+1	3	22	9	30	14	verified	De Divino Decreto
 1	4	31	26	44	36	ok	De Praedestinatione
 1	5	57	53	80	73	verified	De Filio Dei
 1	6	110	14	153	19	ok	De Spiritu Sancto

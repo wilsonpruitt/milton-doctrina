@@ -1,12 +1,12 @@
 # Citation QA — read this, do not merely generate it
 
-5811 records · 30 unclassified · 6 out-of-range · 7 versification · 428 divergence rows, 17 suspect
+5893 records · 31 unclassified · 6 out-of-range · 7 versification · 440 divergence rows, 19 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 2907
-- `en-sumner` — 2904
-- spread: 3 records, 0.1%
+- `la` — 2949
+- `en-sumner` — 2944
+- spread: 5 records, 0.2%
 
 ## Unclassified — never a record with an invented target
 
@@ -38,6 +38,7 @@
 - `ddc-1-01` `ddc-1-01:en-sumner:{¶6}:2` — `vi. 1—3.` → 2Tim has 4 chapters — chapter 6 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-02` `ddc-1-02:la:{¶22}:14` — `v. 32` → ERR: Deut 6 has 25 verses — 32 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-02` `ddc-1-02:en-sumner:{¶22}:15` — `v. 32` → ERR: Deut 6 has 25 verses — 32 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
+- `ddc-1-03` `ddc-1-03:la:{¶11}:11` — `v. 11` → ERR: Jonah 3 has 10 verses — 11 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-2-04-c` `ddc-2-04-c:la:{¶24}:14` — `et xxxvi. 37.` → 1Cor has 16 chapters — chapter 36 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-2-13` `ddc-2-13:la:{¶47}:6` — `et xi. 32.` → ERR: Prov 11 has 31 verses — 32 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 
@@ -56,6 +57,8 @@ The two layers were paired but land too far apart to be one citation. Reported, 
 
 - `ddc-1-02` ¶13 — la `1 Thess. v. 9.` → 1Thess 5:9 vs en `1 Thess. i. 9.` → 1Thess 1:9
 - `ddc-1-02` ¶27 — la `v. 17` → Ps 25:17 vs en `v. 17` → Ps 103:17
+- `ddc-1-03` ¶7 — la `Act. xv. 28.` → Acts 15:28 vs en `Acts xv. 18.` → Acts 15:18
+- `ddc-1-03` ¶9 — la `et xv. 28.` → Acts 15:28 vs en `xv. 18.` → Acts 15:18
 - `ddc-2-03` ¶13 — la `cap. xxxi. 2.` → Isa 31:2 vs en `iii. 1.` → Isa 3:1
 - `ddc-2-04-b` ¶9 — la `Psal. lv. 18.` → Ps 55:18 vs en `v. 3` → Ps 55:3
 - `ddc-2-04-c` ¶1 — la `et xxv. 22.` → Ps 25:22 vs en `iii. 8.` → Ps 3:8
@@ -86,7 +89,7 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 
 | class | pairs | what it asserts |
 |---|---|---|
-| `unchecked` | 108 | no division read and no known mechanism. NOT a claim of error |
+| `unchecked` | 113 | no division read and no known mechanism. NOT a claim of error |
 | `open-end` | 74 |  |
 | `versification` | 60 | a READ J-T division maps the Latin onto the English exactly |
 | `versification-predicted` | 52 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
@@ -129,6 +132,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Ps | 52 | +2 | 3 | **yes** |
 | Ps | 75 | +1 | 3 | **yes** |
 | 1Sam | 7 | -1 | 2 | **yes** |
+| Acts | 15 | +10 | 2 | **yes** |
 | Amos | 2 | -3 | 2 | **yes** |
 | Eccl | 2 | +1 | 2 | **yes** |
 | Eccl | 8 | -1 | 2 | **yes** |
@@ -139,6 +143,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Gen | 12 | -3 | 2 | **yes** |
 | Hos | 12 | +1 | 2 | **yes** |
 | Jonah | 3 | +1 | 2 | **yes** |
+| Jonah | 3 | +7 | 1 | no |
 | Ps | 12 | +1 | 2 | **yes** |
 | Ps | 18 | +1 | 2 | **yes** |
 | Ps | 18 | +6 | 1 | no |
@@ -173,6 +178,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Deut | 5 | +6 | 1 | no |
 | Deut | 6 | +1 | 1 | no |
 | Deut | 23 | +1 | 1 | no |
+| Deut | 31 | +1 | 1 | no |
 | Eccl | 12 | +2 | 1 | no |
 | Exod | 6 | -1 | 1 | no |
 | Exod | 23 | -1 | 1 | no |
@@ -187,6 +193,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Isa | 58 | +51 | 1 | no |
 | Isa | 59 | +11 | 1 | no |
 | Jer | 7 | -1 | 1 | no |
+| Jer | 18 | -1 | 1 | no |
 | Jer | 29 | +1 | 1 | no |
 | Jer | 45 | -2 | 1 | no |
 | Job | 12 | -2 | 1 | no |
@@ -261,6 +268,18 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-02 | ¶31 | `v. 18` | Exod 33:18 | `v. 18, &c.` | Exod 33:18 &c. | divergence |
 | ddc-1-02 | ¶31 | `cap. viii. 10. 11.` | 1Kgs 8:10,11 | `viii. 10, 11.` | 1Kgs 8:10,11 | same target, syntax differs (— CH V-PAIR / — CH V-LIST) |
 | ddc-1-02 | ¶31 | `et viii. 1, 2, 3.` | Ezek 8:1,2,3 | `and viii. 1—3.` | Ezek 8:1,2,3 | same target, syntax differs (— CH V-LIST / — CH V-RANGE) |
+| ddc-1-03 | ¶7 | `Act. xv. 28.` | Acts 15:28 | `Acts xv. 18.` | Acts 15:18 | divergence |
+| ddc-1-03 | ¶9 | `et xv. 28.` | Acts 15:28 | `xv. 18.` | Acts 15:18 | divergence |
+| ddc-1-03 | ¶11 | `Gen. xix. 17.` | Gen 19:17 | `Gen. xix. 17, 21.` | Gen 19:17,21 | divergence |
+| ddc-1-03 | ¶11 | `Exod. iii. 8. 17.` | Exod 3:8,17 | `Exod. iii. 8, 17.` | Exod 3:8,17 | same target, syntax differs (BOOK CH V-PAIR / BOOK CH V-LIST) |
+| ddc-1-03 | ¶11 | `Jer. xviii. 8, 9, 10.` | Jer 18:8,9,10 | `Jer. xviii. 9, 10.` | Jer 18:9,10 | divergence |
+| ddc-1-03 | ¶11 | `Jonæ iii. 5.` | Jonah 3:5 | `—` | — | present in Latin only |
+| ddc-1-03 | ¶11 | `v. 11` | Jonah 3:11 | `Jonah iii. 4.` | Jonah 3:4 | divergence |
+| ddc-1-03 | ¶11 | `Act. xxvii. 24. 31.` | Acts 27:24,31 | `Acts xxvii. 24, 31.` | Acts 27:24,31 | same target, syntax differs (BOOK CH V-PAIR / BOOK CH V-LIST) |
+| ddc-1-03 | ¶28 | `v. 17` | Deut 31:17 | `—` | — | present in Latin only |
+| ddc-1-03 | ¶28 | `v. 20` | Deut 31:20 | `—` | — | present in Latin only |
+| ddc-1-03 | ¶28 | `v. 21` | Deut 31:21 | `v. 20, 21.` | Deut 31:20,21 | divergence |
+| ddc-1-03 | ¶29 | `1 Pet. i. 19. 20.` | 1Pet 1:19,20 | `1 Pet. i. 19, 20.` | 1Pet 1:19,20 | same target, syntax differs (BOOK CH V-PAIR / BOOK CH V-LIST) |
 | ddc-2-01 | ¶8 | `et xii. 2.` | Prov 12:2 | `xii. 3.` | Prov 12:3 | divergence |
 | ddc-2-01 | ¶9-12 | `et xxiv. 1.` | Prov 24:1 | `xxiv. 7.` | Prov 24:7 | divergence |
 | ddc-2-01 | ¶16 | `1 Cor. ix. 18.` | 1Cor 9:18 | `—` | — | present in Latin only |
