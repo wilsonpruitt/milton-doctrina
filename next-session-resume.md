@@ -1,6 +1,35 @@
 # Next session — resume here
 
-## ⇢ START HERE (2026-08-28, Opus) — §10.8 is RULED, and the answer came from Milton's own Bible
+## ⇢ START HERE (2026-08-29) — M4 is DONE and shipped. **Next job is M5 copy.**
+
+**The citation apparatus is finished and closed by ruling.** About and Rights are still M2
+placeholders and `/scripture` is styled only with the existing card classes — that is the next job,
+and it does not need any of the machinery below.
+
+**One-paragraph state.** Milton cites the Junius–Tremellius Bible (Hanau 1603), which divides
+chapters at different points from the KJV; Sumner converts toward the KJV inconsistently. That is
+now *measured*, not asserted: **23 J–T chapter divisions read off page images** into
+`tools/jt-divisions.json`, mapped by `tools/jt_map.py` (self-test `python3 tools/jt_map.py` →
+17/17), and carried into the ledger and the site as `divergence_class`. Divergence pairs:
+**60 versification · 52 versification-predicted · 74 open-end · 108 unchecked · 5 anomaly.**
+
+**⚠ The single most important thing to know before touching any chunk's Notes:** the corpus's
+"silently corrected La error" tables were written before that Bible was available, and **~35 rows
+across nine chunks have been reclassified from *Milton's error* to *versification*.** II.xvii alone
+went from a claimed **sixteen errors to three**. Corrections are appended as **blocks at the end of
+each chunk's Notes, which state that they govern** where they disagree with the tables above them.
+Do not trust an un-annotated error table in this corpus.
+
+**⚠ The live worklist is five rows**, the only ones still asserting something is wrong: see
+`index/citation-qa.md` → *"Divergences the J–T map does NOT explain"*. Everything else is either
+explained or honestly marked `unchecked`.
+
+**Read `M4-RUNBOOK.md` §16 first** (the ship ruling and what a reader now sees), then §10–15 for
+how it was reached. Below this line is the session-by-session history, newest first.
+
+---
+
+## ⇠ 2026-08-28 — §10.8 is RULED, and the answer came from Milton's own Bible
 
 **Read `M4-RUNBOOK.md` §11.** Wilson ruled: check Junius–Tremellius before classifying anything,
 and bring it in as a permanent source. Both halves are done.
