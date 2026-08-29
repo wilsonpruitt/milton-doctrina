@@ -49,6 +49,20 @@ export default function ScriptureIndexPage() {
           &mdash; both numbers are shown and neither is corrected. That disagreement is
           part of what this edition exists to display, not an error to be tidied away.
         </p>
+        <p>
+          Where we can say <em>why</em> the two disagree, the entry says so. Milton&rsquo;s
+          Bible often divides a chapter at a different verse from the Authorized Version, so
+          that both numbers are right; in the Psalms the Hebrew counts the heading as a verse
+          of its own. Those divisions have been read off a copy of Junius&ndash;Tremellius
+          (Hanau, 1603) &mdash; the Bible Milton was using &mdash; page by page.
+        </p>
+        <p>
+          Many entries say instead that the numbering{" "}
+          <em>has not yet been checked</em>. That is meant literally, and it is not a
+          suggestion that Milton miscited: it means we have not opened his Bible at that
+          chapter. Calling a citation an author&rsquo;s mistake is a claim about a real
+          person, and this edition would rather print an honest blank than a confident guess.
+        </p>
       </div>
 
       {[

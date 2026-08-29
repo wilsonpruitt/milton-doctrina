@@ -787,6 +787,14 @@ def main():
         ok = pair_is_plausible(la, en)
         cls, why = JTMAP.classify(la["book"], la["chapter"], la["verses"],
                                   en["book"], en["chapter"], en["verses"])
+        # ⚠ Identical verse numbers where the TARGETS still differ means one layer prints
+        # Milton's open `&c.` and the other closes the reference. That is a real divergence
+        # and the index displays it — but it is NOT a numbering disagreement, and saying
+        # "the two editions number this verse differently" of it is simply false. Found by
+        # counting the loci that rendered a divergence with no class at all (M4-RUNBOOK §16).
+        if not cls and la["target"] != en["target"]:
+            cls = "open-end"
+            why = ("same verse; one layer prints Milton's open `&c.` and the other does not")
         for r in (la, en):
             r["divergence_id"] = did
             r["pair_confidence"] = "plausible" if ok else "suspect"

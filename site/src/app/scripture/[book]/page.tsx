@@ -27,8 +27,30 @@ type Locus = {
   verse: number | null;
   witness: string;
   diverges: boolean;
+  divergenceClass: string;
+  divergenceWhy: string;
   resolution: string;
   witnesses: Witness[];
+};
+
+// Why the two 1825 volumes print different numbers for one verse, in the reader's terms.
+// The classes come from `divergence_class` in the ledger, which is computed against the
+// Junius–Tremellius chapter divisions read off that Bible's own pages (M4-RUNBOOK §14).
+//
+// ⚠ `unchecked` says exactly what it means and no more. It is NOT a claim that Milton erred:
+// it says we have not yet opened his Bible at that chapter. The edition would rather print
+// an honest blank than a confident guess about a man's accuracy.
+const DIVERGENCE_NOTE: Record<string, string> = {
+  versification:
+    "The two editions number this verse differently \u2014 Milton\u2019s Bible divides the chapter at another point, so both numbers are right:",
+  "versification-predicted":
+    "The two editions number this verse differently \u2014 the Hebrew counts this psalm\u2019s heading as a verse of its own:",
+  unchecked:
+    "The two editions number this verse differently. Which numbering Milton was following here has not yet been checked:",
+  anomaly:
+    "The two editions number this verse differently, and not in a way Milton\u2019s Bible accounts for:",
+  "open-end":
+    "Both editions give the same verse; one leaves the reference open with &c. and the other closes it:",
 };
 
 type BookIndex = {
@@ -113,8 +135,10 @@ export default async function ScriptureBookPage({
                       <p
                         className="card-meta"
                         style={{ margin: "0.3rem 0 0", fontStyle: "italic" }}
+                        title={l.divergenceWhy || undefined}
                       >
-                        The two editions number this verse differently:
+                        {DIVERGENCE_NOTE[l.divergenceClass] ??
+                          "The two editions number this verse differently:"}
                       </p>
                     )}
 

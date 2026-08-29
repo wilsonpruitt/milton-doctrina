@@ -89,31 +89,37 @@ cannot see an error the two layers agree on.
 
 ✅ **The first sweep off that list is DONE — §15. Seven chapters, 20 pairs, one leaf each.**
 Gen 12 (−3) · Exod 16 (+1) · 1 Sam 14 (+1) · Neh 10 (+1) · Dan 6 (+1) · Hos 12 (+1) · Amos 2 (−3).
-**23 divisions** now in `jt-divisions.json`. `versification` 40 → **60 pairs**, `unchecked` 128 →
-**108**, and **no new anomalies** — the seven explain all twenty cleanly, which is itself a check.
+**23 divisions** in `jt-divisions.json`. ★★ **II.xvii is down to THREE errors from the sixteen it
+claimed**; `ddc-2-15`'s "La is a printed error" row fell too.
 
-★★ **II.xvii is down to THREE errors from the sixteen it claimed.** `Amos. ii. 11` and
-`1 Sam. xiv. 29` both fell. And `ddc-2-15`'s `1 Sam. xiv. 45` — labelled "**La is a printed
-error**" — is versification: **that note is §13.3's failure mode exactly**, a quotation read in KJV
-terms and taken to settle a one-verse gap. Both chunks corrected in place.
+## ✅ RULED 2026-08-29 (Wilson) — SHIP the remainder marked `unchecked` (§16)
 
-★ **J–T's own cross-references corroborate the table, for free.** Amos 1's scholion cites
-`Gen. 27. 43.` for Edom's anger — in J–T numbering — and our table maps that to KJV 27:41,
-*Esau hated Jacob*, which is exactly what the note argues from. Every `sup.`/`infr.` in the
-scholia is a testable assertion about the division table.
+The 34 single-divergence chapters are not worth a leaf apiece at this stage. **The audit is closed
+at this depth by ruling, not by exhaustion** — reopening it is §12.1's method with the tooling
+already built.
 
-★★ **The double rubric is the volume's house style**, now attested in seven chapters: J–T prints
-**its own** division with an italic argumentum **and** the received rubric, and the numbers follow
-its own. Genesis says why in the editors' voice — *"Quamobrem tres hosce v. cum antecedentibus
-visum est conjungere."* This is why `status: read` beats `status: inferred`: a read boundary is a
-fact about the book, an inferred one only about a run of verses.
+The ruling is only honest if the mark reaches the reader, so **the class is now rendered**:
+`divergence_class` flows through `build-index-json.py` into every locus, `/scripture/[book]` prints
+a sentence per class, and `divergence_why` (with its leaf number) rides along as a hover title. The
+`/scripture` index carries the explanation, including the line that matters: *"it is not a
+suggestion that Milton miscited: it means we have not opened his Bible at that chapter."*
 
-**Next:** 108 `unchecked` remain, but **34 chapters now carry a single divergence each** — no
-repeating offset, so each needs its own leaf, cheap but individually unrewarding. Decide whether
-that is worth a sweep or whether the edition ships with them marked `unchecked`, which is an honest
-state. The 52 `versification-predicted` are Psalms wanting only per-psalm title lengths.
-⚠ **Re-read the 5 `anomaly` rows after every division added** — adding one can move a pair either
-way.
+★★ **The rendering immediately exposed a copy bug — 74 divergences that are not disagreements.**
+Counting loci that displayed a divergence with **no class at all** found them: every one an `&c.`
+case (`Psal. lxxii. 1, &c.` vs `Psal. lxxii. 1.`) where the numbers agree and only Milton's open
+end differs. The page was announcing *"The two editions number this verse differently"* — **false,
+74 times.** Now class `open-end` with its own sentence. ⚠ **Re-run that check whenever the
+classifier changes**: a class meaning "nothing to say" plus a page that always says something
+manufactures a false claim silently.
+
+**Acceptance:** `next build` clean · **5,811 deep links, 0 unresolved** · all five sentences render
+· `jt_map.py` 17/17.
+
+**Pairs now:** 60 `versification` · 52 `versification-predicted` · 74 `open-end` · 108 `unchecked`
+· **5 `anomaly`** — the last are the only rows asserting something is wrong, and the live worklist.
+
+**Next up is M5 copy**: About and Rights are still M2 placeholders, and `/scripture` is styled only
+with the existing card classes.
 
 ---
 

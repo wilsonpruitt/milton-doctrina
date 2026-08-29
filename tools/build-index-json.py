@@ -190,6 +190,12 @@ def main():
             # True when the two layers print DIFFERENT numbers for this same verse —
             # the thing this edition exists to show. Drives the display.
             "diverges": len({w["printed"] for w in witnesses}) > 1,
+            # ★ WHY the two printed numbers differ, carried through to the reader
+            # (M4-RUNBOOK §14, §16). `unchecked` is not a claim of error — it says the
+            # Junius–Tremellius division for this chapter has not been read, and the
+            # edition would rather say so than guess.
+            "divergenceClass": head.get("divergence_class", ""),
+            "divergenceWhy": head.get("divergence_why", ""),
             "resolution": head["resolution"],
             "witnesses": witnesses,
         })

@@ -1138,3 +1138,61 @@ rule is the mechanism and only the per-psalm title length is unread.
 The five `anomaly` rows are unchanged and remain the standing worklist: two are the `et v. N`
 records the parser drops (§10.4), one is the English `v. 3` misparse (§10.2), and two are
 `ddc-2-13` ¶6 (§14.4).
+
+## 16. ✅ RULED — ship the remainder marked `unchecked`, and make that mean something
+
+Wilson, 2026-08-29: **ship marked `unchecked` for now.** The 34 chapters carrying a single
+divergence each are not worth a leaf apiece at this stage.
+
+That ruling is only honest if the mark reaches the reader, so the class is now rendered and
+explained rather than sitting in a TSV. `divergence_class` and `divergence_why` flow through
+`build-index-json.py` into every locus, and `/scripture/[book]` prints a sentence per class.
+
+### 16.1 What a reader now sees, per class
+
+| class | the sentence on the page |
+|---|---|
+| `versification` | *The two editions number this verse differently — Milton's Bible divides the chapter at another point, so both numbers are right:* |
+| `versification-predicted` | *…the Hebrew counts this psalm's heading as a verse of its own:* |
+| `unchecked` | *The two editions number this verse differently. **Which numbering Milton was following here has not yet been checked**:* |
+| `anomaly` | *…and not in a way Milton's Bible accounts for:* |
+| `open-end` | *Both editions give the same verse; one leaves the reference open with `&c.` and the other closes it:* |
+
+`divergence_why` — the technical reason, with the leaf number — rides along as the `title`
+attribute, so a curious reader gets *"J–T Isa 57 begins at Isa 56:9 (read, leaf 590)"* on hover
+without it cluttering the page.
+
+The `/scripture` index carries the explanation in full, including the sentence that matters most:
+**"That is meant literally, and it is not a suggestion that Milton miscited: it means we have not
+opened his Bible at that chapter. Calling a citation an author's mistake is a claim about a real
+person, and this edition would rather print an honest blank than a confident guess."**
+
+### 16.2 ★★ A copy bug the rendering exposed — 74 divergences that are not disagreements
+
+Counting which displayed loci carried **no class at all** turned up 74. Every one is an **`&c.`
+divergence**: `Psal. lxxii. 1, &c.` against `Psal. lxxii. 1.`, where the verse numbers are
+identical and only Milton's open end differs. The classifier had correctly returned "no numbering
+disagreement here"; the *page* was nonetheless announcing **"The two editions number this verse
+differently."** That sentence was false 74 times.
+
+They now have their own class, `open-end`, and their own sentence. ★ **The lesson is worth
+keeping: a class that means "nothing to say" and a page that always says something will silently
+manufacture a false claim.** Every branch of a display needs a class, including the empty one —
+which is why the check that found this (count the loci that render a divergence with an empty
+class) should be re-run whenever the classifier changes.
+
+### 16.3 Acceptance
+
+`next build` clean. **5,811 deep links, 0 unresolved** (up from 5,809 — the two Psalm 88 records
+§10.1 recovered). All five sentences render. `tools/jt_map.py` self-test 17/17.
+
+### 16.4 The standing state, for whoever picks this up
+
+- **23 J–T divisions** read, in `tools/jt-divisions.json`, each with evidence and leaf.
+- **Divergence pairs:** 60 `versification` · 52 `versification-predicted` · 74 `open-end` ·
+  108 `unchecked` · 5 `anomaly`.
+- **The audit is CLOSED at this depth by ruling, not by exhaustion.** Reopening it means the 34
+  single-divergence chapters, one leaf each; the method is §12.1 and the tooling is built.
+- **The `anomaly` five remain the live worklist** and are the only rows asserting something is
+  wrong: two `et v. N` parser drops (§10.4), one English `v. 3` misparse (§10.2), two at
+  `ddc-2-13` ¶6 (§14.4).
