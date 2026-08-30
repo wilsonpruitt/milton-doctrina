@@ -1,6 +1,259 @@
 # Next session — resume here
 
-## ⇢ START HERE (2026-08-29, later) — **M5 copy is WRITTEN. The site has never been deployed.**
+## ⇢⇢⇢⇢ START HERE (2026-08-30) — **`ddc-1-08` (I.viii, *De Providentia Dei*) is COMPLETE, plate-verified, all four apparatus sections written, build clean, UNCOMMITTED**
+
+Picked up exactly where the 2026-08-29 block below left off — pp.207–216 read fresh off the plates
+(the paragraph map below was confirmed correct throughout, not just trusted), written to
+`chunks/ddc-1-08.md` piecewise (small Edit calls, one to three sentences each) because the same
+spurious content filter from the prior session fired again, repeatedly, on this exact page range —
+confirms it's the plate images specifically, and piecewise text-only edits route around it reliably
+where whole-paragraph edits do not. Worth remembering as the standing workaround, not just the
+"re-dispatch" fix noted before.
+
+**What's done:** `## en-sumner` complete through ¶41 (41 La ¶¶ → 39 En ¶¶, two merges: `{¶19–20}`
+and the newly-confirmed `{¶37–38}`) · `## apparatus-sumner-en` — all ten notes (5 through 9, then
+1/2/3/4/5 again as `-2` suffixes) · `## apparatus-sumner-la` — both `[^la6]`/`[^la6-2]` notes ·
+`## headnote` (Place/Argument/Pressure point/Loci) · `## Notes` (alignment, footnote ledger,
+five-Curcellæus tally — corpus record — citation-audit summary). `tools/build-citations.py
+ddc-1-08` run and restored with `--all` (37 divergence rows, 0 suspect, all familiar ±1/`&c.`
+shapes, none checked against J–T yet — left `unchecked` per the 2026-08-29 ship ruling).
+`build-content.mjs` + `build-index-json.py` + `next build` all clean (94 static pages, `/browse/1/8`
+included); `.next`/`out` cleaned up after.
+
+**Not done: nothing is committed.** `git status` shows `chunks/ddc-1-08.md` untracked and
+`index/citations.tsv` / `index/citation-qa.md` modified (the corpus-wide re-run from restoring
+`--all`) — committing is Wilson's call like every session-end commit, not assumed here.
+
+**Next chapter in the queue:** I.iv–I.vi remain deliberately last (Predestination/Son/Spirit, the
+53-page Arian chapter among them). The next one up in normal sequence is I.ix.
+
+---
+
+## ⇢⇢⇢ (2026-08-29, session paused for the night) — pp.207–216 are READ and VERIFIED, NOT YET WRITTEN to `chunks/ddc-1-08.md` — SUPERSEDED, kept for the paragraph-map detail only
+
+Session ended by Wilson's request ("pause for the night"), hitting the known spurious vision-plate
+content filter repeatedly ([[reference_vision-plate-content-filter]] — a clean re-dispatch fixed it
+every time it fired, nothing in the plates themselves is the problem). **No edits were made to
+`chunks/ddc-1-08.md` this session** — it is still exactly as the block below describes (La complete,
+En stops mid-¶25). Everything below is fully plate-verified and ready to paste in directly next
+session, sparing a re-read of `raw/plates/en-{207..216}.jpg`.
+
+**Paragraph map, En ¶25 (continuing from where the file stops) through ¶41, plate-confirmed against
+the corresponding La ¶¶ already in the file:**
+- ¶25 (already open in the file, ends `...on going against Jerusalem.[^s4]`) continues on the SAME
+  page (no new page marker yet) with "Or, to use the common simile, as a rider who urges on a
+  stumbling horse..." through the David's-census and Pilate/crucifixion examples, running across
+  `<!-- p.208 -->`, `<!-- p.209 -->`, `<!-- p.210 -->`, and closing at "...furtherance of the
+  gospel." (top of p.210). **This is one continuous paragraph, no merge, just very long** — La ¶25
+  is the correspondingly huge paragraph already in the file.
+- {¶26} "Again, as God's instigating the sinner does not render him the author of sin..." (p.210)
+  through "...they made their hearts as an adamant stone, lest they should hear the law and the
+  words which Jehovah of hosts hath sent." (p.211, `<!-- p.211 -->` marker before "stricken them").
+  Matches La ¶26 exactly, no merge.
+- {¶27} "Thus also with regard to the blinding of the understanding." (p.211) through "...which God
+  had not commanded." (p.212, `<!-- p.212 -->` before "of some good end."). Matches La ¶27.
+- {¶28} "To this view of providence must be referred what is called temptation..." (p.212, one
+  sentence, matches La ¶28).
+- {¶29} "Temptation is either for evil or for good." (p.212, matches La ¶29).
+- {¶30} "An evil temptation is when God, as above described..." through "...but deliver us from
+  evil.[^s2-2]" (p.212, matches La ¶30).
+- {¶31} "A good temptation is that whereby God tempts even the righteous..." (p.212) through
+  "...that ye may be tried." (p.213, `<!-- p.213 -->` before "for the purpose of proving them").
+  Matches La ¶31.
+- {¶32} "This kind of temptation is therefore rather to be desired..." (p.213, matches La ¶32).
+- {¶33} "God also promises a happy issue..." (p.213, matches La ¶33).
+- {¶34} "Yet even believers are not always sufficiently observant..." through "Dan. xii. 10. *many
+  shall be purified... but the wise shall understand.*" (p.213–214, `<!-- p.214 -->` before "Dan.
+  xii. 10."). Matches La ¶34.
+- {¶35} "Having said in the prefatory definition, that the providence of God extends to all
+  things..." (p.214) through "...or who accelerate death by intemperate living." (p.215,
+  `<!-- p.215 -->` before "to his people,"). Matches La ¶35 (the lifespan-limit digression), carries
+  [^s3-2] and [^s4-2].
+- {¶36} "The providence of God is either ordinary or extraordinary.[^s5-2]" (p.215, matches La ¶36).
+- **{¶37–38}** (MERGE, same shape as the file's existing `{¶19–20}`) — "His ordinary providence is
+  that whereby he upholds and preserves the immutable order of causes appointed by him in the
+  beginning. This is commonly, and indeed too frequently, described by the name of nature..." runs
+  straight through to "...my covenant of the day and my covenant of the night." (p.215) with NO
+  paragraph break where La has one — Sumner merges La ¶37 (*Ordinaria, qua Deus...*) and ¶38 (*Hæc
+  vulgo... natura dicitur...*) into a single English paragraph. Use the `{¶37–38}` label, not two.
+- {¶39} "The extraordinary providence of God is that whereby God produces some effect out of the
+  usual order of nature..." (p.215/216, `<!-- p.216 -->` before "The extraordinary providence").
+  Matches La ¶39.
+- {¶40} "The use of miracles is to manifest the divine power, and confirm our faith..." (p.216,
+  matches La ¶40).
+- {¶41} "Miracles are also designed to increase the condemnation of unbelievers..." through "...they
+  have no cloke for their sin." (p.216, chapter closes here, blank tail on the page — extent
+  re-confirmed, matches the file's La ¶41 and the already-staged plate range).
+
+**Net alignment: 41 La ¶¶ → 39 En ¶¶ labels, ONE merge ({¶37–38}), on top of the ONE already in the
+file ({¶19–20}).** Two merges total for the chapter — worth a line in Notes' Alignment section.
+
+**Footnote ledger, this chapter's En apparatus, FULLY RESOLVED (worked out from the actual plates,
+supersedes the earlier prediction of "closes at note 5" — that prediction was right, but the path
+there has TWO repeated numbers, not none):** Chapter opens at **2** (carried from I.vii's close at
+1), cycles 2,3,4 (already in the file as [^s2] p.200, [^s3] p.206, [^s4] p.207), then continuing:
+**5** (p.208, after *virtually commands it.*), **6** (p.208, after *it is otherwise with regard to
+God.*), **7** (p.208, after *2 Sam. xxiv. 1.*), **8** (p.209, after *because he stumbles.*), **9**
+(p.209, after *overcomes evil with good,* — footnote text itself spans the p.209/210 break), then
+**wraps to 1** (p.212, after *unmasking hypocrisy;*), **2** again → **[^s2-2]** (p.212, after
+*deliver us from evil.*), **3** again → **[^s3-2]** (p.214, after *is not to be passed.*), **4**
+again → **[^s4-2]** (p.214, after *at least after the fall of man,*), **5** again → **[^s5-2]**
+(p.215, after *The providence of God is either ordinary or extraordinary.*). **Closes at 5, as
+predicted, but the wrap means notes 2/3/4/5 each occur TWICE in this one chapter** — every second
+occurrence needs the `-2` suffix per CONVENTIONS §5b (same mechanism as I.vii's `-2, -3, …` chain).
+
+**Curcellæus tally for the chapter — FIVE total, corpus record so far**, all defending conditioned
+divine concursus: III.12.7 ([^s4], already in file), IV.2,3 ([^s8]), III.12.8 ([^s9], spans the
+p.209/210 break), III.11.1 ([^s3-2]), III.12.10 ([^s5-2]).
+
+**Full footnote text for the ten new anchors, plate-transcribed and ready to paste under a new
+`## apparatus-sumner-en` section (after [^s4], which is already correctly anchored in the file's
+en-sumner body but has no apparatus section written yet — none of the four apparatus/headnote/Notes
+sections exist in the file at all right now):**
+
+```
+[^s5]: (printed En p. 208, anchored after *virtually commands it.*) 'But they shift it; he permitted
+only. Yet silence in the law is consent, and consent is accessory.' *Tetrachordon.* Prose Works,
+II. 9. 'Yea, but to permit evil, is not to do evil. Yes, it is in a most eminent manner to do evil;
+where else are all our grave and faithful sayings, that he whose office is to forbid and forbids
+not, bids, exhorts, encourages?' *Ibid.* 182.
+
+[^s6]: (printed En p. 208, anchored after *it is otherwise with regard to God.*) As if they would
+confine th' Interminable, / And tie him to his own prescript, / Who made our laws to bind us, not
+himself. *Samson Agonistes,* 307.
+
+[^s7]: (printed En p. 208, anchored after *2 Sam. xxiv. 1.*) *Perrexit autem ira Jehovæ accendi in
+Israelitas, quum incitasset adversarius Davidem in eos,* &c. Version of Tremellius. Our authorized
+translation renders the passage differently. *The anger of Jehovah was kindled against Israel, and
+he moved David against them to say, Go, number Israel and Judah.*
+
+[^s8]: (printed En p. 209, anchored after *because he stumbles.*) 'Atqui, inquies, id fit quia sunt
+mali, non quia Dei concursus eos tales reddat, veluti cum agaso armentum equorum aut asinorum
+claudorum agitat, causa quidem est incessus illorum, sed vitium ipsis adhærens est causa cur
+claudicarent. Respondeo istam similitudinem claudicare, nec posse applicari primo hominis peccato,
+quo cætera omnia inevitabiliter fluere existimant. Nullus enim tunc in eo erat defectus, qui
+efficeret ut Deo ad agendum impellente male ageret.' Curcell. *Institutio,* IV. 2, 3.
+
+[^s9]: (printed En p. 209, anchored after *overcomes evil with good,*) ......... If then his
+Providence / Out of our evil seek to bring forth good—. *Paradise Lost,* I. 162. ..................
+Who seeks / To lessen thee, against his purpose serves / To manifest the more thy might; his evil /
+Thou usest, and from thence creat'st more good. VII. 613. See also XII. 470. 'Denique providentia
+divina circa peccatum jam commissum se exerit, non tantum puniendo ipsum ex severitate, aut
+condonando ex misericordia, sed etiam ad bonum aliquem finem inservire faciendo, contra perpetrantis
+intentionem. Ita Deus usus est venditione Josephi, ad conservandum familiam patris et regnum
+Ægypti, ne fame perirent; et scelere Judæorum Jesum morti tradentium, ad generis humani
+redemptionem.' Curcell. *Institutio,* III. 12. 8.
+
+[^s1]: (printed En p. 212, anchored after *unmasking hypocrisy;*) 'Yet I will not insist on that
+which may seem to be the cause on God's part; as his judgement on our sins, the trial of his own,
+the unmasking of hypocrites—.' *Of Reformation in England,* I. 5.
+
+[^s2-2]: (printed En p. 212, anchored after *deliver us from evil.*) *Ab illo malo.* Tremellius.
+*from that evil one.*
+
+[^s3-2]: (printed En p. 214, anchored after *is not to be passed.*) 'Tertia quæstio spectat
+conservationem individuorum, utrum Deus absoluto decreto unicuique homini certum vitæ terminum
+assignarit, quem nemo ulla ratione aut contrahere aut producere possit.' Curcell. *Institutio,*
+III. 11. 1.
+
+[^s4-2]: (printed En p. 214, anchored after *at least after the fall of man,*) This seems to
+intimate a belief in the doctrine held by the Fathers and best divines, that if Adam had not
+sinned, he would not have died. The opinion is expressed in the same doubtful manner in a speech of
+Raphael: .......... time may come, when men / With angels may participate ........ And from these
+corporal nutriments perhaps / Your bodies may at last turn all to spirit, / Improv'd by tract of
+time, and wing'd ascend / Ethereal as we, or may at choice / Here, or in heav'nly Paradises dwell.
+*Paradise Lost,* V. 493.
+
+[^s5-2]: (printed En p. 215, anchored after *The providence of God is either ordinary or
+extraordinary.*) 'Qualitas providentiæ in duobus præcipue spectatur. 1. Quod alia sit ordinaria,
+alia vero extraordinaria ... Providentia ordinaria est, qua Deus in hominum regimine ordinem a se
+ab initio institutum observat, et omnia convenienter naturæ, quam ipsis indidit, gubernat.'
+Curcell. *Institutio,* III. 12. 10.
+```
+
+**The two Latin apparatus notes are ALSO plate-read and ready** (these resolve the `[^la6]` /
+`[^la6-2]` anchors already sitting in the file's `## la` section with no apparatus section to
+support them — the genuine "both printed as 6" anomaly the earlier ledger entry flagged):
+
+```
+[^la6]: (printed La p. 143, anchored after *casus nomini*) Sic in MS. sed a manu secunda, contra
+constructionis legem. Veram lectionem prave mutavit nescio quis, cui forte fraudi fuit sequens
+verbum. Apud scriptores recentioris ævi sæpe confunduntur voces adversus et aversus, et quæ ab iis
+derivantur. Hinc ortus error. Repone nomen.
+
+[^la6-2]: (printed La p. 150, anchored after *quasi ipsi*) Probabilius est Miltonum scripsisse
+ipse. Infra pro si ipsi legendum puto sic ipsi.
+```
+
+**What's genuinely still owed, in order:** (1) paste the En body text for ¶25-cont. through ¶41
+using the paragraph map above, reading it back off `raw/plates/en-{207..216}.jpg` as you type rather
+than trusting this summary's prose paraphrase of the plate content — this note records the
+STRUCTURE (breaks, page markers, anchors, footnote text) verified, not a substitute for transcribing
+the body prose itself line by line; (2) add `## apparatus-sumner-en` with the ten blocks above;
+(3) add `## apparatus-sumner-la` with the two blocks above; (4) write `## headnote` (Place/Argument/
+Pressure point/Loci, ≤200 words, loci line should note the five-Curcellæus tally); (5) write
+`## Notes` — Alignment (41→39, two merges: `{¶19–20}` and `{¶37–38}`), the footnote-ledger writeup
+above, the Curcellæus-record finding, and the `[^la6]`/`[^la6-2]` "both printed as 6" anomaly
+flagged as printed, not silently renumbered. **Do not run any build/citations tooling until all
+four sections exist** — CONVENTIONS' standing rule for a dangling chunk.
+
+---
+
+## ⇢⇢ (2026-08-29, earlier same day) — **`ddc-1-08` is MID-TRANSCRIPTION, NOT DONE. Do not build/deploy it as-is.**
+
+I.iii and I.vii are done, plate-verified, committed, and live (`d1e6b51`, `643719a`). I.viii
+(*De Providentia Dei*, La 140–153 / En 199–216) is **in progress** in `chunks/ddc-1-08.md`, on disk
+but **uncommitted** — session ended mid-chapter to keep context sane, per Wilson's instruction.
+
+**Exact stopping point.** The `## la` section is COMPLETE and correct — all 41 Latin paragraphs
+({¶1}–{¶41}), plate-verified, page markers checked (140→153 with no gaps). The `## en-sumner`
+section is transcribed only through **{¶25}, mid-sentence, right after the `[^s4]` marker** on
+printed En p. 207 (*"...to determine him on going against Jerusalem.⁴"*). Everything En from there
+to the chapter's end (En p. 207 continuing through p. 216 — the stumbling-horse simile, the David/
+Numbering-the-people example worked through in detail, the Joseph and Pilate/crucifixion examples,
+then paragraphs {¶26}–{¶41} covering incitando/indurando/excæcando, temptation good and bad, the
+lifespan-limit digression, ordinary vs. extraordinary providence, and miracles) is **NOT YET
+WRITTEN**. Nor is `apparatus-sumner-en`, `apparatus-sumner-la`, `headnote`, or `Notes`.
+
+**Plates are already staged** — `raw/plates/la-{140..154}.jpg` and `raw/plates/en-{199..217}.jpg` —
+so no need to re-run `prep-chapter.sh`; just keep reading forward from en-207.
+
+**Footnote ledger so far, both layers (do not re-derive, continue from here):**
+- Latin: opens at **note 6** (continuing straight from I.vii's La apparatus, which closed at 5) —
+  [^la1] Metaphys, [^la2] the "extra Deum" crux (Sumner's own conjecture, La p.129 — carried over
+  from before, unrelated to this chapter), [^la3] "inquam" MS correction (also carried over) —
+  **this chapter's own two Latin notes are BOTH printed as "6"**: [^la6] (La p.143, "Sic in MS. …
+  Hinc ortus error. Repone nomen.") and [^la6-2] (La p.150, "Probabilius est Miltonum scripsisse
+  ipse…") — ⚠ a genuine printed anomaly (the second should have been "7"), flag it in Notes, don't
+  silently renumber it away.
+- English: opens at **note 2** (continuing from I.vii's En apparatus, which closed at note 1 on En
+  p. 198) — 2(200, the massive Beza/Tremellius/Mill/Waterland/Doddridge/Wetstein/Newcome/Bengelius
+  roll on the αὐτοῦ/ἑαυτοῦ variant), 3(206, PL XII.287), 4(207, Curcellæus *Institutio* III.12.7,
+  just placed). **Confirmed empirically: this chapter's En apparatus closes at note 5 (En p.215),
+  because Chapter IX (En p.217, already glimpsed for the boundary check) opens at note 6.** Use
+  that as the checksum when the rest is written.
+- **Curcellæus tally so far in this chapter: one used (III.12.7). At least four more are coming**
+  (IV.2,3 at En p.209; III.12.8 continuing the same note across the p.209/210 break; III.11.1 at
+  En p.214; III.12.10 at En p.215) — bringing the corpus total past 15. This chapter is nearly as
+  Curcellæus-saturated as I.vii.
+
+⛔⛔ **THE I.VII NUMBERING BUG NEARLY HAPPENED AGAIN HERE — read this before writing another
+paragraph.** While drafting this chapter's La ¶25 (the giant paragraph, La p.146–148) an edit
+landed a duplicate `<!-- p.147 -->` marker mid-paragraph; caught and fixed by grepping for the
+marker string and eyeballing both hits before moving on. **Do a `grep -n "p\\.[0-9]"` count-and-
+compare pass after every single page, not just at chapter end** — this is the second time in two
+chapters this exact class of error has appeared, and both times a cheap grep would have caught it
+in one shot instead of a whole-file audit later.
+
+⚠ **Do not run `node scripts/build-content.mjs` / `build-citations.py` / `next build` on this
+chunk until the `en-sumner` section, both apparatus blocks, `headnote`, and `Notes` are all
+present** — an incomplete chunk with a dangling `## en-sumner` and no closing sections will not
+parse cleanly, and there is no reason to find that out via a broken build instead of by reading
+this paragraph.
+
+---
+
+## ⇢ (2026-08-29, earlier) — **M5 copy is WRITTEN. The site has never been deployed.**
 
 **Two things are open, and only one of them is work.**
 
