@@ -1,11 +1,11 @@
 # Citation QA — read this, do not merely generate it
 
-6714 records · 36 unclassified · 6 out-of-range · 7 versification · 501 divergence rows, 19 suspect
+6976 records · 36 unclassified · 6 out-of-range · 7 versification · 509 divergence rows, 20 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 3355
-- `en-sumner` — 3359
+- `la` — 3486
+- `en-sumner` — 3490
 - spread: 4 records, 0.1%
 
 ## Unclassified — never a record with an invented target
@@ -64,6 +64,7 @@ The two layers were paired but land too far apart to be one citation. Reported, 
 - `ddc-1-02` ¶27 — la `v. 17` → Ps 25:17 vs en `v. 17` → Ps 103:17
 - `ddc-1-03` ¶7 — la `Act. xv. 28.` → Acts 15:28 vs en `Acts xv. 18.` → Acts 15:18
 - `ddc-1-03` ¶9 — la `et xv. 28.` → Acts 15:28 vs en `xv. 18.` → Acts 15:18
+- `ddc-1-09` ¶15-16 — la `Jos. vi. 2.` → Josh 6:2 vs en `Josh. vi. 14.` → Josh 6:14
 - `ddc-2-03` ¶13 — la `cap. xxxi. 2.` → Isa 31:2 vs en `iii. 1.` → Isa 3:1
 - `ddc-2-04-b` ¶9 — la `Psal. lv. 18.` → Ps 55:18 vs en `v. 3` → Ps 55:3
 - `ddc-2-04-c` ¶1 — la `et xxv. 22.` → Ps 25:22 vs en `iii. 8.` → Ps 3:8
@@ -94,10 +95,10 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 
 | class | pairs | what it asserts |
 |---|---|---|
-| `unchecked` | 126 | no division read and no known mechanism. NOT a claim of error |
+| `unchecked` | 130 | no division read and no known mechanism. NOT a claim of error |
 | `open-end` | 81 |  |
 | `versification` | 63 | a READ J-T division maps the Latin onto the English exactly |
-| `versification-predicted` | 60 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
+| `versification-predicted` | 62 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
 | `anomaly` | 5 | a division IS read and does not explain it -- listed above |
 
 ## Versification, not error (M4-RUNBOOK §6b)
@@ -137,6 +138,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Ps | 30 | +1 | 3 | **yes** |
 | Ps | 51 | +2 | 3 | **yes** |
 | Ps | 52 | +2 | 3 | **yes** |
+| Ps | 68 | +1 | 3 | **yes** |
 | Ps | 75 | +1 | 3 | **yes** |
 | Ps | 92 | +1 | 3 | **yes** |
 | 1Sam | 7 | -1 | 2 | **yes** |
@@ -157,13 +159,14 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Ps | 18 | +1 | 2 | **yes** |
 | Ps | 18 | +6 | 1 | no |
 | Ps | 31 | +1 | 2 | **yes** |
+| Ps | 34 | +1 | 2 | **yes** |
+| Ps | 34 | -1 | 1 | no |
 | Ps | 40 | +1 | 2 | **yes** |
 | Ps | 41 | +1 | 2 | **yes** |
 | Ps | 55 | +1 | 2 | **yes** |
 | Ps | 55 | +15 | 1 | no |
 | Ps | 58 | +1 | 2 | **yes** |
 | Ps | 60 | +2 | 2 | **yes** |
-| Ps | 68 | +1 | 2 | **yes** |
 | Ps | 69 | +1 | 2 | **yes** |
 | Ps | 81 | +1 | 2 | **yes** |
 | Ps | 140 | +1 | 2 | **yes** |
@@ -211,6 +214,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Job | 19 | -1 | 1 | no |
 | Job | 31 | -1 | 1 | no |
 | John | 6 | -1 | 1 | no |
+| Josh | 6 | -12 | 1 | no |
 | Judg | 11 | +2 | 1 | no |
 | Lam | 3 | -5 | 1 | no |
 | Luke | 9 | +4 | 1 | no |
@@ -224,8 +228,6 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Ps | 7 | +1 | 1 | no |
 | Ps | 8 | +1 | 1 | no |
 | Ps | 33 | -1 | 1 | no |
-| Ps | 34 | +1 | 1 | no |
-| Ps | 34 | -1 | 1 | no |
 | Ps | 36 | +1 | 1 | no |
 | Ps | 37 | +2 | 1 | no |
 | Ps | 42 | +1 | 1 | no |
@@ -355,6 +357,14 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-08 | ¶33 | `—` | — | `1 Cor. x. 13.` | 1Cor 10:13 | present in English only |
 | ddc-1-08 | ¶35 | `Psal. lv. 24.` | Ps 55:24 | `Psal. lv. 23.` | Ps 55:23 | divergence |
 | ddc-1-08 | ¶41 | `Matt. xi. 21. &c.` | Matt 11:21 &c. | `Matt. xi. 21.` | Matt 11:21 | divergence |
+| ddc-1-09 | ¶3-5 | `Col. i. 20.` | Col 1:20 | `—` | — | present in Latin only |
+| ddc-1-09 | ¶7 | `et vii. 11, 12.` | Rev 7:11,12 | `vii. 11.` | Rev 7:11 | divergence |
+| ddc-1-09 | ¶9 | `Psal. xxxiv. 8.` | Ps 34:8 | `Psal. xxxiv. 7.` | Ps 34:7 | divergence |
+| ddc-1-09 | ¶13 | `Jos. vi. 2.` | Josh 6:2 | `Josh. v. 15.` | Josh 5:15 | divergence |
+| ddc-1-09 | ¶13 | `Psal. lxviii. 18.` | Ps 68:18 | `Psal. lxviii. 17.` | Ps 68:17 | divergence |
+| ddc-1-09 | ¶15-16 | `Jos. vi. 2.` | Josh 6:2 | `Josh. vi. 14.` | Josh 6:14 | divergence |
+| ddc-1-09 | ¶15-16 | `Dan. x. 13.` | Dan 10:13 | `Dan. xi. 13.` | Dan 11:13 | divergence |
+| ddc-1-09 | ¶22-25 | `—` | — | `xii. 3.` | Rev 12:3 | present in English only |
 | ddc-2-01 | ¶8 | `et xii. 2.` | Prov 12:2 | `xii. 3.` | Prov 12:3 | divergence |
 | ddc-2-01 | ¶9-12 | `et xxiv. 1.` | Prov 24:1 | `xxiv. 7.` | Prov 24:7 | divergence |
 | ddc-2-01 | ¶16 | `1 Cor. ix. 18.` | 1Cor 9:18 | `—` | — | present in Latin only |

@@ -1,6 +1,67 @@
 # Next session — resume here
 
-## ⇢⇢⇢⇢ START HERE (2026-08-30) — **`ddc-1-08` (I.viii, *De Providentia Dei*) is COMPLETE, plate-verified, all four apparatus sections written, build clean, UNCOMMITTED**
+## ⇢⇢⇢⇢⇢ START HERE (2026-08-30, later) — **`ddc-1-09` (I.ix, *De Gubernatione Speciali Angelorum*) is COMPLETE, plate-verified, all four sections written, build clean, COMMITTED**
+
+Continued straight on from the block below. La pp. 154–159 (6 pages) / En pp. 217–225 (9 pages), a
+short citation-chain chapter on angels — no argumentative prose to speak of, almost entirely proof-
+text lists. **25 La ¶¶ → 18 En ¶¶ labels**, four merges: `{¶3–5}` (triple), `{¶15–16}`, `{¶19–20}`,
+`{¶22–25}` (quadruple, the corpus's second-largest merge after `ddc-2-01`'s). No Latin apparatus
+this chapter (both volumes' plates checked for superscripts, none found). English apparatus is the
+corpus's largest count yet: **16 notes**, cycling `6→7→8→9→1→2→3→4→5→6→7→8→9→1→2→3` — the first
+chapter to wrap the 1–9 cycle **twice**. Checksum holds both ways: opens at 6 (I.viii closed at
+5-2/wrapped-5), closes at 3 (Chapter X opens at 4, plate-confirmed).
+
+⛔⛔ **A real transcription miss, caught before it left the session — worth internalizing, not just
+logging.** The first `## la` draft skipped an entire Latin paragraph ("Unde in mysterium humanæ
+salutis libentissime inquirunt...", La p. 154) between what got labeled ¶3 and ¶4, collapsing 25
+source paragraphs into 24 labels while silently dropping one paragraph's content — exactly the
+"sequential count instead of tracking the actual Latin ¶ number" hazard CONVENTIONS and this file
+have both warned about. Caught by re-reading the la-154/la-155 plates against the drafted file
+before starting the English layer (not at the end), then fixed with a single Edit inserting the
+paragraph as `{¶4}` and renumbering everything after (+1 through the old `{¶24}`, now `{¶25}`). The
+mitigation that worked, again: **grep-and-compare the paragraph count against the plate before
+moving to the next layer, not just at chapter's end.**
+
+⚠ **A second bug, this one in the tooling, not the transcription — merge labels need an EN DASH,
+not a hyphen.** CONVENTIONS §4 shows `{¶2–3}` with U+2013; a first draft of this chunk's four merge
+labels used plain ASCII hyphens (`{¶3-4-5}` etc.), which `tools/build-citations.py` silently failed
+to recognize as merges — it treated every La paragraph inside an unrecognized merge as "absent from
+the English layer," producing 70 phantom divergence rows. Re-running after fixing the dashes dropped
+the divergence count from 78 to 8, all genuine. **If a chunk's QA report shows a wall of "Latin
+paragraph absent from the English layer" rows exactly matching a merged paragraph's citations, check
+the dash character in the merge label before doing anything else** — this is now the second time a
+dash-related silent failure has cost a re-run in this corpus (see the hyphen-vs-en-dash split at
+CONVENTIONS §2's word-break rule for the first).
+
+**Six genuine citation divergences found and logged in `## Notes`, plate-confirmed on both sides:**
+En drops the `Col. i. 20.` citation entirely (¶3–5, keeps only Eph. i. 10 for the same point); two
+ordinary ±1 versification pairs (`vii. 11, 12.`/`vii. 11.` at ¶7, `Psal. xxxiv. 8.`/`7.` at ¶9,
+`lxviii. 18.`/`17.` at ¶13); and ★ the chapter's most interesting finding — **Sumner is inconsistent
+with HIMSELF, not just against Milton, on the same underlying verse cited twice in one chapter**:
+"captain of the host of Jehovah" (Josh. 5:14 in modern terms) gets En `v. 15.` the first time
+(¶13) and En `vi. 14.` the second time ({¶15–16}), while La repeats its own `Jos. vi. 2.` identically
+both times. A `Dan. x. 13.`/`Dan. xi. 13.` pair in the same merged paragraph, where La's reading is
+the one that matches the modern reference. One parser-only gap (`{¶22–25}`'s trailing `xii. 3.`
+recovered as a carried citation in the English record but missed in the Latin one, though both
+plates print it identically) — a tooling note, not a text defect.
+
+`tools/build-citations.py ddc-1-09` run, then restored with `--all` (6,976 records, 36 unclassified,
+509 divergence rows, 20 suspect — up from the corpus's prior baseline as expected for a new chunk).
+`build-content.mjs` + `build-index-json.py` + `next build` all clean (95 static pages, `/browse/1/9`
+included, Greek ἀντίπαλος and κατήγορος τῶν ἀδελφῶν render correctly); `.next`/`out` cleaned up.
+
+**Committed:** `chunks/ddc-1-09.md` plus the citation-ledger updates, in one commit. Not pushed —
+pushing is Wilson's call like every session (and see the ⚠ HTTP/2 push footgun further down this
+file if it resurfaces).
+
+**Next chapter in the queue:** I.iv–I.vi remain deliberately last. The next one up in normal
+sequence is **I.x** (*De Gubernatione Speciali Hominis Ante Lapsum: ubi etiam de Sabbatho et
+Conjugio* — includes the Sabbath and marriage institutions, per `PLAN.md`'s own description; La
+160–171 per `tools/chapters.tsv`, not yet cross-checked against En).
+
+---
+
+## ⇢⇢⇢⇢ (2026-08-30, earlier) — **`ddc-1-08` (I.viii, *De Providentia Dei*) is COMPLETE, plate-verified, all four apparatus sections written, build clean, UNCOMMITTED**
 
 Picked up exactly where the 2026-08-29 block below left off — pp.207–216 read fresh off the plates
 (the paragraph map below was confirmed correct throughout, not just trusted), written to
