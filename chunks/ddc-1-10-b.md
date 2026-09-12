@@ -7,8 +7,8 @@ title_la: "De Gubernatione Speciali Hominis ante Lapsum: ubi etiam de Sabbatho e
 title_en: "Of the Special Government of Man before the Fall, including the Institutions of the Sabbath and of Marriage"
 pages_la: "162-172"
 status: la-verified
-en_sumner_status: partial
-pages_en: "230-232 (of 230-246)"
+en_sumner_status: complete
+pages_en: "230-246"
 ---
 
 ## la
@@ -153,6 +153,12 @@ pages_en: "230-232 (of 230-246)"
 
 [^s7-2]: (printed En p. 244, anchored after *doing good to the unbeliever.*) 'His drift, as was heard before, is plain; not to command our stay in marriage with an infidel; that had been a flat renouncing of the religious and moral law; but to inform the Corinthians, that the body of an unbeliever was not defiling, if his desire to live in Christian wedlock showed any likelihood that his heart was opening to the faith; and therefore advises to forbear departure so long till nothing have been neglected to set forward a conversion; this I say he advises—.' *Doctrine, &c.* *Prose Works,* I. 365. See also *Tetrachordon:* 'I cannot see by this golden dependence——not an endless servitude.' II. 123, 124. and pp. 206—218.
 
+[^s8-2]: (printed En p. 245, anchored after *form* in *The* form *of marriage consists*) 'What is not therefore among the causes constituting marriage, must not stay in the definition. Those causes are concluded to be matter, and, as the artist calls it, *form*...... First, therefore, the material cause of matrimony is man and woman; the author and efficient, God and their consent; the internal *form* and soul of this relation is conjugal love arising from a mutual fitness to the final causes of wedlock, help and society in religious, civil, and domestic conversation, which includes as an inferior end the fulfilling of natural desire, and specifical increase; these are the final causes both moving the efficient, and perfecting the *form.*' *Tetrachordon.* *Prose Works,* II. 140. See also p. 143. 'Marriage is a divine institution——common duty than matrimonial.'
+
+[^s9-2]: (printed En p. 245, anchored after *unable to live with chastity out of this state.*) 'If we speak of a command in the strictest definition, then marriage itself is no more a command than divorce; but only a free permission to him that cannot contain.' *Doctrine, &c.* *Prose Works,* II. 13.
+
+[^s1-2]: (printed En p. 245, anchored after *excluding the ministers of the church from this rite.*) Whatever hypocrites austerely talk / Of purity, and place, and innocence, / Defaming as impure what God declares / Pure, and commands to some, leaves free to all. / Our Maker bids increase; who bids abstain / But our Destroyer, foe to God and Man? *Paradise Lost,* IV. 744.
+
 ## apparatus-editorial
 
 [^1]: (La p. 167 `{¶10}`, and the same word again at En p. 237) **Read, as our best guess, `עְוֹנה` — ayin + shva · vav + holam · nun · he.** Codepoints verified by Unicode name. The word is the one Exod. 21:10 uses for the third thing a husband may not diminish; Milton glosses it as *statum tempus*, Sumner as *her stated times*. The consonants are secure. ⚠ **The POINTS are a guess and are recorded as one.** Our reading of them is non-standard — the Masoretic form is `עֹנָה`, or `עוֹנָה` written *plene*, with the holam as the ayin's own vowel and a qamats under the nun — and non-standard is exactly when a reading deserves least confidence. ⛔ **And the same marks appear on `בעל` at La 162 and En 230 (Wilson, 2026-09-12) — so that word is NOT unpointed, as this chunk elsewhere claimed, and both words carry pointing of one kind.** We have not identified it. Whatever it is, it is the same in the Latin and English volumes and the same across the two words, which is a fact about the marks even though their value is open. **A Hebraist settles all of it at once** (CONVENTIONS §5c): the pointing here, the pointing on `בעל` in `{¶1}`, and whether the two are in fact one mark misread twice. Everything is transcribed as printed and nothing is repaired toward the standard form (§3, §6).
@@ -161,13 +167,21 @@ pages_en: "230-232 (of 230-246)"
 
 ## headnote
 
+**Place.** The second of three parts of I.x, following directly on part a's Sabbath argument and turning to marriage — its institution, and then, at length, the lawfulness of polygamy.
+
+**Argument.** Milton grounds marriage in creation, not command, and deliberately declines to define it as one man with one woman, lest the patriarchs stand convicted of habitual adultery. He then works through and rejects every scriptural objection to polygamy in turn — Gen. ii. 24 read with Matt. xix. 5, the sister-in-law prohibition of Lev. xviii. 18, Deut. xvii. 17, Malachi, the divorce sayings, 1 Cor. vii. 2 and 4 — before turning affirmative: Exod. xxi. 10, 2 Sam. xii. 8, the Song of Songs, 2 Chron. xxiv., Ezek. xxiii., Heb. xiii. 4. A roll of polygamous patriarchs follows — Abraham, Jacob, Moses, Gideon, Elkanah, David, Joash — closing on the maxim that the practice of the saints is the best interpretation of the commandments. The chapter then turns briefly to marriage's form and end, and to its requisites: parental and mutual consent, freedom from fraud, and the degrees of affinity, which Milton derives from the text of Leviticus alone, against ecclesiastical canon.
+
+**Pressure point.** This is the treatise's most notorious heterodoxy — no single position troubled readers on the work's 1825 recovery more. Sumner's apparatus keeps its distance throughout: Beza is quoted against Milton on David, and a note volunteers that nothing else in Milton's printed corpus corroborates the opinion.
+
+*Loci: pending M4.*
+
 ## Notes
 **Owed on return (this chunk is PARTIAL — see CONVENTIONS §8d).**
 
 1. ✅ `## en-sumner` is **COMPLETE** — En 230–246, La ¶¶1–27, 25 labels, page markers contiguous.
-2. ⬜ `## apparatus-sumner-en` is **still empty, and it is now the whole remaining job**. **Seventeen** anchors are placed in the finished English and every one needs its definition. Ledger so far, plate-confirmed: **3** (En 230), **4**, **5** (En 231), **6** (En 234), **7** (En 235), **8** and **9** (En 236), **1** (En 237) — one full 9→1 wrap, inside this part.
+2. ✅ `## apparatus-sumner-en` is **COMPLETE** — all seventeen notes written, ledger `3·4·5·6·7·8·9·1·2·3·4·5·6·7·8·9·1` (the 9→1 wrap crossed twice), every anchor matched to a defined note. Two genuine printed anomalies caught and flagged in Notes below: a double em-dash distinct from an ordinary page-range dash (En 244, again En 245), and a period-plus-stray-comma in Sumner's own apparatus (En 236).
 3. ✅ `## apparatus-editorial` is **written** — `[^1]` (the Exod. 21:10 word, La 167 / En 237) and `[^2]` (`בעל`, La 162 / En 230), each anchored in BOTH layers. Consonants secure; **the POINTS on both words are an open question for a Hebraist and are recorded as a guess, not a reading.**
-4. `## headnote` unwritten. `## Notes` below is a working record, not the finished section.
+4. ⬜ `## headnote` unwritten — **the only thing left in this chunk.** `## Notes` below is a working record, not the finished section.
 5. La ¶¶ are final: **27 paragraphs, La 162–172**, page markers 163–172 contiguous and verified by grep.
 
 ⛔ **A COMBINED SPLIT-AND-MERGE that §4 does not cover — needs Wilson's ruling, used provisionally as `{¶2 cont.–3}`.**
