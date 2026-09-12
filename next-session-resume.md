@@ -1,5 +1,29 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-12, later) — **`ddc-1-10-b` is IN PROGRESS: Latin layer COMPLETE and plate-verified, English layer only through En 232**
+
+⚠ **Read `chunks/ddc-1-10-b.md`'s `## Notes` FIRST — it opens with a numbered "Owed on return" list (§8d).** Frontmatter is `status: la-verified` / `en_sumner_status: partial`. Short version of what is owed:
+
+1. **`## en-sumner` from En 233 to En 246** (La ¶¶5–27) — the rest of the polygamy defence, prohibited degrees, form/end/precept.
+2. **`## apparatus-sumner-en` is empty** and anchors `[^s3]`/`[^s4]`/`[^s5]` are already placed in the written English. Ledger so far, plate-confirmed: **3** (En 230), **4**, **5** (En 231) — and part a closed at 2, so the chapter's cycle is intact across the split.
+3. **`## apparatus-editorial` is empty and `[^1]` is already anchored** in La ¶10 (the Hebrew). It cannot ship without that note.
+4. Headnote unwritten.
+
+**Latin is DONE and should not be re-read: 27 ¶¶, La 162–172, markers 163–172 contiguous.** ⛔ p.168 was initially MISSING from the marker run and was caught only by the grep-count, not by reading — the standing check earned its keep again. Grep-count page markers after every page, not at chapter end.
+
+⛔ **TWO THINGS NEED WILSON BEFORE THIS CHUNK CAN SHIP.**
+
+**(a) A combined split-and-merge that §4 has no form for.** Sumner breaks La ¶2 in two *and* welds its second half onto La ¶3. I wrote **`{¶2 cont.–3}`**, composing §4's split form with its merge form rather than inventing a third scheme, but CONVENTIONS forbids drift and this wants an explicit dated ruling. ⚠ Also verify `build-citations.py` recognises the label — an unrecognised merge form silently reports every La ¶ inside it as absent from the English (the I.ix en-dash bug); the label already uses U+2013, not a hyphen.
+
+**(b) A Hebrew reading we cannot verify.** La 167 prints a pointed word for the conjugal duty of Exod. 21:10. At 2400 dpi what is legible is ע-ו-נ-ה, a holam dot over the vav, and two vertically stacked dots under the ayin. Transcribed `עְוֹנָה` and marked ⚠ UNVERIFIED, because §8b(ii) explicitly forbids setting the grammatically expected `עוֹנָה` just because it is correct — that exact mistake was made five times at I.ii and was wrong three times. **Needs a specialist or a better scan.** (The chunk's other Hebrew, `בעל`, is unpointed in BOTH volumes — La 162 and En 230 agree, checked at 900–1200 dpi.)
+
+**`index/` is deliberately NOT updated for this chunk.** Against a partial English layer the citation tool reports 73 divergence rows, nearly all the partial-layer artifact. Rebuild `--all` only when `## en-sumner` is finished. Corpus baseline stays at part a's 513 rows.
+
+**Findings already logged in the chunk's Notes:** a raised ordinal in ROMAN numerals (`Respondeo, iᵐ.`, La 165) — the first in the corpus, all 19 prior instances arabic, transcribed `im.`; Milton naming and attacking **Junius** twice and **Beza** once, which bears on the Junius–Tremellius versification work; `Matt xix. 5.` with no period (La 163, and the same volume sets `Matt.` correctly twice elsewhere); a lone DOUBLE quotation mark at La 171; three Latin graves/circumflexes; and `polygamy being a trivial,` at En 232 with its noun missing.
+
+---
+
+
 ## ⇢⇢⇢⇢⇢⇢ START HERE (2026-09-12) — **`ddc-1-10-a` (I.x part a, the Sabbath section) is COMPLETE, plate-verified, build clean, COMMITTED**
 
 **I.x is the longest chapter in Book I and is SPLIT THREE WAYS** (La 20 pp. / En 34 pp., far past §7's La > 12 pp. threshold). The seams are Milton's own lemmata, already located off the plates — do not re-derive them:
