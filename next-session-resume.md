@@ -1,6 +1,37 @@
 # Next session — resume here
 
-## ⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-12, later) — **`ddc-1-10-b` is IN PROGRESS: Latin layer COMPLETE and plate-verified, English layer only through En 232**
+## ⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-12, latest) — **`ddc-1-10-b`: BOTH TEXT LAYERS DONE. The only thing left is the ENGLISH APPARATUS, then the headnote.**
+
+Frontmatter still says `en_sumner_status: partial` — **flip it** once the apparatus lands. Commits: `c7fdfde` (En 233–237 + the Hebrew correction), `5dd8299` (En 238–246). Not pushed.
+
+**What is done.** `## la` 27 ¶¶, La 162–172. `## en-sumner` En 230–246, 25 labels, page markers **231–246 contiguous**. `## apparatus-editorial` written (`[^1]`, the Hebrew). Coverage is complete and monotonic; the grid is `{¶2 cont.–3}` + `{¶19–20}` + `{¶25–26}`, everything else one-to-one.
+
+⬜ **THE JOB: seventeen English notes, `## apparatus-sumner-en`, ledger `3·4·5·6·7·8·9·1·2·3·4·5·6·7·8·9·1`.** Anchors are already placed and already carry §5b's `-2` suffix where they recur (seven of them do — the 9→1 wrap is crossed twice). Where each note sits, by plate:
+
+- **En 230** → 3 · **En 231** → 4, 5 (5 runs over onto En 232; the foot of 232 is its tail, `Doctrine, &c. II. 32.`, NOT a new note)
+- **En 234** → 6 · **En 235** → 7 · **En 236** → 8, 9 · **En 237** → 1 · **En 238** → 2 · **En 240** → 3-2
+- **En 242** → 4-2 (its *Paradise Lost* lines continue at the head of En 243) · **En 243** → 5-2 · **En 244** → 6-2, 7-2 · **En 245** → 8-2, 9-2, 1-2
+- **En 239 and En 241 carry no notes at all.** ⛔ **En 246's notes 2 and 3 belong to part c** — the b/c seam is mid-page — so do not ledger them here.
+
+⛔⛔ **READ FOOTNOTE NUMBERS AT 400 dpi, NEVER OFF THE 200 dpi PLATE.** En 240's number reads as a **5** at 200 and is a **3** at 400. Nothing on the page disambiguates it except the §8a checksum — which is precisely what a misread number destroys. This cost nothing to catch and would have shipped an unrecoverable ledger.
+
+⛔⛔ **The English volume tops out at 400 dpi — `raw/en.pdf`'s page image is 2725×3756 at 400 ppi (`pdfimages -list -f <pdf page>`), the same bytes archive.org serves at `page/n<leaf>.jpg`.** Every `crop-plate.sh en … 900`/`1200` call in this corpus has been reading **interpolated** pixels. For a genuinely doubtful sort the route that works is: fetch the native page image (STRUCTURE.md §Second scans — En `treatiseonchrist00milt`, leaf = printed + 55), crop it with PIL, and enlarge the crop. Upscaling a PDF render adds smoothing, and smoothing is exactly what invents a letter feature that is not there.
+
+⛔ **STILL NEEDS WILSON before this chunk can ship — unchanged from the last block.** (a) The combined split-and-merge `{¶2 cont.–3}` wants an explicit dated ruling; §4 has a split form and a merge form but nothing for a continuation that is itself merged forward, and CONVENTIONS forbids drift. Also verify `build-citations.py` recognises the label — an unrecognised merge form silently reports every La ¶ inside it as absent from the English (the I.ix en-dash bug); this label already uses U+2013. (b) The Hebrew wants a **Hebraist**, now on two counts, not one.
+
+★★ **The Hebrew is SETTLED differently from what `1a5119f` recorded, and the correction is already in the file.** Both volumes print **ayin + shva · vav + holam · BET · he** — `עְוֹבה` — not the nun that commit claimed was "secure". En 237 is the second witness this chunk was told to look for, and it agrees with La 167 exactly. ⭐ **What broke the tie was a CONTROL, not a sharper crop:** `בעל`, printed bare at La 162 and En 230, gives a known bet in each fount, and the disputed sort matches it heel for heel. The chunk already had that control on record and had used it only to note the two volumes agree on `בעל`. **When one letter is in doubt, look first for the same sort elsewhere on the page, then for more dpi.**
+
+**Other findings are in the chunk's own `## Notes` in full** — the doubled quotation mark now attested in BOTH volumes on the same proverb (La 171 / En 243), `makc` for *make* at En 243, the bracketed marginal-translation gloss spliced inside an italic quotation at En 241, and three citation divergences, two of them in one paragraph running opposite ways.
+
+**`index/` is still deliberately NOT rebuilt.** Now that `## en-sumner` is finished the partial-layer artifact is gone, so `build-citations.py ddc-1-10-b` then `--all` should be run once the apparatus is in — not before. Corpus baseline is part a's 513 divergence rows.
+
+**The content filter fires hard on this page range.** Whole-paragraph `Edit` calls are blocked repeatedly even on plain text; so are multi-sentence writes. What worked for the whole English layer: build each paragraph in the scratchpad with **one-sentence `printf` appends**, then splice with `tools/append-before-marker.py`. ⚠ The marker `## apparatus-sumner-en` occurs twice in the file (the Notes quote it) — pass it with a trailing newline, `$'## apparatus-sumner-en\\n'`, or the tool refuses.
+
+**Then part c** — La 173–179 (*In definitione conjugii genus est arctissima conjunctio*), En ~246–259, the divorce argument. Its first note is **2**, already plate-confirmed on En 246.
+
+---
+
+## ⇢⇢⇢⇢⇢⇢⇢ (2026-09-12, earlier — superseded by the block above) — **`ddc-1-10-b` is IN PROGRESS: Latin layer COMPLETE and plate-verified, English layer only through En 232**
 
 ⚠ **Read `chunks/ddc-1-10-b.md`'s `## Notes` FIRST — it opens with a numbered "Owed on return" list (§8d).** Frontmatter is `status: la-verified` / `en_sumner_status: partial`. Short version of what is owed:
 
