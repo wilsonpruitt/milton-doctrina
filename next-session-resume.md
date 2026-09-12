@@ -1,6 +1,28 @@
 # Next session — resume here
 
-## ⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-12, latest) — **`ddc-1-10-b`: BOTH TEXT LAYERS DONE. The only thing left is the ENGLISH APPARATUS, then the headnote.**
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-12, latest) — **`ddc-1-10-b` is COMPLETE — plate-verified, build clean, COMMITTED (`c23c337`). NOT pushed.**
+
+I.x part b (the polygamy defence) is done: `## la` (27 ¶¶, La 162–172), `## en-sumner` (En 230–246, 25 labels), `## apparatus-sumner-en` (all 17 notes, ledger `3·4·5·6·7·8·9·1·2·3·4·5·6·7·8·9·1`), `## apparatus-editorial` (`[^1]`, `[^2]`), and the headnote. `en_sumner_status: complete` in frontmatter. `build-citations.py --all` run clean (7162 records, 529 divergence — the +16 over part a's 513 matches this chunk's own scoped count exactly).
+
+⛔⛔ **STILL NEEDS WILSON, carried unchanged from the prior session — nothing new added:**
+
+**(a) The combined split-and-merge `{¶2 cont.–3}`** — §4 has a split form and a merge form but nothing for a continuation that is itself merged forward. Used provisionally; `build-citations.py` DOES recognise it correctly (verified: 0 phantom "absent from English" rows for La ¶2 or ¶3).
+
+**(b) The Hebrew — on the POINTS only, for TWO words.** `[^1]` (Exod. 21:10 word, La 167 / En 237) and `[^2]` (`בעל`, La 162 / En 230) carry the same unidentified pointing. Consonants are secure (`עְוֹנה`, a nun — settled twice now, see the account below). A Hebraist should confirm both together. ⛔ `בעל`'s bare transcription in the running text is a **placeholder**, not a reading — do not cite it as evidence the volumes set the word unpointed.
+
+★★ **On the Hebrew consonant, for the record: it went nun → bet → nun across this session, and the LAST word is Wilson's, from the plate, not a control.** A control comparison (`בעל` at La 162/En 230, both clean) wrongly "confirmed" a bet at En 237, because the disputed sort there is simply **badly struck** — a control only discriminates between glyphs in comparable condition, and this one wasn't. Saved to Wilson's memory as a general rule for plate work. Then, separately, Wilson found the POINTS on `בעל` match the Exod. 21:10 word's points exactly — meaning `בעל` is not unpointed as the chunk had claimed twice at 900–1200 dpi. That retraction stands; `[^2]` is new because of it. **None of this is open any more except the points-identity question itself**, which needs a Hebraist, not more plate work.
+
+**Two genuine printed anomalies in Sumner's OWN apparatus, both confirmed at native 900–1400 dpi and flagged in Notes:** a period-plus-stray-comma between two clauses in note 9 (En 236, `manuscript., substituted`); and a **double em-dash**, distinct from an ordinary single-dash page range, in notes 7-2 and 8-2 (En 244 `dependence——not`, En 245 `institution——common`).
+
+**`index/` IS rebuilt and current** — no action needed before part c.
+
+**The content filter fires hard on this page range still.** One-sentence `printf` appends into a scratchpad file, then `tools/append-before-marker.py` to splice, worked reliably for all 17 notes and the headnote. ⚠ The marker `## apparatus-sumner-en` occurs twice in the file (the Notes prose quotes it) — pass it with a trailing newline, `$'## apparatus-sumner-en\n'`, or the tool refuses on the ambiguous count.
+
+**Then part c** — La 173–179 (*In definitione conjugii genus est arctissima conjunctio*), En ~246–259, the divorce argument. Its first note is **2**, already plate-confirmed on En 246 (part b closed at **1**). ⚠ The b/c seam is MID-PAGE on En 246, like the a/b seam on En 230 — confirm the split before transcribing.
+
+---
+
+## ⇢⇢⇢⇢⇢⇢⇢⇢ (2026-09-12, earlier — superseded by the block above) — **`ddc-1-10-b`: BOTH TEXT LAYERS DONE. The only thing left is the ENGLISH APPARATUS, then the headnote.**
 
 Frontmatter still says `en_sumner_status: partial` — **flip it** once the apparatus lands. Commits: `c7fdfde` (En 233–237 + the Hebrew correction), `5dd8299` (En 238–246). Not pushed.
 
