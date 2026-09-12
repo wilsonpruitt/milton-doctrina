@@ -1,11 +1,11 @@
 # Citation QA — read this, do not merely generate it
 
-6976 records · 36 unclassified · 6 out-of-range · 7 versification · 509 divergence rows, 20 suspect
+7002 records · 38 unclassified · 6 out-of-range · 7 versification · 513 divergence rows, 21 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 3486
-- `en-sumner` — 3490
+- `la` — 3499
+- `en-sumner` — 3503
 - spread: 4 records, 0.1%
 
 ## Unclassified — never a record with an invented target
@@ -17,6 +17,8 @@
 - `ddc-1-08` `ddc-1-08:la:{¶5}:0` — `nium conservatio: sed qua ratione vide supra cap. v.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
 - `ddc-1-08` `ddc-1-08:la:{¶7}:4` — `et v. 4.` → `et v. N` — neither the canon nor the English layer settles whether `v` is the roman 5 or *versus*. Not indexed.
 - `ddc-1-08` `ddc-1-08:la:{¶26}:12` — `et v. 17.` → `et v. N` — neither the canon nor the English layer settles whether `v` is the roman 5 or *versus*. Not indexed.
+- `ddc-1-10-a` `ddc-1-10-a:en-sumner:{¶8}:2` — `come again under discussion, Book II. Chap. vii.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
+- `ddc-1-10-a` `ddc-1-10-a:la:{¶7}:5` — `et v. 22.` → `et v. N` — neither the canon nor the English layer settles whether `v` is the roman 5 or *versus*. Not indexed.
 - `ddc-2-01` `ddc-2-01:la:{¶6}:3` — `tum sæpe alias ostendit. Vide supra lib. 1. cap. xxvii.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
 - `ddc-2-01` `ddc-2-01:la:{¶14}:3` — `ciderit, dissipabit eum.* Vide supra lib. 1. cap. xxvii.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
 - `ddc-2-01` `ddc-2-01:la:{¶17}:10` — `. *quis prior dedit ei—?* Vide supra lib. 1. cap. xxii.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
@@ -65,6 +67,7 @@ The two layers were paired but land too far apart to be one citation. Reported, 
 - `ddc-1-03` ¶7 — la `Act. xv. 28.` → Acts 15:28 vs en `Acts xv. 18.` → Acts 15:18
 - `ddc-1-03` ¶9 — la `et xv. 28.` → Acts 15:28 vs en `xv. 18.` → Acts 15:18
 - `ddc-1-09` ¶15-16 — la `Jos. vi. 2.` → Josh 6:2 vs en `Josh. vi. 14.` → Josh 6:14
+- `ddc-1-10-a` ¶7 — la `v. 30` → Exod 16:30 vs en `v. 22—30.` → Exod 16:22,23,24,25,26,27,28,29,30
 - `ddc-2-03` ¶13 — la `cap. xxxi. 2.` → Isa 31:2 vs en `iii. 1.` → Isa 3:1
 - `ddc-2-04-b` ¶9 — la `Psal. lv. 18.` → Ps 55:18 vs en `v. 3` → Ps 55:3
 - `ddc-2-04-c` ¶1 — la `et xxv. 22.` → Ps 25:22 vs en `iii. 8.` → Ps 3:8
@@ -85,6 +88,7 @@ The two layers were paired but land too far apart to be one citation. Reported, 
 
 A Junius-Tremellius chapter division has been read for these chapters (tools/jt-divisions.json), and the Latin still does not map onto the English through it. Each is a genuine Latin error, an aligner slide, or a division that needs re-reading -- and telling those apart needs the paragraph in view. M4-RUNBOOK 14.
 
+- `ddc-1-10-a` {¶7} — la `v. 30` -> Exod 16:30 vs en `v. 22—30.` -> Exod 16:22,23,24,25,26,27,28,29,30
 - `ddc-2-04-b` {¶9} — la `Psal. lv. 18.` -> Ps 55:18 vs en `v. 3` -> Ps 55:3
 - `ddc-2-13` {¶6} — la `Prov. xii. 21.` -> Prov 12:21 vs en `Prov. xii. 17.` -> Prov 12:17
 - `ddc-2-13` {¶6} — la `v. 17` -> Prov 12:17 vs en `v. 22` -> Prov 12:22
@@ -97,9 +101,9 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 |---|---|---|
 | `unchecked` | 130 | no division read and no known mechanism. NOT a claim of error |
 | `open-end` | 81 |  |
-| `versification` | 63 | a READ J-T division maps the Latin onto the English exactly |
+| `versification` | 64 | a READ J-T division maps the Latin onto the English exactly |
 | `versification-predicted` | 62 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
-| `anomaly` | 5 | a division IS read and does not explain it -- listed above |
+| `anomaly` | 6 | a division IS read and does not explain it -- listed above |
 
 ## Versification, not error (M4-RUNBOOK §6b)
 
@@ -133,6 +137,8 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Isa | 44 | -5 | 4 | **yes** |
 | Isa | 44 | -6 | 1 | no |
 | Ps | 5 | +1 | 4 | **yes** |
+| Exod | 16 | +1 | 3 | **yes** |
+| Exod | 16 | +8 | 1 | no |
 | Neh | 10 | +1 | 3 | **yes** |
 | Num | 23 | +4 | 3 | **yes** |
 | Ps | 30 | +1 | 3 | **yes** |
@@ -149,7 +155,6 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Eccl | 9 | +2 | 2 | **yes** |
 | Eccl | 10 | -3 | 2 | **yes** |
 | Eccl | 10 | -14 | 1 | no |
-| Exod | 16 | +1 | 2 | **yes** |
 | Ezek | 21 | +5 | 2 | **yes** |
 | Gen | 12 | -3 | 2 | **yes** |
 | Hos | 12 | +1 | 2 | **yes** |
@@ -365,6 +370,10 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-09 | ¶15-16 | `Jos. vi. 2.` | Josh 6:2 | `Josh. vi. 14.` | Josh 6:14 | divergence |
 | ddc-1-09 | ¶15-16 | `Dan. x. 13.` | Dan 10:13 | `Dan. xi. 13.` | Dan 11:13 | divergence |
 | ddc-1-09 | ¶22-25 | `—` | — | `xii. 3.` | Rev 12:3 | present in English only |
+| ddc-1-10-a | ¶2 | `et ii. 15, 16, 17.` | Gen 2:15,16,17 | `ii. 15—17.` | Gen 2:15,16,17 | same target, syntax differs (— CH V-LIST / — CH V-RANGE) |
+| ddc-1-10-a | ¶7 | `Exod. xvi. 34, 35.` | Exod 16:34,35 | `Exod. xvi. 33, 34.` | Exod 16:33,34 | divergence |
+| ddc-1-10-a | ¶7 | `v. 30` | Exod 16:30 | `v. 22—30.` | Exod 16:22,23,24,25,26,27,28,29,30 | divergence |
+| ddc-1-10-a | ¶8 | `Ezech. xx. 10, 11, 12.` | Ezek 20:10,11,12 | `Ezek. xx. 10—12.` | Ezek 20:10,11,12 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
 | ddc-2-01 | ¶8 | `et xii. 2.` | Prov 12:2 | `xii. 3.` | Prov 12:3 | divergence |
 | ddc-2-01 | ¶9-12 | `et xxiv. 1.` | Prov 24:1 | `xxiv. 7.` | Prov 24:7 | divergence |
 | ddc-2-01 | ¶16 | `1 Cor. ix. 18.` | 1Cor 9:18 | `—` | — | present in Latin only |

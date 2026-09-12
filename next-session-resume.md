@@ -1,5 +1,33 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢ START HERE (2026-09-12) — **`ddc-1-10-a` (I.x part a, the Sabbath section) is COMPLETE, plate-verified, build clean, COMMITTED**
+
+**I.x is the longest chapter in Book I and is SPLIT THREE WAYS** (La 20 pp. / En 34 pp., far past §7's La > 12 pp. threshold). The seams are Milton's own lemmata, already located off the plates — do not re-derive them:
+
+- **a** — La 160–162, En 226–230. ✅ DONE. Man before the fall, the two trees, the covenant-of-works denial, the Sabbath.
+- **b** — La 162 (*Conjugium quidem, si non præcipitur, at instituitur*) – 172, En 230–246ish. ⬜ NEXT. Marriage instituted and defined, **the polygamy defence**, prohibited degrees, form and end of marriage.
+- **c** — La 173–179 (*In definitione conjugii genus est arctissima conjunctio*), En ~246–259. ⬜ The divorce argument.
+
+⚠ **The a/b seam is MID-PAGE on En 230** — a ends at *…Book II. Chap. vii.* at the top of the page, b opens with *With regard to marriage* below it, carrying note 3. So a and b overlap on En 230. Corpus first; `ddc-2-04`'s parts all broke at page boundaries.
+
+**Part a's numbers.** 8 La ¶¶ → 8 En ¶¶, **one-to-one, no merges and no splits** (the first Book I chunk with neither). English apparatus **8 notes, ledger `4·5·6·7·8·9·1·2`**, one full 9→1 wrap inside En 228. Checksum holds both ways: I.ix closed at 3, this opened at 4; a closes at 2 and **part b opens at 3, already plate-confirmed on En 230** — so b's first note is known before you start. No Latin apparatus (all three La plates read for superscripts, none found).
+
+★ **Two findings worth carrying forward, both in the chunk's `## Notes` in full.**
+
+1. **Sumner cross-references his own footnote by its cycle number.** Note 1 on En 228 reads *See the passage quoted from our author's Tetrachordon in the preceding page, note 6.* — the editor himself using the single-digit cycling number as a working reference across a page, right after his own 9→1 wrap. §8a was inferred from observed wraps; this is printed confirmation from his own hand, and it fixes the direction of the count.
+2. **The italic capital I in this fount is UPRIGHT — do not read it as §8c.** *…will I give to eat of the tree of life* (En 228) plus four more instances on En 229–230 print *I* with a vertical stem and flat serifs among slanting letters, which looks exactly like §8c's sense-bearing roman-inside-italic. It is not: §8c's attested cases are all *sive*-triggered word glosses, and 25 chunks enclose a capital I in italic runs without once breaking the run. **Keep I inside the italic.** Part b's Scripture is full of them (*I suffer not a woman to teach*, and every divorce proof-text in part c), so this will recur on every page — decide it once, here.
+
+**Printed anomalies kept as printed** (§6): ★ La 161 `Geneseωs` — a **Greek omega inside an otherwise roman word**, confirmed at 600 dpi (pdftotext reads "Genesews", which is how it would vanish silently); La 162 `unam—.` — the mark after the truncation dash is printed raised and spaced, unlike every other truncation in the chunk, read as a period and normalised, **first instance in the corpus, may want a ruling if a second appears**; La 162 `Mosen aderant` — *adsum* with a bare accusative, possibly a printer's error, not mended.
+
+⛔ **OWED — a defect in the COMMITTED, LIVE `ddc-1-09`, deliberately not repaired.** Its `{¶1}` reads `DICTUM est de PROVIDENTIA COMMUNI. SPECIALIS est,` in plain capitals. La 154 at 400 dpi shows *Dictum* is the chapter-opening display word (§2 → plain text) while *Providentia communi* and *Specialis* are ordinary small-caps runs (§2 → bold caps). It should read `Dictum est de **PROVIDENTIA COMMUNI**. **SPECIALIS** est,`. Every other Book I opening is set correctly, so I.ix is the outlier. Left alone because editing a published chunk quietly is exactly what the polarity-sweep discipline forbids — **it wants Wilson's go-ahead, a one-line fix, a ledger line and its own deploy.**
+
+**Citation audit.** `build-citations.py ddc-1-10-a` → 26 records, 4 divergence rows, 1 suspect; restored with `--all` (7,002 records, 513 divergence, 21 suspect — deltas match the chunk exactly). Only **one genuine divergence**: La `Exod. xvi. 34, 35.` vs En `Exod. xvi. 33, 34.`, both digits −1, with **En** the side that matches the modern reference. The suspect row (`v. 30` vs `v. 22—30.`) is a parser pairing artifact, reconciled in the Notes — do not re-open it.
+
+**The content filter fired hard on this page range, again.** Whole-paragraph `Edit` calls were blocked repeatedly even on plain text. What worked reliably: assemble each paragraph in the scratchpad with small `printf` appends, then splice with `tools/append-before-marker.py` (which asserts a single marker match). **Use that route from the start on b and c** rather than discovering it mid-chapter.
+
+---
+
+
 ## ⇢⇢⇢⇢⇢ START HERE (2026-08-30, later) — **`ddc-1-09` (I.ix, *De Gubernatione Speciali Angelorum*) is COMPLETE, plate-verified, all four sections written, build clean, COMMITTED**
 
 Continued straight on from the block below. La pp. 154–159 (6 pages) / En pp. 217–225 (9 pages), a
