@@ -123,14 +123,26 @@ Two wrinkles specific to this project, resolved along the way:
    redeployed; all pages, siblings, and 404 handling verified correct by served
    content afterward.
 
-**Net effect for future deploys:** this site's git-integration auto-deploy will
-continue to correctly ship robots/llms/rights/sitemap/canonical/JSON-LD on every
-push (those come from `next build` itself), but will NOT regenerate the
-`.json`/`.plain.txt` siblings or the `/export` manifest — those need a manual
-CLI-prebuilt deploy (see the recipe embedded in this file's git history, or ask a
-future session to reconstruct it) whenever the corpus changes enough to warrant a
-fresh export. Not automated; a known, disclosed limitation, matching how the other
-open-corpus items in this file are tracked.
+**Net effect for future deploys — CONFIRMED LIVE, not theoretical:** a routine
+doc-only commit pushed minutes after the CLI-prebuilt fix triggered exactly this
+regression — git-integration auto-deploy overwrote the working siblings/export
+build with the siblings-missing one, silently, on a push that touched no site
+code at all. Caught immediately by re-checking `vercel ls`, and fixed by
+redeploying the same local `.vercel/output` a second time. **Any future push to
+`main` — for ANY reason, including unrelated translation-chunk commits — will
+do this again** until either (a) the git-integration Build Command problem is
+actually solved (not just worked around), or (b) this project's Vercel git
+integration is disabled in favor of CLI-only deploys, matching the other four
+sites. Neither was done in this session. **Practical rule until then: after
+every push to `main` in this repo, re-run the CLI-prebuilt deploy** (recipe:
+`cd ~/milton-doctrina/site && node scripts/build-content.mjs && python3
+../tools/build-index-json.py && node scripts/build-export.mjs && next build &&
+node scripts/build-siblings.mjs`, then hand-assemble `.vercel/output` at the
+repo root — `static/` = a copy of `site/out/`, `config.json` = `{"version":3,
+"overrides": {...}}` with one entry per `.html` file mapping it to its clean
+path — then `cd ~/milton-doctrina && vercel deploy --prod --prebuilt
+--archive=tgz --scope wilson-pruitts-projects`). This is real ongoing friction,
+not a one-time fix; worth solving properly rather than repeating by hand.
 
 ## Not done in this session
 
