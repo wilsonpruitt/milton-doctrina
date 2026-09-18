@@ -87,11 +87,55 @@ committed to git on either site (only shipped because the CLI deploy built from 
 disk). Fixed to `/export/` on both repos; bonaventure-sentences pushed separately
 (`8141a6b`).
 
+## Deployed 2026-09-18 — and what it actually took
+
+Pushed (`1da8fb9`) to `main`, which auto-deployed via Vercel's git integration
+(Wilson updated the Build Command in the dashboard first, per the recommendation
+above — confirmed via `vercel project inspect`). **That first deploy shipped
+robots.txt/llms.txt/rights/sitemap/canonical/JSON-LD correctly, but the `.json`/
+`.plain.txt` siblings 404'd** — the build log showed `build-siblings.mjs` ran and
+wrote 24 pairs, but Vercel's Next.js framework builder snapshots the static output
+at the moment `next build` itself exits, not at the end of the full chained Build
+Command, so anything written by a trailing shell step never reaches the deployment.
+This appears specific to how the git-integration/remote build packages a
+`next build --output=export` app; it does not affect the CLI `vercel build` +
+`vercel deploy --prebuilt` path (verified working on bonaventure-sentences earlier
+this session).
+
+**Fix applied, with Wilson's OK:** redeployed via the CLI-prebuilt path instead.
+Two wrinkles specific to this project, resolved along the way:
+1. `vercel build` itself failed locally with `spawn sh ENOENT` at the `pnpm install`
+   step — a Vercel CLI bug unrelated to this rollout (this project has an explicit
+   `installCommand: "pnpm install"` override, unlike the other four sites' default/
+   null install command). Worked around by hand-assembling `.vercel/output/` from
+   the already-verified local `next build` + `build-siblings.mjs` output, rather
+   than fighting the CLI bug further.
+2. This project's Vercel `rootDirectory` is `"site"` (needed so the build can read
+   `../tools/build-index-json.py`), so CLI commands must run from the **repo root**
+   (`~/milton-doctrina`), not from `site/` — running from `site/` doubles the path
+   to `site/site`. A `.vercel` CLI link now exists at the repo root for this reason
+   (gitignored, contains `.env.production.local`).
+3. A hand-assembled `.vercel/output/config.json` needs explicit per-file
+   `overrides` (`{"<path>.html": {"path": "<clean-path>"}}`) for every page — plain
+   `cleanUrls: true` was NOT sufficient on this Build Output API version and left
+   every page 404ing while the literal sibling files (which have unique full
+   filenames) still resolved. Generated the 97 overrides with a short Node script;
+   redeployed; all pages, siblings, and 404 handling verified correct by served
+   content afterward.
+
+**Net effect for future deploys:** this site's git-integration auto-deploy will
+continue to correctly ship robots/llms/rights/sitemap/canonical/JSON-LD on every
+push (those come from `next build` itself), but will NOT regenerate the
+`.json`/`.plain.txt` siblings or the `/export` manifest — those need a manual
+CLI-prebuilt deploy (see the recipe embedded in this file's git history, or ask a
+future session to reconstruct it) whenever the corpus changes enough to warrant a
+fresh export. Not automated; a known, disclosed limitation, matching how the other
+open-corpus items in this file are tracked.
+
 ## Not done in this session
 
-- **Push + deploy** — both Wilson's separate hard stops.
-- **Vercel Build Command update** (above) — needs Wilson in the dashboard, or explicit
-  OK to attempt via API/CLI.
 - **R2 bucket provisioning** — shared across all five sites.
 - **HF org claim + dataset push** — after ≥2 exports exist on R2, per §4.
 - **Vercel Firewall rate-limit backstop** — parked, not yet done for any shipped site.
+- **The `spawn sh ENOENT` Vercel CLI bug** — not investigated further; worked around,
+  not fixed. May resurface on this project's next CLI-prebuilt deploy.
