@@ -123,26 +123,52 @@ Two wrinkles specific to this project, resolved along the way:
    redeployed; all pages, siblings, and 404 handling verified correct by served
    content afterward.
 
-**Net effect for future deploys — CONFIRMED LIVE, not theoretical:** a routine
-doc-only commit pushed minutes after the CLI-prebuilt fix triggered exactly this
-regression — git-integration auto-deploy overwrote the working siblings/export
-build with the siblings-missing one, silently, on a push that touched no site
-code at all. Caught immediately by re-checking `vercel ls`, and fixed by
-redeploying the same local `.vercel/output` a second time. **Any future push to
-`main` — for ANY reason, including unrelated translation-chunk commits — will
-do this again** until either (a) the git-integration Build Command problem is
-actually solved (not just worked around), or (b) this project's Vercel git
-integration is disabled in favor of CLI-only deploys, matching the other four
-sites. Neither was done in this session. **Practical rule until then: after
-every push to `main` in this repo, re-run the CLI-prebuilt deploy** (recipe:
-`cd ~/milton-doctrina/site && node scripts/build-content.mjs && python3
-../tools/build-index-json.py && node scripts/build-export.mjs && next build &&
-node scripts/build-siblings.mjs`, then hand-assemble `.vercel/output` at the
-repo root — `static/` = a copy of `site/out/`, `config.json` = `{"version":3,
-"overrides": {...}}` with one entry per `.html` file mapping it to its clean
-path — then `cd ~/milton-doctrina && vercel deploy --prod --prebuilt
---archive=tgz --scope wilson-pruitts-projects`). This is real ongoing friction,
-not a one-time fix; worth solving properly rather than repeating by hand.
+**CONFIRMED LIVE, not theoretical:** a routine doc-only commit pushed minutes
+after the CLI-prebuilt fix triggered exactly this regression once — git-integration
+auto-deploy overwrote the working siblings/export build with the siblings-missing
+one, silently, on a push that touched no site code at all. Caught immediately via
+`vercel ls`, fixed by redeploying the same local `.vercel/output` a second time.
+
+**Resolved (Wilson's call, 2026-09-18): git integration DISCONNECTED.**
+`vercel git disconnect --scope wilson-pruitts-projects --yes` — confirmed via
+`vercel project inspect` (no Git section). This site now deploys CLI-only, same as
+the other four open-corpus sites (bonaventure-sentences already describes itself
+this way: "Vercel NOT git-connected, deploys stay CLI"). Pushing to `main` no
+longer triggers any deploy, so no more silent regressions. Future deploys are a
+deliberate step:
+
+```
+cd ~/milton-doctrina/site
+node scripts/build-content.mjs
+python3 ../tools/build-index-json.py
+node scripts/build-export.mjs
+next build
+node scripts/build-siblings.mjs
+```
+
+then hand-assemble `.vercel/output` at the **repo root** (rootDirectory is `site`,
+so CLI commands run from `~/milton-doctrina`, not `site/`):
+
+```
+mkdir -p ~/milton-doctrina/.vercel/output/static
+cp -R ~/milton-doctrina/site/out/. ~/milton-doctrina/.vercel/output/static/
+```
+
+`config.json` needs `{"version":3,"overrides":{...}}` with one entry per `.html`
+file (`{"<relpath>.html":{"path":"<clean path, "" for index.html>"}}`) — plain
+`cleanUrls:true` was NOT sufficient on this Build Output API version. Then:
+
+```
+cd ~/milton-doctrina
+vercel deploy --prod --prebuilt --archive=tgz --scope wilson-pruitts-projects
+```
+
+**Still open, not investigated:** the underlying `vercel build` CLI bug
+(`spawn sh ENOENT` at the `pnpm install` step, this project's explicit
+`installCommand` override) — worked around by hand-assembling `.vercel/output`,
+not fixed. A future session automating this recipe into a script should account
+for it (may need `vercel pull` + a different install-command handling, or simply
+continue hand-assembling).
 
 ## Not done in this session
 
