@@ -1,6 +1,12 @@
 .DS_Store
 node_modules/
 
+# Vercel CLI project link + build output — created at the repo root because
+# this project's rootDirectory (site) means `vercel` must be run from here,
+# not from site/ (which has its own .vercel, gitignored separately). Contains
+# .env.production.local — never commit.
+.vercel
+
 # Raw source material (large binary / OCR dumps / plate renders — keep local, regenerable).
 # ⚠ WHOLESALE from 2026-08-28. The per-pattern list below it used to be missed `raw/loci/`
 # entirely, and four OCR dumps (~2.9 MB) reached the remote before anyone noticed. Everything
