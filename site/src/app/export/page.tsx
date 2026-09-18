@@ -8,10 +8,8 @@ export const metadata = {
     "Every chapter of De Doctrina Christiana, Latin and English aligned, as a single downloadable JSONL file — no crawling required.",
 };
 
-// Placeholder — the shared `wroot-corpus-export` R2 bucket has not been
-// provisioned yet (~/open-corpus/PLAN.md item 8, status log 2026-09-08).
-// Update once it exists and re-deploy.
-const EXPORT_R2_BASE_URL = "https://pending-r2-bucket.example/milton";
+// wroot-corpus-export R2 bucket, provisioned 2026-09-18 (~/open-corpus/PLAN.md item 8).
+const EXPORT_R2_BASE_URL = "https://pub-f3e5babb712240c981d8afc263f23ecf.r2.dev/milton";
 
 type Manifest = {
   generated: string;
