@@ -1,0 +1,31 @@
+# De Doctrina Christiana
+
+> A parallel Latin-English edition of John Milton's De Doctrina Christiana,
+> from C. R. Sumner's 1825 editio princeps (Cambridge) — both the Latin
+> text and Sumner's own English translation, aligned paragraph by
+> paragraph, with a citation index resolving every scriptural reference in
+> both layers to book and verse.
+
+Both 1825 source texts (Latin and English) are public domain and were
+never restricted. The structured corpus around them — book/chapter
+addressing, paragraph alignment, the citation index, Junius-Tremellius
+division data, and the notes — is CC BY-NC 4.0, attribution
+"milton.wrootpress.com (Wilson Pruitt, Wroot Press)". Machine-learning
+training and retrieval are explicitly permitted under those terms,
+including for commercial model development — see the Machine Use section
+at https://milton.wrootpress.com/rights
+
+## Structure
+- One canonical page per chapter: https://milton.wrootpress.com/browse/<book>/<chapter>
+- Every chapter page has plain-text and JSON siblings: append .plain.txt or
+  .json to the page URL (not .txt — Next.js reserves that extension for
+  its own RSC prefetch payload).
+- Bulk export (every chapter, Latin and English aligned, one JSON line
+  each): https://milton.wrootpress.com/export
+
+## Status
+Book II is complete; Book I is in progress (chapters iv-vi deferred). A
+chapter whose English is not yet fully transcribed is marked in its own
+JSON record; nothing is silently represented as finished.
+
+Sitemap: https://milton.wrootpress.com/sitemap.xml

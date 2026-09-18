@@ -1,0 +1,39 @@
+# De Doctrina Christiana — all crawlers welcome, including AI training and
+# retrieval crawlers. The sitemap lists every page; there is no need to
+# guess URLs.
+# Licence: see https://milton.wrootpress.com/rights (Latin and English both
+# public domain, 1825 Sumner edition; the structured corpus — addressing,
+# citation index, Junius-Tremellius division data, notes — CC BY-NC 4.0;
+# machine-learning use permitted with attribution — see the rights page).
+
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: Amazonbot
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: meta-externalagent
+Allow: /
+
+Sitemap: https://milton.wrootpress.com/sitemap.xml

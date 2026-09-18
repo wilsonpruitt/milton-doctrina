@@ -3,6 +3,26 @@ import { loadAllContent } from "@/lib/content";
 import { CrossDivider } from "@/components/decorations";
 import { TextReader } from "./text-reader";
 
+const SITE_URL = "https://milton.wrootpress.com";
+const chapterUrl = (bookId: number, chapter: number) => `${SITE_URL}/browse/${bookId}/${chapter}`;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ book: string; chapter: string }>;
+}) {
+  const { book: bookParam, chapter: chapterParam } = await params;
+  const books = loadAllContent();
+  const book = books.find((b) => b.id === parseInt(bookParam));
+  const chapter = book?.chapters.find((c) => c.chapter === parseInt(chapterParam));
+  if (!book || !chapter) return {};
+  const title = chapter.titles["la"] ?? Object.values(chapter.titles)[0] ?? String(chapter.chapter);
+  return {
+    title,
+    alternates: { canonical: chapterUrl(book.id, chapter.chapter) },
+  };
+}
+
 // DDC's structure is flat — 2 books, ~50 chapters, no distinctio/articulus/
 // quaestio nesting like the Sentences. A simpler two-level route
 // (/browse/[book]/[chapter]) is more honest to the source than force-fitting
@@ -43,8 +63,38 @@ export default async function ChapterPage({
     chapter.titles["la"] ?? Object.values(chapter.titles)[0] ?? chapter.parts[0].id;
   const secondaryTitle = Object.entries(chapter.titles).find(([k]) => k !== "la")?.[1];
 
+  const canonicalUrl = chapterUrl(book.id, chapter.chapter);
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "@id": canonicalUrl,
+    url: canonicalUrl,
+    name: primaryTitle,
+    author: { "@type": "Person", name: "John Milton" },
+    publisher: {
+      "@type": "Organization",
+      name: "Wroot Press",
+      url: "https://milton.wrootpress.com",
+    },
+    inLanguage: ["en", "la"],
+    isBasedOn: {
+      "@type": "Book",
+      name: "De Doctrina Christiana (Sumner editio princeps)",
+      editor: "Charles Richard Sumner",
+      datePublished: "1825",
+    },
+    isPartOf: { "@type": "Collection", "@id": `${SITE_URL}/browse/${book.id}` },
+    license: "https://creativecommons.org/licenses/by-nc/4.0/",
+    dateModified: new Date().toISOString().slice(0, 10),
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Link href={`/browse/${book.id}`} className="back-link">
         &larr; Back to {book.title}
       </Link>
