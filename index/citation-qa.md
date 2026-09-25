@@ -1,12 +1,12 @@
 # Citation QA — read this, do not merely generate it
 
-7429 records · 51 unclassified · 6 out-of-range · 7 versification · 523 divergence rows, 21 suspect
+7560 records · 51 unclassified · 6 out-of-range · 7 versification · 527 divergence rows, 21 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 3716
-- `en-sumner` — 3713
-- spread: 3 records, 0.1%
+- `la` — 3781
+- `en-sumner` — 3779
+- spread: 2 records, 0.1%
 
 ## Unclassified — never a record with an invented target
 
@@ -113,10 +113,10 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 
 | class | pairs | what it asserts |
 |---|---|---|
-| `unchecked` | 136 | no division read and no known mechanism. NOT a claim of error |
+| `unchecked` | 137 | no division read and no known mechanism. NOT a claim of error |
 | `open-end` | 84 |  |
 | `versification` | 68 | a READ J-T division maps the Latin onto the English exactly |
-| `versification-predicted` | 65 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
+| `versification-predicted` | 66 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
 | `anomaly` | 7 | a division IS read and does not explain it -- listed above |
 
 ## Versification, not error (M4-RUNBOOK §6b)
@@ -140,9 +140,9 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Prov | 12 | -1 | 6 | **yes** |
 | Prov | 12 | +4 | 1 | no |
 | Prov | 12 | -5 | 1 | no |
+| Ps | 19 | +1 | 6 | **yes** |
 | Dan | 6 | +1 | 5 | **yes** |
 | Isa | 57 | +4 | 5 | **yes** |
-| Ps | 19 | +1 | 5 | **yes** |
 | Ps | 102 | +1 | 5 | **yes** |
 | 1Sam | 14 | +1 | 4 | **yes** |
 | Eccl | 4 | -4 | 4 | **yes** |
@@ -263,6 +263,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Ps | 88 | +1 | 1 | no |
 | Ps | 133 | +1 | 1 | no |
 | Rom | 7 | +1 | 1 | no |
+| Rom | 7 | +2 | 1 | no |
 | Rom | 11 | -1 | 1 | no |
 | Rom | 14 | -3 | 1 | no |
 | Zech | 2 | +4 | 1 | no |
@@ -402,6 +403,10 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-11 | ¶22 | `v. 23` | Rom 7:23 | `v. 22` | Rom 7:22 | divergence |
 | ddc-1-11 | ¶25 | `Psal. li. 7.` | Ps 51:7 | `Psal. li. 5.` | Ps 51:5 | divergence |
 | ddc-1-11 | ¶25 | `et lviii. 4.` | Ps 58:4 | `lviii. 3.` | Ps 58:3 | divergence |
+| ddc-1-12 | ¶1 | `et vii. 7.` | Rom 7:7 | `vii. 5.` | Rom 7:5 | divergence |
+| ddc-1-12 | ¶6 | `Psal. xix. 2.` | Ps 19:2 | `Psal. xix. 1.` | Ps 19:1 | divergence |
+| ddc-1-12 | ¶6 | `—` | — | `ii. 15.` | Rom 2:15 | present in English only |
+| ddc-1-12 | ¶6 | `Jer. vii. 13, 14, 15, 16.` | Jer 7:13,14,15,16 | `Jer. vii. 13—16.` | Jer 7:13,14,15,16 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
 | ddc-2-01 | ¶8 | `et xii. 2.` | Prov 12:2 | `xii. 3.` | Prov 12:3 | divergence |
 | ddc-2-01 | ¶9-12 | `et xxiv. 1.` | Prov 24:1 | `xxiv. 7.` | Prov 24:7 | divergence |
 | ddc-2-01 | ¶16 | `1 Cor. ix. 18.` | 1Cor 9:18 | `—` | — | present in Latin only |
