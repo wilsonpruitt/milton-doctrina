@@ -78,7 +78,13 @@ def sections(raw):
         yield key, raw[m.end(): nxt if nxt > 0 else len(raw)]
 
 
-PARA_RE = re.compile(r"\{¶([0-9]+)(?:[–—-]([0-9]+))?\}")
+# Also `{¶N cont.–M}` (CONVENTIONS §4, ratified 2026-09-25): the continuation of ¶N
+# merged with ¶M, so it covers N..M. A plain `{¶N cont.}` split piece is deliberately
+# NOT matched — its text folds into the block before it, which already covers ¶N.
+# Until 2026-09-25 the merged form was not matched either, so its text (and any
+# `{¶M cont.}` after it) folded into `{¶N}` and every La ¶M citation reported unmatched
+# (found on I.xiii; I.x-b's `{¶2 cont.–3}` hid it only because La ¶3 cites nothing).
+PARA_RE = re.compile(r"\{¶([0-9]+)(?: cont\.(?: [0-9]+)?(?=[–—-]))?(?:[–—-]([0-9]+))?\}")
 
 
 def paragraphs(text):
@@ -612,9 +618,19 @@ def pair_divergences(la_recs, en_recs):
     citations are aligned by align() above, never zipped.
     """
     out = []
+    # Overlapping English spans are one alignment group: `{¶2}` then `{¶2 cont.–3}`
+    # together render La ¶2–3, and aligning them separately would count La ¶2 twice.
+    # Without a `cont.–M` label no two spans overlap, so this changes nothing else.
+    groups = []
+    for lo, hi in sorted({(r["para_lo"], r["para_hi"]) for r in en_recs}):
+        if groups and lo <= groups[-1][1]:
+            groups[-1][1] = max(groups[-1][1], hi)
+        else:
+            groups.append([lo, hi])
     en_by_span = collections.defaultdict(list)
     for r in en_recs:
-        en_by_span[(r["para_lo"], r["para_hi"])].append(r)
+        g = next(g for g in groups if g[0] <= r["para_lo"] <= g[1])
+        en_by_span[(g[0], g[1])].append(r)
     for span, ens in sorted(en_by_span.items()):
         las = [r for r in la_recs if span[0] <= r["para_lo"] <= span[1]]
         label = f"¶{span[0]}" if span[0] == span[1] else f"¶{span[0]}-{span[1]}"
