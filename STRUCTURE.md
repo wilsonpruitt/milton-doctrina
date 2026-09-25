@@ -137,9 +137,9 @@ printed folio — none was inferred, and the first attempt at inferring them was
 | Latin | `joannismiltonian00miltuoft` | **+15** | n30 = printed 15 | working copy, 572 leaves |
 | Latin | `bwb_T5-ARK-705` | **+17** | n30 = printed 13 | **cleaner second copy**, 568 leaves |
 | English | `treatiseonchrist00milt` | **+55** | n76 = printed 21 | working copy, 782 leaves |
+| English | `treatiseonchrist00miltrich` | **+51** | n312 = printed 261 (also n316/318/321, 2026-09-25) | **clean second copy**, 780 leaves; our working copy's En 261–269 carries pen annotations |
 
-Uncalibrated alternates, if ever needed: English `treatiseonchrist00miltrich` (780 leaves),
-`atreatiseonchri00miltgoog` (724).
+Uncalibrated alternate, if ever needed: English `atreatiseonchri00miltgoog` (724).
 
 `bwb_T5-ARK-705` is **markedly cleaner** than our Latin working copy — less foxing, higher
 contrast. It settled the `Θεοτὴς` / `Θειοτὴς` accents that would not resolve at 1400 dpi in ours,

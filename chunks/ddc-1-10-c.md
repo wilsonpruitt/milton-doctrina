@@ -6,8 +6,7 @@ part: c
 title_la: "De Gubernatione Speciali Hominis ante Lapsum: ubi etiam de Sabbatho et Conjugio"
 title_en: "Of the Special Government of Man before the Fall, including the Institutions of the Sabbath and of Marriage"
 pages_la: "173-179"
-status: la-verified
-en_sumner_status: complete
+status: verified
 pages_en: "246-259"
 ---
 
