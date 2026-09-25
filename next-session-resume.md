@@ -8,7 +8,7 @@
 
 ★ **`build-citations.py` fixed in the same commit:** `{¶N cont.–M}` was never parsed. The old claim below that it "DOES recognise" I.x-b's `{¶2 cont.–3}` was true of the output and false of the mechanism. ⚠ `build-citations.py <chunk>` on its own **overwrites** `index/` with that one chunk. Always finish with `--all`.
 
-⬜ **For Wilson (in the chunk's Notes):** Sumner prints Milton's Euripides as quoted in the Latin (`σῶμ'`, `ἀπῆλθε`) and Porson's emended text in the English (`φῶς`, `ἀπελθεῖν`), disclosed only in English note 1. Should `sumner-interventions.tsv` widen to cover interventions on quotations? Also two probable Latin citation errors, not yet checked in J–T: Isa. lvii. 5, 6 (for 1, 2) and Numer. xxiii. 14 (for 10).
+✅ **Four rulings closed 2026-09-25 (Wilson):** (a) the Euripides substitution is ledgered as an `emendation` in `sumner-interventions.tsv`; (b) the anchor in the roman Greek is NOT §5d's second instance, which is still awaited and must be italic; (c) the Latin notes cycle 1–9, labels not a checksum (M3-RUNBOOK §9); (d) verse is set inline with ` / ` in the running text too (CONVENTIONS §2). ⬜ Still owed (checks, not rulings): a J–T look at Isa. lvii. 5, 6 (for 1, 2) and Numer. xxiii. 14 (for 10).
 
 ★ **Second copies for every page are now fetched to `raw/second/` (gitignored).** Their page frames don't match ours, so locate crops from a thumbnail first. For our own pages, `crop-plate.sh` fractions match the 200 dpi plates exactly.
 

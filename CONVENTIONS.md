@@ -63,6 +63,12 @@ The site build must treat the set as an ARRAY (any subset may be present per chu
   typography rather than text. Keeping it would break the word for search and for the M4 index, and
   would assert a hyphen the word does not have. Fifteen instances across eleven chunks already
   follow this; it is now the rule, not a precedent.
+- **Verse is set inline, with ` / ` at each printed line end** (ratified 2026-09-25, Wilson).
+  This applies in the running text as well as in the apparatus: a quotation set as display verse
+  stays inside its `{¶N}` paragraph, joined by ` / `, as the *Paradise Lost* notes already were.
+  First needed in the running text at I.xiii (the Euripides in both volumes, and Potter's
+  translation in the English). A printed closing rule is kept as a dash run of roughly its length:
+  `——` for La 199's long rule, and `—.` where the English closes the line up.
 - **Raised ordinals are set inline: `1m.` `2do.` `3tio.` `4to.` `5to.` `6to.` `7mo.`** (ratified
   2026-08-27, Wilson). The Latin prints them raised (`1ᵐ 2ᵈᵒ 3ᵗⁱᵒ`) as the ordinary abbreviation of
   *primo, secundo, tertio*; the raising is that abbreviation convention, and the numeral already
@@ -255,6 +261,11 @@ that changes the answer — an anchor inside a small-caps run rather than an ita
 falling inside a single word, or one where the split would separate a citation from its quotation.
 Ruling once on complete evidence beats ruling twice. **Follow I.ii's form until then**, and record
 each new instance in its chunk's Notes so the second case arrives with the first attached.
+
+**A related case, ruled NOT to be the second instance (2026-09-25, Wilson).** In I.xiii, En 288,
+the anchor `[^s1]` sits inside a Greek verse quotation, after `φῶς`. The Greek is set roman, so
+there is no emphasis run to break, and the anchor goes inline at its printed position with nothing
+lost. It is recorded in `ddc-1-13`'s Notes. §5d is still waiting for a second *italic* instance.
 
 ## 6. Printed anomalies — kept as printed, flagged, never mended
 

@@ -265,6 +265,11 @@ existing chunks are migrated. (2) Sumner's Latin notes are **harvested as we go*
 - **II.i–II.iv need a superscript-only re-check of their Latin plates.** Nobody was looking before
   II.v, so a Latin note in any of them would have been missed. Cheap (no re-transcription — just
   look at page feet), but it must happen before Book II is called complete.
+- **The Latin note numbers cycle 1–9, like the English (recorded 2026-09-25, Wilson).** I.xi's
+  Latin notes were 8 and 9, and I.xiii's only note is printed **1**, not 10. They remain **labels,
+  not a checksum**: Latin notes are too sparse for a predicted number to catch a missed one, so
+  §9b's ruling stands and the feet still have to be read. The expectation just changes: after 9,
+  expect 1.
 
 ### Background (found 2026-08-03, II.v)
 
