@@ -4,7 +4,7 @@
 
 **Checksums carried forward:** **English: I.xiii opens at note 3** (En 278; pdftotext misreads it as 5). **Latin: next Latin note is still 10** (I.xii has none).
 
-⬜ **NEXT: I.xiii *De Morte quæ dicitur Corporali*** — La 192–202 / En 278–293 (11 La pp, under §7's threshold, one chunk). Plates already staged (`prep-chapter.sh 1 13` was run). ⚠ Expect the mortalist chapter; its apparatus opens on Pelagius/Socinus.
+⬜ **NEXT: I.xiii *De Morte quæ dicitur Corporali*** — held for a fresh session on purpose (Wilson, 2026-09-25: it is a load-bearing chapter, the mortalist heresy). Give its headnote's pressure-point slot full weight. La 192–202 / En 278–293 (11 La pp, under §7's threshold, one chunk). Plates already staged (`prep-chapter.sh 1 13` was run). ⚠ Expect the mortalist chapter; its apparatus opens on Pelagius/Socinus.
 
 ★ **Both English copies carry reader marks** (ours in ink, the second in pencil). Read obscured spots in the other copy, and check any odd reading against BOTH: the second copy's `yp` for *up* (En 275) was an ink blot.
 
