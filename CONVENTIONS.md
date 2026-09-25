@@ -38,7 +38,13 @@ The site build must treat the set as an ARRAY (any subset may be present per chu
   The 1825's own use of small caps for definitions is INCONSISTENT (Sapientia's definition is
   full small caps; Prudentia's is not) — follow each instance as printed.
 - **Chapter-opening display capitals** (drop-cap + spaced small caps on the first word) are
-  display typography, not emphasis — normalize to plain text.
+  display typography, not emphasis — normalize to plain text. **Exception (ratified 2026-09-25,
+  Wilson): a display word that begins a small-caps phrase stays inside the bold with the rest
+  of that phrase**, because it is part of the defined term (`**DOCTRINA CHRISTIANA** est`, I.i;
+  `**VIRTUTES SPECIALES**`, II.ix). A display word that stands apart from any small-caps run
+  becomes plain text (`Dictum est de **PROVIDENTIA COMMUNI**`, I.ix; `The virtues`, II.x).
+  Checked against the plates for all 24 chapter openings on 2026-09-25; the fixes are in
+  `metadata/corrections.tsv`.
 - **Truncation dashes as printed:** Milton/Sumner mark truncated quotes with an em-dash closed
   up against the last word (`est—.` `meam—:` `eum—!`). Use U+2014, closed up. The English also
   uses **dotted ellipses** (`.....`, dot-count varies) — transcribe the dots as counted per
