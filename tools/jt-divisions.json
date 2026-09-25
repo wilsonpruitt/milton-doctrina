@@ -232,6 +232,42 @@
       "status": "read",
       "leaf": 458,
       "evidence": "one-line superscription numbered as verse 1; J–T 18 = KJV 55:17 'Vespere & mane atq; meridie meditabor'"
+    },
+    {
+      "book": "Job",
+      "chapter": 14,
+      "begins_at": "Job 13:28",
+      "first_verse": 1,
+      "status": "read",
+      "leaf": 413,
+      "evidence": "CAPUT XIIII opens 'Nam iste velut putredo veterascit, ut vestis' = KJV 13:28; its 2 is 'Homo natus muliere' = KJV 14:1, its 11 'quumque exspiravit homo, ubinam est?' = KJV 14:10 (I.xiii)"
+    },
+    {
+      "book": "Job",
+      "chapter": 17,
+      "begins_at": "Job 17:2",
+      "first_verse": 1,
+      "status": "read",
+      "leaf": 415,
+      "evidence": "'Spiritus meus corruptus est' = KJV 17:1 is printed as 16:23; CAPUT XVII opens 'Quandoquidem non sunt ludificationes apud me' = KJV 17:2 (I.xiii: J–T 17:12 = KJV 17:13, 14–15 = 15–16)"
+    },
+    {
+      "book": "Eccl",
+      "chapter": 3,
+      "begins_at": "Eccl 3:1",
+      "first_verse": 1,
+      "status": "read",
+      "leaf": 527,
+      "evidence": "CAPUT III opens 'Cuique sua est tempestas' = KJV 3:1; its 20 'Horum unumquodque ire in locum eundem' = KJV 3:20, its 12 'Novi non esse bonum penes illos' = KJV 3:12 (I.xiii La ¶10 cites 'cap. iii. 12.' for v. 20: an error, not versification)"
+    },
+    {
+      "book": "Eccl",
+      "chapter": 12,
+      "begins_at": "Eccl 11:9",
+      "first_verse": 1,
+      "status": "inferred",
+      "leaf": 534,
+      "evidence": "J–T 12:9 'spiritu autem redeunte ad Deum qui dederat illum' = KJV 12:7; also 6 = KJV 4, 10 = KJV 8, 13 = KJV 11, 16 = KJV 14, a constant +2. The chapter's first verse (leaf 533) not put in view"
     }
   ]
 }

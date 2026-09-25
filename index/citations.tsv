@@ -1048,7 +1048,7 @@ ddc-1-08	la	la	{¶7}	6	BOOK CH V	Nehem. ix. 6.	Neh	9	6	Neh 9:6	high	book-named		
 ddc-1-08	la	la	{¶7}	7	BOOK CH V	Act. xiv. 17.	Acts	14	17	Acts 14:17	high	book-named				Acts 14:17		
 ddc-1-08	la	la	{¶7}	8	— CH V	et xvii. 25.	Acts	17	25	Acts 17:25	carried	book-carried	ddc-1-08:la:{¶7}:7			Acts 17:25		
 ddc-1-08	la	la	{¶7}	9	— — V	v. 28	Acts	17	28	Acts 17:28	carried	book-and-chapter-carried	ddc-1-08:la:{¶7}:8			Acts 17:28		
-ddc-1-08	la	la	{¶9}	0	BOOK CH V	Job. xiv. 6.	Job	14	6	Job 14:6	high	book-named		d69	plausible	Job 14:5	unchecked	no J–T division read for this chapter
+ddc-1-08	la	la	{¶9}	0	BOOK CH V	Job. xiv. 6.	Job	14	6	Job 14:6	high	book-named		d69	plausible	Job 14:5	versification	J–T Job 14 begins at Job 13:28 (read, leaf 413)
 ddc-1-08	la	la	{¶9}	1	BOOK CH V	Psal. xxix. 10.	Ps	29	10	Ps 29:10	high	book-named				Ps 29:10		
 ddc-1-08	la	la	{¶9}	2	— CH V	et xciii. 1.	Ps	93	1	Ps 93:1	carried	book-carried	ddc-1-08:la:{¶9}:1			Ps 93:1		
 ddc-1-08	la	la	{¶9}	3	— CH V	et ciii. 19.	Ps	103	19	Ps 103:19	carried	book-carried	ddc-1-08:la:{¶9}:2			Ps 103:19		
@@ -1257,7 +1257,7 @@ ddc-1-08	en-sumner	en-sumner	{¶7}	6	BOOK CH V	Nehem. ix. 6.	Neh	9	6	Neh 9:6	hig
 ddc-1-08	en-sumner	en-sumner	{¶7}	7	BOOK CH V	Acts xiv. 17.	Acts	14	17	Acts 14:17	high	book-named				Acts 14:17		
 ddc-1-08	en-sumner	en-sumner	{¶7}	8	— CH V	xvii. 25.	Acts	17	25	Acts 17:25	carried	book-carried	ddc-1-08:en-sumner:{¶7}:7			Acts 17:25		
 ddc-1-08	en-sumner	en-sumner	{¶7}	9	— — V	v. 28	Acts	17	28	Acts 17:28	carried	book-and-chapter-carried	ddc-1-08:en-sumner:{¶7}:8			Acts 17:28		
-ddc-1-08	en-sumner	en-sumner	{¶9}	0	BOOK CH V	Job xiv. 5.	Job	14	5	Job 14:5	high	book-named		d69	plausible	Job 14:5	unchecked	no J–T division read for this chapter
+ddc-1-08	en-sumner	en-sumner	{¶9}	0	BOOK CH V	Job xiv. 5.	Job	14	5	Job 14:5	high	book-named		d69	plausible	Job 14:5	versification	J–T Job 14 begins at Job 13:28 (read, leaf 413)
 ddc-1-08	en-sumner	en-sumner	{¶9}	1	BOOK CH V	Psal. xxix. 10.	Ps	29	10	Ps 29:10	high	book-named				Ps 29:10		
 ddc-1-08	en-sumner	en-sumner	{¶9}	2	— CH V	xciii. 1.	Ps	93	1	Ps 93:1	carried	book-carried	ddc-1-08:en-sumner:{¶9}:1			Ps 93:1		
 ddc-1-08	en-sumner	en-sumner	{¶9}	3	— CH V	ciii. 19.	Ps	103	19	Ps 103:19	carried	book-carried	ddc-1-08:en-sumner:{¶9}:2			Ps 103:19		
@@ -2350,7 +2350,7 @@ ddc-1-13	la	la	{¶8}	27	BOOK CH V	Luc. vii. 14.	Luke	7	14	Luke 7:14	high	book-na
 ddc-1-13	la	la	{¶9}	0	BOOK CH V	Psal. xlix. 16.	Ps	49	16	Ps 49:16	high	book-named		d153	plausible	Ps 49:15	versification-predicted	Psalm superscription numbered as 1 verse (§13.1 rule; this psalm's own leaf not read)
 ddc-1-13	la	la	{¶9}	1	— — V	v. 9	Ps	49	9	Ps 49:9	carried	book-and-chapter-carried	ddc-1-13:la:{¶9}:0	d154	plausible	Ps 49:8	versification-predicted	Psalm superscription numbered as 1 verse (§13.1 rule; this psalm's own leaf not read)
 ddc-1-13	la	la	{¶9}	2	— — V-LIST	v. 13, 15.	Ps	49	13,15	Ps 49:13,15	carried	book-and-chapter-carried	ddc-1-13:la:{¶9}:1	d155	plausible	Ps 49:12,14	versification-predicted	Psalm superscription numbered as 1 verse (§13.1 rule; this psalm's own leaf not read)
-ddc-1-13	la	la	{¶10}	0	BOOK CH V	Eccl. xii. 9.	Eccl	12	9	Eccl 12:9	high	book-named		d156	plausible	Eccl 12:7	unchecked	no J–T division read for this chapter
+ddc-1-13	la	la	{¶10}	0	BOOK CH V	Eccl. xii. 9.	Eccl	12	9	Eccl 12:9	high	book-named		d156	plausible	Eccl 12:7	versification	J–T Eccl 12 begins at Eccl 11:9 (inferred, leaf 534)
 ddc-1-13	la	la	{¶10}	2	BOOK CH V-LIST	Job. xxxiv. 14, 15.	Job	34	14,15	Job 34:14,15	high	book-named				Job 34:14,15		
 ddc-1-13	la	la	{¶10}	3	BOOK CH V-LIST	Psal. civ. 29, 30.	Ps	104	29,30	Ps 104:29,30	high	book-named				Ps 104:29,30		
 ddc-1-13	la	la	{¶10}	4	— CH V	cap. xxxvii. 9.	Ps	37	9	Ps 37:9	carried	book-carried	ddc-1-13:la:{¶10}:3			Ps 37:9		
@@ -2468,7 +2468,7 @@ ddc-1-13	en-sumner	en-sumner	{¶7 cont.–8}	26	BOOK CH V	Luke vii. 14.	Luke	7	1
 ddc-1-13	en-sumner	en-sumner	{¶9}	0	BOOK CH V	Psal. xlix. 15.	Ps	49	15	Ps 49:15	high	book-named		d153	plausible	Ps 49:15	versification-predicted	Psalm superscription numbered as 1 verse (§13.1 rule; this psalm's own leaf not read)
 ddc-1-13	en-sumner	en-sumner	{¶9}	1	— — V	v. 8	Ps	49	8	Ps 49:8	carried	book-and-chapter-carried	ddc-1-13:en-sumner:{¶9}:0	d154	plausible	Ps 49:8	versification-predicted	Psalm superscription numbered as 1 verse (§13.1 rule; this psalm's own leaf not read)
 ddc-1-13	en-sumner	en-sumner	{¶9}	2	— — V-LIST	v. 12, 14.	Ps	49	12,14	Ps 49:12,14	carried	book-and-chapter-carried	ddc-1-13:en-sumner:{¶9}:1	d155	plausible	Ps 49:12,14	versification-predicted	Psalm superscription numbered as 1 verse (§13.1 rule; this psalm's own leaf not read)
-ddc-1-13	en-sumner	en-sumner	{¶10}	0	BOOK CH V	Eccles. xii. 7.	Eccl	12	7	Eccl 12:7	high	book-named		d156	plausible	Eccl 12:7	unchecked	no J–T division read for this chapter
+ddc-1-13	en-sumner	en-sumner	{¶10}	0	BOOK CH V	Eccles. xii. 7.	Eccl	12	7	Eccl 12:7	high	book-named		d156	plausible	Eccl 12:7	versification	J–T Eccl 12 begins at Eccl 11:9 (inferred, leaf 534)
 ddc-1-13	en-sumner	en-sumner	{¶10}	1	— CH V	iii. 20.	Eccl	3	20	Eccl 3:20	carried	book-carried	ddc-1-13:en-sumner:{¶10}:0			Eccl 3:20		
 ddc-1-13	en-sumner	en-sumner	{¶10}	2	BOOK CH V-LIST	Job xxxiv. 14, 15.	Job	34	14,15	Job 34:14,15	high	book-named				Job 34:14,15		
 ddc-1-13	en-sumner	en-sumner	{¶10}	3	BOOK CH V-LIST	Psal. civ. 29, 30.	Ps	104	29,30	Ps 104:29,30	high	book-named				Ps 104:29,30		
@@ -2784,7 +2784,7 @@ ddc-2-02	la	la	{¶14}	1	— CH V-LIST	et xii. 24, 25.	Job	12	24,25	Job 12:24,25	
 ddc-2-02	la	la	{¶14}	2	— CH V-LIST	et xxviii. 13, 14.	Job	28	13,14	Job 28:13,14	carried	book-carried	ddc-2-02:la:{¶14}:1			Job 28:13,14		
 ddc-2-02	la	la	{¶14}	3	BOOK CH V	Eccles. i. 17.	Eccl	1	17	Eccl 1:17	high	book-named				Eccl 1:17		
 ddc-2-02	la	la	{¶14}	4	— CH V	et vii. 29.	Eccl	7	29	Eccl 7:29	carried	book-carried	ddc-2-02:la:{¶14}:3			Eccl 7:29		
-ddc-2-02	la	la	{¶14}	5	— CH V	et xii. 14.	Eccl	12	14	Eccl 12:14	carried	book-carried	ddc-2-02:la:{¶14}:4	d187	plausible	Eccl 12:12	unchecked	no J–T division read for this chapter
+ddc-2-02	la	la	{¶14}	5	— CH V	et xii. 14.	Eccl	12	14	Eccl 12:14	carried	book-carried	ddc-2-02:la:{¶14}:4	d187	plausible	Eccl 12:12	versification	J–T Eccl 12 begins at Eccl 11:9 (inferred, leaf 534)
 ddc-2-02	la	la	{¶14}	6	BOOK CH V+&c	Isa. xix. 11, &c.	Isa	19	11	Isa 19:11 &c.	high	book-named				Isa 19:11 &c.		
 ddc-2-02	la	la	{¶14}	7	— CH V	et xxix. 14.	Isa	29	14	Isa 29:14	carried	book-carried	ddc-2-02:la:{¶14}:6			Isa 29:14		
 ddc-2-02	la	la	{¶14}	8	— CH V	et xxxiii. 11.	Isa	33	11	Isa 33:11	carried	book-carried	ddc-2-02:la:{¶14}:7			Isa 33:11		
@@ -2947,7 +2947,7 @@ ddc-2-02	en-sumner	en-sumner	{¶14–15}	1	— CH V	xii. 24.	Job	12	24	Job 12:24
 ddc-2-02	en-sumner	en-sumner	{¶14–15}	2	— CH V-LIST	xxviii. 13, 14.	Job	28	13,14	Job 28:13,14	carried	book-carried	ddc-2-02:en-sumner:{¶14–15}:1			Job 28:13,14		
 ddc-2-02	en-sumner	en-sumner	{¶14–15}	3	BOOK CH V	Eccles. i. 17.	Eccl	1	17	Eccl 1:17	high	book-named				Eccl 1:17		
 ddc-2-02	en-sumner	en-sumner	{¶14–15}	4	— CH V	vii. 29.	Eccl	7	29	Eccl 7:29	carried	book-carried	ddc-2-02:en-sumner:{¶14–15}:3			Eccl 7:29		
-ddc-2-02	en-sumner	en-sumner	{¶14–15}	5	— CH V	xii. 12.	Eccl	12	12	Eccl 12:12	carried	book-carried	ddc-2-02:en-sumner:{¶14–15}:4	d187	plausible	Eccl 12:12	unchecked	no J–T division read for this chapter
+ddc-2-02	en-sumner	en-sumner	{¶14–15}	5	— CH V	xii. 12.	Eccl	12	12	Eccl 12:12	carried	book-carried	ddc-2-02:en-sumner:{¶14–15}:4	d187	plausible	Eccl 12:12	versification	J–T Eccl 12 begins at Eccl 11:9 (inferred, leaf 534)
 ddc-2-02	en-sumner	en-sumner	{¶14–15}	6	BOOK CH V+&c	Isai. xix. 11, &c.	Isa	19	11	Isa 19:11 &c.	high	book-named				Isa 19:11 &c.		
 ddc-2-02	en-sumner	en-sumner	{¶14–15}	7	— CH V	xxix. 14.	Isa	29	14	Isa 29:14	carried	book-carried	ddc-2-02:en-sumner:{¶14–15}:6			Isa 29:14		
 ddc-2-02	en-sumner	en-sumner	{¶14–15}	8	— CH V	xxxiii. 11.	Isa	33	11	Isa 33:11	carried	book-carried	ddc-2-02:en-sumner:{¶14–15}:7			Isa 33:11		

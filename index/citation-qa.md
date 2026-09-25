@@ -122,10 +122,10 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 
 | class | pairs | what it asserts |
 |---|---|---|
-| `unchecked` | 142 | no division read and no known mechanism. NOT a claim of error |
+| `unchecked` | 139 | no division read and no known mechanism. NOT a claim of error |
 | `open-end` | 84 |  |
 | `versification-predicted` | 73 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
-| `versification` | 69 | a READ J-T division maps the Latin onto the English exactly |
+| `versification` | 72 | a READ J-T division maps the Latin onto the English exactly |
 | `anomaly` | 7 | a division IS read and does not explain it -- listed above |
 
 ## Versification, not error (M4-RUNBOOK §6b)
