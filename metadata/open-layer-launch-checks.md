@@ -193,3 +193,7 @@ return 200, an unknown path returns 404, and `/scripture/eccl` now lists the rec
 `Eccl.` citations. ⚠ The first `vercel deploy` call's output was truncated by `tail`,
 so it was run a second time and the same build deployed twice. That is harmless, but
 next time capture the head of the output, not the tail.
+
+## Deployed 2026-09-25 (second) — I.xi, I.xii, I.ix + opening typography fixes, status fixes
+
+Same recipe, 99 overrides. Export again deliberately left at 2026-09-18 (Wilson: refresh at end of the day's work; needs an R2 upload first). Verified live: /browse/1/11 and /1/12 (and .json) 200, I.ix opening renders small caps, I.x .json status now `verified`, unknown path 404.
