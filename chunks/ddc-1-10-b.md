@@ -180,11 +180,11 @@ pages_en: "230-246"
 
 1. ✅ `## en-sumner` is **COMPLETE** — En 230–246, La ¶¶1–27, 25 labels, page markers contiguous.
 2. ✅ `## apparatus-sumner-en` is **COMPLETE** — all seventeen notes written, ledger `3·4·5·6·7·8·9·1·2·3·4·5·6·7·8·9·1` (the 9→1 wrap crossed twice), every anchor matched to a defined note. Two genuine printed anomalies caught and flagged in Notes below: a double em-dash distinct from an ordinary page-range dash (En 244, again En 245), and a period-plus-stray-comma in Sumner's own apparatus (En 236).
-3. ✅ `## apparatus-editorial` is **written** — `[^1]` (the Exod. 21:10 word, La 167 / En 237) and `[^2]` (`בעל`, La 162 / En 230), each anchored in BOTH layers. Consonants secure; **the POINTS on both words are an open question for a Hebraist and are recorded as a guess, not a reading.**
+3. ✅ `## apparatus-editorial` is **written** (decided 2026-09-25, Wilson: **the points stay ⚠ UNVERIFIED on the web edition. A Hebraist confirms them before any print edition**, not before) — `[^1]` (the Exod. 21:10 word, La 167 / En 237) and `[^2]` (`בעל`, La 162 / En 230), each anchored in BOTH layers. Consonants secure; **the POINTS on both words are an open question for a Hebraist and are recorded as a guess, not a reading.**
 4. ⬜ `## headnote` unwritten — **the only thing left in this chunk.** `## Notes` below is a working record, not the finished section.
 5. La ¶¶ are final: **27 paragraphs, La 162–172**, page markers 163–172 contiguous and verified by grep.
 
-⛔ **A COMBINED SPLIT-AND-MERGE that §4 does not cover — needs Wilson's ruling, used provisionally as `{¶2 cont.–3}`.**
+✅ **RATIFIED 2026-09-25 (Wilson): `{¶2 cont.–3}` stands, now CONVENTIONS §4.** The record below of how it was reached is kept. **A COMBINED SPLIT-AND-MERGE that §4 did not then cover.**
 
 Sumner breaks La ¶2 in two AND welds its second half onto La ¶3, in one move:
 
@@ -197,7 +197,7 @@ Sumner breaks La ¶2 in two AND welds its second half onto La ¶3, in one move:
 
 ⛔ **RETRACTED 2026-09-12 (Wilson): `בעל` at La 162 / En 230 is NOT unpointed.** This paragraph previously recorded it as printed bare in both volumes and offered that agreement as a clean counter-example to §8b(ii) — the rule about the 1825's inconsistency reaching the vowel points. **It carries pointing, of the same kind as the Exod. 21:10 word at La 167 / En 237, and neither has been identified.** The two words are now anchored `[^2]` and `[^1]` and go to a Hebraist together. ⚠ **§8b(ii) has therefore lost a supporting example it was leaning on, and that example was wrong in the direction of tidiness** — an unpointed word is the easy thing to see and to record, and it was recorded twice, at 900–1200 dpi, without being questioned.
 
-**Paragraph grid, final.** 27 La ¶¶ → 25 En labels: one combined split-and-merge (`{¶2 cont.–3}`, unratified — see above) and two ordinary merges, `{¶19–20}` and `{¶25–26}`, both U+2013. Page markers **231–246 contiguous**, sixteen pages, verified by grep after the layer was finished — and p.235 was missing from that run until the check caught it. It falls at the ¶6/¶7 boundary, so it takes its own line rather than sitting inline.
+**Paragraph grid, final.** 27 La ¶¶ → 25 En labels: one combined split-and-merge (`{¶2 cont.–3}`, ratified 2026-09-25 — see above) and two ordinary merges, `{¶19–20}` and `{¶25–26}`, both U+2013. Page markers **231–246 contiguous**, sixteen pages, verified by grep after the layer was finished — and p.235 was missing from that run until the check caught it. It falls at the ¶6/¶7 boundary, so it takes its own line rather than sitting inline.
 
 **Apparatus ledger: `3·4·5·6·7·8·9·1·2·3·4·5·6·7·8·9·1`** — seventeen notes, the 9→1 wrap crossed **twice**, which is a corpus first for a single chunk (I.ix wrapped twice across sixteen notes but this part is a chapter fragment). §5b's `-2` suffix is therefore load-bearing here: seven anchors (3–9) recur, and each second instance carries it. Checksum holds on both ends — part a closed at 2, this opened at 3, this closes at **1** (En 245) and **part c opens at 2, already plate-confirmed on En 246**.
 

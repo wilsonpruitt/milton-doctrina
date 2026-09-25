@@ -125,6 +125,12 @@ truncated quotes and sometimes drops an `&c.` — same rule, don't "fix" either 
   repeated anchor label; the same logic, so the two rules read as one. First needed at II.xi (two
   pieces), then I.ii, which has **two three-piece splits** ({¶10}, {¶22}) as well as a two-piece one
   ({¶16}).
+- **A split whose continuation is merged forward: `{¶N cont.–M}`** (ratified 2026-09-25, Wilson).
+  Where Sumner breaks one Latin paragraph in two AND joins its second half to the next Latin
+  paragraph in one English paragraph, compose the two forms above: `{¶2}` · `{¶2 cont.–3}`. It
+  reads "the continuation of ¶2, merged with ¶3". Use an en-dash (U+2013), as in every merge
+  label, or `build-citations.py` will report the covered La ¶¶ as absent from the English. First
+  instance: I.x part b (`ddc-1-10-b`), En 231–232. Do not invent a third scheme.
 - **Expect merges in Book II and splits in Book I.** Book II is merge-dominated — Sumner welds
   Milton's short proof-text paragraphs together. Book I's opening chapters are split-dominated —
   Milton's prose there is long and argumentative and Sumner breaks it up (I.ii: 32 La ¶¶ → 37 En,
