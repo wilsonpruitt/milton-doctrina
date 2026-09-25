@@ -177,3 +177,19 @@ continue hand-assembling).
 - **Vercel Firewall rate-limit backstop** — parked, not yet done for any shipped site.
 - **The `spawn sh ENOENT` Vercel CLI bug** — not investigated further; worked around,
   not fixed. May resurface on this project's next CLI-prebuilt deploy.
+
+## Deployed 2026-09-25 — I.x part c + citation-alias index repair
+
+CLI-prebuilt per the recipe above (`dpl_CJgNJp6noMKzj6zUJcJCpbD9VpXY`, aliased to
+milton.wrootpress.com). 97 overrides, same count as 2026-09-18. **`build-export.mjs`
+was deliberately SKIPPED:** it stamps the export filenames with today's date, and a
+2026-09-25 file does not exist on R2, so running it would have pointed `/export` at
+404s. The live `/export` page still lists the 2026-09-18 export, which is verified to
+download (200 from R2). Refreshing the export means running `build-export.mjs`, then
+uploading the new files to R2 under `milton/`, and only then deploying. The upload is
+outward-facing, so it needs its own OK. Verified live: `/browse/1/10` carries part c,
+the `.json` sibling parses, the `.plain.txt` sibling returns 200, robots/sitemap/export
+return 200, an unknown path returns 404, and `/scripture/eccl` now lists the recovered
+`Eccl.` citations. ⚠ The first `vercel deploy` call's output was truncated by `tail`,
+so it was run a second time and the same build deployed twice. That is harmless, but
+next time capture the head of the output, not the tail.

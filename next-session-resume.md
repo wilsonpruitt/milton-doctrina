@@ -1,6 +1,6 @@
 # Next session — resume here
 
-## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-25, latest) — **`ddc-1-10-c` is COMPLETE, so CHAPTER I.x IS DONE. Plate-verified, COMMITTED (`bd28429`). PUSHED (`eff6bb1`), NOT deployed; parts a and b are live.**
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-25, latest) — **`ddc-1-10-c` is COMPLETE, so CHAPTER I.x IS DONE. Plate-verified, COMMITTED (`bd28429`). PUSHED and DEPLOYED 2026-09-25 — all of I.x is live.**
 
 I.x part c (the divorce argument) is done: `## la` 9 ¶¶ (La 173–179), `## en-sumner` 11 labels (En 246–259; the only split is La ¶4 into three pieces, and there are no merges), `## apparatus-sumner-en` 30 notes, `## apparatus-sumner-la` `[^la7]` (Selden, scholarly, not ledgered), and the headnote. Details are in the chunk's `## Notes`.
 
@@ -10,7 +10,7 @@ I.x part c (the divorce argument) is done: `## la` 9 ¶¶ (La 173–179), `## en
 
 ⬜ **NEXT: I.xi *De Lapsu primorum Parentum, et de Peccato*** — La 180–187 (8 pp) / En 260–271 (12 pp). It is under §7's La > 12 threshold, so **one chunk, `ddc-1-11`, no split.** Run `./tools/prep-chapter.sh 1 11` first. Plates La 180 and En 260 are already staged from this session's +1 page.
 
-⬜ **Deploy is Wilson's call.** Part b is already pushed and **live** (it went out with the 2026-09-18 Open Corpus deploy; `/browse/1/10` serves it). Unpushed on `main`: only part c (`bd28429`) and this resume note. Part c also carries a **corpus-wide index repair**: two new aliases in `tools/scripture-books.json` (La `Eccl.`, En `Judg.`) recovered nine citations in the live I.vii, I.viii and I.x-b that had been dropped or filed under Job/Psalms. Pushing deploys only if git integration is on, and **it is disconnected**, so deploys are CLI-only (`metadata/open-layer-launch-checks.md`).
+✅ **Deployed 2026-09-25** (CLI-prebuilt; see `metadata/open-layer-launch-checks.md`). The export was NOT refreshed and is still dated 2026-09-18, because refreshing it needs an R2 upload first. The alias index repair is live.
 
 ⬜ **One citation worth a J–T plate read:** La `Eccl. ix. 12.` against En `Eccles. ix. 9.` (La ¶4 / En `{¶4 cont.}`). J–T's Eccl 9 offset is +2 (begins at KJV 8:16), which predicts `ix. 11`, and the residual +1 is unexplained. The tool flags it `anomaly`. It is cheap to settle with `tools/jt-page.py`. Don't call it Milton's error first.
 
