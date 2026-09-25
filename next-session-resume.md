@@ -1,5 +1,19 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-25, latest) — **`ddc-1-13` (I.xiii, *De Morte quæ dicitur Corporali*) is COMPLETE, committed (`6c0e0a7`), NOT pushed/deployed.**
+
+**Checksums carried forward:** **English: I.xiv opens at note 7** (I.xiii ran 3→6 with one wrap). **Latin: the next Latin note is 2, not 10.** I.xiii's single Latin note is printed **1**, so the Latin labels wrap 9→1 as the English do. The "next is 10" expectation below was wrong.
+
+⬜ **NEXT: I.xiv *De Hominis Restitutione et Christo Redemptore*.** Run `./tools/prep-chapter.sh 1 14`. It opens at the head of La 203 and En 294 (both confirmed on the +1 plates).
+
+★ **`build-citations.py` fixed in the same commit:** `{¶N cont.–M}` was never parsed. The old claim below that it "DOES recognise" I.x-b's `{¶2 cont.–3}` was true of the output and false of the mechanism. ⚠ `build-citations.py <chunk>` on its own **overwrites** `index/` with that one chunk. Always finish with `--all`.
+
+⬜ **For Wilson (in the chunk's Notes):** Sumner prints Milton's Euripides as quoted in the Latin (`σῶμ'`, `ἀπῆλθε`) and Porson's emended text in the English (`φῶς`, `ἀπελθεῖν`), disclosed only in English note 1. Should `sumner-interventions.tsv` widen to cover interventions on quotations? Also two probable Latin citation errors, not yet checked in J–T: Isa. lvii. 5, 6 (for 1, 2) and Numer. xxiii. 14 (for 10).
+
+★ **Second copies for every page are now fetched to `raw/second/` (gitignored).** Their page frames don't match ours, so locate crops from a thumbnail first. For our own pages, `crop-plate.sh` fractions match the 200 dpi plates exactly.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-25, latest) — **`ddc-1-12` (I.xii, *De Pœna Peccati*) is COMPLETE, committed, NOT pushed/deployed.** I.xi also done (block below).
 
 **Checksums carried forward:** **English: I.xiii opens at note 3** (En 278; pdftotext misreads it as 5). **Latin: next Latin note is still 10** (I.xii has none).
