@@ -197,3 +197,7 @@ next time capture the head of the output, not the tail.
 ## Deployed 2026-09-25 (second) — I.xi, I.xii, I.ix + opening typography fixes, status fixes
 
 Same recipe, 99 overrides. Export again deliberately left at 2026-09-18 (Wilson: refresh at end of the day's work; needs an R2 upload first). Verified live: /browse/1/11 and /1/12 (and .json) 200, I.ix opening renders small caps, I.x .json status now `verified`, unknown path 404.
+
+## Deployed 2026-09-25 (third) — I.xiii, the §4/§5d/§9 rulings, J–T divisions, citation-tool fix
+
+Same recipe (`dpl_SoL697aaj4RhJjSsDX2CALVUibKX`), **100 overrides** (99 + `/browse/1/13`), 27 sibling pairs. No `spawn sh ENOENT` trouble, because `vercel build` isn't used. Deploy output was captured to a file and grepped, not `tail`ed, so it ran once. The export is again left at 2026-09-18, for the same reason as above. Verified live: `/browse/1/13` plus its `.json` (parses; title *De Morte quæ dicitur Corporalis*) and `.plain.txt` return 200, and the page carries the Greek (`ἀπελθεῖν`, `παμαδείσῳ`) and the Porson note. `/browse/1/12`, robots, sitemap and export return 200, and an unknown path returns 404.

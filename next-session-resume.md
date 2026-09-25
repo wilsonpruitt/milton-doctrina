@@ -1,6 +1,6 @@
 # Next session — resume here
 
-## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-25, latest) — **`ddc-1-13` (I.xiii, *De Morte quæ dicitur Corporali*) is COMPLETE, committed (`6c0e0a7`), NOT pushed/deployed.**
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-25, latest) — **`ddc-1-13` (I.xiii, *De Morte quæ dicitur Corporali*) is COMPLETE, PUSHED and DEPLOYED 2026-09-25 (live at milton.wrootpress.com/browse/1/13).** The export is still dated 2026-09-18; refreshing it needs an R2 upload first.
 
 **Checksums carried forward:** **English: I.xiv opens at note 7** (I.xiii ran 3→6 with one wrap). **Latin: the next Latin note is 2, not 10.** I.xiii's single Latin note is printed **1**, so the Latin labels wrap 9→1 as the English do. The "next is 10" expectation below was wrong.
 
