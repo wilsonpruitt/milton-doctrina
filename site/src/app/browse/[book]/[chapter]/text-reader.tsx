@@ -250,11 +250,14 @@ function renderInline(text: string, pageMode: PageMode = "off"): React.ReactNode
       // CONVENTIONS.md §2 ("small caps → bold caps" transcription rule).
       tokens.push(
         <span key={`b-${key++}`} className="small-caps">
-          {m[3]}
+          {renderInline(m[3], pageMode)}
         </span>
       );
     } else if (m[4] !== undefined) {
-      tokens.push(<em key={`i-${key++}`}>{m[4]}</em>);
+      // Recurse: a page break or a note anchor often falls INSIDE an italic quotation
+      // (92 runs across 21 chunks, 2026-09-25). Emitting m[4] raw printed them as
+      // literal `<!-- p.279 -->` text.
+      tokens.push(<em key={`i-${key++}`}>{renderInline(m[4], pageMode)}</em>);
     }
     lastIndex = regex.lastIndex;
   }

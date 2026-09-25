@@ -312,6 +312,10 @@ a { color: inherit; text-decoration: none; }
   font-style: italic;
   color: #4A2A1A;
   font-size: 15.5px;
+  /* Loeb-style: the Latin sits looser than the English (1.85). Tried 2.05–2.4 on
+     I.xiii, 2026-09-25; Wilson chose 2.4, which also keeps the two columns ending
+     close together. */
+  line-height: 2.4;
 }
 .para-marker {
   font-family: var(--font-cinzel), serif;
