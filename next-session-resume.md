@@ -1,5 +1,19 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-25, latest) — **`ddc-1-11` (I.xi, *De Lapsu … et de Peccato*) is COMPLETE, committed, NOT pushed/deployed.**
+
+34 La ¶¶ / 32 En labels (merges `{¶7–8}`, `{¶9–10}`). Details in the chunk's `## Notes`.
+
+**Checksums carried forward:** **English: I.xii opens at note 7** (En 272, *all evils whatever,*⁷, read at 400 dpi). **Latin: next Latin note is 10.** ★ `[^la8]` points forward: *Eodem adverbio peccatur infra Cap. 31.* When I.xxxi is transcribed, look for Sumner's second *minus* note there.
+
+⬜ **NEXT: I.xii *De Pœna Peccati*** — La 188–191 / En 272–277, one chunk. `./tools/prep-chapter.sh 1 12`.
+
+★ **Second English scan now calibrated: `treatiseonchrist00miltrich`, leaf = printed + 51** (STRUCTURE.md). Our working copy has reader's pen marks on En 261–269 at least; reach for this copy whenever a mark is obscured. The second copy also settled a 2-vs-3 note numeral that our copy's render got wrong.
+
+⬜ **Unpushed on `main`:** today's rulings, the I.ix and opening fixes, I.xi, and three status corrections (`ddc-1-10-b`, `-10-c`, `-11` were left on the partial-chunk marker `la-verified`, which makes the export call I.x "in progress"; all now `verified`). Push and deploy are Wilson's call. The download export is deliberately NOT refreshed (Wilson, 2026-09-25: wait until the day's work is done).
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-25, latest) — **`ddc-1-10-c` is COMPLETE, so CHAPTER I.x IS DONE. Plate-verified, COMMITTED (`bd28429`). PUSHED and DEPLOYED 2026-09-25 — all of I.x is live.**
 
 I.x part c (the divorce argument) is done: `## la` 9 ¶¶ (La 173–179), `## en-sumner` 11 labels (En 246–259; the only split is La ¶4 into three pieces, and there are no merges), `## apparatus-sumner-en` 30 notes, `## apparatus-sumner-la` `[^la7]` (Selden, scholarly, not ledgered), and the headnote. Details are in the chunk's `## Notes`.
