@@ -201,3 +201,7 @@ Same recipe, 99 overrides. Export again deliberately left at 2026-09-18 (Wilson:
 ## Deployed 2026-09-25 (third) — I.xiii, the §4/§5d/§9 rulings, J–T divisions, citation-tool fix
 
 Same recipe (`dpl_SoL697aaj4RhJjSsDX2CALVUibKX`), **100 overrides** (99 + `/browse/1/13`), 27 sibling pairs. No `spawn sh ENOENT` trouble, because `vercel build` isn't used. Deploy output was captured to a file and grepped, not `tail`ed, so it ran once. The export is again left at 2026-09-18, for the same reason as above. Verified live: `/browse/1/13` plus its `.json` (parses; title *De Morte quæ dicitur Corporalis*) and `.plain.txt` return 200, and the page carries the Greek (`ἀπελθεῖν`, `παμαδείσῳ`) and the Porson note. `/browse/1/12`, robots, sitemap and export return 200, and an unknown path returns 404.
+
+## Deployed 2026-09-25 (fourth) — reader: Latin line-height 2.4, markers inside italics
+
+Same recipe (`dpl_8cPxUiBkzTNFQPUQmBnFQL9nS2Rj`), 100 overrides, 27 sibling pairs, and the export still at 2026-09-18. Verified live: the served CSS carries `line-height:2.4` on the Latin `.chunk-text`. The visible text of 1/2, 1/9, 1/13, 2/3, 2/9 and 2/11 has zero raw `<!--` or `[^` strings; before this deploy there were about 90 across 21 chapters. `/browse/1/13.json` and robots return 200, and an unknown path returns 404.
