@@ -1,6 +1,6 @@
 # Next session — resume here
 
-## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-25, latest) — **`ddc-1-10-c` is COMPLETE, so CHAPTER I.x IS DONE. Plate-verified, COMMITTED (`bd28429`). NOT pushed; parts a and b are live.**
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-25, latest) — **`ddc-1-10-c` is COMPLETE, so CHAPTER I.x IS DONE. Plate-verified, COMMITTED (`bd28429`). PUSHED (`eff6bb1`), NOT deployed; parts a and b are live.**
 
 I.x part c (the divorce argument) is done: `## la` 9 ¶¶ (La 173–179), `## en-sumner` 11 labels (En 246–259; the only split is La ¶4 into three pieces, and there are no merges), `## apparatus-sumner-en` 30 notes, `## apparatus-sumner-la` `[^la7]` (Selden, scholarly, not ledgered), and the headnote. Details are in the chunk's `## Notes`.
 
