@@ -1,5 +1,21 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-25, latest) — **`ddc-1-14` (I.xiv, *De Hominis Restitutione et Christo Redemptore*) is COMPLETE and committed. NOT pushed or deployed.**
+
+32 La ¶¶ → 31 En labels (one merge, `{¶18–19}`). English notes `7·8·9·1·2·3·4·5`, one wrap. Two Latin notes, `2` and `3`, both textual (`uncertain`) and ledgered. Details are in the chunk's `## Notes`.
+
+**Checksums carried forward:** **English: I.xv opens at note 6.** pdftotext shows it on En 308; confirm on the plate. **Latin: the next Latin note is 4.**
+
+★★★ **Sumner translated his own conjecture twice in this chapter** (`[^la2]` La 210, `[^la3]` La 211). The English follows the reading he queries only in the Latin apparatus, as with I.ii's `SUMME BEATUS`. Worth a line on the About page's account of the edition, when that is next touched.
+
+⬜ **NEXT: I.xv *De Officio Mediatorio*** — La 214–220 / En 308–315, one chunk. Run `./tools/prep-chapter.sh 1 15` and fetch the second copies to `raw/second/` first.
+
+⬜ `script-check.html` was regenerated (Greek 438 occurrences / 264 distinct) but **not republished** to the artifact URL in M3-RUNBOOK §12. Republish when convenient.
+
+⬜ Push and deploy are Wilson's call (CLI-only, `metadata/open-layer-launch-checks.md`). The export is still dated 2026-09-18.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-25, latest) — **`ddc-1-13` (I.xiii, *De Morte quæ dicitur Corporali*) is COMPLETE, PUSHED and DEPLOYED 2026-09-25 (live at milton.wrootpress.com/browse/1/13).** The export is still dated 2026-09-18; refreshing it needs an R2 upload first.
 
 **Checksums carried forward:** **English: I.xiv opens at note 7** (I.xiii ran 3→6 with one wrap). **Latin: the next Latin note is 2, not 10.** I.xiii's single Latin note is printed **1**, so the Latin labels wrap 9→1 as the English do. The "next is 10" expectation below was wrong.
