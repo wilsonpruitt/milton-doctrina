@@ -1,6 +1,6 @@
 # Next session — resume here
 
-## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-25, latest) — **`ddc-1-14` (I.xiv, *De Hominis Restitutione et Christo Redemptore*) is COMPLETE and committed. NOT pushed or deployed.**
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-26, latest) — **`ddc-1-14` (I.xiv, *De Hominis Restitutione et Christo Redemptore*) is COMPLETE, PUSHED and DEPLOYED 2026-09-26 (live at milton.wrootpress.com/browse/1/14).**
 
 32 La ¶¶ → 31 En labels (one merge, `{¶18–19}`). English notes `7·8·9·1·2·3·4·5`, one wrap. Two Latin notes, `2` and `3`, both textual (`uncertain`) and ledgered. Details are in the chunk's `## Notes`.
 
@@ -12,7 +12,7 @@
 
 ⬜ `script-check.html` was regenerated (Greek 438 occurrences / 264 distinct) but **not republished** to the artifact URL in M3-RUNBOOK §12. Republish when convenient.
 
-⬜ Push and deploy are Wilson's call (CLI-only, `metadata/open-layer-launch-checks.md`). The export is still dated 2026-09-18.
+✅ Deployed 2026-09-26 (`dpl_BBgjqCxyt5NfWiGrSBVZ83S3D1K9`). The export is still dated 2026-09-18.
 
 ---
 

@@ -205,3 +205,7 @@ Same recipe (`dpl_SoL697aaj4RhJjSsDX2CALVUibKX`), **100 overrides** (99 + `/brow
 ## Deployed 2026-09-25 (fourth) — reader: Latin line-height 2.4, markers inside italics
 
 Same recipe (`dpl_8cPxUiBkzTNFQPUQmBnFQL9nS2Rj`), 100 overrides, 27 sibling pairs, and the export still at 2026-09-18. Verified live: the served CSS carries `line-height:2.4` on the Latin `.chunk-text`. The visible text of 1/2, 1/9, 1/13, 2/3, 2/9 and 2/11 has zero raw `<!--` or `[^` strings; before this deploy there were about 90 across 21 chapters. `/browse/1/13.json` and robots return 200, and an unknown path returns 404.
+
+## Deployed 2026-09-26 — I.xiv
+
+Same recipe (`dpl_BBgjqCxyt5NfWiGrSBVZ83S3D1K9`), **101 overrides** (100 + `/browse/1/14`), 28 sibling pairs. The export is still at 2026-09-18, for the same reason as above. Output was captured to a file, so the deploy ran once. Verified live: `/browse/1/14` plus its `.json` and `.plain.txt` return 200, and the page carries the Greek (`Θεάνθρωπος`, `hypostaseωs`) and both Latin notes. The visible text has zero raw `[^` or `<!--`; the only hits are inside the embedded page data, as on 1/13. `/browse/1/13`, robots, sitemap and export return 200, and an unknown path returns 404.
