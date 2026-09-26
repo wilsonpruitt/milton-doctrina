@@ -4,7 +4,7 @@
 
 **Checksums carried forward:** **English: I.xiv opens at note 7** (I.xiii ran 3→6 with one wrap). **Latin: the next Latin note is 2, not 10.** I.xiii's single Latin note is printed **1**, so the Latin labels wrap 9→1 as the English do. The "next is 10" expectation below was wrong.
 
-⬜ **NEXT: I.xiv *De Hominis Restitutione et Christo Redemptore*.** Run `./tools/prep-chapter.sh 1 14`. It opens at the head of La 203 and En 294 (both confirmed on the +1 plates).
+⬜ **NEXT: I.xiv *De Hominis Restitutione et Christo Redemptore*** (Wilson, 2026-09-25: the next session). **Plates and text drafts are already staged** (`prep-chapter.sh 1 14` was run): La 203–213 (11 pp, under §7's threshold, so one chunk `ddc-1-14`) / En 294–307. It opens at the head of La 203 and En 294. Fetch the second copies to `raw/second/` first; that paid off repeatedly on I.xiii. Also see the reader change below: the Latin is now set at line-height 2.4, sitewide and live.
 
 ★ **`build-citations.py` fixed in the same commit:** `{¶N cont.–M}` was never parsed. The old claim below that it "DOES recognise" I.x-b's `{¶2 cont.–3}` was true of the output and false of the mechanism. ⚠ `build-citations.py <chunk>` on its own **overwrites** `index/` with that one chunk. Always finish with `--all`.
 
