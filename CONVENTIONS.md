@@ -143,6 +143,17 @@ truncated quotes and sometimes drops an `&c.` — same rule, don't "fix" either 
   reads "the continuation of ¶2, merged with ¶3". Use an en-dash (U+2013), as in every merge
   label, or `build-citations.py` will report the covered La ¶¶ as absent from the English. First
   instance: I.x part b (`ddc-1-10-b`), En 231–232. Do not invent a third scheme.
+- **A merge whose last member is split: `{¶N–M}` · `{¶M cont.}`** (ratified 2026-09-28, Wilson).
+  The mirror of the form above. Where Sumner joins ¶N to the first part of ¶M and gives the rest
+  of ¶M a paragraph of its own, the merge label covers both and the continuation label follows.
+  First instance: I.xvi part b (`ddc-1-16-b`), En 329–330, `{¶14–15}` · `{¶15 cont.}`.
+- **Labels follow the PRINTED English order; they need not ascend** (ratified 2026-09-28, Wilson).
+  "Monotonic" above is superseded: coverage must be complete, but where Sumner reorders Milton's
+  paragraphs the labels run in the order he printed them. Seen twice, with one mechanism: Sumner
+  reorders the clauses of his English definition and the lemma paragraphs follow his new order.
+  I.xv (`ddc-1-15`) `{¶13} {¶16} {¶15} {¶14} {¶17}`; I.xvi part a (`ddc-1-16-a`)
+  `{¶10} {¶14} {¶11} {¶12} {¶13}`. Neither the reader nor `build-citations.py` depends on label
+  order. Record every reorder in the chunk's `## Notes`.
 - **Expect merges in Book II and splits in Book I.** Book II is merge-dominated — Sumner welds
   Milton's short proof-text paragraphs together. Book I's opening chapters are split-dominated —
   Milton's prose there is long and argumentative and Sumner breaks it up (I.ii: 32 La ¶¶ → 37 En,
@@ -241,7 +252,15 @@ far are **textual** — see §5a.
 in II.i–II.iv would have been missed. Those four chapters need a superscript-only re-check of
 their Latin plates before Book II is called complete.
 
-## 5d. An anchor falling INSIDE an italic quotation — deliberately NOT ruled yet
+## 5d. An anchor falling INSIDE an emphasis run — RULED 2026-09-28
+
+**Ruling (Wilson, 2026-09-28): break the run at the anchor, for italic and small caps alike.** The
+anchor keeps its printed position, no word is altered, and the chunk's `## Notes` records that the
+run was continuous on the page. The second instance was a small-caps one: I.xvi part a, En 319,
+`…PARTLY BY HIS OWN MERITS,**[^s2] **PARTLY BY THE GIFT…` (`ddc-1-16-a`). The history of the
+deferral follows, kept as the record.
+
+### (history) deliberately not ruled until a second instance
 
 **Seen once, at I.ii (2026-08-28). Wilson's decision: wait for a second instance.** This is a
 recorded deferral, not an oversight — do not treat it as an open question needing a ruling, and do

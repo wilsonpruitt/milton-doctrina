@@ -6,7 +6,7 @@ Split at Milton's own seam, *Effectum et finis totius administrationis* (mid-La 
 
 **Checksums carried forward:** **English: I.xvii opens at note 9.** **Latin: the next Latin note is still 4** (I.xv and I.xvi have none).
 
-⛔ **THREE rulings owed (Wilson), all recorded in the chunks' Notes:**
+✅ **All three RULED 2026-09-28 (Wilson), now in CONVENTIONS §4 and §5d:**
 1. **Paragraph reorders** — now TWO instances, I.xv (`{¶16}{¶15}{¶14}`) and I.xvi-a (`{¶10}{¶14}{¶11}{¶12}{¶13}`). Same mechanism both times: Sumner reorders the definition's clauses and the lemma paragraphs follow. Labels are in printed English order; CONVENTIONS §4 says "monotonic". Recommendation: keep printed order and amend §4's wording.
 2. **§5d second instance** — I.xvi-a En 319, note 2's anchor sits INSIDE a small-caps run (`…MERITS,**[^s2] **PARTLY…`), not an italic one. I.ii's break-the-run form was followed.
 3. **Merge ending in a split** — I.xvi-b `{¶14–15}` · `{¶15 cont.}`, the mirror of the ratified `{¶N cont.–M}`.
