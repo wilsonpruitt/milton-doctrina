@@ -124,6 +124,14 @@ SELF_REF_CUES = re.compile(
     r"(?:\b(?:libro|libri|superiore|superiori|supra|infra)\b"
     r"|\blib\.|\bBook\b|\bBk\.)", re.UNICODE)
 
+
+def roman_only(ctx):
+    """Drop italic runs from a context window. The window can open inside a run, which
+    then shows only its closing `*`; an odd count means everything up to it is italic."""
+    if ctx.count("*") % 2:
+        ctx = ctx[ctx.index("*") + 1:]
+    return re.sub(r"\*[^*]*\*", "", ctx)
+
 # ⚠ THE TWO LAYERS NEED DIFFERENT CONTINUATION RULES, and this is measured, not tidy.
 # In the LATIN a chapter continuation is always announced — `et xxx. 5, 6.`, `cap. vi. 4.`,
 # `cum xvii. 12.` — and it has to be, because `illi`, `vi`, `ii`, `ix`, `li`, `ci` are
@@ -276,7 +284,10 @@ def scan_layer(chunk_id, layer, text, books, pat, lookup, vers):
                 # chapter (`Ames, Medull. Theol. lib. ii. c. 13.`). Each of those, indexed
                 # as scripture, becomes a citation to a chapter that does not exist —
                 # 1 John 27, Luke 27, Deuteronomy 100. Refuse them all, not just `cap.`.
-                if SELF_REF_CUES.search(ctx):
+                # Search the ROMAN context only. A cue inside an italic quotation is
+                # Scripture's own word, not a pointer: I.xv's `*supra lignum illud—.* et
+                # iii. 18.` is 1 Pet 2:24 then 3:18, and was being refused as a treatise.
+                if SELF_REF_CUES.search(roman_only(ctx)):
                     qa.append((rid, (ctx[-45:] + raw).strip(),
                                "chapter continuation governed by lib./Book/supra/infra — a "
                                "reference to a treatise, not to scripture. Not indexed."))

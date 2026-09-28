@@ -1,12 +1,12 @@
 # Citation QA — read this, do not merely generate it
 
-8067 records · 62 unclassified · 6 out-of-range · 7 versification · 567 divergence rows, 21 suspect
+8366 records · 62 unclassified · 6 out-of-range · 7 versification · 580 divergence rows, 22 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 4033
-- `en-sumner` — 4034
-- spread: 1 records, 0.0%
+- `la` — 4182
+- `en-sumner` — 4184
+- spread: 2 records, 0.0%
 
 ## Unclassified — never a record with an invented target
 
@@ -92,6 +92,7 @@ The two layers were paired but land too far apart to be one citation. Reported, 
 - `ddc-1-03` ¶9 — la `et xv. 28.` → Acts 15:28 vs en `xv. 18.` → Acts 15:18
 - `ddc-1-09` ¶15-16 — la `Jos. vi. 2.` → Josh 6:2 vs en `Josh. vi. 14.` → Josh 6:14
 - `ddc-1-10-a` ¶7 — la `v. 30` → Exod 16:30 vs en `v. 22—30.` → Exod 16:22,23,24,25,26,27,28,29,30
+- `ddc-1-15` ¶17 — la `Rom. viii. 34.` → Rom 8:34 vs en `Rom. viii. 24.` → Rom 8:24
 - `ddc-2-03` ¶13 — la `cap. xxxi. 2.` → Isa 31:2 vs en `iii. 1.` → Isa 3:1
 - `ddc-2-04-b` ¶9 — la `Psal. lv. 18.` → Ps 55:18 vs en `v. 3` → Ps 55:3
 - `ddc-2-04-c` ¶1 — la `et xxv. 22.` → Ps 25:22 vs en `iii. 8.` → Ps 3:8
@@ -124,9 +125,9 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 
 | class | pairs | what it asserts |
 |---|---|---|
-| `unchecked` | 141 | no division read and no known mechanism. NOT a claim of error |
-| `open-end` | 84 |  |
-| `versification-predicted` | 75 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
+| `unchecked` | 145 | no division read and no known mechanism. NOT a claim of error |
+| `open-end` | 87 |  |
+| `versification-predicted` | 77 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
 | `versification` | 72 | a READ J-T division maps the Latin onto the English exactly |
 | `anomaly` | 7 | a division IS read and does not explain it -- listed above |
 
@@ -163,8 +164,10 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Isa | 44 | -5 | 4 | **yes** |
 | Isa | 44 | -6 | 1 | no |
 | Ps | 5 | +1 | 4 | **yes** |
+| Ps | 40 | +1 | 4 | **yes** |
 | Ps | 49 | +1 | 4 | **yes** |
 | Ps | 51 | +2 | 4 | **yes** |
+| Ps | 68 | +1 | 4 | **yes** |
 | Eccl | 9 | +2 | 3 | **yes** |
 | Eccl | 9 | +3 | 1 | no |
 | Exod | 16 | +1 | 3 | **yes** |
@@ -174,10 +177,8 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Num | 23 | +4 | 3 | **yes** |
 | Ps | 30 | +1 | 3 | **yes** |
 | Ps | 31 | +1 | 3 | **yes** |
-| Ps | 40 | +1 | 3 | **yes** |
 | Ps | 52 | +2 | 3 | **yes** |
 | Ps | 58 | +1 | 3 | **yes** |
-| Ps | 68 | +1 | 3 | **yes** |
 | Ps | 75 | +1 | 3 | **yes** |
 | Ps | 92 | +1 | 3 | **yes** |
 | 1Sam | 7 | -1 | 2 | **yes** |
@@ -227,6 +228,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Deut | 6 | +1 | 1 | no |
 | Deut | 23 | +1 | 1 | no |
 | Deut | 31 | +1 | 1 | no |
+| Eph | 3 | -1 | 1 | no |
 | Exod | 6 | -1 | 1 | no |
 | Exod | 7 | +3 | 1 | no |
 | Exod | 23 | -1 | 1 | no |
@@ -236,6 +238,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Gen | 17 | -3 | 1 | no |
 | Gen | 27 | +2 | 1 | no |
 | Gen | 34 | -1 | 1 | no |
+| Heb | 1 | -1 | 1 | no |
 | Isa | 6 | +1 | 1 | no |
 | Isa | 11 | -1 | 1 | no |
 | Isa | 22 | -1 | 1 | no |
@@ -282,6 +285,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Ps | 133 | +1 | 1 | no |
 | Rom | 7 | +1 | 1 | no |
 | Rom | 7 | +2 | 1 | no |
+| Rom | 8 | +10 | 1 | no |
 | Rom | 11 | -1 | 1 | no |
 | Rom | 14 | -3 | 1 | no |
 | Zech | 2 | +4 | 1 | no |
@@ -465,6 +469,19 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-14 | ¶31 | `v. 18` | Matt 1:18 | `Matt. i. 18—25.` | Matt 1:18,19,20,21,22,23,24,25 | divergence |
 | ddc-1-14 | ¶32 | `—` | — | `ii. 7, 9.` | Zech 2:7,9 | present in English only |
 | ddc-1-14 | ¶32 | `—` | — | `ii. 6.` | Mic 2:6 | present in English only |
+| ddc-1-15 | ¶3 | `Heb. v. 4, 5, 6.` | Heb 5:4,5,6 | `Heb. v. 4—6.` | Heb 5:4,5,6 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-15 | ¶4 | `Eph. iii. 18, 19.` | Eph 3:18,19 | `Eph. iii. 19.` | Eph 3:19 | divergence |
+| ddc-1-15 | ¶9 | `Heb. i. 1.` | Heb 1:1 | `Heb. i. 2.` | Heb 1:2 | divergence |
+| ddc-1-15 | ¶9 | `Joan. i. 16, 17, 18.` | John 1:16,17,18 | `John i. 16—18.` | John 1:16,17,18 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-15 | ¶15 | `—` | — | `Isai. liii. 10.` | Isa 53:10 | present in English only |
+| ddc-1-15 | ¶15 | `Psal. xl. 7, 8.` | Ps 40:7,8 | `Psal. xl. 6, 7.` | Ps 40:6,7 | divergence |
+| ddc-1-15 | ¶17 | `Rom. viii. 34.` | Rom 8:34 | `Rom. viii. 24.` | Rom 8:24 | divergence |
+| ddc-1-15 | ¶19 | `Eph. i. 20, 21, 22.` | Eph 1:20,21,22 | `Eph. i. 20—22.` | Eph 1:20,21,22 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-15 | ¶21 | `Jer. xxxi. 31, 32, &c.` | Jer 31:31,32 &c. | `Jer. xxxi. 31, 32.` | Jer 31:31,32 | divergence |
+| ddc-1-15 | ¶21 | `Psal. lxviii. 19.` | Ps 68:19 | `Psal. lxviii. 18.` | Ps 68:18 | divergence |
+| ddc-1-15 | ¶21 | `Eph. iv. 8, &c.` | Eph 4:8 &c. | `Eph. iv. 8.` | Eph 4:8 | divergence |
+| ddc-1-15 | ¶23 | `Psal. ii. 9, &c.` | Ps 2:9 &c. | `Psal. ii. 9.` | Ps 2:9 | divergence |
+| ddc-1-15 | ¶23 | `1 Cor. xv. 26, 54, 57.` | 1Cor 15:26,54,57 | `1 Cor. xv. 26, 54—57.` | 1Cor 15:26,54,55,56,57 | divergence |
 | ddc-2-01 | ¶8 | `et xii. 2.` | Prov 12:2 | `xii. 3.` | Prov 12:3 | divergence |
 | ddc-2-01 | ¶9-12 | `et xxiv. 1.` | Prov 24:1 | `xxiv. 7.` | Prov 24:7 | divergence |
 | ddc-2-01 | ¶16 | `1 Cor. ix. 18.` | 1Cor 9:18 | `—` | — | present in Latin only |
