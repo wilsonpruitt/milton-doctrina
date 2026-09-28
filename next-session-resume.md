@@ -1,5 +1,25 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-28, latest) — **I.xvi is COMPLETE in two parts: `ddc-1-16-a` (`62e61a4`) and `ddc-1-16-b` (`8d6a603`). Committed with I.xv (`5665005`); NOTHING pushed or deployed (Wilson, 2026-09-28: hold the push and deploy).**
+
+Split at Milton's own seam, *Effectum et finis totius administrationis* (mid-La 225 / head of En 322). Part a: humiliation and exaltation, 18 La ¶¶ → 16 labels, notes `1–5`. Part b: satisfaction, conformation, purgatory, 16 → 16, notes `6·7·8`.
+
+**Checksums carried forward:** **English: I.xvii opens at note 9.** **Latin: the next Latin note is still 4** (I.xv and I.xvi have none).
+
+⛔ **THREE rulings owed (Wilson), all recorded in the chunks' Notes:**
+1. **Paragraph reorders** — now TWO instances, I.xv (`{¶16}{¶15}{¶14}`) and I.xvi-a (`{¶10}{¶14}{¶11}{¶12}{¶13}`). Same mechanism both times: Sumner reorders the definition's clauses and the lemma paragraphs follow. Labels are in printed English order; CONVENTIONS §4 says "monotonic". Recommendation: keep printed order and amend §4's wording.
+2. **§5d second instance** — I.xvi-a En 319, note 2's anchor sits INSIDE a small-caps run (`…MERITS,**[^s2] **PARTLY…`), not an italic one. I.ii's break-the-run form was followed.
+3. **Merge ending in a split** — I.xvi-b `{¶14–15}` · `{¶15 cont.}`, the mirror of the ratified `{¶N cont.–M}`.
+
+
+★ **`build-citations.py` fixed twice this session**, each with a corpus-wide diff showing only intended changes: (a) self-reference cues (`supra`/`infra`) only in roman context (3 I.xv records recovered); (b) `cap. v.` / `chap. v.` / `ch. v.` read as chapter 5, except after *eodem* (9 records corrected in 6 chunks: Gen 5:3, John 5:11, Dan 5:17 and 5:29, Acts 5:30–31).
+
+⬜ **NEXT: I.xvii *De Renovatione; ubi et de Vocatione*** — La 234–241 (8 pp, one chunk) / En 332–341. Run `./tools/prep-chapter.sh 1 17` and fetch the second copies to `raw/second/` first. ⚠ The EN crop-plate fractions run slightly low against the 200 dpi plate on these pages; widen the band by ~0.01 or check the first crop before trusting a miss.
+
+⬜ `script-check.html` regenerated (Greek 460 / 275 distinct), not republished.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-28, latest) — **`ddc-1-15` (I.xv, *De Officio Mediatorio*) is COMPLETE and COMMITTED (`5665005`). NOT pushed or deployed.**
 
 25 La ¶¶ → 25 En labels. English notes `6·7·8·9`, all Milton's poetry. No Latin apparatus. Details are in the chunk's `## Notes`.
