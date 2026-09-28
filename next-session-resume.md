@@ -1,5 +1,21 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-28, latest) — **`ddc-1-15` (I.xv, *De Officio Mediatorio*) is COMPLETE and COMMITTED (`5665005`). NOT pushed or deployed.**
+
+25 La ¶¶ → 25 En labels. English notes `6·7·8·9`, all Milton's poetry. No Latin apparatus. Details are in the chunk's `## Notes`.
+
+**Checksums carried forward:** **English: I.xvi opens at note 1** (I.xv closed at 9). **Latin: the next Latin note is still 4** (I.xv has none).
+
+⛔ **RULING OWED (Wilson): the corpus's first paragraph REORDER.** Sumner runs the priestly lemmas `{¶16} {¶15} {¶14}` (following his reworded definition), so the En labels are not monotonic, against CONVENTIONS §4's wording. Coverage is complete. Transcribed in printed order; neither the reader nor `build-citations.py` depends on label order. Choose: keep printed order and amend §4's wording, or something else.
+
+★ **`build-citations.py` fixed:** self-reference cues (`supra`/`infra`/`lib.`) are now searched in roman context only. I.xv's quoted *supra lignum* had suppressed three Latin scripture records; a corpus-wide diff shows exactly those three recovered and nothing else changed.
+
+⬜ **NEXT: I.xvi *De Redemptionis Administratione*** — La 221–233 (13 pp, **one over §7's 12-page threshold**, so look for a lemma seam: likely *STATUS HUMILIS* / exaltation) / En 316–331. Run `./tools/prep-chapter.sh 1 16` and fetch the second copies to `raw/second/` first.
+
+⬜ `script-check.html` regenerated (Greek 441 / 266 distinct), not republished.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-26, latest) — **`ddc-1-14` (I.xiv, *De Hominis Restitutione et Christo Redemptore*) is COMPLETE, PUSHED and DEPLOYED 2026-09-26 (live at milton.wrootpress.com/browse/1/14).**
 
 32 La ¶¶ → 31 En labels (one merge, `{¶18–19}`). English notes `7·8·9·1·2·3·4·5`, one wrap. Two Latin notes, `2` and `3`, both textual (`uncertain`) and ledgered. Details are in the chunk's `## Notes`.
