@@ -209,3 +209,7 @@ Same recipe (`dpl_8cPxUiBkzTNFQPUQmBnFQL9nS2Rj`), 100 overrides, 27 sibling pair
 ## Deployed 2026-09-26 — I.xiv
 
 Same recipe (`dpl_BBgjqCxyt5NfWiGrSBVZ83S3D1K9`), **101 overrides** (100 + `/browse/1/14`), 28 sibling pairs. The export is still at 2026-09-18, for the same reason as above. Output was captured to a file, so the deploy ran once. Verified live: `/browse/1/14` plus its `.json` and `.plain.txt` return 200, and the page carries the Greek (`Θεάνθρωπος`, `hypostaseωs`) and both Latin notes. The visible text has zero raw `[^` or `<!--`; the only hits are inside the embedded page data, as on 1/13. `/browse/1/13`, robots, sitemap and export return 200, and an unknown path returns 404.
+
+## Deployed 2026-09-28 — I.xv, I.xvi (a, b), three CONVENTIONS rulings, two citation-tool fixes
+
+Same recipe (`dpl_9k1Pf3QGFaDbUGrbw6NzpufFKcdd`), **103 overrides** (101 + `/browse/1/15`, `/browse/1/16`), 30 sibling pairs. `build-export.mjs` skipped as before; the export stays at 2026-09-18. Output captured to a file; the deploy ran once. Verified live: `/browse/1/15` and `/1/16`, their `.json` (parses) and `/1/16.plain.txt` return 200; both parts of I.xvi render on one page (part a's Ubiquitarian note and part b's Warburton note both present) with the Greek (`ΘΕΑΝΘΡΩΠΟΣ`, `λύτρον ἀντὶ πολλῶν`, `ἐλυτρώθητε`; I.xv `μεσίτου`, `θεάνθρωπος`). Zero raw `[^` or `<!--` in the visible text of either page. `/browse/1/14`, robots, sitemap, export and `/scripture/acts` return 200; an unknown path returns 404.

@@ -1,6 +1,6 @@
 # Next session — resume here
 
-## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-28, latest) — **I.xvi is COMPLETE in two parts: `ddc-1-16-a` (`62e61a4`) and `ddc-1-16-b` (`8d6a603`). Committed with I.xv (`5665005`); NOTHING pushed or deployed (Wilson, 2026-09-28: hold the push and deploy).**
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-28, latest) — **I.xvi is COMPLETE in two parts: `ddc-1-16-a` (`62e61a4`) and `ddc-1-16-b` (`8d6a603`). Committed with I.xv (`5665005`). ✅ **PUSHED and DEPLOYED 2026-09-28** (`dpl_9k1Pf3QG…`), live at milton.wrootpress.com/browse/1/15 and /1/16.**
 
 Split at Milton's own seam, *Effectum et finis totius administrationis* (mid-La 225 / head of En 322). Part a: humiliation and exaltation, 18 La ¶¶ → 16 labels, notes `1–5`. Part b: satisfaction, conformation, purgatory, 16 → 16, notes `6·7·8`.
 
