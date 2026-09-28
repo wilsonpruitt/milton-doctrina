@@ -182,7 +182,10 @@ def build_scanner(layer, books, vers):
         #    The Latin `et v. N` genuinely IS ambiguous; the English is not, and that
         #    asymmetry is what lets the English settle the Latin below.
         cont = (rf"(?:\b(?P<cue>{CONT_CUES_EN})\s+)?"
-                rf"(?<![&\w])(?!v\.)(?P<cch>{ROMAN_RE})\.(?P<ctail>{tail})")
+                rf"(?<![&\w])(?:(?<=chap\.\s)|(?<=ch\.\s)|(?!v\.))"
+                rf"(?P<cch>{ROMAN_RE})\.(?P<ctail>{tail})")
+        # ...unless `chap.`/`ch.` stands in front of it: `chap. v. 3.` (I.ii, En) names
+        # chapter 5 by its own cue. A BARE `v. N` after a different chapter stays verse.
     pat = re.compile(
         # 1. SINGLE-CHAPTER BOOKS FIRST, because their citations carry no chapter and
         #    branch 2 would read the verse as one. Both forms occur and they differ by
@@ -307,7 +310,17 @@ def scan_layer(chunk_id, layer, text, books, pat, lookup, vers):
                 # six more targets that do not exist — the confidently-wrong failure PLAN
                 # §10 risk 5 names. Form cannot settle it, so it is settled by whether the
                 # target EXISTS, and the record says which way it went and why.
-                if m.group("cch").lower() == "v":
+                if (m.group("cch").lower() == "v"
+                        and (m.group("cue") or "").lower() in ("cap.", "chap.", "ch.")
+                        and not re.search(r"\beodem\s*$", ctx)):
+                    # `cap. v.` names a chapter by its own cue, so `v` is the roman 5 and
+                    # nothing is ambiguous. I.xvi-a's `et cap. v. 30, 31.` is Acts 5:30–31;
+                    # the range check below cannot see that, since Acts 2:30 exists too.
+                    # EXCEPT `eodem cap. v. 10.` ("the same chapter, verse 10", II.xiv,
+                    # Deut 24:10), where `cap.` is the chapter just cited and `v.` is verse.
+                    chapter, carried_from = 5, recs[-1]["id"] if recs else ""
+                    cls, res = f"— CH {kind}", "cap-v-read-as-chapter"
+                elif m.group("cch").lower() == "v":
                     chapter_reading_ok = chapter_exists(book, 5, verses, vers)
                     verse_reading_ok = chapter is not None and chapter_exists(book, chapter, verses, vers)
                     if verse_reading_ok and not chapter_reading_ok:

@@ -1,12 +1,12 @@
 # Citation QA — read this, do not merely generate it
 
-8366 records · 62 unclassified · 6 out-of-range · 7 versification · 580 divergence rows, 22 suspect
+8522 records · 65 unclassified · 6 out-of-range · 7 versification · 595 divergence rows, 25 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 4182
-- `en-sumner` — 4184
-- spread: 2 records, 0.0%
+- `la` — 4261
+- `en-sumner` — 4261
+- spread: 0 records, 0.0%
 
 ## Unclassified — never a record with an invented target
 
@@ -70,6 +70,9 @@
 - `ddc-1-02` `ddc-1-02:en-sumner:{¶22}:15` — `v. 32` → ERR: Deut 6 has 25 verses — 32 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-03` `ddc-1-03:la:{¶11}:11` — `v. 11` → ERR: Jonah 3 has 10 verses — 11 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-10-b` `ddc-1-10-b:en-sumner:{¶13}:2` — `i. 8.` → ERR: Ps 1 has 6 verses — 8 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
+- `ddc-1-16-a` `ddc-1-16-a:en-sumner:{¶5}:14` — `l. 6.` → 2Cor has 13 chapters — chapter 50 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
+- `ddc-1-16-a` `ddc-1-16-a:en-sumner:{¶5}:15` — `xlix. 6, 7.` → 2Cor has 13 chapters — chapter 49 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
+- `ddc-1-16-a` `ddc-1-16-a:en-sumner:{¶5}:16` — `liii. 2, 3.` → 2Cor has 13 chapters — chapter 53 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-2-04-c` `ddc-2-04-c:la:{¶24}:14` — `et xxxvi. 37.` → 1Cor has 16 chapters — chapter 36 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-2-13` `ddc-2-13:la:{¶47}:6` — `et xi. 32.` → ERR: Prov 11 has 31 verses — 32 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 
@@ -90,9 +93,11 @@ The two layers were paired but land too far apart to be one citation. Reported, 
 - `ddc-1-02` ¶27 — la `v. 17` → Ps 25:17 vs en `v. 17` → Ps 103:17
 - `ddc-1-03` ¶7 — la `Act. xv. 28.` → Acts 15:28 vs en `Acts xv. 18.` → Acts 15:18
 - `ddc-1-03` ¶9 — la `et xv. 28.` → Acts 15:28 vs en `xv. 18.` → Acts 15:18
+- `ddc-1-07` ¶30 — la `cap. v. 3.` → Gen 5:3 vs en `v. 3` → Gen 2:3
 - `ddc-1-09` ¶15-16 — la `Jos. vi. 2.` → Josh 6:2 vs en `Josh. vi. 14.` → Josh 6:14
 - `ddc-1-10-a` ¶7 — la `v. 30` → Exod 16:30 vs en `v. 22—30.` → Exod 16:22,23,24,25,26,27,28,29,30
 - `ddc-1-15` ¶17 — la `Rom. viii. 34.` → Rom 8:34 vs en `Rom. viii. 24.` → Rom 8:24
+- `ddc-1-16-a` ¶14 — la `cap. v. 30, 31.` → Acts 5:30,31 vs en `x. 40.` → Acts 10:40
 - `ddc-2-03` ¶13 — la `cap. xxxi. 2.` → Isa 31:2 vs en `iii. 1.` → Isa 3:1
 - `ddc-2-04-b` ¶9 — la `Psal. lv. 18.` → Ps 55:18 vs en `v. 3` → Ps 55:3
 - `ddc-2-04-c` ¶1 — la `et xxv. 22.` → Ps 25:22 vs en `iii. 8.` → Ps 3:8
@@ -101,6 +106,7 @@ The two layers were paired but land too far apart to be one citation. Reported, 
 - `ddc-2-04-c` ¶16 — la `1 Reg. xxi. 27, 28, 29.` → 1Kgs 21:27,28,29 vs en `1 Kings xxvii. 29.` → 1Kgs 27:29
 - `ddc-2-05` ¶3 — la `Psal. ix. 5, 11.` → Ps 9:5,11 vs en `Psal. xcv. 11.` → Ps 95:11
 - `ddc-2-07` ¶4 — la `cap. xvi.` → Exod 16 vs en `xxxi. 14.` → Exod 31:14
+- `ddc-2-07` ¶10 — la `cap. v. 11.` → John 5:11 vs en `v. 11` → John 7:11
 - `ddc-2-12` ¶12 — la `et cxiv. 2.` → Ps 114:2 vs en `xciv. 2.` → Ps 94:2
 - `ddc-2-17` ¶3 — la `v. 10` → Prov 31:10 vs en `xxxi. 1—10.` → Prov 31:1,2,3,4,5,6,7,8,9,10
 - `ddc-2-17` ¶7 — la `et x. 2, 3.` → Eccl 10:2,3 vs en `v. 16, 17.` → Eccl 10:16,17
@@ -125,7 +131,7 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 
 | class | pairs | what it asserts |
 |---|---|---|
-| `unchecked` | 145 | no division read and no known mechanism. NOT a claim of error |
+| `unchecked` | 150 | no division read and no known mechanism. NOT a claim of error |
 | `open-end` | 87 |  |
 | `versification-predicted` | 77 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
 | `versification` | 72 | a READ J-T division maps the Latin onto the English exactly |
@@ -356,6 +362,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-07 | ¶25 | `Psal. xxxiii. 6, 9.` | Ps 33:6,9 | `Psal. xxxiii. 6—9.` | Ps 33:6,7,8,9 | divergence |
 | ddc-1-07 | ¶27 | `Levit. v. 2.` | Lev 5:2 | `Lev. v. 2, &c.` | Lev 5:2 &c. | divergence |
 | ddc-1-07 | ¶27 | `Psal. vii. 6.` | Ps 7:6 | `Psal. vii. 5.` | Ps 7:5 | divergence |
+| ddc-1-07 | ¶30 | `cap. v. 3.` | Gen 5:3 | `v. 3` | Gen 2:3 | divergence |
 | ddc-1-07 | ¶31 | `Psal. li. 7.` | Ps 51:7 | `Psal. li. 5.` | Ps 51:5 | divergence |
 | ddc-1-07 | ¶33 | `Isa. lvii. 20.` | Isa 57:20 | `Isai. lvii. 16.` | Isa 57:16 | divergence |
 | ddc-1-07 | ¶33 | `Job. x. 8, 9, 10.` | Job 10:8,9,10 | `Job x. 8—10.` | Job 10:8,9,10 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
@@ -482,6 +489,19 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-15 | ¶21 | `Eph. iv. 8, &c.` | Eph 4:8 &c. | `Eph. iv. 8.` | Eph 4:8 | divergence |
 | ddc-1-15 | ¶23 | `Psal. ii. 9, &c.` | Ps 2:9 &c. | `Psal. ii. 9.` | Ps 2:9 | divergence |
 | ddc-1-15 | ¶23 | `1 Cor. xv. 26, 54, 57.` | 1Cor 15:26,54,57 | `1 Cor. xv. 26, 54—57.` | 1Cor 15:26,54,55,56,57 | divergence |
+| ddc-1-16-a | ¶4 | `Philipp. ii. 6, 7, 8.` | Phil 2:6,7,8 | `Philipp. ii. 6—8.` | Phil 2:6,7,8 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-16-a | ¶5 | `Gal. v.` | Gal 5 | `Gal. v. 3.` | Gal 5:3 | divergence |
+| ddc-1-16-a | ¶5 | `—` | — | `l. 6.` | 2Cor 50:6 | present in English only |
+| ddc-1-16-a | ¶5 | `—` | — | `xlix. 6, 7.` | 2Cor 49:6,7 | present in English only |
+| ddc-1-16-a | ¶5 | `—` | — | `liii. 2, 3.` | 2Cor 53:2,3 | present in English only |
+| ddc-1-16-a | ¶5 | `Isa. l. 6.` | Isa 50:6 | `—` | — | present in Latin only |
+| ddc-1-16-a | ¶5 | `cap. xlix. 6, 7.` | Isa 49:6,7 | `—` | — | present in Latin only |
+| ddc-1-16-a | ¶5 | `et liii. 2, 3.` | Isa 53:2,3 | `—` | — | present in Latin only |
+| ddc-1-16-a | ¶6 | `Philipp. ii. 6, 7, 8.` | Phil 2:6,7,8 | `Philipp. ii. 6—8.` | Phil 2:6,7,8 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-16-a | ¶14 | `—` | — | `v. 30, 31.` | Acts 2:30,31 | present in English only |
+| ddc-1-16-a | ¶14 | `cap. v. 30, 31.` | Acts 5:30,31 | `x. 40.` | Acts 10:40 | divergence |
+| ddc-1-16-a | ¶14 | `et xiii. 32, 33, 34.` | Acts 13:32,33,34 | `and xiii. 32—34.` | Acts 13:32,33,34 | same target, syntax differs (— CH V-LIST / — CH V-RANGE) |
+| ddc-1-16-a | ¶15-16 | `Eph. iv. 8, 10.` | Eph 4:8,10 | `Eph. iv. 8—10.` | Eph 4:8,9,10 | divergence |
 | ddc-2-01 | ¶8 | `et xii. 2.` | Prov 12:2 | `xii. 3.` | Prov 12:3 | divergence |
 | ddc-2-01 | ¶9-12 | `et xxiv. 1.` | Prov 24:1 | `xxiv. 7.` | Prov 24:7 | divergence |
 | ddc-2-01 | ¶16 | `1 Cor. ix. 18.` | 1Cor 9:18 | `—` | — | present in Latin only |
@@ -635,6 +655,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-2-07 | ¶4 | `Nehem. x. 32.` | Neh 10:32 | `Nehem. x. 31.` | Neh 10:31 | divergence |
 | ddc-2-07 | ¶5 | `et xxxi. 15, 17.` | Exod 31:15,17 | `xxxi. 15—17.` | Exod 31:15,16,17 | divergence |
 | ddc-2-07 | ¶5 | `Deut. xiv. 1.` | Deut 14:1 | `Deut. xiv. 1, &c.` | Deut 14:1 &c. | divergence |
+| ddc-2-07 | ¶10 | `cap. v. 11.` | John 5:11 | `v. 11` | John 7:11 | divergence |
 | ddc-2-07 | ¶15 | `Heb. iv. 9, 10, 11.` | Heb 4:9,10,11 | `Heb. iv. 9—11.` | Heb 4:9,10,11 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
 | ddc-2-08 | ¶5-6 | `1 Cor. xiii.` | 1Cor 13 | `—` | — | present in Latin only |
 | ddc-2-08 | ¶18 | `Matt. xvi. 23, &c.` | Matt 16:23 &c. | `Matt. xvi. 23.` | Matt 16:23 | divergence |
