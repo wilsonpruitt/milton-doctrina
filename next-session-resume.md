@@ -1,6 +1,6 @@
 # Next session — resume here
 
-## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxii is COMPLETE and COMMITTED (`118c92c`). I.xvii–I.xxii (six chapters) are committed and NOT pushed or deployed (Wilson: wait on push and deploy).**
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxii is COMPLETE and COMMITTED (`118c92c`). I.xvii–I.xxii are ✅ PUSHED and DEPLOYED 2026-09-29 (`dpl_DGCuu9VEB8m2LcSyUknxj2MH9ZFS`), live at milton.wrootpress.com/browse/1/17 … /1/22.**
 
 **I.xxii** *De Justificatione*: 21 → 21, strict 1:1. English note **2** (*PL* XII. 408); the checksum held after four note-less chapters. **Latin `[^la5]`** (La 274, `uncertain`, ledgered): Sumner proposes *declaret*, and the English follows it. The English renders *SENTENTIA DEI GRATUITA* as *THE GRATUITOUS PURPOSE OF GOD* and prints `xi. 1.` for the Latin's *ex v. 1.* (Rom 4:1). **One content-filter block** on En 374 (*sola fide*), cleared by one-paragraph appends.
 
@@ -8,7 +8,7 @@
 
 ⬜ **NEXT: I.xxiii *De Adoptione*** — La 276–278 (3 pp) / En 379–381. Short: pair it with **I.xxiv** (La 279+ / En 382+) in one session. Run `./tools/prep-chapter.sh 1 23` and fetch second copies. **Write the English one paragraph per append from the start** (§10); this stretch of Book I is doctrinally dense.
 
-⬜ Jer 3 constant +5 (I.xix) still wants a `jt-page.py` look. ⬜ `script-check.html` regenerated, not republished. ⬜ Push and deploy are Wilson's call.
+⬜ Jer 3 constant +5 (I.xix) still wants a `jt-page.py` look. ⬜ `script-check.html` regenerated, not republished. ✅ The export was rebuilt locally in this deploy (36 chapters), but the R2 download was NOT re-uploaded.
 
 ---
 
