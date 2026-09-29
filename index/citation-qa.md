@@ -1,12 +1,12 @@
 # Citation QA — read this, do not merely generate it
 
-10039 records · 78 unclassified · 6 out-of-range · 7 versification · 666 divergence rows, 30 suspect
+10118 records · 78 unclassified · 6 out-of-range · 7 versification · 670 divergence rows, 30 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 5020
-- `en-sumner` — 5019
-- spread: 1 records, 0.0%
+- `la` — 5060
+- `en-sumner` — 5058
+- spread: 2 records, 0.0%
 
 ## Unclassified — never a record with an invented target
 
@@ -150,7 +150,7 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 
 | class | pairs | what it asserts |
 |---|---|---|
-| `unchecked` | 174 | no division read and no known mechanism. NOT a claim of error |
+| `unchecked` | 176 | no division read and no known mechanism. NOT a claim of error |
 | `open-end` | 90 |  |
 | `versification-predicted` | 87 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
 | `versification` | 73 | a READ J-T division maps the Latin onto the English exactly |
@@ -245,6 +245,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | 2Cor | 5 | +1 | 1 | no |
 | 2Cor | 5 | -2 | 1 | no |
 | 2Cor | 6 | -1 | 1 | no |
+| 2Cor | 13 | -1 | 1 | no |
 | 2Kgs | 7 | -2 | 1 | no |
 | 2Kgs | 12 | +1 | 1 | no |
 | 2Kgs | 24 | +2 | 1 | no |
@@ -609,6 +610,10 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-23 | ¶6 | `Jos. v. 4.` | Josh 5:4 | `Josh. v. 5.` | Josh 5:5 | divergence |
 | ddc-1-23 | ¶6 | `—` | — | `Matt. xii. 4.` | Matt 12:4 | present in English only |
 | ddc-1-23 | ¶6 | `Matt. xii. 4.` | Matt 12:4 | `—` | — | present in Latin only |
+| ddc-1-24 | ¶3 | `cap. xvii. 21, 22, 23.` | John 17:21,22,23 | `xvii. 21—23.` | John 17:21,22,23 | same target, syntax differs (— CH V-LIST / — CH V-RANGE) |
+| ddc-1-24 | ¶4 | `2 Cor. xiii. 13.` | 2Cor 13:13 | `2 Cor. xiii. 14.` | 2Cor 13:14 | divergence |
+| ddc-1-24 | ¶7 | `Eph. ii.` | Eph 2 | `—` | — | present in Latin only |
+| ddc-1-24 | ¶7 | `v. 19` | Eph 2:19 | `Eph. ii. 19—22.` | Eph 2:19,20,21,22 | divergence |
 | ddc-2-01 | ¶8 | `et xii. 2.` | Prov 12:2 | `xii. 3.` | Prov 12:3 | divergence |
 | ddc-2-01 | ¶9-12 | `et xxiv. 1.` | Prov 24:1 | `xxiv. 7.` | Prov 24:7 | divergence |
 | ddc-2-01 | ¶16 | `1 Cor. ix. 18.` | 1Cor 9:18 | `—` | — | present in Latin only |
