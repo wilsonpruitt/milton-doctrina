@@ -103,6 +103,10 @@ both found by the sweep; chapters II.x–II.xvii added none, all their page feet
 8. `cd site && node scripts/build-content.mjs` to confirm the chunk parses.
 9. Update `next-session-resume.md`.
 
+## 2b. ⚠ A comma in our copies is not evidence — check the second copy (added 2026-09-29)
+
+**Both working scans spread a full stop into a comma-shaped mark**, at the baseline and at 600–700 dpi, often enough to fool a careful reading. In one session, six "comma for full stop" anomalies recorded off our copies across I.xvii–I.xx all proved to be full stops (or no mark at all) in the second copies (`bwb_T5-ARK-705`, `treatiseonchrist00miltrich`). Only `Act. v: 31` (La 247), the same in both copies, survived. **Before recording any punctuation anomaly, open the second copy.** A higher dpi on the same scan does not help; the spread is in the scan, not the resolution.
+
 ## 2a. ✅ The open convention questions are CLOSED — 2026-08-27
 
 Splits (`{¶35 cont.}`), raised ordinals (inline `1m. 2do.`), the mid-word page break (soft hyphen

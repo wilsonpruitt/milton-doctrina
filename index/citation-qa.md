@@ -1,12 +1,12 @@
 # Citation QA — read this, do not merely generate it
 
-9363 records · 74 unclassified · 6 out-of-range · 7 versification · 642 divergence rows, 27 suspect
+9364 records · 73 unclassified · 6 out-of-range · 7 versification · 640 divergence rows, 27 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
 - `la` — 4683
-- `en-sumner` — 4680
-- spread: 3 records, 0.1%
+- `en-sumner` — 4681
+- spread: 2 records, 0.0%
 
 ## Unclassified — never a record with an invented target
 
@@ -81,7 +81,6 @@
 - `ddc-1-16-b` `ddc-1-16-b:en-sumner:{¶10}:3` — `v. 19` → ERR: 2Cor 2 has 17 verses — 19 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-16-b` `ddc-1-16-b:en-sumner:{¶14–15}:11` — `xxii.` → 2Thess has 3 chapters — chapter 22 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-18` `ddc-1-18:en-sumner:{¶14}:1` — `v. 25, 26.` → ERR: Eph 2 has 22 verses — 25, 26 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
-- `ddc-1-19` `ddc-1-19:en-sumner:{¶12–13}:25` — `xiv. 22.` → ERR: Ps 14 has 7 verses — 22 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-2-04-c` `ddc-2-04-c:la:{¶24}:14` — `et xxxvi. 37.` → 1Cor has 16 chapters — chapter 36 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-2-13` `ddc-2-13:la:{¶47}:6` — `et xi. 32.` → ERR: Prov 11 has 31 verses — 32 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 
@@ -569,8 +568,6 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-19 | ¶12-13 | `2 Cor. i. 8, 9, 10.` | 2Cor 1:8,9,10 | `2 Cor. i. 8—10.` | 2Cor 1:8,9,10 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
 | ddc-1-19 | ¶12-13 | `Psal. xxxiv. 19, &c.` | Ps 34:19 &c. | `Psal. xxxiv. 18, 19.` | Ps 34:18,19 | divergence |
 | ddc-1-19 | ¶12-13 | `et lxxi. 20, 21.` | Ps 71:20,21 | `lxxi. 20.` | Ps 71:20 | divergence |
-| ddc-1-19 | ¶12-13 | `—` | — | `xiv. 22.` | Ps 14:22 | present in English only |
-| ddc-1-19 | ¶12-13 | `Act. xiv. 22.` | Acts 14:22 | `—` | — | present in Latin only |
 | ddc-1-19 | ¶14 | `Psal. iii. 3.` | Ps 3:3 | `Psal. iii. 2.` | Ps 3:2 | divergence |
 | ddc-1-19 | ¶14 | `et xli. 9.` | Ps 41:9 | `xli. 8.` | Ps 41:8 | divergence |
 | ddc-2-01 | ¶8 | `et xii. 2.` | Prov 12:2 | `xii. 3.` | Prov 12:3 | divergence |
