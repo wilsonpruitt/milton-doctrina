@@ -1,5 +1,19 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **`ddc-1-17` (I.xvii, *De Renovatione; ubi et de Vocatione*) is COMPLETE and COMMITTED (`484f913`). NOT pushed or deployed.**
+
+36 La ¶¶ → 37 En labels (one split, `{¶4 cont.}`; no merge, no reorder). English notes `9·1`, the wrap inside the chapter. No Latin apparatus (8 feet read). Details are in the chunk's `## Notes`.
+
+**Checksums carried forward:** **English: I.xviii opens at note 2.** **Latin: the next Latin note is still 4.**
+
+★★ **J–T Ezekiel 3 remodelled.** Leaf 656 carries TWO `CAPUT III` rubrics: the received one continues ch. II's count (11–25 = KJV 3:1–15), and J–T's own restarts at 1 = KJV 3:16 (the Amos 2 mechanism). That makes I.xvii's La `ii. … v. 17, 21 … iii. 12` → En `iii. 7, 11, 27` exact. `jt-divisions.json` now has separate Ezek 2 and Ezek 3 entries, `jt_map.py` self-test is 18/18, and M4-RUNBOOK's Ezekiel section is amended. The corpus-wide `build-citations.py --all` diff changed only I.xvii's pair (`d218`), which the tool still calls `anomaly` because Sumner folded two Latin citations into one. It is explained in the Notes.
+
+⬜ **NEXT: I.xviii *De Regeneratione*** — La 242–246 (5 pp) / En 342–346. Short, so it can share a session with **I.xix** (La 247+). Run `./tools/prep-chapter.sh 1 18` and fetch the second copies to `raw/second/` first (La leaf = printed+17 in `bwb_T5-ARK-705`; En leaf = printed+51 in `treatiseonchrist00miltrich`). ⚠ `crop-plate.sh` fractions ran 0.01–0.02 off on the En plates again; derive them from pixel y ÷ plate height and pad the band.
+
+⬜ `script-check.html` regenerated (Greek 463 / 277 distinct), not republished. ⬜ Push and deploy are Wilson's call.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-28, latest) — **I.xvi is COMPLETE in two parts: `ddc-1-16-a` (`62e61a4`) and `ddc-1-16-b` (`8d6a603`). Committed with I.xv (`5665005`). ✅ **PUSHED and DEPLOYED 2026-09-28** (`dpl_9k1Pf3QG…`), live at milton.wrootpress.com/browse/1/15 and /1/16.**
 
 Split at Milton's own seam, *Effectum et finis totius administrationis* (mid-La 225 / head of En 322). Part a: humiliation and exaltation, 18 La ¶¶ → 16 labels, notes `1–5`. Part b: satisfaction, conformation, purgatory, 16 → 16, notes `6·7·8`.
