@@ -1,5 +1,19 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xx is COMPLETE and COMMITTED (`b7f1c3f`). I.xvii–I.xx are all committed and NOT pushed or deployed (Wilson: wait on push and deploy).**
+
+**I.xx** *De Fide Salvifica*: 11 → 11, strict 1:1, no notes in either volume. Two Latin citation errors silently corrected in the English (`Heb. xi. 3`→`31`, `Marc. i. 25`→`Mark i. 15`). `πεποίθεσις` (ε for η) in BOTH volumes, left for the script-check pass. English word error `possession` for *profession* (Heb 10:23). ★ The English adds *the sole merits of Christ* to Milton's sentence on salvation without knowledge of Christ.
+
+**Checksums carried forward:** **English: I.xxi opens at note 2.** **Latin: the next Latin label is 5.**
+
+⚠⚠ **NEW STANDING RULE, M3-RUNBOOK §2b: a comma in our scans is not evidence.** Both working copies spread full stops into comma shapes. Five comma "anomalies" in I.xvii–I.xix were withdrawn (`2e9deb6`). Check the second copy before recording any punctuation anomaly.
+
+⬜ **NEXT: I.xxi *De Insitione in Christum, ejusque Effectis*** — La 259–266 (8 pp) / En 360–368; opening plate-confirmed on both. Run `./tools/prep-chapter.sh 1 21` and fetch second copies (La leaf = printed+17, `bwb_T5-ARK-705`; En leaf = printed+51, `treatiseonchrist00miltrich`).
+
+⬜ Jer 3 constant +5 (I.xix) still wants a `jt-page.py` look. ⬜ `script-check.html` regenerated (Greek 467 / 279), not republished. ⬜ Push and deploy are Wilson's call.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xvii, I.xviii and I.xix are COMPLETE and COMMITTED (`484f913`, `5f8a68c`, `b3cc608`). NOT pushed or deployed (Wilson, 2026-09-29: wait on push and deploy).**
 
 - **I.xviii** *De Regeneratione*: 15 → 15, strict 1:1, no notes in either volume. En 344 `2 Cor. 5. 17.` (arabic chapter).
