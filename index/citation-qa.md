@@ -1,20 +1,16 @@
 # Citation QA — read this, do not merely generate it
 
-147 records · 5 unclassified · 0 out-of-range · 0 versification · 5 divergence rows, 1 suspect
+260 records · 0 unclassified · 0 out-of-range · 0 versification · 11 divergence rows, 2 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 74
-- `en-sumner` — 73
-- spread: 1 records, 1.4%
+- `la` — 130
+- `en-sumner` — 130
+- spread: 0 records, 0.0%
 
 ## Unclassified — never a record with an invented target
 
-- `ddc-1-28-a` `ddc-1-28-a:la:{¶21}:6` — `. 50. De administratione baptismi vide infra cap. xxix.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
-- `ddc-1-28-a` `ddc-1-28-a:la:{¶21}:7` — `de infra cap. xxix. de ecclesia visibili, et cap. xxxi.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
-- `ddc-1-28-a` `ddc-1-28-a:en-sumner:{¶12}:0` — `ts, nor required of them. See Book II. Chap. iv.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
-- `ddc-1-28-a` `ddc-1-28-a:en-sumner:{¶21}:6` — `xxix.` → Luke has 24 chapters — chapter 29 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
-- `ddc-1-28-a` `ddc-1-28-a:en-sumner:{¶21}:7` — `xxxi.` → Luke has 24 chapters — chapter 31 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
+_none_
 
 ## Targets that do not exist
 
@@ -24,7 +20,8 @@ _none_
 
 The two layers were paired but land too far apart to be one citation. Reported, never merged: each side keeps its own target, so the index cannot file one layer's verse under the other's. Some of these are real findings about the 1825 text and some are alignment slips, and telling them apart needs the paragraph in view.
 
-- `ddc-1-28-a` ¶14 — la `v. 3, 4.` → 1Cor 10:3,4 vs en `iii. 4.` → 1Cor 3:4
+- `ddc-1-29` ¶9-11 — la `Judæ 10` → Jude 1:10 vs en `Jude 20` → Jude 1:20
+- `ddc-1-29` ¶29 — la `v. 23, 45.` → Acts 10:23,45 vs en `v. 45` → Acts 10:45
 
 ## ★ Divergences the J–T map does NOT explain — READ THESE
 
@@ -36,7 +33,8 @@ _none_
 
 | class | pairs | what it asserts |
 |---|---|---|
-| `unchecked` | 1 | no division read and no known mechanism. NOT a claim of error |
+| `unchecked` | 5 | no division read and no known mechanism. NOT a claim of error |
+| `open-end` | 1 |  |
 
 ## Versification, not error (M4-RUNBOOK §6b)
 
@@ -50,13 +48,23 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 
 | book | ch | offset (La − En) | seen | repeating |
 |---|---|---|---|---|
+| 1Pet | 5 | -1 | 1 | no |
+| Acts | 10 | -22 | 1 | no |
+| Jude | 1 | -10 | 1 | no |
+| Mark | 16 | -1 | 1 | no |
 
 ## Divergences between the layers
 
 | chunk | ¶ | Latin | → | English | → | kind |
 |---|---|---|---|---|---|---|
-| ddc-1-28-a | ¶14 | `v. 3, 4.` | 1Cor 10:3,4 | `iii. 4.` | 1Cor 3:4 | divergence |
-| ddc-1-28-a | ¶15 | `v. 41` | Acts 2:41 | `—` | — | present in Latin only |
-| ddc-1-28-a | ¶18 | `et xvi. 31, 32, 33, 34.` | Acts 16:31,32,33,34 | `xvi. 31—34.` | Acts 16:31,32,33,34 | same target, syntax differs (— CH V-LIST / — CH V-RANGE) |
-| ddc-1-28-a | ¶21 | `—` | — | `xxix.` | Luke 29 | present in English only |
-| ddc-1-28-a | ¶21 | `—` | — | `xxxi.` | Luke 31 | present in English only |
+| ddc-1-29 | ¶4 | `Marc. xvi. 16, 17, 18.` | Mark 16:16,17,18 | `Mark xvi. 17, 18.` | Mark 16:17,18 | divergence |
+| ddc-1-29 | ¶4 | `Deut. xiii. 1, 2, 3.` | Deut 13:1,2,3 | `Deut. xiii. 1—3.` | Deut 13:1,2,3 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-29 | ¶6-7 | `Deut. xxix. 2, 3, 4.` | Deut 29:2,3,4 | `Deut. xxix. 2—4.` | Deut 29:2,3,4 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-29 | ¶6-7 | `Psal. lxxviii. 11, &c.` | Ps 78:11 &c. | `Psal. lxxviii. 11.` | Ps 78:11 | divergence |
+| ddc-1-29 | ¶9-11 | `Judæ 10` | Jude 1:10 | `Jude 20` | Jude 1:20 | divergence |
+| ddc-1-29 | ¶9-11 | `Matt. xxvi. 33.` | Matt 26:33 | `—` | — | present in Latin only |
+| ddc-1-29 | ¶17 | `Matt. xx. 25, &c.` | Matt 20:25 &c. | `Matt. xx. 25—28.` | Matt 20:25,26,27,28 | divergence |
+| ddc-1-29 | ¶23 | `Eph. iv. 11, 12, 13.` | Eph 4:11,12,13 | `Eph. iv. 11—13.` | Eph 4:11,12,13 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-29 | ¶26-28 | `1 Pet. v. 2, 3.` | 1Pet 5:2,3 | `1 Pet. v. 3.` | 1Pet 5:3 | divergence |
+| ddc-1-29 | ¶29 | `—` | — | `v. 23` | Acts 10:23 | present in English only |
+| ddc-1-29 | ¶29 | `v. 23, 45.` | Acts 10:23,45 | `v. 45` | Acts 10:45 | divergence |
