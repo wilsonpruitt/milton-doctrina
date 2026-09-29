@@ -198,7 +198,10 @@ def build_scanner(layer, books, vers):
         # the ordinary Latin word for "the Jews" becomes a citation to Jude 1 (M4-RUNBOOK
         # §4.3). No citation in either volume sets the book tight against its chapter.
         rf"|(?P<book>{alt})"                                  # 2. book, then chapter
-        rf"\s+(?P<bch>{ROMAN_RE})\.?(?P<btail>{tail})"
+        rf"\s+(?P<bch>{ROMAN_RE})(?![^\W\d_])\.?(?P<btail>{tail})"
+        # ⚠ `(?![^\W\d_])` — the numeral must not run on into a letter. Without it the
+        # English `John verily baptized` (I.xix, En 350) was read as a chapter-only
+        # `John v`, and the next bare `xx. 21.` was then carried to John 20:21 (Acts 20:21).
         rf"|{cont}"                                           # 3. chapter continuation
         rf"|\bv\.\s*(?P<vtail>\d{{1,3}}{tail})"             # 4. verse continuation
     )
