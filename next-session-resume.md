@@ -1,5 +1,16 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxviii part a is COMPLETE and COMMITTED (`4a38789`). Not pushed or deployed.**
+
+- **I.xxviii a** (*De Obsignatione Fœderis Gratiæ Externa*; sacraments, circumcision, passover, baptism): La 315–323 / En 429–440. 26 → 24, one triple merge `{¶2–4}`. En notes **5·6·7·8·9·1·2·3** (checksum held). **Latin `[^la7]`** La 315, textual, ledgered `ms-error` (the MS correction history of *sincero animo proposito*; the page prints a blot + interlined `·mo`, same in the second copy). ★ En `iii. 4.` for La `v. 3, 4.` (1 Cor 10), confirmed. ★ En drops `v. 41` (Acts 2:41). Title on the plate is *Obsignatione*, not `chapters.tsv`'s *Sigillatione*.
+- **Content filter blocked once** in the English; wrote one paragraph per append after that.
+
+**Checksums carried forward:** **English: part b opens at note 4.** **Latin: next label 8.**
+
+⬜ **NEXT: I.xxviii part b** — *CŒNA DOMINICA est* (La 323, mid-page) → La 331 / En 440 (*THE LORD'S SUPPER is*, mid-page) → 450; then plate-confirm `CAP./CHAP. XXIX` on La 331–332 / En 451. **The Mass polemic (La 329–330) — one paragraph per append in BOTH layers from the start.** Plates and second copies (La 316–332, En 430–451) are already in `raw/`.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxvi (`538ed87`) and I.xxvii a/b/c (`2ca8aeb`, `b04e1f7`) are COMPLETE and COMMITTED.** I.xxiii–I.xxvii are ✅ PUSHED and DEPLOYED 2026-09-29 (`dpl_7AWtg3AbkDdzTjcsFgPGNWEj3Ruz`), live at milton.wrootpress.com/browse/1/23 … /1/27.
 
 - **I.xxvi** *De Manifestatione Fœderis Gratiæ*: 17 → 17, strict 1:1. En notes **2·3·4·5**. No Latin note. Latin errors corrected in the English: `Rom. iv. 25`→`15`, `Deut. v. 2`→`iv. 45`.
