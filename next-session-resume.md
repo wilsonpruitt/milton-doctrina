@@ -1,5 +1,17 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxix is COMPLETE and COMMITTED (`2ca38a1`). I.xxviii–I.xxix are NOT pushed or deployed** (Wilson: batch the deploy with the next few chapters).
+
+- **I.xxix** *De Ecclesia Visibili*: La 332–341 / En 451–464. 32 → 24, six merges (`{¶6–7}` `{¶9–11}` `{¶21–22}` `{¶24–25}` `{¶26–28}` `{¶30–31}`). **Fourteen En notes 8·9·1–9·1·2·3**, `-2` anchors for the second 8, 9, 1, 2, 3; seven quote *Hirelings*. ★ Note 3 = Sumner defending Milton's absence from public worship (Newton, Hawkins, Symmons). ★ La `Judæ 10` → En `Jude 20`. No Latin note, no filter blocks.
+
+**Checksums carried forward:** **English: I.xxx opens at note 4.** **Latin: next label 8.**
+
+⬜ **NEXT: I.xxx *De Scriptura Sacra*** — La 342–353 (12 pp, at §7's threshold, one chunk like II.xvii) / En 465–480. Openings plate-confirmed (La 342; En 465 in the second copy). Run `./tools/prep-chapter.sh 1 30` and fetch second copies (La 343+, En 466+).
+
+⬜ Push + deploy I.xxviii–I.xxix (+ whatever follows), Wilson's call. ⬜ `build-citations.py` carry artefacts (ddc-1-28-a/b Notes). ⬜ Jer 3 +5 (I.xix). ⬜ R2 export not refreshed since 2026-09-18.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxviii is COMPLETE and COMMITTED: part a (`4a38789`), part b (`161cdcd`). Not pushed or deployed** (I.xxiii–I.xxvii are live; deploy = Wilson's call, CLI-only).
 
 - **I.xxviii a** (*De Obsignatione Fœderis Gratiæ Externa*: sacraments, circumcision, passover, baptism), La 315–323 / En 429–440. 26 → 24, triple merge `{¶2–4}`. En notes **5·6·7·8·9·1·2·3**. **Latin `[^la7]`** textual, ledgered `ms-error` (MS correction history of *sincero animo proposito*; the page prints a blot + interlined `·mo`, the same in the second copy). ★ En `iii. 4.` for La `v. 3, 4.` ★ En drops `v. 41`.
