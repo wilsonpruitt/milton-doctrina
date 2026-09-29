@@ -1,5 +1,17 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxv is COMPLETE and COMMITTED (`3280040`). NOT pushed or deployed** (I.xxiii–I.xxiv are pushed, not deployed; deploy = Wilson's call, CLI-only).
+
+**I.xxv** *De Glorificatione Inchoata; de Certitudine Salutis, et Perseverantia Sanctorum*: 29 → 28, one merge `{¶24–25}`. English notes **7·8·9·1** (the wrap happens inside the chapter): 2 Pet 2:18 variants with Greek (Wetstein), Curcellæus twice, and the Dort Remonstrant defence. **Latin `[^la6]`** (La 292, scholarly) is the bare Dort reference, and En note 9 quotes the same passage. ★ English error `John xiv. 7` for La `xiv. 17`. ★ Sumner makes the assurance definition conditional (*IF HE BELIEVE*) and renders *penitus deficere* as *fall irrecoverably*. ★ ἀμεταμέλητα translated away, although it is a mention. La `fuisse, Itaque` is a comma in BOTH copies, so it stands. En 394 `Christ, 1 Tim.` is unconfirmed (the second copy's margin is cut). **One content-filter block** (`{¶24–25}`, the 1 John 2:19 argument), cleared in pieces.
+
+**Checksums carried forward:** **English: I.xxvi opens at note 2.** **Latin: next label 7.**
+
+⬜ **NEXT: I.xxvi *De Manifestatione Fœderis Gratiæ; ubi et de Lege Dei*** — La 294+ / En 400+ (check `chapters.tsv`). Run `./tools/prep-chapter.sh 1 26` and fetch second copies (La leaf = printed+17 `bwb_T5-ARK-705`; En leaf = printed+51 `treatiseonchrist00miltrich`; La 294 and En 400 are already in `raw/second/`). The law chapter is polemical: **write the English one paragraph per append, and split long paragraphs from the start.**
+
+⬜ Jer 3 constant +5 (I.xix) still wants a `jt-page.py` look. ⬜ `script-check.html` regenerated and committed (Greek 478 / 287), not republished. ⬜ Push and deploy: I.xxiii–I.xxv.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxiii (`cebe1e5`) and I.xxiv (`997aaa2`) are COMPLETE and COMMITTED. NOT pushed or deployed** (deploy = Wilson's call, CLI-only).
 
 - **I.xxiii** *De Adoptione*: 8 → 8, strict 1:1. English notes **3·4·5** (the checksum held): *PL* XI vs *PR* II on Gen 6:2's "sons of God", *Civil Power* on liberty as the birthright of adoption, *Tetrachordon* on David and the shewbread. La `Jos. v. 4` → En `Josh. v. 5` (the quoted words are 5:5). No Latin apparatus.
