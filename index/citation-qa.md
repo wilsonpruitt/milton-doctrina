@@ -1,11 +1,11 @@
 # Citation QA — read this, do not merely generate it
 
-8791 records · 69 unclassified · 6 out-of-range · 7 versification · 606 divergence rows, 27 suspect
+9055 records · 72 unclassified · 6 out-of-range · 7 versification · 615 divergence rows, 27 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 4396
-- `en-sumner` — 4395
+- `la` — 4527
+- `en-sumner` — 4528
 - spread: 1 records, 0.0%
 
 ## Unclassified — never a record with an invented target
@@ -43,6 +43,9 @@
 - `ddc-1-14` `ddc-1-14:la:{¶5}:1` — `ta mundi fundamenta.* Cætera loca vide supra cap. iv.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
 - `ddc-1-14` `ddc-1-14:la:{¶28}:3` — `ipue nempe et manifestius, de quo loco infra cap. xvi.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
 - `ddc-1-16-b` `ddc-1-16-b:la:{¶5}:40` — `et v. 10.` → `et v. N` — neither the canon nor the English layer settles whether `v` is the roman 5 or *versus*. Not indexed.
+- `ddc-1-17` `ddc-1-17:la:{¶14}:0` — `cap. i. 5.` → chapter continuation with no book in scope
+- `ddc-1-17` `ddc-1-17:en-sumner:{¶14}:0` — `i. 5.` → chapter continuation with no book in scope
+- `ddc-1-17` `ddc-1-17:la:{¶18}:2` — `et v. 7, 17, 21.` → `et v. N` — neither the canon nor the English layer settles whether `v` is the roman 5 or *versus*. Not indexed.
 - `ddc-2-01` `ddc-2-01:la:{¶6}:3` — `tum sæpe alias ostendit. Vide supra lib. 1. cap. xxvii.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
 - `ddc-2-01` `ddc-2-01:la:{¶14}:3` — `ciderit, dissipabit eum.* Vide supra lib. 1. cap. xxvii.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
 - `ddc-2-01` `ddc-2-01:la:{¶17}:10` — `. *quis prior dedit ei—?* Vide supra lib. 1. cap. xxii.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
@@ -127,6 +130,7 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 
 - `ddc-1-10-a` {¶7} — la `v. 30` -> Exod 16:30 vs en `v. 22—30.` -> Exod 16:22,23,24,25,26,27,28,29,30
 - `ddc-1-10-c` {¶4} — la `Eccl. ix. 12.` -> Eccl 9:12 vs en `Eccles. ix. 9.` -> Eccl 9:9
+- `ddc-1-17` {¶18} — la `cap. iii. 12.` -> Ezek 3:12 vs en `iii. 7, 11, 27.` -> Ezek 3:7,11,27
 - `ddc-2-04-b` {¶9} — la `Psal. lv. 18.` -> Ps 55:18 vs en `v. 3` -> Ps 55:3
 - `ddc-2-13` {¶6} — la `Prov. xii. 21.` -> Prov 12:21 vs en `Prov. xii. 17.` -> Prov 12:17
 - `ddc-2-13` {¶6} — la `v. 17` -> Prov 12:17 vs en `v. 22` -> Prov 12:22
@@ -137,11 +141,11 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 
 | class | pairs | what it asserts |
 |---|---|---|
-| `unchecked` | 155 | no division read and no known mechanism. NOT a claim of error |
+| `unchecked` | 157 | no division read and no known mechanism. NOT a claim of error |
 | `open-end` | 88 |  |
 | `versification-predicted` | 77 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
 | `versification` | 72 | a READ J-T division maps the Latin onto the English exactly |
-| `anomaly` | 7 | a division IS read and does not explain it -- listed above |
+| `anomaly` | 8 | a division IS read and does not explain it -- listed above |
 
 ## Versification, not error (M4-RUNBOOK §6b)
 
@@ -245,6 +249,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Exod | 6 | -1 | 1 | no |
 | Exod | 7 | +3 | 1 | no |
 | Exod | 23 | -1 | 1 | no |
+| Ezek | 3 | +5 | 1 | no |
 | Ezek | 14 | -1 | 1 | no |
 | Gen | 3 | +6 | 1 | no |
 | Gen | 14 | +1 | 1 | no |
@@ -275,6 +280,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Lam | 3 | -5 | 1 | no |
 | Luke | 9 | +4 | 1 | no |
 | Mal | 2 | +9 | 1 | no |
+| Matt | 17 | +1 | 1 | no |
 | Mic | 6 | -1 | 1 | no |
 | Prov | 24 | -6 | 1 | no |
 | Prov | 25 | -1 | 1 | no |
@@ -522,6 +528,15 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-16-b | ¶10 | `et v. 19.` | 2Cor 5:19 | `v. 19` | 2Cor 2:19 | divergence |
 | ddc-1-16-b | ¶13 | `et xiv. 2, 3, 4.` | John 14:2,3,4 | `xiv. 2—4.` | John 14:2,3,4 | same target, syntax differs (— CH V-LIST / — CH V-RANGE) |
 | ddc-1-16-b | ¶14-15 | `2 Thess. i. 5, 6, 7.` | 2Thess 1:5,6,7 | `2 Thess. i. 5—7.` | 2Thess 1:5,6,7 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-17 | ¶7 | `Rom. viii. 28, 29, 30.` | Rom 8:28,29,30 | `Rom. viii. 28—30.` | Rom 8:28,29,30 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-17 | ¶12 | `Rom. i. 18, 19, 20.` | Rom 1:18,19,20 | `Rom. i. 18—20.` | Rom 1:18,19,20 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-17 | ¶12 | `—` | — | `x. 14.` | Rom 10:14 | present in English only |
+| ddc-1-17 | ¶17 | `Rom. viii. 28, 29, 30.` | Rom 8:28,29,30 | `Rom. viii. 28—30.` | Rom 8:28,29,30 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-17 | ¶18 | `—` | — | `v. 7` | Ezek 2:7 | present in English only |
+| ddc-1-17 | ¶18 | `cap. iii. 12.` | Ezek 3:12 | `iii. 7, 11, 27.` | Ezek 3:7,11,27 | divergence |
+| ddc-1-17 | ¶19 | `Matt. xx. 1, 2, 3, &c.` | Matt 20:1,2,3 &c. | `Matt. xx. 1, 3, &c.` | Matt 20:1,3 &c. | divergence |
+| ddc-1-17 | ¶26 | `et xxxiii. 14, 15, 16` | Ezek 33:14,15,16 | `xxxiii. 14—16.` | Ezek 33:14,15,16 | same target, syntax differs (— CH V-LIST / — CH V-RANGE) |
+| ddc-1-17 | ¶34 | `et xvii. 20.` | Matt 17:20 | `xvii. 19.` | Matt 17:19 | divergence |
 | ddc-2-01 | ¶8 | `et xii. 2.` | Prov 12:2 | `xii. 3.` | Prov 12:3 | divergence |
 | ddc-2-01 | ¶9-12 | `et xxiv. 1.` | Prov 24:1 | `xxiv. 7.` | Prov 24:7 | divergence |
 | ddc-2-01 | ¶16 | `1 Cor. ix. 18.` | 1Cor 9:18 | `—` | — | present in Latin only |

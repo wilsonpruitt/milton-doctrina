@@ -118,12 +118,21 @@
     },
     {
       "book": "Ezek",
-      "chapter": 3,
-      "begins_at": "Ezek 3:1",
-      "first_verse": 11,
+      "chapter": 2,
+      "begins_at": "Ezek 2:1",
+      "first_verse": 1,
       "status": "read",
       "leaf": 656,
-      "evidence": "ch. II ends at 10 as the KJV's does; CAPUT III then opens AT VERSE 11 'Edixit igitur mihi, fili hominis' = KJV 3:1, running unbroken to 25 = KJV 3:15"
+      "evidence": "ch. II ends at 10 as the KJV's does, but the RECEIVED CAPUT III rubric that follows does NOT restart the count: 11 'Edixit igitur mihi, fili hominis' = KJV 3:1, running unbroken to 25 = KJV 3:15 ('desedi illic septem dies'). Milton cites these as ch. ii (I.xvii La 237 'Ezech. ii. 4, 5 … et v. 7, 17, 21' → En 'v. 7. iii. 7, 11'). Same mechanism as Amos 2."
+    },
+    {
+      "book": "Ezek",
+      "chapter": 3,
+      "begins_at": "Ezek 3:16",
+      "first_verse": 1,
+      "status": "read",
+      "leaf": 656,
+      "evidence": "J–T's OWN 'CAPUT III' (right-hand column, with its argument 'Deus Prophetam refugientem iterum de vocatione admonet') restarts at 1 'Fuit autem à exactis septem diebus' = KJV 3:16; 5 'Sin autem avertetur justus à justitia sua' = KJV 3:20. So J–T 3:12 = KJV 3:27 (I.xvii La 237 'cap. iii. 12' → En 'iii. 27'). Replaces the 2026-08 entry (begins KJV 3:1, first_verse 11), which modelled only the received rubric; that content is now carried by the Ezek 2 entry."
     },
     {
       "book": "Gen",

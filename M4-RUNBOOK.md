@@ -748,6 +748,17 @@ impossible (Ezek. 2 has 10 vv.)"* is true and irrelevant — the verse is in cha
 *"chapter 2 absorbs KJV 3:1–9"* is simply wrong; chapter 2 ends where the KJV's does. Both
 reached the right verdict by the wrong route, which is the thing a plate is for.
 
+★ **Amended 2026-09-29 (I.xvii): the same opening carries a SECOND `CAPUT III`.** The right-hand
+column heads J–T's *own* chapter III (argument *Deus Prophetam refugientem iterum de vocatione
+admonet*) and **restarts at 1** with *Fuit autem à exactis septem diebus* = KJV 3:16; its 5 is
+*Sin autem avertetur justus* = KJV 3:20. So Ezekiel 3 is the **Amos 2 mechanism**, not a count that
+merely runs on: the received rubric continues ch. II's count (11–25 = KJV 3:1–15), and J–T's own
+chapter III begins afterwards. I.xvii La 237 proves it both ways at once: `Ezech. ii. 4, 5 … et v.
+7, 17, 21. et cap. iii. 12.` → En `v. 7. iii. 7, 11, 27.` — every number exact. `jt-divisions.json`
+now carries Ezek 2 (KJV 2:1, running through 3:15) and Ezek 3 (KJV 3:16, first verse 1); the old
+single entry is replaced, and the two table rows below that read "KJV 3:1 … +10" describe the
+received rubric only. The corpus-wide `build-citations.py --all` diff changed only I.xvii's pair.
+
 ### 11.3 ✅ ALL EIGHT settled — the table is closed
 
 **Every disputed row is confirmed versification at the source.** Counted as `ddc-2-17` counts them,
