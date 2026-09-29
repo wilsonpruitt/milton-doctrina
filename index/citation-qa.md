@@ -1,11 +1,11 @@
 # Citation QA — read this, do not merely generate it
 
-9364 records · 73 unclassified · 6 out-of-range · 7 versification · 640 divergence rows, 27 suspect
+9564 records · 74 unclassified · 6 out-of-range · 7 versification · 643 divergence rows, 29 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 4683
-- `en-sumner` — 4681
+- `la` — 4783
+- `en-sumner` — 4781
 - spread: 2 records, 0.0%
 
 ## Unclassified — never a record with an invented target
@@ -46,6 +46,7 @@
 - `ddc-1-17` `ddc-1-17:la:{¶14}:0` — `cap. i. 5.` → chapter continuation with no book in scope
 - `ddc-1-17` `ddc-1-17:en-sumner:{¶14}:0` — `i. 5.` → chapter continuation with no book in scope
 - `ddc-1-17` `ddc-1-17:la:{¶18}:2` — `et v. 7, 17, 21.` → `et v. N` — neither the canon nor the English layer settles whether `v` is the roman 5 or *versus*. Not indexed.
+- `ddc-1-20` `ddc-1-20:la:{¶8}:10` — `t me.* Hinc efficitur, quod supra ostendimus cap. v.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
 - `ddc-2-01` `ddc-2-01:la:{¶6}:3` — `tum sæpe alias ostendit. Vide supra lib. 1. cap. xxvii.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
 - `ddc-2-01` `ddc-2-01:la:{¶14}:3` — `ciderit, dissipabit eum.* Vide supra lib. 1. cap. xxvii.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
 - `ddc-2-01` `ddc-2-01:la:{¶17}:10` — `. *quis prior dedit ei—?* Vide supra lib. 1. cap. xxii.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
@@ -108,6 +109,8 @@ The two layers were paired but land too far apart to be one citation. Reported, 
 - `ddc-1-16-a` ¶14 — la `cap. v. 30, 31.` → Acts 5:30,31 vs en `x. 40.` → Acts 10:40
 - `ddc-1-16-b` ¶5 — la `Joan. xii. 4.` → John 12:4 vs en `John xii. 47.` → John 12:47
 - `ddc-1-16-b` ¶8 — la `v. 11` → Isa 53:11 vs en `Isai. liii. 4—11.` → Isa 53:4,5,6,7,8,9,10,11
+- `ddc-1-20` ¶4 — la `Heb. xi. 3.` → Heb 11:3 vs en `Heb. xi. 31.` → Heb 11:31
+- `ddc-1-20` ¶9 — la `Marc. i. 25.` → Mark 1:25 vs en `Mark i. 15.` → Mark 1:15
 - `ddc-2-03` ¶13 — la `cap. xxxi. 2.` → Isa 31:2 vs en `iii. 1.` → Isa 3:1
 - `ddc-2-04-b` ¶9 — la `Psal. lv. 18.` → Ps 55:18 vs en `v. 3` → Ps 55:3
 - `ddc-2-04-c` ¶1 — la `et xxv. 22.` → Ps 25:22 vs en `iii. 8.` → Ps 3:8
@@ -142,7 +145,7 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 
 | class | pairs | what it asserts |
 |---|---|---|
-| `unchecked` | 166 | no division read and no known mechanism. NOT a claim of error |
+| `unchecked` | 168 | no division read and no known mechanism. NOT a claim of error |
 | `open-end` | 90 |  |
 | `versification-predicted` | 85 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
 | `versification` | 73 | a READ J-T division maps the Latin onto the English exactly |
@@ -260,6 +263,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Gen | 27 | +2 | 1 | no |
 | Gen | 34 | -1 | 1 | no |
 | Heb | 1 | -1 | 1 | no |
+| Heb | 11 | -28 | 1 | no |
 | Isa | 6 | +1 | 1 | no |
 | Isa | 11 | -1 | 1 | no |
 | Isa | 22 | -1 | 1 | no |
@@ -284,6 +288,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Lam | 3 | -5 | 1 | no |
 | Luke | 9 | +4 | 1 | no |
 | Mal | 2 | +9 | 1 | no |
+| Mark | 1 | +10 | 1 | no |
 | Matt | 3 | -1 | 1 | no |
 | Matt | 17 | +1 | 1 | no |
 | Mic | 6 | -1 | 1 | no |
@@ -570,6 +575,9 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-19 | ¶12-13 | `et lxxi. 20, 21.` | Ps 71:20,21 | `lxxi. 20.` | Ps 71:20 | divergence |
 | ddc-1-19 | ¶14 | `Psal. iii. 3.` | Ps 3:3 | `Psal. iii. 2.` | Ps 3:2 | divergence |
 | ddc-1-19 | ¶14 | `et xli. 9.` | Ps 41:9 | `xli. 8.` | Ps 41:8 | divergence |
+| ddc-1-20 | ¶4 | `Rom. iv. 18, 19, 20, 21.` | Rom 4:18,19,20,21 | `Rom. iv. 18—21.` | Rom 4:18,19,20,21 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-20 | ¶4 | `Heb. xi. 3.` | Heb 11:3 | `Heb. xi. 31.` | Heb 11:31 | divergence |
+| ddc-1-20 | ¶9 | `Marc. i. 25.` | Mark 1:25 | `Mark i. 15.` | Mark 1:15 | divergence |
 | ddc-2-01 | ¶8 | `et xii. 2.` | Prov 12:2 | `xii. 3.` | Prov 12:3 | divergence |
 | ddc-2-01 | ¶9-12 | `et xxiv. 1.` | Prov 24:1 | `xxiv. 7.` | Prov 24:7 | divergence |
 | ddc-2-01 | ¶16 | `1 Cor. ix. 18.` | 1Cor 9:18 | `—` | — | present in Latin only |
