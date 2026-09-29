@@ -1,11 +1,11 @@
 # Citation QA — read this, do not merely generate it
 
-9979 records · 78 unclassified · 6 out-of-range · 7 versification · 662 divergence rows, 30 suspect
+10039 records · 78 unclassified · 6 out-of-range · 7 versification · 666 divergence rows, 30 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 4990
-- `en-sumner` — 4989
+- `la` — 5020
+- `en-sumner` — 5019
 - spread: 1 records, 0.0%
 
 ## Unclassified — never a record with an invented target
@@ -150,7 +150,7 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 
 | class | pairs | what it asserts |
 |---|---|---|
-| `unchecked` | 173 | no division read and no known mechanism. NOT a claim of error |
+| `unchecked` | 174 | no division read and no known mechanism. NOT a claim of error |
 | `open-end` | 90 |  |
 | `versification-predicted` | 87 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
 | `versification` | 73 | a READ J-T division maps the Latin onto the English exactly |
@@ -290,6 +290,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Job | 31 | -1 | 1 | no |
 | John | 6 | -1 | 1 | no |
 | John | 12 | -43 | 1 | no |
+| Josh | 5 | -1 | 1 | no |
 | Josh | 6 | -12 | 1 | no |
 | Judg | 11 | +2 | 1 | no |
 | Lam | 3 | -5 | 1 | no |
@@ -604,6 +605,10 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-22 | ¶15 | `Tit. iii. 5, 6, 7.` | Titus 3:5,6,7 | `Tit. iii. 5—7.` | Titus 3:5,6,7 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
 | ddc-1-22 | ¶17 | `Psal. xviii. 21, 25.` | Ps 18:21,25 | `Psal. xviii. 20, 24.` | Ps 18:20,24 | divergence |
 | ddc-1-22 | ¶17 | `Psal. xviii. 24.` | Ps 18:24 | `xviii. 23.` | Ps 18:23 | divergence |
+| ddc-1-23 | ¶4 | `Gal. iv. 4, 5, 6.` | Gal 4:4,5,6 | `Gal. iv. 4—6.` | Gal 4:4,5,6 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-23 | ¶6 | `Jos. v. 4.` | Josh 5:4 | `Josh. v. 5.` | Josh 5:5 | divergence |
+| ddc-1-23 | ¶6 | `—` | — | `Matt. xii. 4.` | Matt 12:4 | present in English only |
+| ddc-1-23 | ¶6 | `Matt. xii. 4.` | Matt 12:4 | `—` | — | present in Latin only |
 | ddc-2-01 | ¶8 | `et xii. 2.` | Prov 12:2 | `xii. 3.` | Prov 12:3 | divergence |
 | ddc-2-01 | ¶9-12 | `et xxiv. 1.` | Prov 24:1 | `xxiv. 7.` | Prov 24:7 | divergence |
 | ddc-2-01 | ¶16 | `1 Cor. ix. 18.` | 1Cor 9:18 | `—` | — | present in Latin only |
