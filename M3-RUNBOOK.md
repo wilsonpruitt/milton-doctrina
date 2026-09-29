@@ -101,6 +101,7 @@ both found by the sweep; chapters II.x–II.xvii added none, all their page feet
 7. **Headnote** — 4 slots, ≤200 words, `*Loci: pending M4.*`. Write it only with both layers
    in hand; it is not draftable from the Latin alone.
 8. `cd site && node scripts/build-content.mjs` to confirm the chunk parses.
+   Then `python3 tools/build-citations.py --all` and read the chunk's rows in `index/citation-qa.md`. ⚠ **Never `build-citations.py <chunk-id>`: it overwrites `index/citations.tsv` with that chunk alone** (truncated 10,891 → 260 lines on 2026-09-29, caught only by the deploy's override count).
 9. Update `next-session-resume.md`.
 
 ## 2b. ⚠ A comma in our copies is not evidence — check the second copy (added 2026-09-29)

@@ -1,6 +1,6 @@
 # Next session — resume here
 
-## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxx is COMPLETE and COMMITTED (`674c086`). I.xxviii–I.xxx are NOT pushed or deployed** (Wilson: batch the deploy).
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxviii–I.xxx are ✅ DEPLOYED 2026-09-29 (`dpl_C3jDHgwo2iFiH1asaRKxCWC1xBMn`)**, live at milton.wrootpress.com/browse/1/28 … /1/30.
 
 - **I.xxx** *De Scriptura Sacra*: La 342–353 / En 465–480. 31 → 29 (`{¶19–20}` `{¶25–26}`). **Fourteen En notes 4–9·1–8**, `-2` anchors for the second 4–8. ★★ Note 7 = Sumner on Milton's inconsistency about "metaphysical divinity", and his guess that *Hirelings* alludes to this treatise. ★★ La `2 Pet. iii. 15, 16, 17` → En `2 Tim. iii. 15—17` (Latin book error, both copies). ★ En errors `1 Cor. i. 4` (for La `xiv.`) and `Tit. i. 4` (for `i. 14`), confirmed. No Latin note. **Content filter blocked once** (around En 474).
 
@@ -8,7 +8,7 @@
 
 ⬜ **NEXT: I.xxxi *De Ecclesiis Particularibus*** — La 354–365 (12 pp, one chunk) / En 481–496. Openings plate-read (La 354, En 481). En 481 has Greek (πρεσβυτέρους, ἐπισκόπους). Church discipline and polity: **one paragraph per append from the start.** Run `./tools/prep-chapter.sh 1 31` and fetch second copies.
 
-⬜ Push + deploy I.xxviii–I.xxx (Wilson's call). ⬜ `build-citations.py` carry artefacts. ⬜ Jer 3 +5 (I.xix). ⬜ R2 export stale since 2026-09-18.
+⚠⚠ **`tools/build-citations.py <chunk-id>` OVERWRITES `index/citations.tsv` with that one chunk.** It truncated the index this session (caught before the deploy, repaired with `--all`). Per chunk, read `index/citation-qa.md` from an `--all` run instead. ⬜ `build-citations.py` carry artefacts (ddc-1-28-a/b Notes). ⬜ Jer 3 +5 (I.xix). ⬜ R2 export stale since 2026-09-18.
 
 ---
 
