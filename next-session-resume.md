@@ -1,5 +1,18 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxvi (`538ed87`) and I.xxvii a/b/c (`2ca8aeb`, `b04e1f7`) are COMPLETE and COMMITTED.** I.xxiii–I.xxvii are NOT deployed (deploy = Wilson's call, CLI-only).
+
+- **I.xxvi** *De Manifestatione Fœderis Gratiæ*: 17 → 17, strict 1:1. En notes **2·3·4·5**. No Latin note. Latin errors corrected in the English: `Rom. iv. 25`→`15`, `Deut. v. 2`→`iv. 45`.
+- **I.xxvii** *De Evangelio et Libertate Christiana*, split in three at Milton's seams. **a** gospel (12 → 11, `{¶10–11}`, notes 6·7·8; Hebrew/Greek διαθήκη/בְּרִית, and the layers differ on accents). **b** abrogation of the whole Mosaic law, decalogue included (16 → 16, notes 9·1–7; **Latin `[^la7]`** Polanus on La 310, its foot line printing no number; English errors `2 Cor. iii. 15`/`v. 17`, confirmed). **c** Christian liberty and the magistrate (9 → 7, `{¶6–8}`, notes 8·9·1–4). **Content filter blocked once** (b, En 421), cleared in pieces.
+
+**Checksums carried forward:** **English: I.xxviii opens at note 5.** **Latin: La 315 (I.xxviii p. 1) already shows a note printed 7**, the label repeating after La 310's 7. Transcribe it as printed; labels only (§9b).
+
+⬜ **NEXT: I.xxviii *De Obsignatione Fœderis Gratiæ Externa*** (sacraments) — La 315–331 (17 pp, **over §7's threshold: split at lemma seams**, e.g. baptism / Lord's Supper) / En 429+. `CAP. XXVIII.` plate-confirmed on La 315. The Latin note there is textual (Sumner on the MS: *sincero animo proposito*, amanuensis corrections), so it needs a `sumner-interventions.tsv` row. Polemical (the Mass): **one paragraph per append from the start.** Run `./tools/prep-chapter.sh 1 28` and fetch second copies (La leaf = printed+17 `bwb_T5-ARK-705`; En leaf = printed+51 `treatiseonchrist00miltrich`).
+
+⬜ Jer 3 constant +5 (I.xix) still wants a `jt-page.py` look. ⬜ `script-check.html` regenerated and committed (Greek 482/290, Hebrew 62/27), not republished. ⬜ Deploy I.xxiii–I.xxvii.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxv is COMPLETE and COMMITTED (`3280040`). NOT pushed or deployed** (I.xxiii–I.xxiv are pushed, not deployed; deploy = Wilson's call, CLI-only).
 
 **I.xxv** *De Glorificatione Inchoata; de Certitudine Salutis, et Perseverantia Sanctorum*: 29 → 28, one merge `{¶24–25}`. English notes **7·8·9·1** (the wrap happens inside the chapter): 2 Pet 2:18 variants with Greek (Wetstein), Curcellæus twice, and the Dort Remonstrant defence. **Latin `[^la6]`** (La 292, scholarly) is the bare Dort reference, and En note 9 quotes the same passage. ★ English error `John xiv. 7` for La `xiv. 17`. ★ Sumner makes the assurance definition conditional (*IF HE BELIEVE*) and renders *penitus deficere* as *fall irrecoverably*. ★ ἀμεταμέλητα translated away, although it is a mention. La `fuisse, Itaque` is a comma in BOTH copies, so it stands. En 394 `Christ, 1 Tim.` is unconfirmed (the second copy's margin is cut). **One content-filter block** (`{¶24–25}`, the 1 John 2:19 argument), cleared in pieces.
