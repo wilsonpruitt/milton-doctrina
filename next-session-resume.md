@@ -1,5 +1,17 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxx is COMPLETE and COMMITTED (`674c086`). I.xxviii–I.xxx are NOT pushed or deployed** (Wilson: batch the deploy).
+
+- **I.xxx** *De Scriptura Sacra*: La 342–353 / En 465–480. 31 → 29 (`{¶19–20}` `{¶25–26}`). **Fourteen En notes 4–9·1–8**, `-2` anchors for the second 4–8. ★★ Note 7 = Sumner on Milton's inconsistency about "metaphysical divinity", and his guess that *Hirelings* alludes to this treatise. ★★ La `2 Pet. iii. 15, 16, 17` → En `2 Tim. iii. 15—17` (Latin book error, both copies). ★ En errors `1 Cor. i. 4` (for La `xiv.`) and `Tit. i. 4` (for `i. 14`), confirmed. No Latin note. **Content filter blocked once** (around En 474).
+
+**Checksums carried forward:** **English: I.xxxi opens at note 9** (already plate-read on En 481). **Latin: next label 8.**
+
+⬜ **NEXT: I.xxxi *De Ecclesiis Particularibus*** — La 354–365 (12 pp, one chunk) / En 481–496. Openings plate-read (La 354, En 481). En 481 has Greek (πρεσβυτέρους, ἐπισκόπους). Church discipline and polity: **one paragraph per append from the start.** Run `./tools/prep-chapter.sh 1 31` and fetch second copies.
+
+⬜ Push + deploy I.xxviii–I.xxx (Wilson's call). ⬜ `build-citations.py` carry artefacts. ⬜ Jer 3 +5 (I.xix). ⬜ R2 export stale since 2026-09-18.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxix is COMPLETE and COMMITTED (`2ca38a1`). I.xxviii–I.xxix are NOT pushed or deployed** (Wilson: batch the deploy with the next few chapters).
 
 - **I.xxix** *De Ecclesia Visibili*: La 332–341 / En 451–464. 32 → 24, six merges (`{¶6–7}` `{¶9–11}` `{¶21–22}` `{¶24–25}` `{¶26–28}` `{¶30–31}`). **Fourteen En notes 8·9·1–9·1·2·3**, `-2` anchors for the second 8, 9, 1, 2, 3; seven quote *Hirelings*. ★ Note 3 = Sumner defending Milton's absence from public worship (Newton, Hawkins, Symmons). ★ La `Judæ 10` → En `Jude 20`. No Latin note, no filter blocks.
