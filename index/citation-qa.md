@@ -1,12 +1,12 @@
 # Citation QA — read this, do not merely generate it
 
-10317 records · 101 unclassified · 6 out-of-range · 7 versification · 682 divergence rows, 31 suspect
+10439 records · 101 unclassified · 6 out-of-range · 7 versification · 692 divergence rows, 32 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 5160
-- `en-sumner` — 5157
-- spread: 3 records, 0.1%
+- `la` — 5220
+- `en-sumner` — 5219
+- spread: 1 records, 0.0%
 
 ## Unclassified — never a record with an invented target
 
@@ -140,6 +140,7 @@ The two layers were paired but land too far apart to be one citation. Reported, 
 - `ddc-1-20` ¶9 — la `Marc. i. 25.` → Mark 1:25 vs en `Mark i. 15.` → Mark 1:15
 - `ddc-1-22` ¶14 — la `v. 1` → Rom 4:1 vs en `xi. 1.` → Rom 11:1
 - `ddc-1-25` ¶26 — la `Joan. xiv. 17.` → John 14:17 vs en `John xiv. 7.` → John 14:7
+- `ddc-1-26` ¶16 — la `et iv. 25.` → Rom 4:25 vs en `iv. 15.` → Rom 4:15
 - `ddc-2-03` ¶13 — la `cap. xxxi. 2.` → Isa 31:2 vs en `iii. 1.` → Isa 3:1
 - `ddc-2-04-b` ¶9 — la `Psal. lv. 18.` → Ps 55:18 vs en `v. 3` → Ps 55:3
 - `ddc-2-04-c` ¶1 — la `et xxv. 22.` → Ps 25:22 vs en `iii. 8.` → Ps 3:8
@@ -174,7 +175,7 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 
 | class | pairs | what it asserts |
 |---|---|---|
-| `unchecked` | 180 | no division read and no known mechanism. NOT a claim of error |
+| `unchecked` | 184 | no division read and no known mechanism. NOT a claim of error |
 | `open-end` | 90 |  |
 | `versification-predicted` | 87 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
 | `versification` | 73 | a READ J-T division maps the Latin onto the English exactly |
@@ -281,6 +282,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Col | 3 | -1 | 1 | no |
 | Dan | 2 | -1 | 1 | no |
 | Deut | 5 | +6 | 1 | no |
+| Deut | 6 | -1 | 1 | no |
 | Deut | 6 | +1 | 1 | no |
 | Deut | 23 | +1 | 1 | no |
 | Deut | 31 | +1 | 1 | no |
@@ -351,6 +353,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Ps | 80 | -1 | 1 | no |
 | Ps | 88 | +1 | 1 | no |
 | Ps | 133 | +1 | 1 | no |
+| Rom | 4 | +10 | 1 | no |
 | Rom | 7 | +1 | 1 | no |
 | Rom | 7 | +2 | 1 | no |
 | Rom | 8 | +10 | 1 | no |
@@ -652,6 +655,16 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-25 | ¶23 | `—` | — | `vi. 4—6.` | 1Cor 6:4,5,6 | present in English only |
 | ddc-1-25 | ¶23 | `Heb. vi. 4, 5, 6.` | Heb 6:4,5,6 | `—` | — | present in Latin only |
 | ddc-1-25 | ¶26 | `Joan. xiv. 17.` | John 14:17 | `John xiv. 7.` | John 14:7 | divergence |
+| ddc-1-26 | ¶6 | `—` | — | `ii. 14, 15.` | Rom 2:14,15 | present in English only |
+| ddc-1-26 | ¶9 | `—` | — | `viii. 20, 21, &c.` | Gen 8:20,21 &c. | present in English only |
+| ddc-1-26 | ¶10 | `Joan. iii. 14, 15, 16.` | John 3:14,15,16 | `John iii. 14—16.` | John 3:14,15,16 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-26 | ¶13 | `Deut. v. 2.` | Deut 5:2 | `Deut. iv. 45.` | Deut 4:45 | divergence |
+| ddc-1-26 | ¶14 | `Lev. xxvi.` | Lev 26 | `—` | — | present in Latin only |
+| ddc-1-26 | ¶14 | `Deut. vi. 24, 25.` | Deut 6:24,25 | `Deut. vi. 25.` | Deut 6:25 | divergence |
+| ddc-1-26 | ¶14 | `Luc. x. 25, 28.` | Luke 10:25,28 | `Luke x. 25—28.` | Luke 10:25,26,27,28 | divergence |
+| ddc-1-26 | ¶16 | `et iv. 25.` | Rom 4:25 | `iv. 15.` | Rom 4:15 | divergence |
+| ddc-1-26 | ¶16 | `et v. 7, 8, 9.` | Rom 7:7,8,9 | `v. 7—9.` | Rom 7:7,8,9 | same target, syntax differs (— — V-LIST / — — V-RANGE) |
+| ddc-1-26 | ¶17 | `—` | — | `x. 4.` | Rom 10:4 | present in English only |
 | ddc-2-01 | ¶8 | `et xii. 2.` | Prov 12:2 | `xii. 3.` | Prov 12:3 | divergence |
 | ddc-2-01 | ¶9-12 | `et xxiv. 1.` | Prov 24:1 | `xxiv. 7.` | Prov 24:7 | divergence |
 | ddc-2-01 | ¶16 | `1 Cor. ix. 18.` | 1Cor 9:18 | `—` | — | present in Latin only |
