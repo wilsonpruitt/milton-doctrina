@@ -1,11 +1,11 @@
 # Citation QA — read this, do not merely generate it
 
-9564 records · 74 unclassified · 6 out-of-range · 7 versification · 643 divergence rows, 29 suspect
+9798 records · 74 unclassified · 6 out-of-range · 7 versification · 645 divergence rows, 29 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 4783
-- `en-sumner` — 4781
+- `la` — 4900
+- `en-sumner` — 4898
 - spread: 2 records, 0.0%
 
 ## Unclassified — never a record with an invented target
@@ -145,7 +145,7 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 
 | class | pairs | what it asserts |
 |---|---|---|
-| `unchecked` | 168 | no division read and no known mechanism. NOT a claim of error |
+| `unchecked` | 169 | no division read and no known mechanism. NOT a claim of error |
 | `open-end` | 90 |  |
 | `versification-predicted` | 85 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
 | `versification` | 73 | a READ J-T division maps the Latin onto the English exactly |
@@ -264,6 +264,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Gen | 34 | -1 | 1 | no |
 | Heb | 1 | -1 | 1 | no |
 | Heb | 11 | -28 | 1 | no |
+| Heb | 12 | +5 | 1 | no |
 | Isa | 6 | +1 | 1 | no |
 | Isa | 11 | -1 | 1 | no |
 | Isa | 22 | -1 | 1 | no |
@@ -578,6 +579,8 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-20 | ¶4 | `Rom. iv. 18, 19, 20, 21.` | Rom 4:18,19,20,21 | `Rom. iv. 18—21.` | Rom 4:18,19,20,21 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
 | ddc-1-20 | ¶4 | `Heb. xi. 3.` | Heb 11:3 | `Heb. xi. 31.` | Heb 11:31 | divergence |
 | ddc-1-20 | ¶9 | `Marc. i. 25.` | Mark 1:25 | `Mark i. 15.` | Mark 1:15 | divergence |
+| ddc-1-21 | ¶18 | `Eph. iv. 20, 21, 22, 23, 24.` | Eph 4:20,21,22,23,24 | `Eph. iv. 20—24.` | Eph 4:20,21,22,23,24 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-21 | ¶24 | `cap. xii. 7.` | Heb 12:7 | `xii. 2.` | Heb 12:2 | divergence |
 | ddc-2-01 | ¶8 | `et xii. 2.` | Prov 12:2 | `xii. 3.` | Prov 12:3 | divergence |
 | ddc-2-01 | ¶9-12 | `et xxiv. 1.` | Prov 24:1 | `xxiv. 7.` | Prov 24:7 | divergence |
 | ddc-2-01 | ¶16 | `1 Cor. ix. 18.` | 1Cor 9:18 | `—` | — | present in Latin only |
