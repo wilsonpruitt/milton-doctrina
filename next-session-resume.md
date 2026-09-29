@@ -1,13 +1,17 @@
 # Next session — resume here
 
-## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxviii part a is COMPLETE and COMMITTED (`4a38789`). Not pushed or deployed.**
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxviii is COMPLETE and COMMITTED: part a (`4a38789`), part b (`161cdcd`). Not pushed or deployed** (I.xxiii–I.xxvii are live; deploy = Wilson's call, CLI-only).
 
-- **I.xxviii a** (*De Obsignatione Fœderis Gratiæ Externa*; sacraments, circumcision, passover, baptism): La 315–323 / En 429–440. 26 → 24, one triple merge `{¶2–4}`. En notes **5·6·7·8·9·1·2·3** (checksum held). **Latin `[^la7]`** La 315, textual, ledgered `ms-error` (the MS correction history of *sincero animo proposito*; the page prints a blot + interlined `·mo`, same in the second copy). ★ En `iii. 4.` for La `v. 3, 4.` (1 Cor 10), confirmed. ★ En drops `v. 41` (Acts 2:41). Title on the plate is *Obsignatione*, not `chapters.tsv`'s *Sigillatione*.
-- **Content filter blocked once** in the English; wrote one paragraph per append after that.
+- **I.xxviii a** (*De Obsignatione Fœderis Gratiæ Externa*: sacraments, circumcision, passover, baptism), La 315–323 / En 429–440. 26 → 24, triple merge `{¶2–4}`. En notes **5·6·7·8·9·1·2·3**. **Latin `[^la7]`** textual, ledgered `ms-error` (MS correction history of *sincero animo proposito*; the page prints a blot + interlined `·mo`, the same in the second copy). ★ En `iii. 4.` for La `v. 3, 4.` ★ En drops `v. 41`.
+- **I.xxviii b** (Lord's Supper, the Mass, the five Roman rites), La 323–331 / En 440–450. 17 → 18: `{¶11–12}` · `{¶12 cont.}` and `{¶17}` · `{¶17 cont.}`. En notes **4·5·6·7**. No Latin note. ★ En `2 Chron. iii. 2, 3.` for La `xxx.`, confirmed. ★ La `Jos. v. 4` → En `v. 5` again (as in I.xxiii). ★ ἀνθρωποφαγία translated away. ★ En ¶14 reverses Milton's concession on confirmation.
+- `chapters.tsv` title corrected to *Obsignatione* (the plate). `script-check.html` regenerated (Greek 483/291), not republished.
+- **Content filter blocked twice** (the English in both parts); cleared with one paragraph or less per append.
 
-**Checksums carried forward:** **English: part b opens at note 4.** **Latin: next label 8.**
+**Checksums carried forward:** **English: I.xxix opens at note 8.** **Latin: next label 8.**
 
-⬜ **NEXT: I.xxviii part b** — *CŒNA DOMINICA est* (La 323, mid-page) → La 331 / En 440 (*THE LORD'S SUPPER is*, mid-page) → 450; then plate-confirm `CAP./CHAP. XXIX` on La 331–332 / En 451. **The Mass polemic (La 329–330) — one paragraph per append in BOTH layers from the start.** Plates and second copies (La 316–332, En 430–451) are already in `raw/`.
+⬜ **NEXT: I.xxix *De Ecclesia Visibili*** — La 332–341 (10 pp, one chunk) / En 451–464. Opening plate-confirmed on La 332 and En 451 (second copy). Run `./tools/prep-chapter.sh 1 29` and fetch second copies (La leaf = printed+17 `bwb_T5-ARK-705`; En leaf = printed+51 `treatiseonchrist00miltrich`; La 332 and En 451 are already in `raw/second/`).
+
+⬜ `build-citations.py` carry artefacts listed in `ddc-1-28-b` Notes (and `see Chap. xxix.` → Luke in `ddc-1-28-a`). ⬜ Jer 3 constant +5 (I.xix) still wants a `jt-page.py` look. ⬜ R2 export not refreshed since 2026-09-18.
 
 ---
 
