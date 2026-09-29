@@ -1,5 +1,17 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxii is COMPLETE and COMMITTED (`118c92c`). I.xvii–I.xxii (six chapters) are committed and NOT pushed or deployed (Wilson: wait on push and deploy).**
+
+**I.xxii** *De Justificatione*: 21 → 21, strict 1:1. English note **2** (*PL* XII. 408); the checksum held after four note-less chapters. **Latin `[^la5]`** (La 274, `uncertain`, ledgered): Sumner proposes *declaret*, and the English follows it. The English renders *SENTENTIA DEI GRATUITA* as *THE GRATUITOUS PURPOSE OF GOD* and prints `xi. 1.` for the Latin's *ex v. 1.* (Rom 4:1). **One content-filter block** on En 374 (*sola fide*), cleared by one-paragraph appends.
+
+**Checksums carried forward:** **English: I.xxiii opens at note 3** (the draft already shows it on En 379). **Latin: next label 6.**
+
+⬜ **NEXT: I.xxiii *De Adoptione*** — La 276–278 (3 pp) / En 379–381. Short: pair it with **I.xxiv** (La 279+ / En 382+) in one session. Run `./tools/prep-chapter.sh 1 23` and fetch second copies. **Write the English one paragraph per append from the start** (§10); this stretch of Book I is doctrinally dense.
+
+⬜ Jer 3 constant +5 (I.xix) still wants a `jt-page.py` look. ⬜ `script-check.html` regenerated, not republished. ⬜ Push and deploy are Wilson's call.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxi is COMPLETE and COMMITTED (`fd2d397`). I.xvii–I.xxi (five chapters) are committed and NOT pushed or deployed (Wilson: wait on push and deploy).**
 
 **I.xxi** *De Insitione in Christum*: 29 → 30 (`{¶1 cont.}`; `{¶21–22}` · `{¶22 cont.}`, the second merge-with-split). No notes in either volume. La `cap. xii. 7` for Heb 12:2 silently corrected in the English. `πανοπλίᾳ` translated away. Every punctuation doubt was settled against the second copies first (M3-RUNBOOK §2b), and none survived.
