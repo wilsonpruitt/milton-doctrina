@@ -1,5 +1,19 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxiii (`cebe1e5`) and I.xxiv (`997aaa2`) are COMPLETE and COMMITTED. NOT pushed or deployed** (deploy = Wilson's call, CLI-only).
+
+- **I.xxiii** *De Adoptione*: 8 → 8, strict 1:1. English notes **3·4·5** (the checksum held): *PL* XI vs *PR* II on Gen 6:2's "sons of God", *Civil Power* on liberty as the birthright of adoption, *Tetrachordon* on David and the shewbread. La `Jos. v. 4` → En `Josh. v. 5` (the quoted words are 5:5). No Latin apparatus.
+- **I.xxiv** *De Unione et Communione … Ecclesia Mystica*: 9 → 9, strict 1:1. English note **6** (*Tetrachordon* and *Colasterion* on marriage as a figure of Christ's union with the Church). `2 Cor. xiii. 13` / `14` (Vulgate/AV versification). `Eph. ii. a v. 19. usque ad finem capitis` → `19—22`. En *not confined to place or time* for *non necessario localem*. No Latin apparatus.
+- Two more §2b confirmations: En 381 `iv. 7` and La 280 `xiii. 13` both looked like commas in our copies and are full stops in the second copies.
+
+**Checksums carried forward:** **English: I.xxv opens at note 7.** **Latin: next label still 6.**
+
+⬜ **NEXT: I.xxv *De Glorificatione Inchoata; de Certitudine Salutis, et Perseverantia*** — La 283–293 (11 pp, under §7's threshold, so one chunk) / En 386–399 (14 pp). Perseverance of the saints, so expect Milton's Arminian position to show and give the headnote's pressure point full weight. **Write the English one paragraph per append.** Run `./tools/prep-chapter.sh 1 25` and fetch second copies (La leaf = printed+17 `bwb_T5-ARK-705`; En leaf = printed+51 `treatiseonchrist00miltrich`; La 283 and En 380–386 are already in `raw/second/`).
+
+⬜ Jer 3 constant +5 (I.xix) still wants a `jt-page.py` look. ⬜ `script-check.html` regenerated, not republished (no new script this session). ⬜ Push and deploy: I.xxiii–I.xxiv.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxii is COMPLETE and COMMITTED (`118c92c`). I.xvii–I.xxii are ✅ PUSHED and DEPLOYED 2026-09-29 (`dpl_DGCuu9VEB8m2LcSyUknxj2MH9ZFS`), live at milton.wrootpress.com/browse/1/17 … /1/22.**
 
 **I.xxii** *De Justificatione*: 21 → 21, strict 1:1. English note **2** (*PL* XII. 408); the checksum held after four note-less chapters. **Latin `[^la5]`** (La 274, `uncertain`, ledgered): Sumner proposes *declaret*, and the English follows it. The English renders *SENTENTIA DEI GRATUITA* as *THE GRATUITOUS PURPOSE OF GOD* and prints `xi. 1.` for the Latin's *ex v. 1.* (Rom 4:1). **One content-filter block** on En 374 (*sola fide*), cleared by one-paragraph appends.
