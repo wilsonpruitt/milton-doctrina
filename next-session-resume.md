@@ -6,7 +6,7 @@
 
 **Checksums carried forward:** **English: I.xxxi opens at note 9** (already plate-read on En 481). **Latin: next label 8.**
 
-⬜ **NEXT: I.xxxi *De Ecclesiis Particularibus*** — La 354–365 (12 pp, one chunk) / En 481–496. Openings plate-read (La 354, En 481). En 481 has Greek (πρεσβυτέρους, ἐπισκόπους). Church discipline and polity: **one paragraph per append from the start.** Run `./tools/prep-chapter.sh 1 31` and fetch second copies.
+⬜ **NEXT: I.xxxi *De Ecclesiis Particularibus*** — La 354–365 (12 pp, one chunk) / En 481–496. Openings plate-read (La 354, En 481). En 481 has Greek (πρεσβυτέρους, ἐπισκόπους). Church discipline and polity: **one paragraph per append from the start.** **Already staged (2026-09-29): plates + drafts for I.xxxi–I.xxxiii (`prep-chapter.sh 1 31 1 33`) and second copies La 355–386 / En 482–526.** Then I.xxxii *De Disciplina Ecclesiastica* (La 366–371 / En 497–504, short) and I.xxxiii (La 372–385, 14 pp: over §7, split at lemma seams). After that only I.iv–I.vi remain.
 
 ⚠⚠ **`tools/build-citations.py <chunk-id>` OVERWRITES `index/citations.tsv` with that one chunk.** It truncated the index this session (caught before the deploy, repaired with `--all`). Per chunk, read `index/citation-qa.md` from an `--all` run instead. ⬜ `build-citations.py` carry artefacts (ddc-1-28-a/b Notes). ⬜ Jer 3 +5 (I.xix). ⬜ R2 export stale since 2026-09-18.
 
