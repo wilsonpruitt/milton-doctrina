@@ -6,7 +6,7 @@ part: b
 title_la: "De Obsignatione Fœderis Gratiæ Externa"
 title_en: "Of the External Sealing of the Covenant of Grace"
 pages_la: "323-331"
-status: draft
+status: verified
 pages_en: "440-450"
 ---
 
@@ -84,6 +84,58 @@ pages_en: "440-450"
 
 {¶17 cont.} To the above may be added, that sacraments, being instituted chiefly for purposes in which all are concerned, namely, as tokens of the sealing of the covenant of grace, and for the confirmation of our faith, ought to be imparted equally to all believers; whereas of the five papistical sacraments above mentioned, four are exclusively appropriated to particular classes of individuals; repentance to the lapsed, ordination to the clergy, extreme unction to the sick, marriage to the lay members of the church alone.
 
+## apparatus-sumner-en
+
+[^s4]: (printed En p. 441, anchored after *partly by natural transpiration,*) ............with keen dispatch<br>Of real hunger, and concoctive heat<br>To transubstantiate; what redounds, transpires<br>Through spirits with ease. *Paradise Lost,* V. 436.
+
+[^s5]: (printed En p. 442, anchored after *Consubstantiation,*) 'The Lutheran holds consubstantiation; an error indeed, but not mortal.' *Of true Religion,* &c. Prose Works, IV. 262.
+
+[^s6]: (printed En p. 446, anchored after *1 Pet. ii. 9. Rev. i. 6.*) 'We now under Christ, a royal priesthood, 1 Pet. ii. 9. as we are coheirs, kings and priests with him.' *The likeliest Means to remove Hirelings,* &c. Prose Works, III. 359.
+
+[^s7]: (printed En p. 450, anchored after *to the ministers of the church.*) 'They insinuated that marriage was not holy without their benediction, and for the better colour, made it a sacrament; being of itself a civil ordinance, a household contract, a thing indifferent and free to the whole race of mankind, not as religious, but as men; best indeed undertaken to religious ends, and as the apostle saith, 1 Cor. vii. *in the Lord;* yet not therefore invalid or unholy without a minister and his pretended necessary hallowing, more than any other act, enterprize, or contract of civil life, which ought all to be done also in the Lord and to his glory: all which, no less than marriage, were by the cunning of priests heretofore, as material to their profit, transacted at the altar. Our divines deny it to be a sacrament, yet retained the celebration, till prudently a late parliament recovered the civil liberty of marriage from their encroachment, and transferred the ratifying and registering thereof from the canonical shop to the proper cognizance of civil magistrates.' *Considerations on the likeliest Means to remove Hirelings out of the Church.* Prose Works, III. 371.
+
+## headnote
+
+**Place.** The second part of I.xxviii: after baptism (part a), the Lord's Supper, the general doctrine of sacraments, and the five rites Rome also calls sacraments.
+
+**Argument.** The Lord's Supper commemorates Christ's death in broken bread and poured wine, tasted by all, and seals its benefits to believers. John 6 concerns receiving Christ by faith; the flesh eaten there is doctrine received by faith, not food for the teeth. Sacramental language is figurative ("this is my body", "that rock was Christ"). Sacraments seal grace but do not confer it *ex opere operato*, and they are not absolutely necessary. Confirmation, penance, orders, marriage and extreme unction are not sacraments in the proper sense; marriage is a civil contract.
+
+**Pressure point.** Two claims bear on church order. Scripture records no *administratio* of the Supper, only a shared *participatio*, so ministers have no exclusive right to it and a householder may celebrate it at home, as with the passover. And one who cannot receive the sacraments rightly does no wrong in trusting God without them. Sumner's notes set the chapter beside *Hirelings* (twice), *Of True Religion* and *PL* V.
+
+*Loci: pending M4.*
+
 ## Notes
 
-<!-- GAP: Notes owed -->
+**Split.** Part b opens at **CŒNA DOMINICA est** (La 323, mid-page) / **THE LORD'S SUPPER is** (En 440, mid-page) and runs to the chapter's end. See part a for the split and the title (*Obsignatione* on the plate).
+
+**Extent.** Ends La 331 / En 450 with blank tails. **`CAP. XXIX.` opens La 332 and `CHAP. XXIX.` opens En 451** (the second copy `treatiseonchrist00miltrich` for the En page), confirming the end on both sides. **I.xxviii whole: La 315–331 (17 pp) / En 429–450 (22 pp), ratio 1.29.**
+
+**Paragraph grid.** 17 La ¶¶ → 18 En labels. **One merge ending in a split: `{¶11–12}` · `{¶12 cont.}`** (CONVENTIONS §4, the I.xvi-b form). Sumner joins ¶11 (*Neglecta enim*) to the first half of ¶12 (*Differri igitur*, the postponement texts) and gives the Mass comparison (*Missa papistica…*) a paragraph of its own (En 448). **One split, `{¶17}` · `{¶17 cont.}`**: the unction paragraph and the closing argument that four of the five Roman rites are given only to some (En 450). No reorder of paragraphs.
+
+**English apparatus: four notes, printed 4 · 5 · 6 · 7.** **The checksum holds**: part a closed at 3. All eleven En feet read (440, 443–445, 447–449 bare). **I.xxix should open at note 8.**
+- **4** (En 441): *PL* V. 436 (*concoctive heat / To transubstantiate*), hung on the English's paraphrase of the digestion clause. The leader is 12 dots (second copy).
+- **5** (En 442): *Of True Religion*, IV. 262 (*The Lutheran holds consubstantiation; an error indeed, but not mortal*).
+- **6, 7** (En 446, 450): *Hirelings*, III. 359 and III. 371, the second a long passage on marriage as a civil contract.
+
+**No Latin apparatus** in La 323–331 (all feet read). **The next Latin label is 8.**
+
+**Citation divergences (§3).**
+- **★ English error, En 447: `2 Chron. iii. 2, 3.`** for La `2 Chron. xxx. 2, 3.` (the second passover, which is the point). Confirmed in the second copy. 2 Chr 3:2–3 is the temple's dimensions.
+- **★ La `Jos. v. 4.` → En `Josh. v. 5.`**: the words quoted (*qui nati fuerant in deserto … non circumciderant*) are Josh 5:5, so the English corrects the Latin. **I.xxiii carried the same pair** (La `Jos. v. 4` → En `Josh. v. 5`).
+- **★ La ¶6 Luke xxii. `v. 12. illic parate pascham` → En `v. 13. they made ready the passover`**: a different verse with different words. La `et apud Marcum` → En `Mark xiv. 23` (digits supplied).
+- Verbal range resolved: La `a v. 23. ad 30.` → En `v. 23—30.`
+- Dash-range rule: `Matt. xxvi. 26—29`, `Mark xiv. 22—25` (La `22, 23, 24, 25. idem.`), `John vi. 53—58` (La `v. 53, idem. et v. 54, 55, 56, 57 … et v. 58, idem.`, three citations folded into one), `Acts xviii. 24—26`, `2 Chron. xxx. 13—15`, `Exod. iv. 24—26`.
+
+**English changes.**
+- ¶1 *in ventriculo coctus tandem exudabitur* → *being carried off partly by natural transpiration, and partly in other ways, as soon as the process of digestion is completed*. *ne mures dicam et vermes* is kept.
+- ¶4 *cœnam … prope dixerem Cyclopeam* → *a banquet of cannibals*.
+- **★ ¶5 Greek ἀνθρωποφαγία translated away**: *(or rather anthropophagy, for it deserves no better name)*. It is used, not mentioned, so this fits the use/mention rule (I.i).
+- ¶12 cont. *sacrificulis innumeris* → *innumerable petty priests*, adding *at the same point of time*. *quatuor verborum demurmuratione* → *the mere muttering of the four mystical words*. *quod dictu horrendum est* → *a profanation too horrible to be even alluded to without shuddering*.
+- **★ ¶14 the English reverses a concession**: La *Itaque ut sacramentum improprie sane … in ecclesia retinetur* (it may be kept, improperly, as a sacrament; properly, as a symbol of blessing) → En *although the church rejects this ceremony as a sacrament, she retains it*.
+- ¶15 the English puts **ORDINATION** before **REPENTANCE** (La *PŒNITENTIAM … et SACROS ORDINES*), and *pedum lotio antiqua* → *washing the feet of the poor* (adds *of the poor*). ¶17 cont. reorders the four rites (La penance, unction, orders, marriage → En repentance, ordination, extreme unction, marriage).
+
+**Printed readings.** La 325 **`dixerem`** (for *dixerim*) is in both copies. La 324 `14.` is a single full stop in the second copy. La 326 `multi` is damaged in our copy and clean in the second. Our En copy has pen marks in the margins of En 442 and 443, which we ignore. Leader dots: En 440 `sins....` (4), `&c....`; En 443 `&c.....`; En 447 `son.....`, `Canaanites.....`.
+
+**Tool notes.** `check-la-notes.py` flags La 331 (ratio 0.27). That page is the chapter's last and ends in a blank tail, which makes it a false positive by construction, like a chapter opening. The plate carries no note. `build-citations.py` mis-carries four references: `v. 58` after *cap. iv.* (¶1, both layers) goes to John 4; `2do.` after `Act. xviii. 24, 25, 26.` is read as a verse; La *et Lucam, cap. xxii. 20* goes to Matthew; La *Jacobus … cap. v. 14, 15* and En *James … v. 14, 15* go to Mark. The chunk records the right targets; the index rows want a parser look before M4.
+
+**Greek:** one token, ἀνθρωποφαγία (La 325, split across a line as `ἀνθρω-ποφαγία`), checked against `bwb_T5-ARK-705`. No Hebrew, no `## apparatus-editorial`. **Content filter:** blocked once more during the English (around En 444–446); the rest went in one paragraph or less per append, with ¶1, ¶8, ¶9 and ¶12 cont. in pieces. Nothing was paraphrased or omitted.
