@@ -1,5 +1,22 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xvii, I.xviii and I.xix are COMPLETE and COMMITTED (`484f913`, `5f8a68c`, `b3cc608`). NOT pushed or deployed (Wilson, 2026-09-29: wait on push and deploy).**
+
+- **I.xviii** *De Regeneratione*: 15 → 15, strict 1:1, no notes in either volume. En 344 `2 Cor. 5. 17.` (arabic chapter).
+- **I.xix** *De Resipiscentia*: 16 → 15 (`{¶12–13}`). No English notes. **Latin `[^la4]` at La 250, textual**: Sumner calls the MS relative a slip (*oportuit qui*), prints it unchanged, and the English follows his correction. Ledgered under a **new kind, `ms-error`**.
+
+**Checksums carried forward:** **English: I.xx opens at note 2** (I.xvii closed at 1; I.xviii and I.xix carry none). **Latin: the next Latin note is 5.**
+
+★ **Tool fixes this session, each with a corpus-wide diff showing only the intended records:** (a) J–T Ezek 2/3 remodelled (two `CAPUT III` rubrics on leaf 656; see I.xvii's Notes and M4-RUNBOOK); (b) Latin aliases `Ephes.`, `Neh.`, `Jonæ.`; (c) `build-citations.py` no longer reads *John verily* / *Daniel in* as a chapter-only citation (it had mis-carried the next bare reference).
+
+⬜ **Worth a `jt-page.py` look when the Jeremiah leaves are open:** Jer 3 runs a constant +5 twice in I.xix (La iii. 8, 7 / En iii. 13, 12).
+
+⬜ **NEXT: I.xx *De Fide Salvifica*** — La 253–258 / En 353–359. Run `./tools/prep-chapter.sh 1 20` and fetch the second copies (La leaf = printed+17 in `bwb_T5-ARK-705`; En leaf = printed+51 in `treatiseonchrist00miltrich`). Plate-confirm its opening on La 253 / En 353. ⚠ `crop-plate.sh` fractions run 0.01–0.02 off; derive them from pixel y ÷ plate height.
+
+⬜ `script-check.html` regenerated (Greek 465 / 278 distinct), not republished. ⬜ Push and deploy are Wilson's call.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **`ddc-1-17` (I.xvii, *De Renovatione; ubi et de Vocatione*) is COMPLETE and COMMITTED (`484f913`). NOT pushed or deployed.**
 
 36 La ¶¶ → 37 En labels (one split, `{¶4 cont.}`; no merge, no reorder). English notes `9·1`, the wrap inside the chapter. No Latin apparatus (8 feet read). Details are in the chunk's `## Notes`.
