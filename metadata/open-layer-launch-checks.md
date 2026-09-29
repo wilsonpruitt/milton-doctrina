@@ -213,3 +213,7 @@ Same recipe (`dpl_BBgjqCxyt5NfWiGrSBVZ83S3D1K9`), **101 overrides** (100 + `/bro
 ## Deployed 2026-09-28 — I.xv, I.xvi (a, b), three CONVENTIONS rulings, two citation-tool fixes
 
 Same recipe (`dpl_9k1Pf3QGFaDbUGrbw6NzpufFKcdd`), **103 overrides** (101 + `/browse/1/15`, `/browse/1/16`), 30 sibling pairs. `build-export.mjs` skipped as before; the export stays at 2026-09-18. Output captured to a file; the deploy ran once. Verified live: `/browse/1/15` and `/1/16`, their `.json` (parses) and `/1/16.plain.txt` return 200; both parts of I.xvi render on one page (part a's Ubiquitarian note and part b's Warburton note both present) with the Greek (`ΘΕΑΝΘΡΩΠΟΣ`, `λύτρον ἀντὶ πολλῶν`, `ἐλυτρώθητε`; I.xv `μεσίτου`, `θεάνθρωπος`). Zero raw `[^` or `<!--` in the visible text of either page. `/browse/1/14`, robots, sitemap, export and `/scripture/acts` return 200; an unknown path returns 404.
+
+## Deployed 2026-09-29 (second) — I.xxiii–I.xxvii (I.xxvii in three parts)
+
+Same recipe (`dpl_7AWtg3AbkDdzTjcsFgPGNWEj3Ruz`), **114 overrides** (103 at I.xvi + 6 for I.xvii–I.xxii + 5 here), 41 sibling pairs. `build-export.mjs` skipped as before; the R2 export is NOT refreshed. Output captured to a file; the deploy ran once. Verified live: `/browse/1/23` … `/1/27` return 200; `/1/27.json` parses; `/1/25.plain.txt` 200; I.xxvii renders all three parts on one page (διαθήκη, Polanus, Zanchius, *zizania*); I.xxv carries note 7's ὀλίγως. `/browse/1/22`, robots and sitemap return 200; an unknown path returns 404.
