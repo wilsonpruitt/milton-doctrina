@@ -237,3 +237,7 @@ Same recipe (`dpl_ALYRT7cxDxo6s2h4zUmKAkTHzUYN`), **123 overrides** (122 + the n
 ## Export refreshed 2026-09-30 — first full-treatise export (50/50)
 
 ⚠ **Found first: the live `/export` listed `milton-doctrina-2026-09-29.*`, which had never been uploaded, so the download returned 404 from R2.** A 2026-09-29 deploy must have run `build-export.mjs` (it rewrites `site/src/data/export-manifest.json`, which is gitignored along with `export/`) without the upload. `build-export.mjs` was re-run: 50 records, all `verified`, ~238,443 words. The txt archive has 51 entries. `milton-doctrina-2026-09-30.jsonl.gz` (1,042,125 B), `milton-doctrina-txt-2026-09-30.tar.gz` (459,212 B) and `README.md` were uploaded with `npx wrangler r2 object put wroot-corpus-export/milton/<file> --file <file> --content-type <type> --remote`. All three return 200 from the r2.dev URL, and the JSONL is byte-identical to the local file. The older 09-18 objects are left in place. **Rule: never deploy after `build-export.mjs` without first uploading its output.**
+
+## Deployed 2026-09-30 (export) — `/export` now serves the 50/50 export
+
+Same recipe (`dpl_FVqdKo1v5z34E75dbpC5Nc5saeHT`), 123 overrides, rebuilt after the export refresh above (again outside the sandbox). Verified live: `/export` lists only the 2026-09-30 files, with no trace of 09-29. All three R2 links return 200 (`milton-doctrina-2026-09-30.jsonl.gz`, `milton-doctrina-txt-2026-09-30.tar.gz`, `README.md`). `/browse/1/6` and `.json`, and robots, return 200; an unknown path returns 404. The broken download link is fixed.
