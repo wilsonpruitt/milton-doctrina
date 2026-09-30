@@ -1,5 +1,16 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.v-a (`68677e7`) and I.v-b (`9a23cdc`) COMMITTED.** Nothing since I.xxx pushed or deployed.
+
+- **I.v-b** (generation): La 58–62 / En 81–88. 10 → 10 (`{¶2–3}` merge; `{¶5 cont.}` at *All these passages*, `{¶8 cont.}` at *The Son is also called only begotten*). En notes **6–9 · 1–2**. Latin `[^la6]` (*Patrem* → *An parem?*) and `[^la7]` (*nos* → *non*), both textual `uncertain`, **both silently followed by the English**. ★ La `Apoc. i. 5` → En `Rev. i. 4` (En error). No filter blocks (one paragraph per append; Wilson flagged the filter mid-part, and nothing had been lost).
+- **I.v-c opens at En note 3, Latin label 8.** Seam: La 62 `Verum cum Christus non solum Dei Filius unigenitus` / En 88 `Since, however, Christ not only bears the name`. **La 62 and En 88 belong to both parts.**
+- Proposed remaining seams (text-layer finding aid, confirm on plates): **c** = La 62 → before `Duo duntaxat loci sunt` (La 67): unity of God, Father alone the one God, testimonies of Christ and Paul. **d** = La 67 `Duo duntaxat loci` (Joan. x. 30, 1 Joan. v. 7) → before `Ad nomen igitur` (La 71) or through to `Hoc itaque alterum` (La 77). **e** = the name *God* given to the Son, angels, OT theophanies (La 77–93). **f** = `Ex ipso autem evangelio` (La 93): name, attributes, works, honour, glory; *Patrem majorem* (La 105) to the end (La 109). Recheck the §7 12-page threshold per part.
+- Second copies: La 57–63, En 81–88 fetched. Fetch more before each part (`curl` recipe in the block below).
+
+⬜ **NEXT: I.v-c.** ⬜ Then d–f, then I.vi. ⬜ Push + deploy, Wilson's call.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.v-a (*Præfatio*) COMMITTED.** Nothing since I.xxx pushed or deployed.
 
 - **I.v-a** = the *Præfatio* only: La 57 / En 80–81. 1 → 2 (`{¶1 cont.}` at *In reliance, therefore*). En notes **2–5** (opened at 2 as predicted). Latin `[^la5]` (textual, `ms-error`: *expromo* → *expromam*). ★★ En note 4 is a separate textual note (*eandem* → *eadem*) that the Latin volume doesn't carry; ledgered `en-sumner` `emendation`. No Greek/Hebrew, no filter blocks.
