@@ -6,7 +6,7 @@ part: b
 title_la: "De Filio Dei"
 title_en: "Of the Son of God"
 pages_la: "58-62"
-status: draft
+status: verified
 pages_en: "81-88"
 ---
 
@@ -36,10 +36,113 @@ pages_en: "81-88"
 
 ## en-sumner
 
-<!-- GAP: English layer owed -->
+<!-- p.81 -->
+{¶1} Hitherto I have considered the **INTERNAL EFFICIENCY** of God, as shown in his decrees.
+
+{¶2–3} His **EXTERNAL EFFICIENCY**, or the execution of his decrees, whereby he carries into effect by external agency whatever decrees he has purposed within himself, may be comprised under the heads of **GENERATION**, **CREATION**, and the **GOVERNMENT OF THE UNIVERSE**.
+
+<!-- p.82 -->
+{¶4} First, **GENERATION**, whereby God, in pursuance of his decree, has begotten his only Son; whence he chiefly derives his appellation of Father.
+
+{¶5} Generation must be an external efficiency, since the Father and Son are different persons; and the divines themselves acknowledge this, who argue that there is a certain emanation of the Son from the Father (which will be explained when the doctrine concerning the Holy Spirit is under examination); for though they teach that the Spirit is co-essential with the Father, they do not deny that it emanates, and goes out, and proceeds, and is breathed from the Father,—which are all expressions denoting external efficiency. In conjunction with this doctrine they hold that the Son is also co-essential with the Father, and generated from all eternity. Hence this question, which is naturally very obscure, becomes involved in still greater difficulties if the received opinion respecting it be followed; for though the Father be said in Scripture to have begotten the Son in a double sense, the one literal, with reference to the production of the Son, the other metaphorical, with reference to his exaltation, many commentators have applied the passages which allude to the exaltation and mediatorial functions of Christ as proofs of his generation from all eternity. They have indeed this excuse for their proceeding, if any excuse can be offered in such a case, that it was impossible to find a single text in all Scripture to prove the eternal generation of the Son. This point appears certain, notwithstanding the arguments of some of the moderns to the contrary, that the Son existed in the beginning, under the name of the logos or word, and was the first of the whole creation,[^s6] by whom afterwards all other things were made both in heaven and earth. <!-- p.83 -->John i. 1—3. *in the beginning was the Word, and the Word was with God, and the Word was God,* &c. xvii. 5. *and now, O Father, glorify me with thine own self with the glory which I had with thee before the world was.* Col. i. 15, 18. *the first-born of every creature.* Rev. iii. 14. *the beginning of the creation of God.* 1 Cor. viii. 6. *Jesus Christ, by whom are all things.* Eph. iii. 9. *who created all things by Jesus Christ.* Col. i. 16. *all things were created by him and for him.* Heb. i. 2. *by whom also he made the worlds,* whence it is said, v. 10, *thou, Lord, in the beginning hast laid the foundation of the earth;* on which point more will be said in the seventh Chapter, on the Creation.
+
+{¶5 cont.} All these passages prove the existence of the Son before the world was made, but they conclude nothing respecting his generation from all eternity. The other texts which are produced relate only to his metaphorical generation, that is, to his resuscitation from the dead, or to his unction to the mediatorial office, according to St. Paul's own interpretation of the second Psalm: *I will declare the decree; Jehovah hath said unto me, Thou art my Son; this day have I begotten thee*—[^s7] which the apostle thus explains, Acts xiii. 32, 33. *God hath fulfilled the promise unto us their children, in that he hath raised up Jesus again; as it is also written in the second Psalm, Thou art my Son; this day have I begotten thee.* Rom. i. 4. *declared to be the Son of God with power, according to the Spirit of holiness, by the resurrection from the dead.* Hence, Col. i. 18. Rev. i. 4. *the first begotten of the dead.* Heb. i. 5, speaking of the exaltation of the Son above the angels; *for unto which of the angels said he at any time, Thou art my Son, this day have I begotten thee? and again, I will be to him a Father, and he shall be to me a Son.* Again, v. 5, 6, with reference to the priesthood of Christ; *so also Christ glorified not himself to be made an High Priest, but he that said unto him,* <!-- p.84 -->*Thou art my Son, this day have I begotten thee: as he saith also in another place, Thou art a priest for ever,* &c. Further, it will be apparent from the second Psalm, that God has begotten the Son, that is, has made him a king: v. 6. *yet have I set my King upon my holy hill of Sion;* and then in the next verse, after having anointed his King, whence the name of *Christ* is derived, he says, *this day have I begotten thee.*[^s8] Heb. i. 4, 5. *being made so much better than the angels, as he hath by inheritance obtained a more excellent name than they.* No other name can be intended but that of Son, as the following verse proves: *for unto which of the angels said he at any time, Thou art my Son; this day have I begotten thee?* The Son also declares the same of himself. John x. 35, 36. *say ye of Him whom the Father hath sanctified, and sent into the world, Thou blasphemest, because I said, I am the Son of God?* By a similar figure of speech, though in a much lower sense, the saints are also said to be begotten of God.[^s9]
+
+{¶6} It is evident however upon a careful comparison and examination of all these passages, and particularly from the whole of the second Psalm, that however the generation of the Son may have taken place, <!-- p.85 -->it arose from no natural necessity, as is generally contended, but was no less owing to the decree and will of the Father than his priesthood or kingly power, or his resuscitation from the dead. Nor does this form any objection to his bearing the title of begotten, in whatever sense that expression is to be understood, or of God's *own Son,* Rom. viii. 32. For he is called the own Son of God merely because he had no other Father besides God, whence he himself said, that *God was his Father,* John v. 18. For to Adam God stood less in the relation of Father, than of Creator, having only formed him from the dust of the earth; whereas he was properly the Father of the Son made of his own substance. Yet it does not follow from hence that the Son is co-essential with the Father, for then the title of Son would be least of all applicable to him, since he who is properly the Son is not coeval with the Father, much less of the same numerical essence, otherwise the Father and the Son would be one person; nor did the Father beget him from any natural necessity, but of his own free will,[^s1]—a mode more perfect and more agreeable to the paternal dignity; particularly since the Father is God, all whose works, as has been already proved from Scripture, are executed freely according to his own good pleasure, and consequently the work of generation.
+
+{¶7} For questionless, it was in God's power consistently with the perfection of his own essence not to have begotten the Son, inasmuch as generation does not pertain to the nature of the Deity, who stands in no need of propagation;[^s2] but whatever does not pertain to his own <!-- p.86 -->essence or nature, he does not effect like a natural agent from any physical necessity. If the generation of the Son proceeded from a physical necessity, the Father impaired himself by physically begetting a co-equal; which God could no more do than he could deny himself; therefore the generation of the Son cannot have proceeded otherwise than from a decree, and of the Father's own free will.
+
+{¶8} Thus the Son was begotten of the Father in consequence of his decree, and therefore within the limits of time, for the decree itself must have been anterior to the execution of the decree, as is sufficiently clear from the insertion of the word *to-day.* Nor can I discover on what passage of Scripture the assertors of the eternal generation of the Son ground their opinion, for the text in Micah v. 2. does not speak of his generation, but of his works, which are only said to have been wrought *from of old.* But this will be discussed more at large hereafter.
+
+{¶8 cont.} The Son is also called *only begotten.* John i. 14. *and we beheld his glory, the glory as of the only begotten of the Father.* v. 18. *the only begotten Son which is in the bosom of the Father.* iii. 16, 18. *he gave his only begotten Son.* 1 John iv. 9. *God sent his only begotten Son.* Yet he is not called essentially one with the Father, inasmuch as he was visible to sight, and given by the Father, by whom also he was sent, and from whom he proceeded; but he enjoys the title of only begotten by way of superiority, as distinguished from many others who are also said to have been born of God. John i. 13. *which were born of God.* 1 John iii. 9. *whosoever is born of God, doth not commit sin.* James i. 18. *of his own will begat he us with the word of truth.* 1 John v. 1. *whosoever believeth,* &c. *is born of God.* 1 Pet. i. 3. *which according to his abundant mercy hath begotten us again unto a lively hope.* But since throughout the Scriptures the Son is never said to be begotten, except, as above, in a metaphorical sense, it seems probable that he is called *only begotten* principally because he is the one mediator between God and man.
+
+<!-- p.87 -->
+{¶9} So also the Son is called the *first born.* Rom. viii. 29. *that he might be the first born among many brethren.* Col. i. 15. *the first born of every creature.* v. 18. *the first born from the dead.* Heb. i. 6. *when he bringeth in the first begotten into the world.* Rev. iii. 14. *the beginning of the creation of God,*—all which passages preclude the idea of his co-essentiality with the Father, and of his generation from all eternity. Thus it is said of Israel, Exod. iv. 22. *thus saith Jehovah, Israel is my son, even my first born;* and of Ephraim, Jer. xxxi. 9. *Ephraim is my first born;* and of all the saints, Heb. xii. 23. *to the general assembly of the first born.*
+
+{¶10} Hitherto only the metaphorical generation of Christ has been considered; but since to generate another who had no previous existence, is to give him being, and that if God generate by a physical necessity, he can generate nothing but a co-equal Deity, which would be inconsistent with self-existence, an essential attribute of Divinity; (so that according to the one hypothesis there would be two infinite Gods, or according to the other the *first* or *efficient cause* would become the *effect,* which no man in his senses will admit) it becomes necessary to inquire how or in what sense God the Father can have begotten the Son. This point also will be easily explained by reference to Scripture. For when the Son is said to be *the first born of every creature,* and *the beginning of the creation of God,* nothing can be more evident than that God of his own will created, or generated, or produced the Son before all things, endued with the divine nature, as in the fulness of time he miraculously begat him in his human nature of the Virgin Mary. The generation of the divine nature is described by no one with more sublimity and copiousness than by the apostle to the Hebrews, i. 2, 3. *whom he hath appointed heir of all things, by whom also he made the worlds; who being the brightness of his glory, and the express image of his person,* &c. It must be understood from this, that God imparted to the Son as much as he pleased of the divine nature, nay of the divine substance itself, care being taken not to confound the substance with the whole essence, which would imply, that the Father had given to the Son what he retained numerically the same himself; which would be <!-- p.88 -->a contradiction of terms instead of a mode of generation. This is the whole that is revealed concerning the generation of the Son of God. Whoever wishes to be wiser than this, becomes foiled in his pursuit after wisdom, entangled in the deceitfulness of vain philosophy, or rather of sophistry, and involved in darkness.
+
+## apparatus-sumner-en
+
+[^s6]: (printed En p. 82, anchored after *the first of the whole creation,*) Thee next they sang of all creation first, / Begotten Son, divine Similitude, / In whose conspicuous countenance, without cloud / Made visible, the Almighty Father shines, / Whom else no creature can behold; on thee / Impress'd, the effulgence of his glory abides, / Transfus'd on thee his ample Spirit rests. *Paradise Lost,* III. 383.
+
+[^s7]: (printed En p. 83, anchored after *this day have I begotten thee*—) Hear my decree, which unrevok'd shall stand; / This day have I begot whom I declare / My only Son, and on this holy hill / Him have anointed, whom ye now behold / At my right hand. *Paradise Lost,* V. 603.
+
+[^s8]: (printed En p. 84, anchored after *this day have I begotten thee.*) ......Into thee such virtue and grace / Immense I have transfus'd, that all may know / In heaven and hell thy power without compare; / And this perverse commotion govern'd thus, / To manifest thee worthiest to be heir / Of all things; to be heir, and to be king / By sacred unction, thy deserved right. *Paradise Lost,* VI. 703.
+
+[^s9]: (printed En p. 84, anchored after *said to be begotten of God.*) Thenceforth I thought thee worth my nearer view / And narrower scrutiny, that I might learn / In what degree or meaning thou art call'd / The Son of God; which bears no single sense: / The Son of God I also am, or was; / And if I was, I am; relation stands: / All men are Sons of God; yet thee I thought / In some respect far higher so declar'd. *Paradise Regained,* IV. 514. "The people of God, redeemed and washed with Christ's blood, and dignified with so many glorious titles of saints, and sons in the gospel." *Of Reformation in England.* Prose Works, I. 14.
+
+[^s1]: (printed En p. 85, anchored after *but of his own free will,*) Milton puts the same distinction into the mouth of Adam, speaking after his fall of the relation in which his sons stood to him: .........................what if thy son / Prove disobedient, and reprov'd retort, / "Wherefore didst thou beget me? I sought it not:" / Would'st thou admit for his contempt of thee / That proud excuse? yet him not thy election, / But natural necessity begot. *Paradise Lost,* X. 760.
+
+[^s2]: (printed En p. 85, anchored after *who stands in no need of propagation;*) ............................No need that thou / Should'st propagate, already infinite, / And through all numbers absolute, though one. VIII. 419.
 
 ## apparatus-sumner-la
 
 [^la6]: (printed La p. 60, anchored after *si natura necessario egit, Patrem*; **textual**) Sic in MS. An *parem?*
 
 [^la7]: (printed La p. 62, anchored after *hoc enim nos*; **textual**) Forte rectius *non.*
+
+## headnote
+
+**Place.** The second part of I.v, after the *Præfatio*. The decrees (I.iii–I.iv) were God's internal efficiency. This opens his external efficiency, which has three heads: generation, creation (I.vii) and government (I.viii). Generation comes first, and it is the Son's.
+
+**Argument.** Generation is an external act, because the Son is another person. Scripture uses "beget" in two senses: the literal production of the Son, and his metaphorical exaltation (resurrection, anointing as king and priest, Ps. ii. 7 as Paul reads it). The texts usually cited for eternal generation prove only that the Son existed before the world. The Father begot the Son by decree and free will, not natural necessity, so in time: the decree came before its execution, as *hodie*, "to-day", shows. *Only begotten* and *first born* mark him out among the many others God is said to beget, and they rule out one essence with the Father. Properly, God produced the Son first of all creatures, gave him as much of the divine nature and substance as he chose, and did not give him the whole essence.
+
+**Pressure point.** This is the anti-Trinitarian core, stated plainly: no eternal generation, no co-essentiality, the Son *primum rerum creatarum*. Milton denies that the Father could give his numerical essence and keep it, and calls anything further "vain philosophy". Both Latin notes emend this argument, and the English silently follows both.
+
+*Loci: pending M4.*
+
+## Notes
+
+### Split
+
+Part b of I.v: from `HACTENUS efficientia Dei INTERNA` (La 58, under the display heading `DE / FILIO DEI.`) / `Hitherto I have considered` (En 81, under `Of the Son of God.`) to *tenebris circumdat* (La 62) / *involved in darkness* (En 88). The seam is Milton's own turn from generation to the unity of God: *Verum cum Christus non solum Dei Filius unigenitus sed etiam Deus aliquoties in scripturis nominetur* (La 62) / *Since, however, Christ not only bears the name* (En 88). **Part c opens there.** La 62 and En 88 belong to both parts, and En 81 belongs to both a and b.
+
+### Alignment
+
+**10 La ¶¶ → 10 En ¶¶: one merge and two splits.** Merge: `{¶2–3}` (Sumner runs the definition of external efficiency and its three heads together). Splits: `{¶5}` · `{¶5 cont.}` at *All these passages prove* (En 83; the Latin runs on at *Hæc omnia existentiam*); `{¶8}` · `{¶8 cont.}` at *The Son is also called only begotten* (En 86; the Latin runs on at *Unigenitus etiam Filius dicitur*, La 61).
+
+### Footnote ledger
+
+**English: six notes, `6 · 7 · 8 · 9 · 1 · 2`**, opening at 6 as part a predicted, and wrapping 9 → 1 between En 84 and En 85. No collisions. **Part c must open at note 3.**
+
+**Latin: two notes, `[^la6]` (La 60) and `[^la7]` (La 62)**, both textual. They follow part a's `[^la5]`. All five La feet were read (58, 59 and 61 are bare). `check-la-notes.py` was run after transcription.
+
+### Findings
+
+**★★ Both Latin notes are conjectures, and the English adopts both silently.** `[^la6]`: the MS reads *Patrem sibi natura gignendo se imminuit*, and Sumner asks *An parem?* The English has *the Father impaired himself by physically begetting a co-equal*. `[^la7]`: the MS reads *hoc enim nos est gignere*, and Sumner suggests *non*. The English has *which would be a contradiction of terms instead of a mode of generation*. Neither English passage has a note, so an English-only reader cannot tell that the argument's key words at both points are Sumner's. Both are ledgered `uncertain` in `tools/sumner-interventions.tsv`.
+
+**★ Note 9 = *Paradise Regained* IV. 514** (Satan: *The Son of God I also am, or was … All men are Sons of God*). It glosses Milton's point that the saints are begotten of God *in a much lower sense*, and Sumner follows it with *Of Reformation*.
+
+**★ Note 1 = *Paradise Lost* X. 760** (*yet him not thy election, / But natural necessity begot*). Sumner introduces it himself: Milton gives Adam the same distinction between generation by will and by necessity. Note 2 (*PL* VIII. 419, *No need that thou / Should'st propagate*) glosses *no need of propagation*.
+
+Six English notes: *Paradise Lost* five times (III. 383, V. 603, VI. 703, X. 760, VIII. 419), *Paradise Regained* IV. 514, *Of Reformation*.
+
+### Citation divergences (as printed, never harmonised)
+
+- `{¶5}` La `Apoc. i. 5.` → En `Rev. i. 4.` **The English is wrong**: *primogenitus ex mortuis* / *the first begotten of the dead* is Rev. i. 5. En read at 600 dpi.
+- `{¶5}` La `Psal. ii. 7.` → the English gives no reference (*the second Psalm*).
+- `{¶5}` La `Joan. i. 1, 2, 3.` → En `John i. 1—3.`; La `ex Psalmo secundo intelligetur, v. 6, 7.` → En `v. 6.` (the next verse is named in words).
+- `{¶8}` La `iii. 16. … v. 18. idem.` → En `iii. 16, 18.`
+
+### `build-citations.py` carry artefacts (checked, not text errors)
+
+In `{¶5}`, `v. 10` is Heb. i. 10. `v. 5, 6` (*ubi de sacerdotio Christi* / *with reference to the priesthood of Christ*) is **Heb. v. 5, 6**, a chapter, not verses of Heb. i. It is ambiguous in both layers. `v. 6, 7` / `v. 6` is Ps. ii. `v. 18` in `{¶8}` and `{¶9}` is John i. 18 and Col. i. 18.
+
+Parser gaps, verified against the plates: La `Coloss. i. 18.` (`{¶5}`) and La `Mich. v. 2.` (`{¶8}`) are not recognised as book abbreviations, so they read as "present in English only". En `{¶10}` cites *Hebrews, i. 2, 3.* with the book named in prose, and Rev. iii. 14 is quoted there without a reference, so the tool reports La `{¶10}` as absent from the English. It is present.
+
+### Plate checks (M3-RUNBOOK §2b)
+
+- La 59 `Filius meus es, ego`: our copy has a stroke over the comma. `bwb_T5-ARK-705` has a clean comma.
+- La 62 `Heb. i. 2, 3.`: pdftotext reads `2, 8`. Both copies have `3`.
+
+### Small caps
+
+La: `HACTENUS` is the display word and stands apart from the small-caps run, so it is plain text. `INTERNA`, `EXTERNA`, `GENERATIO`, `CREATIO`, `RERUM OMNIUM GUBERNATIO` are small caps, so they are bold. En: `INTERNAL EFFICIENCY`, `EXTERNAL EFFICIENCY`, `GENERATION`, `CREATION`, `GOVERNMENT OF THE UNIVERSE`, so they are bold.
+
+### Ellipses
+
+From 600–900 dpi crops: note 8 six dots; note 1 twenty-five (±1); note 2 twenty-eight (±1).
+
+### Content filter
+
+No blocks. The English was written one paragraph per append, and ¶10 in two halves.
