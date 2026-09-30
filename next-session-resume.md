@@ -1,5 +1,15 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.v is COMPLETE (a–j) and COMMITTED.** Push + deploy of I.v-h to j: see the deploy log below this block once done.
+
+- **I.v-j** (divine honours, baptism, belief, glory; *Patrem majorem*; the Father's and apostles' testimony; the church's confession): La 101–109 / En 142–152. 10 → 11 (`{¶9 cont.}` at *The apostles*). En notes **3–6**: seven *PL*/*PR* parallels (3–5); note 6 = *Opinio in Deum non cadit* with the *Logic* and *Areopagitica*. Latin `[^la5]` (La 102, *esse* → *est*), ledgered; ★★ **the English silently follows it** (eight in I.v). ★ La `2 Cor. iv. 46.` → En `iv. 4, 6.`; En misprints `Psal. vii.` for ii. Chapter boundary confirmed: `CAP. VI.` La 110 / `CHAP. VI.` En 153.
+- **I.vi opens at En note 7, Latin label 6.** La 110–123 / En 153–171 (14 La pp, just over the §7 12-page threshold, so find one seam). Second copies fetched to La 110 / En 153 only.
+- ⬜ Still owed from h: a pixel-run count of the band-resolution ellipses.
+
+⬜ **NEXT: I.vi *De Spiritu Sancto*, the LAST chapter.** Then the tally reads 50/50.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.v-h and I.v-i COMMITTED (local).** Deployed state is unchanged: live through I.v-g. Three commits are unpushed: the deploy log, h and i.
 
 - **I.v-i** (the Son receives everything from the Father: name, being, eternal generation refuted, life, attributes, works 1–9): La 93–101 / En 130–142. 17 → 20 (`{¶1 cont.}`, `{¶3 cont.}`, `{¶9 cont.}`). En notes **3–9 · 1 · 2** (nine, so no `-2`): Tetrachordon/*Defensio*, Tremellius, LXX/Vulg./Lowth/Douay (Greek), *PL* ×4 + *PR*, Peirce on Heb. i. 3, and **note 1 = Sumner disclosing that he omitted Milton's Latin clauses at Jer. xxxiii. 16**. Latin `[^la4]` (La 94, *imminuitur* → *innuitur*), ledgered; ★★ **the English silently follows it** (the seventh time in I.v). La `sesentiæ` (La 96) is a printer's error, kept as printed. La 97 flag = signature mark, not a note.

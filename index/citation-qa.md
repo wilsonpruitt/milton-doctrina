@@ -1,12 +1,12 @@
 # Citation QA — read this, do not merely generate it
 
-14104 records · 190 unclassified · 5 out-of-range · 9 versification · 989 divergence rows, 53 suspect
+14341 records · 190 unclassified · 6 out-of-range · 9 versification · 1002 divergence rows, 56 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 7060
-- `en-sumner` — 7044
-- spread: 16 records, 0.2%
+- `la` — 7177
+- `en-sumner` — 7164
+- spread: 13 records, 0.2%
 
 ## Unclassified — never a record with an invented target
 
@@ -203,6 +203,7 @@
 
 ## Targets that do not exist
 
+- `ddc-1-05-j` la {¶9} `2 Cor. iv. 46.` — ERR: 2Cor 4 has 18 verses — 46 out of range
 - `ddc-2-02` la {¶27} `Luc. ix. 66.` — ERR: Luke 9 has 62 verses — 66 out of range
 - `ddc-2-03` la {¶11} `2 Reg. vi. 35.` — ERR: 2Kgs 6 has 33 verses — 35 out of range
 - `ddc-2-04-c` la {¶11} `Isa. lviii. 56.` — ERR: Isa 58 has 14 verses — 56 out of range
@@ -222,6 +223,9 @@ The two layers were paired but land too far apart to be one citation. Reported, 
 - `ddc-1-04-c` ¶10 — la `v. 25, 26.` → John 8:25,26 vs en `xii. 39, 40` → John 12:39,40
 - `ddc-1-05-b` ¶8 — la `v. 18` → John 1:18 vs en `iii. 16, 18.` → John 3:16,18
 - `ddc-1-05-i` ¶4 — la `v. 11, 12.` → Heb 2:11,12 vs en `xi. 12.` → Heb 11:12
+- `ddc-1-05-j` ¶4 — la `v. 24` → John 6:24 vs en `v. 24` → John 17:24
+- `ddc-1-05-j` ¶9 — la `v. 7, 8, 11, 12.` → Ps 2:7,8,11,12 vs en `Psal. vii. 8, 11, 12.` → Ps 7:8,11,12
+- `ddc-1-05-j` ¶9 — la `2 Cor. iv. 46.` → 2Cor 4:46 vs en `2 Cor. iv. 4, 6.` → 2Cor 4:4,6
 - `ddc-1-07` ¶30 — la `cap. v. 3.` → Gen 5:3 vs en `v. 3` → Gen 2:3
 - `ddc-1-09` ¶15-16 — la `Jos. vi. 2.` → Josh 6:2 vs en `Josh. vi. 14.` → Josh 6:14
 - `ddc-1-10-a` ¶7 — la `v. 30` → Exod 16:30 vs en `v. 22—30.` → Exod 16:22,23,24,25,26,27,28,29,30
@@ -285,8 +289,8 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 
 | class | pairs | what it asserts |
 |---|---|---|
-| `unchecked` | 266 | no division read and no known mechanism. NOT a claim of error |
-| `open-end` | 109 |  |
+| `unchecked` | 271 | no division read and no known mechanism. NOT a claim of error |
+| `open-end` | 110 |  |
 | `versification-predicted` | 95 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
 | `versification` | 80 | a READ J-T division maps the Latin onto the English exactly |
 | `anomaly` | 9 | a division IS read and does not explain it -- listed above |
@@ -398,6 +402,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | 1Tim | 5 | +13 | 1 | no |
 | 2Chr | 15 | -1 | 1 | no |
 | 2Chr | 25 | +1 | 1 | no |
+| 2Cor | 4 | +42 | 1 | no |
 | 2Cor | 4 | -1 | 1 | no |
 | 2Cor | 5 | +1 | 1 | no |
 | 2Cor | 5 | -2 | 1 | no |
@@ -451,6 +456,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Job | 19 | -1 | 1 | no |
 | Job | 31 | -1 | 1 | no |
 | John | 1 | +2 | 1 | no |
+| John | 1 | +1 | 1 | no |
 | John | 6 | -1 | 1 | no |
 | John | 6 | +1 | 1 | no |
 | John | 6 | -5 | 1 | no |
@@ -469,6 +475,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Matt | 17 | +1 | 1 | no |
 | Mic | 6 | -1 | 1 | no |
 | Phil | 2 | -2 | 1 | no |
+| Phil | 2 | +1 | 1 | no |
 | Prov | 24 | -6 | 1 | no |
 | Prov | 25 | -1 | 1 | no |
 | Prov | 26 | -2 | 1 | no |
@@ -691,6 +698,19 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-05-i | ¶13 | `—` | — | `v. 17—21.` | 2Cor 4:17,18,19,20,21 | present in English only |
 | ddc-1-05-i | ¶14 | `Psal. lxviii. 19.` | Ps 68:19 | `Psal. lxviii. 18.` | Ps 68:18 | divergence |
 | ddc-1-05-i | ¶15 | `Matt. xxvii. 40.` | Matt 27:40 | `—` | — | present in Latin only |
+| ddc-1-05-j | ¶1 | `Philipp. ii. 9, 10, 11.` | Phil 2:9,10,11 | `Philipp. ii. 9—11.` | Phil 2:9,10,11 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-05-j | ¶3 | `—` | — | `xiv. 1.` | John 14:1 | present in English only |
+| ddc-1-05-j | ¶3 | `Joan. xi. 25, 26, 27.` | John 11:25,26,27 | `John xi. 25—27.` | John 11:25,26,27 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-05-j | ¶4 | `—` | — | `xvii. 5.` | John 17:5 | present in English only |
+| ddc-1-05-j | ¶4 | `v. 24` | John 6:24 | `v. 24` | John 17:24 | divergence |
+| ddc-1-05-j | ¶7 | `Philipp. ii. 6.` | Phil 2:6 | `Philipp. ii. 5.` | Phil 2:5 | divergence |
+| ddc-1-05-j | ¶8 | `—` | — | `vii. 28.` | John 7:28 | present in English only |
+| ddc-1-05-j | ¶9 | `v. 7, 8, 11, 12.` | Ps 2:7,8,11,12 | `Psal. vii. 8, 11, 12.` | Ps 7:8,11,12 | divergence |
+| ddc-1-05-j | ¶9 | `cap. iii. 32. &c.` | John 3:32 &c. | `iii. 32.` | John 3:32 | divergence |
+| ddc-1-05-j | ¶9 | `2 Cor. iv. 46.` | 2Cor 4:46 | `2 Cor. iv. 4, 6.` | 2Cor 4:4,6 | divergence |
+| ddc-1-05-j | ¶10 | `Mat. xvi. 15, 16, 17, 18, 19.` | Matt 16:15,16,17,18,19 | `Matt. xvi. 15—19.` | Matt 16:15,16,17,18,19 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-05-j | ¶10 | `Joan. i. 50, 51.` | John 1:50,51 | `John i. 49, 50.` | John 1:49,50 | divergence |
+| ddc-1-05-j | ¶10 | `et ix. 35, 36, 37, 38.` | John 9:35,36,37,38 | `ix. 35—38.` | John 9:35,36,37,38 | same target, syntax differs (— CH V-LIST / — CH V-RANGE) |
 | ddc-1-07 | ¶4 | `—` | — | `v. 27` | Acts 4:27 | present in English only |
 | ddc-1-07 | ¶6 | `cap. viii.` | Job 8 | `—` | — | present in Latin only |
 | ddc-1-07 | ¶6 | `Job. xxviii.` | Job 28 | `—` | — | present in Latin only |
