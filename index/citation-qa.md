@@ -1,12 +1,12 @@
 # Citation QA — read this, do not merely generate it
 
-13195 records · 157 unclassified · 6 out-of-range · 8 versification · 901 divergence rows, 51 suspect
+13334 records · 161 unclassified · 6 out-of-range · 8 versification · 916 divergence rows, 52 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 6601
-- `en-sumner` — 6594
-- spread: 7 records, 0.1%
+- `la` — 6671
+- `en-sumner` — 6663
+- spread: 8 records, 0.1%
 
 ## Unclassified — never a record with an invented target
 
@@ -26,6 +26,9 @@
 - `ddc-1-04-c` `ddc-1-04-c:en-sumner:{¶10}:28` — `self-destroy'd / By their own fault. Book I. l. 9.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
 - `ddc-1-04-c` `ddc-1-04-c:en-sumner:{¶10}:29` — `are miscall'd the crimes of fate. / Book I. l. 40.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
 - `ddc-1-04-c` `ddc-1-04-c:la:{¶10}:8` — `et v. 13.` → `et v. N` — neither the canon nor the English layer settles whether `v` is the roman 5 or *versus*. Not indexed.
+- `ddc-1-05-b` `ddc-1-05-b:la:{¶5}:9` — `. 10. *tu creasti:* de quo plura vide infra, Cap. vii.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
+- `ddc-1-05-b` `ddc-1-05-b:la:{¶8}:0` — `v. 2` → verse continuation with no chapter in scope
+- `ddc-1-05-b` `ddc-1-05-b:en-sumner:{¶10}:0` — `i. 2, 3.` → chapter continuation with no book in scope
 - `ddc-1-07` `ddc-1-07:la:{¶8}:1` — `a, quam persona aliqua, ut supra ostendimus, cap. vi.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
 - `ddc-1-07` `ddc-1-07:la:{¶23}:54` — `angeli.* Jos. vi. 2. Cætera de angelis infra cap. ix.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
 - `ddc-1-08` `ddc-1-08:la:{¶5}:0` — `nium conservatio: sed qua ratione vide supra cap. v.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
@@ -128,6 +131,7 @@
 - `ddc-1-04-a` `ddc-1-04-a:en-sumner:{¶16}:13` — `lxv. 9, 10.` → Zech has 14 chapters — chapter 65 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-04-b` `ddc-1-04-b:la:{¶3}:4` — `v. 46` → ERR: 1Pet 1 has 25 verses — 46 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-04-b` `ddc-1-04-b:en-sumner:{¶3}:4` — `v. 46` → ERR: 1Pet 1 has 25 verses — 46 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
+- `ddc-1-05-c` `ddc-1-05-c:la:{¶5}:2` — `v. 34` → ERR: Deut 6 has 25 verses — 34 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-10-b` `ddc-1-10-b:en-sumner:{¶13}:2` — `i. 8.` → ERR: Ps 1 has 6 verses — 8 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-16-a` `ddc-1-16-a:en-sumner:{¶5}:14` — `l. 6.` → 2Cor has 13 chapters — chapter 50 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-16-a` `ddc-1-16-a:en-sumner:{¶5}:15` — `xlix. 6, 7.` → 2Cor has 13 chapters — chapter 49 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
@@ -188,6 +192,7 @@ The two layers were paired but land too far apart to be one citation. Reported, 
 - `ddc-1-04-c` ¶5 — la `v. 31, 32` → Ezek 33:31,32 vs en `xviii. 31, 32.` → Ezek 18:31,32
 - `ddc-1-04-c` ¶10 — la `v. 27` → John 8:27 vs en `v. 25, 26.` → John 10:25,26
 - `ddc-1-04-c` ¶10 — la `v. 25, 26.` → John 8:25,26 vs en `xii. 39, 40` → John 12:39,40
+- `ddc-1-05-b` ¶8 — la `v. 18` → John 1:18 vs en `iii. 16, 18.` → John 3:16,18
 - `ddc-1-07` ¶30 — la `cap. v. 3.` → Gen 5:3 vs en `v. 3` → Gen 2:3
 - `ddc-1-09` ¶15-16 — la `Jos. vi. 2.` → Josh 6:2 vs en `Josh. vi. 14.` → Josh 6:14
 - `ddc-1-10-a` ¶7 — la `v. 30` → Exod 16:30 vs en `v. 22—30.` → Exod 16:22,23,24,25,26,27,28,29,30
@@ -251,7 +256,7 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 
 | class | pairs | what it asserts |
 |---|---|---|
-| `unchecked` | 249 | no division read and no known mechanism. NOT a claim of error |
+| `unchecked` | 252 | no division read and no known mechanism. NOT a claim of error |
 | `open-end` | 108 |  |
 | `versification-predicted` | 92 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
 | `versification` | 80 | a READ J-T division maps the Latin onto the English exactly |
@@ -451,6 +456,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Ps | 80 | -1 | 1 | no |
 | Ps | 88 | +1 | 1 | no |
 | Ps | 133 | +1 | 1 | no |
+| Rev | 1 | +1 | 1 | no |
 | Rev | 22 | +4 | 1 | no |
 | Rom | 4 | +10 | 1 | no |
 | Rom | 8 | +10 | 1 | no |
@@ -561,6 +567,21 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-04-c | ¶10 | `v. 4` | Isa 6:4 | `v. 4, &c.` | Isa 6:4 &c. | divergence |
 | ddc-1-04-c | ¶10 | `Rom. i. 21.` | Rom 1:21 | `Rom. i.              21, 24, 26.` | Rom 1:21,24,26 | divergence |
 | ddc-1-04-c | ¶10 | `2 Thess. ii. 10, 11, 12.` | 2Thess 2:10,11,12 | `2 Thess. ii. 10—12.` | 2Thess 2:10,11,12 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-05-b | ¶5 | `Joan. i. 1, 2, 3.` | John 1:1,2,3 | `John i. 1—3.` | John 1:1,2,3 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-05-b | ¶5 | `Psal. ii. 7.` | Ps 2:7 | `—` | — | present in Latin only |
+| ddc-1-05-b | ¶5 | `—` | — | `Col. i. 18.` | Col 1:18 | present in English only |
+| ddc-1-05-b | ¶5 | `Apoc. i. 5.` | Rev 1:5 | `Rev. i. 4.` | Rev 1:4 | divergence |
+| ddc-1-05-b | ¶5 | `v. 6, 7.` | Heb 1:6,7 | `v. 6` | Heb 1:6 | divergence |
+| ddc-1-05-b | ¶8 | `—` | — | `Micah v. 2.` | Mic 5:2 | present in English only |
+| ddc-1-05-b | ¶8 | `v. 18` | John 1:18 | `iii. 16, 18.` | John 3:16,18 | divergence |
+| ddc-1-05-b | {¶10} | `Apoc. iii. 14.` | Rev 3:14 | `—` | — | Latin paragraph absent from the English layer |
+| ddc-1-05-b | {¶10} | `Heb. i. 2, 3.` | Heb 1:2,3 | `—` | — | Latin paragraph absent from the English layer |
+| ddc-1-05-c | ¶3 | `—` | — | `ii. 1, 4.` | 1Cor 2:1,4 | present in English only |
+| ddc-1-05-c | ¶5 | `v. 34` | Deut 6:34 | `—` | — | present in Latin only |
+| ddc-1-05-c | ¶5 | `Joan. viii. 41. 54.` | John 8:41,54 | `John viii. 41, 54.` | John 8:41,54 | same target, syntax differs (BOOK CH V-PAIR / BOOK CH V-LIST) |
+| ddc-1-05-c | ¶6 | `1 Cor. viii. 4, 5, 6.` | 1Cor 8:4,5,6 | `1 Cor. viii. 4—6.` | 1Cor 8:4,5,6 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-05-c | ¶6 | `v. 6` | 1Cor 8:6 | `—` | — | present in Latin only |
+| ddc-1-05-c | ¶7 | `Eph. iv. 4, 5, 6.` | Eph 4:4,5,6 | `Eph. iv. 4—6.` | Eph 4:4,5,6 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
 | ddc-1-07 | ¶4 | `—` | — | `v. 27` | Acts 4:27 | present in English only |
 | ddc-1-07 | ¶6 | `cap. viii.` | Job 8 | `—` | — | present in Latin only |
 | ddc-1-07 | ¶6 | `Job. xxviii.` | Job 28 | `—` | — | present in Latin only |

@@ -1,5 +1,17 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.v-a, b and c are COMMITTED.** Nothing since I.xxx is pushed or deployed.
+
+- **I.v-c** (unity of God): La 62–66 / En 88–94. 8 → 8, one to one. En notes **3–6**. No Latin note. ★ Note 6 = Milton's *Artis Logicæ* (*Evigilent hic theologi*), with Sumner's claim that nobody had seen it as a clue to Milton's view of the Trinity. ★ En ¶6 *another God*: Sumner adds *God*, which is not in the Latin (the *alius* is John xiv. 16's Comforter). La `2. Ep. i. 4.` → En `ii. 1, 4.` (2 Pet.). No filter blocks.
+- **I.v-d opens at En note 7.** The seam is a page break: La 67 `At scripturarum aliarum causa` / En 94 mid-page `They defend their conduct, however`. **En 94 belongs to both c and d.**
+- ⚠ **Latin label:** La 67 prints its note as **7** (*Aut delendum non…*), not the 8 that follows b's `[^la7]`. Transcribe it as printed (the I.xxxi `[^la9]` precedent) and decide the label in d.
+- Proposed seams (text layer, confirm on the plates): **d** = La 67 through John x. 30 and 1 John v. 7, to before `Ad nomen igitur` (La 71) or on to `Hoc itaque alterum` (La 77). **e** = the name *God* given to the Son, angels, OT theophanies (La 77–93). **f** = `Ex ipso autem evangelio` (La 93) to the end (La 109). Recheck the §7 12-page threshold for each part.
+- Second copies fetched: La 57–67, En 80–94.
+
+⬜ **NEXT: I.v-d.** ⬜ Then e, f, then I.vi. ⬜ Push + deploy: Wilson's call.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.v-a (`68677e7`) and I.v-b (`9a23cdc`) COMMITTED.** Nothing since I.xxx pushed or deployed.
 
 - **I.v-b** (generation): La 58–62 / En 81–88. 10 → 10 (`{¶2–3}` merge; `{¶5 cont.}` at *All these passages*, `{¶8 cont.}` at *The Son is also called only begotten*). En notes **6–9 · 1–2**. Latin `[^la6]` (*Patrem* → *An parem?*) and `[^la7]` (*nos* → *non*), both textual `uncertain`, **both silently followed by the English**. ★ La `Apoc. i. 5` → En `Rev. i. 4` (En error). No filter blocks (one paragraph per append; Wilson flagged the filter mid-part, and nothing had been lost).
