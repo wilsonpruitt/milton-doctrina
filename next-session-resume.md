@@ -1,6 +1,6 @@
 # Next session — resume here
 
-## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.v-a to g are COMMITTED.** Nothing since I.xxx is pushed or deployed.
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.v-a to g are COMMITTED, PUSHED and DEPLOYED** (`dpl_3BHzCcPKUyMBKcd1B9ioiG2WV2Ua`, 122 overrides). Everything through I.v-g is live; I.v shows as a partial chapter.
 
 - **I.v-g** (the principal NT proof-texts: John i. 1, Thomas, Heb. i. 8, Matt. i. 23, Acts xx. 28, Rom. ix. 5, 1 Tim. iii. 16, Tit. ii. 13, 1 John iii. 16, 1 John v. 20, Philipp. ii. 6, Jude 4, Ps. lxviii / Eph. iv): La 80–86 / En 111–**121**. 7 → 11 (`{¶4}` split once, `{¶7}` three times). En notes **1–8** (Mill, Whitchurch search, Horne, Erasmus/Macknight, Waterland ×2, the Greek-article books). Latin `[^la1]` `[^la2]` `[^la3]` (La 81, 81, 82), all textual `ms-error`, ledgered. ★★ **The English silently follows all three** (*ejus*, *rex*, *sic*). ★ **The Latin labels wrap 9 → 1**, like the English. ★ En *distinct from God, who is unity* repeats d's mistranslation of *unus*. Greek only, all read on full-resolution crops. No filter blocks.
 - **Read on the second copies** for La 82–86 and En 111–121. They are the same setting and much clearer. Our English copy was not surveyed for reader's marks.
@@ -8,7 +8,7 @@
 - Proposed seams (text layer, confirm on the plates): **h** = the name Jehovah given to angels and the OT theophanies, La 86 → before `Ex ipso autem evangelio` (La 93), about 7 pp. **Hebrew is back**: En 121 already prints Hebrew at Gen. xix. 18 (not yet read at high dpi). **i** (and perhaps j) = La 93–109, 17 pp, so it must split.
 - Second copies fetched: La 57–87, En 80–122. `script-check.html` regenerated (Greek 748/405), not republished.
 
-⬜ **NEXT: I.v-h.** ⬜ Then the rest of I.v and I.vi. ⬜ Push + deploy: Wilson's call.
+⬜ **NEXT: I.v-h.** ⬜ Then the rest of I.v and I.vi. ⬜ Push + deploy of the remainder: Wilson's call. ⬜ The deploy-log commit (after `c92ae86`) is local only; push it with the next batch.
 
 ---
 
