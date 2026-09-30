@@ -296,3 +296,28 @@ Junius–Tremellius numbering and Sumner's inconsistent KJV adjustments; it show
 
 §6.2's Wolleb and Ames are now on disk — `tools/fetch-loci.sh`, four texts, OCR as finding-aid only.
 They are unread; the `*Loci: pending M4.*` line in every headnote still stands.
+
+## 13. NEXT SESSION: §6.2 loci parallels, sources surveyed and costed (2026-09-30)
+
+M3 is complete (50/50, deployed). The next session starts §6.2.
+
+### 13.1 The sources: keyed English exists; the Latin is OCR only
+
+| Text | Use | Quality |
+|---|---|---|
+| Wolleb, English, Ross **1650**, EEBO-TCP **A96805** | **Primary** | Hand-keyed. ~100k words, 39 letter/word gaps and 36 `foreign` gaps (untyped Greek/Hebrew). All **50** chapter heads with titles. |
+| Ames, *Marrow*, English **1642**, EEBO-TCP **A25291** | **Primary** | Hand-keyed. ~126k words, ~280 small gaps. The 14 `1 page` gaps are `reason="duplicate"` (repeated scan images), not lost text: complete. **62** chapter heads (titles in the following paragraph, not in `<head>`). |
+| Wolleb, English, 1660, EEBO-TCP A66823 | not needed | ~1,500 one-letter gaps. |
+| Wolleb, Latin 1657 / Ames, *Medulla* 1656 (archive.org OCR, `raw/loci/*-la-*.txt`) | finding aid + page images only | Rough: long-s and broken sorts throughout. Ames's Latin `CAP.` heads are essentially undetectable. No keyed Latin text of either was found. |
+
+`tools/fetch-loci.sh` now also pulls the three TCP XML files into `raw/loci/tcp/` (gitignored, regenerable). EEBO-TCP texts are public domain. The old English OCR files (`*-en-*.txt`) are superseded by TCP; keep them only as a fallback. ★ Ross's Wolleb has 50 chapters, the same count as DDC.
+
+### 13.2 The work, in order
+
+1. **Structural map** (Milton 50 × Wolleb 50 × Ames 62) from chapter titles and opening definitions, as a data file (e.g. `index/loci-map.tsv`: ddc chapter, Wolleb book.chapter, Ames book.chapter, confidence, note). About one session, and cheap enough for Sonnet if the TCP heads are extracted mechanically first. **Run this first: it firms up the cost of step 2.**
+2. **Per-chapter panel line**: Milton follows / extends / breaks, one line each, reading the Wolleb and Ames chapter beside our transcribed chapter and its headnote. This is judgment, so **Opus**. It replaces `*Loci: pending M4.*` in the chunk headnotes, or gets its own section; decide the format before writing 50 of them.
+3. **Latin page-image checks**, only where a verbal dependence is asserted (§6.2: keep these rare). This first needs the leaf offsets for the two Latin scans calibrated (STRUCTURE.md method).
+
+### 13.3 Cost
+
+About **3–5 Opus sessions, ~1–1.5M tokens total**, dominated by reading ~225k words of English compendia once, carefully. **This is over the big-burn threshold: step 2 needs Wilson's explicit "which model, and go?" before it starts.** Step 1 alone is small and can proceed on the session's go-ahead.

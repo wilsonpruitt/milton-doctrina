@@ -31,4 +31,11 @@ fetch wolleb-en-1660 abridgmentofchri00woll        # Ross's English; §6.2 names
 echo "Ames, Medulla Theologica / The Marrow of Sacred Divinity"
 fetch ames-la-1656   guilielamesiimed00ames
 fetch ames-en-1639   marrowsacdi00ames             # §6.2 names the 1642; the 1639 is the same translation
+echo "EEBO-TCP keyed texts (PRIMARY for English, PLAN §13) -> raw/loci/tcp/"
+mkdir -p tcp
+for id in A96805 A25291 A66823; do   # Wolleb 1650 (Ross), Ames Marrow 1642, Wolleb 1660 (worse, kept for reference)
+  [ -s "tcp/$id.xml" ] && { echo "  have  tcp/$id.xml"; continue; }
+  curl -sL --max-time 120 -o "tcp/$id.xml" "https://raw.githubusercontent.com/textcreationpartnership/$id/master/$id.xml"
+  [ -s "tcp/$id.xml" ] && echo "  got   tcp/$id.xml" || { rm -f "tcp/$id.xml"; echo "  FAIL  tcp/$id.xml"; }
+done
 echo "done — raw/loci/"

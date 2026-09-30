@@ -1,5 +1,14 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **M3 complete and live (50/50); export refreshed and live. NEXT = §6.2 loci parallels: read PLAN.md §13 first.**
+
+- Sources are surveyed. **Primary: EEBO-TCP keyed English**: Wolleb/Ross 1650 (A96805, 50 chapters) and Ames *Marrow* 1642 (A25291, 62 chapters). Both are in `raw/loci/tcp/`; run `./tools/fetch-loci.sh` if they are missing. The Latin is OCR only (finding aid plus page images).
+- **Step 1 (this session can start it): the structural map** Milton × Wolleb × Ames → `index/loci-map.tsv`. Extract the TCP chapter heads mechanically first.
+- **Step 2 (the panel lines, Opus, ~1–1.5M tokens over 3–5 sessions) needs Wilson's explicit "which model, and go?"** Do not start it on momentum.
+- Still open, unrelated: the specialist Greek/Hebrew pass (`script-check.html`, not republished) and the I.v-h ellipsis pixel count.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **M3 IS COMPLETE: 50/50 chapters, both layers, plate-verified.** I.vi-a (`0f150de`) and I.vi-b (`6ffe08e`) are COMMITTED (local). Deployed state is unchanged: live through I.v. **Unpushed: the deploy log, I.vi-a, the resume commit and I.vi-b.**
 
 - **I.vi-b** (the Spirit's deity examined; the Spirit a created minister): La 115–123 / En 161–171. 12 → 12, strict 1:1. En notes **4–9**; **En 172 opens I.vii at note 1, so the whole Book I ledger is now read, not predicted.** Latin notes **6, 7, 8, 9**, all textual. **Five ledger rows**, including En note 5.
