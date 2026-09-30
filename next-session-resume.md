@@ -1,5 +1,18 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.v-h COMMITTED (local).** Deployed state is unchanged: live through I.v-g. Two commits are unpushed: the deploy-log commit and h.
+
+- **I.v-h** (the name Jehovah given to angels; two persons named Jehovah in one sentence; Exod. xxiii. 21 against Placæus; Revelation and Beza; Isa. viii, Zech. xi–xii, Mal. iii, Isa. xl): La 86–93 / En 121–**130**. 4 → 5 (`{¶2 cont.}` at *But as Placæus*). En notes **9 · 1 · 2** (Beza + Eusebius/Horne/Tomline; Junius; *PL* V. 611). **No Latin notes.** ★ La `cum xviii. 21, 24.` is really Gen. xix; the English silently mends it to `v. 18, 21, 24.` ★ **Hebrew אֲדֽנָי (La 87) has a meteg under the dalet; the En 121 form אֲדנָי has none.** Both were read at full resolution. Greek ἀντιλεγόμενα (note 9). `script-check.html` regenerated (Hebrew 83/37), not republished.
+- ⚠ **Content filter:** Wilson flagged it at En 124 and nothing was lost. After that the English went in half a page per append with no blocks. **Start i that way.**
+- **I.v-i opens at En note 3, Latin label 4.** Seam: La 93 `Ex ipso autem evangelio, quo nos præcipue fundamento niti debemus` / En 130 `Recurring, however, to the Gospel itself`. **La 93 and En 130 belong to both h and i.**
+- Proposed seams (text layer, confirm on the plates): **i** = the name and attributes received from the Father (`Primum itaque apertissime nomen accipit a Patre`, La 94) to before `Honorem divinum` (about La 101), about 8 pp. **j** = `Honorem divinum` to the end of I.v (La 109), about 9 pp. `Hinc Patris quæ sunt` (about La 104) is the fallback seam.
+- Second copies fetched: La 57–93, En 80–131. Fetch more before i (recipe below).
+- ⬜ Owed: a pixel-run count of h's band-resolution ellipses (listed in the chunk's Notes).
+
+⬜ **NEXT: I.v-i.** ⬜ Then I.v-j and I.vi. ⬜ Push + deploy: Wilson's call.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.v-a to g are COMMITTED, PUSHED and DEPLOYED** (`dpl_3BHzCcPKUyMBKcd1B9ioiG2WV2Ua`, 122 overrides). Everything through I.v-g is live; I.v shows as a partial chapter.
 
 - **I.v-g** (the principal NT proof-texts: John i. 1, Thomas, Heb. i. 8, Matt. i. 23, Acts xx. 28, Rom. ix. 5, 1 Tim. iii. 16, Tit. ii. 13, 1 John iii. 16, 1 John v. 20, Philipp. ii. 6, Jude 4, Ps. lxviii / Eph. iv): La 80–86 / En 111–**121**. 7 → 11 (`{¶4}` split once, `{¶7}` three times). En notes **1–8** (Mill, Whitchurch search, Horne, Erasmus/Macknight, Waterland ×2, the Greek-article books). Latin `[^la1]` `[^la2]` `[^la3]` (La 81, 81, 82), all textual `ms-error`, ledgered. ★★ **The English silently follows all three** (*ejus*, *rex*, *sic*). ★ **The Latin labels wrap 9 → 1**, like the English. ★ En *distinct from God, who is unity* repeats d's mistranslation of *unus*. Greek only, all read on full-resolution crops. No filter blocks.
