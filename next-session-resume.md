@@ -1,5 +1,16 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.v-a to e are COMMITTED.** Nothing since I.xxx is pushed or deployed.
+
+- **I.v-e** (name, attributes, works, honour: the Father alone): La 71–76 / En 100–107. 4 → 8 (`{¶2}` in five pieces, one per attribute head). En notes **2–6**. Latin `[^la8]` (La 73, textual): ★★ the English silently follows its conjecture *ipse par patri*, the third time in I.v. ★★ **The English drops Jude 25** and hangs Milton's Vetus Interpres remark on Rom. xvi. 27. ★ Sumner adds *Salome*. No filter blocks.
+- **I.v-f opens at En note 7** (already seen on En 108: *Rhes. 264. Bacch. 1027.*) **and the next Latin label is 9.** The seam is a page break: La 77 `At Filius aliquoties Deus, immo Jehova dicitur` / En 107 mid-page `But it is strenuously urged on the other hand`. **En 107 belongs to both e and f.**
+- **The rest of I.v (La 77–109, 33 pp) must split at least twice more (§7).** Text-layer finding aid: La 77 the second demonstration opens (the name *God* given to angels, judges, Moses; אֱלֹהִים, אֲדֹנָי, Greek δεσπότης with Euripides on En 108, so **Hebrew and Greek are heavy from the first page**). Then the OT theophanies and the Son called Jehovah. Then `Ex ipso autem evangelio` (La 93) to *Patrem majorem* (La 105) and the end (La 109). Find Milton's own turns on the plates.
+- Second copies fetched: La 57–77, En 80–108. `script-check.html` regenerated (Greek 680/381), not republished.
+
+⬜ **NEXT: I.v-f.** ⬜ Then the rest of I.v and I.vi. ⬜ Push + deploy: Wilson's call.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.v-a to d are COMMITTED.** Nothing since I.xxx is pushed or deployed.
 
 - **I.v-d** (John x. 30, 1 John v. 7, the two *principia*): La 67–71 / En 94–100. 7 → 8 (`{¶4 cont.}` at *In the first place, granting*). En notes **7 · 8 · 9 · 1**. Latin `[^la7]` (La 67, textual, printed **7 again**): anchor kept plain because it is chunk-local, and the ledger row is keyed by page 67. ★★ The English silently takes the note's second option (*How then are they one?*). ★★ En ¶6 *the name of the Father, who is unity* mistranslates *unius Patris nomen*. ★ Note 8 corrects Milton on the Syriac (Marsh, Horne), and note 9 prints Erasmus and Beza. Greek: οὐσιωδῶς / ὑποστατικῶς (La 70, En 98), οὐσίαν (note 9). No filter blocks.

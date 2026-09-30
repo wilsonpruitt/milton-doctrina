@@ -1,11 +1,11 @@
 # Citation QA — read this, do not merely generate it
 
-13351 records · 164 unclassified · 6 out-of-range · 8 versification · 917 divergence rows, 52 suspect
+13545 records · 164 unclassified · 6 out-of-range · 8 versification · 940 divergence rows, 52 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 6679
-- `en-sumner` — 6672
+- `la` — 6776
+- `en-sumner` — 6769
 - spread: 7 records, 0.1%
 
 ## Unclassified — never a record with an invented target
@@ -259,7 +259,7 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 
 | class | pairs | what it asserts |
 |---|---|---|
-| `unchecked` | 252 | no division read and no known mechanism. NOT a claim of error |
+| `unchecked` | 255 | no division read and no known mechanism. NOT a claim of error |
 | `open-end` | 108 |  |
 | `versification-predicted` | 92 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
 | `versification` | 80 | a READ J-T division maps the Latin onto the English exactly |
@@ -360,10 +360,12 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | 1Kgs | 22 | +1 | 1 | no |
 | 1Pet | 2 | +1 | 1 | no |
 | 1Pet | 3 | +1 | 1 | no |
+| 1Pet | 4 | +1 | 1 | no |
 | 1Pet | 5 | -1 | 1 | no |
 | 1Sam | 12 | +1 | 1 | no |
 | 1Sam | 16 | +1 | 1 | no |
 | 1Sam | 24 | +1 | 1 | no |
+| 1Thess | 1 | -1 | 1 | no |
 | 1Tim | 5 | +13 | 1 | no |
 | 2Chr | 15 | -1 | 1 | no |
 | 2Chr | 25 | +1 | 1 | no |
@@ -586,6 +588,29 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-05-c | ¶6 | `v. 6` | 1Cor 8:6 | `—` | — | present in Latin only |
 | ddc-1-05-c | ¶7 | `Eph. iv. 4, 5, 6.` | Eph 4:4,5,6 | `Eph. iv. 4—6.` | Eph 4:4,5,6 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
 | ddc-1-05-d | ¶2 | `v. 38` | John 14:38 | `x. 38.` | John 10:38 | divergence |
+| ddc-1-05-e | ¶1 | `1 Cor. i. 1, 2, 3.` | 1Cor 1:1,2,3 | `1 Cor. i. 1—3.` | 1Cor 1:1,2,3 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-05-e | ¶1 | `2 Cor. i. 1, 2, 3.` | 2Cor 1:1,2,3 | `2 Cor. i. 1—3.` | 2Cor 1:1,2,3 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-05-e | ¶2 | `—` | — | `xviii. 35.` | Matt 18:35 | present in English only |
+| ddc-1-05-e | ¶2 | `—` | — | `v. 21` | Matt 20:21 | present in English only |
+| ddc-1-05-e | ¶2 | `—` | — | `Matt. xxvi. 42.` | Matt 26:42 | present in English only |
+| ddc-1-05-e | ¶2 | `—` | — | `v. 53` | Matt 26:53 | present in English only |
+| ddc-1-05-e | ¶2 | `v. 42` | John 6:42 | `—` | — | present in Latin only |
+| ddc-1-05-e | ¶2 | `et v. 53.` | John 6:53 | `—` | — | present in Latin only |
+| ddc-1-05-e | ¶2 | `Joan. vii. 17. 18.` | John 7:17,18 | `John vii. 17, 18.` | John 7:17,18 | same target, syntax differs (BOOK CH V-PAIR / BOOK CH V-LIST) |
+| ddc-1-05-e | ¶2 | `et xvi. 25, 26, 27.` | Rom 16:25,26,27 | `xvi. 25—27.` | Rom 16:25,26,27 | same target, syntax differs (— CH V-LIST / — CH V-RANGE) |
+| ddc-1-05-e | ¶2 | `Judæ 25` | Jude 1:25 | `—` | — | present in Latin only |
+| ddc-1-05-e | ¶2 | `1 Tim. vi. 13, 14, 15, 16.` | 1Tim 6:13,14,15,16 | `1 Tim. vi. 13—16.` | 1Tim 6:13,14,15,16 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-05-e | ¶3 | `Rom. xvi. 25, 26, 27.` | Rom 16:25,26,27 | `Rom. xvi. 25—27.` | Rom 16:25,26,27 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-05-e | ¶3 | `1 Tim. vi. 13, 14, 15, 16.` | 1Tim 6:13,14,15,16 | `1 Tim. vi. 13—16.` | 1Tim 6:13,14,15,16 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-05-e | ¶3 | `Act. v. 30, 31, 32, 33.` | Acts 5:30,31,32,33 | `Acts v. 30—33.` | Acts 5:30,31,32,33 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-05-e | ¶3 | `1 Thess.              i. 9, 10.` | 1Thess 1:9,10 | `1 Thess. i. 10.` | 1Thess 1:10 | divergence |
+| ddc-1-05-e | ¶3 | `—` | — | `ii. 19.` | 1Pet 2:19 | present in English only |
+| ddc-1-05-e | ¶3 | `Joan. ii. 19.` | John 2:19 | `—` | — | present in Latin only |
+| ddc-1-05-e | ¶4 | `et iv. 21, 23.` | John 4:21,23 | `iv. 21—23.` | John 4:21,22,23 | divergence |
+| ddc-1-05-e | ¶4 | `et iv. 11.` | 1Pet 4:11 | `and iv. 10.` | 1Pet 4:10 | divergence |
+| ddc-1-05-e | ¶4 | `Joan. iv. 5, 6.` | John 4:5,6 | `—` | — | present in Latin only |
+| ddc-1-05-e | ¶4 | `—` | — | `iii. 1.` | Matt 3:1 | present in English only |
+| ddc-1-05-e | ¶4 | `Mal. iii. 1.` | Mal 3:1 | `—` | — | present in Latin only |
 | ddc-1-07 | ¶4 | `—` | — | `v. 27` | Acts 4:27 | present in English only |
 | ddc-1-07 | ¶6 | `cap. viii.` | Job 8 | `—` | — | present in Latin only |
 | ddc-1-07 | ¶6 | `Job. xxviii.` | Job 28 | `—` | — | present in Latin only |
