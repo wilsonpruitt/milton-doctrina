@@ -1,12 +1,12 @@
 # Citation QA — read this, do not merely generate it
 
-14552 records · 192 unclassified · 6 out-of-range · 9 versification · 1014 divergence rows, 56 suspect
+14682 records · 194 unclassified · 6 out-of-range · 9 versification · 1023 divergence rows, 56 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 7282
-- `en-sumner` — 7270
-- spread: 12 records, 0.2%
+- `la` — 7348
+- `en-sumner` — 7334
+- spread: 14 records, 0.2%
 
 ## Unclassified — never a record with an invented target
 
@@ -163,6 +163,8 @@
 - `ddc-1-05-i` `ddc-1-05-i:en-sumner:{¶11}:4` — `xxxv. 4—6.` → Acts has 28 chapters — chapter 35 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-05-i` `ddc-1-05-i:en-sumner:{¶13}:3` — `v. 17—21.` → ERR: 2Cor 4 has 18 verses — 19, 20, 21 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-06-a` `ddc-1-06-a:en-sumner:{¶15}:27` — `xxviii. 19.` → 1Pet has 5 chapters — chapter 28 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
+- `ddc-1-06-b` `ddc-1-06-b:la:{¶2}:5` — `v. 32` → ERR: 1Thess 4 has 18 verses — 32 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
+- `ddc-1-06-b` `ddc-1-06-b:en-sumner:{¶2}:5` — `v. 32` → ERR: 1Thess 4 has 18 verses — 32 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-10-b` `ddc-1-10-b:en-sumner:{¶13}:2` — `i. 8.` → ERR: Ps 1 has 6 verses — 8 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-16-a` `ddc-1-16-a:en-sumner:{¶5}:14` — `l. 6.` → 2Cor has 13 chapters — chapter 50 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-16-a` `ddc-1-16-a:en-sumner:{¶5}:15` — `xlix. 6, 7.` → 2Cor has 13 chapters — chapter 49 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
@@ -292,7 +294,7 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 
 | class | pairs | what it asserts |
 |---|---|---|
-| `unchecked` | 271 | no division read and no known mechanism. NOT a claim of error |
+| `unchecked` | 274 | no division read and no known mechanism. NOT a claim of error |
 | `open-end` | 110 |  |
 | `versification-predicted` | 96 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
 | `versification` | 80 | a READ J-T division maps the Latin onto the English exactly |
@@ -341,6 +343,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Ps | 34 | +1 | 4 | **yes** |
 | Ps | 34 | -1 | 1 | no |
 | Ps | 40 | +1 | 4 | **yes** |
+| 2Cor | 13 | -1 | 3 | **yes** |
 | Amos | 2 | -3 | 3 | **yes** |
 | Eccl | 9 | +2 | 3 | **yes** |
 | Eccl | 9 | +3 | 1 | no |
@@ -361,7 +364,6 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Ps | 75 | +1 | 3 | **yes** |
 | Ps | 92 | +1 | 3 | **yes** |
 | 1Sam | 7 | -1 | 2 | **yes** |
-| 2Cor | 13 | -1 | 2 | **yes** |
 | 2Kgs | 24 | +2 | 2 | **yes** |
 | Acts | 15 | +10 | 2 | **yes** |
 | Deut | 5 | +6 | 2 | **yes** |
@@ -726,6 +728,15 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-06-a | ¶15 | `Act. ii. 2, 3, 4, 33.` | Acts 2:2,3,4,33 | `Acts ii. 2—4, 33.` | Acts 2:2,3,4,33 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
 | ddc-1-06-a | ¶15 | `—` | — | `xxviii. 19.` | 1Pet 28:19 | present in English only |
 | ddc-1-06-a | ¶15 | `Matt. xxviii. 19.` | Matt 28:19 | `—` | — | present in Latin only |
+| ddc-1-06-b | ¶2 | `Act. v. 3.` | Acts 5:3 | `Acts v. 3, 4.` | Acts 5:3,4 | divergence |
+| ddc-1-06-b | ¶4 | `Joan. xiv. 23.` | John 14:23 | `—` | — | present in Latin only |
+| ddc-1-06-b | ¶5 | `v. 10` | 1Cor 2:10 | `—` | — | present in Latin only |
+| ddc-1-06-b | ¶5 | `v. 11` | 1Cor 2:11 | `—` | — | present in Latin only |
+| ddc-1-06-b | ¶8 | `1 Cor. i. 13, 14, 15.` | 1Cor 1:13,14,15 | `1 Cor. i. 13–15.` | 1Cor 1:13,14,15 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-06-b | ¶9 | `2 Cor. xiii. 13.` | 2Cor 13:13 | `2 Cor. xiii. 14.` | 2Cor 13:14 | divergence |
+| ddc-1-06-b | ¶9 | `1 Cor. xii. 4, 5, 6.` | 1Cor 12:4,5,6 | `1 Cor. xii. 4–6.` | 1Cor 12:4,5,6 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-06-b | ¶10 | `—` | — | `v. 32` | Mark 3:32 | present in English only |
+| ddc-1-06-b | ¶11 | `Joan. viii. 16, 18.` | John 8:16,18 | `John viii. 16, 19.` | John 8:16,19 | divergence |
 | ddc-1-07 | ¶4 | `—` | — | `v. 27` | Acts 4:27 | present in English only |
 | ddc-1-07 | ¶6 | `cap. viii.` | Job 8 | `—` | — | present in Latin only |
 | ddc-1-07 | ¶6 | `Job. xxviii.` | Job 28 | `—` | — | present in Latin only |
