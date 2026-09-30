@@ -1,17 +1,21 @@
 # Citation QA — read this, do not merely generate it
 
-12934 records · 141 unclassified · 6 out-of-range · 8 versification · 873 divergence rows, 48 suspect
+13010 records · 147 unclassified · 6 out-of-range · 8 versification · 880 divergence rows, 48 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 6472
-- `en-sumner` — 6462
+- `la` — 6510
+- `en-sumner` — 6500
 - spread: 10 records, 0.2%
 
 ## Unclassified — never a record with an invented target
 
 - `ddc-1-01` `ddc-1-01:la:{¶7}:4` — `et v. 6.` → `et v. N` — neither the canon nor the English layer settles whether `v` is the roman 5 or *versus*. Not indexed.
 - `ddc-1-02` `ddc-1-02:la:{¶27}:3` — `et v. 5.` → `et v. N` — neither the canon nor the English layer settles whether `v` is the roman 5 or *versus*. Not indexed.
+- `ddc-1-04-b` `ddc-1-04-b:la:{¶2}:0` — `v. 28` → verse continuation with no chapter in scope
+- `ddc-1-04-b` `ddc-1-04-b:la:{¶2}:1` — `v. 30` → verse continuation with no chapter in scope
+- `ddc-1-04-b` `ddc-1-04-b:en-sumner:{¶2}:0` — `v. 28` → verse continuation with no chapter in scope
+- `ddc-1-04-b` `ddc-1-04-b:en-sumner:{¶2}:1` — `v. 30` → verse continuation with no chapter in scope
 - `ddc-1-07` `ddc-1-07:la:{¶8}:1` — `a, quam persona aliqua, ut supra ostendimus, cap. vi.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
 - `ddc-1-07` `ddc-1-07:la:{¶23}:54` — `angeli.* Jos. vi. 2. Cætera de angelis infra cap. ix.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
 - `ddc-1-08` `ddc-1-08:la:{¶5}:0` — `nium conservatio: sed qua ratione vide supra cap. v.` → chapter continuation governed by lib./Book/supra/infra — a reference to a treatise, not to scripture. Not indexed.
@@ -112,6 +116,8 @@
 - `ddc-1-03` `ddc-1-03:la:{¶11}:11` — `v. 11` → ERR: Jonah 3 has 10 verses — 11 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-04-a` `ddc-1-04-a:la:{¶16}:14` — `cap. lxv. 9, 10.` → Zech has 14 chapters — chapter 65 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-04-a` `ddc-1-04-a:en-sumner:{¶16}:13` — `lxv. 9, 10.` → Zech has 14 chapters — chapter 65 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
+- `ddc-1-04-b` `ddc-1-04-b:la:{¶3}:4` — `v. 46` → ERR: 1Pet 1 has 25 verses — 46 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
+- `ddc-1-04-b` `ddc-1-04-b:en-sumner:{¶3}:4` — `v. 46` → ERR: 1Pet 1 has 25 verses — 46 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-10-b` `ddc-1-10-b:en-sumner:{¶13}:2` — `i. 8.` → ERR: Ps 1 has 6 verses — 8 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-16-a` `ddc-1-16-a:en-sumner:{¶5}:14` — `l. 6.` → 2Cor has 13 chapters — chapter 50 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-16-a` `ddc-1-16-a:en-sumner:{¶5}:15` — `xlix. 6, 7.` → 2Cor has 13 chapters — chapter 49 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
@@ -232,7 +238,7 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 
 | class | pairs | what it asserts |
 |---|---|---|
-| `unchecked` | 242 | no division read and no known mechanism. NOT a claim of error |
+| `unchecked` | 243 | no division read and no known mechanism. NOT a claim of error |
 | `open-end` | 106 |  |
 | `versification-predicted` | 92 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
 | `versification` | 79 | a READ J-T division maps the Latin onto the English exactly |
@@ -514,6 +520,13 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-04-a | ¶18 | `v. 20` | Rom 11:20 | `v. 22` | Rom 11:22 | divergence |
 | ddc-1-04-a | ¶18 | `—` | — | `Philipp. iii. 12.` | Phil 3:12 | present in English only |
 | ddc-1-04-a | ¶18 | `v. 13` | 2Tim 2:13 | `—` | — | present in Latin only |
+| ddc-1-04-b | ¶1 | `Rom. viii. 28, 29, 30.` | Rom 8:28,29,30 | `Rom. viii. 28—30.` | Rom 8:28,29,30 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-04-b | ¶2 | `—` | — | `Rom. xi. 2.` | Rom 11:2 | present in English only |
+| ddc-1-04-b | ¶2 | `—` | — | `v. 20` | Rom 11:20 | present in English only |
+| ddc-1-04-b | ¶2 | `cap. xi. 2.` | Rev 11:2 | `—` | — | present in Latin only |
+| ddc-1-04-b | ¶2 | `v. 20` | Rev 11:20 | `—` | — | present in Latin only |
+| ddc-1-04-b | ¶3 | `Rom. ii. 10, 11. 14.` | Rom 2:10,11,14 | `Rom. ii. 10, 14.` | Rom 2:10,14 | divergence |
+| ddc-1-04-b | ¶3 | `2 Thess. iii. 6. 11.` | 2Thess 3:6,11 | `2 Thess. iii. 6, 11.` | 2Thess 3:6,11 | same target, syntax differs (BOOK CH V-PAIR / BOOK CH V-LIST) |
 | ddc-1-07 | ¶4 | `—` | — | `v. 27` | Acts 4:27 | present in English only |
 | ddc-1-07 | ¶6 | `cap. viii.` | Job 8 | `—` | — | present in Latin only |
 | ddc-1-07 | ¶6 | `Job. xxviii.` | Job 28 | `—` | — | present in Latin only |
