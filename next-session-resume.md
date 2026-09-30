@@ -1,5 +1,17 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxxiii is COMPLETE and COMMITTED: part a (`1da3f0c`), part b (`a384bb9`). I.xxxi–I.xxxiii NOT pushed or deployed.** Book I is done except I.iv–I.vi.
+
+- **I.xxxiii-a** (second advent, resurrection): La 372–377 / En 505–512, 21 → 21. En notes **7·8**. **J–T Jer 3 (+5) and Isa 27 (first verse 3) read and entered in `jt-divisions.json`**; I.xix's open Jer 3 question closed by an appended correction.
+- **I.xxxiii-b** (judgement, millennium, hell, glory, new earth): La 378–386 / En 512–525, 25 → 25 with one reorder `{¶3} {¶6} {¶4} {¶5}` (the I.xv mechanism). En notes **9·1–8·9·1·2** (`-2` on the second 9, 1, 2). **★★ Book I closes at note 2 → II.i opens at 3: the ledger prediction held end to end** (runbook §3 updated). Latin `[^la1]` (Junius) and `[^la2]` (Chrysostom), both scholarly: **the Latin labels restart at 1** here. Greek: Chrysostom in note 9-2 (900 dpi), ἅδης La 384. **★ `chapters.tsv` fixed: I.xxxiii La is 15 pp (372–386).**
+- No content-filter blocks across I.xxxi–I.xxxiii (one paragraph per append throughout).
+
+⬜ **NEXT: I.iv–I.vi, scheduled last on purpose (M3-RUNBOOK §5).** I.iv *De Prædestinatione* (La 26 pp: split), I.v *De Filio Dei* (53 pp: 4–5 parts; its first seam is the *Præfatio*, and M3-RUNBOOK §7 says I.v does not open with its title, so read §7 first), I.vi *De Spiritu Sancto* (14 pp). Read M3-RUNBOOK §5 and §7 before starting. Checksums: I.iv opens after I.iii's last note; take it from `ddc-1-03.md`'s Notes. Plates not yet staged: `./tools/prep-chapter.sh 1 4 1 6`.
+
+⬜ Push + deploy I.xxxi–I.xxxiii, Wilson's call. ⬜ `script-check.html` regenerated (Greek 551/323), not republished. ⬜ R2 export stale since 2026-09-18. ⬜ I.xxxi `2 Cor. xi. 8→9` and I.xxxiii-b `Job xiv. 13→12` J–T checks.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxxii is COMPLETE and COMMITTED (`7beaf46`). I.xxxi–I.xxxii NOT pushed or deployed.**
 
 - **I.xxxii** *De Disciplina Ecclesiastica*: La 366–371 / En 497–504. 18 → 17 (`{¶4–5}`). En notes **1–6**, checksum held. ★ Note 3 = Sumner reading the women's-silence texts behind *PL* VIII. 50 / XII. 597. ★ En softens *non infantis, sed adulti* to *(that is, of all adults)*. No Latin note, no digit divergences, no filter blocks. La 371 `putant.` = full stop (second copy, §2b).

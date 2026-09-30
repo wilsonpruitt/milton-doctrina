@@ -149,6 +149,7 @@ nothing needed migrating. **Do not re-open any of them per chapter**; Book I sta
   anticipated, and **the checksum is now live for all 33 Book I chapters.**
   **Book I ledger:** preface → **1–8** · I.i → **none** · I.ii → **9 · 1–9 · 1–7** (seventeen, the
   densest chapter in the corpus). So **I.iii must open at note 8.**
+  **✅ CLOSED END-TO-END 2026-09-29: I.xxxiii-b ends Book I at note 2, and II.i opens at 3 — the prediction above held across the whole of Book I (I.iv–I.vi still to transcribe, but their count is already fixed between I.iii and I.vii).**
   Blind spot: the cycle is only 9 long, so it can never detect a miss of exactly 9 notes. It is
   not a substitute for reading every plate for superscripts.
 - **Also check the LATIN plates for superscripts.** The Latin volume carries apparatus too — see
