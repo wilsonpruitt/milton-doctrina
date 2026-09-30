@@ -1,0 +1,118 @@
+---
+id: ddc-1-05-d
+book: 1
+chapter: 5
+part: d
+title_la: "De Filio Dei"
+title_en: "Of the Son of God"
+pages_la: "67-71"
+status: draft
+pages_en: "94-100"
+---
+
+## la
+
+<!-- p.67 -->
+{¶1} At scripturarum aliarum causa hæc sese commentari defendunt, utcunque rationi videantur minus consentanea; cæteroqui scripturas inter se consentire non videri. Rationis igitur nulla ratio habeatur; scripturam rursus audiamus.
+
+{¶2} Duo duntaxat loci sunt. Primus est Joan. x. 30. *Ego et Pater unum sumus:* id est, unum essentia, ut vulgo interpretantur. At per Deum immortalem nihil temere agamus de Deo. Non uno modo unum duæ res dici possunt. *Ego et Pater unum sumus* ait Filius, ait Scriptura: acquiesco. Unum essentia divinavit nescio quis: commentum humanum rejicio. Quemadmodum enim unum cum Patre sit Filius, non nobis divinandum Filius reliquit, (quisquis id primus in ecclesia sibi arrogavit) sed ipse docet clarissime quantum quidem nostra interest scire. Unum sunt Pater et Filius non utique essentia, ipse enim contra versu superiore dixerat, *Pater meus qui dedit mihi eas, major omnibus est* (immo cap. xiv. 28. *major me est*) et in sequentibus diserte negat fecisse seipsum Deum, eo quod dixisset, *Ego et Pater unum sumus.* Hoc tantum dixisse confirmat, quod longe minus est, v. 36. *me quem Pater sanctificavit et misit in mundum, vos dicitis blasphemare, quia dixi, Filius Dei sum?* Hæc de duobus essentia disparatis dici necesse est, et quidem non æqualibus. Quod si de una duorum divina essentia hæc docet Filius, cur non potius de una trium? cur individuam dividit trinitatem? Quod non est totum, non est unum. Ex ipsorum igitur sententia qui affirmant, Filius et Pater sine Spiritu essentia non sunt unum. Quemadmodum igitur non[^la7] sunt? Ipse solus docere potest; et docet. Primum, quia unum loquuntur, unum agunt; atque ita se explicat eodem capite cum Judæi dictum illud perperam intelligerent; v. 38. *operibus credite, ut cognoscatis et credatis Patrem in me esse, et me in eo.* Sic cap. xiv. 10. *non credis me in Patre et Patrem in me esse? verba quæ ego loquor vobis, a meipso non loquor; sed Pater qui in me manet, ipse facit opera.* Hic Patrem a seipso toto evidenter distinguit, sed Patrem in se manere quidem ait; quod non essentiam eorum unam sed communionem tantum arctissimam declarat. Secundo, declarat se et Patrem esse unum quo<!-- p.68 -->modo nos cum eo unum sumus: id utique non est essentia, sed dilectione, communione, consensu, charitate, animo, gloria denique. Joan. xiv. 20, 21. *in illo die vos cognoscetis me esse in Patre meo, et vos in me, et me in vobis. Qui habet mandata mea et observat illa, is est qui diligit me; qui autem diligit me, diligetur a Patre meo.* et xvii. 21. *ut omnes unum sint, sicut tu Pater in me et ego in te; ut et ipsi in nobis unum sint* &c. et v. 23. *ego in iis, et tu in me, ut sint consummati in unum; et ut cognoscat mundus quod tu me miseris, et eos diligas prout me dilexisti.* et v. 22. *ego gloriam quam dedisti mihi dedi iis, ut sint unum sicut et nos unum sumus.* Cum tot modis Filius Patrem et se esse unum clare doceat, ego eos omnes modos posthabeam? modum alium, nempe illud essentia unum, adversa atque invita ratione, ratiocinando excogitem, aut ab nescio quo primum homine excogitatum præponam? Quo fidejussore? Ecclesia? Ego vero, docente ipsa Ecclesia orthodoxa, recte aliter instituor; Christum prius esse audiendum.
+
+{¶3} Alter locus, omnium ut putatur vulgo evidentissimus, quo recepta sententia de unitate trium personarum essentiali fundata est, 1 Joan. v. 7. *Tres sunt qui testificantur in cœlo, Pater, Sermo, et Spiritus Sanctus, et hi tres unum sunt,* præterquam quod et in Syro et duabus reliquis Orientalium versionibus, Arabica nimirum et Æthiopica, et in plerisque Græcis codicibus antiquis non reperiatur hic versus, et in quibus reperitur, mira varietate descriptus est, non magis probat, qui unum esse dicuntur, eos necessario essentia unum esse in cœlo, quam quæ sequente versu in terra unum esse dicuntur. Certe de unitate consensus et testimonii itidem ut loco proxime citato, duntaxat hic agi ab Joanne, siquidem Joannis hæc vere sunt, non vidit modo Erasmus, sed Beza etiam vel invitus agnovit; quos ipsos adire licet. Deinde tres illi quinam sunt? Tres Deos esse pernegabis; ergo nec est unus Deus, sed una trium testium testificatio, unum testimonium. Qui autem unus essentia cum Deo Patre non est, par esse Patri non potest: sed de hoc loco infra amplius capite sequente.
+
+{¶4} At, inquiunt, ut verbis disertis non ponat Scriptura unum essentia esse Patrem et Filium, ratio tamen ex scripturæ vel his vel aliis <!-- p.69 -->locis id efficit atque evincit. Primum, ut hoc concedam quod nullo modo concedo, tamen in re tam sublimi supraque rationem posita, in ipsis fidei elementis et quasi primis postulatis, solo Dei verbo, eoque clarissimo ac disertissimo, non sola ratione, fides niti potest. Verum hic ratio voce maxima reclamat. Quid enim obsecro evincere hic potest ratio? an sententiam rationi contrariam? Certe ratio rationem parit, non notiones absurdas et ab omni humano intellectu remotissimas. Concludendum est igitur, hanc sententiam neque scriptura neque ratione constare. Reliquum est ex duobus necessario consequentibus, si Deus est unus isque Pater, et tamen Filius quoque Deus dicitur, uti is decreto, ut antedictum est, et voluntate Patris et nomen et naturam divinam a Deo Patre acceperit. Hoc neque ratio ulla redarguit, et Scriptura innumeris testimoniis docet.
+
+{¶5} Sed quoniam qui Filium volunt unum esse cum Patre Deum, tametsi superioribus illis duobus locis destituantur, quibus omnes etiam non nituntur, id tamen liquido satis demonstrare se posse confidunt, si scripturarum crebris auctoritatibus probare poterunt, Filio et nomen et attributa et opera Dei, divinum denique honorem passim attribui, eandem et nos insistamus viam: neque alio postulamus ut credatur pacto unum esse Deum Patrem et præterea neminem, nisi demonstramus atque evincimus, primum, hæc omnia omnibus in locis cum ab ipso Filio, tum ab ejus apostolis uni duntaxat Deo Patri verbis disertis attribui; deinde, sicubi hæc Filio tribuuntur, id ita fieri, ut primario ac proprie Patri soli attribuenda hæc esse omnia facile possit intelligi; quicquid Filio Deitatis tribuitur, id omne Filium fateri se Patris dono singulari ac beneficio possidere, idemque apostolos testari; majorem proinde rebus omnibus Patrem Filio et ipsum Filium et apostolos ejus dictis suis omnibus et scriptis agnoscere.
+
+{¶6} Scio quid hic sint responsuri, qui unum esse Deum, non unum tamen Patrem Deum esse credunt. Occurram itaque initio semel, ne ad loca singula molesti sint atque obstrepant. Duo petunt principia, quod dici solet, vel emendicant potius ut sibi gratis demus; primum, <!-- p.70 -->ut Dei nomen Patri soli passim attributum, οὐσιωδῶς intelligatur non ὑποστατικῶς, id est, ut unius Patris nomen tres personas significet, vel totam trinitatis essentiam, non unam Patris personam. Quæ distinctio cum multis modis absurda est, tum ad eorum duntaxat excogitata sententiam sustentandam; cum re quidem vera non eam sustentet, sed ab ea sustentetur; adeoque sententiam ipsam si infirmaveris, id est, negaveris modo, inanis illa distinctio simul cadit: quæ non inanis modo, sed omnino nulla distinctio est, immo idem per idem, græcis adverbiis ad præstringendos novitiorum oculos callide vibratum. Cum enim essentia et hypostasis, ut secundo capite ostendimus, idem sit, conjugata certe adverbia essentialiter et hypostatice nihil distinguunt. Si igitur Dei nomen soli Patri essentialiter attribuitur, hypostatice etiam soli Patri attribuetur; cum una essentia substantialis nihil aliud quam hypostasis una sit, et contra. Quæsiverim itaque ab adversariis velintne Deum Patrem ens esse an non? Ens certe entium. Ergo, inquam, ut hypostasin unam, ita essentiam quoque sibi propriam, et maxime omnium incommunicabilem habebit, nemini, id est, nulli præterea personæ, communem: nec propriam hypostasin sine propria essentia habere potest. Enti enim æque omni impossibile est essentiam suam, per quam est id quod est, et ab aliis omnibus numero differt, cum alia re quavis habere communem. Filius igitur ut propriam hypostasin, ita et propriam sibi essentiam si non habet, sed Patris, profecto eorum sententia aut non ens efficitur, aut cum Patre plane idem. Quæ quidem doctrina religionem Christianam funditus evertit. Quod autem responderi solet, essentiæ quidem unius finitæ unam duntaxat posse esse personam, infinitæ essentiæ posse esse personas plures, ridiculum est; eo enim ipso quod infinita essentia est, tanto magis nonnisi unius personæ esse potest. Patris cum essentiam tum personam omnes infinitam esse agnoscunt; communicari igitur Patris essentia personæ alteri non potest: sic enim duo infiniti esse possent, immo millies milleni.
+
+{¶7} Alterum petunt, ut quicquid Divinitatis Filius Patri soli et quasi majori tribuit, id vel tanquam homo vel tanquam mediator tribuisse <!-- p.71 -->existimetur: quod quoties locus et res ipsa postulat, ultro idque sine ullo nostro incommodo facile dabimus; contendant enim quantum volent, Filium ut hominem duntaxat aut mediatorem Patri soli tribuisse omnia, nunquam ea ratione probaverint Deum esse cum Patre unum: quoties non ipsa res sed eorum duntaxat theses flagitant uti hoc sibi gratis demus, facile negabimus; Filiumque maxime ut Filium, etiam ut Deum, Patri tanquam Dei Deo, non sibi quocunque nomine aut ratione tribuere quæ tribuit, ostendemus.
+
+## en-sumner
+
+<!-- GAP: {¶1}–{¶7} owed -->
+
+## apparatus-sumner-en
+
+[^s7]: (printed En p. 96, anchored after *to listen to the words of Christ before all other.*) 'The best of those that then wrote (in the first ages of Christianity) disclaim that any man should repose on them, and send all to the Scriptures.' *Of Reformation in England.* Prose Works, I. 11.
+
+[^s8]: (printed En p. 96, anchored after *this verse is wanting in the Syriac*) This is true of the manuscripts of the old Syriac version, but the *printed* editions of the Syriac as well as of the Armenian versions contain the disputed clause. See Bishop Marsh's *Letters to Archdeacon Travis.* Preface, Notes 8, 9, 10, 11. With respect to the Greek manuscripts Milton expresses himself cautiously. It now appears that the clause is not found in any Greek manuscript written before the sixteenth century, which has been yet collated. For an elaborate account of the arguments for and against its authenticity, see Horne's *Introduction,* &c. Part II. Chap. iv. Sect. 5. §. 6. where references are given to the principal authorities.
+
+[^s9]: (printed En p. 96, anchored after *(as may be seen in their own writings)*) 'Annon illico poterunt tergiversari, de consensu dictum esse, non de eadem essentia?...... Nihil autem æque confirmat auctoritatem testimonii ut consensus. Itaque consentiunt in terra Spiritus, aqua et sanguis. An hæc tria sunt unum, sicut Pater, Filius et Spiritus Sanctus unum sunt? Nemo dicit, opinor, sed testimonii consensu sunt unum; ita Pater, Verbum et Spiritus Sanctus sunt unum.' Erasmi *Responsio ad Notationes novas Ed. Leid.* Tom. IX. p. 278. Edit. Lug. Bat. 1703. '*Et hi tres unum sunt:* id est, ita prorsus consentiunt ac si unus testis essent; uti re vera unum sunt si οὐσίαν spectes; sed de illa (ut mihi quidem videtur) non agitur hoc in loco.' Beza in loc.
+
+[^s1]: (printed En p. 99, anchored after *since by this essence it is what it is,*) "The form, by which the thing is what it is, is oft so slender and undistinguishable," &c. &c. *Tetrachordon.* Prose Works, II. 140.
+
+## apparatus-sumner-la
+
+[^la7]: (printed La p. 67, anchored after *Quemadmodum igitur non*; **textual**; printed **7**, repeating the label of I.v-b's note on La 62) Aut delendum *non,* quæ vox sententiæ repugnat, aut loco particulæ negantis reponendum *unum.*
+
+## headnote
+
+**Place.** The fourth part of I.v. Part c set out the texts that make the Father the one God. Here Milton takes the two texts the other side relies on, then states his method for everything that follows.
+
+**Argument.** John x. 30, *I and my Father are one*, says one, not one in essence. The next verses put the Father above the Son, and the chapter explains the unity itself: one in speech and work, one as believers are one with Christ, in love, communion and glory. 1 John v. 7 is missing from the Syriac, Arabic and Ethiopic and from most old Greek manuscripts, and even as it stands it describes one testimony, as Erasmus and Beza admit. Reason cannot prove what is contrary to reason, so the Son has his name and divine nature from the Father by decree. Milton then refuses the two "principia" his opponents beg: that *God* said of the Father means the whole essence (οὐσιωδῶς, not ὑποστατικῶς), and that the Son defers to the Father only as man or mediator.
+
+**Pressure point.** Essence and hypostasis are the same thing, so a Son with his own hypostasis but the Father's essence is either nothing or the Father. Sumner's note 8 corrects Milton on the Syriac, and note 9 prints the Erasmus and Beza passages Milton leaves the reader to find.
+
+*Loci: pending M4.*
+
+## Notes
+
+### Split
+
+Part d of I.v: from `At scripturarum aliarum causa` (La 67, a page opening) / `They defend their conduct, however` (En 94, mid-page) to *quæ tribuit, ostendemus* (La 71) / *under any title or pretence whatever* (En 100). The seam is Milton's turn from the objections to the texts: *Ad nomen igitur quod attinet Dei* (La 71) / *With regard to the name of God* (En 100). **Part e opens there.** La 71 and En 100 belong to both d and e. En 94 belongs to both c and d.
+
+### Alignment
+
+**7 La ¶¶ → 8 En ¶¶: one split.** `{¶4}` · `{¶4 cont.}` at *In the first place, granting* (En 97). Sumner makes the objection (*At, inquiunt … evincit*) a paragraph of its own. The Latin runs on at *Primum, ut hoc concedam*.
+
+### Footnote ledger
+
+**English: four notes, `7 · 8 · 9 · 1`**, opening at 7 as part c predicted, and wrapping 9 → 1 between En 96 and En 99. Notes 7, 8 and 9 are all on En 96. Note 1 is on En 99. En 94, 95, 97 and 98 have no notes at the foot. **Part e opens at note 2**, and En 100 already shows it (Col. ii. 2, Greek).
+
+**Latin: one note, printed 7, on La 67.** Part b's last Latin note was also printed 7 (La 62). Transcribed as printed, following the I.xxxi `[^la9]` precedent. The anchor stays plain `[^la7]`, because anchors are chunk-local (the English `[^s1]` appears plainly in both I.iv-a and I.iv-b). The ledger row is keyed by page (67), so it cannot be confused with La 62's. **The next Latin label is therefore 8, whether Sumner's printer repeated 7 by mistake or restarted.** La 68–71 have no notes at the foot. `check-la-notes.py` was run after transcription.
+
+### Findings
+
+**★★ `[^la7]` is a textual note, and the English silently takes its second option.** The Latin prints *Quemadmodum igitur non sunt?* ("How then are they *not*?"). Sumner's note says either delete *non*, which contradicts the sense, or put *unum* in place of the negative. The English has *How then are they one?*, which is the second option, with no English note. Ledgered `uncertain`.
+
+**★★ En `{¶6}` *the name of the Father, who is unity*** for *unius Patris nomen* ("the name of the one Father"). Sumner takes the genitive *unius* ("of one") as a phrase about the Father's nature. The argument is about *one* Father against three persons, and the English inverts it into a claim about divine unity. This is a mistranslation.
+
+**★ Note 8 corrects Milton.** Sumner says the *printed* Syriac (and the Armenian) contain 1 John v. 7, citing Marsh's *Letters to Archdeacon Travis*, and adds that the clause is in no Greek manuscript earlier than the sixteenth century, citing Horne's *Introduction*.
+
+**★ Note 9 supplies what Milton only points to.** Milton writes *quos ipsos adire licet* ("you may consult them yourself"). Sumner prints Erasmus's *Responsio ad Notationes novas* (Leiden 1703, IX. 278) and Beza on the verse. Beza's note contains the only Greek in the English apparatus of this part, οὐσίαν (900 dpi).
+
+**En `{¶6}` *the adverbs essentially and substantially*** for *essentialiter et hypostatice*. Sumner renders *hypostatice* as *substantially* throughout, which fits Milton's point that the two words are the same. En *an abstract ens* adds *abstract* to *ens esse an non*.
+
+**En `{¶2}` *(see also xiv. 28.)*** for *immo cap. xiv. 28.* ("nay, …"). The Latin's *immo* ("nay, even") is stronger than *see also*.
+
+Four English notes: *Of Reformation* (Prose Works I. 11), Marsh and Horne, Erasmus and Beza, *Tetrachordon* (Prose Works II. 140).
+
+### Non-Latin script (M3-RUNBOOK §12, ⚠ UNVERIFIED)
+
+- La 70 `{¶6}` οὐσιωδῶς … ὑποστατικῶς, read at 900 dpi.
+- En 98 `{¶6}` the same two adverbs, set in the English text.
+- En 96 note 9 οὐσίαν, read at 900 dpi.
+
+### Citation divergences (as printed, never harmonised)
+
+- `{¶2}` La `Joan. x. 30.` → En `John x. 30.`; La `v. 36.` → En `v. 36.`; La `v. 38.` → En `x. 38.`; La `cap. xiv. 10.` → En `xiv. 10.`; La `et xvii. 21. … et v. 23. … et v. 22.` → En `xvii. 21. … v. 23. … v. 22.` Same targets.
+- `{¶2}` La `cap. xiv. 28.` → En `xiv. 28.`
+
+### Plate checks (M3-RUNBOOK §2b)
+
+- La 67 `v. 38. operibus credite, ut`: the draft reads `operibus, credite`. Both copies have no comma after *operibus*.
+- La 67 `non credis`: the draft reads `credos`. Both copies have *credis*.
+- La 69 `nullo modo concedo`: the draft reads `concede`. The plate has *concedo*.
+- La 69 `*f` and `primum*` in the draft are specks. There is no note.
+
+### Small caps
+
+None in either layer.
+
+### Ellipses
+
+Note 9: six dots after *essentia?*, from the 200 dpi plate (±1).
+
+### Content filter
+
+<!-- filled on completion -->
