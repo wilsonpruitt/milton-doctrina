@@ -1,5 +1,17 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.iv parts a (`a015520`) and b (`0b30b4e`) COMMITTED; part c next.** Nothing since I.xxx pushed or deployed.
+
+- **I.iv is split in three** (26 La pp): a = definition + clause gloss (La 31–40 / En 44–55, 18 → 18); b = Rom. viii. 28–30 and Acts xiii. 48 (La 40–45 / En 55–63, 3 → 8, one six-piece split); **c = *Verum adhuc fortassis objicietur* to the end (La 45–56 / En 63–79)**. ¶ labels restart per part.
+- Footnotes: I.iv opened at **6** as predicted. a = 6–9·1–3, b = 4–9·1–3. **Part c opens at note 4.** Latin labels so far: `[^la3]` (a, textual, ledgered), `[^la4]` (b, scholarly).
+- ★ a: En silently adopts `[^la3]`'s repunctuation of Jas 1:18. ★ b: En note 5 drops *dilecti* from Milton's Latin (ledgered `en-sumner` emendation); En prints τεταγμένος for La τεταγμένοι; note 8's `τοῖς ἀτάκτοις` flagged for §12.
+- Content filter blocked once in b (the English); one paragraph (or less) per append cleared it. **Do the same for c from the start** (reprobation, Romans ix).
+- Second copies already fetched: La 31–56, En 44–80. Plates for I.iv–I.vi staged.
+
+⬜ Then I.v (La 57–109, 4–5 parts, *Præfatio* first — M3-RUNBOOK §7) and I.vi. ⬜ Push + deploy I.xxxi–I.xxxiii + I.iv, Wilson's call. ⬜ Regenerate `script-check.html` after I.iv (Greek added in b).
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxxiii is COMPLETE and COMMITTED: part a (`1da3f0c`), part b (`a384bb9`). I.xxxi–I.xxxiii NOT pushed or deployed.** Book I is done except I.iv–I.vi.
 
 - **I.xxxiii-a** (second advent, resurrection): La 372–377 / En 505–512, 21 → 21. En notes **7·8**. **J–T Jer 3 (+5) and Isa 27 (first verse 3) read and entered in `jt-divisions.json`**; I.xix's open Jer 3 question closed by an appended correction.
