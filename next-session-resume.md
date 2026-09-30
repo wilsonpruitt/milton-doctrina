@@ -1,5 +1,16 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.v-a to f are COMMITTED.** Nothing since I.xxx is pushed or deployed.
+
+- **I.v-f** (the name *God* given to angels, judges, Moses; Hebrew plurals; theophanies): La 77–80 / En 107–111. 9 → 5 (`{¶1–2}`, `{¶3–7}`, `{¶9 cont.}` at *judges*). En notes **7 · 8 · 9**. Latin `[^la9]` (La 78, scholarly: Euripides references). ★★ **The English drops the אָדוֹן sentence (Exod. xxiii. 17).** ★ The English renumbers to its own versification and drops the Latin's quotations for Deut. v / Jos. xxiv / Gen. xx. **Hebrew read at 900 dpi, and nothing supplied from grammar. ⚠ La עשתְרִית vs En עַשְׁהָרות is flagged for the specialist pass.** No filter blocks.
+- **I.v-g opens at En note 1, Latin label 10.** Seam: La 80 `Hac ratione Filium esse Deum, loca ipsa præcipua` / En 111 `Even the principal texts themselves`. **La 80 and En 111 belong to both f and g.**
+- Proposed seams (text layer, confirm on the plates): **g** = the principal NT texts: John i. 1, Thomas (John xx. 28), Heb. i. 8, Tit. ii. 13, 1 John iii. 16, *Palmarius locus* 1 John v. 20 (La 85–86), to before `Verum ab evangelio ad legis tempora` (La 86). About 6 pp. **h** = OT theophanies and Jehovah texts, La 86 to before `Ex ipso autem evangelio` (La 93). **i** (and perhaps j) = La 93–109.
+- Second copies fetched: La 57–81, En 80–112. `script-check.html` regenerated (Hebrew 81/35, Greek 705/393), not republished.
+
+⬜ **NEXT: I.v-g.** ⬜ Then the rest of I.v and I.vi. ⬜ Push + deploy: Wilson's call.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.v-a to e are COMMITTED.** Nothing since I.xxx is pushed or deployed.
 
 - **I.v-e** (name, attributes, works, honour: the Father alone): La 71–76 / En 100–107. 4 → 8 (`{¶2}` in five pieces, one per attribute head). En notes **2–6**. Latin `[^la8]` (La 73, textual): ★★ the English silently follows its conjecture *ipse par patri*, the third time in I.v. ★★ **The English drops Jude 25** and hangs Milton's Vetus Interpres remark on Rom. xvi. 27. ★ Sumner adds *Salome*. No filter blocks.

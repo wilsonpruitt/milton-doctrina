@@ -1,12 +1,12 @@
 # Citation QA — read this, do not merely generate it
 
-13545 records · 164 unclassified · 6 out-of-range · 8 versification · 940 divergence rows, 52 suspect
+13630 records · 167 unclassified · 5 out-of-range · 9 versification · 954 divergence rows, 52 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 6776
-- `en-sumner` — 6769
-- spread: 7 records, 0.1%
+- `la` — 6819
+- `en-sumner` — 6811
+- spread: 8 records, 0.1%
 
 ## Unclassified — never a record with an invented target
 
@@ -135,6 +135,9 @@
 - `ddc-1-05-d` `ddc-1-05-d:la:{¶2}:2` — `v. 36` → ERR: John 14 has 31 verses — 36 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-05-d` `ddc-1-05-d:la:{¶2}:3` — `v. 38` → ERR: John 14 has 31 verses — 38 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-05-d` `ddc-1-05-d:en-sumner:{¶2}:2` — `v. 36` → ERR: John 14 has 31 verses — 36 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
+- `ddc-1-05-f` `ddc-1-05-f:en-sumner:{¶3–7}:16` — `l. 304` → ERR: Ps 50 has 23 verses — 304 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
+- `ddc-1-05-f` `ddc-1-05-f:en-sumner:{¶3–7}:17` — `l. 312` → ERR: Ps 50 has 23 verses — 312 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
+- `ddc-1-05-f` `ddc-1-05-f:en-sumner:{¶9}:14` — `xii. 41.` → ERR: Isa 12 has 6 verses — 41 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-10-b` `ddc-1-10-b:en-sumner:{¶13}:2` — `i. 8.` → ERR: Ps 1 has 6 verses — 8 out of range — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-16-a` `ddc-1-16-a:en-sumner:{¶5}:14` — `l. 6.` → 2Cor has 13 chapters — chapter 50 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
 - `ddc-1-16-a` `ddc-1-16-a:en-sumner:{¶5}:15` — `xlix. 6, 7.` → 2Cor has 13 chapters — chapter 49 does not exist — and the book here was CARRIED, not named, so the carry is the likelier defect. Not indexed; read the passage.
@@ -179,7 +182,6 @@
 
 - `ddc-2-02` la {¶27} `Luc. ix. 66.` — ERR: Luke 9 has 62 verses — 66 out of range
 - `ddc-2-03` la {¶11} `2 Reg. vi. 35.` — ERR: 2Kgs 6 has 33 verses — 35 out of range
-- `ddc-2-03` la {¶34} `Deut. v. 38.` — ERR: Deut 5 has 33 verses — 38 out of range
 - `ddc-2-04-c` la {¶11} `Isa. lviii. 56.` — ERR: Isa 58 has 14 verses — 56 out of range
 - `ddc-2-04-c` en-sumner {¶16} `1 Kings xxvii. 29.` — 1Kgs has 22 chapters — chapter 27 does not exist
 - `ddc-2-10` en-sumner {¶3–4} `Psal. iii. 9.` — ERR: Ps 3 has 8 verses — 9 out of range
@@ -259,9 +261,9 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 
 | class | pairs | what it asserts |
 |---|---|---|
-| `unchecked` | 255 | no division read and no known mechanism. NOT a claim of error |
+| `unchecked` | 258 | no division read and no known mechanism. NOT a claim of error |
 | `open-end` | 108 |  |
-| `versification-predicted` | 92 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
+| `versification-predicted` | 93 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
 | `versification` | 80 | a READ J-T division maps the Latin onto the English exactly |
 | `anomaly` | 9 | a division IS read and does not explain it -- listed above |
 
@@ -273,6 +275,7 @@ Out-of-range citations reclassified as Junius-Tremellius numbering. These are re
 - `ddc-2-02` la {¶7} `Eccles. xii. 15.` — versification — Eccl 12 runs +2 (attested at xii. 14 = KJV 12:12); at +2 this is KJV 12:13, the verse quoted
 - `ddc-2-02` la {¶9} `Eccles. ix. 20.` — versification — paired with `Eccles. ix. 18.` → Eccl 9:18 in the other layer, and offset +2 in Eccl 9 is attested 3× in the corpus
 - `ddc-2-02` en-sumner {¶7} `Eccles. xii. 15.` — versification — Eccl 12 runs +2 (attested at xii. 14 = KJV 12:12); at +2 this is KJV 12:13, the verse quoted
+- `ddc-2-03` la {¶34} `Deut. v. 38.` — versification — paired with `Deut. v. 32.` → Deut 5:32 in the other layer, and offset +6 in Deut 5 is attested 2× in the corpus
 - `ddc-2-09` la {¶16} `Eccles. ii. 27.` — versification — paired with `Eccles. ii. 26.` → Eccl 2:26 in the other layer, and offset +1 in Eccl 2 is attested 2× in the corpus
 - `ddc-2-13` la {¶33} `Eccles. vii. 30.` — versification — paired with `Eccles. viii. 1.` → Eccl 8:1 in the other layer, and Eccl 7 runs past the KJV bound into ch 8, and ch 8 is independently attested 4× at offset -1 — the complementary observable
 - `ddc-2-13` la {¶34} `Eccles. ix. 22.` — versification — paired with `Eccles. x. 2.` → Eccl 10:2 in the other layer, and Eccl 9 runs past the KJV bound into ch 10, and ch 10 is independently attested 2× at offset -3 — the complementary observable
@@ -330,6 +333,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | 2Cor | 13 | -1 | 2 | **yes** |
 | 2Kgs | 24 | +2 | 2 | **yes** |
 | Acts | 15 | +10 | 2 | **yes** |
+| Deut | 5 | +6 | 2 | **yes** |
 | Eccl | 2 | +1 | 2 | **yes** |
 | Eccl | 10 | -3 | 2 | **yes** |
 | Eccl | 10 | -14 | 1 | no |
@@ -344,6 +348,7 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Josh | 5 | -1 | 2 | **yes** |
 | Matt | 24 | +24 | 2 | **yes** |
 | Ps | 12 | +1 | 2 | **yes** |
+| Ps | 45 | +1 | 2 | **yes** |
 | Ps | 55 | +1 | 2 | **yes** |
 | Ps | 55 | +15 | 1 | no |
 | Ps | 60 | +2 | 2 | **yes** |
@@ -383,7 +388,6 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Acts | 10 | -22 | 1 | no |
 | Col | 3 | -1 | 1 | no |
 | Dan | 2 | -1 | 1 | no |
-| Deut | 5 | +6 | 1 | no |
 | Deut | 6 | -1 | 1 | no |
 | Deut | 6 | +1 | 1 | no |
 | Deut | 23 | +1 | 1 | no |
@@ -453,7 +457,6 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | Ps | 39 | +1 | 1 | no |
 | Ps | 42 | +1 | 1 | no |
 | Ps | 44 | +1 | 1 | no |
-| Ps | 45 | +1 | 1 | no |
 | Ps | 46 | +1 | 1 | no |
 | Ps | 54 | +2 | 1 | no |
 | Ps | 56 | +1 | 1 | no |
@@ -611,6 +614,20 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-05-e | ¶4 | `Joan. iv. 5, 6.` | John 4:5,6 | `—` | — | present in Latin only |
 | ddc-1-05-e | ¶4 | `—` | — | `iii. 1.` | Matt 3:1 | present in English only |
 | ddc-1-05-e | ¶4 | `Mal. iii. 1.` | Mal 3:1 | `—` | — | present in Latin only |
+| ddc-1-05-f | ¶3-7 | `Psal. viii. 6.` | Ps 8:6 | `—` | — | present in Latin only |
+| ddc-1-05-f | ¶3-7 | `—` | — | `Psal. viii. 5.` | Ps 8:5 | present in English only |
+| ddc-1-05-f | ¶3-7 | `—` | — | `Exod. xxii. 28.` | Exod 22:28 | present in English only |
+| ddc-1-05-f | ¶3-7 | `et xxii. 8, 9, 28.` | Exod 22:8,9,28 | `xxii. 8, 9.` | Exod 22:8,9 | divergence |
+| ddc-1-05-f | ¶3-7 | `et xlv. 8.` | Ps 45:8 | `xlv. 7.` | Ps 45:7 | divergence |
+| ddc-1-05-f | ¶3-7 | `—` | — | `l. 304` | Ps 50:304 | present in English only |
+| ddc-1-05-f | ¶3-7 | `—` | — | `l. 312` | Ps 50:312 | present in English only |
+| ddc-1-05-f | ¶8 | `Deut. v. 32.` | Deut 5:32 | `Deut. v. 26.` | Deut 5:26 | divergence |
+| ddc-1-05-f | ¶8 | `Exod. xxiii. 17.` | Exod 23:17 | `—` | — | present in Latin only |
+| ddc-1-05-f | ¶9 | `et xxii. 11, 12, 15.` | Gen 22:11,12,15 | `xxii. 11, 12, 15, 16.` | Gen 22:11,12,15,16 | divergence |
+| ddc-1-05-f | ¶9 | `Gen. xxxi. 11, 12, 13.` | Gen 31:11,12,13 | `Gen. xxxi. 11—13.` | Gen 31:11,12,13 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-05-f | ¶9 | `—` | — | `xii. 41.` | Isa 12:41 | present in English only |
+| ddc-1-05-f | ¶9 | `Joan. xii. 41.` | John 12:41 | `—` | — | present in Latin only |
+| ddc-1-05-f | ¶9 | `Joan. x. 34, 35, 36.` | John 10:34,35,36 | `John x. 34—36.` | John 10:34,35,36 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
 | ddc-1-07 | ¶4 | `—` | — | `v. 27` | Acts 4:27 | present in English only |
 | ddc-1-07 | ¶6 | `cap. viii.` | Job 8 | `—` | — | present in Latin only |
 | ddc-1-07 | ¶6 | `Job. xxviii.` | Job 28 | `—` | — | present in Latin only |
