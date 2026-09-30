@@ -1,5 +1,17 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **M3 IS COMPLETE: 50/50 chapters, both layers, plate-verified.** I.vi-a (`0f150de`) and I.vi-b (`6ffe08e`) are COMMITTED (local). Deployed state is unchanged: live through I.v. **Unpushed: the deploy log, I.vi-a, the resume commit and I.vi-b.**
+
+- **I.vi-b** (the Spirit's deity examined; the Spirit a created minister): La 115–123 / En 161–171. 12 → 12, strict 1:1. En notes **4–9**; **En 172 opens I.vii at note 1, so the whole Book I ledger is now read, not predicted.** Latin notes **6, 7, 8, 9**, all textual. **Five ledger rows**, including En note 5.
+- ★★★ At Acts v the Latin note `[^la7]` declines to emend, and the English note `[^s5]` proposes `Quid, quod … significet?` and translates it: two volumes, two remedies.
+- ★★ The English silently follows `[^la8]` (*per Filium*) and `[^la9]` (*atque*). En drops `Joan. xiv. 23.` En says *three persons* where the Latin says *tres*. *who is unity* again. En `John viii. 16, 19` is probably wrong (La 18).
+- ⚠ Greek: dative ἀγίῳ is printed with what looks like a smooth breathing in three settings (La 114, En 159, En 163 note 4). ἅγιον (La 119, En 166) has a clear rough one. This is for the specialist pass.
+- `script-check.html` regenerated (Greek 864/442), **not republished**.
+
+⬜ **NEXT: push + deploy (Wilson's call, CLI-only, recipe in `metadata/open-layer-launch-checks.md`).** ⬜ Then whatever follows M3 in PLAN.md (M4 loci and the specialist script pass).
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.vi-a COMMITTED (local, `0f150de`).** Deployed state is unchanged: live through I.v. Two local commits are unpushed: the deploy log and I.vi-a.
 
 - **I.vi-a** (the senses of *Spiritus*, OT and NT; Christ's own teaching on the Spirit): La 110–115 / En 153–160. 15 → 15, strict 1:1. En notes **7 · 8 · 9 · 1 · 2 · 3** (the 9→1 wrap is on En 155): Grotius + Ridley's *First Sermon*, Patrick, Sanctius/Pradus, Ridley's *Second Sermon* (refutation), *PR* I. 30 / 82 (`sorran` for *sovran*, both copies). **No Latin notes in a.** ★ La 112 `meam` for *meum* (both copies). ★ En inserts *(who, Whitby, Macknight)* into the text at Eph. i. 13, 14. ⚠ Greek ἀγίῳ breathing looks smooth in BOTH layers; flagged, not reconstructed.
