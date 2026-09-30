@@ -1,5 +1,17 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.iv is COMPLETE: a (`a015520`), b (`0b30b4e`), c (`947c526`).** Nothing since I.xxx pushed or deployed. **Two chapters left: I.v and I.vi.**
+
+- I.iv ledger: `6–9 · 1–9 · 1–9 · 1` (23 En notes). **I.v opens at English note 2.** Latin labels in I.iv: `[^la3]` (a, textual), `[^la4]` (b, scholarly); c has none.
+- c: 10 → 13 (three splits). ★ La `Gen. xxvii. 42` for 40, En corrects silently. ★ Chapter ends with Homer (Od. I. 7, I. 32–34); Sumner adds Pope. Boundary confirmed: `CAP. V.` La 57, `CHAP. V.` En 80.
+- **Content filter blocked twice in c, once in b** (English, reprobation/hardening). Half-paragraph appends cleared every block. **Start I.v that way.**
+- `script-check.html` regenerated, not republished.
+
+⬜ **NEXT: I.v *De Filio Dei*** — La 57–109 / En 80–152. 4–5 parts. Part a = the *Præfatio* (M3-RUNBOOK §7: `CAP. V.` / `PRÆFATIO.`; find the second heading for the next seam). Heaviest Greek/Hebrew still to come. Plates staged; second copies NOT yet fetched past La 56 / En 80 (La leaf = printed+17 `bwb_T5-ARK-705`, En leaf = printed+51 `treatiseonchrist00miltrich`).
+⬜ Then I.vi (La 110–123 / En 153–171). ⬜ Push + deploy I.xxxi–I.xxxiii + I.iv, Wilson's call.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.iv parts a (`a015520`) and b (`0b30b4e`) COMMITTED; part c next.** Nothing since I.xxx pushed or deployed.
 
 - **I.iv is split in three** (26 La pp): a = definition + clause gloss (La 31–40 / En 44–55, 18 → 18); b = Rom. viii. 28–30 and Acts xiii. 48 (La 40–45 / En 55–63, 3 → 8, one six-piece split); **c = *Verum adhuc fortassis objicietur* to the end (La 45–56 / En 63–79)**. ¶ labels restart per part.
