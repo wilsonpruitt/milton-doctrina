@@ -1,5 +1,16 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.v-a to d are COMMITTED.** Nothing since I.xxx is pushed or deployed.
+
+- **I.v-d** (John x. 30, 1 John v. 7, the two *principia*): La 67–71 / En 94–100. 7 → 8 (`{¶4 cont.}` at *In the first place, granting*). En notes **7 · 8 · 9 · 1**. Latin `[^la7]` (La 67, textual, printed **7 again**): anchor kept plain because it is chunk-local, and the ledger row is keyed by page 67. ★★ The English silently takes the note's second option (*How then are they one?*). ★★ En ¶6 *the name of the Father, who is unity* mistranslates *unius Patris nomen*. ★ Note 8 corrects Milton on the Syriac (Marsh, Horne), and note 9 prints Erasmus and Beza. Greek: οὐσιωδῶς / ὑποστατικῶς (La 70, En 98), οὐσίαν (note 9). No filter blocks.
+- **I.v-e opens at En note 2** (already seen on En 100, Col. ii. 2, with Greek) **and the next Latin label is 8.** Seam: La 71 `Ad nomen igitur quod attinet Dei` / En 100 `With regard to the name of God`. **La 71 and En 100 belong to both d and e.**
+- Proposed seams (text layer, confirm on the plates): **e** = the catena on the name *God* (La 71 →), through the passages where the Son is called God, angels and OT theophanies, to before `Ex ipso autem evangelio` (La 93). That is about 22 pp, **over §7's 12-page threshold, so it must split**: find a turn around La 77 (`Hoc itaque alterum`) and/or La 85. **f** = `Ex ipso autem evangelio` (La 93) to the end (La 109, 17 pp: split too).
+- Second copies fetched: La 57–71, En 80–100. `script-check.html` regenerated (Greek 668/377), not republished.
+
+⬜ **NEXT: I.v-e.** ⬜ Then the rest of I.v and I.vi. ⬜ Push + deploy: Wilson's call.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.v-a, b and c are COMMITTED.** Nothing since I.xxx is pushed or deployed.
 
 - **I.v-c** (unity of God): La 62–66 / En 88–94. 8 → 8, one to one. En notes **3–6**. No Latin note. ★ Note 6 = Milton's *Artis Logicæ* (*Evigilent hic theologi*), with Sumner's claim that nobody had seen it as a clue to Milton's view of the Trinity. ★ En ¶6 *another God*: Sumner adds *God*, which is not in the Latin (the *alius* is John xiv. 16's Comforter). La `2. Ep. i. 4.` → En `ii. 1, 4.` (2 Pet.). No filter blocks.
