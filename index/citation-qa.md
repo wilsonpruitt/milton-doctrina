@@ -1,12 +1,12 @@
 # Citation QA — read this, do not merely generate it
 
-12070 records · 133 unclassified · 6 out-of-range · 7 versification · 804 divergence rows, 41 suspect
+12221 records · 133 unclassified · 6 out-of-range · 7 versification · 809 divergence rows, 41 suspect
 
 ## Per-layer counts (M4-RUNBOOK §6.1 — a gap of more than a few percent is a bug)
 
-- `la` — 6037
-- `en-sumner` — 6033
-- spread: 4 records, 0.1%
+- `la` — 6113
+- `en-sumner` — 6108
+- spread: 5 records, 0.1%
 
 ## Unclassified — never a record with an invented target
 
@@ -217,7 +217,7 @@ A Junius-Tremellius chapter division has been read for these chapters (tools/jt-
 | class | pairs | what it asserts |
 |---|---|---|
 | `unchecked` | 224 | no division read and no known mechanism. NOT a claim of error |
-| `open-end` | 103 |  |
+| `open-end` | 104 |  |
 | `versification-predicted` | 89 | no division read, but the mechanism is known and the shape fits (Psalms +1/+2, numbered superscription) |
 | `versification` | 74 | a READ J-T division maps the Latin onto the English exactly |
 | `anomaly` | 8 | a division IS read and does not explain it -- listed above |
@@ -830,6 +830,11 @@ A numbering offset is a system, so it repeats; a misprint is a singleton. **A bo
 | ddc-1-31 | ¶27 | `Psal. cxxxvii. 7, 8, 9.` | Ps 137:7,8,9 | `Psal. cxxxvii. 7—9.` | Ps 137:7,8,9 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
 | ddc-1-31 | ¶29 | `Ezræ iv. 12, &c.` | Ezra 4:12 &c. | `Ezra iv. 12.` | Ezra 4:12 | divergence |
 | ddc-1-31 | ¶32 | `Joan. xv. 18, 19, 20.` | John 15:18,19,20 | `John xv. 18—20.` | John 15:18,19,20 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-32 | ¶2 | `Rom. xii.` | Rom 12 | `—` | — | present in Latin only |
+| ddc-1-32 | ¶2 | `Eph. iv. 1, 2, 3.` | Eph 4:1,2,3 | `Eph. iv. 1—3.` | Eph 4:1,2,3 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
+| ddc-1-32 | ¶9 | `cap. xviii. 17, 18, 19, 20.` | Matt 18:17,18,19,20 | `compared with xviii. 17—20.` | Matt 18:17,18,19,20 | same target, syntax differs (— CH V-LIST / — CH V-RANGE) |
+| ddc-1-32 | ¶12 | `1 Tim. v. 1, &c.` | 1Tim 5:1 &c. | `1 Tim. v. 1.` | 1Tim 5:1 | divergence |
+| ddc-1-32 | ¶16 | `1 Cor. v. 11, 12, 13.` | 1Cor 5:11,12,13 | `1 Cor. v. 11—13.` | 1Cor 5:11,12,13 | same target, syntax differs (BOOK CH V-LIST / BOOK CH V-RANGE) |
 | ddc-2-01 | ¶8 | `et xii. 2.` | Prov 12:2 | `xii. 3.` | Prov 12:3 | divergence |
 | ddc-2-01 | ¶9-12 | `et xxiv. 1.` | Prov 24:1 | `xxiv. 7.` | Prov 24:7 | divergence |
 | ddc-2-01 | ¶16 | `1 Cor. ix. 18.` | 1Cor 9:18 | `—` | — | present in Latin only |
