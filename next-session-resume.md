@@ -1,5 +1,17 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxxii is COMPLETE and COMMITTED (`7beaf46`). I.xxxi–I.xxxii NOT pushed or deployed.**
+
+- **I.xxxii** *De Disciplina Ecclesiastica*: La 366–371 / En 497–504. 18 → 17 (`{¶4–5}`). En notes **1–6**, checksum held. ★ Note 3 = Sumner reading the women's-silence texts behind *PL* VIII. 50 / XII. 597. ★ En softens *non infantis, sed adulti* to *(that is, of all adults)*. No Latin note, no digit divergences, no filter blocks. La 371 `putant.` = full stop (second copy, §2b).
+
+**Checksums carried forward:** **English: I.xxxiii opens at note 7.** **Latin: next label 10.**
+
+⬜ **NEXT: I.xxxiii *De Glorificatione Perfecta*** — La 372–385 (14 pp, **over §7: split at lemma seams**, e.g. second advent / resurrection / judgement / conflagration and glory) / En 505–525. `CHAP. XXXIII.` plate-confirmed on En 505. Plates and second copies already staged. Eschatology (the millennium, hell): one paragraph per append. After it only I.iv–I.vi remain.
+
+⬜ Push + deploy I.xxxi–I.xxxii (+ whatever follows), Wilson's call. ⬜ `2 Cor. xi. 8`→`9` J–T check (I.xxxi). ⬜ R2 export stale since 2026-09-18.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.xxxi is COMPLETE and COMMITTED (`2a55da4`). NOT pushed or deployed** (I.xxviii–I.xxx are live; deploy = Wilson's call, CLI-only).
 
 - **I.xxxi** *De Ecclesiis Particularibus*: La 354–365 / En 481–496. 33 → 31 (`{¶8–9}` `{¶30–31}`). **Nineteen En notes 9·1–9·1–9**: the cycle wraps twice, so there are `-2` anchors and a `-3` (the third 9). *Hirelings* is quoted in eleven of them. ★ Note 8-2 = Sumner's guess that Milton's dislike of councils shaped the devils' *secret conclave* / *gloomy consistory*. ★ Note 7 gives Milton's *Turcarum religio* Latin under the English *Mahometan superstition*. **★★ Latin `[^la9]`** (La 358, textual, ledgered `uncertain`): *quanto minus* → Sumner *magis*. This closes I.xi's forward pointer *Eodem adverbio peccatur infra Cap. 31*. The label is printed 9, not the 8 expected: transcribed as printed. En Greek πρεσβυτέρους / ἐπισκόπους (¶3, 900 dpi). ⬜ La `2 Cor. xi. 8` → En `xi. 9` is a possible J–T offset, unchecked. **No content-filter blocks** (tithes ¶15 written in pieces).
