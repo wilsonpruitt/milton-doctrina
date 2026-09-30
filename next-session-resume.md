@@ -1,5 +1,16 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.vi-a COMMITTED (local, `0f150de`).** Deployed state is unchanged: live through I.v. Two local commits are unpushed: the deploy log and I.vi-a.
+
+- **I.vi-a** (the senses of *Spiritus*, OT and NT; Christ's own teaching on the Spirit): La 110–115 / En 153–160. 15 → 15, strict 1:1. En notes **7 · 8 · 9 · 1 · 2 · 3** (the 9→1 wrap is on En 155): Grotius + Ridley's *First Sermon*, Patrick, Sanctius/Pradus, Ridley's *Second Sermon* (refutation), *PR* I. 30 / 82 (`sorran` for *sovran*, both copies). **No Latin notes in a.** ★ La 112 `meam` for *meum* (both copies). ★ En inserts *(who, Whitby, Macknight)* into the text at Eph. i. 13, 14. ⚠ Greek ἀγίῳ breathing looks smooth in BOTH layers; flagged, not reconstructed.
+- **I.vi-b opens at En note 4, Latin label 6.** Seam: La 115 `Et sane si Deus quam doctrinam` / En 161 `If it be the divine will that a doctrine`. **La 115 belongs to both parts.** Latin note 6 is already seen on La 115 (*MS. habet nescimus … Restitui scimus*): textual `ms-error`, so ledger it. b runs to La 123 / En 171, about 9 pp, one part. Then the tally reads 50/50.
+- Second copies fetched: La 110–124, En 153–172 (all of I.vi plus one page).
+- ⚠ Content filter: Wilson flagged it at En 157. From there the English went in quarter- to half-page appends with no blocks. **Do b that way from the start.**
+
+⬜ **NEXT: I.vi-b, the last part of the treatise.** ⬜ Then push + deploy: Wilson's call.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.v is COMPLETE (a–j), COMMITTED, PUSHED and DEPLOYED** (`dpl_GcRNSYNFGMUe4bKWH83Y4XbxVhGS`, 122 overrides). Everything through I.v is live; only I.vi remains.
 
 - **I.v-j** (divine honours, baptism, belief, glory; *Patrem majorem*; the Father's and apostles' testimony; the church's confession): La 101–109 / En 142–152. 10 → 11 (`{¶9 cont.}` at *The apostles*). En notes **3–6**: seven *PL*/*PR* parallels (3–5); note 6 = *Opinio in Deum non cadit* with the *Logic* and *Areopagitica*. Latin `[^la5]` (La 102, *esse* → *est*), ledgered; ★★ **the English silently follows it** (eight in I.v). ★ La `2 Cor. iv. 46.` → En `iv. 4, 6.`; En misprints `Psal. vii.` for ii. Chapter boundary confirmed: `CAP. VI.` La 110 / `CHAP. VI.` En 153.
