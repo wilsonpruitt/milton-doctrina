@@ -1,6 +1,6 @@
 # Next session — resume here
 
-## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.v is COMPLETE (a–j) and COMMITTED.** Push + deploy of I.v-h to j: see the deploy log below this block once done.
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.v is COMPLETE (a–j), COMMITTED, PUSHED and DEPLOYED** (`dpl_GcRNSYNFGMUe4bKWH83Y4XbxVhGS`, 122 overrides). Everything through I.v is live; only I.vi remains.
 
 - **I.v-j** (divine honours, baptism, belief, glory; *Patrem majorem*; the Father's and apostles' testimony; the church's confession): La 101–109 / En 142–152. 10 → 11 (`{¶9 cont.}` at *The apostles*). En notes **3–6**: seven *PL*/*PR* parallels (3–5); note 6 = *Opinio in Deum non cadit* with the *Logic* and *Areopagitica*. Latin `[^la5]` (La 102, *esse* → *est*), ledgered; ★★ **the English silently follows it** (eight in I.v). ★ La `2 Cor. iv. 46.` → En `iv. 4, 6.`; En misprints `Psal. vii.` for ii. Chapter boundary confirmed: `CAP. VI.` La 110 / `CHAP. VI.` En 153.
 - **I.vi opens at En note 7, Latin label 6.** La 110–123 / En 153–171 (14 La pp, just over the §7 12-page threshold, so find one seam). Second copies fetched to La 110 / En 153 only.
