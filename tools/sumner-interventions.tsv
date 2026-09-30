@@ -39,6 +39,9 @@
 #   uncertain    Sumner flags the MS reading as doubtful
 #   ms-error     Sumner says the MS reading is a slip and states the correct one, but prints the slip
 #                unchanged (added 2026-09-29, I.xix La 250: "Sic ex incuria scriptum. Oportuit qui")
+#   omission     Sumner discloses that he left part of Milton's text untranslated (en-sumner only).
+#                Added 2026-09-30 by Wilson's ruling, I.v-i En 141 note 1. SILENT drops (I.v-e Jude 25,
+#                I.v-f Exod. xxiii. 17) are NOT ledgered: this file holds admissions only.
 #
 book	ch	layer	page	anchor	kind	summary	sumner_stated_reason
 2	5	la	431	[^la5]	word-order	MS word order differs from the printed text; Sumner reordered the clause about Matt. v. 33 / Jacob. v. 12 so that "per Deum jurare non prohibemur" follows the Matthew citation rather than the James one.	"Quo melius ratio grammatica servaretur, ordinem leviter mutavi" — to preserve the grammar.
@@ -65,3 +68,4 @@ book	ch	layer	page	anchor	kind	summary	sumner_stated_reason
 1	5	la	81	[^la2]	ms-error	In I.v-g La ¶3 (Heb. i. 8, Ps. xlv) the Latin prints `qui et Deus dici potuit utpote re annuente etiam scriptura` and Sumner says a letter has dropped out: read `rex`. The text is printed unchanged. The English (En 113) silently follows the correction: `on account of his kingly power, conformably to the language of Scripture`.	"Excidit littera. Corrige rex." — a letter has fallen out; correct to rex.
 1	5	la	82	[^la3]	ms-error	In I.v-g La ¶4 (Rom. ix. 5) the Latin prints `sed meminerunt intelligi sit debere, ut Joan. iii. 31, 32.` and Sumner says `sic` is more correct. The text is printed unchanged. The English (En 115) silently follows the correction: `ought to be understood in the same sense as John iii. 31, 32.`	"Rectius sic." — sic is more correct.
 1	5	la	94	[^la4]	ms-error	In I.v-i La ¶3 (the Son receives his being from the Father) the Latin prints `Idem imminuitur Joan. i. 1. in principio.` and Sumner says Milton surely wrote `innuitur`. The text is printed unchanged. The English (En 133) silently follows the correction: `The same thing is implied John i. 1.`	"Non dubito quin scripserit Miltonus innuitur." — I do not doubt Milton wrote innuitur.
+1	5	en-sumner	141	[^s1]	omission	In I.v-i La ¶13 (Jer. xxiii. 6 / xxxiii. 16) the Latin reads `Jehova justitia nostra; vel clariore syntaxi, Jehovam justitiam nostram; vel si quis mavult, hic qui vocabit eam, eodem pertinet.` The English (En 141) translates only up to `Jehovah our righteousness.` and Sumner's note quotes the whole Latin sentence and says he omitted the latter clauses. The first row of this kind.	"I have omitted in the translation the latter clauses of the sentence, which could scarcely be made intelligible in a language without inflections."
