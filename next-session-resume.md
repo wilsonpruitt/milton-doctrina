@@ -1,5 +1,17 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.v-h and I.v-i COMMITTED (local).** Deployed state is unchanged: live through I.v-g. Three commits are unpushed: the deploy log, h and i.
+
+- **I.v-i** (the Son receives everything from the Father: name, being, eternal generation refuted, life, attributes, works 1–9): La 93–101 / En 130–142. 17 → 20 (`{¶1 cont.}`, `{¶3 cont.}`, `{¶9 cont.}`). En notes **3–9 · 1 · 2** (nine, so no `-2`): Tetrachordon/*Defensio*, Tremellius, LXX/Vulg./Lowth/Douay (Greek), *PL* ×4 + *PR*, Peirce on Heb. i. 3, and **note 1 = Sumner disclosing that he omitted Milton's Latin clauses at Jer. xxxiii. 16**. Latin `[^la4]` (La 94, *imminuitur* → *innuitur*), ledgered; ★★ **the English silently follows it** (the seventh time in I.v). La `sesentiæ` (La 96) is a printer's error, kept as printed. La 97 flag = signature mark, not a note.
+- ⬜ **Wilson's call:** should Sumner's disclosed *omission* (note 1) get a new `en-sumner` `omission` kind in `sumner-interventions.tsv`? Not added.
+- **I.v-j opens at En note 3, Latin label 5.** Seam: La 101 `Honorem divinum. Joan. v. 22, 23.` / En 142 `Tenthly, divine honours.` **La 101 and En 142 are shared.** j runs to the end of I.v: La 109 / En 152, about 9 La pp, one part. It contains `Hinc Patris quæ sunt` (about La 104) and the chapter close; I.vi `De Spiritu Sancto` opens at La 110 / En 153.
+- Second copies fetched: La 57–102, En 80–145. Fetch La 103–110 and En 146–153 before j.
+- ⬜ Still owed from h: a pixel-run count of the band-resolution ellipses.
+
+⬜ **NEXT: I.v-j (closes I.v).** ⬜ Then I.vi (14 La pp, possibly one session). ⬜ Push + deploy: Wilson's call.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-30, latest): **I.v-h COMMITTED (local).** Deployed state is unchanged: live through I.v-g. Two commits are unpushed: the deploy-log commit and h.
 
 - **I.v-h** (the name Jehovah given to angels; two persons named Jehovah in one sentence; Exod. xxiii. 21 against Placæus; Revelation and Beza; Isa. viii, Zech. xi–xii, Mal. iii, Isa. xl): La 86–93 / En 121–**130**. 4 → 5 (`{¶2 cont.}` at *But as Placæus*). En notes **9 · 1 · 2** (Beza + Eusebius/Horne/Tomline; Junius; *PL* V. 611). **No Latin notes.** ★ La `cum xviii. 21, 24.` is really Gen. xix; the English silently mends it to `v. 18, 21, 24.` ★ **Hebrew אֲדֽנָי (La 87) has a meteg under the dalet; the En 121 form אֲדנָי has none.** Both were read at full resolution. Greek ἀντιλεγόμενα (note 9). `script-check.html` regenerated (Hebrew 83/37), not republished.
