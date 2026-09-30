@@ -277,6 +277,24 @@
       "status": "inferred",
       "leaf": 534,
       "evidence": "J–T 12:9 'spiritu autem redeunte ad Deum qui dederat illum' = KJV 12:7; also 6 = KJV 4, 10 = KJV 8, 13 = KJV 11, 16 = KJV 14, a constant +2. The chapter's first verse (leaf 533) not put in view"
+    },
+    {
+      "book": "Jer",
+      "chapter": 3,
+      "begins_at": "Jer 3:6",
+      "first_verse": 1,
+      "status": "inferred",
+      "leaf": 602,
+      "evidence": "constant +5: J–T 3:20 'Jacemus in pudore nostro, & operit nos ignominia nostra' (leaf 602, the last verse above the CAPUT IIII rubric) = KJV 3:25; J–T 3:16 'Vox in locis eminentibus audiatur' = KJV 3:21; 3:17 'Revertimini filii aversantes' = KJV 3:22. Milton's citations bear it out four times: Jer. iii. 7 / iii. 8 (I.xix) = KJV 3:12 / 3:13; Jer. iii. 7 / v. 13 (I.xxxiii-a) = KJV 3:12 / 3:18. The chapter's first verse (leaf 601) not put in view"
+    },
+    {
+      "book": "Isa",
+      "chapter": 27,
+      "begins_at": "Isa 27:1",
+      "first_verse": 3,
+      "status": "read",
+      "leaf": 566,
+      "evidence": "the first verse under the CAPUT XXVII rubric is numbered 3 ('Tempore illo animadvertet Jehova gladio suo durissimo' = KJV 27:1); 14 'excutiet Jehova inde à fluxu illius fluminis usque ad torrentem Ægypti' = KJV 27:12, a constant +2. Above the rubric, a verse numbered 1 ('Nam ecce Jehova proditurus est è loco suo' = KJV 26:21) closes the page's first column. Milton's Isa. xxvii. 14, 15 (I.xxxiii-a) = KJV 27:12, 13"
     }
   ]
 }
