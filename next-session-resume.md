@@ -1,5 +1,15 @@
 # Next session — resume here
 
+## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.v-a (*Præfatio*) COMMITTED.** Nothing since I.xxx pushed or deployed.
+
+- **I.v-a** = the *Præfatio* only: La 57 / En 80–81. 1 → 2 (`{¶1 cont.}` at *In reliance, therefore*). En notes **2–5** (opened at 2 as predicted). Latin `[^la5]` (textual, `ms-error`: *expromo* → *expromam*). ★★ En note 4 is a separate textual note (*eandem* → *eadem*) that the Latin volume doesn't carry; ledgered `en-sumner` `emendation`. No Greek/Hebrew, no filter blocks.
+- **I.v-b opens at En note 6, Latin label 6.** Seam: La 58 `DE / FILIO DEI.` → `HACTENUS efficientia Dei INTERNA`; En 81 mid-page `Of the Son of God.` → `Hitherto I have considered`. **En 81 belongs to both parts.**
+- Second copies fetched: La 57–63 (`la2-`), En 81–88 (`en2-`). Fetch more with `curl -sfL -o raw/second/la2-P.jpg https://archive.org/download/bwb_T5-ARK-705/page/n$((P+17)).jpg` (En: `treatiseonchrist00miltrich`, `+51`).
+
+⬜ **NEXT: I.v-b.** La 58–109 / En 81–152 remain: find Milton's lemma seams (the La text-layer finding aid shows no further headings, so split at argument turns, e.g. generation / *unus Deus* texts / the Son's attributes). Heaviest Greek/Hebrew ahead; regenerate `script-check.html` after. ⬜ Then I.vi. ⬜ Push + deploy I.xxxi–I.xxxiii + I.iv + I.v, Wilson's call.
+
+---
+
 ## ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ START HERE (2026-09-29, latest) — **I.iv is COMPLETE: a (`a015520`), b (`0b30b4e`), c (`947c526`).** Nothing since I.xxx pushed or deployed. **Two chapters left: I.v and I.vi.**
 
 - I.iv ledger: `6–9 · 1–9 · 1–9 · 1` (23 En notes). **I.v opens at English note 2.** Latin labels in I.iv: `[^la3]` (a, textual), `[^la4]` (b, scholarly); c has none.
